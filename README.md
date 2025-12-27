@@ -5,6 +5,12 @@
 - The goal is to help in seeding for postseason tournaments
 - Can also help clubs with evaluating wrestlers across seasons
 
+## Tricks
+
+- For TrackWrestling, get results **by round** and then go to "Advanced" and use
+  a format with a `::` delimiter so they are easy to parse
+  `[boutType] :: [wFName] :: [wLName] :: [wTeam] :: [winType] :: [lFName] :: [lLName] :: [lTeam] :: [scoreSummary]`
+
 ## Season tournaments
 
 | Done | Date       | Tournament                                                          | Source         |
