@@ -60,14 +60,13 @@
 |                    |        | 2025-12-27 | Betty Martinez Memorial                                             | TrackWrestling |
 |                    |        | 2025-12-27 | D/C Bolts New Years Bash                                            |                |
 |                    |        | 2025-12-27 | Roughnecks Christmas Classic                                        |                |
-|                    |        | 2025-12-28 | Granite City Kids Holiday Classic                                   |                |
 |                    |        | 2025-12-28 | Brawlers Brawl 2025                                                 |                |
 |                    |        | 2025-12-28 | Reindeer Rumble                                                     |                |
 |                    |        | 2025-12-28 | Dave Mattio Classic                                                 |                |
 |                    |        | 2025-12-28 | Crawford County Open                                                |                |
 |                    |        | 2025-12-28 | Sandwich WinterWonderSlam                                           |                |
-|                    |        | 2025-12-28 | Fight on the Farm                                                   |                |
 |                    |        | 2025-12-28 | Junior Midlands                                                     |                |
+| :white_check_mark: |        | 2025-12-28 | Granite City Kids Holiday Classic                                   | USA Bracketing |
 | :white_check_mark: |        | 2025-12-30 | Rockford Bad Boys & Girls Open                                      | USA Bracketing |
 |                    |        | 2025-12-31 | Cadet Classic                                                       |                |
 |                    |        | 2026-01-03 | Boneyard Bash                                                       |                |
@@ -82,7 +81,7 @@
 |                    |        | 2026-01-04 | Bob Jahn Memorial                                                   |                |
 |                    |        | 2026-01-04 | Mattoon YWC Bonic Battle for the Belt                               |                |
 |                    |        | 2026-01-04 | Peyton Smith Open hosted by BWC                                     |                |
-|                    |        | 2026-01-04 | IKWF Southern Dual Meet Divisional                                  |                |
+| :white_check_mark: |        | 2026-01-04 | IKWF Southern Dual Meet Divisional                                  | USA Bracketing |
 |                    |        | 2026-01-10 | Didi Duals                                                          |                |
 |                    |        | 2026-01-10 | Hawk Wrestling Club Invitational                                    |                |
 |                    |        | 2026-01-10 | Stillman Valley Beginners Tournament                                |                |
