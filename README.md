@@ -83,21 +83,21 @@
 |                    |        | 2026-01-04 | Peyton Smith Open hosted by BWC                                     |                |
 | :white_check_mark: |        | 2026-01-04 | IKWF Southern Dual Meet Divisional                                  | USA Bracketing |
 |                    |        | 2026-01-10 | Didi Duals                                                          |                |
-|                    |        | 2026-01-10 | Hawk Wrestling Club Invitational                                    |                |
-|                    |        | 2026-01-10 | Stillman Valley Beginners Tournament                                |                |
 |                    |        | 2026-01-10 | Fisher Jamboree                                                     |                |
-|                    |        | 2026-01-11 | Spartan 300                                                         |                |
-|                    |        | 2026-01-11 | Chauncey Carrick Good Guys Tournament                               |                |
-|                    |        | 2026-01-11 | Coach Jim Craig Memorial                                            |                |
+|                    |        | 2026-01-10 | Hawk Wrestling Club Invitational                                    |                |
+|                    |        | 2026-01-10 | Stillman Valley Beginners Tournament                                | USA Bracketing |
 |                    |        | 2026-01-11 | Batavia Classic                                                     |                |
-|                    |        | 2026-01-11 | Mt Zion Kids Club Open                                              |                |
-|                    |        | 2026-01-11 | Geneva Junior Vikings Youth Open                                    |                |
-|                    |        | 2026-01-11 | Little Devils Gauntlet                                              |                |
-|                    |        | 2026-01-11 | Morton Youth Wrestling 2026                                         |                |
-|                    |        | 2026-01-11 | Wolfpack Open                                                       |                |
-|                    |        | 2026-01-11 | Pontiac Kids Open                                                   |                |
-|                    |        | 2026-01-11 | Jacksonville Area Wrestling Battle in the Bowl                      |                |
 |                    |        | 2026-01-11 | Carbondale Dog Fight & Alli Ragan Girls Open                        |                |
+|                    |        | 2026-01-11 | Coach Jim Craig Memorial                                            |                |
+|                    |        | 2026-01-11 | Geneva Junior Vikings Youth Open                                    |                |
+|                    |        | 2026-01-11 | Jacksonville Area Wrestling Battle in the Bowl                      |                |
+|                    |        | 2026-01-11 | Little Devils Gauntlet                                              |                |
+|                    |        | 2026-01-11 | Mt Zion Kids Club Open                                              |                |
+|                    |        | 2026-01-11 | Pontiac Kids Open                                                   |                |
+|                    |        | 2026-01-11 | Wolfpack Open                                                       |                |
+|                    |        | 2026-01-11 | Chauncey Carrick Good Guys Tournament                               | USA Bracketing |
+|                    |        | 2026-01-11 | Morton Youth Wrestling 2026                                         | USA Bracketing |
+|                    |        | 2026-01-11 | Spartan 300                                                         | USA Bracketing |
 |                    |        | 2026-01-18 | Jon Davis Kids Open                                                 |                |
 |                    |        | 2026-01-24 | Girls Rule Rumble                                                   |                |
 |                    |        | 2026-01-25 | 4th Annual Ezra Hill Jr. Memorial Tournament                        |                |
