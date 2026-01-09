@@ -53,10 +53,10 @@
 |                    |        | 2025-12-21 | Darby Pool Wrestling Tournament                                     | TrackWrestling |
 |                    |        | 2025-12-21 | Highland Howl Jarron Haberer memorial                               | TrackWrestling |
 |                    |        | 2025-12-21 | Joe Tholl Sr. ELITE/OPEN 2025                                       | TrackWrestling |
-|                    |        | 2025-12-21 | 2025 Rocket Blast                                                   | USA Bracketing |
-|                    |        | 2025-12-21 | Jr. Porter Invite                                                   | USA Bracketing |
-|                    |        | 2025-12-21 | Spartan Beginner Tournament                                         | USA Bracketing |
-|                    |        | 2025-12-21 | Stillman Valley Holiday Tournament                                  | USA Bracketing |
+| :white_check_mark: |        | 2025-12-21 | 2025 Rocket Blast                                                   | USA Bracketing |
+| :white_check_mark: |        | 2025-12-21 | Jr. Porter Invite                                                   | USA Bracketing |
+| :white_check_mark: |        | 2025-12-21 | Spartan Beginner Tournament                                         | USA Bracketing |
+| :white_check_mark: |        | 2025-12-21 | Stillman Valley Holiday Tournament                                  | USA Bracketing |
 |                    |        | 2025-12-27 | Betty Martinez Memorial                                             | TrackWrestling |
 |                    |        | 2025-12-27 | D/C Bolts New Years Bash                                            |                |
 |                    |        | 2025-12-27 | Roughnecks Christmas Classic                                        |                |
