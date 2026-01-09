@@ -42,9 +42,8 @@
 |                    |        | 2025-12-14 | December 2025 Lil Reapers Wrestling Classic                         | TrackWrestling |
 |                    |        | 2025-12-14 | John Nagy Throwdown 2025                                            | TrackWrestling |
 |                    |        | 2025-12-14 | Rumble on the Red                                                   | TrackWrestling |
-|                    |        | 2025-12-14 | Steve Montez Beginner and Girls open tournament                     | USA Bracketing |
-|                    |        | 2025-12-14 | CICC Classic                                                        | USA Bracketing |
-|                    |        | 2025-12-14 | Wilbur Borrero Classic                                              | USA Bracketing |
+| :white_check_mark: |        | 2025-12-14 | CICC Classic                                                        | USA Bracketing |
+| :white_check_mark: |        | 2025-12-14 | Wilbur Borrero Classic                                              | USA Bracketing |
 |                    |        | 2025-12-21 | 2025 Mat Rat Invitational                                           | TrackWrestling |
 |                    |        | 2025-12-21 | 2025 Yeti Bash/Morris Kids WC                                       | TrackWrestling |
 |                    |        | 2025-12-21 | 309 Winter Classic                                                  | TrackWrestling |
