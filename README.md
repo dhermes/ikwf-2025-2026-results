@@ -11,12 +11,13 @@
   a format with a `::` delimiter so they are easy to parse
   `[boutType] :: [wFName] :: [wLName] :: [wTeam] :: [winType] :: [lFName] :: [lLName] :: [lTeam] :: [scoreSummary]`
 - For USA Bracketing, go to "Reports" and then select "AP Bouts by Division,
-  Round then Weight" and go untl all rounds are extracted (**by round**)
+  Round then Weight" and go until all rounds are extracted (**by round**)
 
 ## Season tournaments
 
 | Raw                | Parsed | Date       | Tournament                                                          | Source         |
 | ------------------ | ------ | ---------- | ------------------------------------------------------------------- | -------------- |
+|                    |        | 2025-12-06 | 2025 EWC Beginners and Girls Tournament                             | TrackWrestling |
 |                    |        | 2025-12-06 | Falcon Funfrawl                                                     | TrackWrestling |
 |                    |        | 2025-12-06 | Tots Bash                                                           | TrackWrestling |
 |                    |        | 2025-12-07 | 2025 Force Challenge 19                                             | TrackWrestling |
@@ -30,8 +31,7 @@
 |                    |        | 2025-12-07 | Lincoln Railer Rumble 2025                                          | TrackWrestling |
 |                    |        | 2025-12-07 | Peoria Razorback Season Opener                                      | TrackWrestling |
 |                    |        | 2025-12-07 | Tiger Takedown                                                      | TrackWrestling |
-|                    |        | 2025-12-07 | 2025 EWC Beginners and Girls Tournament                             | TrackWrestling |
-|                    |        | 2025-12-07 | 42nd Annual Bulls Wrestling Tournament                              | USA Bracketing |
+| :white_check_mark: |        | 2025-12-07 | 42nd Annual Bulls Wrestling Tournament                              | USA Bracketing |
 |                    |        | 2025-12-13 | 2025 O`Fallon Beginners/Girls Open                                  | TrackWrestling |
 |                    |        | 2025-12-13 | Mattoon Beginners Tournament                                        | TrackWrestling |
 |                    |        | 2025-12-14 | 2025 Beat the Streets Youth Brawl                                   | TrackWrestling |
