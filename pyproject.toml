@@ -1,0 +1,19 @@
+[project]
+name = "ikwf-2025-2026-results"
+version = "0.0.1"
+requires-python = "==3.14.2"
+dependencies = ["ipython", "requests", "ruff"]
+
+[tool.ruff]
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I", "UP", "N", "SIM"]
+fixable = ["ALL"]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
