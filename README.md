@@ -18,7 +18,6 @@
 | Raw                | Parsed | Date       | Tournament                                                          | Source         |
 | ------------------ | ------ | ---------- | ------------------------------------------------------------------- | -------------- |
 |                    |        | 2025-12-06 | 2025 EWC Beginners and Girls Tournament                             | TrackWrestling |
-|                    |        | 2025-12-06 | Falcon Funfrawl                                                     | TrackWrestling |
 |                    |        | 2025-12-06 | Tots Bash                                                           | TrackWrestling |
 |                    |        | 2025-12-07 | 2025 Force Challenge 19                                             | TrackWrestling |
 | :white_check_mark: |        | 2025-12-07 | 2025 Mick Ruettiger Invitational                                    | TrackWrestling |

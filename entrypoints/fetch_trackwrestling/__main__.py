@@ -9,7 +9,6 @@ _ROOT = _HERE.parent.parent
 
 _TOURNAMENTS = """\
 2025-12-06 | 2025 EWC Beginners and Girls Tournament
-2025-12-06 | Falcon Funfrawl
 2025-12-06 | Tots Bash
 2025-12-07 | 2025 Force Challenge 19
 2025-12-07 | 2025 Mick Ruettiger Invitational
@@ -127,6 +126,9 @@ def main() -> None:
 
         print(f"Fetching: {name} ...")
         captured_html = trackwrestling.fetch_tournament_rounds(tournament)
+        if not captured_html:
+            raise RuntimeError("Tournament has no rounds", name)
+
         with open(path, "w") as file_obj:
             json.dump(captured_html, file_obj, sort_keys=True, indent=2)
             file_obj.write("\n")
