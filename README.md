@@ -10,6 +10,7 @@
 - For TrackWrestling, get results **by round** and then go to "Advanced" and use
   a format with a `::` delimiter so they are easy to parse
   `[boutType] :: [wFName] :: [wLName] :: [wTeam] :: [winType] :: [lFName] :: [lLName] :: [lTeam] :: [scoreSummary]`
+  - This is enabled by `uv run python -m entrypoints.fetch_trackwrestling`
 - For USA Bracketing, go to "Reports" and then select "AP Bouts by Division,
   Round then Weight" and go until all rounds are extracted (**by round**)
 

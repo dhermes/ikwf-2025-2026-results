@@ -336,4 +336,6 @@ active for 2025-26:
 | 667 | Young Warrior Wrestling Academy                  | S         |
 | 646 | Zero Fox Wrestling                               | SC        |
 
-The athletes will be fetched and stored in `_parsed-data/rosters.json`.
+The athletes will be fetched and stored in `_parsed-data/rosters.json`, this
+file is parsed from the raw data via
+`uv run python -m entrypoints.parse_rosters`.
