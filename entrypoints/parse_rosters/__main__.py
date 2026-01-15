@@ -5,7 +5,7 @@ import bs4
 import pydantic
 
 _HERE = pathlib.Path(__file__).resolve().parent
-_ROOT = _HERE.parent
+_ROOT = _HERE.parent.parent
 
 
 class _ForbidExtra(pydantic.BaseModel):
