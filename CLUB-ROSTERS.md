@@ -336,5 +336,4 @@ active for 2025-26:
 | 667 | Young Warrior Wrestling Academy                  | S         |
 | 646 | Zero Fox Wrestling                               | SC        |
 
-The athletes will be fetched (with "as of" timestamp, e.g. if fetched on
-2026-01-09) and stored in `_parsed-data/club-rosters.json`.
+The athletes will be fetched and stored in `_parsed-data/rosters.json`.
