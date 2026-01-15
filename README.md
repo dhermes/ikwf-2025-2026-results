@@ -85,7 +85,7 @@
 |                    |        | 2026-01-10 | Didi Duals                                                          |                |
 |                    |        | 2026-01-10 | Fisher Jamboree                                                     |                |
 |                    |        | 2026-01-10 | Hawk Wrestling Club Invitational                                    |                |
-|                    |        | 2026-01-10 | Stillman Valley Beginners Tournament                                | USA Bracketing |
+| :white_check_mark: |        | 2026-01-10 | Stillman Valley Beginners Tournament                                | USA Bracketing |
 |                    |        | 2026-01-11 | Batavia Classic                                                     |                |
 |                    |        | 2026-01-11 | Carbondale Dog Fight & Alli Ragan Girls Open                        |                |
 |                    |        | 2026-01-11 | Coach Jim Craig Memorial                                            |                |
@@ -95,10 +95,10 @@
 |                    |        | 2026-01-11 | Mt Zion Kids Club Open                                              |                |
 |                    |        | 2026-01-11 | Pontiac Kids Open                                                   |                |
 |                    |        | 2026-01-11 | Wolfpack Open                                                       |                |
-|                    |        | 2026-01-11 | Chauncey Carrick Good Guys Tournament                               | USA Bracketing |
-|                    |        | 2026-01-11 | Morton Youth Wrestling 2026                                         | USA Bracketing |
-|                    |        | 2026-01-11 | Spartan 300                                                         | USA Bracketing |
-|                    |        | 2026-01-18 | Jon Davis Kids Open                                                 |                |
+| :white_check_mark: |        | 2026-01-11 | Chauncey Carrick Good Guys Tournament                               | USA Bracketing |
+| :white_check_mark: |        | 2026-01-11 | Morton Youth Wrestling 2026                                         | USA Bracketing |
+| :white_check_mark: |        | 2026-01-11 | Spartan 300                                                         | USA Bracketing |
+|                    |        | 2026-01-18 | Jon Davis Kids Open                                                 | USA Bracketing |
 |                    |        | 2026-01-24 | Girls Rule Rumble                                                   |                |
 |                    |        | 2026-01-25 | 4th Annual Ezra Hill Jr. Memorial Tournament                        |                |
 |                    |        | 2026-01-25 | Custer/Stoudt Open                                                  |                |
