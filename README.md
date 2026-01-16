@@ -18,21 +18,21 @@
 
 | Raw                | Parsed | Date       | Tournament                                                          | Source         |
 | ------------------ | ------ | ---------- | ------------------------------------------------------------------- | -------------- |
-|                    |        | 2025-12-06 | 2025 EWC Beginners and Girls Tournament                             | TrackWrestling |
-|                    |        | 2025-12-06 | Tots Bash                                                           | TrackWrestling |
-|                    |        | 2025-12-07 | 2025 Force Challenge 19                                             | TrackWrestling |
+| :white_check_mark: |        | 2025-12-06 | 2025 EWC Beginners and Girls Tournament                             | TrackWrestling |
+| :white_check_mark: |        | 2025-12-06 | Tots Bash                                                           | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | 2025 Force Challenge 19                                             | TrackWrestling |
 | :white_check_mark: |        | 2025-12-07 | 2025 Mick Ruettiger Invitational                                    | TrackWrestling |
-|                    |        | 2025-12-07 | 2025 Oak Forest Green and White Tournament                          | TrackWrestling |
-|                    |        | 2025-12-07 | 2025 Xtreme Challenge                                               | TrackWrestling |
-|                    |        | 2025-12-07 | Capture the Eagle                                                   | TrackWrestling |
-|                    |        | 2025-12-07 | Elias George Memorial 2025                                          | TrackWrestling |
-|                    |        | 2025-12-07 | Fox Lake Beginners Tournament                                       | TrackWrestling |
-|                    |        | 2025-12-07 | Lil` Coalers Clash                                                  | TrackWrestling |
-|                    |        | 2025-12-07 | Lincoln Railer Rumble 2025                                          | TrackWrestling |
-|                    |        | 2025-12-07 | Peoria Razorback Season Opener                                      | TrackWrestling |
-|                    |        | 2025-12-07 | Tiger Takedown                                                      | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | 2025 Oak Forest Green and White Tournament                          | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | 2025 Xtreme Challenge                                               | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | Capture the Eagle                                                   | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | Elias George Memorial 2025                                          | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | Fox Lake Beginners Tournament                                       | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | Lil` Coalers Clash                                                  | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | Lincoln Railer Rumble 2025                                          | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | Peoria Razorback Season Opener                                      | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | Tiger Takedown                                                      | TrackWrestling |
 | :white_check_mark: |        | 2025-12-07 | 42nd Annual Bulls Wrestling Tournament                              | USA Bracketing |
-|                    |        | 2025-12-13 | 2025 O`Fallon Beginners/Girls Open                                  | TrackWrestling |
+| :white_check_mark: |        | 2025-12-13 | 2025 O`Fallon Beginners/Girls Open                                  | TrackWrestling |
 |                    |        | 2025-12-13 | Mattoon Beginners Tournament                                        | TrackWrestling |
 |                    |        | 2025-12-14 | 2025 Beat the Streets Youth Brawl                                   | TrackWrestling |
 |                    |        | 2025-12-14 | 2025 Hub City Hammer Duals                                          | TrackWrestling |

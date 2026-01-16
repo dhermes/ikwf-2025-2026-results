@@ -21,7 +21,6 @@ _TOURNAMENTS = """\
 2025-12-07 | Lincoln Railer Rumble 2025
 2025-12-07 | Peoria Razorback Season Opener
 2025-12-07 | Tiger Takedown
-2025-12-07 | 42nd Annual Bulls Wrestling Tournament
 2025-12-13 | 2025 O`Fallon Beginners/Girls Open
 2025-12-13 | Mattoon Beginners Tournament
 2025-12-14 | 2025 Beat the Streets Youth Brawl

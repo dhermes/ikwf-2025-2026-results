@@ -1,4 +1,6 @@
 import datetime
+import os
+import time
 
 import pydantic
 from selenium import webdriver
@@ -7,6 +9,18 @@ from selenium.webdriver.support import expected_conditions as EC  # noqa: N812
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
 _WAIT_TIME = 3
+_BOUT_FORMAT = (
+    "[boutType] :: [wFName] :: [wLName] :: [wTeam] :: [winType] :: "
+    "[lFName] :: [lLName] :: [lTeam] :: [scoreSummary]"
+)
+_VERBOSE = "VERBOSE" in os.environ
+
+
+def _debug(message: str) -> None:
+    if not _VERBOSE:
+        return
+
+    print(message)
 
 
 class _ForbidExtra(pydantic.BaseModel):
@@ -168,51 +182,74 @@ def _all_round_option_values(driver: webdriver.Chrome) -> list[_OptionInfo]:
     return options
 
 
-def _capture_round_html(driver: webdriver.Chrome, option_info: _OptionInfo) -> str:
+def _capture_round_html(
+    driver: webdriver.Chrome, option_info: _OptionInfo
+) -> str | None:
     # Wait for the iframe to be available
+    _debug(":: Switching to <iframe>")
     iframe = WebDriverWait(driver, _WAIT_TIME).until(
         EC.presence_of_element_located((By.ID, "PageFrame"))
     )
-
-    # Switch to the iframe
     driver.switch_to.frame(iframe)
+    time.sleep(0.05)
 
     # Update <select> for desired option
+    _debug(f":: Changing <option>; {option_info.value!r}")
     xpath_query = f"//option[@value='{option_info.value}']"
     option = WebDriverWait(driver, _WAIT_TIME).until(
         EC.element_to_be_clickable((By.XPATH, xpath_query))
     )
     option.click()
 
+    # Click "Advanced" so we can change the format
+    _debug(':: Clicking "Advanced"')
+    advanced_button = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, ".openExtraContent a"))
+    )
+    advanced_button.click()
+
+    # Fill out the Format `<input>`
+    _debug(':: Filling out "Advanced" format')
+    format_input = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.visibility_of_element_located((By.ID, "format"))
+    )
+    format_input.clear()
+    time.sleep(0.05)
+    format_input.send_keys(_BOUT_FORMAT)
+    time.sleep(0.05)
+
     # Click "Go"
+    _debug(':: Clicking "Go"')
     go_button = WebDriverWait(driver, _WAIT_TIME).until(
         EC.element_to_be_clickable(
             (By.XPATH, "//input[@type='button' and @value='Go']")
         )
     )
     go_button.click()
+    time.sleep(0.05)
 
-    # Wait for the round results to finish loading
-    xpath_query = f"//h1[normalize-space()='{option_info.label}']"
-    WebDriverWait(driver, _WAIT_TIME).until(
-        EC.visibility_of_element_located((By.XPATH, xpath_query))
+    # Wait for the "Filter" button to finish loading
+    _debug(":: Waiting for round to load")
+    filter_button = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.element_to_be_clickable((By.ID, "pageFunc_0"))
     )
 
     # Find the element we intend to capture `<section class="tw-list">`
+    _debug(":: Capturing HTML")
     tw_lists = driver.find_elements(By.CSS_SELECTOR, "section.tw-list")
-    if len(tw_lists) != 1:
+    if len(tw_lists) == 0:
+        tw_list_html = None
+    elif len(tw_lists) == 1:
+        tw_list = tw_lists[0]
+        # Get the outerHTML of the `<section class="tw-list">` element
+        tw_list_html = tw_list.get_attribute("outerHTML")
+    else:
         raise RuntimeError("Unexpected number of round results", option_info)
-    tw_list = tw_lists[0]
-
-    # Get the outerHTML of the `<section class="tw-list">` element
-    tw_list_html = tw_list.get_attribute("outerHTML")
 
     # Click "Filter" to queue up searching for the next round, assumes the
     # button `id` is stable:
     # `<input type="button" id="pageFunc_0" value="Filter">`
-    filter_button = WebDriverWait(driver, _WAIT_TIME).until(
-        EC.element_to_be_clickable((By.ID, "pageFunc_0"))
-    )
+    _debug(':: Clicking "Filter" to go back to search')
     filter_button.click()
 
     # Switch back to the main page (if needed)
@@ -258,7 +295,8 @@ def fetch_tournament_rounds(tournament: Tournament) -> dict[str, str]:
             raise KeyError("Duplicate key", key)
 
         html = _capture_round_html(driver, option)
-        captured_html[key] = html
+        if html is not None:
+            captured_html[key] = html
 
     driver.quit()
 
