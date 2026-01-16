@@ -79,14 +79,23 @@ def _event_search_click_search(driver: webdriver.Chrome) -> None:
     search_button.click()
 
 
-def _search_results_click_first(driver: webdriver.Chrome) -> None:
-    # Wait for the anchor link to be clickable
-    anchor_link = WebDriverWait(driver, _WAIT_TIME).until(
-        EC.element_to_be_clickable((By.ID, "anchor_0"))
+def _search_results_click_first(driver: webdriver.Chrome, name: str) -> str:
+    tournament_ul = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, "ul.tournament-ul"))
     )
 
-    # Click the link
-    anchor_link.click()
+    all_lis = tournament_ul.find_elements(By.XPATH, "./li")
+
+    if len(all_lis) != 1:
+        raise ValueError(f"Expected exactly 1 <li>, found {len(all_lis)}", name)
+
+    li = all_lis[0]
+    event_name_span = li.find_element(
+        By.XPATH, ".//a[contains(@class,'segment-track')]/span[1]"
+    )
+    event_name = event_name_span.text.strip()
+
+    return event_name
 
 
 def _event_box_change_user_type(driver: webdriver.Chrome) -> None:
@@ -278,7 +287,14 @@ def fetch_tournament_rounds(tournament: Tournament) -> dict[str, str]:
     _events_page_search_events(driver)
     _event_search_fill_inputs(driver, search_inputs)
     _event_search_click_search(driver)
-    _search_results_click_first(driver)
+    event_name = _search_results_click_first(driver, tournament.name)
+    if event_name != tournament.name:
+        raise RuntimeError(
+            "Tournament name does not agree with name on TrackWrestling",
+            tournament.name,
+            event_name,
+        )
+
     _event_box_change_user_type(driver)
     _event_box_click_enter_event(driver)
     _click_results_sidebar_option(driver)

@@ -70,10 +70,26 @@ _TOURNAMENTS = """\
 
 # TODO: Rename **ALL** tournaments where it is inexact name match
 #       (rename in here, in README, and JSON filename)
-# TODO: Rename `2026 Coach Jim Craig Memorial-CLOSED`
-# TODO: Rename `Batavia Classic Wrestling Tournament`
-# TODO: Rename `Mt Zion kids club open`
-# TODO: Rename `Pontiac Kids Open 2026`
+# TODO: Wrong: 'Betty Martinez Memorial' :: Right: '2025 Betty Martinez Memorial'
+# TODO: Wrong: 'Reindeer Rumble' :: Right: '2025 Naperville Reindeer Rumble'
+# TODO: Wrong: 'Dave Mattio Classic' :: Right: '2025 Dave Mattio Classic'
+# TODO: Wrong: 'Sandwich WinterWonderSlam' :: Right: '2025 Sandwich WinterWonderSLAM'
+# TODO: Wrong: 'Junior Midlands' :: Right: 'Junior Midlands @ Northwestern University'
+# TODO: Wrong: 'Boneyard Bash' :: Right: '2026 Boneyard Bash ELITE & ROOKIE'
+# TODO: Wrong: 'Hillsboro Jr. Topper Tournament' ::
+#                  Right: '2026 Hillsboro Jr. Topper Tournament'
+# TODO: Wrong: 'Double D Demolition' :: Right: 'Double D Demolition (SVWC Tournament)'
+# TODO: Wrong: 'Midwest Classic' :: Right: 'The Midwest Classic 2026'
+# TODO: Wrong: 'Monticello Youth Open' :: Right: 'Monticello Youth Open 2026'
+# TODO: Wrong: 'Little Giant Holiday Hammer' :: Right: 'The Little Giant Holiday Hammer'
+# TODO: Wrong: 'Crushing Christmas Classic' ::
+#                  Right: 'Crushing Christmas Classic-Coal City'
+# TODO: Wrong: 'Bob Jahn Memorial' :: Right: '2026 Bob Jahn Memorial'
+# TODO: Wrong: 'Batavia Classic' :: Right: 'Batavia Classic Wrestling Tournament'
+# TODO: Wrong: 'Coach Jim Craig Memorial' ::
+#                  Right: '2026 Coach Jim Craig Memorial-CLOSED'
+# TODO: Wrong: 'Mt Zion Kids Club Open' :: Right: 'Mt Zion kids club open'
+# TODO: Wrong: 'Pontiac Kids Open' :: Right: 'Pontiac Kids Open 2026'
 
 
 def _to_kebab_case(name: str) -> str:
