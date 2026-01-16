@@ -76,21 +76,18 @@
 | :white_check_mark: |        | 2026-01-04 | Crushing Christmas Classic                                          | TrackWrestling |
 | :white_check_mark: |        | 2026-01-04 | Bob Jahn Memorial                                                   | TrackWrestling |
 | :white_check_mark: |        | 2026-01-04 | Mattoon YWC - Bonic Battle for the Belt                             | TrackWrestling |
-|                    |        | 2026-01-04 | Peyton Smith Open hosted by BWC                                     |                |
 | :white_check_mark: |        | 2026-01-04 | IKWF Southern Dual Meet Divisional                                  | USA Bracketing |
-|                    |        | 2026-01-10 | Didi Duals                                                          |                |
-|                    |        | 2026-01-10 | Fisher Jamboree                                                     |                |
-|                    |        | 2026-01-10 | Hawk Wrestling Club Invitational                                    |                |
+|                    |        | 2026-01-10 | Didi Duals                                                          | TrackWrestling |
+| :white_check_mark: |        | 2026-01-10 | Hawk Wrestling Club Invitational                                    | TrackWrestling |
 | :white_check_mark: |        | 2026-01-10 | Stillman Valley Beginners Tournament                                | USA Bracketing |
-|                    |        | 2026-01-11 | Batavia Classic                                                     |                |
-|                    |        | 2026-01-11 | Carbondale Dog Fight & Alli Ragan Girls Open                        |                |
-|                    |        | 2026-01-11 | Coach Jim Craig Memorial                                            |                |
-|                    |        | 2026-01-11 | Geneva Junior Vikings Youth Open                                    |                |
-|                    |        | 2026-01-11 | Jacksonville Area Wrestling Battle in the Bowl                      |                |
-|                    |        | 2026-01-11 | Little Devils Gauntlet                                              |                |
-|                    |        | 2026-01-11 | Mt Zion Kids Club Open                                              |                |
-|                    |        | 2026-01-11 | Pontiac Kids Open                                                   |                |
-|                    |        | 2026-01-11 | Wolfpack Open                                                       |                |
+| :white_check_mark: |        | 2026-01-11 | Batavia Classic                                                     | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | 2026CarbondaleDogFight&AlliRaganGirlsOpn                            | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | Coach Jim Craig Memorial                                            | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | Geneva Vikings Youth Tournament                                     | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | Devils Gauntlet Battle for the Belts                                | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | Mt Zion Kids Club Open                                              | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | Pontiac Kids Open                                                   | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | JAWS Battle in the Bowl                                             | TrackWrestling |
 | :white_check_mark: |        | 2026-01-11 | Chauncey Carrick Good Guys Tournament                               | USA Bracketing |
 | :white_check_mark: |        | 2026-01-11 | Morton Youth Wrestling 2026                                         | USA Bracketing |
 | :white_check_mark: |        | 2026-01-11 | Spartan 300                                                         | USA Bracketing |

@@ -58,18 +58,22 @@ _TOURNAMENTS = """\
 2026-01-04 | Crushing Christmas Classic
 2026-01-04 | Bob Jahn Memorial
 2026-01-04 | Mattoon YWC - Bonic Battle for the Belt
-2026-01-04 | Peyton Smith Open hosted by BWC
-2026-01-10 | Fisher Jamboree
 2026-01-10 | Hawk Wrestling Club Invitational
 2026-01-11 | Batavia Classic
-2026-01-11 | Carbondale Dog Fight & Alli Ragan Girls Open
+2026-01-11 | 2026CarbondaleDogFight&AlliRaganGirlsOpn
 2026-01-11 | Coach Jim Craig Memorial
-2026-01-11 | Geneva Junior Vikings Youth Open
-2026-01-11 | Jacksonville Area Wrestling Battle in the Bowl
-2026-01-11 | Little Devils Gauntlet
+2026-01-11 | Geneva Vikings Youth Tournament
+2026-01-11 | Devils Gauntlet Battle for the Belts
 2026-01-11 | Mt Zion Kids Club Open
 2026-01-11 | Pontiac Kids Open
-2026-01-11 | Wolfpack Open"""
+2026-01-11 | JAWS Battle in the Bowl"""
+
+# TODO: Rename **ALL** tournaments where it is inexact name match
+#       (rename in here, in README, and JSON filename)
+# TODO: Rename `2026 Coach Jim Craig Memorial-CLOSED`
+# TODO: Rename `Batavia Classic Wrestling Tournament`
+# TODO: Rename `Mt Zion kids club open`
+# TODO: Rename `Pontiac Kids Open 2026`
 
 
 def _to_kebab_case(name: str) -> str:
