@@ -41,55 +41,32 @@ _TOURNAMENTS = """\
 2025-12-21 | Darby Pool Wrestling Tournament
 2025-12-21 | Highland Howl Jarron Haberer memorial
 2025-12-21 | Joe Tholl Sr. ELITE/OPEN 2025
-2025-12-27 | Betty Martinez Memorial
-2025-12-28 | Reindeer Rumble
-2025-12-28 | Dave Mattio Classic
+2025-12-27 | 2025 Betty Martinez Memorial
+2025-12-28 | 2025 Naperville Reindeer Rumble
+2025-12-28 | 2025 Dave Mattio Classic
 2025-12-28 | Crawford County Open
-2025-12-28 | Sandwich WinterWonderSlam
-2025-12-28 | Junior Midlands
+2025-12-28 | 2025 Sandwich WinterWonderSLAM
+2025-12-28 | Junior Midlands @ Northwestern University
 2025-12-31 | Cadet Classic
-2026-01-03 | Boneyard Bash
-2026-01-03 | Hillsboro Jr. Topper Tournament
-2026-01-03 | Double D Demolition
+2026-01-03 | 2026 Boneyard Bash ELITE & ROOKIE
+2026-01-03 | 2026 Hillsboro Jr. Topper Tournament
+2026-01-03 | Double D Demolition (SVWC Tournament)
 2026-01-04 | Oak Lawn Acorn Rookie Rumble
-2026-01-04 | Midwest Classic
-2026-01-04 | Monticello Youth Open
-2026-01-04 | Little Giant Holiday Hammer
-2026-01-04 | Crushing Christmas Classic
-2026-01-04 | Bob Jahn Memorial
+2026-01-04 | THE Midwest Classic 2026
+2026-01-04 | Monticello Youth Open 2026
+2026-01-04 | The Little Giant Holiday Hammer
+2026-01-04 | Crushing Christmas Classic-Coal City
+2026-01-04 | 2026 Bob Jahn Memorial
 2026-01-04 | Mattoon YWC - Bonic Battle for the Belt
 2026-01-10 | Hawk Wrestling Club Invitational
-2026-01-11 | Batavia Classic
+2026-01-11 | Batavia Classic Wrestling Tournament
 2026-01-11 | 2026CarbondaleDogFight&AlliRaganGirlsOpn
-2026-01-11 | Coach Jim Craig Memorial
+2026-01-11 | 2026 Coach Jim Craig Memorial-CLOSED
 2026-01-11 | Geneva Vikings Youth Tournament
 2026-01-11 | Devils Gauntlet Battle for the Belts
-2026-01-11 | Mt Zion Kids Club Open
-2026-01-11 | Pontiac Kids Open
+2026-01-11 | Mt Zion kids club open
+2026-01-11 | Pontiac Kids Open 2026
 2026-01-11 | JAWS Battle in the Bowl"""
-
-# TODO: Rename **ALL** tournaments where it is inexact name match
-#       (rename in here, in README, and JSON filename)
-# TODO: Wrong: 'Betty Martinez Memorial' :: Right: '2025 Betty Martinez Memorial'
-# TODO: Wrong: 'Reindeer Rumble' :: Right: '2025 Naperville Reindeer Rumble'
-# TODO: Wrong: 'Dave Mattio Classic' :: Right: '2025 Dave Mattio Classic'
-# TODO: Wrong: 'Sandwich WinterWonderSlam' :: Right: '2025 Sandwich WinterWonderSLAM'
-# TODO: Wrong: 'Junior Midlands' :: Right: 'Junior Midlands @ Northwestern University'
-# TODO: Wrong: 'Boneyard Bash' :: Right: '2026 Boneyard Bash ELITE & ROOKIE'
-# TODO: Wrong: 'Hillsboro Jr. Topper Tournament' ::
-#                  Right: '2026 Hillsboro Jr. Topper Tournament'
-# TODO: Wrong: 'Double D Demolition' :: Right: 'Double D Demolition (SVWC Tournament)'
-# TODO: Wrong: 'Midwest Classic' :: Right: 'The Midwest Classic 2026'
-# TODO: Wrong: 'Monticello Youth Open' :: Right: 'Monticello Youth Open 2026'
-# TODO: Wrong: 'Little Giant Holiday Hammer' :: Right: 'The Little Giant Holiday Hammer'
-# TODO: Wrong: 'Crushing Christmas Classic' ::
-#                  Right: 'Crushing Christmas Classic-Coal City'
-# TODO: Wrong: 'Bob Jahn Memorial' :: Right: '2026 Bob Jahn Memorial'
-# TODO: Wrong: 'Batavia Classic' :: Right: 'Batavia Classic Wrestling Tournament'
-# TODO: Wrong: 'Coach Jim Craig Memorial' ::
-#                  Right: '2026 Coach Jim Craig Memorial-CLOSED'
-# TODO: Wrong: 'Mt Zion Kids Club Open' :: Right: 'Mt Zion kids club open'
-# TODO: Wrong: 'Pontiac Kids Open' :: Right: 'Pontiac Kids Open 2026'
 
 
 def _to_kebab_case(name: str) -> str:
