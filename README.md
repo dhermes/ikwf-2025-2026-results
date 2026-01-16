@@ -33,53 +33,49 @@
 | :white_check_mark: |        | 2025-12-07 | Tiger Takedown                                                      | TrackWrestling |
 | :white_check_mark: |        | 2025-12-07 | 42nd Annual Bulls Wrestling Tournament                              | USA Bracketing |
 | :white_check_mark: |        | 2025-12-13 | 2025 O`Fallon Beginners/Girls Open                                  | TrackWrestling |
-|                    |        | 2025-12-13 | Mattoon Beginners Tournament                                        | TrackWrestling |
-|                    |        | 2025-12-14 | 2025 Beat the Streets Youth Brawl                                   | TrackWrestling |
-|                    |        | 2025-12-14 | 2025 Hub City Hammer Duals                                          | TrackWrestling |
-|                    |        | 2025-12-14 | 2025 Orland Park Pioneer KickOff Classic                            | TrackWrestling |
-|                    |        | 2025-12-14 | ACES Rumble                                                         | TrackWrestling |
-|                    |        | 2025-12-14 | Countdown to Christmas DGWC                                         | TrackWrestling |
-|                    |        | 2025-12-14 | December 2025 Lil Reapers Wrestling Classic                         | TrackWrestling |
-|                    |        | 2025-12-14 | John Nagy Throwdown 2025                                            | TrackWrestling |
-|                    |        | 2025-12-14 | Rumble on the Red                                                   | TrackWrestling |
+| :white_check_mark: |        | 2025-12-13 | Mattoon Beginners Tournament                                        | TrackWrestling |
+| :white_check_mark: |        | 2025-12-14 | 2025 Beat the Streets Youth Brawl                                   | TrackWrestling |
+| :white_check_mark: |        | 2025-12-14 | 2025 Hub City Hammer Duals                                          | TrackWrestling |
+| :white_check_mark: |        | 2025-12-14 | 2025 Orland Park Pioneer KickOff Classic                            | TrackWrestling |
+| :white_check_mark: |        | 2025-12-14 | ACES Rumble                                                         | TrackWrestling |
+| :white_check_mark: |        | 2025-12-14 | Countdown to Christmas DGWC                                         | TrackWrestling |
+| :white_check_mark: |        | 2025-12-14 | December 2025 Lil Reapers Wrestling Classic                         | TrackWrestling |
+| :white_check_mark: |        | 2025-12-14 | John Nagy Throwdown 2025                                            | TrackWrestling |
+| :white_check_mark: |        | 2025-12-14 | Rumble on the Red                                                   | TrackWrestling |
 | :white_check_mark: |        | 2025-12-14 | CICC Classic                                                        | USA Bracketing |
 | :white_check_mark: |        | 2025-12-14 | Wilbur Borrero Classic                                              | USA Bracketing |
-|                    |        | 2025-12-21 | 2025 Mat Rat Invitational                                           | TrackWrestling |
-|                    |        | 2025-12-21 | 2025 Yeti Bash/Morris Kids WC                                       | TrackWrestling |
-|                    |        | 2025-12-21 | 309 Winter Classic                                                  | TrackWrestling |
-|                    |        | 2025-12-21 | Bulldog Brawl                                                       | TrackWrestling |
-|                    |        | 2025-12-21 | Clinton Challenge                                                   | TrackWrestling |
-|                    |        | 2025-12-21 | Cumberland Kids Open 2025                                           | TrackWrestling |
-|                    |        | 2025-12-21 | Darby Pool Wrestling Tournament                                     | TrackWrestling |
-|                    |        | 2025-12-21 | Highland Howl Jarron Haberer memorial                               | TrackWrestling |
-|                    |        | 2025-12-21 | Joe Tholl Sr. ELITE/OPEN 2025                                       | TrackWrestling |
+| :white_check_mark: |        | 2025-12-21 | 2025 Mat Rat Invitational                                           | TrackWrestling |
+| :white_check_mark: |        | 2025-12-21 | 2025 Yeti Bash/Morris Kids WC                                       | TrackWrestling |
+| :white_check_mark: |        | 2025-12-21 | 309 Winter Classic                                                  | TrackWrestling |
+| :white_check_mark: |        | 2025-12-21 | Bulldog Brawl                                                       | TrackWrestling |
+| :white_check_mark: |        | 2025-12-21 | Clinton Challenge                                                   | TrackWrestling |
+| :white_check_mark: |        | 2025-12-21 | Cumberland Kids Open 2025                                           | TrackWrestling |
+| :white_check_mark: |        | 2025-12-21 | Darby Pool Wrestling Tournament                                     | TrackWrestling |
+| :white_check_mark: |        | 2025-12-21 | Highland Howl Jarron Haberer memorial                               | TrackWrestling |
+| :white_check_mark: |        | 2025-12-21 | Joe Tholl Sr. ELITE/OPEN 2025                                       | TrackWrestling |
 | :white_check_mark: |        | 2025-12-21 | 2025 Rocket Blast                                                   | USA Bracketing |
 | :white_check_mark: |        | 2025-12-21 | Jr. Porter Invite                                                   | USA Bracketing |
 | :white_check_mark: |        | 2025-12-21 | Spartan Beginner Tournament                                         | USA Bracketing |
 | :white_check_mark: |        | 2025-12-21 | Stillman Valley Holiday Tournament                                  | USA Bracketing |
-|                    |        | 2025-12-27 | Betty Martinez Memorial                                             | TrackWrestling |
-|                    |        | 2025-12-27 | D/C Bolts New Years Bash                                            |                |
-|                    |        | 2025-12-27 | Roughnecks Christmas Classic                                        |                |
-|                    |        | 2025-12-28 | Brawlers Brawl 2025                                                 |                |
-|                    |        | 2025-12-28 | Reindeer Rumble                                                     |                |
-|                    |        | 2025-12-28 | Dave Mattio Classic                                                 |                |
-|                    |        | 2025-12-28 | Crawford County Open                                                |                |
-|                    |        | 2025-12-28 | Sandwich WinterWonderSlam                                           |                |
-|                    |        | 2025-12-28 | Junior Midlands                                                     |                |
+| :white_check_mark: |        | 2025-12-27 | Betty Martinez Memorial                                             | TrackWrestling |
+| :white_check_mark: |        | 2025-12-28 | Reindeer Rumble                                                     | TrackWrestling |
+| :white_check_mark: |        | 2025-12-28 | Dave Mattio Classic                                                 | TrackWrestling |
+| :white_check_mark: |        | 2025-12-28 | Crawford County Open                                                | TrackWrestling |
+| :white_check_mark: |        | 2025-12-28 | Sandwich WinterWonderSlam                                           | TrackWrestling |
+| :white_check_mark: |        | 2025-12-28 | Junior Midlands                                                     | TrackWrestling |
 | :white_check_mark: |        | 2025-12-28 | Granite City Kids Holiday Classic                                   | USA Bracketing |
 | :white_check_mark: |        | 2025-12-30 | Rockford Bad Boys & Girls Open                                      | USA Bracketing |
-|                    |        | 2025-12-31 | Cadet Classic                                                       |                |
-|                    |        | 2026-01-03 | Boneyard Bash                                                       |                |
-|                    |        | 2026-01-03 | Hillsboro Jr. Toppers Tournament                                    |                |
-|                    |        | 2026-01-03 | Double D Demolition                                                 |                |
-|                    |        | 2026-01-04 | Brady Girls Open                                                    |                |
-|                    |        | 2026-01-04 | Oak Lawn Acorn Rookie Rumble                                        |                |
-|                    |        | 2026-01-04 | Midwest Classic                                                     |                |
-|                    |        | 2026-01-04 | Monticello Youth Open                                               |                |
-|                    |        | 2026-01-04 | Little Giant Holiday Hammer                                         |                |
-|                    |        | 2026-01-04 | Crushing Christmas Classic                                          |                |
-|                    |        | 2026-01-04 | Bob Jahn Memorial                                                   |                |
-|                    |        | 2026-01-04 | Mattoon YWC Bonic Battle for the Belt                               |                |
+| :white_check_mark: |        | 2025-12-31 | Cadet Classic                                                       | TrackWrestling |
+| :white_check_mark: |        | 2026-01-03 | Boneyard Bash                                                       | TrackWrestling |
+| :white_check_mark: |        | 2026-01-03 | Hillsboro Jr. Topper Tournament                                     | TrackWrestling |
+| :white_check_mark: |        | 2026-01-03 | Double D Demolition                                                 | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Oak Lawn Acorn Rookie Rumble                                        | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Midwest Classic                                                     | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Monticello Youth Open                                               | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Little Giant Holiday Hammer                                         | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Crushing Christmas Classic                                          | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Bob Jahn Memorial                                                   | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Mattoon YWC - Bonic Battle for the Belt                             | TrackWrestling |
 |                    |        | 2026-01-04 | Peyton Smith Open hosted by BWC                                     |                |
 | :white_check_mark: |        | 2026-01-04 | IKWF Southern Dual Meet Divisional                                  | USA Bracketing |
 |                    |        | 2026-01-10 | Didi Duals                                                          |                |
