@@ -85,7 +85,7 @@ def main() -> None:
             print(f"Skipping: {name} ...")
             continue
 
-        tournament = trackwrestling.Tournament(
+        tournament = bracket_util.Tournament(
             name=name, start_date=None, end_date=date_str
         )
 

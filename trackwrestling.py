@@ -1,4 +1,3 @@
-import datetime
 import os
 import time
 
@@ -8,6 +7,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC  # noqa: N812
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
+import bracket_util
+
 _WAIT_TIME = 3
 _BOUT_FORMAT = (
     "[boutType] :: [wFName] :: [wLName] :: [wTeam] :: [winType] :: "
@@ -16,21 +17,15 @@ _BOUT_FORMAT = (
 _VERBOSE = "VERBOSE" in os.environ
 
 
+class _ForbidExtra(pydantic.BaseModel):
+    model_config = pydantic.ConfigDict(extra="forbid", populate_by_name=True)
+
+
 def _debug(message: str) -> None:
     if not _VERBOSE:
         return
 
     print(message)
-
-
-class _ForbidExtra(pydantic.BaseModel):
-    model_config = pydantic.ConfigDict(extra="forbid", populate_by_name=True)
-
-
-class Tournament(_ForbidExtra):
-    name: str
-    start_date: datetime.date | None
-    end_date: datetime.date
 
 
 def _main_page_click_events_classic(driver: webdriver.Chrome) -> None:
@@ -273,7 +268,7 @@ def _capture_round_html(
     return tw_list_html
 
 
-def _open_tournament(tournament: Tournament) -> webdriver.Chrome:
+def _open_tournament(tournament: bracket_util.Tournament) -> webdriver.Chrome:
     end_date = tournament.end_date
     start_date = tournament.start_date or end_date
     search_inputs = {
@@ -307,7 +302,7 @@ def _open_tournament(tournament: Tournament) -> webdriver.Chrome:
     return driver
 
 
-def fetch_tournament_rounds(tournament: Tournament) -> dict[str, str]:
+def fetch_tournament_rounds(tournament: bracket_util.Tournament) -> dict[str, str]:
     driver = _open_tournament(tournament)
     _click_results_sidebar_option(driver)
     _click_round_results_option(driver)
@@ -421,7 +416,7 @@ def _capture_weight_html(
     return tw_list_html
 
 
-def fetch_dual_weights(tournament: Tournament) -> dict[str, str]:
+def fetch_dual_weights(tournament: bracket_util.Tournament) -> dict[str, str]:
     driver = _open_tournament(tournament)
     _click_results_sidebar_option(driver)
     _click_weight_results_option(driver)
