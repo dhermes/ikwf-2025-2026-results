@@ -27,6 +27,7 @@
 | :white_check_mark: |        | 2025-12-07 | Capture the Eagle                                                   | TrackWrestling |
 | :white_check_mark: |        | 2025-12-07 | Elias George Memorial 2025                                          | TrackWrestling |
 | :white_check_mark: |        | 2025-12-07 | Fox Lake Beginners Tournament                                       | TrackWrestling |
+| :white_check_mark: |        | 2025-12-07 | Lawrence County Knights Terry Hoke Open                             | TrackWrestling |
 | :white_check_mark: |        | 2025-12-07 | Lil` Coalers Clash                                                  | TrackWrestling |
 | :white_check_mark: |        | 2025-12-07 | Lincoln Railer Rumble 2025                                          | TrackWrestling |
 | :white_check_mark: |        | 2025-12-07 | Peoria Razorback Season Opener                                      | TrackWrestling |
@@ -34,6 +35,7 @@
 | :white_check_mark: |        | 2025-12-07 | 42nd Annual Bulls Wrestling Tournament                              | USA Bracketing |
 | :white_check_mark: |        | 2025-12-13 | 2025 O`Fallon Beginners/Girls Open                                  | TrackWrestling |
 | :white_check_mark: |        | 2025-12-13 | Mattoon Beginners Tournament                                        | TrackWrestling |
+| :white_check_mark: |        | 2025-12-13 | Roxana Rumble                                                       | TrackWrestling |
 | :white_check_mark: |        | 2025-12-14 | 2025 Beat the Streets Youth Brawl                                   | TrackWrestling |
 | :white_check_mark: |        | 2025-12-14 | 2025 Hub City Hammer Duals                                          | TrackWrestling |
 | :white_check_mark: |        | 2025-12-14 | 2025 Orland Park Pioneer KickOff Classic                            | TrackWrestling |
@@ -44,6 +46,7 @@
 | :white_check_mark: |        | 2025-12-14 | Rumble on the Red                                                   | TrackWrestling |
 | :white_check_mark: |        | 2025-12-14 | CICC Classic                                                        | USA Bracketing |
 | :white_check_mark: |        | 2025-12-14 | Wilbur Borrero Classic                                              | USA Bracketing |
+| :white_check_mark: |        | 2025-12-20 | 2025 Edwardsville Open                                              | USA Bracketing |
 | :white_check_mark: |        | 2025-12-21 | 2025 Mat Rat Invitational                                           | TrackWrestling |
 | :white_check_mark: |        | 2025-12-21 | 2025 Yeti Bash/Morris Kids WC                                       | TrackWrestling |
 | :white_check_mark: |        | 2025-12-21 | 309 Winter Classic                                                  | TrackWrestling |
@@ -58,10 +61,11 @@
 | :white_check_mark: |        | 2025-12-21 | Spartan Beginner Tournament                                         | USA Bracketing |
 | :white_check_mark: |        | 2025-12-21 | Stillman Valley Holiday Tournament                                  | USA Bracketing |
 | :white_check_mark: |        | 2025-12-27 | 2025 Betty Martinez Memorial                                        | TrackWrestling |
-| :white_check_mark: |        | 2025-12-28 | 2025 Naperville Reindeer Rumble                                     | TrackWrestling |
+| :white_check_mark: |        | 2025-12-27 | D/C Bolt New Years Bash                                             | TrackWrestling |
 | :white_check_mark: |        | 2025-12-28 | 2025 Dave Mattio Classic                                            | TrackWrestling |
-| :white_check_mark: |        | 2025-12-28 | Crawford County Open                                                | TrackWrestling |
+| :white_check_mark: |        | 2025-12-28 | 2025 Naperville Reindeer Rumble                                     | TrackWrestling |
 | :white_check_mark: |        | 2025-12-28 | 2025 Sandwich WinterWonderSLAM                                      | TrackWrestling |
+| :white_check_mark: |        | 2025-12-28 | Crawford County Open                                                | TrackWrestling |
 | :white_check_mark: |        | 2025-12-28 | Junior Midlands @ Northwestern University                           | TrackWrestling |
 | :white_check_mark: |        | 2025-12-28 | Granite City Kids Holiday Classic                                   | USA Bracketing |
 | :white_check_mark: |        | 2025-12-30 | Rockford Bad Boys & Girls Open                                      | USA Bracketing |
@@ -69,25 +73,25 @@
 | :white_check_mark: |        | 2026-01-03 | 2026 Boneyard Bash ELITE & ROOKIE                                   | TrackWrestling |
 | :white_check_mark: |        | 2026-01-03 | 2026 Hillsboro Jr. Topper Tournament                                | TrackWrestling |
 | :white_check_mark: |        | 2026-01-03 | Double D Demolition (SVWC Tournament)                               | TrackWrestling |
-| :white_check_mark: |        | 2026-01-04 | Oak Lawn Acorn Rookie Rumble                                        | TrackWrestling |
-| :white_check_mark: |        | 2026-01-04 | THE Midwest Classic 2026                                            | TrackWrestling |
-| :white_check_mark: |        | 2026-01-04 | Monticello Youth Open 2026                                          | TrackWrestling |
-| :white_check_mark: |        | 2026-01-04 | The Little Giant Holiday Hammer                                     | TrackWrestling |
-| :white_check_mark: |        | 2026-01-04 | Crushing Christmas Classic-Coal City                                | TrackWrestling |
 | :white_check_mark: |        | 2026-01-04 | 2026 Bob Jahn Memorial                                              | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Crushing Christmas Classic-Coal City                                | TrackWrestling |
 | :white_check_mark: |        | 2026-01-04 | Mattoon YWC - Bonic Battle for the Belt                             | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Monticello Youth Open 2026                                          | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | Oak Lawn Acorn Rookie Rumble                                        | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | The Little Giant Holiday Hammer                                     | TrackWrestling |
+| :white_check_mark: |        | 2026-01-04 | THE Midwest Classic 2026                                            | TrackWrestling |
 | :white_check_mark: |        | 2026-01-04 | IKWF Southern Dual Meet Divisional                                  | USA Bracketing |
-| :white_check_mark: |        | 2026-01-10 | The Didi Duals 2026                                                 | TrackWrestling |
 | :white_check_mark: |        | 2026-01-10 | Hawk Wrestling Club Invitational                                    | TrackWrestling |
+| :white_check_mark: |        | 2026-01-10 | The Didi Duals 2026                                                 | TrackWrestling |
 | :white_check_mark: |        | 2026-01-10 | Stillman Valley Beginners Tournament                                | USA Bracketing |
-| :white_check_mark: |        | 2026-01-11 | Batavia Classic Wrestling Tournament                                | TrackWrestling |
-| :white_check_mark: |        | 2026-01-11 | 2026CarbondaleDogFight&AlliRaganGirlsOpn                            | TrackWrestling |
 | :white_check_mark: |        | 2026-01-11 | 2026 Coach Jim Craig Memorial-CLOSED                                | TrackWrestling |
-| :white_check_mark: |        | 2026-01-11 | Geneva Vikings Youth Tournament                                     | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | 2026CarbondaleDogFight&AlliRaganGirlsOpn                            | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | Batavia Classic Wrestling Tournament                                | TrackWrestling |
 | :white_check_mark: |        | 2026-01-11 | Devils Gauntlet Battle for the Belts                                | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | Geneva Vikings Youth Tournament                                     | TrackWrestling |
+| :white_check_mark: |        | 2026-01-11 | JAWS Battle in the Bowl                                             | TrackWrestling |
 | :white_check_mark: |        | 2026-01-11 | Mt Zion kids club open                                              | TrackWrestling |
 | :white_check_mark: |        | 2026-01-11 | Pontiac Kids Open 2026                                              | TrackWrestling |
-| :white_check_mark: |        | 2026-01-11 | JAWS Battle in the Bowl                                             | TrackWrestling |
 | :white_check_mark: |        | 2026-01-11 | Chauncey Carrick Good Guys Tournament                               | USA Bracketing |
 | :white_check_mark: |        | 2026-01-11 | Morton Youth Wrestling 2026                                         | USA Bracketing |
 | :white_check_mark: |        | 2026-01-11 | Spartan 300                                                         | USA Bracketing |

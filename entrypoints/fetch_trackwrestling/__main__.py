@@ -17,12 +17,14 @@ _TOURNAMENTS = """\
 2025-12-07 | Capture the Eagle
 2025-12-07 | Elias George Memorial 2025
 2025-12-07 | Fox Lake Beginners Tournament
+2025-12-07 | Lawrence County Knights Terry Hoke Open
 2025-12-07 | Lil` Coalers Clash
 2025-12-07 | Lincoln Railer Rumble 2025
 2025-12-07 | Peoria Razorback Season Opener
 2025-12-07 | Tiger Takedown
 2025-12-13 | 2025 O`Fallon Beginners/Girls Open
 2025-12-13 | Mattoon Beginners Tournament
+2025-12-13 | Roxana Rumble
 2025-12-14 | 2025 Beat the Streets Youth Brawl
 2025-12-14 | 2025 Orland Park Pioneer KickOff Classic
 2025-12-14 | ACES Rumble
@@ -30,6 +32,7 @@ _TOURNAMENTS = """\
 2025-12-14 | December 2025 Lil Reapers Wrestling Classic
 2025-12-14 | John Nagy Throwdown 2025
 2025-12-14 | Rumble on the Red
+2025-12-20 | 2025 Edwardsville Open
 2025-12-21 | 2025 Mat Rat Invitational
 2025-12-21 | 2025 Yeti Bash/Morris Kids WC
 2025-12-21 | 309 Winter Classic
@@ -40,6 +43,7 @@ _TOURNAMENTS = """\
 2025-12-21 | Highland Howl Jarron Haberer memorial
 2025-12-21 | Joe Tholl Sr. ELITE/OPEN 2025
 2025-12-27 | 2025 Betty Martinez Memorial
+2025-12-27 | D/C Bolt New Years Bash
 2025-12-28 | 2025 Naperville Reindeer Rumble
 2025-12-28 | 2025 Dave Mattio Classic
 2025-12-28 | Crawford County Open
