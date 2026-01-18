@@ -226,11 +226,11 @@ class _OptionInfo(_ForbidExtra):
 
 
 def _all_round_option_values(driver: webdriver.Chrome) -> list[_OptionInfo]:
-    select_elem = WebDriverWait(driver, _WAIT_TIME).until(
+    select_element = WebDriverWait(driver, _WAIT_TIME).until(
         EC.presence_of_element_located((By.ID, "round_ids"))
     )
 
-    select = Select(select_elem)
+    select = Select(select_element)
 
     options: list[_OptionInfo] = []
     for opt in select.options:
@@ -309,6 +309,111 @@ def fetch_tournament_rounds(
             raise KeyError("Duplicate key", key)
 
         html = _capture_round_html(driver, option, original_window)
+        if html is not None:
+            captured_html[key] = html
+
+    driver.quit()
+
+    return captured_html
+
+
+def _choose_weight_result_bouts(driver: webdriver.Chrome) -> None:
+    # Wait until the report <select> is clickable
+    report_select_element = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.element_to_be_clickable((By.ID, "report"))
+    )
+
+    # Wrap it in Selenium's Select
+    report_select = Select(report_select_element)
+
+    # Select the option by value
+    report_select.select_by_value("weight_results")
+
+
+def _all_weight_option_values(driver: webdriver.Chrome) -> list[_OptionInfo]:
+    select_element = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.ID, "weight_ids"))
+    )
+
+    select = Select(select_element)
+
+    options: list[_OptionInfo] = []
+    for opt in select.options:
+        options.append(
+            _OptionInfo(value=opt.get_attribute("value"), label=opt.text.strip())
+        )
+
+    return options
+
+
+def _capture_weight_html(
+    driver: webdriver.Chrome, option_info: _OptionInfo, original_window: str
+) -> str | None:
+    # Clear old weights and pick round ID
+    weight_select_outer = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.ID, "weight_ids"))
+    )
+    weight_select = Select(weight_select_outer)
+    weight_select.deselect_all()
+    time.sleep(0.05)
+    weight_select.select_by_value(option_info.value)
+    time.sleep(0.05)
+
+    # Click "Submit"
+    submit_xpath = "//button[normalize-space()='Submit']"
+    submit_button = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.element_to_be_clickable((By.XPATH, submit_xpath))
+    )
+    submit_button.click()
+
+    # Wait until the new tab exists
+    WebDriverWait(driver, _WAIT_TIME).until(_has_multiple_tabs)
+
+    # Switch to the new tab
+    new_handles = [
+        handle for handle in driver.window_handles if handle != original_window
+    ]
+    (new_window,) = new_handles
+    driver.switch_to.window(new_window)
+
+    # Wait until content finishes loading
+    WebDriverWait(driver, _LONG_CONTENT_WAIT_TIME).until(
+        EC.url_contains("/printing/duals")
+    )
+
+    # Grab the full HTML for the bracket once loaded
+    root_div_element = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located(
+            (By.CSS_SELECTOR, "body > div[style='font-size:12pt;']")
+        )
+    )
+    weight_html = root_div_element.get_attribute("outerHTML")
+
+    # Close the current tab
+    driver.close()
+
+    # Back to original tab
+    driver.switch_to.window(original_window)
+
+    return weight_html
+
+
+def fetch_dual_weights(
+    tournament: bracket_util.Tournament, login_info: LoginInfo
+) -> dict[str, str]:
+    driver = _open_tournament(tournament, login_info)
+    _click_results(driver)
+    _choose_weight_result_bouts(driver)
+    all_weights = _all_weight_option_values(driver)
+
+    original_window = driver.current_window_handle
+    captured_html: dict[str, str] = {}
+    for option in all_weights:
+        key = option.label
+        if key in captured_html:
+            raise KeyError("Duplicate key", key)
+
+        html = _capture_weight_html(driver, option, original_window)
         if html is not None:
             captured_html[key] = html
 
