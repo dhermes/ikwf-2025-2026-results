@@ -77,7 +77,7 @@
 | :white_check_mark: |        | 2026-01-04 | 2026 Bob Jahn Memorial                                              | TrackWrestling |
 | :white_check_mark: |        | 2026-01-04 | Mattoon YWC - Bonic Battle for the Belt                             | TrackWrestling |
 | :white_check_mark: |        | 2026-01-04 | IKWF Southern Dual Meet Divisional                                  | USA Bracketing |
-|                    |        | 2026-01-10 | Didi Duals                                                          | TrackWrestling |
+| :white_check_mark: |        | 2026-01-10 | The Didi Duals 2026                                                 | TrackWrestling |
 | :white_check_mark: |        | 2026-01-10 | Hawk Wrestling Club Invitational                                    | TrackWrestling |
 | :white_check_mark: |        | 2026-01-10 | Stillman Valley Beginners Tournament                                | USA Bracketing |
 | :white_check_mark: |        | 2026-01-11 | Batavia Classic Wrestling Tournament                                | TrackWrestling |

@@ -95,6 +95,12 @@ def _search_results_click_first(driver: webdriver.Chrome, name: str) -> str:
     )
     event_name = event_name_span.text.strip()
 
+    anchor_link = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.element_to_be_clickable((By.ID, "anchor_0"))
+    )
+
+    anchor_link.click()
+
     return event_name
 
 
@@ -267,7 +273,7 @@ def _capture_round_html(
     return tw_list_html
 
 
-def fetch_tournament_rounds(tournament: Tournament) -> dict[str, str]:
+def _open_tournament(tournament: Tournament) -> webdriver.Chrome:
     end_date = tournament.end_date
     start_date = tournament.start_date or end_date
     search_inputs = {
@@ -297,6 +303,12 @@ def fetch_tournament_rounds(tournament: Tournament) -> dict[str, str]:
 
     _event_box_change_user_type(driver)
     _event_box_click_enter_event(driver)
+
+    return driver
+
+
+def fetch_tournament_rounds(tournament: Tournament) -> dict[str, str]:
+    driver = _open_tournament(tournament)
     _click_results_sidebar_option(driver)
     _click_round_results_option(driver)
     all_rounds = _all_round_option_values(driver)
@@ -311,6 +323,120 @@ def fetch_tournament_rounds(tournament: Tournament) -> dict[str, str]:
             raise KeyError("Duplicate key", key)
 
         html = _capture_round_html(driver, option)
+        if html is not None:
+            captured_html[key] = html
+
+    driver.quit()
+
+    return captured_html
+
+
+def _click_weight_results_option(driver: webdriver.Chrome) -> None:
+    # Wait for the iframe to be available
+    iframe = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.ID, "PageFrame"))
+    )
+
+    # Switch to the iframe
+    driver.switch_to.frame(iframe)
+
+    # Wait for the button to be clickable
+    weight_results = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.element_to_be_clickable((By.LINK_TEXT, "Weight Results"))
+    )
+    # Click the button
+    weight_results.click()
+
+    # Switch back to the main page
+    driver.switch_to.default_content()
+
+
+def _all_weight_option_values(driver: webdriver.Chrome) -> list[_OptionInfo]:
+    # Wait for the iframe to be available
+    iframe = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.ID, "PageFrame"))
+    )
+
+    # Switch to the iframe
+    driver.switch_to.frame(iframe)
+
+    select_elem = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.ID, "groupBox"))
+    )
+
+    select = Select(select_elem)
+
+    options: list[_OptionInfo] = []
+    for opt in select.options:
+        options.append(
+            _OptionInfo(value=opt.get_attribute("value"), label=opt.text.strip())
+        )
+
+    # Switch back to the main page
+    driver.switch_to.default_content()
+
+    return options
+
+
+def _capture_weight_html(
+    driver: webdriver.Chrome, option_info: _OptionInfo
+) -> str | None:
+    # Wait for the iframe to be available
+    _debug(":: Switching to <iframe>")
+    iframe = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.ID, "PageFrame"))
+    )
+    driver.switch_to.frame(iframe)
+    time.sleep(0.05)
+
+    # Update <select> for desired option
+    _debug(f":: Changing <option>; {option_info.value!r}")
+    xpath_query = f"//option[@value='{option_info.value}']"
+    option = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.element_to_be_clickable((By.XPATH, xpath_query))
+    )
+    option.click()
+
+    # Wait until <h1>{weight} results<h1> is visible
+    results_text = f"{option_info.label} Results"
+    WebDriverWait(driver, _WAIT_TIME).until(
+        EC.text_to_be_present_in_element((By.TAG_NAME, "h1"), results_text)
+    )
+
+    # Find the element we intend to capture `<section class="tw-list">`
+    _debug(":: Capturing HTML")
+    tw_lists = driver.find_elements(By.CSS_SELECTOR, "section.tw-list")
+    if len(tw_lists) == 0:
+        tw_list_html = None
+    elif len(tw_lists) == 1:
+        tw_list = tw_lists[0]
+        # Get the outerHTML of the `<section class="tw-list">` element
+        tw_list_html = tw_list.get_attribute("outerHTML")
+    else:
+        raise RuntimeError("Unexpected number of weight results", option_info)
+
+    # Switch back to the main page (if needed)
+    driver.switch_to.default_content()
+
+    return tw_list_html
+
+
+def fetch_dual_weights(tournament: Tournament) -> dict[str, str]:
+    driver = _open_tournament(tournament)
+    _click_results_sidebar_option(driver)
+    _click_weight_results_option(driver)
+    all_weights = _all_weight_option_values(driver)
+
+    captured_html: dict[str, str] = {}
+    for option in all_weights:
+        if option.value == "" and option.label == "":
+            continue
+
+        key = option.label
+        if key in captured_html:
+            raise KeyError("Duplicate key", key)
+
+        html = _capture_weight_html(driver, option)
         if html is not None:
             captured_html[key] = html
 

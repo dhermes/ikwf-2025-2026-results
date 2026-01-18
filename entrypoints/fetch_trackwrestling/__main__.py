@@ -1,14 +1,12 @@
 import json
 import pathlib
-import re
 
+import bracket_util
 import trackwrestling
 
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
 
-# TODO: 2025-12-14 | 2025 Hub City Hammer Duals
-# TODO: 2026-01-10 | Didi Duals
 _TOURNAMENTS = """\
 2025-12-06 | 2025 EWC Beginners and Girls Tournament
 2025-12-06 | Tots Bash
@@ -69,25 +67,6 @@ _TOURNAMENTS = """\
 2026-01-11 | JAWS Battle in the Bowl"""
 
 
-def _to_kebab_case(name: str) -> str:
-    # Lowercase
-    name = name.lower()
-
-    # Remove special characters
-    name = re.sub(r"[`~!@#$%^&*()=+\[\]{}\\|;:'\",<>/?]", "", name)
-
-    # Replace spaces or underscores with hyphen
-    name = re.sub(r"[ _]+", "-", name)
-
-    # Collapse multiple hyphens
-    name = re.sub(r"-+", "-", name)
-
-    # Strip leading/trailing hyphens
-    name = name.strip("-")
-
-    return name
-
-
 def main() -> None:
     raw_data_dir = _ROOT / "_raw-data"
     for row in _TOURNAMENTS.split("\n"):
@@ -95,7 +74,7 @@ def main() -> None:
         parent_dir = raw_data_dir / date_str
         parent_dir.mkdir(parents=True, exist_ok=True)
 
-        stem = _to_kebab_case(name)
+        stem = bracket_util.to_kebab_case(name)
         filename = f"{stem}.json"
         path = parent_dir / filename
         if path.exists():
