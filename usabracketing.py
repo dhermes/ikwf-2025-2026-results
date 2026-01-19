@@ -1,6 +1,8 @@
 import os
 import time
+from typing import Literal
 
+import bs4
 import pydantic
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -15,6 +17,9 @@ _ENV_USERNAME = "USA_BRACKETING_USERNAME"
 _ENV_PASSWORD = "USA_BRACKETING_PASSWORD"
 _OPTION_ILLINOIS_VALUE = "14"
 _OPTION_ILLINOIS_TEXT = "Illinois, USA"
+_P_STYLE_DIVISION = "margin-top: 10px; font-weight: bold;"
+_P_STYLE_ROUND_OR_BRACKET = "margin-top: 5px; font-weight: bold;"
+_PLACEHOLDER_TEXT = "[first_name] [last_name]"
 
 TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-07", "42nd Annual Bulls Wrestling Tournament"),
@@ -455,3 +460,256 @@ def fetch_dual_weights(
     driver.quit()
 
     return captured_html
+
+
+_ElementType = Literal["division", "round", "bracket", "match"]
+
+
+def _determine_division(division_text: str) -> bracket_util.Division | None:
+    normalized_text = division_text.lower()
+
+    if normalized_text == "girls":
+        return None
+
+    if normalized_text == "girls - tot":
+        return "girls_tot"
+
+    if normalized_text == "girls - bantam":
+        return "girls_bantam"
+    if normalized_text.startswith("girls bantam "):
+        return "girls_bantam"
+
+    if normalized_text == "girls - intermediate":
+        return "girls_intermediate"
+    if normalized_text.startswith("girls intermediate "):
+        return "girls_intermediate"
+
+    if normalized_text == "girls - novice":
+        return "girls_novice"
+    if normalized_text.startswith("girls novice "):
+        return "girls_novice"
+
+    if normalized_text == "girls - senior":
+        return "girls_senior"
+    if normalized_text.startswith("girls senior "):
+        return "girls_senior"
+    if normalized_text.startswith("senior girls "):
+        return "girls_senior"
+
+    ############################################################################
+
+    if normalized_text in ("tot", "tots", "boys - tot", "tots 6 & under"):
+        return "tot"
+    if normalized_text.startswith("tot "):
+        return "tot"
+
+    if normalized_text in ("bantam", "boys - bantam", "bantam 6, 7 & 8", "open-bantam"):
+        return "bantam"
+    if normalized_text.startswith("boys bantam "):
+        return "bantam"
+
+    if normalized_text in (
+        "intermediate",
+        "boys - intermediate",
+        "intermediate 8, 9 & 10",
+        "open-intermediate",
+        "elite-intermediate",
+    ):
+        return "intermediate"
+    if normalized_text.startswith("boys intermediate "):
+        return "intermediate"
+
+    if normalized_text in (
+        "novice",
+        "boys - novice",
+        "novice boys 10, 11 & 12",
+        "open-novice",
+        "elite-novice",
+    ):
+        return "novice"
+    if normalized_text.startswith("boys novice "):
+        return "novice"
+
+    if normalized_text in (
+        "senior",
+        "boys - senior",
+        "senior boys 12, 13 & 14",
+        "open-senior",
+        "elite-senior",
+    ):
+        return "senior"
+    if normalized_text.startswith("boys senior "):
+        return "senior"
+
+    raise NotImplementedError(division_text)
+
+
+def _determine_result_type(result: str) -> bracket_util.ResultType | None:
+    if result.startswith("Disq. "):
+        return None
+    if result == "Disq.":
+        return None
+
+    if result == "Rule":
+        return None
+
+    if result.startswith("Inj. "):
+        return None
+    if result == "Inj.":
+        return None
+
+    if result == "Def.":
+        return None
+
+    if result == "WIN":
+        return None
+
+    if result.startswith("SV "):
+        return "overtime"
+    if result.startswith("TB "):
+        return "overtime"
+    if result.startswith("Ult. "):
+        return "overtime"
+    if result.startswith("F.-SV "):
+        return "overtime"
+
+    if result.startswith("Dec. "):
+        return "decision"
+
+    if result.startswith("Maj. "):
+        return "major"
+
+    if result.startswith("T.F. "):
+        return "tech"
+
+    if result.startswith("F. "):
+        return "pin"
+    if result == "F.":
+        return "pin"
+
+    breakpoint()
+    raise NotImplementedError(result)
+
+
+def _parse_match_line(
+    event_name: str,
+    event_date: str,
+    division: str,
+    round_: str,
+    bracket: str,
+    match_text: str,
+) -> bracket_util.Match | None:
+    if _PLACEHOLDER_TEXT in match_text:
+        return None
+    if "Med. For. " in match_text:
+        return None
+
+    winner_full, remaining = match_text.split(") ")
+    result_abbreviation, remaining = remaining.split(" ", 1)
+    if result_abbreviation in ("For.", "vs."):
+        return None
+
+    winner, winner_team = winner_full.split(" (", 1)
+    loser_full, score_or_time = remaining.split("),")
+    score_or_time = score_or_time.strip()
+    result = f"{result_abbreviation} {score_or_time}"
+    result = result.strip()
+    loser, loser_team = loser_full.split(" (", 1)
+
+    result_type = _determine_result_type(result)
+    if result_type is None:
+        return None
+
+    return bracket_util.Match(
+        event_name=event_name,
+        event_date=event_date,
+        bracket=bracket,
+        round_=round_,
+        division=_determine_division(division),
+        winner=winner,
+        winner_team=winner_team,
+        loser=loser,
+        loser_team=loser_team,
+        result=result,
+        result_type=result_type,
+        source="usabracketing",
+    )
+
+
+def parse_tournament_round(
+    html: str, event_name: str, event_date: str
+) -> list[bracket_util.Match]:
+    """Parse a round from a tournament on TrackWrestling.
+
+    These will be of the form:
+
+        <div style="font-size: 12pt">
+          <p style="margin-top: 10px; font-weight: bold">Tots</p>
+          <p style="margin-top: 5px; font-weight: bold">Round 1</p>
+          <p style="margin-top: 10px; font-weight: bold">Bantam</p>
+          <p style="margin-top: 5px; font-weight: bold">Round 1</p>
+          <p style="margin-top: 5px; font-weight: bold">52B</p>
+          <p>{MATCH1 ...}</p>
+          <p>{MATCH2 ...}</p>
+          ...
+        </div>
+
+    I.e. the element is **ALWAYS** a <p> and the previous element + inline CSS
+    `style` is the only thing we can use to determine what type of element it
+    is.
+    """
+    round_matches: list[bracket_util.Match] = []
+
+    soup = bs4.BeautifulSoup(html, features="html.parser")
+    all_p = soup.find_all("p")
+
+    division: str | None = None
+    round_: str | None = None
+    bracket: str | None = None
+    previous_type: _ElementType | None = None
+    for entry_p in all_p:
+        style = entry_p.get("style")
+        entry_text = entry_p.text.strip()
+
+        if style == _P_STYLE_DIVISION:
+            if previous_type not in (None, "match", "round"):
+                raise RuntimeError("Unexpected style for division", entry_p)
+            division = entry_text
+            previous_type = "division"
+            continue
+
+        if style == _P_STYLE_ROUND_OR_BRACKET:
+            if previous_type == "division":
+                round_ = entry_text
+                previous_type = "round"
+                continue
+
+            if previous_type in ("round", "match"):
+                bracket = entry_text
+                previous_type = "bracket"
+                continue
+
+            raise RuntimeError("Unexpected style for entry", entry_p, previous_type)
+
+        if previous_type in ("match", "bracket"):
+            if division is None or round_ is None or bracket is None:
+                raise RuntimeError(
+                    "Unexpected style for match",
+                    entry_p,
+                    previous_type,
+                    division,
+                    round_,
+                    bracket,
+                )
+
+            previous_type = "match"
+            match_ = _parse_match_line(
+                event_name, event_date, division, round_, bracket, entry_text
+            )
+            if match_ is not None:
+                round_matches.append(match_)
+            continue
+
+        raise RuntimeError("Unexpected element", entry_p, previous_type)
+
+    return round_matches

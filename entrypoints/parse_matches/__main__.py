@@ -64,6 +64,9 @@ def _parse_usabracketing(raw_data_dir: pathlib.Path) -> list[bracket_util.Match]
         rounds = sorted(rounds_raw.keys())
         for round_ in rounds:
             html = rounds_raw[round_]
+            all_matches.extend(
+                usabracketing.parse_tournament_round(html, name, date_str)
+            )
 
     return all_matches
 
