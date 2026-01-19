@@ -38,34 +38,20 @@ _WIN_TYPE_MAP = {
     "won by disqualification over": None,
     "won by no contest over": None,
 }
-
-_WIN_TYPES = frozenset(
+# NOTE: The following matches appeared in Dual match outputs but do not
+#       include complete information, so they must be ignored.
+_ERRONEOUS_DUAL_MATCHES = frozenset(
     [
-        "won by decision over",
-        "won by major decision over",
-        "won by tech fall over",
-        "won by tech. fall over",
-        "won by fall over",
-        ###################################
-        "won in sudden victory - 1 over",
-        "won in tie breaker - 1 over",
-        "won in overtime over",
-        "won in double overtime over",
-        "won in SV-1 by fall over",
-        "won in the ultimate tie breaker over",
-        "won in sudden victory - 2 over",
-        ###################################
-        "won over",  # OTHER1
-        "received a bye",
-        "won by forfeit over",
-        "won by injury default over",
-        "won by medical forfeit over",
-        "won by disqualification over",
-        "won by no contest over",
-        "and",  # DFF (double forgeit)
+        (
+            "70 - Luke Bosack (Orland Park Pioneers (South Chicago)) over "
+            "Eddie Gergits (Demolition (South Chicago))"
+        ),
+        (
+            "90 - Gavin Garrity (Orland Park Pioneers (South Chicago)) over "
+            "Aiden Samanich (Lemont Bears WC (Central Chicago))"
+        ),
     ]
 )
-
 TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-06", "2025 EWC Beginners and Girls Tournament"),
     ("2025-12-06", "Tots Bash"),
@@ -667,14 +653,20 @@ def parse_tournament_round(
     return round_matches
 
 
-class DualMatchExtracted(_ForbidExtra):
+_DualMatchTuple = tuple[int, str, str, str]
+
+
+class _DualMatchExtracted(_ForbidExtra):
     weight: int
     winner: str
     loser: str
     result: str
 
+    def as_tuple(self) -> _DualMatchTuple:
+        return self.weight, self.winner, self.loser, self.result
 
-def _extract_match_li(match_li: bs4.Tag) -> DualMatchExtracted | None:
+
+def _extract_match_li(match_li: bs4.Tag) -> _DualMatchExtracted | None:
     children = match_li.contents
     if len(children) != 5:
         return None
@@ -682,6 +674,7 @@ def _extract_match_li(match_li: bs4.Tag) -> DualMatchExtracted | None:
     before, span1, middle, span2, after = children
     middle_text = middle.text.strip()
     if middle_text != "over":
+        breakpoint()
         return None
 
     if span1.name != "span" or span2.name != "span":
@@ -695,20 +688,150 @@ def _extract_match_li(match_li: bs4.Tag) -> DualMatchExtracted | None:
     winner = span1.text.strip()
     loser = span2.text.strip()
     result = after.text.strip()
-    return DualMatchExtracted(weight=weight, winner=winner, loser=loser, result=result)
+    return _DualMatchExtracted(weight=weight, winner=winner, loser=loser, result=result)
 
 
-def extract_dual_weight_matches(html: str) -> list[DualMatchExtracted]:
-    matches: list[DualMatchExtracted] = []
+_DualAthleteTuple = tuple[str, str]
+
+
+class _DualAthlete(_ForbidExtra):
+    name: str
+    team: str
+
+    def as_tuple(self) -> _DualAthleteTuple:
+        return self.name, self.team
+
+    def as_text(self) -> str:
+        return f"{self.name} ({self.team})"
+
+
+def _extract_dual_weight(
+    html: str,
+) -> tuple[list[_DualMatchExtracted], list[_DualAthlete]]:
+    matches: list[_DualMatchExtracted] = []
+    athletes: list[_DualAthlete] = []
 
     soup = bs4.BeautifulSoup(html, features="html.parser")
-    all_li = soup.find_all("li")
 
+    all_li = soup.find_all("li")
     for match_li in all_li:
+        if "Unknown (Unattached)" in match_li.text:
+            continue
+        if match_li.text in _ERRONEOUS_DUAL_MATCHES:
+            continue
+
         extracted = _extract_match_li(match_li)
         if extracted is None:
             raise RuntimeError("Unexpected match <li>", match_li)
 
         matches.append(extracted)
 
-    return matches
+    all_h2 = soup.find_all("h2")
+    for athlete_h2 in all_h2:
+        athlete_text = athlete_h2.text.strip()
+        name, remaining = athlete_text.split(" of ")
+        team, _ = remaining.split(" went ")
+        athlete = _DualAthlete(name=name, team=team)
+        athletes.append(athlete)
+
+    return matches, athletes
+
+
+def _extract_duals(
+    weights_raw: dict[str, str],
+) -> tuple[list[_DualMatchExtracted], list[_DualAthlete]]:
+    known_matches: set[_DualMatchTuple] = set()
+    all_extracted_matches: list[_DualMatchExtracted] = []
+
+    known_athletes: set[_DualAthleteTuple] = set()
+    all_extracted_athletes: list[_DualAthlete] = []
+
+    weights = sorted(weights_raw.keys())
+    for weight in weights:
+        html = weights_raw[weight]
+        extracted_matches, extracted_athletes = _extract_dual_weight(html)
+        for match_ in extracted_matches:
+            match_key = match_.as_tuple()
+            if match_key not in known_matches:
+                known_matches.add(match_key)
+                all_extracted_matches.append(match_)
+
+        for athlete in extracted_athletes:
+            athlete_key = athlete.as_tuple()
+            if athlete_key not in known_athletes:
+                known_athletes.add(athlete_key)
+                all_extracted_athletes.append(athlete)
+
+    return all_extracted_matches, all_extracted_athletes
+
+
+def _division_for_event(event_name: str) -> bracket_util.Division:
+    if event_name == "2025 Hub City Hammer Duals":
+        return "intermediate"
+    if event_name == "The Didi Duals 2026":
+        return "intermediate"
+
+    raise NotImplementedError(event_name)
+
+
+def _to_result_type(result: str) -> bracket_util.ResultType:
+    if result.startswith("SV-1 "):
+        return "overtime"
+    if result.startswith("TB-1 "):
+        return "overtime"
+    if result.startswith("Dec "):
+        return "decision"
+    if result.startswith("Maj "):
+        return "major"
+    if result.startswith("TF "):
+        return "tech"
+    if result.startswith("Fall "):
+        return "pin"
+    raise NotImplementedError(result)
+
+
+def _ignore_result(result: str) -> bool:
+    if result.startswith("Inj "):
+        return True
+    if result.startswith("MFF"):
+        return True
+
+    return False
+
+
+def parse_dual_event(
+    weights_raw: dict[str, str],
+    event_name: str,
+    event_date: str,
+) -> list[bracket_util.Match]:
+    extracted_matches, extracted_athletes = _extract_duals(weights_raw)
+    by_text = {athlete.as_text(): athlete for athlete in extracted_athletes}
+
+    all_matches: list[bracket_util.Match] = []
+
+    for match_ in extracted_matches:
+        result = match_.result
+        if _ignore_result(result):
+            continue
+
+        winner_athlete = by_text[match_.winner]
+        loser_athlete = by_text[match_.loser]
+
+        all_matches.append(
+            bracket_util.Match(
+                event_name=event_name,
+                event_date=event_date,
+                bracket=str(match_.weight),
+                round_="Dual",
+                division=_division_for_event(event_name),
+                winner=winner_athlete.name,
+                winner_team=winner_athlete.team,
+                loser=loser_athlete.name,
+                loser_team=loser_athlete.team,
+                result=result,
+                result_type=_to_result_type(result),
+                source="trackwrestling_dual",
+            )
+        )
+
+    return all_matches

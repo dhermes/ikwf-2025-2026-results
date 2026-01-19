@@ -33,7 +33,7 @@ def _parse_trackwrestling(raw_data_dir: pathlib.Path) -> list[bracket_util.Match
 
 
 def _parse_trackwrestling_duals(raw_data_dir: pathlib.Path) -> list[bracket_util.Match]:
-    all_extracted: list[str] = []
+    all_matches: list[bracket_util.Match] = []
 
     for date_str, name in trackwrestling.DUAL_EVENTS:
         parent_dir = raw_data_dir / date_str
@@ -44,13 +44,8 @@ def _parse_trackwrestling_duals(raw_data_dir: pathlib.Path) -> list[bracket_util
         with open(path) as file_obj:
             weights_raw = json.load(file_obj)
 
-        weights = sorted(weights_raw.keys())
-        for weight in weights:
-            html = weights_raw[weight]
-            all_extracted.extend(trackwrestling.extract_dual_weight_matches(html))
+        all_matches.extend(trackwrestling.parse_dual_event(weights_raw, name, date_str))
 
-    # TODO: Remove duplicates
-    all_matches: list[bracket_util.Match] = []
     return all_matches
 
 
