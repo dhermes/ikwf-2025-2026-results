@@ -7,7 +7,6 @@ import usabracketing
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
 
-# TODO: 2026-01-18 | Jon Davis Kids Open
 _TOURNAMENTS = """\
 2025-12-07 | 42nd Annual Bulls Wrestling Tournament
 2025-12-14 | CICC Classic
@@ -22,7 +21,8 @@ _TOURNAMENTS = """\
 2026-01-10 | Stillman Valley Beginners Tournament
 2026-01-11 | Chauncey Carrick Good Guys Tournament
 2026-01-11 | Morton Youth Wrestling 2026
-2026-01-11 | Spartan 300"""
+2026-01-11 | Spartan 300
+2026-01-18 | Jon Davis Kids Open"""
 
 
 def main() -> None:

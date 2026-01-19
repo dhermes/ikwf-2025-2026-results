@@ -220,6 +220,18 @@ def _choose_ap_bouts(driver: webdriver.Chrome) -> None:
     report_select.select_by_value("ap_bouts")
 
 
+def _allow_all_wrestlers(driver: webdriver.Chrome) -> None:
+    # Wait until the "My Wrestlers Only" <select> is clickable
+    my_wrestlers_select_element = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.element_to_be_clickable((By.ID, "my_wrestlers"))
+    )
+
+    my_wrestlers_select = Select(my_wrestlers_select_element)
+
+    # Select the option by value
+    my_wrestlers_select.select_by_value("")
+
+
 class _OptionInfo(_ForbidExtra):
     value: str
     label: str
@@ -299,6 +311,7 @@ def fetch_tournament_rounds(
     driver = _open_tournament(tournament, login_info)
     _click_results(driver)
     _choose_ap_bouts(driver)
+    _allow_all_wrestlers(driver)
     all_rounds = _all_round_option_values(driver)
 
     original_window = driver.current_window_handle
@@ -404,6 +417,7 @@ def fetch_dual_weights(
     driver = _open_tournament(tournament, login_info)
     _click_results(driver)
     _choose_weight_result_bouts(driver)
+    _allow_all_wrestlers(driver)
     all_weights = _all_weight_option_values(driver)
 
     original_window = driver.current_window_handle
