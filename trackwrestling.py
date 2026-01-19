@@ -800,9 +800,7 @@ def _ignore_result(result: str) -> bool:
 
 
 def parse_dual_event(
-    weights_raw: dict[str, str],
-    event_name: str,
-    event_date: str,
+    weights_raw: dict[str, str], event_name: str, event_date: str
 ) -> list[bracket_util.Match]:
     extracted_matches, extracted_athletes = _extract_duals(weights_raw)
     by_text = {athlete.as_text(): athlete for athlete in extracted_athletes}
