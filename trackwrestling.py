@@ -793,7 +793,7 @@ def _to_result_type(result: str) -> bracket_util.ResultType:
 def _ignore_result(result: str) -> bool:
     if result.startswith("Inj "):
         return True
-    if result.startswith("MFF"):
+    if result.startswith("MFF"):  # noqa: SIM103
         return True
 
     return False
