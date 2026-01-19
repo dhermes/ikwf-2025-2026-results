@@ -1,6 +1,7 @@
 import os
 import time
 
+import bs4
 import pydantic
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -15,6 +16,55 @@ _BOUT_FORMAT = (
     "[lFName] :: [lLName] :: [lTeam] :: [scoreSummary]"
 )
 _VERBOSE = "VERBOSE" in os.environ
+_WIN_TYPE_MAP = {
+    "won by decision over": "decision",
+    "won by major decision over": "major",
+    "won by tech fall over": "tech",
+    "won by tech. fall over": "tech",
+    "won by fall over": "pin",
+    ###################################
+    "won in sudden victory - 1 over": "overtime",
+    "won in tie breaker - 1 over": "overtime",
+    "won in overtime over": "overtime",
+    "won in double overtime over": "overtime",
+    "won in SV-1 by fall over": "overtime",
+    "won in the ultimate tie breaker over": "overtime",
+    "won in sudden victory - 2 over": "overtime",
+    ###################################
+    "received a bye": None,
+    "won by forfeit over": None,
+    "won by injury default over": None,
+    "won by medical forfeit over": None,
+    "won by disqualification over": None,
+    "won by no contest over": None,
+}
+
+_WIN_TYPES = frozenset(
+    [
+        "won by decision over",
+        "won by major decision over",
+        "won by tech fall over",
+        "won by tech. fall over",
+        "won by fall over",
+        ###################################
+        "won in sudden victory - 1 over",
+        "won in tie breaker - 1 over",
+        "won in overtime over",
+        "won in double overtime over",
+        "won in SV-1 by fall over",
+        "won in the ultimate tie breaker over",
+        "won in sudden victory - 2 over",
+        ###################################
+        "won over",  # OTHER1
+        "received a bye",
+        "won by forfeit over",
+        "won by injury default over",
+        "won by medical forfeit over",
+        "won by disqualification over",
+        "won by no contest over",
+        "and",  # DFF (double forgeit)
+    ]
+)
 
 TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-06", "2025 EWC Beginners and Girls Tournament"),
@@ -506,3 +556,159 @@ def fetch_dual_weights(tournament: bracket_util.Tournament) -> dict[str, str]:
     driver.quit()
 
     return captured_html
+
+
+def parse_tournament_round(
+    html: str, event_name: str, event_date: str
+) -> list[bracket_util.Match]:
+    """Parse a round from a tournament on TrackWrestling.
+
+    These will be of the form:
+
+        <section class="tw-list">
+          <h1>...</h1>
+          <h2>{BRACKET NAME}</h2>
+          <ul>
+            <li>{MATCH 1 ...}</li>
+            <li>{MATCH 2 ...}</li>
+          </ul>
+          ...
+        </section>
+    """
+    round_matches: list[bracket_util.Match] = []
+    soup = bs4.BeautifulSoup(html, features="html.parser")
+
+    all_h2 = soup.find_all("h2")
+    all_ul = soup.find_all("ul")
+    if len(all_h2) < len(all_ul):
+        raise RuntimeError(
+            "Unexpected HTML structure",
+            event_name,
+            len(all_h2),
+            len(all_ul),
+        )
+
+    ul_count = 0
+    for bracket_h2 in all_h2:
+        bracket = bracket_h2.text.strip()
+        sibling = bracket_h2.find_next_sibling()
+        if sibling is None:
+            continue
+
+        if sibling.name == "h2":
+            continue
+
+        if sibling.name != "ul":
+            raise RuntimeError("Unexpected sibling of <h2>", sibling)
+
+        all_li = sibling.find_all("li")
+        for match_li in all_li:
+            match_text = match_li.text.strip()
+            parts = match_text.split(" :: ")
+            if len(parts) != 9:
+                raise RuntimeError("Unexpected match text", match_text, event_name)
+
+            (
+                bout_type,
+                winner_first_name,
+                winner_last_name,
+                winner_team,
+                win_type,
+                loser_first_name,
+                loser_last_name,
+                loser_team,
+                score_summary,
+            ) = parts
+
+            if win_type == "won over":
+                if score_summary != "OTHR1":
+                    raise NotImplementedError(match_text)
+                continue
+
+            if win_type == "and":
+                if score_summary != "DFF":  # Double Forfeit
+                    raise NotImplementedError(match_text)
+                continue
+
+            if win_type not in _WIN_TYPE_MAP:
+                raise NotImplementedError(match_text)
+
+            result_type = _WIN_TYPE_MAP[win_type]
+            if result_type is None:
+                continue
+
+            winner = f"{winner_first_name} {winner_last_name}"
+            winner = winner.strip()
+
+            loser = f"{loser_first_name} {loser_last_name}"
+            loser = loser.strip()
+
+            match_ = bracket_util.Match(
+                event_name=event_name,
+                event_date=event_date,
+                bracket=bracket,
+                round_=bout_type,
+                division=bracket_util.classify_bracket(bracket),
+                winner=winner,
+                winner_team=winner_team,
+                loser=loser,
+                loser_team=loser_team,
+                result=score_summary,
+                result_type=result_type,
+                source="trackwrestling",
+            )
+            round_matches.append(match_)
+
+        ul_count += 1
+
+    if ul_count != len(all_ul):
+        raise RuntimeError("Did not discover all <ul>", event_name)
+
+    return round_matches
+
+
+class DualMatchExtracted(_ForbidExtra):
+    weight: int
+    winner: str
+    loser: str
+    result: str
+
+
+def _extract_match_li(match_li: bs4.Tag) -> DualMatchExtracted | None:
+    children = match_li.contents
+    if len(children) != 5:
+        return None
+
+    before, span1, middle, span2, after = children
+    middle_text = middle.text.strip()
+    if middle_text != "over":
+        return None
+
+    if span1.name != "span" or span2.name != "span":
+        return None
+
+    before_text = before.text.strip()
+    if not before_text.endswith(" -"):
+        return None
+
+    weight = int(before_text[:-2])
+    winner = span1.text.strip()
+    loser = span2.text.strip()
+    result = after.text.strip()
+    return DualMatchExtracted(weight=weight, winner=winner, loser=loser, result=result)
+
+
+def extract_dual_weight_matches(html: str) -> list[DualMatchExtracted]:
+    matches: list[DualMatchExtracted] = []
+
+    soup = bs4.BeautifulSoup(html, features="html.parser")
+    all_li = soup.find_all("li")
+
+    for match_li in all_li:
+        extracted = _extract_match_li(match_li)
+        if extracted is None:
+            raise RuntimeError("Unexpected match <li>", match_li)
+
+        matches.append(extracted)
+
+    return matches
