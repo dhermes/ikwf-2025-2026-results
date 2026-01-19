@@ -16,6 +16,27 @@ _ENV_PASSWORD = "USA_BRACKETING_PASSWORD"
 _OPTION_ILLINOIS_VALUE = "14"
 _OPTION_ILLINOIS_TEXT = "Illinois, USA"
 
+TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
+    ("2025-12-07", "42nd Annual Bulls Wrestling Tournament"),
+    ("2025-12-14", "CICC Classic"),
+    ("2025-12-14", "Wilbur Borrero Classic"),
+    ("2025-12-20", "2025 Edwardsville Open"),
+    ("2025-12-21", "2025 Rocket Blast"),
+    ("2025-12-21", "Jr. Porter Invite"),
+    ("2025-12-21", "Spartan Beginner Tournament"),
+    ("2025-12-21", "Stillman Valley Holiday Tournament"),
+    ("2025-12-28", "Granite City Kids Holiday Classic"),
+    ("2025-12-30", "Rockford Bad Boys & Girls Open"),
+    ("2026-01-10", "Stillman Valley Beginners Tournament"),
+    ("2026-01-11", "Chauncey Carrick Good Guys Tournament"),
+    ("2026-01-11", "Morton Youth Wrestling 2026"),
+    ("2026-01-11", "Spartan 300"),
+    ("2026-01-18", "Jon Davis Kids Open"),
+)
+DUAL_EVENTS: tuple[tuple[str, str], ...] = (
+    ("2026-01-04", "IKWF Southern Dual Meet Divisional"),
+)
+
 
 class _ForbidExtra(pydantic.BaseModel):
     model_config = pydantic.ConfigDict(extra="forbid", populate_by_name=True)

@@ -7,16 +7,12 @@ import usabracketing
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
 
-_TOURNAMENTS = """\
-2026-01-04 | IKWF Southern Dual Meet Divisional"""
-
 
 def main() -> None:
     login_info = usabracketing.get_login_info()
 
     raw_data_dir = _ROOT / "_raw-data"
-    for row in _TOURNAMENTS.split("\n"):
-        date_str, name = row.split(" | ")
+    for date_str, name in usabracketing.DUAL_EVENTS:
         parent_dir = raw_data_dir / date_str
         parent_dir.mkdir(parents=True, exist_ok=True)
 

@@ -7,15 +7,10 @@ import trackwrestling
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
 
-_TOURNAMENTS = """\
-2025-12-14 | 2025 Hub City Hammer Duals
-2026-01-10 | The Didi Duals 2026"""
-
 
 def main() -> None:
     raw_data_dir = _ROOT / "_raw-data"
-    for row in _TOURNAMENTS.split("\n"):
-        date_str, name = row.split(" | ")
+    for date_str, name in trackwrestling.DUAL_EVENTS:
         parent_dir = raw_data_dir / date_str
         parent_dir.mkdir(parents=True, exist_ok=True)
 
