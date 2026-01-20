@@ -620,10 +620,12 @@ def _parse_match_line(
     if result_type is None:
         return None
 
+    bracket_full = f"{division} {bracket}"
+    bracket_full = bracket_full.strip()
     return bracket_util.Match(
         event_name=event_name,
         event_date=event_date,
-        bracket=bracket,
+        bracket=bracket_full,
         round_=round_,
         division=_determine_division(division),
         winner=winner,
