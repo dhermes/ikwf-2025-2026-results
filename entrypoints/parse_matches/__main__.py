@@ -97,7 +97,7 @@ def main() -> None:
     all_matches.extend(_parse_usabracketing(raw_data_dir))
     all_matches.extend(_parse_usabracketing_duals(raw_data_dir))
 
-    all_matches_file = _ROOT / "_parsed-data" / "all-matches.csv"
+    all_matches_file = _ROOT / "_parsed-data" / "all-matches-01.csv"
     with open(all_matches_file, "w") as file_obj:
         writer = csv.DictWriter(file_obj, fieldnames=bracket_util.CSV_FIELD_NAMES)
         writer.writeheader()
