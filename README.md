@@ -95,21 +95,19 @@
 | :white_check_mark: |        | 2026-01-11 | Chauncey Carrick Good Guys Tournament                               | USA Bracketing |
 | :white_check_mark: |        | 2026-01-11 | Morton Youth Wrestling 2026                                         | USA Bracketing |
 | :white_check_mark: |        | 2026-01-11 | Spartan 300                                                         | USA Bracketing |
-|                    |        | 2026-01-18 | Jon Davis Kids Open                                                 | USA Bracketing |
-|                    |        | 2026-01-24 | Girls Rule Rumble                                                   |                |
-|                    |        | 2026-01-25 | 4th Annual Ezra Hill Jr. Memorial Tournament                        |                |
-|                    |        | 2026-01-25 | Custer/Stoudt Open                                                  |                |
-|                    |        | 2026-01-25 | Big Cat Wrestling Tournament                                        |                |
-|                    |        | 2026-01-25 | Jersey Panther Pummel                                               |                |
-|                    |        | 2026-01-25 | Daisy Fresh Wrestling Open                                          |                |
-|                    |        | 2026-01-25 | Cabin Fever 2026                                                    |                |
-|                    |        | 2026-01-25 | Harper Rookie Rumble                                                |                |
-|                    |        | 2026-01-25 | Geist Grapplin Classic                                              |                |
-|                    |        | 2026-01-25 | Susan Collins Memorial Tournament                                   |                |
-|                    |        | 2026-01-25 | Battle of Ragnarok                                                  |                |
-|                    |        | 2026-01-25 | Celtic Open                                                         |                |
-|                    |        | 2026-01-25 | LP Crunching Cavs Classic                                           |                |
-|                    |        | 2026-01-25 | Spartan Rumble                                                      |                |
+| :white_check_mark: |        | 2026-01-18 | Jon Davis Kids Open                                                 | USA Bracketing |
+| :white_check_mark: |        | 2026-01-24 | 2026 Girls Rule Rumble                                              | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | 2026 Ezra Hill Jr Memorial Tournament                               | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | 2026 Susan Collins Memorial Tournament                              | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | Cabin Fever 2026                                                    | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | Celtic Open 2026                                                    | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | DEMOLITION BATTLE OF RAGNAROK                                       | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | Geist Grappling Classic                                             | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | Harper Rookie Rumble                                                | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | LP Crunching Cavs Classic                                           | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | Pekin Custer/Stoudt Open                                            | TrackWrestling |
+| :white_check_mark: |        | 2026-01-25 | Big Cat Wrestling Tournament                                        | USA Bracketing |
+| :white_check_mark: |        | 2026-01-25 | Spartan Rumble                                                      | USA Bracketing |
 |                    |        | 2026-01-31 | Future Finalist                                                     |                |
 |                    |        | 2026-02-01 | Battle for the Shield                                               |                |
 |                    |        | 2026-02-01 | REGISTRATION CLOSED-Lemont Bears Bash                               |                |
@@ -143,6 +141,8 @@
 |                    |        | 2026-02-15 | Cumberland Kids Heartbreak Havoc                                    |                |
 |                    |        | 2026-02-15 | Wolves Wrestling St. Valentine's Day Massacre                       |                |
 |                    |        | 2026-02-15 | Olympia Spartan Showdown                                            |                |
+|                    |        | 2026-02-15 | Daisy Fresh Wrestling Open                                          |                |
+|                    |        | 2026-02-22 | Jersey Panther Pummel                                               |                |
 |                    |        | 2026-02-22 | Peoria Heights Youth Wrestling Tournament                           |                |
 |                    |        | 2026-02-22 | Champaign Grappler III                                              |                |
 |                    |        | 2026-02-22 | Heart of a Lion                                                     |                |

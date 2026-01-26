@@ -20,6 +20,9 @@ _OPTION_ILLINOIS_TEXT = "Illinois, USA"
 _P_STYLE_DIVISION = "margin-top: 10px; font-weight: bold;"
 _P_STYLE_ROUND_OR_BRACKET = "margin-top: 5px; font-weight: bold;"
 _PLACEHOLDER_TEXT = "[first_name] [last_name]"
+# NOTE: USA Bracketing puts USAW national championship events in search results
+#       even if they don't match the search criteria.
+_IGNORE_SEARCH_RESULT = "2026 USA Wrestling Kids Folkstyle National Championship"
 
 TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-07", "42nd Annual Bulls Wrestling Tournament"),
@@ -37,6 +40,8 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-01-11", "Morton Youth Wrestling 2026"),
     ("2026-01-11", "Spartan 300"),
     ("2026-01-18", "Jon Davis Kids Open"),
+    ("2026-01-25", "Big Cat Wrestling Tournament"),
+    ("2026-01-25", "Spartan Rumble"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-01-04", "IKWF Southern Dual Meet Divisional"),
@@ -188,10 +193,17 @@ def _search_results_click_first(driver: webdriver.Chrome, name: str) -> str:
     )
     all_trs = table_body.find_elements(By.TAG_NAME, "tr")
 
-    if len(all_trs) != 1:
+    tr = None
+    if len(all_trs) == 1:
+        tr = all_trs[0]
+    elif len(all_trs) == 2:
+        first_html = all_trs[0].get_attribute("outerHTML")
+        if _IGNORE_SEARCH_RESULT in first_html:
+            tr = all_trs[1]
+
+    if tr is None:
         raise ValueError(f"Expected exactly 1 <tr>, found {len(all_trs)}", name)
 
-    tr = all_trs[0]
     event_name_td = tr.find_element(By.CSS_SELECTOR, "td:nth-child(2) a.basic_link")
     event_name = event_name_td.text
 

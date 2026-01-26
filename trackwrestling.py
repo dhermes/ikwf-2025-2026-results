@@ -114,6 +114,16 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-01-11", "Mt Zion kids club open"),
     ("2026-01-11", "Pontiac Kids Open 2026"),
     ("2026-01-11", "JAWS Battle in the Bowl"),
+    ("2026-01-24", "2026 Girls Rule Rumble"),
+    ("2026-01-25", "2026 Ezra Hill Jr Memorial Tournament"),
+    ("2026-01-25", "2026 Susan Collins Memorial Tournament"),
+    ("2026-01-25", "Cabin Fever 2026"),
+    ("2026-01-25", "Celtic Open 2026"),
+    ("2026-01-25", "DEMOLITION BATTLE OF RAGNAROK"),
+    ("2026-01-25", "Geist Grappling Classic"),
+    ("2026-01-25", "Harper Rookie Rumble"),
+    ("2026-01-25", "LP Crunching Cavs Classic"),
+    ("2026-01-25", "Pekin Custer/Stoudt Open"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-14", "2025 Hub City Hammer Duals"),
