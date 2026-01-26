@@ -5,6 +5,9 @@
 - The goal is to help in seeding for postseason tournaments
 - Can also help clubs with evaluating wrestlers across seasons
 
+The [2025-2026 All IKWF Matches][2] Google Sheet will be updated periodically to
+showcase all the parsed and normalized matches.
+
 ## Tricks
 
 - For TrackWrestling, get results **by round** and then go to "Advanced" and use
@@ -152,3 +155,4 @@
 |                    |        | 2026-03-01 | Clash of The Tots                                                   |                |
 
 [1]: https://www.ikwf.org/
+[2]: https://docs.google.com/spreadsheets/d/1F_v5jk20rYQD8hZnzH7GGx_TfBLcXahDEiVbDKoxviA/edit
