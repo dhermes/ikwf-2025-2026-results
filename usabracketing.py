@@ -490,13 +490,19 @@ def _determine_division(division_text: str) -> bracket_util.Division | None:
         return "girls_bantam"
     if normalized_text.startswith("girls bantam "):
         return "girls_bantam"
+    if normalized_text == "bantam girls":
+        return "girls_bantam"
 
     if normalized_text == "girls - intermediate":
+        return "girls_intermediate"
+    if normalized_text == "intermediate girls":
         return "girls_intermediate"
     if normalized_text.startswith("girls intermediate "):
         return "girls_intermediate"
 
     if normalized_text == "girls - novice":
+        return "girls_novice"
+    if normalized_text == "novice girls":
         return "girls_novice"
     if normalized_text.startswith("girls novice "):
         return "girls_novice"
@@ -504,6 +510,8 @@ def _determine_division(division_text: str) -> bracket_util.Division | None:
     if normalized_text == "girls - senior":
         return "girls_senior"
     if normalized_text.startswith("girls senior "):
+        return "girls_senior"
+    if normalized_text == "senior girls":
         return "girls_senior"
     if normalized_text.startswith("senior girls "):
         return "girls_senior"
