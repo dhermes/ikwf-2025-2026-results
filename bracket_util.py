@@ -43,7 +43,7 @@ class _ForbidExtra(pydantic.BaseModel):
     model_config = pydantic.ConfigDict(extra="forbid", populate_by_name=True)
 
 
-class Tournament(_ForbidExtra):
+class Event(_ForbidExtra):
     name: str
     start_date: datetime.date | None
     end_date: datetime.date
@@ -65,6 +65,14 @@ ResultType = Literal["decision", "major", "tech", "pin", "overtime"]
 Source = Literal[
     "trackwrestling", "trackwrestling_dual", "usabracketing", "usabracketing_dual"
 ]
+
+
+class FetchedEvent(_ForbidExtra):
+    name: str
+    source: Source
+    start_date: datetime.date | None
+    end_date: datetime.date
+    match_html: dict[str, str]
 
 
 class Match(_ForbidExtra):

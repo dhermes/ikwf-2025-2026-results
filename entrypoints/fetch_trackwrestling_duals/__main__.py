@@ -1,4 +1,3 @@
-import json
 import pathlib
 
 import bracket_util
@@ -21,17 +20,23 @@ def main() -> None:
             print(f"Skipping: {name} ...")
             continue
 
-        tournament = bracket_util.Tournament(
-            name=name, start_date=None, end_date=date_str
-        )
+        event = bracket_util.Event(name=name, start_date=None, end_date=date_str)
 
         print(f"Fetching: {name} ...")
-        captured_html = trackwrestling.fetch_dual_weights(tournament)
-        if not captured_html:
-            raise RuntimeError("Tournament has no weights", name)
+        weights_html = trackwrestling.fetch_dual_weights(event)
+        if not weights_html:
+            raise RuntimeError("Event has no weights", name)
 
+        to_serialize = bracket_util.FetchedEvent(
+            name=event.name,
+            source="trackwrestling_dual",
+            start_date=event.start_date,
+            end_date=event.end_date,
+            match_html=weights_html,
+        )
+        as_json = to_serialize.model_dump_json(indent=2)
         with open(path, "w") as file_obj:
-            json.dump(captured_html, file_obj, sort_keys=True, indent=2)
+            file_obj.write(as_json)
             file_obj.write("\n")
 
 

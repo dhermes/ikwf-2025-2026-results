@@ -28,7 +28,6 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-07", "42nd Annual Bulls Wrestling Tournament"),
     ("2025-12-14", "CICC Classic"),
     ("2025-12-14", "Wilbur Borrero Classic"),
-    ("2025-12-20", "2025 Edwardsville Open"),
     ("2025-12-21", "2025 Rocket Blast"),
     ("2025-12-21", "Jr. Porter Invite"),
     ("2025-12-21", "Spartan Beginner Tournament"),
@@ -120,11 +119,9 @@ def _click_search_events(driver: webdriver.Chrome) -> None:
     open_search_button.click()
 
 
-def _fill_out_event_search(
-    driver: webdriver.Chrome, tournament: bracket_util.Tournament
-) -> None:
-    end_date = tournament.end_date
-    start_date = tournament.start_date or end_date
+def _fill_out_event_search(driver: webdriver.Chrome, event: bracket_util.Event) -> None:
+    end_date = event.end_date
+    start_date = event.start_date or end_date
     end_date_str = end_date.strftime("%m/%d/%Y")
     start_date_str = start_date.strftime("%m/%d/%Y")
 
@@ -135,7 +132,7 @@ def _fill_out_event_search(
 
     event_name.clear()
     time.sleep(0.05)
-    event_name.send_keys(tournament.name)
+    event_name.send_keys(event.name)
     time.sleep(0.05)
 
     # Input: "State"
@@ -213,22 +210,20 @@ def _search_results_click_first(driver: webdriver.Chrome, name: str) -> str:
     return event_name
 
 
-def _open_tournament(
-    tournament: bracket_util.Tournament, login_info: LoginInfo
-) -> webdriver.Chrome:
+def _open_event(event: bracket_util.Event, login_info: LoginInfo) -> webdriver.Chrome:
     driver = webdriver.Chrome()
     driver.get("https://www.usabracketing.com/login")
 
     _login_website(driver, login_info)
     _go_to_events(driver)
     _click_search_events(driver)
-    _fill_out_event_search(driver, tournament)
+    _fill_out_event_search(driver, event)
     _click_search_events_in_form(driver)
-    event_name = _search_results_click_first(driver, tournament.name)
-    if event_name != tournament.name:
+    event_name = _search_results_click_first(driver, event.name)
+    if event_name != event.name:
         raise RuntimeError(
             "Tournament name does not agree with name on USA Bracketing",
-            tournament.name,
+            event.name,
             event_name,
         )
 
@@ -344,9 +339,9 @@ def _capture_round_html(
 
 
 def fetch_tournament_rounds(
-    tournament: bracket_util.Tournament, login_info: LoginInfo
+    event: bracket_util.Event, login_info: LoginInfo
 ) -> dict[str, str]:
-    driver = _open_tournament(tournament, login_info)
+    driver = _open_event(event, login_info)
     _click_results(driver)
     _choose_ap_bouts(driver)
     _allow_all_wrestlers(driver)
@@ -450,9 +445,9 @@ def _capture_weight_html(
 
 
 def fetch_dual_weights(
-    tournament: bracket_util.Tournament, login_info: LoginInfo
+    event: bracket_util.Event, login_info: LoginInfo
 ) -> dict[str, str]:
-    driver = _open_tournament(tournament, login_info)
+    driver = _open_event(event, login_info)
     _click_results(driver)
     _choose_weight_result_bouts(driver)
     _allow_all_wrestlers(driver)

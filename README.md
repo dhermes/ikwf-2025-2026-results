@@ -49,7 +49,7 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: |        | 2025-12-14 | Rumble on the Red                                                   | TrackWrestling |
 | :white_check_mark: |        | 2025-12-14 | CICC Classic                                                        | USA Bracketing |
 | :white_check_mark: |        | 2025-12-14 | Wilbur Borrero Classic                                              | USA Bracketing |
-| :white_check_mark: |        | 2025-12-20 | 2025 Edwardsville Open                                              | USA Bracketing |
+| :white_check_mark: |        | 2025-12-20 | 2025 Edwardsville Open                                              | TrackWrestling |
 | :white_check_mark: |        | 2025-12-21 | 2025 Mat Rat Invitational                                           | TrackWrestling |
 | :white_check_mark: |        | 2025-12-21 | 2025 Yeti Bash/Morris Kids WC                                       | TrackWrestling |
 | :white_check_mark: |        | 2025-12-21 | 309 Winter Classic                                                  | TrackWrestling |

@@ -382,11 +382,11 @@ def _capture_round_html(
     return tw_list_html
 
 
-def _open_tournament(tournament: bracket_util.Tournament) -> webdriver.Chrome:
-    end_date = tournament.end_date
-    start_date = tournament.start_date or end_date
+def _open_event(event: bracket_util.Event) -> webdriver.Chrome:
+    end_date = event.end_date
+    start_date = event.start_date or end_date
     search_inputs = {
-        "nameBox": tournament.name,
+        "nameBox": event.name,
         "startDateMonth": f"{start_date.month:02}",
         "startDateDay": f"{start_date.day:02}",
         "startDateYear": str(start_date.year),
@@ -402,11 +402,11 @@ def _open_tournament(tournament: bracket_util.Tournament) -> webdriver.Chrome:
     _events_page_search_events(driver)
     _event_search_fill_inputs(driver, search_inputs)
     _event_search_click_search(driver)
-    event_name = _search_results_click_first(driver, tournament.name)
-    if event_name != tournament.name:
+    event_name = _search_results_click_first(driver, event.name)
+    if event_name != event.name:
         raise RuntimeError(
-            "Tournament name does not agree with name on TrackWrestling",
-            tournament.name,
+            "Event name does not agree with name on TrackWrestling",
+            event.name,
             event_name,
         )
 
@@ -416,8 +416,8 @@ def _open_tournament(tournament: bracket_util.Tournament) -> webdriver.Chrome:
     return driver
 
 
-def fetch_tournament_rounds(tournament: bracket_util.Tournament) -> dict[str, str]:
-    driver = _open_tournament(tournament)
+def fetch_tournament_rounds(event: bracket_util.Event) -> dict[str, str]:
+    driver = _open_event(event)
     _click_results_sidebar_option(driver)
     _click_round_results_option(driver)
     all_rounds = _all_round_option_values(driver)
@@ -530,8 +530,8 @@ def _capture_weight_html(
     return tw_list_html
 
 
-def fetch_dual_weights(tournament: bracket_util.Tournament) -> dict[str, str]:
-    driver = _open_tournament(tournament)
+def fetch_dual_weights(event: bracket_util.Event) -> dict[str, str]:
+    driver = _open_event(event)
     _click_results_sidebar_option(driver)
     _click_weight_results_option(driver)
     all_weights = _all_weight_option_values(driver)
