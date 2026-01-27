@@ -30,11 +30,42 @@ def _load_rosters() -> list[club_util.ClubInfo]:
     return clubs_root.root
 
 
+def _normalize_name(name: str) -> str:
+    return name.lower()
+
+
+def _prepare_club_lookup(rosters: list[club_util.ClubInfo]) -> dict[str, str]:
+    club_name_lookup = {
+        _normalize_name(roster.club_name): roster.club_name for roster in rosters
+    }
+    if len(club_name_lookup) != len(rosters):
+        raise RuntimeError("Non-unique club names")
+
+    keys = sorted(club_name_lookup.keys())
+    for key in keys:
+        new_key = None
+        if "wrestling club" in key:
+            new_key = key.replace("wrestling club", "wc")
+        elif key.endswith(" wc"):
+            new_key = key[:-2] + "wrestling club"
+
+        if new_key is None:
+            continue
+
+        if new_key in club_name_lookup:
+            raise ValueError("Unexpected collision", key, new_key)
+        club_name_lookup[new_key] = club_name_lookup[key]
+
+    return club_name_lookup
+
+
 def main() -> None:
     matches = _load_matches()
     print(len(matches))
+
     rosters = _load_rosters()
-    print(len(rosters))
+    club_name_lookup = _prepare_club_lookup(rosters)
+    print(club_name_lookup)
 
 
 if __name__ == "__main__":
