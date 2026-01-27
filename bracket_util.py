@@ -82,6 +82,10 @@ class Match(_ForbidExtra):
     source: Source = pydantic.Field(alias="Source")
 
 
+class Matches(pydantic.RootModel[list[Match]]):
+    pass
+
+
 def classify_bracket(name: str) -> Division | None:
     name_normalized = name.lower()
 
