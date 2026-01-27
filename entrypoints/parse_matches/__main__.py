@@ -20,7 +20,10 @@ def _parse_trackwrestling(raw_data_dir: pathlib.Path) -> list[bracket_util.Match
         path = parent_dir / filename
 
         with open(path) as file_obj:
-            rounds_raw = json.load(file_obj)
+            as_json = file_obj.read()
+
+        fetched_event = bracket_util.FetchedEvent.model_validate_json(as_json)
+        rounds_raw = fetched_event.match_html
 
         rounds = sorted(rounds_raw.keys())
         for round_ in rounds:
@@ -42,7 +45,10 @@ def _parse_trackwrestling_duals(raw_data_dir: pathlib.Path) -> list[bracket_util
         path = parent_dir / filename
 
         with open(path) as file_obj:
-            weights_raw = json.load(file_obj)
+            as_json = file_obj.read()
+
+        fetched_event = bracket_util.FetchedEvent.model_validate_json(as_json)
+        weights_raw = fetched_event.match_html
 
         all_matches.extend(trackwrestling.parse_dual_event(weights_raw, name, date_str))
 
@@ -59,7 +65,10 @@ def _parse_usabracketing(raw_data_dir: pathlib.Path) -> list[bracket_util.Match]
         path = parent_dir / filename
 
         with open(path) as file_obj:
-            rounds_raw = json.load(file_obj)
+            as_json = file_obj.read()
+
+        fetched_event = bracket_util.FetchedEvent.model_validate_json(as_json)
+        rounds_raw = fetched_event.match_html
 
         rounds = sorted(rounds_raw.keys())
         for round_ in rounds:
@@ -81,8 +90,10 @@ def _parse_usabracketing_duals(raw_data_dir: pathlib.Path) -> list[bracket_util.
         path = parent_dir / filename
 
         with open(path) as file_obj:
-            weights_raw = json.load(file_obj)
+            as_json = file_obj.read()
 
+        fetched_event = bracket_util.FetchedEvent.model_validate_json(as_json)
+        weights_raw = fetched_event.match_html
         weights = sorted(weights_raw.keys())
 
     return all_matches
