@@ -1,46 +1,14 @@
 import pathlib
-from typing import Literal
 
 import bs4
-import pydantic
+
+import club_util
 
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
 
 
-class _ForbidExtra(pydantic.BaseModel):
-    model_config = pydantic.ConfigDict(extra="forbid")
-
-
-class _Athlete(_ForbidExtra):
-    usaw_number: str
-    name: str
-    ikwf_age: int
-
-
-_Sectional = Literal[
-    "Central",
-    "North",
-    "South",
-    "West",
-    "Central Chicago",
-    "North Chicago",
-    "South Chicago",
-    "West Chicago",
-]
-
-
-class _ClubInfo(_ForbidExtra):
-    club_name: str
-    sectional: _Sectional
-    athletes: list[_Athlete]
-
-
-class _Clubs(pydantic.RootModel[list[_ClubInfo]]):
-    pass
-
-
-def _parse_file(path: pathlib.Path) -> _ClubInfo:
+def _parse_file(path: pathlib.Path) -> club_util.ClubInfo:
     with open(path) as file_obj:
         html = file_obj.read()
 
@@ -68,7 +36,7 @@ def _parse_file(path: pathlib.Path) -> _ClubInfo:
         raise NotImplementedError(path.name)
 
     wrestler_div = wrestler_divs[0]
-    athletes: list[_Athlete] = []
+    athletes: list[club_util.Athlete] = []
     all_td = wrestler_div.find_all("td")
     for td in all_td:
         td_content = td.text.strip()
@@ -82,25 +50,29 @@ def _parse_file(path: pathlib.Path) -> _ClubInfo:
             raise NotImplementedError(td_content)
 
         ikwf_age = int(remaining[:-1])
-        athletes.append(_Athlete(usaw_number=usaw_number, name=name, ikwf_age=ikwf_age))
+        athletes.append(
+            club_util.Athlete(usaw_number=usaw_number, name=name, ikwf_age=ikwf_age)
+        )
 
-    return _ClubInfo(club_name=club_name, sectional=sectional, athletes=athletes)
+    return club_util.ClubInfo(
+        club_name=club_name, sectional=sectional, athletes=athletes
+    )
 
 
-def _sort_func(club_info: _ClubInfo) -> tuple[str, str]:
+def _sort_func(club_info: club_util.ClubInfo) -> tuple[str, str]:
     return club_info.sectional, club_info.club_name
 
 
 def main() -> None:
     rosters_directory = _ROOT / "_raw-data" / "ikwf-rosters"
-    club_infos: list[_ClubInfo] = []
+    club_infos: list[club_util.ClubInfo] = []
     for path in rosters_directory.glob("*.html"):
         club_info = _parse_file(path)
         club_infos.append(club_info)
 
     club_infos.sort(key=_sort_func)
 
-    root = _Clubs(root=club_infos)
+    root = club_util.Clubs(root=club_infos)
     as_json = root.model_dump_json(indent=2)
     rosters_file = _ROOT / "_parsed-data" / "rosters.json"
     with open(rosters_file, "w") as file_obj:

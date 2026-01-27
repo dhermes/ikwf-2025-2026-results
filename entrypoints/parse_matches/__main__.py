@@ -1,5 +1,4 @@
 import csv
-import json
 import pathlib
 
 import bracket_util
