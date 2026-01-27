@@ -57,6 +57,7 @@ def _prepare_club_lookup(rosters: list[club_util.ClubInfo]) -> dict[str, str]:
     if len(club_name_lookup) != len(rosters):
         raise RuntimeError("Non-unique club names")
 
+    # First pass: WC and "Wrestling Club" synonym
     keys = sorted(club_name_lookup.keys())
     for key in keys:
         new_key = None
@@ -64,6 +65,26 @@ def _prepare_club_lookup(rosters: list[club_util.ClubInfo]) -> dict[str, str]:
             new_key = key.replace("wrestling club", "wc")
         elif key.endswith(" wc"):
             new_key = key[:-2] + "wrestling club"
+
+        if new_key is None:
+            continue
+
+        if new_key in club_name_lookup:
+            raise ValueError("Unexpected collision", key, new_key)
+        club_name_lookup[new_key] = club_name_lookup[key]
+
+    # Second pass: Jr. and "Junior" synonym
+    keys = sorted(club_name_lookup.keys())
+    for key in keys:
+        new_key = None
+        if " jr " in key:
+            new_key = key.replace(" jr ", " junior ")
+        elif key.startswith("jr "):
+            new_key = "junior" + key[2:]
+        elif " junior " in key:
+            new_key = key.replace(" junior ", " jr ")
+        elif key.startswith("junior "):
+            new_key = "jr" + key[6:]
 
         if new_key is None:
             continue
