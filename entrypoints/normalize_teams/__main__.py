@@ -628,7 +628,10 @@ def _normalize_name(name: str) -> str:
     if _SIMPLE_NAME.match(without_punctuation) is None:
         raise RuntimeError("Unhandled name needs normalized", name, without_punctuation)
 
-    return without_punctuation
+    parts = without_punctuation.split()
+    whitespace_normalized = " ".join(parts)
+
+    return whitespace_normalized
 
 
 def _prepare_club_lookup(rosters: list[club_util.ClubInfo]) -> dict[str, str]:
