@@ -1,11 +1,13 @@
 import csv
 import pathlib
+import re
 
 import bracket_util
 import club_util
 
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
+_SIMPLE_NAME = re.compile(r"^[a-z0-9 ]+$")
 
 
 def _load_matches() -> list[bracket_util.Match]:
@@ -31,7 +33,21 @@ def _load_rosters() -> list[club_util.ClubInfo]:
 
 
 def _normalize_name(name: str) -> str:
-    return name.lower()
+    case_insensitive = name.lower()
+
+    parts = case_insensitive.split()
+    whitespace_normalized = " ".join(parts)
+
+    without_punctuation = whitespace_normalized.replace("'", "")
+    without_punctuation = without_punctuation.replace(".", "")
+    without_punctuation = without_punctuation.replace(",", "")
+    without_punctuation = without_punctuation.replace("&", "and")
+    without_punctuation = without_punctuation.replace("-", " ")
+
+    if _SIMPLE_NAME.match(without_punctuation) is None:
+        raise RuntimeError("Unhandled name needs normalized", name, without_punctuation)
+
+    return without_punctuation
 
 
 def _prepare_club_lookup(rosters: list[club_util.ClubInfo]) -> dict[str, str]:
