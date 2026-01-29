@@ -118,6 +118,8 @@ def _lookup_athlete(
     by_team = custom_athlete_name_map.get(team_normalized, {})
     new_name_normalized = by_team.get(name_normalized)
     if new_name_normalized is None:
+        # TODO: Do not allow this branch at all (i.e. fill in all of the missing
+        #       mappings)
         return None
 
     matched = athlete_map.get(new_name_normalized)
@@ -133,6 +135,15 @@ def _lookup_athlete(
     return matched
 
 
+def _athlete_to_tuple(
+    athlete: club_util.Athlete | None,
+) -> tuple[str | None, str | None, int | None]:
+    if athlete is None:
+        return None, None, None
+
+    return athlete.name, athlete.usaw_number, athlete.ikwf_age
+
+
 def main() -> None:
     matches_v2 = _load_matches()
     rosters = club_util.load_rosters()
@@ -140,15 +151,16 @@ def main() -> None:
 
     custom_athlete_name_map = club_util.load_custom_athlete_name_map()
 
-    t1 = 0
-    t2 = 0
+    matches_v3: list[bracket_util.MatchV3] = []
     for match_ in matches_v2:
-        t1 += 2
         winner_athlete = _lookup_athlete(
             match_.winner,
             match_.winner_team_normalized,
             athlete_lookup,
             custom_athlete_name_map,
+        )
+        winner_normalized, winner_usaw_number, winner_ikwf_age = _athlete_to_tuple(
+            winner_athlete
         )
         loser_athlete = _lookup_athlete(
             match_.loser,
@@ -156,13 +168,27 @@ def main() -> None:
             athlete_lookup,
             custom_athlete_name_map,
         )
-        if winner_athlete is not None:
-            t2 += 1
-        if loser_athlete is not None:
-            t2 += 1
+        loser_normalized, loser_usaw_number, loser_ikwf_age = _athlete_to_tuple(
+            loser_athlete
+        )
+        matches_v3.append(
+            bracket_util.MatchV3.from_v2(
+                match_,
+                winner_normalized,
+                winner_usaw_number,
+                winner_ikwf_age,
+                loser_normalized,
+                loser_usaw_number,
+                loser_ikwf_age,
+            )
+        )
 
-    print(f"{t2} / {t1}")
-    print(t2 / t1)
+    matches_file_v3 = _ROOT / "_parsed-data" / "all-matches-03.csv"
+    with open(matches_file_v3, "w") as file_obj:
+        writer = csv.DictWriter(file_obj, fieldnames=bracket_util.CSV_FIELD_NAMES_V3)
+        writer.writeheader()
+        for match_ in matches_v3:
+            writer.writerow(match_.model_dump(mode="json", by_alias=True))
 
 
 if __name__ == "__main__":

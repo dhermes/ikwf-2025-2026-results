@@ -36,6 +36,32 @@ CSV_FIELD_NAMES_V2 = (
     "Source",
 )
 
+CSV_FIELD_NAMES_V3 = (
+    "Event Name",
+    "Event Date",
+    "Bracket",
+    "Round",
+    "Division",
+    ###############################
+    "Winner (normalized)",
+    "Winner USAW Number",
+    "Winner IKWF Age",
+    "Winner Team (normalized)",
+    "Winner",
+    "Winner Team",
+    ###############################
+    "Loser (normalized)",
+    "Loser USAW Number",
+    "Loser IKWF Age",
+    "Loser Team (normalized)",
+    "Loser",
+    "Loser Team",
+    ###############################
+    "Result",
+    "Result Type",
+    "Source",
+)
+
 
 def to_kebab_case(name: str) -> str:
     # Lowercase
@@ -119,25 +145,46 @@ class MatchV2(MatchV1):
     def from_v1(
         cls, inherit: MatchV1, winner_team_normalized: str, loser_team_normalized: str
     ) -> MatchV2:
-        return cls(
-            event_name=inherit.event_name,
-            event_date=inherit.event_date,
-            bracket=inherit.bracket,
-            round_=inherit.round_,
-            division=inherit.division,
-            winner=inherit.winner,
-            winner_team=inherit.winner_team,
-            loser=inherit.loser,
-            loser_team=inherit.loser_team,
-            result=inherit.result,
-            result_type=inherit.result_type,
-            source=inherit.source,
-            winner_team_normalized=winner_team_normalized,
-            loser_team_normalized=loser_team_normalized,
-        )
+        data = inherit.model_dump(mode="json")
+        data["winner_team_normalized"] = winner_team_normalized
+        data["loser_team_normalized"] = loser_team_normalized
+        return cls(**data)
 
 
 class MatchesV2(pydantic.RootModel[list[MatchV2]]):
+    pass
+
+
+class MatchV3(MatchV2):
+    winner_normalized: str | None = pydantic.Field(alias="Winner (normalized)")
+    winner_usaw_number: str | None = pydantic.Field(alias="Winner USAW Number")
+    winner_ikwf_age: int | None = pydantic.Field(alias="Winner IKWF Age")
+    loser_normalized: str | None = pydantic.Field(alias="Loser (normalized)")
+    loser_usaw_number: str | None = pydantic.Field(alias="Loser USAW Number")
+    loser_ikwf_age: int | None = pydantic.Field(alias="Loser IKWF Age")
+
+    @classmethod
+    def from_v2(
+        cls,
+        inherit: MatchV2,
+        winner_normalized: str | None,
+        winner_usaw_number: str | None,
+        winner_ikwf_age: int | None,
+        loser_normalized: str | None,
+        loser_usaw_number: str | None,
+        loser_ikwf_age: int | None,
+    ) -> MatchV3:
+        data = inherit.model_dump(mode="json")
+        data["winner_normalized"] = winner_normalized
+        data["winner_usaw_number"] = winner_usaw_number
+        data["winner_ikwf_age"] = winner_ikwf_age
+        data["loser_normalized"] = loser_normalized
+        data["loser_usaw_number"] = loser_usaw_number
+        data["loser_ikwf_age"] = loser_ikwf_age
+        return cls(**data)
+
+
+class MatchesV3(pydantic.RootModel[list[MatchV3]]):
     pass
 
 

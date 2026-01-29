@@ -156,12 +156,12 @@ def main() -> None:
     custom_team_name_map = club_util.load_custom_team_name_map()
 
     matches_v2: list[bracket_util.MatchV2] = []
-    for match in matches_v1:
-        normalized = _lookup_teams(match, club_name_lookup, custom_team_name_map)
+    for match_ in matches_v1:
+        normalized = _lookup_teams(match_, club_name_lookup, custom_team_name_map)
         winner_team_normalized, loser_team_normalized = normalized
         matches_v2.append(
             bracket_util.MatchV2.from_v1(
-                match, winner_team_normalized, loser_team_normalized
+                match_, winner_team_normalized, loser_team_normalized
             )
         )
 
