@@ -117,11 +117,20 @@ def _lookup_athlete(
 
     by_team = custom_athlete_name_map.get(team_normalized, {})
     new_name_normalized = by_team.get(name_normalized)
-    matched = athlete_map.get(new_name_normalized)
-    if matched is not None:
-        return matched
+    if new_name_normalized is None:
+        return None
 
-    return None
+    matched = athlete_map.get(new_name_normalized)
+    if matched is None:
+        raise RuntimeError(
+            "Unexpected failure to match custom name",
+            name,
+            name_normalized,
+            new_name_normalized,
+            team_normalized,
+        )
+
+    return matched
 
 
 def main() -> None:
