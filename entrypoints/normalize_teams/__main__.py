@@ -11,6 +11,20 @@ _SIMPLE_NAME = re.compile(r"^[a-z0-9 ]+$")
 _FALSE_DUPLICATE_CARDINAL = frozenset(
     ["Cardinals Wrestling Club", "Arlington Cardinals Wrestling Club"]
 )
+_OVERRIDE_TEAM_MAPPING: dict[str, dict[str, str]] = {
+    "Devils Gauntlet Battle for the Belts": {
+        "St. Charles WC": "Out of State - Missouri"
+    },
+    "42nd Annual Bulls Wrestling Tournament": {
+        "St. Charles Wrestling Club": "Out of State - Missouri"
+    },
+    "Granite City Kids Holiday Classic": {
+        "St. Charles Wrestling Club": "Out of State - Missouri"
+    },
+    "2025 O`Fallon Beginners/Girls Open": {"STCWC": "Out of State - Missouri"},
+    "Highland Howl Jarron Haberer memorial": {"STCWC": "Out of State - Missouri"},
+    "Roxana Rumble": {"STCWC": "Out of State - Missouri"},
+}
 
 
 def _load_matches() -> list[bracket_util.MatchV1]:
@@ -105,10 +119,18 @@ def _prepare_club_lookup(rosters: list[club_util.ClubInfo]) -> dict[str, str]:
 
 
 def _lookup_team(
-    team: str, club_name_lookup: dict[str, str], custom_team_name_map: dict[str, str]
+    team: str,
+    event_name: str,
+    club_name_lookup: dict[str, str],
+    custom_team_name_map: dict[str, str],
 ) -> str:
     if team == "":
         return ""
+
+    event_override = _OVERRIDE_TEAM_MAPPING.get(event_name, {})
+    mapped_override = event_override.get(team)
+    if mapped_override is not None:
+        return mapped_override
 
     team_normalized = _normalize_name(team)
     matched = club_name_lookup.get(team_normalized)
@@ -135,15 +157,15 @@ def _lookup_team(
 
 
 def _lookup_teams(
-    match: bracket_util.MatchV1,
+    match_: bracket_util.MatchV1,
     club_name_lookup: dict[str, str],
     custom_team_name_map: dict[str, str],
 ) -> tuple[str, str]:
     winner_team_matched = _lookup_team(
-        match.winner_team, club_name_lookup, custom_team_name_map
+        match_.winner_team, match_.event_name, club_name_lookup, custom_team_name_map
     )
     loser_team_matched = _lookup_team(
-        match.loser_team, club_name_lookup, custom_team_name_map
+        match_.loser_team, match_.event_name, club_name_lookup, custom_team_name_map
     )
     return winner_team_matched, loser_team_matched
 
