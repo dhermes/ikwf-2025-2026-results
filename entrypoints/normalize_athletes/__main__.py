@@ -138,3 +138,8 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+# TODO: Deal with team transfers. For example:
+#       - `Annebelle Duller` from `Antioch Predators Wrestling Club` to
+#         `Stateline Stingers Wrestling Club`
