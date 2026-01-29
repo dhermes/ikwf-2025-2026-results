@@ -358,9 +358,7 @@ file is parsed from the raw data via
 | Beau Kinworthy      | St. Charles WC       |
 | Clinton Kinworthy   | St. Charles WC       |
 | Eva Shallenberger   | St. Charles WC       |
-| Fancy Anderson      | St. Charles WC       |
 | Francine Lapinski   | St. Charles WC       |
-| Gio Theriot         | St. Charles WC       |
 | Harper Dill         | St. Charles WC       |
 | Joe Lapinski        | St. Charles WC       |
 | Levi Price          | St. Charles WC       |
@@ -377,3 +375,35 @@ file is parsed from the raw data via
 
 I think the sheer number of these from `St. Charles WC` points to a mistaken
 team mapping in `custom-normalized-team-names.json`. I will need to follow up.
+
+| Athlete             | Team                       | Event name                             | Location                          |
+| ------------------- | -------------------------- | -------------------------------------- | --------------------------------- |
+| Beau Kinworthy      | St. Charles Wrestling Club | 42nd Annual Bulls Wrestling Tournament | Bethalto (near St. Louis, MO)     |
+| Beau Kinworthy      | St. Charles Wrestling Club | Granite City Kids Holiday Classic      | Granite City (near St. Louis, MO) |
+| Beau Kinworthy      | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Clinton Kinworthy   | St. Charles Wrestling Club | 42nd Annual Bulls Wrestling Tournament | Bethalto (near St. Louis, MO)     |
+| Clinton Kinworthy   | St. Charles Wrestling Club | Granite City Kids Holiday Classic      | Granite City (near St. Louis, MO) |
+| Clinton Kinworthy   | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Eva Shallenberger   | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Francine Lapinski   | STCWC                      | 2025 O`Fallon Beginners/Girls Open     | O'Fallon (near St. Louis, MO)     |
+| Harper Dill         | St. Charles Wrestling Club | Granite City Kids Holiday Classic      | Granite City (near St. Louis, MO) |
+| Joe Lapinski        | STCWC                      | Roxana Rumble                          | Roxana (near St. Louis, MO)       |
+| Levi Price          | St. Charles Wrestling Club | 42nd Annual Bulls Wrestling Tournament | Bethalto (near St. Louis, MO)     |
+| Levi Price          | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Lilly Mcghee        | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Llywelynn Harris    | St. Charles Wrestling Club | 42nd Annual Bulls Wrestling Tournament | Bethalto (near St. Louis, MO)     |
+| Llywelynn Harris    | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Lydia Dill          | St. Charles Wrestling Club | Granite City Kids Holiday Classic      | Granite City (near St. Louis, MO) |
+| McKenna Weymouth    | St. Charles Wrestling Club | Granite City Kids Holiday Classic      | Granite City (near St. Louis, MO) |
+| Owen Kyle           | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Owen Kyle           | STCWC                      | Roxana Rumble                          | Roxana (near St. Louis, MO)       |
+| Parker Harris       | St. Charles WC             | Devils Gauntlet Battle for the Belts   | Belleville (near St. Louis, MO)   |
+| Parker Harris       | St. Charles Wrestling Club | 42nd Annual Bulls Wrestling Tournament | Bethalto (near St. Louis, MO)     |
+| Parker Harris       | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Roman Patterson     | St. Charles Wrestling Club | 42nd Annual Bulls Wrestling Tournament | Bethalto (near St. Louis, MO)     |
+| Roman Patterson     | St. Charles Wrestling Club | Granite City Kids Holiday Classic      | Granite City (near St. Louis, MO) |
+| Roman Patterson     | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Roman Patterson     | STCWC                      | Roxana Rumble                          | Roxana (near St. Louis, MO)       |
+| Sadie Shallenberger | STCWC                      | Highland Howl Jarron Haberer memorial  | Highland (near St. Louis, MO)     |
+| Vera Lombardo       | STCWC                      | 2025 O`Fallon Beginners/Girls Open     | O'Fallon (near St. Louis, MO)     |
+| Zeke Ward           | St. Charles Wrestling Club | Granite City Kids Holiday Classic      | Granite City (near St. Louis, MO) |
