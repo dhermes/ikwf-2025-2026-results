@@ -97,8 +97,14 @@ def _prepare_athlete_lookup(
     return roster_map
 
 
+_CustomAthleteNameMap = dict[str, dict[str, str | None]]
+
+
 def _lookup_athlete(
-    name: str, team_normalized: str, athlete_lookup: _AthleteLookup
+    name: str,
+    team_normalized: str,
+    athlete_lookup: _AthleteLookup,
+    custom_athlete_name_map: _CustomAthleteNameMap,
 ) -> club_util.Athlete | None:
     athlete_map = athlete_lookup.get(team_normalized)
     if athlete_map is None:
@@ -106,6 +112,12 @@ def _lookup_athlete(
 
     name_normalized = _normalize_name(name)
     matched = athlete_map.get(name_normalized)
+    if matched is not None:
+        return matched
+
+    by_team = custom_athlete_name_map.get(team_normalized, {})
+    new_name_normalized = by_team.get(name_normalized)
+    matched = athlete_map.get(new_name_normalized)
     if matched is not None:
         return matched
 
@@ -117,15 +129,23 @@ def main() -> None:
     rosters = club_util.load_rosters()
     athlete_lookup = _prepare_athlete_lookup(rosters)
 
+    custom_athlete_name_map = club_util.load_custom_athlete_name_map()
+
     t1 = 0
     t2 = 0
     for match_ in matches_v2:
         t1 += 2
         winner_athlete = _lookup_athlete(
-            match_.winner, match_.winner_team_normalized, athlete_lookup
+            match_.winner,
+            match_.winner_team_normalized,
+            athlete_lookup,
+            custom_athlete_name_map,
         )
         loser_athlete = _lookup_athlete(
-            match_.loser, match_.loser_team_normalized, athlete_lookup
+            match_.loser,
+            match_.loser_team_normalized,
+            athlete_lookup,
+            custom_athlete_name_map,
         )
         if winner_athlete is not None:
             t2 += 1

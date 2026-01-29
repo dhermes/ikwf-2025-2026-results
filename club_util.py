@@ -58,3 +58,16 @@ def load_rosters() -> list[ClubInfo]:
 
     clubs_root = Clubs.model_validate_json(as_json)
     return clubs_root.root
+
+
+class _CustomAthleteNameMap(pydantic.RootModel[dict[str, dict[str, str | None]]]):
+    pass
+
+
+def load_custom_athlete_name_map() -> dict[str, dict[str, str | None]]:
+    path = _HERE / "_parsed-data" / "custom-normalized-athlete-names.json"
+    with open(path, "rb") as file_obj:
+        as_json = file_obj.read()
+
+    root = _CustomAthleteNameMap.model_validate_json(as_json)
+    return root.root
