@@ -11,6 +11,10 @@ _SIMPLE_NAME = re.compile(r"^[a-z0-9 ]+$")
 _FALSE_DUPLICATE_CARDINAL = frozenset(
     ["Cardinals Wrestling Club", "Arlington Cardinals Wrestling Club"]
 )
+# NOTE: `_OVERRIDE_TEAM_MAPPING` provides tournament specific overrides for a
+#       given team name. For now this is just to support the fact that
+#       St. Charles, IL and St. Charles, MO have the same team name. But the
+#       one from Missouri only goes to tournaments near St. Louis.
 _OVERRIDE_TEAM_MAPPING: dict[str, dict[str, str]] = {
     "Devils Gauntlet Battle for the Belts": {
         "St. Charles WC": "Out of State - Missouri"
