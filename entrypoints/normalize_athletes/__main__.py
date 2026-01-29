@@ -116,7 +116,15 @@ def _lookup_athlete(
         return matched
 
     by_team = custom_athlete_name_map.get(team_normalized, {})
-    new_name_normalized = by_team.get(name_normalized)
+    if name_normalized not in by_team:
+        raise ValueError(
+            "All unmatched athletes should be present in custom athlete name map",
+            name,
+            name_normalized,
+            team_normalized,
+        )
+
+    new_name_normalized = by_team[name_normalized]
     if new_name_normalized is None:
         # TODO: Do not allow this branch at all (i.e. fill in all of the missing
         #       mappings)
