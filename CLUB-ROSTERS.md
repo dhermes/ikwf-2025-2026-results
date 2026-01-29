@@ -339,3 +339,41 @@ active for 2025-26:
 The athletes will be fetched and stored in `_parsed-data/rosters.json`, this
 file is parsed from the raw data via
 `uv run python -m entrypoints.parse_rosters`.
+
+### In-season transfers
+
+| Name             | Old club                           | New club                                 |
+| ---------------- | ---------------------------------- | ---------------------------------------- |
+| Annebelle Duller | Antioch Predators Wrestling Club   | Stateline Stingers Wrestling Club        |
+| Madeline Hlava   | West Suburban Girls Wrestling Club | Martinez Fox Valley Elite Wrestling Club |
+| Nola Svoboda     | West Suburban Girls Wrestling Club | Martinez Fox Valley Elite Wrestling Club |
+| Owen Friedman    | Naperville Wrestling Club          | Top Dog Wrestling Club                   |
+| Sophia Hlava     | West Suburban Girls Wrestling Club | Martinez Fox Valley Elite Wrestling Club |
+
+### Mystery athletes
+
+| Name                | Club                 |
+| ------------------- | -------------------- |
+| Greyson Morales     | Cory Clark Wrestling |
+| Beau Kinworthy      | St. Charles WC       |
+| Clinton Kinworthy   | St. Charles WC       |
+| Eva Shallenberger   | St. Charles WC       |
+| Fancy Anderson      | St. Charles WC       |
+| Francine Lapinski   | St. Charles WC       |
+| Gio Theriot         | St. Charles WC       |
+| Harper Dill         | St. Charles WC       |
+| Joe Lapinski        | St. Charles WC       |
+| Levi Price          | St. Charles WC       |
+| Lilly Mcghee        | St. Charles WC       |
+| Llywelynn Harris    | St. Charles WC       |
+| Lydia Dill          | St. Charles WC       |
+| McKenna Weymouth    | St. Charles WC       |
+| Owen Kyle           | St. Charles WC       |
+| Parker Harris       | St. Charles WC       |
+| Roman Patterson     | St. Charles WC       |
+| Sadie Shallenberger | St. Charles WC       |
+| Vera Lombardo       | St. Charles WC       |
+| Zeke Ward           | St. Charles WC       |
+
+I think the sheer number of these from `St. Charles WC` points to a mistaken
+team mapping in `custom-normalized-team-names.json`. I will need to follow up.
