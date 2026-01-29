@@ -345,6 +345,7 @@ file is parsed from the raw data via
 | Name             | Old club                           | New club                                 |
 | ---------------- | ---------------------------------- | ---------------------------------------- |
 | Annebelle Duller | Antioch Predators Wrestling Club   | Stateline Stingers Wrestling Club        |
+| Arlo Young       | Wolverine Wrestling Club           | Beat the Streets Chicago-Midway          |
 | Madeline Hlava   | West Suburban Girls Wrestling Club | Martinez Fox Valley Elite Wrestling Club |
 | Nola Svoboda     | West Suburban Girls Wrestling Club | Martinez Fox Valley Elite Wrestling Club |
 | Owen Friedman    | Naperville Wrestling Club          | Top Dog Wrestling Club                   |
@@ -352,6 +353,6 @@ file is parsed from the raw data via
 
 ### Mystery athletes
 
-| Name                | Club                 |
-| ------------------- | -------------------- |
-| Greyson Morales     | Cory Clark Wrestling |
+| Name            | Club                 |
+| --------------- | -------------------- |
+| Greyson Morales | Cory Clark Wrestling |
