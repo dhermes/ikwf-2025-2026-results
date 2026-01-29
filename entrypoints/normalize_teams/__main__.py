@@ -113,7 +113,9 @@ def _prepare_club_lookup(rosters: list[club_util.ClubInfo]) -> dict[str, str]:
     return club_name_lookup
 
 
-def _lookup_team(team: str, club_name_lookup: dict[str, str]) -> str | None:
+def _lookup_team(
+    team: str, club_name_lookup: dict[str, str], custom_team_name_map: dict[str, str]
+) -> str:
     if team == "":
         return None
 
@@ -134,14 +136,24 @@ def _lookup_team(team: str, club_name_lookup: dict[str, str]) -> str | None:
     if len(partial_matches) > 1:
         raise RuntimeError("Unexpected duplicates", team, partial_matches)
 
-    return None
+    custom_match = custom_team_name_map.get(team_normalized)
+    if custom_match is not None:
+        return custom_match
+
+    raise RuntimeError("Could not match team", team, team_normalized)
 
 
 def _lookup_teams(
-    match: bracket_util.Match, club_name_lookup: dict[str, str]
+    match: bracket_util.Match,
+    club_name_lookup: dict[str, str],
+    custom_team_name_map: dict[str, str],
 ) -> tuple[str | None, str | None]:
-    winner_team_matched = _lookup_team(match.winner_team, club_name_lookup)
-    loser_team_matched = _lookup_team(match.loser_team, club_name_lookup)
+    winner_team_matched = _lookup_team(
+        match.winner_team, club_name_lookup, custom_team_name_map
+    )
+    loser_team_matched = _lookup_team(
+        match.loser_team, club_name_lookup, custom_team_name_map
+    )
     return winner_team_matched, loser_team_matched
 
 
@@ -151,9 +163,10 @@ def main() -> None:
 
     rosters = _load_rosters()
     club_name_lookup = _prepare_club_lookup(rosters)
+    custom_team_name_map = club_util.load_custom_team_name_map()
 
     for match in matches:
-        _lookup_teams(match, club_name_lookup)
+        _lookup_teams(match, club_name_lookup, custom_team_name_map)
 
 
 if __name__ == "__main__":

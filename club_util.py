@@ -1,6 +1,9 @@
+import pathlib
 from typing import Literal
 
 import pydantic
+
+_HERE = pathlib.Path(__file__).resolve().parent
 
 
 class _ForbidExtra(pydantic.BaseModel):
@@ -33,3 +36,16 @@ class ClubInfo(_ForbidExtra):
 
 class Clubs(pydantic.RootModel[list[ClubInfo]]):
     pass
+
+
+class _CustomTeamNameMap(pydantic.RootModel[dict[str, str]]):
+    pass
+
+
+def load_custom_team_name_map() -> dict[str, str]:
+    path = _HERE / "_parsed-data" / "custom-normalized-team-names.json"
+    with open(path, "rb") as file_obj:
+        as_json = file_obj.read()
+
+    root = _CustomTeamNameMap.model_validate_json(as_json)
+    return root.root
