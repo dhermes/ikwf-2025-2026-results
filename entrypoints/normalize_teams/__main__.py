@@ -26,15 +26,6 @@ def _load_matches() -> list[bracket_util.MatchV1]:
     return matches_root.root
 
 
-def _load_rosters() -> list[club_util.ClubInfo]:
-    input_file = _ROOT / "_parsed-data" / "rosters.json"
-    with open(input_file) as file_obj:
-        as_json = file_obj.read()
-
-    clubs_root = club_util.Clubs.model_validate_json(as_json)
-    return clubs_root.root
-
-
 def _normalize_name(name: str) -> str:
     case_insensitive = name.lower()
 
@@ -160,7 +151,7 @@ def _lookup_teams(
 def main() -> None:
     matches_v1 = _load_matches()
 
-    rosters = _load_rosters()
+    rosters = club_util.load_rosters()
     club_name_lookup = _prepare_club_lookup(rosters)
     custom_team_name_map = club_util.load_custom_team_name_map()
 

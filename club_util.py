@@ -49,3 +49,12 @@ def load_custom_team_name_map() -> dict[str, str]:
 
     root = _CustomTeamNameMap.model_validate_json(as_json)
     return root.root
+
+
+def load_rosters() -> list[ClubInfo]:
+    input_file = _HERE / "_parsed-data" / "rosters.json"
+    with open(input_file) as file_obj:
+        as_json = file_obj.read()
+
+    clubs_root = Clubs.model_validate_json(as_json)
+    return clubs_root.root
