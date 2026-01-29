@@ -30,14 +30,26 @@ def _normalize_name(name: str) -> str:
     whitespace_normalized = " ".join(parts)
 
     without_punctuation = whitespace_normalized.replace("'", "")
+    without_punctuation = without_punctuation.replace("\u2019", "")
     without_punctuation = without_punctuation.replace('"', "")
     without_punctuation = without_punctuation.replace(".", "")
     without_punctuation = without_punctuation.replace(",", "")
     without_punctuation = without_punctuation.replace("&", "and")
     without_punctuation = without_punctuation.replace("-", " ")
     without_punctuation = without_punctuation.replace("`", "")
-    # NOTE: `c/ ` is a special case based on a likely typo in real data
-    without_punctuation = without_punctuation.replace("c/ ", "c ")
+    without_punctuation = without_punctuation.replace("\xe9", "e")
+    without_punctuation = without_punctuation.replace("\xf1", "n")
+    without_punctuation = without_punctuation.replace("\xed", "i")
+    without_punctuation = without_punctuation.replace("\xe1", "a")
+    # Very special cases
+    without_punctuation = without_punctuation.replace("bassam/sammie", "bassam")
+    without_punctuation = without_punctuation.replace("paul/ryland", "paul")
+    without_punctuation = without_punctuation.replace("ryland/ paul", "paul")
+    without_punctuation = without_punctuation.replace("ryland/paul", "paul")
+    without_punctuation = without_punctuation.replace("[kar dee a]", "")
+    without_punctuation = without_punctuation.replace("richard/ benny", "richard")
+    without_punctuation = without_punctuation.replace("ta?leigha", "taleigha")
+    without_punctuation = without_punctuation.replace("o?connor", "oconnor")
 
     without_punctuation = without_punctuation.replace(" (", " ")
     without_punctuation = without_punctuation.replace(") ", " ")
@@ -56,10 +68,13 @@ def _normalize_name(name: str) -> str:
     return whitespace_normalized
 
 
+_AthleteLookup = dict[str, dict[str, club_util.Athlete]]
+
+
 def _prepare_athlete_lookup(
     rosters: list[club_util.ClubInfo],
-) -> dict[str, dict[str, club_util.Athlete]]:
-    roster_map: dict[str, dict[str, club_util.Athlete]] = {}
+) -> _AthleteLookup:
+    roster_map: _AthleteLookup = {}
     for roster in rosters:
         athlete_map: dict[str, club_util.Athlete] = {}
         for athlete in roster.athletes:
@@ -82,12 +97,43 @@ def _prepare_athlete_lookup(
     return roster_map
 
 
+def _lookup_athlete(
+    name: str, team_normalized: str, athlete_lookup: _AthleteLookup
+) -> club_util.Athlete | None:
+    athlete_map = athlete_lookup.get(team_normalized)
+    if athlete_map is None:
+        return None
+
+    name_normalized = _normalize_name(name)
+    matched = athlete_map.get(name_normalized)
+    if matched is not None:
+        return matched
+
+    return None
+
+
 def main() -> None:
     matches_v2 = _load_matches()
-    print(len(matches_v2))
     rosters = club_util.load_rosters()
     athlete_lookup = _prepare_athlete_lookup(rosters)
-    print(len(athlete_lookup))
+
+    t1 = 0
+    t2 = 0
+    for match_ in matches_v2:
+        t1 += 2
+        winner_athlete = _lookup_athlete(
+            match_.winner, match_.winner_team_normalized, athlete_lookup
+        )
+        loser_athlete = _lookup_athlete(
+            match_.loser, match_.loser_team_normalized, athlete_lookup
+        )
+        if winner_athlete is not None:
+            t2 += 1
+        if loser_athlete is not None:
+            t2 += 1
+
+    print(f"{t2} / {t1}")
+    print(t2 / t1)
 
 
 if __name__ == "__main__":
