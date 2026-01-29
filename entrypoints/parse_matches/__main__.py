@@ -9,8 +9,8 @@ _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
 
 
-def _parse_trackwrestling(raw_data_dir: pathlib.Path) -> list[bracket_util.Match]:
-    all_matches: list[bracket_util.Match] = []
+def _parse_trackwrestling(raw_data_dir: pathlib.Path) -> list[bracket_util.MatchV1]:
+    all_matches: list[bracket_util.MatchV1] = []
 
     for date_str, name in trackwrestling.TOURNAMENT_EVENTS:
         parent_dir = raw_data_dir / date_str
@@ -34,8 +34,10 @@ def _parse_trackwrestling(raw_data_dir: pathlib.Path) -> list[bracket_util.Match
     return all_matches
 
 
-def _parse_trackwrestling_duals(raw_data_dir: pathlib.Path) -> list[bracket_util.Match]:
-    all_matches: list[bracket_util.Match] = []
+def _parse_trackwrestling_duals(
+    raw_data_dir: pathlib.Path,
+) -> list[bracket_util.MatchV1]:
+    all_matches: list[bracket_util.MatchV1] = []
 
     for date_str, name in trackwrestling.DUAL_EVENTS:
         parent_dir = raw_data_dir / date_str
@@ -54,8 +56,8 @@ def _parse_trackwrestling_duals(raw_data_dir: pathlib.Path) -> list[bracket_util
     return all_matches
 
 
-def _parse_usabracketing(raw_data_dir: pathlib.Path) -> list[bracket_util.Match]:
-    all_matches: list[bracket_util.Match] = []
+def _parse_usabracketing(raw_data_dir: pathlib.Path) -> list[bracket_util.MatchV1]:
+    all_matches: list[bracket_util.MatchV1] = []
 
     for date_str, name in usabracketing.TOURNAMENT_EVENTS:
         parent_dir = raw_data_dir / date_str
@@ -79,8 +81,10 @@ def _parse_usabracketing(raw_data_dir: pathlib.Path) -> list[bracket_util.Match]
     return all_matches
 
 
-def _parse_usabracketing_duals(raw_data_dir: pathlib.Path) -> list[bracket_util.Match]:
-    all_matches: list[bracket_util.Match] = []
+def _parse_usabracketing_duals(
+    raw_data_dir: pathlib.Path,
+) -> list[bracket_util.MatchV1]:
+    all_matches: list[bracket_util.MatchV1] = []
 
     for date_str, name in usabracketing.DUAL_EVENTS:
         parent_dir = raw_data_dir / date_str
@@ -101,7 +105,7 @@ def _parse_usabracketing_duals(raw_data_dir: pathlib.Path) -> list[bracket_util.
 def main() -> None:
     raw_data_dir = _ROOT / "_raw-data"
 
-    all_matches: list[bracket_util.Match] = []
+    all_matches: list[bracket_util.MatchV1] = []
     all_matches.extend(_parse_trackwrestling(raw_data_dir))
     all_matches.extend(_parse_trackwrestling_duals(raw_data_dir))
     all_matches.extend(_parse_usabracketing(raw_data_dir))
@@ -109,7 +113,7 @@ def main() -> None:
 
     all_matches_file = _ROOT / "_parsed-data" / "all-matches-01.csv"
     with open(all_matches_file, "w") as file_obj:
-        writer = csv.DictWriter(file_obj, fieldnames=bracket_util.CSV_FIELD_NAMES)
+        writer = csv.DictWriter(file_obj, fieldnames=bracket_util.CSV_FIELD_NAMES_V1)
         writer.writeheader()
         for match_ in all_matches:
             writer.writerow(match_.model_dump(mode="json", by_alias=True))

@@ -4,7 +4,7 @@ from typing import Literal
 
 import pydantic
 
-CSV_FIELD_NAMES = (
+CSV_FIELD_NAMES_V1 = (
     "Event Name",
     "Event Date",
     "Bracket",
@@ -13,6 +13,23 @@ CSV_FIELD_NAMES = (
     "Winner",
     "Winner Team",
     "Loser",
+    "Loser Team",
+    "Result",
+    "Result Type",
+    "Source",
+)
+
+CSV_FIELD_NAMES_V2 = (
+    "Event Name",
+    "Event Date",
+    "Bracket",
+    "Round",
+    "Division",
+    "Winner",
+    "Winner Team (normalized)",
+    "Winner Team",
+    "Loser",
+    "Loser Team (normalized)",
     "Loser Team",
     "Result",
     "Result Type",
@@ -75,7 +92,7 @@ class FetchedEvent(_ForbidExtra):
     match_html: dict[str, str]
 
 
-class Match(_ForbidExtra):
+class MatchV1(_ForbidExtra):
     event_name: str = pydantic.Field(alias="Event Name")
     event_date: datetime.date = pydantic.Field(alias="Event Date")
     bracket: str = pydantic.Field(alias="Bracket")
@@ -90,7 +107,37 @@ class Match(_ForbidExtra):
     source: Source = pydantic.Field(alias="Source")
 
 
-class Matches(pydantic.RootModel[list[Match]]):
+class MatchesV1(pydantic.RootModel[list[MatchV1]]):
+    pass
+
+
+class MatchV2(MatchV1):
+    winner_team_normalized: str = pydantic.Field(alias="Winner Team (normalized)")
+    loser_team_normalized: str = pydantic.Field(alias="Loser Team (normalized)")
+
+    @classmethod
+    def from_v1(
+        cls, inherit: MatchV1, winner_team_normalized: str, loser_team_normalized: str
+    ) -> MatchV2:
+        return cls(
+            event_name=inherit.event_name,
+            event_date=inherit.event_date,
+            bracket=inherit.bracket,
+            round_=inherit.round_,
+            division=inherit.division,
+            winner=inherit.winner,
+            winner_team=inherit.winner_team,
+            loser=inherit.loser,
+            loser_team=inherit.loser_team,
+            result=inherit.result,
+            result_type=inherit.result_type,
+            source=inherit.source,
+            winner_team_normalized=winner_team_normalized,
+            loser_team_normalized=loser_team_normalized,
+        )
+
+
+class MatchesV2(pydantic.RootModel[list[MatchV2]]):
     pass
 
 

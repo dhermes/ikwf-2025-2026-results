@@ -556,7 +556,7 @@ def fetch_dual_weights(event: bracket_util.Event) -> dict[str, str]:
 
 def parse_tournament_round(
     html: str, event_name: str, event_date: str
-) -> list[bracket_util.Match]:
+) -> list[bracket_util.MatchV1]:
     """Parse a round from a tournament on TrackWrestling.
 
     These will be of the form:
@@ -571,7 +571,7 @@ def parse_tournament_round(
           ...
         </section>
     """
-    round_matches: list[bracket_util.Match] = []
+    round_matches: list[bracket_util.MatchV1] = []
     soup = bs4.BeautifulSoup(html, features="html.parser")
 
     all_h2 = soup.find_all("h2")
@@ -639,7 +639,7 @@ def parse_tournament_round(
             loser = f"{loser_first_name} {loser_last_name}"
             loser = loser.strip()
 
-            match_ = bracket_util.Match(
+            match_ = bracket_util.MatchV1(
                 event_name=event_name,
                 event_date=event_date,
                 bracket=bracket,
@@ -811,11 +811,11 @@ def _ignore_result(result: str) -> bool:
 
 def parse_dual_event(
     weights_raw: dict[str, str], event_name: str, event_date: str
-) -> list[bracket_util.Match]:
+) -> list[bracket_util.MatchV1]:
     extracted_matches, extracted_athletes = _extract_duals(weights_raw)
     by_text = {athlete.as_text(): athlete for athlete in extracted_athletes}
 
-    all_matches: list[bracket_util.Match] = []
+    all_matches: list[bracket_util.MatchV1] = []
 
     for match_ in extracted_matches:
         result = match_.result
@@ -826,7 +826,7 @@ def parse_dual_event(
         loser_athlete = by_text[match_.loser]
 
         all_matches.append(
-            bracket_util.Match(
+            bracket_util.MatchV1(
                 event_name=event_name,
                 event_date=event_date,
                 bracket=str(match_.weight),

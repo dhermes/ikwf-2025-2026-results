@@ -13,7 +13,7 @@ _FALSE_DUPLICATE_CARDINAL = frozenset(
 )
 
 
-def _load_matches() -> list[bracket_util.Match]:
+def _load_matches() -> list[bracket_util.MatchV1]:
     input_file = _ROOT / "_parsed-data" / "all-matches-01.csv"
     with open(input_file) as file_obj:
         rows = list(csv.DictReader(file_obj))
@@ -22,7 +22,7 @@ def _load_matches() -> list[bracket_util.Match]:
         if row["Division"] == "":
             row["Division"] = None
 
-    matches_root = bracket_util.Matches.model_validate(rows)
+    matches_root = bracket_util.MatchesV1.model_validate(rows)
     return matches_root.root
 
 
@@ -117,7 +117,7 @@ def _lookup_team(
     team: str, club_name_lookup: dict[str, str], custom_team_name_map: dict[str, str]
 ) -> str:
     if team == "":
-        return None
+        return ""
 
     team_normalized = _normalize_name(team)
     matched = club_name_lookup.get(team_normalized)
@@ -144,10 +144,10 @@ def _lookup_team(
 
 
 def _lookup_teams(
-    match: bracket_util.Match,
+    match: bracket_util.MatchV1,
     club_name_lookup: dict[str, str],
     custom_team_name_map: dict[str, str],
-) -> tuple[str | None, str | None]:
+) -> tuple[str, str]:
     winner_team_matched = _lookup_team(
         match.winner_team, club_name_lookup, custom_team_name_map
     )
@@ -158,15 +158,28 @@ def _lookup_teams(
 
 
 def main() -> None:
-    matches = _load_matches()
-    print(len(matches))
+    matches_v1 = _load_matches()
 
     rosters = _load_rosters()
     club_name_lookup = _prepare_club_lookup(rosters)
     custom_team_name_map = club_util.load_custom_team_name_map()
 
-    for match in matches:
-        _lookup_teams(match, club_name_lookup, custom_team_name_map)
+    matches_v2: list[bracket_util.MatchV2] = []
+    for match in matches_v1:
+        normalized = _lookup_teams(match, club_name_lookup, custom_team_name_map)
+        winner_team_normalized, loser_team_normalized = normalized
+        matches_v2.append(
+            bracket_util.MatchV2.from_v1(
+                match, winner_team_normalized, loser_team_normalized
+            )
+        )
+
+    matches_file_v2 = _ROOT / "_parsed-data" / "all-matches-02.csv"
+    with open(matches_file_v2, "w") as file_obj:
+        writer = csv.DictWriter(file_obj, fieldnames=bracket_util.CSV_FIELD_NAMES_V2)
+        writer.writeheader()
+        for match_ in matches_v2:
+            writer.writerow(match_.model_dump(mode="json", by_alias=True))
 
 
 if __name__ == "__main__":

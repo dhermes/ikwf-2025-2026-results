@@ -613,7 +613,7 @@ def _parse_match_line(
     round_: str,
     bracket: str,
     match_text: str,
-) -> bracket_util.Match | None:
+) -> bracket_util.MatchV1 | None:
     if _PLACEHOLDER_TEXT in match_text:
         return None
     if "Med. For. " in match_text:
@@ -637,7 +637,7 @@ def _parse_match_line(
 
     bracket_full = f"{division} {bracket}"
     bracket_full = bracket_full.strip()
-    return bracket_util.Match(
+    return bracket_util.MatchV1(
         event_name=event_name,
         event_date=event_date,
         bracket=bracket_full,
@@ -655,7 +655,7 @@ def _parse_match_line(
 
 def parse_tournament_round(
     html: str, event_name: str, event_date: str
-) -> list[bracket_util.Match]:
+) -> list[bracket_util.MatchV1]:
     """Parse a round from a tournament on TrackWrestling.
 
     These will be of the form:
@@ -675,7 +675,7 @@ def parse_tournament_round(
     `style` is the only thing we can use to determine what type of element it
     is.
     """
-    round_matches: list[bracket_util.Match] = []
+    round_matches: list[bracket_util.MatchV1] = []
 
     soup = bs4.BeautifulSoup(html, features="html.parser")
     all_p = soup.find_all("p")
