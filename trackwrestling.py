@@ -535,7 +535,7 @@ def _weights_click_next_page(driver: webdriver.Chrome, page_number: int) -> bool
     return len(next_links) == 1
 
 
-def fetch_tournament_weights(event: bracket_util.Event) -> dict[str, str]:
+def fetch_athlete_weights(event: bracket_util.Event) -> dict[str, str]:
     driver = _open_event(event)
     _click_wrestlers_menu_option(driver)
 

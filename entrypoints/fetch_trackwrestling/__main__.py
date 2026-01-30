@@ -40,12 +40,12 @@ def _fetch_event_weights(
         print(f"Skipping: {event.name} ...")
         return None
 
-    print(f"Fetching weights for: {event.name} ...")
+    print(f"Fetching athlete weights for: {event.name} ...")
 
-    weights_html = trackwrestling.fetch_tournament_weights(event)
+    weights_html = trackwrestling.fetch_athlete_weights(event)
 
     if not weights_html:
-        raise RuntimeError("Tournament has no weights", event.name)
+        raise RuntimeError("Tournament has no athlete weights", event.name)
 
     fetched_event.weights_html = weights_html
     return fetched_event
