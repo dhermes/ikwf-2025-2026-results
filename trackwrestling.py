@@ -1,16 +1,18 @@
 import os
 import time
+from collections.abc import Callable
 
 import bs4
 import pydantic
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC  # noqa: N812
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
 import bracket_util
 
-_WAIT_TIME = 3
+_WAIT_TIME = 10
 _BOUT_FORMAT = (
     "[boutType] :: [wFName] :: [wLName] :: [wTeam] :: [winType] :: "
     "[lFName] :: [lLName] :: [lTeam] :: [scoreSummary]"
@@ -440,6 +442,125 @@ def fetch_tournament_rounds(event: bracket_util.Event) -> dict[str, str]:
     return captured_html
 
 
+def _click_wrestlers_menu_option(driver: webdriver.Chrome) -> None:
+    # Wait for the button to be clickable
+    wrestlers_button = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.element_to_be_clickable((By.XPATH, "//a[normalize-space()='Wrestlers']"))
+    )
+
+    # Click the button
+    wrestlers_button.click()
+
+
+def _weights_table_predicate(driver: webdriver.Chrome) -> WebElement | None:
+    elements = driver.find_elements(By.CSS_SELECTOR, "table.tw-table")
+    if len(elements) != 1:
+        return None
+    return elements[0]
+
+
+def _get_weights_table(driver: webdriver.Chrome) -> str:
+    # Wait for the iframe to be available
+    iframe = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.ID, "PageFrame"))
+    )
+
+    # Switch to the iframe
+    driver.switch_to.frame(iframe)
+
+    # Wait for the button to be clickable
+    weights_table = WebDriverWait(driver, _WAIT_TIME).until(_weights_table_predicate)
+    if weights_table is None:
+        raise RuntimeError("Unexpected missing weights table")
+    table_html = weights_table.get_attribute("outerHTML")
+
+    # Switch back to the main page
+    driver.switch_to.default_content()
+
+    return table_html
+
+
+def _make_weights_next_page_ready(
+    range_start: int,
+) -> Callable[[webdriver.Chrome], str | None]:
+    start_str = f"{range_start} - "
+
+    def _weights_next_page_ready(driver: webdriver.Chrome) -> str | None:
+        span = driver.find_element(
+            By.CSS_SELECTOR, "div.dataGridNextPrev > span:first-of-type"
+        )
+        if span is None:
+            return None
+
+        text = span.text.strip()
+        return text if text.startswith(start_str) else None
+
+    return _weights_next_page_ready
+
+
+def _weights_click_next_page(driver: webdriver.Chrome, page_number: int) -> bool:
+    range_start = 30 * page_number + 31
+
+    # Wait for the iframe to be available
+    iframe = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.ID, "PageFrame"))
+    )
+
+    # Switch to the iframe
+    driver.switch_to.frame(iframe)
+
+    # Wait for `<span class="prevNextButton">` parent
+    buttons_span = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, "span.prevNextButton"))
+    )
+
+    next_links = buttons_span.find_elements(
+        By.XPATH,
+        ".//a[.//i[contains(concat(' ', normalize-space(@class), ' '), ' dgNext ')]]",
+    )
+
+    if len(next_links) > 1:
+        raise RuntimeError("Unexpected number of next buttons")
+
+    if len(next_links) == 1:
+        next_link = next_links[0]
+        next_link.click()
+        predicate = _make_weights_next_page_ready(range_start)
+        WebDriverWait(driver, _WAIT_TIME).until(predicate)
+        time.sleep(0.1)
+
+    # Switch back to the main page
+    driver.switch_to.default_content()
+
+    return len(next_links) == 1
+
+
+def fetch_tournament_weights(event: bracket_util.Event) -> dict[str, str]:
+    driver = _open_event(event)
+    _click_wrestlers_menu_option(driver)
+
+    captured_html: dict[str, str] = {}
+
+    next_page_exists = True
+    # NOTE: This is a bounded `for` loop instead of a `while` loop.
+    for i in range(10000):
+        if not next_page_exists:
+            break
+
+        html = _get_weights_table(driver)
+        key = f"page-{i}"
+        captured_html[key] = html
+
+        next_page_exists = _weights_click_next_page(driver, i)
+
+    if next_page_exists:
+        raise RuntimeError("Exited loop without terminating")
+
+    driver.quit()
+
+    return captured_html
+
+
 def _click_weight_results_option(driver: webdriver.Chrome) -> None:
     # Wait for the iframe to be available
     iframe = WebDriverWait(driver, _WAIT_TIME).until(
@@ -684,7 +805,6 @@ def _extract_match_li(match_li: bs4.Tag) -> _DualMatchExtracted | None:
     before, span1, middle, span2, after = children
     middle_text = middle.text.strip()
     if middle_text != "over":
-        breakpoint()
         return None
 
     if span1.name != "span" or span2.name != "span":

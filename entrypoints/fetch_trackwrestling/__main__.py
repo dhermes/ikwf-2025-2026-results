@@ -1,3 +1,4 @@
+import json
 import pathlib
 
 import bracket_util
@@ -16,13 +17,22 @@ def main() -> None:
         stem = bracket_util.to_kebab_case(name)
         filename = f"{stem}.json"
         path = parent_dir / filename
-        if path.exists():
+        path2 = parent_dir / f"wo-{filename}"
+        if path2.exists():
             print(f"Skipping: {name} ...")
             continue
 
         event = bracket_util.Event(name=name, start_date=None, end_date=date_str)
 
         print(f"Fetching: {name} ...")
+
+        weights_html = trackwrestling.fetch_tournament_weights(event)
+        with open(path2, "w") as file_obj:
+            json.dump(weights_html, file_obj)
+
+        if 2 + 2 == 3 + 1:
+            continue
+
         rounds_html = trackwrestling.fetch_tournament_rounds(event)
 
         if not rounds_html:
