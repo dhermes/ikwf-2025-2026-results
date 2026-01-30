@@ -522,7 +522,8 @@ def _weights_click_next_page(driver: webdriver.Chrome, page_number: int) -> bool
     if len(next_links) > 1:
         raise RuntimeError("Unexpected number of next buttons")
 
-    if len(next_links) == 1:
+    next_page_exists = len(next_links) == 1
+    if next_page_exists:
         next_link = next_links[0]
         next_link.click()
         predicate = _make_weights_next_page_ready(range_start)
@@ -532,7 +533,7 @@ def _weights_click_next_page(driver: webdriver.Chrome, page_number: int) -> bool
     # Switch back to the main page
     driver.switch_to.default_content()
 
-    return len(next_links) == 1
+    return next_page_exists
 
 
 def fetch_athlete_weights(event: bracket_util.Event) -> dict[str, str]:

@@ -1,5 +1,6 @@
 import os
 import time
+from collections.abc import Callable
 from typing import Literal
 
 import bs4
@@ -363,6 +364,108 @@ def fetch_tournament_rounds(
     return captured_html
 
 
+def _navigate_to_wrestlers(driver: webdriver.Chrome) -> None:
+    url = driver.current_url
+    wrestlers_url = f"{url}/wrestlers"
+    driver.get(wrestlers_url)
+
+
+def _show_100_per_page(driver: webdriver.Chrome) -> None:
+    select_elem = WebDriverWait(driver, _WAIT_TIME).until(
+        EC.presence_of_element_located(
+            (By.CSS_SELECTOR, 'select[wire\\:model\\.live="perPage"]')
+        )
+    )
+    select = Select(select_elem)
+    select.select_by_value("100")
+    time.sleep(2.0)
+
+
+def _capture_wrestlers_table(driver: webdriver.Chrome) -> str:
+    tables = driver.find_elements(By.TAG_NAME, "table")
+    if len(tables) != 1:
+        raise RuntimeError("Unexpected page layout, table count", len(tables))
+
+    table = tables[0]
+    html = table.get_attribute("outerHTML")
+    time.sleep(2.0)
+    return html
+
+
+def _make_weights_next_page_ready(
+    range_start: int,
+) -> Callable[[webdriver.Chrome], str | None]:
+    """Find the "Showing 26 to 50" text and wait for our page to load.
+
+    <p class="text-sm text-gray-700 leading-5 mr-2">
+      <span>Showing</span>
+      <span class="font-medium">1</span>
+      <span>to</span>
+      <span class="font-medium">25</span>
+    </p>
+    """
+    start_str = f"{range_start}"
+    xpath_query = "//span[normalize-space(.)='Showing']/following-sibling::span[1]"
+
+    def _weights_next_page_ready(driver: webdriver.Chrome) -> str | None:
+        span = driver.find_element(By.XPATH, xpath_query)
+        if span is None:
+            return None
+
+        text = span.text.strip()
+        return text if text == start_str else None
+
+    return _weights_next_page_ready
+
+
+def _weights_click_next_page(driver: webdriver.Chrome, page_number: int) -> bool:
+    range_start = 100 * page_number + 1
+
+    buttons = driver.find_elements(By.CSS_SELECTOR, 'button[rel="next"]')
+
+    if len(buttons) not in (0, 2):
+        raise RuntimeError("Unexpected number of next buttons", len(buttons))
+
+    next_page_exists = len(buttons) == 2
+    if next_page_exists:
+        button = buttons[0]
+        button.click()
+        predicate = _make_weights_next_page_ready(range_start)
+        WebDriverWait(driver, _WAIT_TIME).until(predicate)
+        time.sleep(0.5)
+
+    return next_page_exists
+
+
+def fetch_athlete_weights(
+    event: bracket_util.Event, login_info: LoginInfo
+) -> dict[str, str]:
+    driver = _open_event(event, login_info)
+    _navigate_to_wrestlers(driver)
+    _show_100_per_page(driver)
+
+    captured_html: dict[str, str] = {}
+
+    next_page_exists = True
+    # NOTE: This is a bounded `for` loop instead of a `while` loop.
+    for i in range(10000):
+        if not next_page_exists:
+            break
+
+        html = _capture_wrestlers_table(driver)
+        key = f"page-{i}"
+        captured_html[key] = html
+
+        next_page_exists = _weights_click_next_page(driver, i)
+
+    if next_page_exists:
+        raise RuntimeError("Exited loop without terminating")
+
+    driver.quit()
+
+    return captured_html
+
+
 def _choose_weight_result_bouts(driver: webdriver.Chrome) -> None:
     # Wait until the report <select> is clickable
     report_select_element = WebDriverWait(driver, _WAIT_TIME).until(
@@ -442,12 +545,6 @@ def _capture_weight_html(
     driver.switch_to.window(original_window)
 
     return weight_html
-
-
-def fetch_athlete_weights(
-    event: bracket_util.Event, login_info: LoginInfo
-) -> dict[str, str]:
-    return {}
 
 
 def fetch_dual_weights(
@@ -608,7 +705,6 @@ def _determine_result_type(result: str) -> bracket_util.ResultType | None:
     if result == "F.":
         return "pin"
 
-    breakpoint()
     raise NotImplementedError(result)
 
 
