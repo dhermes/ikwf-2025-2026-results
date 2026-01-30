@@ -7,7 +7,7 @@ _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
 
 
-def _fetch_event_rounds(
+def _fetch_event_weights(
     path: pathlib.Path, event: bracket_util.Event
 ) -> bracket_util.FetchedEvent:
     if path.exists():
@@ -17,23 +17,23 @@ def _fetch_event_rounds(
         return bracket_util.FetchedEvent.model_validate_json(as_json)
 
     print(f"Fetching weights for: {event.name} ...")
-    rounds_html = trackwrestling.fetch_dual_weights(event)
+    match_html = trackwrestling.fetch_dual_weights(event)
 
-    if not rounds_html:
-        raise RuntimeError("Event has no rounds", event.name)
+    if not match_html:
+        raise RuntimeError("Event has no weights", event.name)
 
     fetched_event = bracket_util.FetchedEvent(
         name=event.name,
         source="trackwrestling_dual",
         start_date=event.start_date,
         end_date=event.end_date,
-        match_html=rounds_html,
+        match_html=match_html,
         weights_html={},
     )
     return fetched_event
 
 
-def _fetch_event_weights(
+def _fetch_event_athlete_weights(
     fetched_event: bracket_util.FetchedEvent, event: bracket_util.Event
 ) -> bracket_util.FetchedEvent | None:
     if fetched_event.weights_html:
@@ -62,8 +62,8 @@ def main() -> None:
         path = parent_dir / filename
 
         event = bracket_util.Event(name=name, start_date=None, end_date=date_str)
-        fetched_event = _fetch_event_rounds(path, event)
-        fetched_event = _fetch_event_weights(fetched_event, event)
+        fetched_event = _fetch_event_weights(path, event)
+        fetched_event = _fetch_event_athlete_weights(fetched_event, event)
 
         if fetched_event is None:
             continue

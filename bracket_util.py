@@ -116,7 +116,7 @@ class FetchedEvent(_ForbidExtra):
     start_date: datetime.date | None
     end_date: datetime.date
     match_html: dict[str, str]
-    weights_html: dict[str, str] = pydantic.Field(default_factory=dict)
+    weights_html: dict[str, str]
 
 
 class MatchV1(_ForbidExtra):

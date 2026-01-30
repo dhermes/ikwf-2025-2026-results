@@ -444,6 +444,12 @@ def _capture_weight_html(
     return weight_html
 
 
+def fetch_athlete_weights(
+    event: bracket_util.Event, login_info: LoginInfo
+) -> dict[str, str]:
+    return {}
+
+
 def fetch_dual_weights(
     event: bracket_util.Event, login_info: LoginInfo
 ) -> dict[str, str]:

@@ -33,7 +33,7 @@ def _fetch_event_rounds(
     return fetched_event
 
 
-def _fetch_event_weights(
+def _fetch_event_athlete_weights(
     fetched_event: bracket_util.FetchedEvent, event: bracket_util.Event
 ) -> bracket_util.FetchedEvent | None:
     if fetched_event.weights_html:
@@ -63,7 +63,7 @@ def main() -> None:
 
         event = bracket_util.Event(name=name, start_date=None, end_date=date_str)
         fetched_event = _fetch_event_rounds(path, event)
-        fetched_event = _fetch_event_weights(fetched_event, event)
+        fetched_event = _fetch_event_athlete_weights(fetched_event, event)
 
         if fetched_event is None:
             continue
