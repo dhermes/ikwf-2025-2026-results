@@ -981,9 +981,6 @@ def _parse_weight_value(weight_str: str) -> float | None:
     return float(weight_str)
 
 
-_AthleteKey = tuple[str, str, str]
-
-
 def _extract_tournament_wrestlers_columns(
     columns: tuple[str, ...],
 ) -> tuple[str, str, str, str] | None:
@@ -1005,8 +1002,9 @@ def _extract_duals_wrestlers_columns(
 
 
 def parse_athlete_weights(
-    html: str, event_type: Literal["trackwrestling", "trackwrestling_dual"]
-) -> list[bracket_util.AthleteWeight]:
+    html: str,
+    event_type: Literal["trackwrestling", "trackwrestling_dual"],
+) -> dict[bracket_util.AthleteWeightKey, bracket_util.AthleteWeight]:
     """Parse weights from "Wrestlers" page from a tournament / duals on TrackWrestling.
 
     These will be a standard table (`<table>`, `<tr>`, `<th>`, `<td>`) with 5
@@ -1017,7 +1015,7 @@ def parse_athlete_weights(
     | Billy B | Bantam | 82-90        | 89.2   | Minooka Wrestling Club |
     | ...                                                               |
     """
-    all_weights: dict[_AthleteKey, bracket_util.AthleteWeight] = {}
+    all_weights: dict[bracket_util.AthleteWeightKey, bracket_util.AthleteWeight] = {}
     soup = bs4.BeautifulSoup(html, features="html.parser")
 
     (table,) = soup.find_all("table")
@@ -1031,8 +1029,7 @@ def parse_athlete_weights(
         extract_func = _extract_duals_wrestlers_columns
 
     if headers != expected_headers:
-        breakpoint()
-        raise RuntimeError("Unexpected headers for table", headers)
+        raise RuntimeError("Unexpected headers for table", headers, event_type)
 
     for row in rows[1:]:
         columns = tuple(td.text.strip() for td in row.find_all("td"))
@@ -1060,4 +1057,4 @@ def parse_athlete_weights(
         else:
             all_weights[key] = athlete_weight
 
-    return list(all_weights.values())
+    return all_weights

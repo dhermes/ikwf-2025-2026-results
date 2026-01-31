@@ -381,11 +381,14 @@ def classify_bracket(name: str) -> Division | None:
     return None
 
 
+AthleteWeightKey = tuple[str, str, str]
+
+
 class AthleteWeight(_ForbidExtra):
     name: str
     group: str
     team: str
     weight: float | None
 
-    def to_key(self) -> tuple[str, str, str]:
+    def to_key(self) -> AthleteWeightKey:
         return self.name, self.group, self.team
