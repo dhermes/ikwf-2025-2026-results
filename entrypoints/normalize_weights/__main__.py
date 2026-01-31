@@ -148,13 +148,17 @@ def _parse_usabracketing_duals(
     return by_event
 
 
-def main() -> None:
+def _parse_all_weights() -> dict[str, _MappedAthletes]:
     raw_data_dir = _ROOT / "_raw-data"
-
     by_event = _parse_trackwrestling(raw_data_dir)
     by_event.update(_parse_trackwrestling_duals(raw_data_dir))
     by_event.update(_parse_usabracketing(raw_data_dir))
     by_event.update(_parse_usabracketing_duals(raw_data_dir))
+    return by_event
+
+
+def main() -> None:
+    by_event = _parse_all_weights()
 
     print(len(by_event))
     print(sum(len(athletes) for athletes in by_event.values()))
