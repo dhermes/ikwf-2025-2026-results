@@ -1,6 +1,7 @@
 import os
 import time
 from collections.abc import Callable
+from typing import Literal
 
 import bs4
 import pydantic
@@ -54,7 +55,8 @@ _ERRONEOUS_DUAL_MATCHES = frozenset(
         ),
     ]
 )
-_WEIGHTS_HEADERS = ("Name", "Group", "Weight Class", "Weight", "Team")
+_TOURNAMENT_WEIGHTS_HEADERS = ("Name", "Group", "Weight Class", "Weight", "Team")
+_DUAL_WEIGHTS_HEADERS = ("Name", "Team", "Weight Class", "Grade", "Record", "Weight")
 TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-06", "2025 EWC Beginners and Girls Tournament"),
     ("2025-12-06", "Tots Bash"),
@@ -982,7 +984,29 @@ def _parse_weight_value(weight_str: str) -> float | None:
 _AthleteKey = tuple[str, str, str]
 
 
-def parse_athlete_weights(html: str) -> list[bracket_util.AthleteWeight]:
+def _extract_tournament_wrestlers_columns(
+    columns: tuple[str, ...],
+) -> tuple[str, str, str, str] | None:
+    name_reversed, group, weight_class, weight_str, team = columns
+    if weight_class == "":
+        # NOTE: Missing weight class means this is a scratch
+        return None
+    if name_reversed == "FFT, FFT":
+        return None
+
+    return name_reversed, group, weight_str, team
+
+
+def _extract_duals_wrestlers_columns(
+    columns: tuple[str, ...],
+) -> tuple[str, str, str, str] | None:
+    name_reversed, team, weight_class, _, _, weight_str = columns
+    return name_reversed, weight_class, weight_str, team
+
+
+def parse_athlete_weights(
+    html: str, event_type: Literal["trackwrestling", "trackwrestling_dual"]
+) -> list[bracket_util.AthleteWeight]:
     """Parse weights from "Wrestlers" page from a tournament / duals on TrackWrestling.
 
     These will be a standard table (`<table>`, `<tr>`, `<th>`, `<td>`) with 5
@@ -999,17 +1023,24 @@ def parse_athlete_weights(html: str) -> list[bracket_util.AthleteWeight]:
     (table,) = soup.find_all("table")
     rows = table.find_all("tr")
     headers = tuple(th.text.strip() for th in rows[0].find_all("th"))
-    if headers != _WEIGHTS_HEADERS:
+    if event_type == "trackwrestling":
+        expected_headers = _TOURNAMENT_WEIGHTS_HEADERS
+        extract_func = _extract_tournament_wrestlers_columns
+    else:
+        expected_headers = _DUAL_WEIGHTS_HEADERS
+        extract_func = _extract_duals_wrestlers_columns
+
+    if headers != expected_headers:
+        breakpoint()
         raise RuntimeError("Unexpected headers for table", headers)
 
     for row in rows[1:]:
         columns = tuple(td.text.strip() for td in row.find_all("td"))
-        name_reversed, group, weight_class, weight_str, team = columns
-        if weight_class == "":
-            # NOTE: Missing weight class means this is a scratch
+        extracted = extract_func(columns)
+        if extracted is None:
             continue
-        if name_reversed == "FFT, FFT":
-            continue
+
+        name_reversed, group, weight_str, team = extracted
 
         name = _parse_name_reversed(name_reversed)
         weight = _parse_weight_value(weight_str)

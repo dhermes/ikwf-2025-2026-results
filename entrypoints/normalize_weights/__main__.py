@@ -27,7 +27,36 @@ def _parse_trackwrestling(
         keys = sorted(athlete_weights_raw.keys())
         for key in keys:
             html = athlete_weights_raw[key]
-            all_weights.extend(trackwrestling.parse_athlete_weights(html))
+            all_weights.extend(
+                trackwrestling.parse_athlete_weights(html, "trackwrestling")
+            )
+
+    return all_weights
+
+
+def _parse_trackwrestling_duals(
+    raw_data_dir: pathlib.Path,
+) -> list[bracket_util.AthleteWeight]:
+    all_weights: list[bracket_util.AthleteWeight] = []
+
+    for date_str, name in trackwrestling.DUAL_EVENTS:
+        parent_dir = raw_data_dir / date_str
+        stem = bracket_util.to_kebab_case(name)
+        filename = f"{stem}.json"
+        path = parent_dir / filename
+
+        with open(path) as file_obj:
+            as_json = file_obj.read()
+
+        fetched_event = bracket_util.FetchedEvent.model_validate_json(as_json)
+        athlete_weights_raw = fetched_event.weights_html
+
+        keys = sorted(athlete_weights_raw.keys())
+        for key in keys:
+            html = athlete_weights_raw[key]
+            all_weights.extend(
+                trackwrestling.parse_athlete_weights(html, "trackwrestling_dual")
+            )
 
     return all_weights
 
@@ -37,7 +66,7 @@ def main() -> None:
 
     all_weights: list[bracket_util.AthleteWeight] = []
     all_weights.extend(_parse_trackwrestling(raw_data_dir))
-    # TODO: all_weights.extend(_parse_trackwrestling_duals(raw_data_dir))
+    all_weights.extend(_parse_trackwrestling_duals(raw_data_dir))
     # TODO: all_weights.extend(_parse_usabracketing(raw_data_dir))
     # TODO: all_weights.extend(_parse_usabracketing_duals(raw_data_dir))
 
