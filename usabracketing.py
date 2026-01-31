@@ -24,6 +24,69 @@ _PLACEHOLDER_TEXT = "[first_name] [last_name]"
 # NOTE: USA Bracketing puts USAW national championship events in search results
 #       even if they don't match the search criteria.
 _IGNORE_SEARCH_RESULT = "2026 USA Wrestling Kids Folkstyle National Championship"
+_ALLOWED_TEAM_EXTRA = (
+    "IL - Male",
+    "IL",
+    "IN",
+    "MO",
+    "SC - Male",
+    "SC",
+    "VA",
+    "WI",
+)
+_WEIGHTS_HEADERS1 = (
+    "First Name",
+    "Last Name",
+    "Team",
+    "Divisions",
+    "Weights",
+    "Skill",
+    "State",
+)
+_WEIGHTS_HEADERS2 = (
+    "First Name",
+    "Last Name",
+    "Team",
+    "Divisions",
+    "Weights",
+    "Actual Weight",
+)
+_WEIGHTS_HEADERS3 = (
+    "First Name",
+    "Last Name",
+    "Team",
+    "Divisions",
+    "Weights",
+    "Actual Weight",
+    "Skill",
+)
+_WEIGHTS_HEADERS4 = (
+    "First Name",
+    "Last Name",
+    "Team",
+    "Divisions",
+    "Weights",
+    "Skill",
+)
+_WEIGHTS_HEADERS5 = (
+    "First Name",
+    "Last Name",
+    "Team",
+    "Divisions",
+    "Weights",
+    "Actual Weight",
+    "Skill",
+    "Grade",
+)
+_WEIGHTS_HEADERS6 = (
+    "First Name",
+    "Last Name",
+    "Team",
+    "Divisions",
+    "Weights",
+    "Actual Weight",
+    "State",
+)
 
 TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-07", "42nd Annual Bulls Wrestling Tournament"),
@@ -832,3 +895,126 @@ def parse_tournament_round(
         raise RuntimeError("Unexpected element", entry_p, previous_type)
 
     return round_matches
+
+
+def _extract_wrestlers_columns1(
+    columns: tuple[str, ...],
+) -> tuple[str, str, str, str, str]:
+    """Extract values for `_WEIGHTS_HEADERS1`"""
+    first_name, last_name, team, _, group, _, _ = columns
+    weight_str = ""
+    return first_name, last_name, team, group, weight_str
+
+
+def _extract_wrestlers_columns2(
+    columns: tuple[str, ...],
+) -> tuple[str, str, str, str, str]:
+    """Extract values for `_WEIGHTS_HEADERS2`"""
+    first_name, last_name, team, _, group, weight_str = columns
+    return first_name, last_name, team, group, weight_str
+
+
+def _extract_wrestlers_columns3(
+    columns: tuple[str, ...],
+) -> tuple[str, str, str, str, str]:
+    """Extract values for `_WEIGHTS_HEADERS3`"""
+    first_name, last_name, team, _, group, weight_str, _ = columns
+    return first_name, last_name, team, group, weight_str
+
+
+def _extract_wrestlers_columns4(
+    columns: tuple[str, ...],
+) -> tuple[str, str, str, str, str]:
+    """Extract values for `_WEIGHTS_HEADERS4`"""
+    first_name, last_name, team, _, group, _ = columns
+    weight_str = ""
+    return first_name, last_name, team, group, weight_str
+
+
+def _extract_wrestlers_columns5(
+    columns: tuple[str, ...],
+) -> tuple[str, str, str, str, str]:
+    """Extract values for `_WEIGHTS_HEADERS5`"""
+    first_name, last_name, team, _, group, weight_str, _, _ = columns
+    return first_name, last_name, team, group, weight_str
+
+
+def _extract_wrestlers_columns6(
+    columns: tuple[str, ...],
+) -> tuple[str, str, str, str, str]:
+    """Extract values for `_WEIGHTS_HEADERS6`"""
+    first_name, last_name, team, _, group, weight_str, _ = columns
+    return first_name, last_name, team, group, weight_str
+
+
+def _parse_weight_value(weight_str: str) -> float | None:
+    if weight_str == "":
+        return None
+
+    return float(weight_str)
+
+
+def _parse_team_full(team_full: str) -> str:
+    parts = team_full.rsplit(", ", 1)
+    if len(parts) == 1:
+        return team_full
+
+    team, extra = parts
+    if extra not in _ALLOWED_TEAM_EXTRA:
+        raise RuntimeError("Unexpected team line extra", extra, team_full)
+    return team
+
+
+def parse_athlete_weights(
+    html: str,
+) -> dict[bracket_util.AthleteWeightKey, bracket_util.AthleteWeight]:
+    """Parse weights from "Wrestlers" page from an event on USA Bracketing."""
+    all_weights: dict[bracket_util.AthleteWeightKey, bracket_util.AthleteWeight] = {}
+    soup = bs4.BeautifulSoup(html, features="html.parser")
+
+    (table,) = soup.find_all("table")
+    rows = table.find_all("tr")
+
+    all_th = rows[0].find_all("th")
+    headers = tuple(
+        th.find("span", class_="flex items-center").text.strip() for th in all_th
+    )
+
+    if headers == _WEIGHTS_HEADERS1:
+        extract_func = _extract_wrestlers_columns1
+    elif headers == _WEIGHTS_HEADERS2:
+        extract_func = _extract_wrestlers_columns2
+    elif headers == _WEIGHTS_HEADERS3:
+        extract_func = _extract_wrestlers_columns3
+    elif headers == _WEIGHTS_HEADERS4:
+        extract_func = _extract_wrestlers_columns4
+    elif headers == _WEIGHTS_HEADERS5:
+        extract_func = _extract_wrestlers_columns5
+    elif headers == _WEIGHTS_HEADERS6:
+        extract_func = _extract_wrestlers_columns6
+    else:
+        raise RuntimeError("Unexpected headers for table", headers)
+
+    for row in rows[1:]:
+        columns = tuple(td.text.strip() for td in row.find_all("td"))
+        first_name, last_name, team_full, group, weight_str = extract_func(columns)
+        name = f"{first_name} {last_name}"
+        weight = _parse_weight_value(weight_str)
+        team = _parse_team_full(team_full)
+
+        athlete_weight = bracket_util.AthleteWeight(
+            name=name, group=group, team=team, weight=weight
+        )
+        key = athlete_weight.to_key()
+        if key in all_weights:
+            if all_weights[key] != athlete_weight:
+                raise ValueError(
+                    "Unexpected non-matching rows",
+                    key,
+                    athlete_weight,
+                    all_weights[key],
+                )
+        else:
+            all_weights[key] = athlete_weight
+
+    return all_weights
