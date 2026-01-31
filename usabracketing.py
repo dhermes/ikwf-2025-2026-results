@@ -283,6 +283,7 @@ def _open_event(event: bracket_util.Event, login_info: LoginInfo) -> webdriver.C
     _click_search_events(driver)
     _fill_out_event_search(driver, event)
     _click_search_events_in_form(driver)
+    time.sleep(0.5)
     event_name = _search_results_click_first(driver, event.name)
     if event_name != event.name:
         raise RuntimeError(
@@ -515,6 +516,7 @@ def fetch_athlete_weights(
         if not next_page_exists:
             break
 
+        time.sleep(5.0)
         html = _capture_wrestlers_table(driver)
         key = f"page-{i}"
         captured_html[key] = html
@@ -962,7 +964,8 @@ def _parse_team_full(team_full: str) -> str:
     team, extra = parts
     if extra not in _ALLOWED_TEAM_EXTRA:
         raise RuntimeError("Unexpected team line extra", extra, team_full)
-    return team
+
+    return team.strip()
 
 
 def parse_athlete_weights(
@@ -996,7 +999,9 @@ def parse_athlete_weights(
         raise RuntimeError("Unexpected headers for table", headers)
 
     for row in rows[1:]:
-        columns = tuple(td.text.strip() for td in row.find_all("td"))
+        columns = tuple(
+            td.text.strip().strip("\xa0").strip() for td in row.find_all("td")
+        )
         first_name, last_name, team_full, group, weight_str = extract_func(columns)
         name = f"{first_name} {last_name}"
         weight = _parse_weight_value(weight_str)

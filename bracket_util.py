@@ -18,7 +18,6 @@ CSV_FIELD_NAMES_V1 = (
     "Result Type",
     "Source",
 )
-
 CSV_FIELD_NAMES_V2 = (
     "Event Name",
     "Event Date",
@@ -35,7 +34,6 @@ CSV_FIELD_NAMES_V2 = (
     "Result Type",
     "Source",
 )
-
 CSV_FIELD_NAMES_V3 = (
     "Event Name",
     "Event Date",
@@ -51,6 +49,33 @@ CSV_FIELD_NAMES_V3 = (
     "Winner Team",
     ###############################
     "Loser (normalized)",
+    "Loser USAW Number",
+    "Loser IKWF Age",
+    "Loser Team (normalized)",
+    "Loser",
+    "Loser Team",
+    ###############################
+    "Result",
+    "Result Type",
+    "Source",
+)
+CSV_FIELD_NAMES_V4 = (
+    "Event Name",
+    "Event Date",
+    "Bracket",
+    "Round",
+    "Division",
+    ###############################
+    "Winner (normalized)",
+    "Winner weight",
+    "Winner USAW Number",
+    "Winner IKWF Age",
+    "Winner Team (normalized)",
+    "Winner",
+    "Winner Team",
+    ###############################
+    "Loser (normalized)",
+    "Loser weight",
     "Loser USAW Number",
     "Loser IKWF Age",
     "Loser Team (normalized)",
@@ -186,6 +211,24 @@ class MatchV3(MatchV2):
 
 
 class MatchesV3(pydantic.RootModel[list[MatchV3]]):
+    pass
+
+
+class MatchV4(MatchV3):
+    winner_weight: float | None = pydantic.Field(alias="Winner weight")
+    loser_weight: float | None = pydantic.Field(alias="Loser weight")
+
+    @classmethod
+    def from_v3(
+        cls, inherit: MatchV3, winner_weight: float | None, loser_weight: float | None
+    ) -> MatchV4:
+        data = inherit.model_dump(mode="json")
+        data["winner_weight"] = winner_weight
+        data["loser_weight"] = loser_weight
+        return cls(**data)
+
+
+class MatchesV4(pydantic.RootModel[list[MatchV4]]):
     pass
 
 

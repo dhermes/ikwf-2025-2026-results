@@ -971,6 +971,13 @@ def parse_dual_event(
 
 def _parse_name_reversed(name_reversed: str) -> str:
     last_name, first_name = name_reversed.rsplit(", ", 1)
+
+    first_name = first_name.strip().strip("\xa0")
+    first_name = first_name.replace("\xa0 ", " ")
+
+    last_name = last_name.strip().strip("\xa0")
+    last_name = last_name.replace("\xa0 ", " ")
+
     return f"{first_name} {last_name}"
 
 
@@ -1032,7 +1039,9 @@ def parse_athlete_weights(
         raise RuntimeError("Unexpected headers for table", headers, event_type)
 
     for row in rows[1:]:
-        columns = tuple(td.text.strip() for td in row.find_all("td"))
+        columns = tuple(
+            td.text.strip().strip("\xa0").strip() for td in row.find_all("td")
+        )
         extracted = extract_func(columns)
         if extracted is None:
             continue

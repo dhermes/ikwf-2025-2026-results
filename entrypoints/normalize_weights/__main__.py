@@ -1,4 +1,6 @@
+import csv
 import pathlib
+import re
 
 import bracket_util
 import trackwrestling
@@ -6,7 +8,37 @@ import usabracketing
 
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
-
+_SIMPLE_NAME = re.compile(r"^[a-z0-9 ]+$")
+_NULLABLE_KEYS = (
+    "Division",
+    "Winner (normalized)",
+    "Winner USAW Number",
+    "Winner IKWF Age",
+    "Loser (normalized)",
+    "Loser USAW Number",
+    "Loser IKWF Age",
+)
+_IGNORED_KEYS: tuple[tuple[str, str, str, str], ...] = (
+    # NOTE: `Harrison Thaler` also showed up in `BAN - 71-78` with a
+    #       different weight `78.0`
+    (
+        "Wilbur Borrero Classic",
+        "Harrison Thaler",
+        "BAN - 69-77",
+        "Barrington Broncos WC",
+    ),
+    # NOTE: `Greyson Miller` also showed up in `BAN - 71-78` with a
+    #       different weight `78.0`
+    (
+        "Wilbur Borrero Classic",
+        "Greyson Miller",
+        "BAN - 71-78",
+        "McHenry Wrestling Club",
+    ),
+    # NOTE: `Gavin Allen` also showed up in `INT - 55.7-62` with a
+    #       different weight `56.0`
+    ("Wilbur Borrero Classic", "Gavin Allen", "TOT - 51-56", "Woodstock Cyclones"),
+)
 
 _MappedAthletes = dict[bracket_util.AthleteWeightKey, bracket_util.AthleteWeight]
 
@@ -157,11 +189,160 @@ def _parse_all_weights() -> dict[str, _MappedAthletes]:
     return by_event
 
 
+def _load_matches() -> list[bracket_util.MatchV3]:
+    input_file = _ROOT / "_parsed-data" / "all-matches-03.csv"
+    with open(input_file) as file_obj:
+        rows = list(csv.DictReader(file_obj))
+
+    for row in rows:
+        for key in _NULLABLE_KEYS:
+            if row[key] == "":
+                row[key] = None
+
+    matches_root = bracket_util.MatchesV3.model_validate(rows)
+    return matches_root.root
+
+
+def _normalize_name(name: str) -> str:
+    case_insensitive = name.lower()
+
+    parts = case_insensitive.split()
+    whitespace_normalized = " ".join(parts)
+
+    without_punctuation = whitespace_normalized.replace("\xa0", " ")
+    without_punctuation = without_punctuation.replace("'", "")
+    without_punctuation = without_punctuation.replace("\u2019", "")
+    without_punctuation = without_punctuation.replace('"', "")
+    without_punctuation = without_punctuation.replace(".", "")
+    without_punctuation = without_punctuation.replace(",", "")
+    without_punctuation = without_punctuation.replace("&", "and")
+    without_punctuation = without_punctuation.replace("-", " ")
+    without_punctuation = without_punctuation.replace("`", "")
+    without_punctuation = without_punctuation.replace("\xe9", "e")
+    without_punctuation = without_punctuation.replace("\xf1", "n")
+    without_punctuation = without_punctuation.replace("\xed", "i")
+    without_punctuation = without_punctuation.replace("\xe1", "a")
+    # Very special cases
+    without_punctuation = without_punctuation.replace("bassam/sammie", "bassam")
+    without_punctuation = without_punctuation.replace("paul/ryland", "paul")
+    without_punctuation = without_punctuation.replace("ryland/ paul", "paul")
+    without_punctuation = without_punctuation.replace("ryland/paul", "paul")
+    without_punctuation = without_punctuation.replace("[kar dee a]", "")
+    without_punctuation = without_punctuation.replace("richard/ benny", "richard")
+    without_punctuation = without_punctuation.replace("ta?leigha", "taleigha")
+    without_punctuation = without_punctuation.replace("o?connor", "oconnor")
+
+    without_punctuation = without_punctuation.replace(" (", " ")
+    without_punctuation = without_punctuation.replace(") ", " ")
+    without_punctuation = without_punctuation.replace(" / ", " ")
+    if without_punctuation.startswith("("):
+        without_punctuation = without_punctuation[1:]
+    if without_punctuation.endswith(")"):
+        without_punctuation = without_punctuation[:-1]
+
+    if _SIMPLE_NAME.match(without_punctuation) is None:
+        raise RuntimeError("Unhandled name needs normalized", name, without_punctuation)
+
+    parts = without_punctuation.split()
+    whitespace_normalized = " ".join(parts)
+
+    return whitespace_normalized
+
+
+def _lookup_athlete(
+    event_name: str,
+    name: str,
+    bracket: str,
+    team: str,
+    mapped_athletes: _MappedAthletes,
+) -> float | None:
+    if name == "" and team == "":
+        return None
+
+    team = team.strip()  # Normalize
+    normalized_name = _normalize_name(name)
+
+    # K2 = [kk for kk in mapped_athletes if kk[0].startswith(name)]
+    # K2 = [kk for kk in mapped_athletes if kk[0] == name]
+    # [kk for kk in mapped_athletes if "wegr" in kk[0].lower()]
+    # u
+    # match_.event_name
+    matches: list[bracket_util.AthleteWeightKey] = []
+    for key in mapped_athletes:
+        ignore_check = (event_name,) + key
+        if ignore_check in _IGNORED_KEYS:
+            continue
+
+        key_name, _, key_team = key
+        if _normalize_name(key_name) != normalized_name:
+            continue
+        if not ((team == "Unattached" and key_team == "") or (key_team == team)):
+            continue
+        matches.append(key)
+
+    if len(matches) > 1:
+        # NOTE: Some kids are cross-bracketed
+        all_weights = set(mapped_athletes[key].weight for key in matches)
+        if len(all_weights) == 1:
+            return list(all_weights)[0]
+
+    if len(matches) > 1:
+        matches = [
+            (key_name, key_group, key_team)
+            for key_name, key_group, key_team in matches
+            if bracket.startswith(key_group)
+        ]
+
+    if len(matches) > 1:
+        raise RuntimeError(
+            "Unexpected number of matching athletes", name, bracket, team, matches
+        )
+
+    if len(matches) == 0:
+        breakpoint()
+        # TODO: This should not happen, make it an error.
+        return None
+
+    key = matches[0]
+    athlete_weight = mapped_athletes[key]
+    return athlete_weight.weight
+
+
 def main() -> None:
     by_event = _parse_all_weights()
+    matches_v3 = _load_matches()
 
-    print(len(by_event))
-    print(sum(len(athletes) for athletes in by_event.values()))
+    matches_v4: list[bracket_util.MatchV4] = []
+    for match_ in matches_v3:
+        mapped_athletes = by_event.get(match_.event_name)
+        if mapped_athletes is None:
+            raise RuntimeError("Event not found", match_.event_name)
+
+        winner_weight = _lookup_athlete(
+            match_.event_name,
+            match_.winner,
+            match_.bracket,
+            match_.winner_team,
+            mapped_athletes,
+        )
+        loser_weight = _lookup_athlete(
+            match_.event_name,
+            match_.loser,
+            match_.bracket,
+            match_.loser_team,
+            mapped_athletes,
+        )
+
+        matches_v4.append(
+            bracket_util.MatchV4.from_v3(match_, winner_weight, loser_weight)
+        )
+
+    matches_file_v4 = _ROOT / "_parsed-data" / "all-matches-04.csv"
+    with open(matches_file_v4, "w") as file_obj:
+        writer = csv.DictWriter(file_obj, fieldnames=bracket_util.CSV_FIELD_NAMES_V4)
+        writer.writeheader()
+        for match_ in matches_v4:
+            writer.writerow(match_.model_dump(mode="json", by_alias=True))
 
 
 if __name__ == "__main__":
