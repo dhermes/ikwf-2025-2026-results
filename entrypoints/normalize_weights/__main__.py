@@ -298,9 +298,7 @@ def _lookup_athlete(
         )
 
     if len(matches) == 0:
-        print((event_name, name))
-        # TODO: This should not happen, make it an error.
-        return None
+        raise RuntimeError("Could not match athlete", name, bracket, team)
 
     key = matches[0]
     athlete_weight = mapped_athletes[key]
