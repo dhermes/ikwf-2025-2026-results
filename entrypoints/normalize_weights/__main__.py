@@ -298,7 +298,7 @@ def _lookup_athlete(
         )
 
     if len(matches) == 0:
-        breakpoint()
+        print((event_name, name))
         # TODO: This should not happen, make it an error.
         return None
 
