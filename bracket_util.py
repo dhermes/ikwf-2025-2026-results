@@ -379,3 +379,13 @@ def classify_bracket(name: str) -> Division | None:
         return "senior"
 
     return None
+
+
+class AthleteWeight(_ForbidExtra):
+    name: str
+    group: str
+    team: str
+    weight: float | None
+
+    def to_key(self) -> tuple[str, str, str]:
+        return self.name, self.group, self.team

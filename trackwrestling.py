@@ -54,6 +54,7 @@ _ERRONEOUS_DUAL_MATCHES = frozenset(
         ),
     ]
 )
+_WEIGHTS_HEADERS = ("Name", "Group", "Weight Class", "Weight", "Team")
 TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-06", "2025 EWC Beginners and Girls Tournament"),
     ("2025-12-06", "Tots Bash"),
@@ -964,3 +965,68 @@ def parse_dual_event(
         )
 
     return all_matches
+
+
+def _parse_name_reversed(name_reversed: str) -> str:
+    last_name, first_name = name_reversed.rsplit(", ", 1)
+    return f"{first_name} {last_name}"
+
+
+def _parse_weight_value(weight_str: str) -> float | None:
+    if weight_str == "":
+        return None
+
+    return float(weight_str)
+
+
+_AthleteKey = tuple[str, str, str]
+
+
+def parse_athlete_weights(html: str) -> list[bracket_util.AthleteWeight]:
+    """Parse weights from "Wrestlers" page from a tournament / duals on TrackWrestling.
+
+    These will be a standard table (`<table>`, `<tr>`, `<th>`, `<td>`) with 5
+    columns:
+
+    | Name    | Group  | Weight Class | Weight | Team                   |
+    |---------+--------+--------------+--------+------------------------|
+    | Billy B | Bantam | 82-90        | 89.2   | Minooka Wrestling Club |
+    | ...                                                               |
+    """
+    all_weights: dict[_AthleteKey, bracket_util.AthleteWeight] = {}
+    soup = bs4.BeautifulSoup(html, features="html.parser")
+
+    (table,) = soup.find_all("table")
+    rows = table.find_all("tr")
+    headers = tuple(th.text.strip() for th in rows[0].find_all("th"))
+    if headers != _WEIGHTS_HEADERS:
+        raise RuntimeError("Unexpected headers for table", headers)
+
+    for row in rows[1:]:
+        columns = tuple(td.text.strip() for td in row.find_all("td"))
+        name_reversed, group, weight_class, weight_str, team = columns
+        if weight_class == "":
+            # NOTE: Missing weight class means this is a scratch
+            continue
+        if name_reversed == "FFT, FFT":
+            continue
+
+        name = _parse_name_reversed(name_reversed)
+        weight = _parse_weight_value(weight_str)
+
+        athlete_weight = bracket_util.AthleteWeight(
+            name=name, group=group, team=team, weight=weight
+        )
+        key = athlete_weight.to_key()
+        if key in all_weights:
+            if all_weights[key] != athlete_weight:
+                raise ValueError(
+                    "Unexpected non-matching rows",
+                    key,
+                    athlete_weight,
+                    all_weights[key],
+                )
+        else:
+            all_weights[key] = athlete_weight
+
+    return list(all_weights.values())
