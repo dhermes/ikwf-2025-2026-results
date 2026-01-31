@@ -154,5 +154,21 @@ showcase all the parsed and normalized matches.
 |                    |        | 2026-02-22 | Clipper Clash                                                       |                |
 |                    |        | 2026-03-01 | Clash of The Tots                                                   |                |
 
+## Data pipeline
+
+```
+uv run python -m entrypoints.parse_rosters  # Produces `_parsed-data/rosters.json`
+
+uv run python -m entrypoints.fetch_trackwrestling
+uv run python -m entrypoints.fetch_trackwrestling_duals
+uv run python -m entrypoints.fetch_usabracketing
+uv run python -m entrypoints.fetch_usabracketing_duals
+
+uv run python -m entrypoints.parse_matches       # Produces `_parsed-data/all-matches-01.csv`
+uv run python -m entrypoints.normalize_teams     # Produces `_parsed-data/all-matches-02.csv`
+uv run python -m entrypoints.normalize_athletes  # Produces `_parsed-data/all-matches-03.csv`
+uv run python -m entrypoints.normalize_weights   # Produces `_parsed-data/all-matches-04.csv`
+```
+
 [1]: https://www.ikwf.org/
 [2]: https://docs.google.com/spreadsheets/d/1F_v5jk20rYQD8hZnzH7GGx_TfBLcXahDEiVbDKoxviA/edit

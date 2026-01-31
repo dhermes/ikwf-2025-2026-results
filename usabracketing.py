@@ -787,7 +787,12 @@ def _parse_match_line(
         return None
 
     winner_full, remaining = match_text.split(") ")
-    result_abbreviation, remaining = remaining.split(" ", 1)
+    if remaining.startswith("Ult. Tie Br. "):
+        result_abbreviation = "Ult. Tie Br."
+        remaining = remaining[13:]
+    else:
+        result_abbreviation, remaining = remaining.split(" ", 1)
+
     if result_abbreviation in ("For.", "vs."):
         return None
 
