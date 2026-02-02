@@ -1,7 +1,9 @@
 import csv
 import datetime
+import io
 import pathlib
 
+import pandas as pd
 import pydantic
 
 import bracket_util
@@ -257,6 +259,115 @@ def _sort_by_record(athletes: list[_WeightAthlete]) -> list[_WeightAthlete]:
     return sorted(athletes, key=_sort_helper, reverse=True)
 
 
+def _make_csv(weight_class: _WeightClass) -> str:
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow(["ATHLETES"])
+    writer.writerow(
+        ["Name", "Wins", "Losses", "Team", "Winning percentage", "Adjusted score"]
+    )
+    athletes = _sort_by_record(weight_class.athletes)
+    for athlete in athletes:
+        winning_percentage = 0.0
+        adjusted_score = _sort_helper(athlete)
+
+        row = [
+            athlete.name,
+            str(athlete.wins),
+            str(athlete.losses),
+            athlete.team,
+            f"{winning_percentage:.3f}",
+            f"{adjusted_score:.3f}",
+        ]
+        writer.writerow(row)
+
+    writer.writerow([])
+    writer.writerow([])
+    writer.writerow(["HEAD TO HEADS"])
+    writer.writerow(["Winner", "Winner team", "Loser", "Loser team", "Result"])
+
+    for match_ in weight_class.head_to_heads:
+        row = [
+            match_.winner_normalized,
+            match_.winner_team_normalized,
+            match_.loser_normalized,
+            match_.loser_team_normalized,
+            match_.result,
+        ]
+        writer.writerow(row)
+
+    csv_string = output.getvalue()
+    output.close()
+    return csv_string
+
+
+def _sortable_division(division: bracket_util.Division) -> int:
+    if division == "bantam":
+        return 1
+
+    if division == "intermediate":
+        return 2
+
+    if division == "novice":
+        return 3
+
+    if division == "senior":
+        return 4
+
+    if division == "girls_bantam":
+        return 5
+
+    if division == "girls_intermediate":
+        return 6
+
+    if division == "girls_novice":
+        return 7
+
+    if division == "girls_senior":
+        return 8
+
+    raise RuntimeError("Unsupported division", division)
+
+
+def _weight_class_sort_func(key: tuple[bracket_util.Division, int]) -> tuple[int, int]:
+    division, weight = key
+    return _sortable_division(division), weight
+
+
+def _display_division(division: bracket_util.Division) -> int:
+    if division == "bantam":
+        return 1
+
+    if division == "intermediate":
+        return 2
+
+    if division == "novice":
+        return 3
+
+    if division == "senior":
+        return 4
+
+    if division == "girls_bantam":
+        return 5
+
+    if division == "girls_intermediate":
+        return 6
+
+    if division == "girls_novice":
+        return 7
+
+    if division == "girls_senior":
+        return 8
+
+    raise RuntimeError("Unsupported division", division)
+
+
+def _display_weight_class(key: tuple[bracket_util.Division, int]) -> str:
+    division, weight = key
+    division_str = _display_division(division)
+    return f"{division_str} {weight}"
+
+
 def main() -> None:
     sectional: club_util.Sectional = "West Chicago"  # TODO: Convert this to a flag
     matches_v4 = _load_matches()
@@ -289,17 +400,25 @@ def main() -> None:
 
             _add_wrestler(team, key, weight_classes, athlete, matches)
 
-    example_weight = weight_classes[("intermediate", 69)]
-    athletes = _sort_by_record(example_weight.athletes)
-    for athlete in athletes:
-        print(f"{athlete.name}: {athlete.wins}-{athlete.losses} ({athlete.team})")
-    print("-" * 40)
-    for match_ in example_weight.head_to_heads:
-        print(
-            f"{match_.winner_normalized} ({match_.winner_team_normalized}) "
-            f"over {match_.loser_normalized} ({match_.loser_team_normalized})"
-            f": {match_.result}"
-        )
+    keys = sorted(weight_classes.keys(), key=_weight_class_sort_func)
+    sheets: dict[str, str] = {}
+    for key in keys:
+        key_display = _display_weight_class(key)
+        weight_class = weight_classes[key]
+        if key_display in sheets:
+            raise TypeError("Key appears more than once", key_display)
+        sheets[key_display] = _make_csv(weight_class)
+
+    stem = bracket_util.to_kebab_case(sectional)
+    xslx_filename = _ROOT / "_parsed-data" / f"{stem}.xlsx"
+
+    with pd.ExcelWriter(xslx_filename, engine="openpyxl") as writer:
+        for sheet_name, csv_text in sheets.items():
+            if len(sheet_name) > 31:
+                raise RuntimeError("Sheet name too big for Excel", sheet_name)
+
+            df = pd.read_csv(io.StringIO(csv_text))
+            df.to_excel(writer, sheet_name=sheet_name, index=False)
 
 
 if __name__ == "__main__":

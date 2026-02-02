@@ -195,7 +195,7 @@ def _map_division_for_sort(division: bracket_util.Division) -> int:
     if division in ("senior", "girls_senior"):
         return _SENIOR_SORT_INDEX
 
-    raise RuntimeError("Unsuppored divison", division)
+    raise RuntimeError("Unsuppored division", division)
 
 
 def _check_age(
