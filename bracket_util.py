@@ -232,8 +232,17 @@ class MatchesV4(pydantic.RootModel[list[MatchV4]]):
     pass
 
 
-def classify_bracket(name: str) -> Division | None:
+def classify_bracket(name: str, event_name: str) -> Division | None:
     name_normalized = name.lower()
+
+    if event_name == "Tots Bash":
+        return "tot"
+
+    if (
+        name_normalized.startswith("open ")
+        and event_name == "Joe Tholl Sr. ELITE/OPEN 2025"
+    ):
+        return "senior"
 
     if name_normalized.startswith("girls tot "):
         return "girls_tot"
@@ -256,6 +265,8 @@ def classify_bracket(name: str) -> Division | None:
         return "girls_bantam"
     if name_normalized.startswith("girls (6 - 8) "):
         return "girls_bantam"
+    if name_normalized.startswith("girls` bantam "):
+        return "girls_bantam"
 
     if name_normalized.startswith("girls intermediate "):
         return "girls_intermediate"
@@ -267,6 +278,8 @@ def classify_bracket(name: str) -> Division | None:
         return "girls_intermediate"
     if name_normalized.startswith("girls 10u "):
         return "girls_intermediate"
+    if name_normalized.startswith("girls` intermediate "):
+        return "girls_intermediate"
 
     if name_normalized.startswith("girls novice "):
         return "girls_novice"
@@ -275,6 +288,8 @@ def classify_bracket(name: str) -> Division | None:
     if name_normalized.startswith("rookie girls novice "):
         return "girls_novice"
     if name_normalized.startswith("girls 12u "):
+        return "girls_novice"
+    if name_normalized.startswith("girls` novice "):
         return "girls_novice"
 
     if name_normalized.startswith("girls senior "):
@@ -290,6 +305,8 @@ def classify_bracket(name: str) -> Division | None:
     if name_normalized.startswith("elite girls "):
         return "girls_senior"
     if name_normalized.startswith("girls 14u "):
+        return "girls_senior"
+    if name_normalized.startswith("girls` senior "):
         return "girls_senior"
 
     ############################################################################
@@ -315,6 +332,8 @@ def classify_bracket(name: str) -> Division | None:
     if name_normalized.startswith("6&u "):
         return "tot"
 
+    if name_normalized.startswith("beginner bantam "):
+        return "bantam"
     if name_normalized.startswith("bantam "):
         return "bantam"
     if name_normalized.startswith("bantams "):
@@ -341,7 +360,11 @@ def classify_bracket(name: str) -> Division | None:
         return "bantam"
     if name_normalized.startswith("7&8 "):
         return "bantam"
+    if name_normalized.startswith("bantam("):
+        return "bantam"
 
+    if name_normalized.startswith("beginner intermediate "):
+        return "intermediate"
     if name_normalized.startswith("intermediate "):
         return "intermediate"
     if name_normalized.startswith("intermediate-"):
@@ -369,6 +392,8 @@ def classify_bracket(name: str) -> Division | None:
     if name_normalized.startswith("elite 10u "):
         return "intermediate"
     if name_normalized.startswith("9&10 "):
+        return "intermediate"
+    if name_normalized.startswith("intermediates "):
         return "intermediate"
 
     if name_normalized.startswith("novice "):

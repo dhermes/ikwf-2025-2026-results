@@ -769,7 +769,7 @@ def parse_tournament_round(
                 event_date=event_date,
                 bracket=bracket,
                 round_=bout_type,
-                division=bracket_util.classify_bracket(bracket),
+                division=bracket_util.classify_bracket(bracket, event_name),
                 winner=winner,
                 winner_team=winner_team,
                 loser=loser,
