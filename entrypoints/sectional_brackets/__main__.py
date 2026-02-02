@@ -1,5 +1,8 @@
 import csv
+import datetime
 import pathlib
+
+import pydantic
 
 import bracket_util
 import club_util
@@ -17,6 +20,10 @@ _NULLABLE_KEYS = (
     "Loser IKWF Age",
     "Loser weight",
 )
+
+
+class _ForbidExtra(pydantic.BaseModel):
+    model_config = pydantic.ConfigDict(extra="forbid", populate_by_name=True)
 
 
 def _load_matches() -> list[bracket_util.MatchV4]:
@@ -60,6 +67,196 @@ def _map_by_team(
     return team_mapped
 
 
+def _get_projected_weight(
+    weigh_ins: list[float], decay: float = 0.85, mad_k: float = 2.5
+) -> float | None:
+    weights = list(weigh_ins)
+    if not weights:
+        return None
+
+    # --- Robust outlier filtering (MAD: Median Absolute Deviation) ---
+    median = sorted(weights)[len(weights) // 2]
+    abs_devs = [abs(weight - median) for weight in weights]
+    mad = sorted(abs_devs)[len(abs_devs) // 2]
+
+    if mad > 0:
+        filtered = [weight for weight in weights if abs(weight - median) <= mad_k * mad]
+    else:
+        filtered = weights  # all same value
+
+    # --- Recency weighting ---
+    n = len(filtered)
+    recency_weights = [decay ** (n - i - 1) for i in range(n)]
+
+    weighted_sum = sum(
+        weight * recent
+        for weight, recent in zip(filtered, recency_weights, strict=True)
+    )
+    weight_total = sum(recency_weights)
+
+    return weighted_sum / weight_total
+
+
+def _get_athlete_weigh_ins(
+    usaw_number: str, matches: list[bracket_util.MatchV4]
+) -> list[float]:
+    weigh_ins: dict[str, tuple[datetime.date, float]] = {}
+    for match_ in matches:
+        if match_.winner_usaw_number == usaw_number:
+            weight = match_.winner_weight
+        elif match_.loser_usaw_number == usaw_number:
+            weight = match_.loser_weight
+        else:
+            raise RuntimeError("Match does not belong", usaw_number, match_)
+
+        if weight is None:
+            continue
+
+        event_name = match_.event_name
+        if event_name in weigh_ins:
+            if weigh_ins[event_name] != (match_.event_date, weight):
+                raise RuntimeError(
+                    "Mismatched weigh in", event_name, usaw_number, weight
+                )
+            pass
+        else:
+            weigh_ins[event_name] = match_.event_date, weight
+
+    by_date = sorted(weigh_ins.values())
+    return [weight for _, weight in by_date]
+
+
+def _slot_weight_class(
+    projected: float,
+    weight_classes: tuple[int, ...],
+    buffer: float = 0.5,
+) -> int | None:
+    # NOTE: This assumes `weight_classes` is sorted from lightest to heaviest.
+    for weight_class in weight_classes:
+        if projected <= weight_class - buffer:
+            return weight_class
+
+    # NOTE: Too heavy
+    return None
+
+
+def _get_athlete_division(
+    ikwf_age: int, matches: list[bracket_util.MatchV4]
+) -> bracket_util.Division:
+    all_divisions = set(
+        match_.division for match_ in matches if match_.division is not None
+    )
+    is_girl = any(division.startswith("girls_") for division in all_divisions)
+
+    if ikwf_age <= 8:
+        return "girls_bantam" if is_girl else "bantam"
+
+    if ikwf_age <= 10:
+        return "girls_intermediate" if is_girl else "intermediate"
+
+    if ikwf_age <= 12:
+        return "girls_novice" if is_girl else "novice"
+
+    if ikwf_age <= 14:
+        return "girls_senior" if is_girl else "senior"
+
+    raise ValueError("Unsupported age", ikwf_age)
+
+
+def _determine_weight_class(
+    usaw_number: str, ikwf_age: int, matches: list[bracket_util.MatchV4]
+) -> tuple[bracket_util.Division, int] | None:
+    if ikwf_age <= 6 or ikwf_age > 14:
+        return None
+
+    weigh_ins = _get_athlete_weigh_ins(usaw_number, matches)
+    projected_weight = _get_projected_weight(weigh_ins)
+    if projected_weight is None:
+        return None
+
+    division = _get_athlete_division(ikwf_age, matches)
+    weight_classes = bracket_util.weights_for_division(division)
+    weight_class = _slot_weight_class(projected_weight, weight_classes)
+    if weight_class is None:
+        # TODO: For younger kids, consider bumping them up
+        return None
+
+    return division, weight_class
+
+
+class _WeightAthlete(_ForbidExtra):
+    usaw_number: str
+    name: str
+    ikwf_age: int
+    team: str
+    wins: pydantic.NonNegativeInt
+    losses: pydantic.NonNegativeInt
+    matches: list[bracket_util.MatchV4]
+
+
+class _WeightClass(_ForbidExtra):
+    athletes: list[_WeightAthlete]
+    head_to_heads: list[bracket_util.MatchV4]
+
+
+def _add_wrestler(
+    team: str,
+    key: tuple[bracket_util.Division, int],
+    weight_classes: dict[tuple[bracket_util.Division, int], _WeightClass],
+    athlete: club_util.Athlete,
+    matches: list[bracket_util.MatchV4],
+) -> None:
+    if key not in weight_classes:
+        weight_classes[key] = _WeightClass(athletes=[], head_to_heads=[])
+
+    weight_class = weight_classes[key]
+    existing_usaw = set(
+        [other_athlete.usaw_number for other_athlete in weight_class.athletes]
+    )
+
+    usaw_number = athlete.usaw_number
+    wins = 0
+    losses = 0
+    for match_ in matches:
+        if match_.winner_usaw_number == usaw_number:
+            wins += 1
+            if match_.loser_usaw_number in existing_usaw:
+                weight_class.head_to_heads.append(match_)
+        elif match_.loser_usaw_number == usaw_number:
+            losses += 1
+            if match_.winner_usaw_number in existing_usaw:
+                weight_class.head_to_heads.append(match_)
+        else:
+            raise RuntimeError("Unexpected match", match_, usaw_number)
+
+    weight_class.athletes.append(
+        _WeightAthlete(
+            usaw_number=athlete.usaw_number,
+            name=athlete.name,
+            ikwf_age=athlete.ikwf_age,
+            team=team,
+            wins=wins,
+            losses=losses,
+            matches=matches,
+        )
+    )
+
+
+def _sort_helper(athlete: _WeightAthlete) -> float:
+    wins = athlete.wins
+    losses = athlete.losses
+
+    matches = wins + losses
+
+    # NOTE: Assume a previous record of 5-5 to penalize low match counts while
+    #       not materially changing the sorting of 16-5 vs. 12-8
+    return (wins + 5) / (matches + 10)
+
+
+def _sort_by_record(athletes: list[_WeightAthlete]) -> list[_WeightAthlete]:
+    return sorted(athletes, key=_sort_helper, reverse=True)
+
+
 def main() -> None:
     sectional: club_util.Sectional = "West Chicago"  # TODO: Convert this to a flag
     matches_v4 = _load_matches()
@@ -76,7 +273,33 @@ def main() -> None:
         )
     ]
     team_mapped = _map_by_team(relevant_matches, team_names)
-    print(len(team_mapped))
+
+    weight_classes: dict[tuple[bracket_util.Division, int], _WeightClass] = {}
+    for team, by_usaw in team_mapped.items():
+        (athletes,) = [
+            roster.athletes for roster in teams_in_sectional if roster.club_name == team
+        ]
+        for usaw_number, matches in by_usaw.items():
+            (athlete,) = [
+                athlete for athlete in athletes if athlete.usaw_number == usaw_number
+            ]
+            key = _determine_weight_class(usaw_number, athlete.ikwf_age, matches)
+            if key is None:
+                continue
+
+            _add_wrestler(team, key, weight_classes, athlete, matches)
+
+    example_weight = weight_classes[("intermediate", 69)]
+    athletes = _sort_by_record(example_weight.athletes)
+    for athlete in athletes:
+        print(f"{athlete.name}: {athlete.wins}-{athlete.losses} ({athlete.team})")
+    print("-" * 40)
+    for match_ in example_weight.head_to_heads:
+        print(
+            f"{match_.winner_normalized} ({match_.winner_team_normalized}) "
+            f"over {match_.loser_normalized} ({match_.loser_team_normalized})"
+            f": {match_.result}"
+        )
 
 
 if __name__ == "__main__":
