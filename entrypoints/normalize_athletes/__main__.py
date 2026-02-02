@@ -8,6 +8,11 @@ import club_util
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
 _SIMPLE_NAME = re.compile(r"^[a-z0-9 ]+$")
+_TOT_SORT_INDEX = 1
+_BANTAM_SORT_INDEX = 2
+_INTERMEDIATE_SORT_INDEX = 3
+_NOVICE_SORT_INDEX = 4
+_SENIOR_SORT_INDEX = 5
 
 
 def _load_matches() -> list[bracket_util.MatchV2]:
@@ -152,6 +157,62 @@ def _athlete_to_tuple(
     return athlete.name, athlete.usaw_number, athlete.ikwf_age
 
 
+def _map_age_for_sort(ikwf_age: int) -> int:
+    if ikwf_age <= 6:
+        return _TOT_SORT_INDEX
+
+    if ikwf_age <= 8:
+        return _BANTAM_SORT_INDEX
+
+    if ikwf_age <= 10:
+        return _INTERMEDIATE_SORT_INDEX
+
+    if ikwf_age <= 12:
+        return _NOVICE_SORT_INDEX
+
+    if ikwf_age <= 14:
+        return _SENIOR_SORT_INDEX
+
+    if ikwf_age == 15:
+        return _SENIOR_SORT_INDEX
+
+    raise RuntimeError("Unsupported IKWF age", ikwf_age)
+
+
+def _map_division_for_sort(division: bracket_util.Division) -> int:
+    if division in ("tot", "girls_tot"):
+        return _TOT_SORT_INDEX
+
+    if division in ("bantam", "girls_bantam"):
+        return _BANTAM_SORT_INDEX
+
+    if division in ("intermediate", "girls_intermediate"):
+        return _INTERMEDIATE_SORT_INDEX
+
+    if division in ("novice", "girls_novice"):
+        return _NOVICE_SORT_INDEX
+
+    if division in ("senior", "girls_senior"):
+        return _SENIOR_SORT_INDEX
+
+    raise RuntimeError("Unsuppored divison", division)
+
+
+def _check_age(
+    division: bracket_util.Division | None,
+    usaw_number: str | None,
+    ikwf_age: int | None,
+) -> None:
+    if ikwf_age is None or division is None:
+        return
+
+    age_sort = _map_age_for_sort(ikwf_age)
+    division_sort = _map_division_for_sort(division)
+    if age_sort > division_sort:
+        # raise ValueError("Invalid division for age", usaw_number, division, ikwf_age)
+        print(ValueError("Invalid division for age", usaw_number, division, ikwf_age))
+
+
 def main() -> None:
     matches_v2 = _load_matches()
     rosters = club_util.load_rosters()
@@ -179,6 +240,10 @@ def main() -> None:
         loser_normalized, loser_usaw_number, loser_ikwf_age = _athlete_to_tuple(
             loser_athlete
         )
+
+        _check_age(match_.division, winner_usaw_number, winner_ikwf_age)
+        _check_age(match_.division, loser_usaw_number, loser_ikwf_age)
+
         matches_v3.append(
             bracket_util.MatchV3.from_v2(
                 match_,
