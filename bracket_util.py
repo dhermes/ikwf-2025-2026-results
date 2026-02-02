@@ -460,3 +460,66 @@ class AthleteWeight(_ForbidExtra):
 
     def to_key(self) -> AthleteWeightKey:
         return self.name, self.group, self.team
+
+
+def weights_for_division(division: Division) -> tuple[int, ...]:
+    if division == "bantam":
+        return (3, 46, 49, 52, 55, 58, 62, 66, 70, 76, 84, 95, 120)
+
+    if division == "intermediate":
+        return (55, 59, 64, 69, 74, 79, 84, 90, 98, 108, 122, 148, 177)
+
+    if division == "novice":
+        return (60, 64, 69, 74, 80, 86, 93, 100, 108, 116, 125, 134, 154, 178, 215)
+
+    if division == "senior":
+        return (
+            74,
+            79,
+            84,
+            90,
+            96,
+            103,
+            110,
+            118,
+            126,
+            135,
+            144,
+            154,
+            164,
+            176,
+            188,
+            215,
+            275,
+        )
+
+    if division == "girls_bantam":
+        return (45, 50, 55, 61, 67, 74, 85, 95, 115)
+
+    if division == "girls_intermediate":
+        return (53, 57, 62, 67, 72, 77, 82, 88, 95, 115, 135)
+
+    if division == "girls_novice":
+        return (63, 68, 74, 80, 85, 90, 96, 102, 108, 115, 125, 140, 185)
+
+    if division == "girls_senior":
+        return (
+            75,
+            80,
+            85,
+            90,
+            95,
+            100,
+            105,
+            110,
+            115,
+            120,
+            125,
+            130,
+            135,
+            145,
+            185,
+            240,
+        )
+
+    raise RuntimeError("Unknown division", division)
