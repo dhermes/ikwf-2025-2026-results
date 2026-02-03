@@ -67,6 +67,9 @@ def _normalize_name(name: str) -> str:
     if without_punctuation.endswith(")"):
         without_punctuation = without_punctuation[:-1]
 
+    if without_punctuation == "rick larsen wrestling club(ind":
+        return "rick larsen wrestling club ind"
+
     if _SIMPLE_NAME.match(without_punctuation) is None:
         raise RuntimeError("Unhandled name needs normalized", name, without_punctuation)
 
