@@ -673,15 +673,23 @@ def _determine_division(division_text: str) -> bracket_util.Division | None:
 
     if normalized_text == "girls - tot":
         return "girls_tot"
+    if normalized_text == "g-tots":
+        return "girls_tot"
 
     if normalized_text == "girls - bantam":
+        return "girls_bantam"
+    if normalized_text == "g-bantam":
         return "girls_bantam"
     if normalized_text.startswith("girls bantam "):
         return "girls_bantam"
     if normalized_text == "bantam girls":
         return "girls_bantam"
+    if normalized_text == "girls 9u":
+        return "girls_bantam"
 
     if normalized_text == "girls - intermediate":
+        return "girls_intermediate"
+    if normalized_text == "g-intermediate":
         return "girls_intermediate"
     if normalized_text == "intermediate girls":
         return "girls_intermediate"
@@ -690,12 +698,20 @@ def _determine_division(division_text: str) -> bracket_util.Division | None:
 
     if normalized_text == "girls - novice":
         return "girls_novice"
+    if normalized_text == "girls novice":
+        return "girls_novice"
+    if normalized_text == "g-novice":
+        return "girls_novice"
     if normalized_text == "novice girls":
         return "girls_novice"
     if normalized_text.startswith("girls novice "):
         return "girls_novice"
 
     if normalized_text == "girls - senior":
+        return "girls_senior"
+    if normalized_text == "girls senior":
+        return "girls_senior"
+    if normalized_text == "g-senior":
         return "girls_senior"
     if normalized_text.startswith("girls senior "):
         return "girls_senior"

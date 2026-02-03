@@ -28,6 +28,7 @@ _WIN_TYPE_MAP = {
     ###################################
     "won in sudden victory - 1 over": "overtime",
     "won in tie breaker - 1 over": "overtime",
+    "won in tie breaker - 2 over": "overtime",
     "won in overtime over": "overtime",
     "won in double overtime over": "overtime",
     "won in SV-1 by fall over": "overtime",
@@ -762,7 +763,7 @@ def parse_tournament_round(
                 continue
 
             if win_type not in _WIN_TYPE_MAP:
-                raise NotImplementedError(match_text)
+                raise NotImplementedError(match_text, win_type)
 
             result_type = _WIN_TYPE_MAP[win_type]
             if result_type is None:
