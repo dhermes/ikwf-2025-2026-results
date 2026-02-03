@@ -111,21 +111,19 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: | 2026-01-25 | Pekin Custer/Stoudt Open                                            | TrackWrestling |
 | :white_check_mark: | 2026-01-25 | Big Cat Wrestling Tournament                                        | USA Bracketing |
 | :white_check_mark: | 2026-01-25 | Spartan Rumble                                                      | USA Bracketing |
-|                    | 2026-01-31 | Future Finalist                                                     |                |
-|                    | 2026-02-01 | Battle for the Shield                                               |                |
-|                    | 2026-02-01 | REGISTRATION CLOSED-Lemont Bears Bash                               |                |
-|                    | 2026-02-01 | Notre Dame Invitational                                             |                |
-|                    | 2026-02-01 | Yorkville Fighting Foxes Invitational                               |                |
-|                    | 2026-02-01 | Metamora Kids Wrestling Tournament                                  |                |
-|                    | 2026-02-01 | O-Town Throwdown                                                    |                |
-|                    | 2026-02-01 | Cole Whitford Girls & Beginners Tournament                          |                |
-|                    | 2026-02-01 | Bulldog Classic                                                     |                |
-|                    | 2026-02-01 | Belvidere Bandit Brawl                                              |                |
-|                    | 2026-02-01 | IKWF Dual Meet State Championships                                  |                |
-|                    | 2026-02-01 | Quincy Little Raider Slam                                           |                |
-|                    | 2026-02-01 | Panther Powerhouse Open                                             |                |
-|                    | 2026-02-01 | ToulTown Throwdown                                                  |                |
-|                    | 2026-02-01 | Rumble In The Jungle                                                |                |
+| :white_check_mark: | 2026-01-31 | 2026 IL Kids Future Finalist                                        | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | 2026 Lemont Bears Bash                                              | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | 2026 ST. CHARLES BATTLE FOR THE SHIELD                              | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | Belvidere Bandit Brawl                                              | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | Litchfield `Rumble In the Jungle` 2026                              | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | Notre Dame Invitational                                             | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | O-Town Throwdown 2026                                               | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | QUINCY LITTLE RAIDER SLAM 2026                                      | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | Toultown Throwdown                                                  | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | Yorkville Fighting Foxes Invitational                               | TrackWrestling |
+| :white_check_mark: | 2026-02-01 | Cole Whitford Girls & Beginners Tournament                          | USA Bracketing |
+| :white_check_mark: | 2026-02-01 | IKWF Dual Meet State Championships                                  | USA Bracketing |
+| :white_check_mark: | 2026-02-01 | Metamora Kids Wrestling Tournament                                  | USA Bracketing |
 |                    | 2026-02-07 | Streator Bulldog Open                                               |                |
 |                    | 2026-02-08 | Ted Harvey Memorial                                                 |                |
 |                    | 2026-02-08 | Warrensburg-Latham Cardinal Cradle Classic                          |                |

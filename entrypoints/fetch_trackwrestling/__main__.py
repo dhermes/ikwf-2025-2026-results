@@ -63,6 +63,12 @@ def main() -> None:
 
         event = bracket_util.Event(name=name, start_date=None, end_date=date_str)
         fetched_event = _fetch_event_rounds(path, event)
+        # NOTE: Save part way through in case the second go around is buggy
+        as_json = fetched_event.model_dump_json(indent=2)
+        with open(path, "w") as file_obj:
+            file_obj.write(as_json)
+            file_obj.write("\n")
+
         fetched_event = _fetch_event_athlete_weights(fetched_event, event)
 
         if fetched_event is None:

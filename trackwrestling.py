@@ -129,6 +129,16 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-01-25", "Harper Rookie Rumble"),
     ("2026-01-25", "LP Crunching Cavs Classic"),
     ("2026-01-25", "Pekin Custer/Stoudt Open"),
+    ("2026-01-31", "2026 IL Kids Future Finalist"),
+    ("2026-02-01", "2026 Lemont Bears Bash"),
+    ("2026-02-01", "2026 ST. CHARLES BATTLE FOR THE SHIELD"),
+    ("2026-02-01", "Belvidere Bandit Brawl"),
+    ("2026-02-01", "Litchfield `Rumble In the Jungle` 2026"),
+    ("2026-02-01", "Notre Dame Invitational"),
+    ("2026-02-01", "O-Town Throwdown 2026"),
+    ("2026-02-01", "QUINCY LITTLE RAIDER SLAM 2026"),
+    ("2026-02-01", "Toultown Throwdown"),
+    ("2026-02-01", "Yorkville Fighting Foxes Invitational"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-14", "2025 Hub City Hammer Duals"),

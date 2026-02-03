@@ -105,9 +105,12 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-01-18", "Jon Davis Kids Open"),
     ("2026-01-25", "Big Cat Wrestling Tournament"),
     ("2026-01-25", "Spartan Rumble"),
+    ("2026-02-01", "Cole Whitford Girls & Beginners Tournament"),
+    ("2026-02-01", "Metamora Kids Wrestling Tournament"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-01-04", "IKWF Southern Dual Meet Divisional"),
+    ("2026-02-01", "IKWF Dual Meet State Championships"),
 )
 
 
@@ -318,16 +321,38 @@ def _choose_ap_bouts(driver: webdriver.Chrome) -> None:
     report_select.select_by_value("ap_bouts")
 
 
-def _allow_all_wrestlers(driver: webdriver.Chrome) -> None:
-    # Wait until the "My Wrestlers Only" <select> is clickable
-    my_wrestlers_select_element = WebDriverWait(driver, _WAIT_TIME).until(
-        EC.element_to_be_clickable((By.ID, "my_wrestlers"))
+def _allow_all_predicate(driver: webdriver.Chrome) -> None:
+    all_my_wrestlers = driver.find_elements(By.ID, "my_wrestlers")
+    all_my_teams = driver.find_elements(By.ID, "my_teams")
+
+    my_wrestlers = None
+    if len(all_my_wrestlers) > 1:
+        raise RuntimeError("Unexpected `my_wrestlers` count")
+    elif len(all_my_wrestlers) == 1:
+        my_wrestlers = all_my_wrestlers[0]
+
+    my_teams = None
+    if len(all_my_teams) > 1:
+        raise RuntimeError("Unexpected `my_teams` count")
+    elif len(all_my_teams) == 1:
+        my_teams = all_my_teams[0]
+
+    if my_teams is not None and my_wrestlers is not None:
+        raise RuntimeError("Unexpected both `my_teams` and `my_wrestlers` present")
+
+    return my_teams or my_wrestlers
+
+
+def _allow_all(driver: webdriver.Chrome) -> None:
+    # Wait until the "My Wrestlers Only" or "My Teams Only" <select> is clickable
+    my_only_select_element = WebDriverWait(driver, _WAIT_TIME).until(
+        _allow_all_predicate
     )
 
-    my_wrestlers_select = Select(my_wrestlers_select_element)
+    my_only_select = Select(my_only_select_element)
 
     # Select the option by value
-    my_wrestlers_select.select_by_value("")
+    my_only_select.select_by_value("")
 
 
 class _OptionInfo(_ForbidExtra):
@@ -409,7 +434,7 @@ def fetch_tournament_rounds(
     driver = _open_event(event, login_info)
     _click_results(driver)
     _choose_ap_bouts(driver)
-    _allow_all_wrestlers(driver)
+    _allow_all(driver)
     all_rounds = _all_round_option_values(driver)
 
     original_window = driver.current_window_handle
@@ -618,7 +643,7 @@ def fetch_dual_weights(
     driver = _open_event(event, login_info)
     _click_results(driver)
     _choose_weight_result_bouts(driver)
-    _allow_all_wrestlers(driver)
+    _allow_all(driver)
     all_weights = _all_weight_option_values(driver)
 
     original_window = driver.current_window_handle
