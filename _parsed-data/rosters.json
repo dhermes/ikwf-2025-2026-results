@@ -80157,6 +80157,11 @@
     "sectional": "West Chicago",
     "athletes": [
       {
+        "usaw_number": "2614307401",
+        "name": "Eliel Anaya",
+        "ikwf_age": 14
+      },
+      {
         "usaw_number": "2611749601",
         "name": "Eleanor Castillo",
         "ikwf_age": 13
@@ -84818,6 +84823,11 @@
     "club_name": "Greg Gomez Trained Wrestling",
     "sectional": "West Chicago",
     "athletes": [
+      {
+        "usaw_number": "2612583001",
+        "name": "Mateo Agustin",
+        "ikwf_age": 6
+      },
       {
         "usaw_number": "2403892401",
         "name": "Elena Amendola",
