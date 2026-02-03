@@ -166,6 +166,8 @@ uv run python -m entrypoints.parse_matches       # Produces `_parsed-data/all-ma
 uv run python -m entrypoints.normalize_teams     # Produces `_parsed-data/all-matches-02.csv`
 uv run python -m entrypoints.normalize_athletes  # Produces `_parsed-data/all-matches-03.csv`
 uv run python -m entrypoints.normalize_weights   # Produces `_parsed-data/all-matches-04.csv`
+
+uv run python -m entrypoints.sectional_brackets  # Produces `_parsed-data/west-chicago.xlsx`
 ```
 
 [1]: https://www.ikwf.org/
