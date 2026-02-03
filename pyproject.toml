@@ -6,7 +6,6 @@ dependencies = [
     "beautifulsoup4",
     "ipython",
     "openpyxl",
-    "pandas",
     "pydantic",
     "requests",
     "ruff",

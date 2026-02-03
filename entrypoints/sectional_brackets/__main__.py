@@ -3,7 +3,7 @@ import datetime
 import io
 import pathlib
 
-import pandas as pd
+import openpyxl
 import pydantic
 
 import bracket_util
@@ -101,7 +101,7 @@ def _get_projected_weight(
 
 def _get_athlete_weigh_ins(
     usaw_number: str, matches: list[bracket_util.MatchV4]
-) -> list[float]:
+) -> tuple[list[float], datetime.date, float]:
     weigh_ins: dict[str, tuple[datetime.date, float]] = {}
     for match_ in matches:
         if match_.winner_usaw_number == usaw_number:
@@ -125,7 +125,13 @@ def _get_athlete_weigh_ins(
             weigh_ins[event_name] = match_.event_date, weight
 
     by_date = sorted(weigh_ins.values())
-    return [weight for _, weight in by_date]
+    weigh_in_amounts = [weight for _, weight in by_date]
+    if by_date:
+        most_recent_weigh_in, most_recent_weight = by_date[-1]
+    else:
+        most_recent_weigh_in = datetime.date(1970, 1, 1)
+        most_recent_weight = 0.0
+    return weigh_in_amounts, most_recent_weigh_in, most_recent_weight
 
 
 def _slot_weight_class(
@@ -167,11 +173,13 @@ def _get_athlete_division(
 
 def _determine_weight_class(
     usaw_number: str, ikwf_age: int, matches: list[bracket_util.MatchV4]
-) -> tuple[bracket_util.Division, int] | None:
+) -> tuple[tuple[bracket_util.Division, int], datetime.date, float, float] | None:
     if ikwf_age <= 6 or ikwf_age > 14:
         return None
 
-    weigh_ins = _get_athlete_weigh_ins(usaw_number, matches)
+    weigh_ins, most_recent_weigh_in, most_recent_weight = _get_athlete_weigh_ins(
+        usaw_number, matches
+    )
     projected_weight = _get_projected_weight(weigh_ins)
     if projected_weight is None:
         return None
@@ -183,7 +191,12 @@ def _determine_weight_class(
         # TODO: For younger kids, consider bumping them up
         return None
 
-    return division, weight_class
+    return (
+        (division, weight_class),
+        most_recent_weigh_in,
+        most_recent_weight,
+        projected_weight,
+    )
 
 
 class _WeightAthlete(_ForbidExtra):
@@ -191,6 +204,9 @@ class _WeightAthlete(_ForbidExtra):
     name: str
     ikwf_age: int
     team: str
+    most_recent_weigh_in: datetime.date
+    most_recent_weight: float
+    projected_weight: float
     wins: pydantic.NonNegativeInt
     losses: pydantic.NonNegativeInt
     matches: list[bracket_util.MatchV4]
@@ -207,6 +223,9 @@ def _add_wrestler(
     weight_classes: dict[tuple[bracket_util.Division, int], _WeightClass],
     athlete: club_util.Athlete,
     matches: list[bracket_util.MatchV4],
+    most_recent_weigh_in: datetime.date,
+    most_recent_weight: float,
+    projected_weight: float,
 ) -> None:
     if key not in weight_classes:
         weight_classes[key] = _WeightClass(athletes=[], head_to_heads=[])
@@ -237,6 +256,9 @@ def _add_wrestler(
             name=athlete.name,
             ikwf_age=athlete.ikwf_age,
             team=team,
+            most_recent_weigh_in=most_recent_weigh_in,
+            most_recent_weight=most_recent_weight,
+            projected_weight=projected_weight,
             wins=wins,
             losses=losses,
             matches=matches,
@@ -264,11 +286,21 @@ def _make_csv(weight_class: _WeightClass) -> str:
     writer = csv.writer(output)
     writer.writerow(["ATHLETES"])
     writer.writerow(
-        ["Name", "Wins", "Losses", "Team", "Winning percentage", "Adjusted score"]
+        [
+            "Name",
+            "Wins",
+            "Losses",
+            "Team",
+            "Winning percentage",
+            "Adjusted score",
+            "Most recent weigh-in",
+            "Most recent weight",
+            "Projected weight",
+        ]
     )
     athletes = _sort_by_record(weight_class.athletes)
     for athlete in athletes:
-        winning_percentage = 0.0
+        winning_percentage = athlete.wins / (athlete.wins + athlete.losses)
         adjusted_score = _sort_helper(athlete)
 
         row = [
@@ -278,6 +310,9 @@ def _make_csv(weight_class: _WeightClass) -> str:
             athlete.team,
             f"{winning_percentage:.3f}",
             f"{adjusted_score:.3f}",
+            str(athlete.most_recent_weigh_in),
+            f"{athlete.most_recent_weight:.1f}",
+            f"{athlete.projected_weight:.1f}",
         ]
         writer.writerow(row)
 
@@ -334,30 +369,30 @@ def _weight_class_sort_func(key: tuple[bracket_util.Division, int]) -> tuple[int
     return _sortable_division(division), weight
 
 
-def _display_division(division: bracket_util.Division) -> int:
+def _display_division(division: bracket_util.Division) -> str:
     if division == "bantam":
-        return 1
+        return "Bantam"
 
     if division == "intermediate":
-        return 2
+        return "Intermediate"
 
     if division == "novice":
-        return 3
+        return "Novice"
 
     if division == "senior":
-        return 4
+        return "Senior"
 
     if division == "girls_bantam":
-        return 5
+        return "Girls Bantam"
 
     if division == "girls_intermediate":
-        return 6
+        return "Girls Intermediate"
 
     if division == "girls_novice":
-        return 7
+        return "Girls Novice"
 
     if division == "girls_senior":
-        return 8
+        return "Girls Senior"
 
     raise RuntimeError("Unsupported division", division)
 
@@ -394,11 +429,25 @@ def main() -> None:
             (athlete,) = [
                 athlete for athlete in athletes if athlete.usaw_number == usaw_number
             ]
-            key = _determine_weight_class(usaw_number, athlete.ikwf_age, matches)
-            if key is None:
+            weight_class_info = _determine_weight_class(
+                usaw_number, athlete.ikwf_age, matches
+            )
+            if weight_class_info is None:
                 continue
 
-            _add_wrestler(team, key, weight_classes, athlete, matches)
+            key, most_recent_weigh_in, most_recent_weight, projected_weight = (
+                weight_class_info
+            )
+            _add_wrestler(
+                team,
+                key,
+                weight_classes,
+                athlete,
+                matches,
+                most_recent_weigh_in,
+                most_recent_weight,
+                projected_weight,
+            )
 
     keys = sorted(weight_classes.keys(), key=_weight_class_sort_func)
     sheets: dict[str, str] = {}
@@ -412,13 +461,19 @@ def main() -> None:
     stem = bracket_util.to_kebab_case(sectional)
     xslx_filename = _ROOT / "_parsed-data" / f"{stem}.xlsx"
 
-    with pd.ExcelWriter(xslx_filename, engine="openpyxl") as writer:
-        for sheet_name, csv_text in sheets.items():
-            if len(sheet_name) > 31:
-                raise RuntimeError("Sheet name too big for Excel", sheet_name)
+    workbook = openpyxl.Workbook()
+    workbook.remove(workbook.active)
 
-            df = pd.read_csv(io.StringIO(csv_text))
-            df.to_excel(writer, sheet_name=sheet_name, index=False)
+    for sheet_name, csv_text in sheets.items():
+        if len(sheet_name) > 31:
+            raise RuntimeError("Sheet name too big for Excel", sheet_name)
+
+        worksheet = workbook.create_sheet(title=sheet_name)
+        reader = csv.reader(io.StringIO(csv_text))
+        for row in reader:
+            worksheet.append(row)
+
+    workbook.save(xslx_filename)
 
 
 if __name__ == "__main__":
