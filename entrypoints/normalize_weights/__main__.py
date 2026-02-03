@@ -39,6 +39,16 @@ _IGNORED_KEYS: tuple[tuple[str, str, str, str], ...] = (
     #       different weight `56.0`
     ("Wilbur Borrero Classic", "Gavin Allen", "TOT - 51-56", "Woodstock Cyclones"),
 )
+# NOTE: Some athletes are double bracketed or have a weigh in that does not
+#       make sense, so we ignore some on a per-tournament basis.
+_IGNORED_WEIGH_INS: dict[str, list[bracket_util.AthleteWeight]] = {
+    "Yorkville Fighting Foxes Invitational": [
+        bracket_util.AthleteWeight(
+            name="Parker Paul", group="8U", team="Yorkville Wrestling Club", weight=55.5
+        )
+    ],
+}
+
 
 _MappedAthletes = dict[bracket_util.AthleteWeightKey, bracket_util.AthleteWeight]
 
@@ -78,9 +88,12 @@ def _parse_trackwrestling(
         event_weights: _MappedAthletes = {}
 
         keys = sorted(athlete_weights_raw.keys())
+        ignored_weigh_ins = _IGNORED_WEIGH_INS.get(name)
         for key in keys:
             html = athlete_weights_raw[key]
-            page_weights = trackwrestling.parse_athlete_weights(html, "trackwrestling")
+            page_weights = trackwrestling.parse_athlete_weights(
+                html, "trackwrestling", ignored_weigh_ins=ignored_weigh_ins
+            )
             event_weights = _merge_into_results(page_weights, event_weights)
 
         by_event[fetched_event.name] = event_weights
@@ -231,6 +244,9 @@ def _normalize_name(name: str) -> str:
     without_punctuation = without_punctuation.replace("richard/ benny", "richard")
     without_punctuation = without_punctuation.replace("ta?leigha", "taleigha")
     without_punctuation = without_punctuation.replace("o?connor", "oconnor")
+    without_punctuation = without_punctuation.replace("tre?lyn", "trelyn")
+    without_punctuation = without_punctuation.replace("benny/richard", "richard")
+    without_punctuation = without_punctuation.replace("a?mari", "amari")
 
     without_punctuation = without_punctuation.replace(" (", " ")
     without_punctuation = without_punctuation.replace(") ", " ")

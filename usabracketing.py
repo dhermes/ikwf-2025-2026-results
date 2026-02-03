@@ -25,6 +25,7 @@ _PLACEHOLDER_TEXT = "[first_name] [last_name]"
 #       even if they don't match the search criteria.
 _IGNORE_SEARCH_RESULT = "2026 USA Wrestling Kids Folkstyle National Championship"
 _ALLOWED_TEAM_EXTRA = (
+    "IA",
     "IL - Male",
     "IL",
     "IN",
@@ -86,6 +87,13 @@ _WEIGHTS_HEADERS6 = (
     "Weights",
     "Actual Weight",
     "State",
+)
+_WEIGHTS_HEADERS7 = (
+    "First Name",
+    "Last Name",
+    "Team",
+    "Divisions",
+    "Weights",
 )
 
 TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
@@ -995,6 +1003,15 @@ def _extract_wrestlers_columns6(
     return first_name, last_name, team, group, weight_str
 
 
+def _extract_wrestlers_columns7(
+    columns: tuple[str, ...],
+) -> tuple[str, str, str, str, str]:
+    """Extract values for `_WEIGHTS_HEADERS7`"""
+    first_name, last_name, team, group, _ = columns
+    weight_str = ""
+    return first_name, last_name, team, group, weight_str
+
+
 def _parse_weight_value(weight_str: str) -> float | None:
     if weight_str == "":
         return None
@@ -1041,6 +1058,8 @@ def parse_athlete_weights(
         extract_func = _extract_wrestlers_columns5
     elif headers == _WEIGHTS_HEADERS6:
         extract_func = _extract_wrestlers_columns6
+    elif headers == _WEIGHTS_HEADERS7:
+        extract_func = _extract_wrestlers_columns7
     else:
         raise RuntimeError("Unexpected headers for table", headers)
 

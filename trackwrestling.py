@@ -1022,6 +1022,8 @@ def _extract_duals_wrestlers_columns(
 def parse_athlete_weights(
     html: str,
     event_type: Literal["trackwrestling", "trackwrestling_dual"],
+    *,
+    ignored_weigh_ins: list[bracket_util.AthleteWeight] | None = None,
 ) -> dict[bracket_util.AthleteWeightKey, bracket_util.AthleteWeight]:
     """Parse weights from "Wrestlers" page from a tournament / duals on TrackWrestling.
 
@@ -1033,6 +1035,9 @@ def parse_athlete_weights(
     | Billy B | Bantam | 82-90        | 89.2   | Minooka Wrestling Club |
     | ...                                                               |
     """
+    if ignored_weigh_ins is None:
+        ignored_weigh_ins = []
+
     all_weights: dict[bracket_util.AthleteWeightKey, bracket_util.AthleteWeight] = {}
     soup = bs4.BeautifulSoup(html, features="html.parser")
 
@@ -1065,6 +1070,9 @@ def parse_athlete_weights(
         athlete_weight = bracket_util.AthleteWeight(
             name=name, group=group, team=team, weight=weight
         )
+        if athlete_weight in ignored_weigh_ins:
+            continue
+
         key = athlete_weight.to_key()
         if key in all_weights:
             if all_weights[key] != athlete_weight:
