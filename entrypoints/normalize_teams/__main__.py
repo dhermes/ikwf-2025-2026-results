@@ -11,6 +11,14 @@ _SIMPLE_NAME = re.compile(r"^[a-z0-9 ]+$")
 _FALSE_DUPLICATE_CARDINAL = frozenset(
     ["Cardinals Wrestling Club", "Arlington Cardinals Wrestling Club"]
 )
+# NOTE: The `custom-normalized-team-names.json` are wrong for some clubs that
+#       have very similar names.
+_EXPLICIT_MAPPING: dict[str, dict[str, str]] = {
+    "Litchfield `Rumble In the Jungle` 2026": {
+        "STCWC": "Out of State - Missouri",
+    }
+}
+
 # NOTE: `_OVERRIDE_TEAM_MAPPING` provides tournament specific overrides for a
 #       given team name. For now this is just to support the fact that
 #       St. Charles, IL and St. Charles, MO have the same team name. But the
@@ -133,6 +141,10 @@ def _lookup_team(
 ) -> str:
     if team == "":
         return ""
+
+    explicit_value = _EXPLICIT_MAPPING.get(event_name, {}).get(team)
+    if explicit_value is not None:
+        return explicit_value
 
     event_override = _OVERRIDE_TEAM_MAPPING.get(event_name, {})
     mapped_override = event_override.get(team)
