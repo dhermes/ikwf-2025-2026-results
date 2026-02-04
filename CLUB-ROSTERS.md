@@ -342,14 +342,20 @@ file is parsed from the raw data via
 
 ### In-season transfers
 
-| Name             | Old club                           | New club                                 |
-| ---------------- | ---------------------------------- | ---------------------------------------- |
-| Annebelle Duller | Antioch Predators Wrestling Club   | Stateline Stingers Wrestling Club        |
-| Arlo Young       | Wolverine Wrestling Club           | Beat the Streets Chicago-Midway          |
-| Madeline Hlava   | West Suburban Girls Wrestling Club | Martinez Fox Valley Elite Wrestling Club |
-| Nola Svoboda     | West Suburban Girls Wrestling Club | Martinez Fox Valley Elite Wrestling Club |
-| Owen Friedman    | Naperville Wrestling Club          | Top Dog Wrestling Club                   |
-| Sophia Hlava     | West Suburban Girls Wrestling Club | Martinez Fox Valley Elite Wrestling Club |
+The `_parsed-data/custom-normalized-athlete-names.json` has a special format for
+transfers. For example `Arlo Young` transferred from `Wolverine Wrestling Club`
+to `Beat the Streets Chicago-Midway` and the entry in the JSON file is:
+
+```json
+{
+  "...": "...",
+  "Wolverine Wrestling Club": {
+    "arlo young": "Beat the Streets Chicago-Midway::arlo young",
+    "tommy alper": "thomas alper"
+  },
+  "...": "..."
+}
+```
 
 ### Mystery athletes
 

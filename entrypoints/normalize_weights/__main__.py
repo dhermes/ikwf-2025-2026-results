@@ -278,10 +278,6 @@ def _lookup_athlete(
     team = team.strip()  # Normalize
     normalized_name = _normalize_name(name)
 
-    # K2 = [kk for kk in mapped_athletes if kk[0].startswith(name)]
-    # K2 = [kk for kk in mapped_athletes if kk[0] == name]
-    # [kk for kk in mapped_athletes if "wegr" in kk[0].lower()]
-    # event_name
     matches: list[bracket_util.AthleteWeightKey] = []
     for key in mapped_athletes:
         ignore_check = (event_name,) + key

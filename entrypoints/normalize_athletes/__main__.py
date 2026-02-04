@@ -113,15 +113,15 @@ def _lookup_athlete(
     team_normalized: str,
     athlete_lookup: _AthleteLookup,
     custom_athlete_name_map: _CustomAthleteNameMap,
-) -> club_util.Athlete | None:
+) -> tuple[str, club_util.Athlete | None]:
     athlete_map = athlete_lookup.get(team_normalized)
     if athlete_map is None:
-        return None
+        return team_normalized, None
 
     name_normalized = _normalize_name(name)
     matched = athlete_map.get(name_normalized)
     if matched is not None:
-        return matched
+        return team_normalized, matched
 
     by_team = custom_athlete_name_map.get(team_normalized, {})
     if name_normalized not in by_team:
@@ -136,7 +136,11 @@ def _lookup_athlete(
     if new_name_normalized is None:
         # TODO: Do not allow this branch at all (i.e. fill in all of the missing
         #       mappings)
-        return None
+        return team_normalized, None
+
+    if "::" in new_name_normalized:
+        transfer_team, transfer_name = new_name_normalized.split("::")
+        return transfer_team, athlete_lookup[transfer_team][transfer_name]
 
     matched = athlete_map.get(new_name_normalized)
     if matched is None:
@@ -148,12 +152,12 @@ def _lookup_athlete(
             team_normalized,
         )
 
-    return matched
+    return team_normalized, matched
 
 
 def _athlete_to_tuple(
     athlete: club_util.Athlete | None,
-) -> tuple[str | None, str | None, int | None]:
+) -> tuple[str, str, int] | tuple[None, None, None]:
     if athlete is None:
         return None, None, None
 
@@ -225,7 +229,7 @@ def main() -> None:
 
     matches_v3: list[bracket_util.MatchV3] = []
     for match_ in matches_v2:
-        winner_athlete = _lookup_athlete(
+        winner_team_normalized, winner_athlete = _lookup_athlete(
             match_.winner,
             match_.winner_team_normalized,
             athlete_lookup,
@@ -234,7 +238,7 @@ def main() -> None:
         winner_normalized, winner_usaw_number, winner_ikwf_age = _athlete_to_tuple(
             winner_athlete
         )
-        loser_athlete = _lookup_athlete(
+        loser_team_normalized, loser_athlete = _lookup_athlete(
             match_.loser,
             match_.loser_team_normalized,
             athlete_lookup,
@@ -250,9 +254,11 @@ def main() -> None:
         matches_v3.append(
             bracket_util.MatchV3.from_v2(
                 match_,
+                winner_team_normalized,
                 winner_normalized,
                 winner_usaw_number,
                 winner_ikwf_age,
+                loser_team_normalized,
                 loser_normalized,
                 loser_usaw_number,
                 loser_ikwf_age,
@@ -269,6 +275,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-
-# TODO: Deal with team transfers

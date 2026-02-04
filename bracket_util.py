@@ -193,20 +193,27 @@ class MatchV3(MatchV2):
     def from_v2(
         cls,
         inherit: MatchV2,
+        winner_team_normalized: str,
         winner_normalized: str | None,
         winner_usaw_number: str | None,
         winner_ikwf_age: int | None,
+        loser_team_normalized: str,
         loser_normalized: str | None,
         loser_usaw_number: str | None,
         loser_ikwf_age: int | None,
     ) -> MatchV3:
         data = inherit.model_dump(mode="json")
+
+        data["winner_team_normalized"] = winner_team_normalized
         data["winner_normalized"] = winner_normalized
         data["winner_usaw_number"] = winner_usaw_number
         data["winner_ikwf_age"] = winner_ikwf_age
+
+        data["loser_team_normalized"] = loser_team_normalized
         data["loser_normalized"] = loser_normalized
         data["loser_usaw_number"] = loser_usaw_number
         data["loser_ikwf_age"] = loser_ikwf_age
+
         return cls(**data)
 
 
