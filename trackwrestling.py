@@ -59,6 +59,7 @@ _ERRONEOUS_DUAL_MATCHES = frozenset(
 _TOURNAMENT_WEIGHTS_HEADERS = ("Name", "Group", "Weight Class", "Weight", "Team")
 _DUAL_WEIGHTS_HEADERS = ("Name", "Team", "Weight Class", "Grade", "Record", "Weight")
 TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
+    ("2025-03-08", "2025 IKWF State Championships"),
     ("2025-12-06", "2025 EWC Beginners and Girls Tournament"),
     ("2025-12-06", "Tots Bash"),
     ("2025-12-07", "2025 Force Challenge 19"),
