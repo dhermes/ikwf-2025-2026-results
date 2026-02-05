@@ -99,3 +99,21 @@ def load_custom_athlete_name_map() -> dict[str, dict[str, str | None]]:
 
     root = _CustomAthleteNameMap.model_validate_json(as_json)
     return root.root
+
+
+class StateQualifier(_ForbidExtra):
+    result: str
+    usaw_number: str
+
+
+class _StateQualifiers(pydantic.RootModel[dict[str, dict[str, StateQualifier]]]):
+    pass
+
+
+def load_state_qualifiers() -> dict[str, dict[str, StateQualifier]]:
+    path = _HERE / "_parsed-data" / "2026-rostered-state-qualifiers.json"
+    with open(path, "rb") as file_obj:
+        as_json = file_obj.read()
+
+    root = _StateQualifiers.model_validate_json(as_json)
+    return root.root

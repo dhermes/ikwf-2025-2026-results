@@ -210,6 +210,7 @@ class _WeightAthlete(_ForbidExtra):
     wins: pydantic.NonNegativeInt
     losses: pydantic.NonNegativeInt
     matches: list[bracket_util.MatchV4]
+    state_2025_note: str
 
 
 class _WeightClass(_ForbidExtra):
@@ -226,6 +227,7 @@ def _add_wrestler(
     most_recent_weigh_in: datetime.date,
     most_recent_weight: float,
     projected_weight: float,
+    state_2025_note: str,
 ) -> None:
     if key not in weight_classes:
         weight_classes[key] = _WeightClass(athletes=[], head_to_heads=[])
@@ -262,6 +264,7 @@ def _add_wrestler(
             wins=wins,
             losses=losses,
             matches=matches,
+            state_2025_note=state_2025_note,
         )
     )
 
@@ -293,6 +296,7 @@ def _make_csv(weight_class: _WeightClass) -> str:
             "IKWF age",
             "USAW number",
             "Team",
+            "State (2025)",
             "Winning percentage",
             "Adjusted score",
             "Most recent weigh-in",
@@ -312,6 +316,7 @@ def _make_csv(weight_class: _WeightClass) -> str:
             str(athlete.ikwf_age),
             athlete.usaw_number,
             athlete.team,
+            athlete.state_2025_note,
             f"{winning_percentage:.3f}",
             f"{adjusted_score:.3f}",
             str(athlete.most_recent_weigh_in),
@@ -411,6 +416,7 @@ def main() -> None:
     sectional: club_util.Sectional = "West Chicago"  # TODO: Convert this to a flag
     matches_v4 = _load_matches()
     rosters = club_util.load_rosters()
+    state_qualifiers = club_util.load_state_qualifiers()
     teams_in_sectional = [roster for roster in rosters if roster.sectional == sectional]
     team_names = set([roster.club_name for roster in teams_in_sectional])
 
@@ -442,6 +448,12 @@ def main() -> None:
             key, most_recent_weigh_in, most_recent_weight, projected_weight = (
                 weight_class_info
             )
+
+            state_2025_note = ""
+            state_qualifier = state_qualifiers.get(team, {}).get(athlete.name)
+            if state_qualifier is not None:
+                state_2025_note = state_qualifier.result
+
             _add_wrestler(
                 team,
                 key,
@@ -451,6 +463,7 @@ def main() -> None:
                 most_recent_weigh_in,
                 most_recent_weight,
                 projected_weight,
+                state_2025_note,
             )
 
     keys = sorted(weight_classes.keys(), key=_weight_class_sort_func)
