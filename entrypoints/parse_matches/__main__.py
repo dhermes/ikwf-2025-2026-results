@@ -97,7 +97,8 @@ def _parse_usabracketing_duals(
 
         fetched_event = bracket_util.FetchedEvent.model_validate_json(as_json)
         weights_raw = fetched_event.match_html
-        weights = sorted(weights_raw.keys())
+
+        all_matches.extend(usabracketing.parse_dual_event(weights_raw, name, date_str))
 
     return all_matches
 

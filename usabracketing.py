@@ -24,6 +24,9 @@ _PLACEHOLDER_TEXT = "[first_name] [last_name]"
 # NOTE: USA Bracketing puts USAW national championship events in search results
 #       even if they don't match the search criteria.
 _IGNORE_SEARCH_RESULT = "2026 USA Wrestling Kids Folkstyle National Championship"
+_TITLE_MARGIN_LEFT = "margin-left:0px"
+_WRESTLER_MARGIN_LEFT = "margin-left:20px"
+_MATCH_MARGIN_LEFT = "margin-left:40px"
 _ALLOWED_TEAM_EXTRA = (
     "IA",
     "IL - Male",
@@ -789,6 +792,8 @@ def _determine_result_type(result: str) -> bracket_util.ResultType | None:
         return None
     if result == "Inj.":
         return None
+    if result.startswith("ID "):
+        return None
 
     if result == "Def.":
         return None
@@ -807,16 +812,24 @@ def _determine_result_type(result: str) -> bracket_util.ResultType | None:
 
     if result.startswith("Dec. "):
         return "decision"
+    if result.startswith("Dec "):
+        return "decision"
 
     if result.startswith("Maj. "):
         return "major"
+    if result.startswith("MD "):
+        return "major"
 
     if result.startswith("T.F. "):
+        return "tech"
+    if result.startswith("TF "):
         return "tech"
 
     if result.startswith("F. "):
         return "pin"
     if result == "F.":
+        return "pin"
+    if result.startswith("F "):
         return "pin"
 
     raise NotImplementedError(result)
@@ -951,6 +964,221 @@ def parse_tournament_round(
         raise RuntimeError("Unexpected element", entry_p, previous_type)
 
     return round_matches
+
+
+def _get_margin_left_style(tag: bs4.Tag) -> str:
+    style = tag.get("style", "")
+    matches = [part for part in style.split(";") if part.startswith("margin-left:")]
+    if len(matches) != 1:
+        raise RuntimeError("Unexpected tag style", style)
+
+    return matches[0]
+
+
+class _ParsedWrestler(_ForbidExtra):
+    name: str
+    team: str
+    team_acronym: str
+
+
+def _parse_wrestler_heading(tag: bs4.Tag) -> _ParsedWrestler:
+    as_text = tag.text.strip()
+    before, _ = as_text.split(" (")
+    name, team = before.rsplit(", ", 1)
+    return _ParsedWrestler(name=name, team=team, team_acronym="")
+
+
+_ParsedDualMatchKey = tuple[str, str, str, str, str]
+
+
+class _ParsedDualMatch(_ForbidExtra):
+    bracket: str
+    winner: str
+    winner_team: str | None
+    winner_team_acronym: str
+    loser: str
+    loser_team: str | None
+    loser_team_acronym: str
+    result: str
+
+    def to_key(self) -> _ParsedDualMatchKey:
+        return (
+            self.bracket,
+            self.winner,
+            self.winner_team_acronym,
+            self.loser,
+            self.loser_team_acronym,
+        )
+
+
+def _parse_dual_match_line(
+    wrestler: _ParsedWrestler, tag: bs4.Tag
+) -> _ParsedDualMatch | None:
+    nodes = list(tag.children)
+    if len(nodes) == 3:
+        last_node = nodes[2].text.strip()
+        if "over Forfeit" not in last_node:
+            raise ValueError("Unexpected forfeit tag", tag)
+        return None
+
+    if len(nodes) == 5:
+        node0, node1, node2, node3, node4 = nodes
+
+        bracket = node0.text.strip()
+        if not bracket.endswith(" -"):
+            raise ValueError("Unexpected bracket", bracket, tag)
+        bracket = bracket[:-2]
+
+        winner = node1.text.strip()
+
+        winner_team_acronym = node2.text.strip()
+        if not winner_team_acronym.startswith(", "):
+            raise ValueError("Unexpected winner team", winner_team_acronym, tag)
+        winner_team_acronym = winner_team_acronym[2:]
+        if not winner_team_acronym.endswith(" over"):
+            raise ValueError("Unexpected winner team", winner_team_acronym, tag)
+        winner_team_acronym = winner_team_acronym[:-5]
+
+        loser = node3.text.strip()
+
+        loser_team_acronym, result = node4.text.strip().split(" (", 1)
+
+        if not result.endswith(")"):
+            raise ValueError("Unexpected result", result, tag)
+        result = result[:-1]
+
+        if not loser_team_acronym.startswith(", "):
+            raise ValueError("Unexpected loser team", loser_team_acronym, tag)
+        loser_team_acronym = loser_team_acronym[2:]
+
+        if wrestler.name == loser:
+            winner_team = None
+            loser_team = wrestler.team
+        elif wrestler.name == winner:
+            winner_team = wrestler.team
+            loser_team = None
+        else:
+            raise ValueError("Unexpected wrestler", wrestler.name, loser, winner)
+
+        return _ParsedDualMatch(
+            bracket=bracket,
+            winner=winner,
+            winner_team=winner_team,
+            winner_team_acronym=winner_team_acronym,
+            loser=loser,
+            loser_team=loser_team,
+            loser_team_acronym=loser_team_acronym,
+            result=result,
+        )
+
+    raise ValueError("Unexpected match tag", tag)
+
+
+def _extract_weight(key: str, html: str) -> list[_ParsedDualMatch]:
+    soup = bs4.BeautifulSoup(html, features="html.parser")
+    (parent_div,) = soup.find_all("div", style="font-size:12pt;")
+    direct_divs = parent_div.find_all("div", recursive=False)
+
+    current_wrestler: _ParsedWrestler | None = None
+    parsed_matches: list[_ParsedDualMatch] = []
+    for i, div in enumerate(direct_divs):
+        margin_left = _get_margin_left_style(div)
+        if margin_left == _TITLE_MARGIN_LEFT:
+            if i != 0:
+                raise RuntimeError("Unexpected title margin", div, i)
+            if div.text.strip() != key:
+                raise RuntimeError("Unexpected title", div, i)
+            continue
+
+        if margin_left == _WRESTLER_MARGIN_LEFT:
+            current_wrestler = _parse_wrestler_heading(div)
+            continue
+
+        if margin_left == _MATCH_MARGIN_LEFT:
+            if current_wrestler is None:
+                raise RuntimeError("No current wrestler for a match", div, i)
+            parsed_match = _parse_dual_match_line(current_wrestler, div)
+            if parsed_match is not None:
+                parsed_matches.append(parsed_match)
+            continue
+
+        raise RuntimeError("Unexpected margin", div, i)
+
+    return parsed_matches
+
+
+def _resolve_dual_matches(
+    parsed_matches: list[_ParsedDualMatch],
+) -> list[_ParsedDualMatch]:
+    """Find the left and right side of a match to resolve team names."""
+    with_team_resolved: list[_ParsedDualMatch] = []
+    by_key: dict[_ParsedDualMatchKey, list[_ParsedDualMatch]] = {}
+
+    for parsed_match in parsed_matches:
+        key = parsed_match.to_key()
+        by_key.setdefault(key, [])
+        by_key[key].append(parsed_match)
+
+    for key, matches in by_key.items():
+        if len(matches) != 2:
+            raise ValueError(
+                "Unexpected number of matches for key", key, len(matches), matches
+            )
+        match1, match2 = matches
+        if match1.winner_team is None:
+            match1.winner_team = match2.winner_team
+        if match1.loser_team is None:
+            match1.loser_team = match2.loser_team
+
+        if match1.winner_team is None or match1.loser_team is None:
+            raise ValueError("Unexpected name resolution", match1, match2)
+
+        with_team_resolved.append(match1)
+
+    return with_team_resolved
+
+
+def _division_for_event(event_name: str) -> bracket_util.Division:
+    if event_name == "IKWF Southern Dual Meet Divisional":
+        return "senior"
+    if event_name == "IKWF Dual Meet State Championships":
+        return "senior"
+
+    raise NotImplementedError(event_name)
+
+
+def parse_dual_event(
+    weights_raw: dict[str, str], event_name: str, event_date: str
+) -> list[bracket_util.MatchV1]:
+    unresolved_team_matches: list[_ParsedDualMatch] = []
+    for key, html in weights_raw.items():
+        unresolved_team_matches.extend(_extract_weight(key, html))
+
+    parsed_matches = _resolve_dual_matches(unresolved_team_matches)
+
+    all_matches: list[bracket_util.MatchV1] = []
+    for parsed_match in parsed_matches:
+        result_type = _determine_result_type(parsed_match.result)
+        if result_type is None:
+            continue
+
+        all_matches.append(
+            bracket_util.MatchV1(
+                event_name=event_name,
+                event_date=event_date,
+                bracket=parsed_match.bracket,
+                round_="Dual",
+                division=_division_for_event(event_name),
+                winner=parsed_match.winner,
+                winner_team=parsed_match.winner_team,
+                loser=parsed_match.loser,
+                loser_team=parsed_match.loser_team,
+                result=parsed_match.result,
+                result_type=result_type,
+                source="usabracketing_dual",
+            )
+        )
+    return all_matches
 
 
 def _extract_wrestlers_columns1(
