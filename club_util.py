@@ -103,6 +103,7 @@ def load_custom_athlete_name_map() -> dict[str, dict[str, str | None]]:
 
 class StateQualifier(_ForbidExtra):
     result: str
+    team_2025: str
     usaw_number: str
 
 
