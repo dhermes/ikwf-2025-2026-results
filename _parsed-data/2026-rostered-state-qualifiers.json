@@ -1,4 +1,38 @@
 {
+    "1006 Legacy Elite WC": {
+        "Blakley Richards": {
+            "ikwf_age": 12,
+            "result": "Novice 60 2nd",
+            "team_2025": "Sandwich Wrestling Club",
+            "usaw_number": "2004208201"
+        },
+        "Cooper Davis": {
+            "ikwf_age": 11,
+            "result": "Intermediate 122 7th",
+            "team_2025": "Yorkville Wrestling Club",
+            "usaw_number": "1900442101"
+        },
+        "Marcelo Villarreal": {
+            "ikwf_age": 12,
+            "result": "Novice 108 SQ",
+            "team_2025": "Sandwich Wrestling Club",
+            "usaw_number": "1803243001"
+        }
+    },
+    "309 Wrestling": {
+        "Emma Churchill": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 74 SQ",
+            "team_2025": "Dubtown Wrestling Club",
+            "usaw_number": "2206454001"
+        },
+        "Mackenzie Thornton": {
+            "ikwf_age": 14,
+            "result": "Girls Senior 125 SQ",
+            "team_2025": "Dubtown Wrestling Club",
+            "usaw_number": "1805967001"
+        }
+    },
     "815 Stateline Wrestling Club": {
         "Colton Moreno": {
             "result": "Novice 154 5th",
@@ -35,6 +69,12 @@
             "result": "Novice 100 SQ",
             "team_2025": "Alber Athletics Wrestling Club",
             "usaw_number": "2001493701"
+        },
+        "Ava Barber": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 67 1st",
+            "team_2025": "Belvidere Bandits Wrestling Club",
+            "usaw_number": "2204353301"
         },
         "Beau Reed": {
             "result": "Novice 125 SQ",
@@ -86,20 +126,62 @@
             "team_2025": "Alber Athletics Wrestling Club",
             "usaw_number": "2002579201"
         },
+        "Evan Ross": {
+            "ikwf_age": 10,
+            "result": "Intermediate 55 1st",
+            "team_2025": "Stillman Valley Wrestling Club",
+            "usaw_number": "2008895901"
+        },
+        "Gemma Benning": {
+            "ikwf_age": 8,
+            "result": "Girls Bantam 55 SQ",
+            "team_2025": "Belvidere Bandits Wrestling Club",
+            "usaw_number": "2304154501"
+        },
         "Gionni Zapf": {
             "result": "Novice 80 SQ",
             "team_2025": "Alber Athletics Wrestling Club",
             "usaw_number": "1803801801"
+        },
+        "Graham Gabler": {
+            "ikwf_age": 12,
+            "result": "Novice 64 SQ",
+            "team_2025": "Sauk Valley Wrestling Club",
+            "usaw_number": "2205145001"
+        },
+        "Hadley Slabaugh": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 61 1st",
+            "team_2025": "Harlem Huskies WC",
+            "usaw_number": "2406338601"
         },
         "Hiro Hongmoungkhoune": {
             "result": "Intermediate 55 8th",
             "team_2025": "Alber Athletics Wrestling Club",
             "usaw_number": "2305966301"
         },
+        "Jackson Moreno": {
+            "ikwf_age": 10,
+            "result": "Intermediate 74 7th",
+            "team_2025": "Belvidere Bandits Wrestling Club",
+            "usaw_number": "2304155901"
+        },
+        "Jacob Cory": {
+            "ikwf_age": 12,
+            "result": "Novice 86 SQ",
+            "team_2025": "Harlem Huskies WC",
+            "usaw_number": "1903127401"
+        },
         "Jacob Wagner": {
             "result": "Novice 86 SQ",
             "team_2025": "Alber Athletics Wrestling Club",
             "usaw_number": "2002579301"
+        },
+        "Jaxtyn LeConte": {
+            "ikwf_age": 9,
+            "result": "Bantam 52 8th",
+            "team_2025": "Rockford Wrestling Club",
+            "usaw_number": "2203300801"
         },
         "Jordy Teran": {
             "result": "Intermediate 74 SQ",
@@ -115,6 +197,12 @@
             "result": "Novice 100 7th",
             "team_2025": "Alber Athletics Wrestling Club",
             "usaw_number": "2203402101"
+        },
+        "Knox Ferry": {
+            "ikwf_age": 10,
+            "result": "Intermediate 59 SQ",
+            "team_2025": "Belvidere Bandits Wrestling Club",
+            "usaw_number": "2002677801"
         },
         "Landon Jaski": {
             "result": "Senior 103 8th",
@@ -175,6 +263,12 @@
             "result": "Novice 69 SQ",
             "team_2025": "Alber Athletics Wrestling Club",
             "usaw_number": "2004173601"
+        },
+        "Sloane Gabler": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 57 3rd",
+            "team_2025": "Sauk Valley Wrestling Club",
+            "usaw_number": "2307295201"
         },
         "Sophie Shomaker": {
             "result": "Girls Bantam 55 4th",
@@ -286,7 +380,27 @@
             "usaw_number": "2404033801"
         }
     },
+    "Argenta-Oreana Kids Wrestling Club": {
+        "Karsen Jorgensen": {
+            "ikwf_age": 13,
+            "result": "Novice 100 SQ",
+            "team_2025": "Decatur Dawgs Wrestling Club",
+            "usaw_number": "1905043901"
+        },
+        "Paul Ryan": {
+            "ikwf_age": 13,
+            "result": "Novice 74 SQ",
+            "team_2025": "Decatur Dawgs Wrestling Club",
+            "usaw_number": "1902110301"
+        }
+    },
     "Arlington Cardinals Wrestling Club": {
+        "Abigail Beltran": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 62 SQ",
+            "team_2025": "P3 Warrior Wrestling Academy",
+            "usaw_number": "2411723701"
+        },
         "Anthony Poro": {
             "result": "Bantam 95 SQ",
             "team_2025": "Arlington Cardinals Wrestling Club",
@@ -316,6 +430,12 @@
             "result": "Senior 110 SQ",
             "team_2025": "Arlington Cardinals Wrestling Club",
             "usaw_number": "2309180001"
+        },
+        "Eleanor Idzik": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 53 4th",
+            "team_2025": "P3 Warrior Wrestling Academy",
+            "usaw_number": "2500260901"
         },
         "Elizabeth Kustok": {
             "result": "Girls Bantam 55 7th",
@@ -558,6 +678,12 @@
             "team_2025": "Batavia Wrestling Club",
             "usaw_number": "2510654801"
         },
+        "Camila Rodriguez": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 82 SQ",
+            "team_2025": "Blackhawk Wrestling Club",
+            "usaw_number": "2400883701"
+        },
         "Carson Kukulski": {
             "result": "Bantam 120 6th",
             "team_2025": "Batavia Wrestling Club",
@@ -588,6 +714,12 @@
             "team_2025": "Batavia Wrestling Club",
             "usaw_number": "2403615701"
         },
+        "Jeanette Heilmann": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 108 SQ",
+            "team_2025": "Knights Wrestling Club",
+            "usaw_number": "2507682801"
+        },
         "John Lindstrom": {
             "result": "Senior 135 SQ",
             "team_2025": "Batavia Wrestling Club",
@@ -607,6 +739,12 @@
             "result": "Girls Novice 96 3rd",
             "team_2025": "Batavia Wrestling Club",
             "usaw_number": "2403616101"
+        },
+        "Maya Moore": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 115 4th",
+            "team_2025": "West Suburban Girls Wrestling Club",
+            "usaw_number": "2303809301"
         },
         "Remington Crawford": {
             "result": "Bantam 95 SQ",
@@ -687,6 +825,12 @@
             "team_2025": "Beat the Streets Chicago-Midway",
             "usaw_number": "2200470301"
         },
+        "Damien Givhan": {
+            "ikwf_age": 8,
+            "result": "Bantam 66 SQ",
+            "team_2025": "nWo Wrestling Club",
+            "usaw_number": "2402957701"
+        },
         "Eliana Ortega": {
             "result": "Girls Intermediate 67 2nd",
             "team_2025": "Beat the Streets Chicago-Midway",
@@ -702,6 +846,24 @@
             "team_2025": "Beat the Streets Chicago-Midway",
             "usaw_number": "2406407501"
         },
+        "Jaden Washington": {
+            "ikwf_age": 14,
+            "result": "Senior 103 1st",
+            "team_2025": "Victory Elite Wrestling",
+            "usaw_number": "1804614101"
+        },
+        "Keithen Rice": {
+            "ikwf_age": 14,
+            "result": "Senior 79 7th",
+            "team_2025": "Harvey Twisters WC",
+            "usaw_number": "115100101"
+        },
+        "Malachi Weaver": {
+            "ikwf_age": 13,
+            "result": "Senior 275 SQ",
+            "team_2025": "Englewood Live Wire Wrestling Club",
+            "usaw_number": "2513053701"
+        },
         "Natalie Esquinca": {
             "result": "Girls Novice 102 SQ",
             "team_2025": "Beat the Streets Chicago-Midway",
@@ -711,6 +873,12 @@
             "result": "Girls Novice 140 SQ",
             "team_2025": "Beat the Streets Chicago-Midway",
             "usaw_number": "2312987901"
+        },
+        "Stella Piazza": {
+            "ikwf_age": 14,
+            "result": "Girls Senior 115 1st",
+            "team_2025": "St. Charles WC",
+            "usaw_number": "2208573101"
         },
         "Zoey Rousseau": {
             "result": "Girls Intermediate 115 8th",
@@ -766,6 +934,18 @@
             "team_2025": "Beat the Streets Chicago-Roseland",
             "usaw_number": "2402767401"
         },
+        "Ce'Ana Lee": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 108 SQ",
+            "team_2025": "Beat the Streets Chicago-Roseland",
+            "usaw_number": "2418973501"
+        },
+        "Ce'Nia Lee": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 82 SQ",
+            "team_2025": "Beat the Streets Chicago-Roseland",
+            "usaw_number": "2418973601"
+        },
         "Emyr Kelly": {
             "result": "Bantam 95 SQ",
             "team_2025": "Beat the Streets Chicago-Roseland",
@@ -797,6 +977,18 @@
             "result": "Girls Bantam 67 6th",
             "team_2025": "Beat the Streets Chicago-Tri Taylor",
             "usaw_number": "2400199101"
+        },
+        "Ashton Lee": {
+            "ikwf_age": 6,
+            "result": "Senior 215 SQ",
+            "team_2025": "Edwardsville Wrestling Club",
+            "usaw_number": "2607461301"
+        },
+        "Heiden Sanchez": {
+            "ikwf_age": 14,
+            "result": "Senior 90 SQ",
+            "team_2025": "Beat the Streets Chicago-Midway",
+            "usaw_number": "1805038601"
         },
         "Libby Gagen": {
             "result": "Girls Bantam 115 2nd",
@@ -1099,6 +1291,12 @@
             "team_2025": "Built By Brunson Wrestling",
             "usaw_number": "115282301"
         },
+        "Layla Sapozhnikov": {
+            "ikwf_age": 14,
+            "result": "Girls Senior 120 3rd",
+            "team_2025": "Toss Em Up Wrestling Academy",
+            "usaw_number": "2313415001"
+        },
         "Lorenzo Mota": {
             "result": "Intermediate 177 1st",
             "team_2025": "Built By Brunson Wrestling",
@@ -1181,10 +1379,22 @@
             "team_2025": "Bulls Wrestling Club",
             "usaw_number": "117889901"
         },
+        "Madalyn Beasley": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 74 7th",
+            "team_2025": "Team Piasa Wrestling Club",
+            "usaw_number": "2505702401"
+        },
         "Makenna Austra": {
             "result": "Girls Intermediate 62 3rd",
             "team_2025": "Bulls Wrestling Club",
             "usaw_number": "2305160701"
+        },
+        "Mila Beasley": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 50 8th",
+            "team_2025": "Team Piasa Wrestling Club",
+            "usaw_number": "2505702601"
         },
         "Nolan Hasenjaeger": {
             "result": "Senior 90 SQ",
@@ -1196,10 +1406,24 @@
             "team_2025": "Bulls Wrestling Club",
             "usaw_number": "115327701"
         },
+        "Roman Williams": {
+            "ikwf_age": 10,
+            "result": "Intermediate 69 SQ",
+            "team_2025": "Jersey Junior Panthers Wrestling",
+            "usaw_number": "2205140701"
+        },
         "Rosalie Wilson": {
             "result": "Girls Bantam 74 SQ",
             "team_2025": "Bulls Wrestling Club",
             "usaw_number": "2302016901"
+        }
+    },
+    "CICS Wrightwood Wildcats WC": {
+        "Caleb Rogers": {
+            "ikwf_age": 6,
+            "result": "Senior 126 SQ",
+            "team_2025": "Lincoln-Way Wrestling Club",
+            "usaw_number": "2603617801"
         }
     },
     "Callan Wrestling Academy": {
@@ -1286,6 +1510,12 @@
             "result": "Girls Intermediate 95 SQ",
             "team_2025": "Carbondale Wrestling Club",
             "usaw_number": "2410047801"
+        },
+        "Ny'aila Moore": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 95 7th",
+            "team_2025": "Carbondale Wrestling Club",
+            "usaw_number": "2410410801"
         },
         "Star Stoelzle": {
             "result": "Girls Bantam 115 5th",
@@ -1384,6 +1614,12 @@
             "result": "Bantam 58 SQ",
             "team_2025": "Celtic Wrestling Academy",
             "usaw_number": "2403068901"
+        },
+        "Jonathan Bond": {
+            "ikwf_age": 10,
+            "result": "Intermediate 108 SQ",
+            "team_2025": "Frankfort Gladiator Wrestling",
+            "usaw_number": "2405787201"
         },
         "Kameron Williams": {
             "result": "Novice 100 SQ",
@@ -1493,10 +1729,28 @@
         }
     },
     "Chatham Wrestling Club": {
+        "Aryana Resendez": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 82 4th",
+            "team_2025": "Rochelle Wrestling Club",
+            "usaw_number": "2304336201"
+        },
         "Brooklyn Herigodt": {
             "result": "Girls Intermediate 95 5th",
             "team_2025": "Chatham Wrestling Club",
             "usaw_number": "1902667401"
+        },
+        "Natalya Moberg": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 77 SQ",
+            "team_2025": "Rochelle Wrestling Club",
+            "usaw_number": "2203401801"
+        },
+        "Piper Koning": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 50 SQ",
+            "team_2025": "Cardinals Wrestling Club",
+            "usaw_number": "2302565301"
         }
     },
     "Clinton Wrestling Club": {
@@ -1583,10 +1837,22 @@
         }
     },
     "Combative Sports Athletic Center Wrestling": {
+        "Calli Hickman": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 74 3rd",
+            "team_2025": "Bulls Wrestling Club",
+            "usaw_number": "2304368501"
+        },
         "Carl Weidner": {
             "result": "Senior 96 5th",
             "team_2025": "Combative Sports Athletic Center Wrestling",
             "usaw_number": "115257001"
+        },
+        "Eden Hickman": {
+            "ikwf_age": 12,
+            "result": "Novice 93 7th",
+            "team_2025": "Bulls Wrestling Club",
+            "usaw_number": "2300136101"
         }
     },
     "Cory Clark Wrestling": {
@@ -1594,6 +1860,12 @@
             "result": "Novice 64 5th",
             "team_2025": "Cory Clark Wrestling",
             "usaw_number": "2002920101"
+        },
+        "Aiden McChesney": {
+            "ikwf_age": 13,
+            "result": "Novice 154 SQ",
+            "team_2025": "Wheaton Wrestling Club",
+            "usaw_number": "2506509401"
         },
         "Alex Leon": {
             "result": "Novice 116 1st",
@@ -1605,10 +1877,28 @@
             "team_2025": "Cory Clark Wrestling",
             "usaw_number": "2204007501"
         },
+        "Beckam Velarde": {
+            "ikwf_age": 9,
+            "result": "Bantam 58 1st",
+            "team_2025": "Yorkville Wrestling Club",
+            "usaw_number": "2203059601"
+        },
+        "Blake Wozny": {
+            "ikwf_age": 13,
+            "result": "Novice 134 4th",
+            "team_2025": "P3 Warrior Wrestling Academy",
+            "usaw_number": "2005122201"
+        },
         "Cam Carter": {
             "result": "Intermediate 108 6th",
             "team_2025": "Cory Clark Wrestling",
             "usaw_number": "2202596801"
+        },
+        "Channing Meehleib": {
+            "ikwf_age": 8,
+            "result": "Bantam 46 SQ",
+            "team_2025": "Dundee Highlanders WC",
+            "usaw_number": "2505695801"
         },
         "Chase Amorn-Vichet": {
             "result": "Bantam 49 1st",
@@ -1625,6 +1915,18 @@
             "team_2025": "Cory Clark Wrestling",
             "usaw_number": "2204187901"
         },
+        "Darek Diaz": {
+            "ikwf_age": 11,
+            "result": "Intermediate 59 1st",
+            "team_2025": "Team El1te Wrestling",
+            "usaw_number": "2005064601"
+        },
+        "David Dorzhiev": {
+            "ikwf_age": 13,
+            "result": "Novice 69 SQ",
+            "team_2025": "Built By Brunson Wrestling",
+            "usaw_number": "2314853701"
+        },
         "David Leon": {
             "result": "Intermediate 69 4th",
             "team_2025": "Cory Clark Wrestling",
@@ -1634,6 +1936,24 @@
             "result": "Intermediate 55 2nd",
             "team_2025": "Cory Clark Wrestling",
             "usaw_number": "2400485601"
+        },
+        "Donato Saaby": {
+            "ikwf_age": 12,
+            "result": "Novice 154 SQ",
+            "team_2025": "Headlock Wrestling Academy",
+            "usaw_number": "1902652501"
+        },
+        "Eva Duarte": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 88 SQ",
+            "team_2025": "Headlock Wrestling Academy",
+            "usaw_number": "2406313401"
+        },
+        "Greyson Goodwin": {
+            "ikwf_age": 13,
+            "result": "Novice 64 3rd",
+            "team_2025": "Team 312 Wrestling Club",
+            "usaw_number": "1800280001"
         },
         "Jack Newsom": {
             "result": "Bantam 52 3rd",
@@ -1660,6 +1980,18 @@
             "team_2025": "Cory Clark Wrestling",
             "usaw_number": "2213502401"
         },
+        "Jerry Fialka": {
+            "ikwf_age": 11,
+            "result": "Intermediate 84 1st",
+            "team_2025": "Martinez Fox Valley Elite Wrestling Club",
+            "usaw_number": "2302066301"
+        },
+        "Joe Warren": {
+            "ikwf_age": 13,
+            "result": "Novice 134 SQ",
+            "team_2025": "Lions Wrestling Club",
+            "usaw_number": "2205004701"
+        },
         "John Valente": {
             "result": "Bantam 70 SQ",
             "team_2025": "Cory Clark Wrestling",
@@ -1669,6 +2001,36 @@
             "result": "Novice 116 8th",
             "team_2025": "Cory Clark Wrestling",
             "usaw_number": "2406147901"
+        },
+        "Julian Ramos": {
+            "ikwf_age": 8,
+            "result": "Bantam 43 SQ",
+            "team_2025": "Headlock Wrestling Academy",
+            "usaw_number": "2302228301"
+        },
+        "Keidan Marshall": {
+            "ikwf_age": 11,
+            "result": "Intermediate 79 SQ",
+            "team_2025": "Naperville Wrestling Club",
+            "usaw_number": "2405180901"
+        },
+        "Maddox Fialka": {
+            "ikwf_age": 10,
+            "result": "Intermediate 64 2nd",
+            "team_2025": "Martinez Fox Valley Elite Wrestling Club",
+            "usaw_number": "2302066401"
+        },
+        "Mason Akileh": {
+            "ikwf_age": 11,
+            "result": "Intermediate 64 5th",
+            "team_2025": "Celtic Wrestling Academy",
+            "usaw_number": "1903812601"
+        },
+        "Maxwell Fauth": {
+            "ikwf_age": 11,
+            "result": "Novice 60 3rd",
+            "team_2025": "Lions Wrestling Club",
+            "usaw_number": "1905068801"
         },
         "Paul Flores": {
             "result": "Intermediate 55 SQ",
@@ -1680,10 +2042,28 @@
             "team_2025": "Cory Clark Wrestling",
             "usaw_number": "2406218901"
         },
+        "Robert Horton": {
+            "ikwf_age": 8,
+            "result": "Bantam 49 5th",
+            "team_2025": "Frankfort Wildcats Wrestling",
+            "usaw_number": "2303631501"
+        },
         "Ryan Kichka": {
             "result": "Novice 100 SQ",
             "team_2025": "Cory Clark Wrestling",
             "usaw_number": "1806901001"
+        },
+        "Timur Dorzhiev": {
+            "ikwf_age": 11,
+            "result": "Intermediate 69 SQ",
+            "team_2025": "Built By Brunson Wrestling",
+            "usaw_number": "2314859101"
+        },
+        "Vincent Cumbo": {
+            "ikwf_age": 13,
+            "result": "Novice 64 SQ",
+            "team_2025": "Vittum Cats Wrestling Club",
+            "usaw_number": "112915201"
         },
         "Zara Klichurova": {
             "result": "Girls Novice 90 5th",
@@ -1840,6 +2220,12 @@
             "result": "Novice 215 2nd",
             "team_2025": "Crystal Lake Wizards Wrestling Club",
             "usaw_number": "1912477201"
+        },
+        "Tre'Lyn Morrow": {
+            "ikwf_age": 9,
+            "result": "Bantam 55 SQ",
+            "team_2025": "Crystal Lake Wizards Wrestling Club",
+            "usaw_number": "2104716501"
         }
     },
     "Cumberland Youth Wrestling Club": {
@@ -1976,6 +2362,12 @@
         }
     },
     "DeKalb Wrestling Club": {
+        "Andrew Caputo": {
+            "ikwf_age": 12,
+            "result": "Novice 125 SQ",
+            "team_2025": "nWo Wrestling Club",
+            "usaw_number": "2005051101"
+        },
         "Carter Robinson": {
             "result": "Intermediate 84 SQ",
             "team_2025": "DeKalb Wrestling Club",
@@ -2000,6 +2392,12 @@
             "result": "Girls Bantam 61 2nd",
             "team_2025": "DeKalb Wrestling Club",
             "usaw_number": "2307623501"
+        },
+        "Zach Caputo": {
+            "ikwf_age": 10,
+            "result": "Intermediate 74 SQ",
+            "team_2025": "nWo Wrestling Club",
+            "usaw_number": "2005051301"
         }
     },
     "Decatur Dawgs Wrestling Club": {
@@ -2037,6 +2435,18 @@
             "team_2025": "Demolition Wrestling Club",
             "usaw_number": "112647601"
         },
+        "Beckett McKay": {
+            "ikwf_age": 12,
+            "result": "Novice 100 SQ",
+            "team_2025": "Tinley Park Bulldogs Wrestling Club",
+            "usaw_number": "1905727601"
+        },
+        "Cal Butikofer": {
+            "ikwf_age": 10,
+            "result": "Intermediate 148 2nd",
+            "team_2025": "Yorkville Wrestling Club",
+            "usaw_number": "2302863901"
+        },
         "Caleb Weaver": {
             "result": "Intermediate 90 1st",
             "team_2025": "Demolition Wrestling Club",
@@ -2066,6 +2476,12 @@
             "result": "Novice 69 4th",
             "team_2025": "Demolition Wrestling Club",
             "usaw_number": "2201116401"
+        },
+        "Eddie Gergits": {
+            "ikwf_age": 10,
+            "result": "Intermediate 64 SQ",
+            "team_2025": "SOT-C WC",
+            "usaw_number": "2201991801"
         },
         "Evelyn Koulis": {
             "result": "Girls Intermediate 77 1st",
@@ -2102,6 +2518,24 @@
             "team_2025": "Demolition Wrestling Club",
             "usaw_number": "2513201301"
         },
+        "Laura Allen": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 96 5th",
+            "team_2025": "Wilmington Wrestling Club",
+            "usaw_number": "2305627801"
+        },
+        "Lillian Trost": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 90 SQ",
+            "team_2025": "Reed-Custer Wrestling Club",
+            "usaw_number": "2404364001"
+        },
+        "Lincoln Fay": {
+            "ikwf_age": 8,
+            "result": "Bantam 95 4th",
+            "team_2025": "Reed-Custer Wrestling Club",
+            "usaw_number": "2304163001"
+        },
         "Macklin Holford": {
             "result": "Novice 134 3rd",
             "team_2025": "Demolition Wrestling Club",
@@ -2137,6 +2571,12 @@
             "team_2025": "Demolition Wrestling Club",
             "usaw_number": "112644501"
         },
+        "Oliver Tasnic": {
+            "ikwf_age": 9,
+            "result": "Bantam 66 5th",
+            "team_2025": "Force Elite Wrestling Club",
+            "usaw_number": "2105491601"
+        },
         "Padraig Brady": {
             "result": "Intermediate 74 6th",
             "team_2025": "Demolition Wrestling Club",
@@ -2154,6 +2594,12 @@
         }
     },
     "Dinamo Wrestling": {
+        "Bobby O'Keefe": {
+            "ikwf_age": 9,
+            "result": "Bantam 84 SQ",
+            "team_2025": "Dinamo Wrestling",
+            "usaw_number": "2304965501"
+        },
         "Briar Sears": {
             "result": "Intermediate 108 SQ",
             "team_2025": "Dinamo Wrestling",
@@ -2188,6 +2634,12 @@
             "result": "Bantam 62 SQ",
             "team_2025": "Dinamo Wrestling",
             "usaw_number": "2304963701"
+        },
+        "John O'Brien": {
+            "ikwf_age": 11,
+            "result": "Intermediate 84 SQ",
+            "team_2025": "Dinamo Wrestling",
+            "usaw_number": "2504044101"
         },
         "Mackenzie Probst": {
             "result": "Girls Bantam 67 SQ",
@@ -2312,6 +2764,12 @@
             "team_2025": "Dundee Highlanders WC",
             "usaw_number": "2501854701"
         },
+        "Maddox Hopp": {
+            "ikwf_age": 9,
+            "result": "Bantam 95 SQ",
+            "team_2025": "Red Raiders Wrestling Team",
+            "usaw_number": "2503267101"
+        },
         "Mekhi Ruiz": {
             "result": "Senior 275 SQ",
             "team_2025": "Dundee Highlanders WC",
@@ -2388,10 +2846,22 @@
             "team_2025": "East Peoria River Bandits Wrestling",
             "usaw_number": "2303487701"
         },
+        "Elionna Flanigan": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 85 SQ",
+            "team_2025": "Irish Wrestling Club",
+            "usaw_number": "2205386601"
+        },
         "Gabriel Thornquist": {
             "result": "Senior 110 SQ",
             "team_2025": "East Peoria River Bandits Wrestling",
             "usaw_number": "2206618801"
+        },
+        "Haley Garrett": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 125 SQ",
+            "team_2025": "Limestone Wrestling Club",
+            "usaw_number": "2205386701"
         },
         "Hunter Pratt": {
             "result": "Novice 116 SQ",
@@ -2743,6 +3213,12 @@
             "team_2025": "Falcon Youth Wrestling",
             "usaw_number": "2201497901"
         },
+        "Cooper Hull": {
+            "ikwf_age": 11,
+            "result": "Novice 215 SQ",
+            "team_2025": "Fisher Wrestling Club",
+            "usaw_number": "2001418701"
+        },
         "Emmerson Lange": {
             "result": "Girls Intermediate 53 7th",
             "team_2025": "Falcon Youth Wrestling",
@@ -2866,6 +3342,12 @@
             "team_2025": "Force Elite Wrestling Club",
             "usaw_number": "2503086501"
         },
+        "Brixton Gomez": {
+            "ikwf_age": 7,
+            "result": "Bantam 58 SQ",
+            "team_2025": "nWo Wrestling Club",
+            "usaw_number": "2403439401"
+        },
         "Brody Dreger": {
             "result": "Intermediate 148 SQ",
             "team_2025": "Force Elite Wrestling Club",
@@ -2957,6 +3439,12 @@
             "result": "Girls Senior 135 1st",
             "team_2025": "Fox Lake Wrestling Club",
             "usaw_number": "1804751401"
+        },
+        "Alex Castillo": {
+            "ikwf_age": 13,
+            "result": "Novice 134 SQ",
+            "team_2025": "Spartan Wrestling Club",
+            "usaw_number": "2406522001"
         },
         "Azalea De La Torre": {
             "result": "Girls Intermediate 62 SQ",
@@ -3080,6 +3568,12 @@
             "team_2025": "Fox Valley Wrestling Club",
             "usaw_number": "2301148501"
         },
+        "Martin Wilson": {
+            "ikwf_age": 12,
+            "result": "Novice 178 SQ",
+            "team_2025": "Force Elite Wrestling Club",
+            "usaw_number": "2002480001"
+        },
         "Mason Arndt": {
             "result": "Novice 64 SQ",
             "team_2025": "Fox Valley Wrestling Club",
@@ -3121,6 +3615,12 @@
             "result": "Girls Novice 125 SQ",
             "team_2025": "Frankfort Gladiator Wrestling",
             "usaw_number": "2411603301"
+        },
+        "Emmy Hoselton": {
+            "ikwf_age": 14,
+            "result": "Girls Senior 95 7th",
+            "team_2025": "Lincoln-Way Wrestling Club",
+            "usaw_number": "2415428301"
         },
         "Jessa Reich": {
             "result": "Girls Novice 115 SQ",
@@ -3294,10 +3794,22 @@
             "team_2025": "Gomez Wrestling RTC",
             "usaw_number": "2208479501"
         },
+        "Nolan Rodriguez": {
+            "ikwf_age": 10,
+            "result": "Intermediate 59 SQ",
+            "team_2025": "Riot Room Wrestling",
+            "usaw_number": "2207546501"
+        },
         "Sarah Bell": {
             "result": "Girls Senior 110 SQ",
             "team_2025": "Gomez Wrestling RTC",
             "usaw_number": "1806432701"
+        },
+        "Zoe Malamis": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 125 4th",
+            "team_2025": "Cory Clark Wrestling",
+            "usaw_number": "2404889801"
         }
     },
     "Grayslake Youth Wrestling Club": {
@@ -3318,10 +3830,34 @@
             "team_2025": "Greg Gomez Trained Wrestling",
             "usaw_number": "2304261701"
         },
+        "Elena Amendola": {
+            "ikwf_age": 8,
+            "result": "Girls Bantam 45 SQ",
+            "team_2025": "Fox Valley Wrestling Club",
+            "usaw_number": "2403892401"
+        },
         "Elijah Perez": {
             "result": "Senior 79 SQ",
             "team_2025": "Greg Gomez Trained Wrestling",
             "usaw_number": "113691801"
+        },
+        "Lilah Garcia": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 96 SQ",
+            "team_2025": "Wheaton Wrestling Club",
+            "usaw_number": "2512340301"
+        },
+        "Louisa Enslen": {
+            "ikwf_age": 15,
+            "result": "Girls Senior 145 SQ",
+            "team_2025": "West Suburban Girls Wrestling Club",
+            "usaw_number": "2310961801"
+        },
+        "Violet Dietzen": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 63 6th",
+            "team_2025": "Dungeon Wrestling Club",
+            "usaw_number": "2509702201"
         }
     },
     "Harlem Huskies WC": {
@@ -3475,6 +4011,12 @@
             "team_2025": "Herrin Tiger Wrestling",
             "usaw_number": "2406153601"
         },
+        "Layton Kraemer": {
+            "ikwf_age": 9,
+            "result": "Bantam 55 6th",
+            "team_2025": "Nomad Wrestling Academy",
+            "usaw_number": "2205870201"
+        },
         "Teagan Cullum": {
             "result": "Girls Novice 115 1st",
             "team_2025": "Herrin Tiger Wrestling",
@@ -3486,6 +4028,14 @@
             "result": "Girls Intermediate 77 SQ",
             "team_2025": "Hillsboro Jr Toppers Wrestling Club",
             "usaw_number": "2306012601"
+        }
+    },
+    "Hinsdale Red Devil WC": {
+        "Bryce Erway": {
+            "ikwf_age": 14,
+            "result": "Senior 96 SQ",
+            "team_2025": "Izzy Style Wrestling",
+            "usaw_number": "2005164001"
         }
     },
     "Hononegah Wrestling Club": {
@@ -3613,6 +4163,12 @@
             "team_2025": "Iguana Athletics Wrestling Club",
             "usaw_number": "2006271601"
         },
+        "Charley Crouch": {
+            "ikwf_age": 10,
+            "result": "Intermediate 98 SQ",
+            "team_2025": "Eureka Wrestling Club",
+            "usaw_number": "2208095901"
+        },
         "Easton Brobston": {
             "result": "Intermediate 84 SQ",
             "team_2025": "Iguana Athletics Wrestling Club",
@@ -3632,6 +4188,12 @@
             "result": "Bantam 55 SQ",
             "team_2025": "Iguana Athletics Wrestling Club",
             "usaw_number": "2305527201"
+        },
+        "Rhay Ash": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 57 SQ",
+            "team_2025": "Clinton Wrestling Club",
+            "usaw_number": "2502603101"
         },
         "Rhett Bramley": {
             "result": "Intermediate 108 SQ",
@@ -3659,11 +4221,57 @@
             "usaw_number": "2405757901"
         }
     },
+    "Illinois Valley Wrestling Club": {
+        "Audriana Plut": {
+            "ikwf_age": 14,
+            "result": "Girls Senior 145 7th",
+            "team_2025": "LaSalle Peru Crunching Cavs Youth WC",
+            "usaw_number": "2305327001"
+        },
+        "Sarah Kurtz": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 61 SQ",
+            "team_2025": "Ottawa Wolfpack Wrestling Club",
+            "usaw_number": "2201292701"
+        }
+    },
     "Impact Wrestling Academy, LLC": {
+        "Asher Reyes": {
+            "ikwf_age": 9,
+            "result": "Bantam 58 SQ",
+            "team_2025": "Lincoln-Way Wrestling Club",
+            "usaw_number": "2201434601"
+        },
         "Austin Trettin": {
             "result": "Intermediate 90 6th",
             "team_2025": "Impact Wrestling Academy, LLC",
             "usaw_number": "2205737001"
+        },
+        "Avery Tucker": {
+            "ikwf_age": 9,
+            "result": "Bantam 70 8th",
+            "team_2025": "Peotone Little Devils Wrestling Club",
+            "usaw_number": "2303314301"
+        },
+        "Emmalyne Shaw": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 77 3rd",
+            "team_2025": "Peotone Little Devils Wrestling Club",
+            "usaw_number": "2402539501"
+        },
+        "Hunter Vega": {
+            "ikwf_age": 9,
+            "result": "Bantam 66 SQ",
+            "team_2025": "Shadow Wolves Wrestling",
+            "usaw_number": "2208998901"
+        }
+    },
+    "Integrity Elite Wrestling": {
+        "Corinne Bittles": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 72 SQ",
+            "team_2025": "Tiger Elite Wrestling Inc.",
+            "usaw_number": "2405300801"
         }
     },
     "Irish Wrestling Club": {
@@ -3676,6 +4284,12 @@
             "result": "Girls Intermediate 95 SQ",
             "team_2025": "Irish Wrestling Club",
             "usaw_number": "2205387401"
+        },
+        "Lillie Marrs": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 125 SQ",
+            "team_2025": "Limestone Wrestling Club",
+            "usaw_number": "2508267601"
         }
     },
     "Izzy Style Wrestling": {
@@ -3698,18 +4312,96 @@
             "result": "Senior 164 SQ",
             "team_2025": "Izzy Style Wrestling",
             "usaw_number": "2314480601"
+        },
+        "Matthew Dziura": {
+            "ikwf_age": 14,
+            "result": "Senior 164 5th",
+            "team_2025": "Barrington Broncos Wrestling Club",
+            "usaw_number": "2205379201"
+        },
+        "Shea Colleran": {
+            "ikwf_age": 14,
+            "result": "Senior 103 7th",
+            "team_2025": "Maine Eagles WC",
+            "usaw_number": "115740201"
+        },
+        "Sophia Olandese": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 67 8th",
+            "team_2025": "Wheaton Wrestling Club",
+            "usaw_number": "2408903301"
         }
     },
     "JRW Wrestling": {
+        "Adalyn Albavera": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 61 5th",
+            "team_2025": "Lake County Stallions Wrestling Academy",
+            "usaw_number": "2301068301"
+        },
+        "Adriana Ragona": {
+            "ikwf_age": 11,
+            "result": "Girls Novice 80 1st",
+            "team_2025": "Built By Brunson Wrestling",
+            "usaw_number": "2104970601"
+        },
         "Alexi Stellatos": {
             "result": "Bantam 46 SQ",
             "team_2025": "JRW Wrestling",
             "usaw_number": "2210050701"
         },
+        "Annie Flahive": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 67 SQ",
+            "team_2025": "Cory Clark Wrestling",
+            "usaw_number": "2500607401"
+        },
+        "Anthony Ragona": {
+            "ikwf_age": 10,
+            "result": "Intermediate 64 4th",
+            "team_2025": "Built By Brunson Wrestling",
+            "usaw_number": "2100094701"
+        },
+        "Briggs Whiting": {
+            "ikwf_age": 10,
+            "result": "Intermediate 64 SQ",
+            "team_2025": "Force Elite Wrestling Club",
+            "usaw_number": "2005039801"
+        },
+        "Brody Cohen": {
+            "ikwf_age": 9,
+            "result": "Bantam 66 2nd",
+            "team_2025": "Built By Brunson Wrestling",
+            "usaw_number": "2306873201"
+        },
+        "Cooper Whiting": {
+            "ikwf_age": 12,
+            "result": "Novice 80 SQ",
+            "team_2025": "Force Elite Wrestling Club",
+            "usaw_number": "1904452401"
+        },
+        "Giancarlo Albavera": {
+            "ikwf_age": 12,
+            "result": "Novice 178 SQ",
+            "team_2025": "Lake County Stallions Wrestling Academy",
+            "usaw_number": "2005131301"
+        },
         "Kosta Stellatos": {
             "result": "Bantam 66 SQ",
             "team_2025": "JRW Wrestling",
             "usaw_number": "2210050801"
+        },
+        "Landon Delisi": {
+            "ikwf_age": 12,
+            "result": "Novice 86 4th",
+            "team_2025": "Built By Brunson Wrestling",
+            "usaw_number": "2306705701"
+        },
+        "Teidan Delisi": {
+            "ikwf_age": 13,
+            "result": "Novice 74 3rd",
+            "team_2025": "Built By Brunson Wrestling",
+            "usaw_number": "2306705301"
         }
     },
     "Jacksonville Area Wrestling": {
@@ -3717,6 +4409,12 @@
             "result": "Girls Senior 100 SQ",
             "team_2025": "Jacksonville Area Wrestling",
             "usaw_number": "2209680201"
+        },
+        "Jah'Nariya McBride": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 67 4th",
+            "team_2025": "Jacksonville Area Wrestling",
+            "usaw_number": "2508799501"
         },
         "Kailee Warren": {
             "result": "Girls Novice 108 SQ",
@@ -3743,6 +4441,14 @@
             "usaw_number": "2409510601"
         }
     },
+    "Junior Kahoks-Tribe Fellowship": {
+        "Alta Jane McQuary": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 115 SQ",
+            "team_2025": "Collinsville Wrestling Club",
+            "usaw_number": "2505064401"
+        }
+    },
     "Junior Pioneer Wrestling Club": {
         "Noble Steen": {
             "result": "Novice 178 SQ",
@@ -3755,6 +4461,14 @@
             "result": "Senior 79 SQ",
             "team_2025": "Junior Titans Wrestling",
             "usaw_number": "2407516501"
+        }
+    },
+    "Katana Wrestling": {
+        "Maddilynn Elam": {
+            "ikwf_age": 8,
+            "result": "Girls Bantam 50 SQ",
+            "team_2025": "Vandalia Jr Wrestling Club",
+            "usaw_number": "2305763701"
         }
     },
     "Knights Wrestling Club": {
@@ -3946,6 +4660,12 @@
             "team_2025": "Lemont Bears WC",
             "usaw_number": "2003350801"
         },
+        "John Djikas": {
+            "ikwf_age": 10,
+            "result": "Intermediate 55 6th",
+            "team_2025": "Lockport Junior Porters WC",
+            "usaw_number": "2202318101"
+        },
         "John Wiatr": {
             "result": "Bantam 62 SQ",
             "team_2025": "Lemont Bears WC",
@@ -4084,6 +4804,12 @@
             "team_2025": "Lincoln-Way Wrestling Club",
             "usaw_number": "2003708501"
         },
+        "Chase Valent": {
+            "ikwf_age": 13,
+            "result": "Novice 74 SQ",
+            "team_2025": "Celtic Wrestling Academy",
+            "usaw_number": "1903815601"
+        },
         "Clark Goodwin": {
             "result": "Senior 90 SQ",
             "team_2025": "Lincoln-Way Wrestling Club",
@@ -4201,6 +4927,12 @@
             "team_2025": "Lionheart Intense Wrestling",
             "usaw_number": "2507530501"
         },
+        "Em'mari Wright": {
+            "ikwf_age": 7,
+            "result": "Girls Bantam 45 5th",
+            "team_2025": "Lionheart Intense Wrestling",
+            "usaw_number": "2406932501"
+        },
         "Jaquera Noyes": {
             "result": "Girls Bantam 67 SQ",
             "team_2025": "Lionheart Intense Wrestling",
@@ -4291,6 +5023,12 @@
             "result": "Girls Intermediate 72 1st",
             "team_2025": "Little Giants WC",
             "usaw_number": "2406082701"
+        },
+        "Joey Boggs": {
+            "ikwf_age": 9,
+            "result": "Bantam 84 SQ",
+            "team_2025": "Fighting Farmers Wrestling Club",
+            "usaw_number": "2505930101"
         },
         "Liam Munson": {
             "result": "Intermediate 122 SQ",
@@ -4518,10 +5256,22 @@
             "team_2025": "Martinez Fox Valley Elite Wrestling Club",
             "usaw_number": "2005166601"
         },
+        "Madeline Hlava": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 108 2nd",
+            "team_2025": "Batavia Wrestling Club",
+            "usaw_number": "2504751101"
+        },
         "Mason Hovey": {
             "result": "Intermediate 74 SQ",
             "team_2025": "Martinez Fox Valley Elite Wrestling Club",
             "usaw_number": "2201527801"
+        },
+        "Owen Orcutt": {
+            "ikwf_age": 9,
+            "result": "Bantam 55 SQ",
+            "team_2025": "St. Charles WC",
+            "usaw_number": "2306245101"
         },
         "Ricky Alfaro": {
             "result": "Senior 126 7th",
@@ -4532,6 +5282,12 @@
             "result": "Intermediate 122 SQ",
             "team_2025": "Martinez Fox Valley Elite Wrestling Club",
             "usaw_number": "2005440201"
+        },
+        "Sophia Hlava": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 82 8th",
+            "team_2025": "Batavia Wrestling Club",
+            "usaw_number": "2504750901"
         },
         "Zachary Hovey": {
             "result": "Bantam 49 SQ",
@@ -4549,6 +5305,12 @@
             "result": "Girls Intermediate 77 SQ",
             "team_2025": "Mat Rat Wrestling Club",
             "usaw_number": "2203763401"
+        },
+        "Brielle Hobday": {
+            "ikwf_age": 7,
+            "result": "Girls Bantam 55 8th",
+            "team_2025": "P3 Warrior Wrestling Academy",
+            "usaw_number": "2501598801"
         },
         "Callahan Giannokis": {
             "result": "Girls Senior 90 2nd",
@@ -4570,10 +5332,22 @@
             "team_2025": "Mat Rat Wrestling Club",
             "usaw_number": "2005047001"
         },
+        "Giovanni Bolognini": {
+            "ikwf_age": 9,
+            "result": "Bantam 120 8th",
+            "team_2025": "Bloomingdale Bears Wrestling Club",
+            "usaw_number": "2304336801"
+        },
         "Hazel Moore": {
             "result": "Girls Intermediate 72 SQ",
             "team_2025": "Mat Rat Wrestling Club",
             "usaw_number": "2505008801"
+        },
+        "Izabella Aranda": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 102 SQ",
+            "team_2025": "P3 Warrior Wrestling Academy",
+            "usaw_number": "2302787901"
         },
         "Jayden Johnson": {
             "result": "Senior 188 7th",
@@ -4719,6 +5493,14 @@
             "usaw_number": "2305331301"
         }
     },
+    "Midway WC": {
+        "Benicio Lopez": {
+            "ikwf_age": 9,
+            "result": "Bantam 55 SQ",
+            "team_2025": "Panther Wrestling Club",
+            "usaw_number": "2203602001"
+        }
+    },
     "Midwest Central Youth WC": {
         "Addilyn Terrell": {
             "result": "Girls Bantam 61 SQ",
@@ -4764,6 +5546,12 @@
             "team_2025": "Monticello Youth Wrestling Club",
             "usaw_number": "2204595601"
         },
+        "Gavin Somers": {
+            "ikwf_age": 13,
+            "result": "Novice 86 SQ",
+            "team_2025": "Champaign Wrestling Club",
+            "usaw_number": "1903799001"
+        },
         "Hayden Hicks": {
             "result": "Intermediate 148 5th",
             "team_2025": "Monticello Youth Wrestling Club",
@@ -4785,6 +5573,12 @@
             "result": "Bantam 49 SQ",
             "team_2025": "Morris Wrestling Club",
             "usaw_number": "2301042001"
+        },
+        "Evan O'Donnell": {
+            "ikwf_age": 11,
+            "result": "Intermediate 84 SQ",
+            "team_2025": "Morris Wrestling Club",
+            "usaw_number": "2300385101"
         },
         "Henry Symons": {
             "result": "Novice 80 SQ",
@@ -4948,6 +5742,12 @@
             "team_2025": "Naperville Wrestling Club",
             "usaw_number": "2304546801"
         },
+        "Brooklyn Schultz": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 67 5th",
+            "team_2025": "West Suburban Girls Wrestling Club",
+            "usaw_number": "2406489301"
+        },
         "David Kazniyenko": {
             "result": "Bantam 66 SQ",
             "team_2025": "Naperville Wrestling Club",
@@ -4965,6 +5765,12 @@
         }
     },
     "Notre Dame Wrestling Club": {
+        "Adeline Genovesi": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 102 SQ",
+            "team_2025": "West Suburban Girls Wrestling Club",
+            "usaw_number": "2506028401"
+        },
         "Brendan Beidler": {
             "result": "Intermediate 122 2nd",
             "team_2025": "Notre Dame Wrestling Club",
@@ -5138,10 +5944,22 @@
         }
     },
     "Olney Cubs Wrestling Club": {
+        "Cameron Crutchfield": {
+            "ikwf_age": 11,
+            "result": "Intermediate 98 SQ",
+            "team_2025": "Lawrence County Knights WC",
+            "usaw_number": "2203764801"
+        },
         "Diezel Steele": {
             "result": "Novice 60 7th",
             "team_2025": "Olney Cubs Wrestling Club",
             "usaw_number": "2204029101"
+        },
+        "Emery Crutchfield": {
+            "ikwf_age": 13,
+            "result": "Novice 125 3rd",
+            "team_2025": "Lawrence County Knights WC",
+            "usaw_number": "115263501"
         },
         "Heston Sharp": {
             "result": "Novice 69 SQ",
@@ -5152,6 +5970,12 @@
             "result": "Novice 69 3rd",
             "team_2025": "Olney Cubs Wrestling Club",
             "usaw_number": "1805433801"
+        },
+        "Quinten Shaffer": {
+            "ikwf_age": 11,
+            "result": "Intermediate 64 7th",
+            "team_2025": "Lawrence County Knights WC",
+            "usaw_number": "2203767201"
         },
         "Raymond Zuber": {
             "result": "Novice 116 SQ",
@@ -5252,6 +6076,12 @@
             "team_2025": "Orland Park Pioneers Wrestling Club",
             "usaw_number": "2201334401"
         },
+        "Michael O'Connor": {
+            "ikwf_age": 11,
+            "result": "Intermediate 79 SQ",
+            "team_2025": "Orland Park Pioneers Wrestling Club",
+            "usaw_number": "2208524201"
+        },
         "Riley Hoenig": {
             "result": "Girls Novice 74 5th",
             "team_2025": "Orland Park Pioneers Wrestling Club",
@@ -5337,6 +6167,14 @@
             "usaw_number": "2302985001"
         }
     },
+    "Ottawa Wrestling Club": {
+        "Kinzleigh Kopka": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 95 SQ",
+            "team_2025": "DeKalb Wrestling Club",
+            "usaw_number": "2406620801"
+        }
+    },
     "P3 Warrior Wrestling Academy": {
         "Adrian Willhite": {
             "result": "Novice 64 SQ",
@@ -5370,6 +6208,12 @@
             "team_2025": "PSF Wrestling Academy",
             "usaw_number": "2004189701"
         },
+        "Baylee Nix": {
+            "ikwf_age": 7,
+            "result": "Girls Bantam 55 SQ",
+            "team_2025": "Salem Wrestling Club",
+            "usaw_number": "2303965301"
+        },
         "Caden St Angelo": {
             "result": "Novice 74 5th",
             "team_2025": "PSF Wrestling Academy",
@@ -5385,6 +6229,18 @@
             "team_2025": "PSF Wrestling Academy",
             "usaw_number": "2208934801"
         },
+        "Forrest Hancock": {
+            "ikwf_age": 7,
+            "result": "Bantam 43 SQ",
+            "team_2025": "Salem Wrestling Club",
+            "usaw_number": "2405530301"
+        },
+        "Jonah Findley": {
+            "ikwf_age": 10,
+            "result": "Intermediate 108 SQ",
+            "team_2025": "Salem Wrestling Club",
+            "usaw_number": "2411374701"
+        },
         "Kaori Karas": {
             "result": "Girls Senior 105 2nd",
             "team_2025": "PSF Wrestling Academy",
@@ -5394,6 +6250,12 @@
             "result": "Bantam 66 3rd",
             "team_2025": "PSF Wrestling Academy",
             "usaw_number": "2308307401"
+        },
+        "Lexi Suits": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 72 4th",
+            "team_2025": "Gladiator Elite Wrestling Club",
+            "usaw_number": "2406797501"
         },
         "Logan Shreve": {
             "result": "Bantam 70 2nd",
@@ -5419,6 +6281,12 @@
             "result": "Intermediate 79 6th",
             "team_2025": "PSF Wrestling Academy",
             "usaw_number": "2204586001"
+        },
+        "Thomas Suits": {
+            "ikwf_age": 11,
+            "result": "Intermediate 74 SQ",
+            "team_2025": "Gladiator Elite Wrestling Club",
+            "usaw_number": "2304791601"
         }
     },
     "Panther Paw Wrestling Club": {
@@ -5451,6 +6319,12 @@
         }
     },
     "Panther Wrestling Club": {
+        "Andrew Gunnell": {
+            "ikwf_age": 11,
+            "result": "Intermediate 69 SQ",
+            "team_2025": "Beat the Streets Chicago-Midway",
+            "usaw_number": "2106009101"
+        },
         "Benjamin Adcock": {
             "result": "Senior 164 SQ",
             "team_2025": "Panther Wrestling Club",
@@ -5460,6 +6334,12 @@
             "result": "Intermediate 74 5th",
             "team_2025": "Panther Wrestling Club",
             "usaw_number": "2208377801"
+        },
+        "Cormac Binninger": {
+            "ikwf_age": 9,
+            "result": "Bantam 66 SQ",
+            "team_2025": "Lemont Bears WC",
+            "usaw_number": "2306775801"
         },
         "Daniel Pappalas": {
             "result": "Novice 69 SQ",
@@ -5610,6 +6490,12 @@
             "result": "Girls Intermediate 88 8th",
             "team_2025": "Pontiac Wrestling Club",
             "usaw_number": "2503413201"
+        },
+        "Haylee O'Neal": {
+            "ikwf_age": 14,
+            "result": "Girls Senior 110 SQ",
+            "team_2025": "Pontiac Wrestling Club",
+            "usaw_number": "2503412801"
         }
     },
     "Proviso Township Gladiators WC": {
@@ -5630,6 +6516,12 @@
             "team_2025": "Quincy Little Raiders Wrestling Club",
             "usaw_number": "2306355201"
         },
+        "Kale Trueblood": {
+            "ikwf_age": 12,
+            "result": "Novice 64 SQ",
+            "team_2025": "Champions Wrestling Club",
+            "usaw_number": "2209336101"
+        },
         "Kathlynn Sturhahn": {
             "result": "Girls Intermediate 77 7th",
             "team_2025": "Quincy Little Raiders Wrestling Club",
@@ -5639,6 +6531,14 @@
             "result": "Girls Bantam 74 SQ",
             "team_2025": "Quincy Little Raiders Wrestling Club",
             "usaw_number": "2404139701"
+        }
+    },
+    "RWC": {
+        "Ella Anderson": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 108 4th",
+            "team_2025": "Rochelle Wrestling Club",
+            "usaw_number": "1801998701"
         }
     },
     "Rantoul Youth Wrestling": {
@@ -5747,6 +6647,26 @@
             "usaw_number": "2510689501"
         }
     },
+    "Relentless Training Center": {
+        "Adam Piazza": {
+            "ikwf_age": 15,
+            "result": "Senior 144 SQ",
+            "team_2025": "Dundee Highlanders WC",
+            "usaw_number": "1903784401"
+        },
+        "Daniel Zuehlke": {
+            "ikwf_age": 14,
+            "result": "Senior 118 SQ",
+            "team_2025": "Crystal Lake Wizards Wrestling Club",
+            "usaw_number": "100340601"
+        },
+        "Mason Porten": {
+            "ikwf_age": 14,
+            "result": "Senior 110 6th",
+            "team_2025": "Crystal Lake Wizards Wrestling Club",
+            "usaw_number": "104243501"
+        }
+    },
     "Riot Room Wrestling": {
         "Callen Diehl": {
             "result": "Novice 134 1st",
@@ -5763,10 +6683,22 @@
             "team_2025": "Riot Room Wrestling",
             "usaw_number": "1900376601"
         },
+        "Francesca Yurs": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 125 SQ",
+            "team_2025": "ISI Wrestling Club",
+            "usaw_number": "2204702001"
+        },
         "Ian Young": {
             "result": "Novice 178 5th",
             "team_2025": "Riot Room Wrestling",
             "usaw_number": "2402086601"
+        },
+        "Jayden Mesmer": {
+            "ikwf_age": 13,
+            "result": "Novice 125 2nd",
+            "team_2025": "ISI Wrestling Club",
+            "usaw_number": "1803245901"
         },
         "Kellan McCarthy": {
             "result": "Novice 74 SQ",
@@ -5841,6 +6773,12 @@
             "team_2025": "Rock Island Wrestling Club",
             "usaw_number": "2513145801"
         },
+        "Leila Davis": {
+            "ikwf_age": 14,
+            "result": "Girls Senior 105 SQ",
+            "team_2025": "Edwardsville Wrestling Club",
+            "usaw_number": "2614364601"
+        },
         "Thaliyah Nimmers": {
             "result": "Girls Senior 130 7th",
             "team_2025": "Rock Island Wrestling Club",
@@ -5879,6 +6817,12 @@
             "result": "Girls Novice 63 1st",
             "team_2025": "Rockets Wrestling Club",
             "usaw_number": "2402406301"
+        },
+        "Fiona O'Connor": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 72 3rd",
+            "team_2025": "Rockets Wrestling Club",
+            "usaw_number": "2302962801"
         },
         "Nicolette Giardino": {
             "result": "Girls Intermediate 53 6th",
@@ -6065,6 +7009,12 @@
             "team_2025": "SCN Youth Wrestling Club",
             "usaw_number": "114633201"
         },
+        "Michael Bensko": {
+            "ikwf_age": 8,
+            "result": "Bantam 52 SQ",
+            "team_2025": "Red Raiders Wrestling Team",
+            "usaw_number": "2204443001"
+        },
         "Pasquale Greco": {
             "result": "Novice 74 SQ",
             "team_2025": "SCN Youth Wrestling Club",
@@ -6127,6 +7077,12 @@
             "team_2025": "SJO Spartan YWC",
             "usaw_number": "2003333001"
         },
+        "Hunter Roseman": {
+            "ikwf_age": 13,
+            "result": "Novice 125 SQ",
+            "team_2025": "Storm Youth Wrestling Club",
+            "usaw_number": "1801592401"
+        },
         "Jack Gorman": {
             "result": "Bantam 66 1st",
             "team_2025": "SJO Spartan YWC",
@@ -6162,6 +7118,12 @@
             "team_2025": "SJO Spartan YWC",
             "usaw_number": "2005077501"
         },
+        "Nico Poeta": {
+            "ikwf_age": 9,
+            "result": "Bantam 62 SQ",
+            "team_2025": "Champaign Wrestling Club",
+            "usaw_number": "2202617701"
+        },
         "Sorinya Hixson": {
             "result": "Girls Novice 102 SQ",
             "team_2025": "SJO Spartan YWC",
@@ -6194,6 +7156,18 @@
             "team_2025": "SOT-C WC",
             "usaw_number": "2205874401"
         },
+        "Owen Bassett": {
+            "ikwf_age": 13,
+            "result": "Novice 86 SQ",
+            "team_2025": "Prairie Central Youth Wrestling",
+            "usaw_number": "2402403001"
+        },
+        "Piper Angel": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 67 SQ",
+            "team_2025": "Clinton Wrestling Club",
+            "usaw_number": "2003330001"
+        },
         "Piper Mashburn": {
             "result": "Girls Intermediate 72 SQ",
             "team_2025": "SOT-C WC",
@@ -6215,6 +7189,12 @@
             "result": "Novice 74 SQ",
             "team_2025": "Saber Wrestling Club",
             "usaw_number": "1903830001"
+        },
+        "Mckena Poll-Hutchison": {
+            "ikwf_age": 8,
+            "result": "Girls Bantam 67 SQ",
+            "team_2025": "Twin City Tigers WC",
+            "usaw_number": "2304991301"
         },
         "Nathan Simons": {
             "result": "Novice 134 SQ",
@@ -6320,6 +7300,12 @@
             "team_2025": "Sauk Valley Wrestling Club",
             "usaw_number": "2004173101"
         },
+        "Kensington Tosh": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 125 SQ",
+            "team_2025": "Decatur Lakers Wrestling Club",
+            "usaw_number": "2310575501"
+        },
         "Landyn Hanabarger": {
             "result": "Novice 86 SQ",
             "team_2025": "Sauk Valley Wrestling Club",
@@ -6359,6 +7345,12 @@
             "result": "Novice 215 6th",
             "team_2025": "Sauk Valley Wrestling Club",
             "usaw_number": "1903838701"
+        },
+        "Randelle McKay": {
+            "ikwf_age": 14,
+            "result": "Girls Senior 100 6th",
+            "team_2025": "Dixon Wrestling Club",
+            "usaw_number": "2203054801"
         },
         "Wyatt Gillen": {
             "result": "Senior 90 SQ",
@@ -6428,15 +7420,33 @@
         }
     },
     "Southern Illinois Bulldogs WC": {
+        "Armin O'Guin": {
+            "ikwf_age": 13,
+            "result": "Novice 80 SQ",
+            "team_2025": "Southern Illinois Bulldogs WC",
+            "usaw_number": "1903172701"
+        },
         "Benjamin Knysak": {
             "result": "Novice 64 7th",
             "team_2025": "Southern Illinois Bulldogs WC",
             "usaw_number": "2205687801"
         },
+        "Carter Tompkins": {
+            "ikwf_age": 9,
+            "result": "Bantam 55 SQ",
+            "team_2025": "Young Warrior Wrestling Academy",
+            "usaw_number": "2301572401"
+        },
         "Chase Edgar": {
             "result": "Intermediate 79 SQ",
             "team_2025": "Southern Illinois Bulldogs WC",
             "usaw_number": "2005606801"
+        },
+        "Chase Stroot": {
+            "ikwf_age": 9,
+            "result": "Bantam 76 1st",
+            "team_2025": "Team Mascoutah Wrestling Club",
+            "usaw_number": "2204600501"
         },
         "Cobey Stulce": {
             "result": "Novice 74 SQ",
@@ -6458,6 +7468,12 @@
             "team_2025": "Southern Illinois Bulldogs WC",
             "usaw_number": "1903173201"
         },
+        "Emilee Meier": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 140 4th",
+            "team_2025": "Belleville Little Devils Wrestling Club",
+            "usaw_number": "2205688301"
+        },
         "Grayden Schloemann": {
             "result": "Novice 64 4th",
             "team_2025": "Southern Illinois Bulldogs WC",
@@ -6472,6 +7488,12 @@
             "result": "Girls Senior 125 SQ",
             "team_2025": "Southern Illinois Bulldogs WC",
             "usaw_number": "2309930401"
+        },
+        "Karson West": {
+            "ikwf_age": 11,
+            "result": "Intermediate 64 SQ",
+            "team_2025": "Bulls Wrestling Club",
+            "usaw_number": "1905055401"
         },
         "Kayden Sicka": {
             "result": "Bantam 84 SQ",
@@ -6502,6 +7524,18 @@
             "result": "Intermediate 84 5th",
             "team_2025": "Southern Illinois Bulldogs WC",
             "usaw_number": "2002586101"
+        },
+        "Remi Roustio": {
+            "ikwf_age": 7,
+            "result": "Girls Bantam 55 SQ",
+            "team_2025": "Team Mascoutah Wrestling Club",
+            "usaw_number": "2506369301"
+        },
+        "Riley Dintelmann": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 185 7th",
+            "team_2025": "Belleville Little Devils Wrestling Club",
+            "usaw_number": "2305880901"
         },
         "Thomas Reis": {
             "result": "Intermediate 55 4th",
@@ -6551,6 +7585,12 @@
             "result": "Novice 100 SQ",
             "team_2025": "Sparta Junior Bulldogs Wrestling Club",
             "usaw_number": "1903163901"
+        },
+        "Maddy Choate": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 85 3rd",
+            "team_2025": "Trico Wrestling Club",
+            "usaw_number": "2302569901"
         },
         "Oaklyn Glodo": {
             "result": "Girls Bantam 85 SQ",
@@ -6648,6 +7688,12 @@
         }
     },
     "St. Charles WC": {
+        "Alex Lapitan": {
+            "ikwf_age": 13,
+            "result": "Novice 93 8th",
+            "team_2025": "SCN Youth Wrestling Club",
+            "usaw_number": "2003408701"
+        },
         "Andie Anderson": {
             "result": "Girls Novice 90 7th",
             "team_2025": "St. Charles WC",
@@ -6657,6 +7703,12 @@
             "result": "Senior 79 1st",
             "team_2025": "St. Charles WC",
             "usaw_number": "2203355401"
+        },
+        "Brenner Dolvig": {
+            "ikwf_age": 14,
+            "result": "Senior 74 SQ",
+            "team_2025": "Elmhurst Titans Wrestling Academy",
+            "usaw_number": "1904505601"
         },
         "Calvin Babcock": {
             "result": "Novice 80 2nd",
@@ -6672,6 +7724,12 @@
             "result": "Novice 60 1st",
             "team_2025": "St. Charles WC",
             "usaw_number": "2006201101"
+        },
+        "Cooper Wilson": {
+            "ikwf_age": 11,
+            "result": "Intermediate 122 1st",
+            "team_2025": "SCN Youth Wrestling Club",
+            "usaw_number": "1801986501"
         },
         "Dominic Englese": {
             "result": "Novice 116 6th",
@@ -6703,10 +7761,34 @@
             "team_2025": "St. Charles WC",
             "usaw_number": "2004154501"
         },
+        "Kaden Joustra": {
+            "ikwf_age": 13,
+            "result": "Novice 86 3rd",
+            "team_2025": "ISI Wrestling Club",
+            "usaw_number": "2200570101"
+        },
         "Kaiden Lahman": {
             "result": "Senior 110 SQ",
             "team_2025": "St. Charles WC",
             "usaw_number": "1902652301"
+        },
+        "Kaylee Lapitan": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 72 2nd",
+            "team_2025": "SCN Youth Wrestling Club",
+            "usaw_number": "2303815601"
+        },
+        "Kelianna Larkin": {
+            "ikwf_age": 13,
+            "result": "Girls Senior 80 1st",
+            "team_2025": "ISI Wrestling Club",
+            "usaw_number": "2210787701"
+        },
+        "Koralee Larkin": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 67 3rd",
+            "team_2025": "ISI Wrestling Club",
+            "usaw_number": "2210787801"
         },
         "Lilli Lejsner": {
             "result": "Girls Novice 90 SQ",
@@ -6767,6 +7849,12 @@
             "team_2025": "Stillman Valley Wrestling Club",
             "usaw_number": "2401478801"
         },
+        "Jocelyn Perez": {
+            "ikwf_age": 11,
+            "result": "Girls Bantam 95 3rd",
+            "team_2025": "Will County Warriors Wrestling Club",
+            "usaw_number": "2611439501"
+        },
         "Jordi Collins": {
             "result": "Girls Bantam 61 SQ",
             "team_2025": "Stillman Valley Wrestling Club",
@@ -6776,6 +7864,12 @@
             "result": "Girls Novice 115 SQ",
             "team_2025": "Stillman Valley Wrestling Club",
             "usaw_number": "2502224901"
+        },
+        "Raya Windham": {
+            "ikwf_age": 9,
+            "result": "Girls Bantam 115 1st",
+            "team_2025": "Rochelle Wrestling Club",
+            "usaw_number": "2204525401"
         }
     },
     "Stockton Renegades Wrestling Club": {
@@ -6803,6 +7897,12 @@
             "result": "Bantam 49 6th",
             "team_2025": "Stockton Renegades Wrestling Club",
             "usaw_number": "2305162601"
+        },
+        "Tinley Norton": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 77 SQ",
+            "team_2025": "The Law Wrestling Club",
+            "usaw_number": "2503000301"
         },
         "Zora Goebel": {
             "result": "Girls Intermediate 77 8th",
@@ -6974,6 +8074,12 @@
             "team_2025": "TJ Trained Wrestling",
             "usaw_number": "1906533201"
         },
+        "Kai Chambers": {
+            "ikwf_age": 11,
+            "result": "Intermediate 55 SQ",
+            "team_2025": "Iguana Athletics Wrestling Club",
+            "usaw_number": "2407637201"
+        },
         "Lucius Lilley": {
             "result": "Novice 134 SQ",
             "team_2025": "TJ Trained Wrestling",
@@ -6988,6 +8094,12 @@
             "result": "Intermediate 64 SQ",
             "team_2025": "TJ Trained Wrestling",
             "usaw_number": "2406280101"
+        },
+        "Ryder Wiegand": {
+            "ikwf_age": 11,
+            "result": "Intermediate 79 SQ",
+            "team_2025": "Eureka Wrestling Club",
+            "usaw_number": "2304160601"
         },
         "Walker Almasy": {
             "result": "Bantam 76 SQ",
@@ -7045,6 +8157,12 @@
         }
     },
     "Team El1te Wrestling": {
+        "Carter Klincik": {
+            "ikwf_age": 7,
+            "result": "Bantam 46 SQ",
+            "team_2025": "MadDog Wrestling Academy",
+            "usaw_number": "2305516101"
+        },
         "Dane Luif": {
             "result": "Intermediate 69 SQ",
             "team_2025": "Team El1te Wrestling",
@@ -7054,6 +8172,12 @@
             "result": "Senior 84 SQ",
             "team_2025": "Team El1te Wrestling",
             "usaw_number": "2204728401"
+        },
+        "Gabriel Han": {
+            "ikwf_age": 13,
+            "result": "Novice 93 SQ",
+            "team_2025": "P3 Warrior Wrestling Academy",
+            "usaw_number": "2300366501"
         },
         "Gianluca Densford": {
             "result": "Senior 144 SQ",
@@ -7070,6 +8194,12 @@
             "team_2025": "Team El1te Wrestling",
             "usaw_number": "1805404001"
         },
+        "Leo Salas": {
+            "ikwf_age": 14,
+            "result": "Senior 90 SQ",
+            "team_2025": "Mat Rat Wrestling Club",
+            "usaw_number": "2002285801"
+        },
         "Lorenzo Flores": {
             "result": "Novice 93 3rd",
             "team_2025": "Team El1te Wrestling",
@@ -7084,6 +8214,20 @@
             "result": "Novice 108 SQ",
             "team_2025": "Team El1te Wrestling",
             "usaw_number": "1904474501"
+        }
+    },
+    "Team HoneyBadger WC": {
+        "Landon Atwell": {
+            "ikwf_age": 13,
+            "result": "Senior 84 SQ",
+            "team_2025": "Callan Wrestling Academy",
+            "usaw_number": "2304162701"
+        },
+        "Zoe Atwell": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 80 2nd",
+            "team_2025": "Callan Wrestling Academy",
+            "usaw_number": "2304162801"
         }
     },
     "Team Mascoutah Wrestling Club": {
@@ -7120,6 +8264,12 @@
             "result": "Girls Bantam 67 SQ",
             "team_2025": "The Island City Misfits Elite Wrestling",
             "usaw_number": "2509345901"
+        },
+        "Cynisca Ellis": {
+            "ikwf_age": 8,
+            "result": "Girls Bantam 50 SQ",
+            "team_2025": "Reed-Custer Wrestling Club",
+            "usaw_number": "2408869801"
         },
         "Maleya Campbell": {
             "result": "Girls Bantam 45 1st",
@@ -7296,6 +8446,12 @@
             "team_2025": "Tinley Park Bulldogs Wrestling Club",
             "usaw_number": "2205741501"
         },
+        "Emery Westerberg": {
+            "ikwf_age": 8,
+            "result": "Girls Bantam 55 SQ",
+            "team_2025": "Oak Forest Park District Warriors Wrestling",
+            "usaw_number": "2205741701"
+        },
         "Fiona Guisinger": {
             "result": "Girls Novice 108 1st",
             "team_2025": "Tinley Park Bulldogs Wrestling Club",
@@ -7469,6 +8625,12 @@
         }
     },
     "Trico Wrestling Club": {
+        "Hayden Smith": {
+            "ikwf_age": 13,
+            "result": "Senior 144 6th",
+            "team_2025": "Champaign Wrestling Club",
+            "usaw_number": "1903171201"
+        },
         "Josie Fisher": {
             "result": "Girls Intermediate 95 2nd",
             "team_2025": "Trico Wrestling Club",
@@ -7512,6 +8674,12 @@
             "result": "Girls Novice 185 1st",
             "team_2025": "Unity Youth Wrestling Club",
             "usaw_number": "2207311801"
+        },
+        "Chevi Sanchez": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 85 8th",
+            "team_2025": "Champaign Wrestling Club",
+            "usaw_number": "1804636001"
         },
         "Daisy Stierwalt": {
             "result": "Girls Novice 108 SQ",
@@ -7562,6 +8730,12 @@
         }
     },
     "Villa Park Young Warriors Wrestling Club": {
+        "Asher Ericson": {
+            "ikwf_age": 12,
+            "result": "Novice 125 SQ",
+            "team_2025": "Cory Clark Wrestling",
+            "usaw_number": "2003472101"
+        },
         "Audrey Bernardo": {
             "result": "Girls Novice 90 SQ",
             "team_2025": "Villa Park Young Warriors Wrestling Club",
@@ -7638,6 +8812,18 @@
             "result": "Novice 64 SQ",
             "team_2025": "Vittum Cats Wrestling Club",
             "usaw_number": "1905051001"
+        },
+        "Ryland Brazel": {
+            "ikwf_age": 11,
+            "result": "Intermediate 74 8th",
+            "team_2025": "Mustang Wrestling Club",
+            "usaw_number": "2202955801"
+        },
+        "William Perek": {
+            "ikwf_age": 12,
+            "result": "Novice 93 SQ",
+            "team_2025": "Mustang Wrestling Club",
+            "usaw_number": "2001417601"
         }
     },
     "Vortex Wrestling Club": {
@@ -7662,6 +8848,20 @@
             "result": "Bantam 120 SQ",
             "team_2025": "Warrensburg-Latham Jr. Cardinals Wrestling Club",
             "usaw_number": "2402210901"
+        }
+    },
+    "Wauconda Wrestling Club": {
+        "Nolan Camarena": {
+            "ikwf_age": 9,
+            "result": "Bantam 70 SQ",
+            "team_2025": "Bulldog Youth Sports Wrestling",
+            "usaw_number": "2405295901"
+        },
+        "Zoe Herrera": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 96 SQ",
+            "team_2025": "Bulldog Youth Sports Wrestling",
+            "usaw_number": "2505020801"
         }
     },
     "West Frankfort Jr. Redbirds WC": {
@@ -7833,11 +9033,31 @@
             "usaw_number": "2509585101"
         }
     },
+    "Williamsville Wrestling Club": {
+        "Luke Rincker": {
+            "ikwf_age": 13,
+            "result": "Novice 116 SQ",
+            "team_2025": "Rochelle Wrestling Club",
+            "usaw_number": "1805954501"
+        },
+        "Mia Dennison": {
+            "ikwf_age": 12,
+            "result": "Girls Novice 96 SQ",
+            "team_2025": "Rochelle Wrestling Club",
+            "usaw_number": "2304334901"
+        }
+    },
     "Wilmington Wrestling Club": {
         "Brooklyn McGreehin": {
             "result": "Girls Intermediate 72 6th",
             "team_2025": "Wilmington Wrestling Club",
             "usaw_number": "2407490201"
+        },
+        "Camree Gill": {
+            "ikwf_age": 9,
+            "result": "Bantam 76 2nd",
+            "team_2025": "The Island City Misfits Elite Wrestling",
+            "usaw_number": "2205403301"
         },
         "Carson Alsbury": {
             "result": "Intermediate 122 SQ",
@@ -7888,6 +9108,12 @@
         }
     },
     "Wolves Wrestling Club": {
+        "Carsen Unruh": {
+            "ikwf_age": 11,
+            "result": "Girls Intermediate 115 SQ",
+            "team_2025": "Woodstock Cyclones WC",
+            "usaw_number": "2507094301"
+        },
         "Ella Terhaar": {
             "result": "Girls Intermediate 53 3rd",
             "team_2025": "Wolves Wrestling Club",
@@ -7980,6 +9206,14 @@
             "usaw_number": "2502701201"
         }
     },
+    "Young Guns Wrestling Club": {
+        "Zachary Wilson": {
+            "ikwf_age": 14,
+            "result": "Senior 84 SQ",
+            "team_2025": "Blue Line Training Academy WC",
+            "usaw_number": "1905048601"
+        }
+    },
     "Young Warrior Wrestling Academy": {
         "Bryson Basile": {
             "result": "Novice 108 SQ",
@@ -8006,6 +9240,18 @@
             "team_2025": "Young Warrior Wrestling Academy",
             "usaw_number": "1902127801"
         },
+        "Ellie Kennedy": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 185 SQ",
+            "team_2025": "Bulls Wrestling Club",
+            "usaw_number": "2419299301"
+        },
+        "Ethan Kennedy": {
+            "ikwf_age": 10,
+            "result": "Intermediate 122 SQ",
+            "team_2025": "Bulls Wrestling Club",
+            "usaw_number": "2400925501"
+        },
         "Jack Wood": {
             "result": "Intermediate 55 7th",
             "team_2025": "Young Warrior Wrestling Academy",
@@ -8025,9 +9271,21 @@
             "result": "Girls Intermediate 115 SQ",
             "team_2025": "Young Warrior Wrestling Academy",
             "usaw_number": "2500262301"
+        },
+        "Maria Marsh": {
+            "ikwf_age": 7,
+            "result": "Girls Bantam 74 SQ",
+            "team_2025": "Highland Bulldog Jr. Wrestling Club",
+            "usaw_number": "2306746601"
         }
     },
     "Zero Fox Wrestling": {
+        "Brooklyn Morel": {
+            "ikwf_age": 13,
+            "result": "Girls Novice 125 SQ",
+            "team_2025": "Yorkville Wrestling Club",
+            "usaw_number": "2404804001"
+        },
         "Isabella Hamaker": {
             "result": "Girls Novice 185 4th",
             "team_2025": "Zero Fox Wrestling",
@@ -8055,6 +9313,18 @@
             "team_2025": "nWo Wrestling Club",
             "usaw_number": "2209145701"
         },
+        "Easton Ball": {
+            "ikwf_age": 7,
+            "result": "Bantam 46 SQ",
+            "team_2025": "Ottawa Wolfpack Wrestling Club",
+            "usaw_number": "2504855201"
+        },
+        "Emily Lewis": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 88 SQ",
+            "team_2025": "Lil Reaper Wrestling Club",
+            "usaw_number": "2302865301"
+        },
         "Genevieve Del Muro": {
             "result": "Girls Bantam 61 7th",
             "team_2025": "nWo Wrestling Club",
@@ -8064,6 +9334,12 @@
             "result": "Bantam 46 SQ",
             "team_2025": "nWo Wrestling Club",
             "usaw_number": "2404805401"
+        },
+        "Kaitlyn Lewis": {
+            "ikwf_age": 10,
+            "result": "Girls Intermediate 82 SQ",
+            "team_2025": "Lil Reaper Wrestling Club",
+            "usaw_number": "2302865501"
         },
         "Layla Giertych": {
             "result": "Girls Intermediate 82 1st",
