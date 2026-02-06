@@ -64,6 +64,12 @@
         }
     },
     "Alber Athletics Wrestling Club": {
+        "Liam Ross": {
+            "ikwf_age": 8,
+            "result": "Bantam 46 5th",
+            "team_2025": "Stillman Valley Wrestling Club",
+            "usaw_number": "2301788301"
+        },
         "Andrew Jones": {
             "ikwf_age": 11,
             "result": "Intermediate 98 SQ",
@@ -2988,6 +2994,12 @@
             "team_2025": "Demolition Wrestling Club",
             "usaw_number": "2204485101"
         },
+        "Michael Krueger, Jr.": {
+            "ikwf_age": 13,
+            "result": "Novice 74 4th",
+            "team_2025": "Demolition Wrestling Club",
+            "usaw_number": "2000738801"
+        },
         "Michelle Gabel": {
             "ikwf_age": 13,
             "result": "Girls Novice 85 1st",
@@ -3074,6 +3086,12 @@
             "team_2025": "Dinamo Wrestling",
             "usaw_number": "2304966001"
         },
+        "Declan O'Malley": {
+            "ikwf_age": 10,
+            "result": "Intermediate 59 SQ",
+            "team_2025": "Dinamo Wrestling",
+            "usaw_number": "2304965701"
+        },
         "Fitz Styczynski": {
             "ikwf_age": 8,
             "result": "Bantam 52 SQ",
@@ -3085,6 +3103,12 @@
             "result": "Bantam 62 SQ",
             "team_2025": "Dinamo Wrestling",
             "usaw_number": "2304963701"
+        },
+        "Jack Brown": {
+            "ikwf_age": 10,
+            "result": "Intermediate 90 SQ",
+            "team_2025": "Mustang Wrestling Club",
+            "usaw_number": "2202955901"
         },
         "John O'Brien": {
             "ikwf_age": 11,
@@ -3357,6 +3381,12 @@
             "result": "Novice 116 SQ",
             "team_2025": "East Peoria River Bandits Wrestling",
             "usaw_number": "2303535601"
+        },
+        "Jaivin Holeman": {
+            "ikwf_age": 11,
+            "result": "Intermediate 177 5th",
+            "team_2025": "East Peoria River Bandits Wrestling",
+            "usaw_number": "2502467301"
         },
         "Peyton Ladd": {
             "ikwf_age": 9,
@@ -4749,6 +4779,14 @@
             "result": "Senior 96 SQ",
             "team_2025": "Izzy Style Wrestling",
             "usaw_number": "2005164001"
+        }
+    },
+    "Homewood-Flossmoor RTC": {
+        "Daquain Hubbard Jr.": {
+            "ikwf_age": 10,
+            "result": "Intermediate 84 SQ",
+            "team_2025": "Twin City Tigers WC",
+            "usaw_number": "2404768001"
         }
     },
     "Hononegah Wrestling Club": {
@@ -6530,6 +6568,12 @@
         }
     },
     "Morris Wrestling Club": {
+        "Quinton O'Donnell": {
+            "ikwf_age": 9,
+            "result": "Bantam 70 3rd",
+            "team_2025": "Morris Wrestling Club",
+            "usaw_number": "2201961201"
+        },
         "Chase Ebert": {
             "ikwf_age": 8,
             "result": "Bantam 43 7th",
@@ -6670,6 +6714,12 @@
         }
     },
     "Mustang Wrestling Club": {
+        "JT Tsokolas": {
+            "ikwf_age": 9,
+            "result": "Bantam 55 1st",
+            "team_2025": "Mustang Wrestling Club",
+            "usaw_number": "2202951901"
+        },
         "Cooper Corona": {
             "ikwf_age": 9,
             "result": "Bantam 58 2nd",
