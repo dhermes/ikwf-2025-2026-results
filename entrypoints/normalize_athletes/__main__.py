@@ -275,3 +275,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# TODO: There are some athletes like `Ellie Treuthardt` that are from the
+#       WI branch of a given club, need special way to map the normalized team
+#       name for these.

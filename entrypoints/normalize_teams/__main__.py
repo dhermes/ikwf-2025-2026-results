@@ -16,7 +16,16 @@ _FALSE_DUPLICATE_CARDINAL = frozenset(
 _EXPLICIT_MAPPING: dict[str, dict[str, str]] = {
     "Litchfield `Rumble In the Jungle` 2026": {
         "STCWC": "Out of State - Missouri",
-    }
+    },
+    "THE Midwest Classic 2026": {
+        "HoneyBadger WC": "Team HoneyBadger WC",
+    },
+    "Crushing Christmas Classic-Coal City": {
+        "Team Honey Badger WC": "Team HoneyBadger WC",
+    },
+    "2026 Girls Rule Rumble": {
+        "Team Honey Badger WC": "Team HoneyBadger WC",
+    },
 }
 
 # NOTE: `_OVERRIDE_TEAM_MAPPING` provides tournament specific overrides for a
