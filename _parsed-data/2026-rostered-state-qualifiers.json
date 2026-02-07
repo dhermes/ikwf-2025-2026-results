@@ -1142,12 +1142,6 @@
             "team_2025": "Beat the Streets Chicago-Tri Taylor",
             "usaw_number": "2400199101"
         },
-        "Ashton Lee": {
-            "ikwf_age": 6,
-            "result": "Senior 215 SQ",
-            "team_2025": "Edwardsville Wrestling Club",
-            "usaw_number": "2607461301"
-        },
         "Heiden Sanchez": {
             "ikwf_age": 14,
             "result": "Senior 90 SQ",
@@ -1669,14 +1663,6 @@
             "result": "Bantam 52 SQ",
             "team_2025": "Bulls Wrestling Club",
             "usaw_number": "2508393101"
-        }
-    },
-    "CICS Wrightwood Wildcats WC": {
-        "Caleb Rogers": {
-            "ikwf_age": 6,
-            "result": "Senior 126 SQ",
-            "team_2025": "Lincoln-Way Wrestling Club",
-            "usaw_number": "2603617801"
         }
     },
     "Callan Wrestling Academy": {
@@ -9263,12 +9249,6 @@
             "result": "Bantam 84 SQ",
             "team_2025": "Stillman Valley Wrestling Club",
             "usaw_number": "2401478801"
-        },
-        "Jocelyn Perez": {
-            "ikwf_age": 11,
-            "result": "Girls Bantam 95 3rd",
-            "team_2025": "Will County Warriors Wrestling Club",
-            "usaw_number": "2611439501"
         },
         "Jordi Collins": {
             "ikwf_age": 8,
