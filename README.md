@@ -172,3 +172,7 @@ uv run python -m entrypoints.sectional_brackets  # Produces `_parsed-data/west-c
 
 [1]: https://www.ikwf.org/
 [2]: https://docs.google.com/spreadsheets/d/1F_v5jk20rYQD8hZnzH7GGx_TfBLcXahDEiVbDKoxviA/edit
+
+```
+    "cwc": "Collinsville Wrestling Club",
+```

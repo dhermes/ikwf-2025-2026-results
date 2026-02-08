@@ -24,7 +24,17 @@ _EXPLICIT_MAPPING: dict[str, dict[str, str]] = {
         "Team Honey Badger WC": "Team HoneyBadger WC",
     },
     "2026 Girls Rule Rumble": {
+        "DC Wrestling ": "DC Wrestling Club",
         "Team Honey Badger WC": "Team HoneyBadger WC",
+    },
+    "Tots Bash": {
+        "CWC": "Collinsville Wrestling Club",
+    },
+    "2025 Rocket Blast": {
+        "CWC": "Champaign Wrestling Club",
+    },
+    "Spartan Rumble": {
+        "CWC": "Champaign Wrestling Club",
     },
 }
 
@@ -181,7 +191,7 @@ def _lookup_team(
     if custom_match is not None:
         return custom_match
 
-    raise RuntimeError("Could not match team", team, team_normalized)
+    raise RuntimeError("Could not match team", team, team_normalized, event_name)
 
 
 def _lookup_teams(
