@@ -412,11 +412,12 @@ def _display_weight_class(key: tuple[bracket_util.Division, int]) -> str:
     return f"{division_str} {weight}"
 
 
-def main() -> None:
-    sectional: club_util.Sectional = "West Chicago"  # TODO: Convert this to a flag
-    matches_v4 = _load_matches()
-    rosters = club_util.load_rosters()
-    state_qualifiers = club_util.load_state_qualifiers()
+def _generate_sectional_file(
+    sectional: club_util.Sectional,
+    matches_v4: list[bracket_util.MatchV4],
+    rosters: list[club_util.ClubInfo],
+    state_qualifiers: dict[str, dict[str, club_util.StateQualifier]],
+) -> None:
     teams_in_sectional = [roster for roster in rosters if roster.sectional == sectional]
     team_names = set([roster.club_name for roster in teams_in_sectional])
 
@@ -491,6 +492,25 @@ def main() -> None:
             worksheet.append(row)
 
     workbook.save(xslx_filename)
+
+
+def main() -> None:
+    matches_v4 = _load_matches()
+    rosters = club_util.load_rosters()
+    state_qualifiers = club_util.load_state_qualifiers()
+
+    sectionals: tuple[club_util.Sectional, ...] = (
+        "Central Chicago",
+        "Central",
+        "North Chicago",
+        "North",
+        "South Chicago",
+        "South",
+        "West Chicago",
+        "West",
+    )
+    for sectional in sectionals:
+        _generate_sectional_file(sectional, matches_v4, rosters, state_qualifiers)
 
 
 if __name__ == "__main__":
