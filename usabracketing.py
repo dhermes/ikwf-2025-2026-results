@@ -849,7 +849,12 @@ def _parse_match_line(
     if "Med. For. " in match_text:
         return None
 
+    has_cj = False
+    if "Charles (CJ) " in match_text:
+        has_cj = True
+        match_text = match_text.replace("Charles (CJ) ", "Charles ")
     winner_full, remaining = match_text.split(") ")
+
     if remaining.startswith("Ult. Tie Br. "):
         result_abbreviation = "Ult. Tie Br."
         remaining = remaining[13:]
@@ -865,6 +870,8 @@ def _parse_match_line(
     result = f"{result_abbreviation} {score_or_time}"
     result = result.strip()
     loser, loser_team = loser_full.split(" (", 1)
+    if has_cj:
+        loser = loser.replace("Charles ", "Charles (CJ) ")
 
     result_type = _determine_result_type(result)
     if result_type is None:

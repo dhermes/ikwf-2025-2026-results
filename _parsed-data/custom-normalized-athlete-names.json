@@ -4,6 +4,14 @@
         "marcelo villareal": "marcelo villarreal",
         "ryker senendenos": "ryker senodenos"
     },
+    "AJ Jr. Wildcats Wrestling Club": {
+        "carson herring": "carsen herring",
+        "christian dover": null,
+        "dusdy williamson": "dusdyn williamson",
+        "owen lambin": "owen lambdin",
+        "payslee anderson": null,
+        "van williamson": "vandyn williamson"
+    },
     "Aces Wrestling Club": {
         "kayawnna ashley": null,
         "kingston sorensen": null,
@@ -27,7 +35,9 @@
         "elijah moreland": "elijah anthony patrick moreland"
     },
     "Antioch Predators Wrestling Club": {
+        "alex anderson": "alexander anderson",
         "annebelle duller": "Stateline Stingers Wrestling Club::annebelle duller",
+        "camilo kreuger": "camilo krueger",
         "conor moore": null,
         "ethan vargas": null,
         "kenny gersch": "kenneth gersch",
@@ -42,6 +52,9 @@
         "connor mathesius": "conor mathesius",
         "david boll": "david boll jr",
         "declan jaszcolt": "declan jaszczolt",
+        "elis oser": "ellis oser",
+        "greyson sramek": "grayson sramek",
+        "hayes kustiok": "hayes kustok",
         "jacob staar": "jacob jr staar",
         "nick argentine": "nicholas argentine",
         "niko floros": "nikolaki floros",
@@ -70,8 +83,11 @@
     },
     "Barrington Broncos Wrestling Club": {
         "braydon natiske": "braydon natzke",
+        "carlos lopez jr": "carlos jr lopez",
+        "conner doherty": "connor doherty",
         "elliot danna": "elliott danna",
-        "gianluca pocmich": "gianluca pocrnich"
+        "gianluca pocmich": "gianluca pocrnich",
+        "max laplume": "max la plume"
     },
     "Batavia Wrestling Club": {
         "conner seida": "connor seida",
@@ -116,6 +132,7 @@
         "gabby guaman": "Beat the Streets Chicago-Avondale::gabby guaman",
         "gus mott": "aengus mott",
         "kelly schaefer": "kelly schafer",
+        "nicolas herrera": "nicholas herrera",
         "santiago m hernandez": "santiago hernandez",
         "william mooney": "Beat the Streets Chicago-Avondale::william mooney"
     },
@@ -135,6 +152,7 @@
     },
     "Belleville Little Devils Wrestling Club": {
         "cj hooker": "christian hooker",
+        "eziekiel grant": null,
         "kaeden millergreen": "kaeden miller green"
     },
     "Belvidere Bandits Wrestling Club": {
@@ -156,33 +174,53 @@
         "demetrius robison": "demetrius robinson"
     },
     "Blackhawk Wrestling Club": {
+        "aaliyah ramirez": null,
         "angelo stubitch": "angelo stubitsch",
+        "danny stauter": null,
+        "dj washington jr": null,
         "dominick stubitch": "dominick stubitsch",
+        "emir mukhamedov": null,
         "gabriel diego": "gabriel diego gomez",
+        "iliana munos": null,
         "issac phengsengkham": "isaac phengsengkham",
+        "jaxon volkman": null,
+        "jaydon lecompete": null,
         "jonathon rincon": "jonathan rincon",
+        "jose ramirez": null,
         "maiya rocha": "maiya rocha velez",
         "max amaya": "maximillian amaya",
         "maxillian amaya": "maximillian amaya",
-        "maximilian amaya": "maximillian amaya"
+        "maximilian amaya": "maximillian amaya",
+        "mj herrera": null,
+        "rj arnolde": null,
+        "rodrigo landeros": null,
+        "valeria escalante": null
+    },
+    "Bloomingdale Bears Wrestling Club": {
+        "charles taylor": null,
+        "nicholas turacek": null
     },
     "Blue Line Training Academy WC": {
         "alexis schnowske": null,
         "thomas jr pollard": "thomas pollard jr"
     },
     "Bolingbrook Junior Raiders Wrestling Club": {
+        "aidrian ibarra": null,
         "ben gluszek": "benjamin gluszek",
         "gabriela oliveria": "gabriella oliveira",
         "gabriella oliveiria": "gabriella oliveira",
+        "gabriella oliveria": null,
         "hadkey franco": "hadley franco",
         "john hilliard": "john hilliard jr",
         "oliveria gabriela": "gabriella oliveira"
     },
     "Brawlers Wrestling Club": {
+        "ac vogel": null,
         "adam ac vogel": "adam vogel",
         "bernie gorak iv": "bernie gorak",
         "charlie redman": "charlton redman",
         "darek lee": "darek lee iii",
+        "marquon hammond jr": null,
         "max boone carlson": "max carlson",
         "truen mullet": "truen mullett"
     },
@@ -196,6 +234,7 @@
         "danielledanielle knoche": "danielle knoche",
         "gunner marshal": "gunner marshall",
         "joseph a wright": "joseph wright",
+        "julia brunelle": null,
         "julia burnelle": null,
         "natalie helgen": null,
         "xander carsten": "xander carstens"
@@ -217,11 +256,15 @@
         "michael zollner": "michael zollner iii"
     },
     "Cardinals Wrestling Club": {
+        "drew gross": null,
         "faeth washington": "faeth washington skeeters"
     },
     "Carlinville Wrestling Club": {
         "barnes ryder": "ryder barnes",
         "ellie hubrich": "eleanor hubrich"
+    },
+    "Carmi Bulldog WC": {
+        "dawson sisco": null
     },
     "Carthage Wrestling Club": {
         "ezra paben": null
@@ -272,10 +315,13 @@
         "ty warner": null
     },
     "Charleston Wrestling Club": {
-        "billy mcdnald": "billy mcdonald"
+        "billy mcdnald": "billy mcdonald",
+        "jeremiah enlow": null
     },
     "Chatham Wrestling Club": {
-        "juan petey resendez iii": "juan resendez iii"
+        "charles kapp jr": null,
+        "juan petey resendez iii": "juan resendez iii",
+        "penny baughman": null
     },
     "Clinton Wrestling Club": {
         "barrett griffin": null,
@@ -334,12 +380,14 @@
         "vinny jimenez": "vincent jimenez"
     },
     "Cumberland Youth Wrestling Club": {
-        "hanlee dukeman": "hanlee dukemen"
+        "hanlee dukeman": "hanlee dukemen",
+        "leo hooker": null
     },
     "DC Wrestling Club": {
         "ryker bishop": "Dixon Wrestling Club::ryker bishop"
     },
     "Dakota Wrestling Club": {
+        "dawsyn digvonni": null,
         "john jp pieper": "john pieper",
         "timothy jace stahl": "timothy stahl"
     },
@@ -349,6 +397,7 @@
         "drew caputo": "andrew caputo",
         "elliot collins": "elliott collins",
         "evelyn walters": null,
+        "ezekial garcia": null,
         "jaxen whetston": "jaxen whetstone",
         "joe faivre": "joseph faivre",
         "lucas hamel": "lukas hamel",
@@ -363,6 +412,7 @@
         "lily trost": "lillian trost",
         "lucas de marco": "lucas demarco",
         "michael krueger": "michael krueger jr",
+        "thomas vantilburg": null,
         "tj wagner": "timothy wagner",
         "tom van tilburg": "thomas van tilburg",
         "van terry wheeler": "van wheeler",
@@ -399,6 +449,7 @@
     },
     "Downers Grove Wrestling Club": {
         "aj sheridan": "alec sheridan",
+        "ben reuillon": null,
         "brandon jr murphy": "brandon murphy",
         "brooklyn hobus": "brooklynn hobus",
         "charlie novak": "charles novak",
@@ -410,13 +461,17 @@
         "joey frytz": "joseph frytz",
         "leo papadopoulos": "leonard papadopoulos",
         "remi foreman": "remington foreman",
-        "ronald mccluskey": "ronald mccluskey iii"
+        "ronald mccluskey": "ronald mccluskey iii",
+        "vinny urias": null
     },
     "Du-Pec Wrestling Club": {
         "brayln babler": "Dakota Wrestling Club::brayln babler"
     },
     "Dundee Highlanders WC": {
         "brooklyn denton": "brooklynn denton",
+        "carter hopkns": null,
+        "johnathan perez jr": null,
+        "lily quatroke": null,
         "lincoln whiteman": "lincoln mae whiteman",
         "malcom hernandez": "malcolm hernandez",
         "mike wetzel": "mikey wetzel"
@@ -438,7 +493,8 @@
         "kamari nelson smith": "kimari nelson smith"
     },
     "East Peoria River Bandits Wrestling": {
-        "cecilia vanoppen": "cecilia van oppen"
+        "cecilia vanoppen": "cecilia van oppen",
+        "zain booe": null
     },
     "Edwardsville Wrestling Club": {
         "jacob harris": null,
@@ -467,6 +523,8 @@
         "teddy mueller": "theodore mueller"
     },
     "Englewood Live Wire Wrestling Club": {
+        "alvin joseph strickland": null,
+        "jontiez brooks": null,
         "tevin oneil jr": "tevin oneil"
     },
     "Evanston School of Wrestling": {
@@ -581,10 +639,14 @@
         "tommy lytle": "thomas lytle"
     },
     "Golden Eagles Wrestling Club": {
+        "bradly heckmann": null,
+        "jeffrey sweet": null,
         "jeffrey swett": "jeffery swett",
+        "rez bonham": null,
         "richie kniesel": "richard kniesel"
     },
     "Gomez Wrestling RTC": {
+        "barsbek lulu": null,
         "darnell johnson": "darnell johnson jr",
         "darnell jr johnson": "darnell johnson jr",
         "gabriel iman forfeit": "gabriel iman",
@@ -594,6 +656,9 @@
         "ren david": "rennan david",
         "sawyer david": null,
         "turner gardner": null
+    },
+    "Greg Gomez Trained Wrestling": {
+        "meteo augstin": null
     },
     "Harlem Huskies WC": {
         "emersy jarvis": "emersyn jarvis"
@@ -614,8 +679,11 @@
         "deontae davis": "deontae davis jr",
         "fred coleman": "fred coleman iii",
         "glenn harston": "glenn harston iii",
+        "henry brown": null,
         "nehemiah payne": "nehemiah payne owens",
-        "travis hammons": "travis hammons jr"
+        "tewan brown jr": null,
+        "travis hammons": "travis hammons jr",
+        "victor pennix": null
     },
     "Hawk Wrestling Club": {
         "deven alcala": null,
@@ -656,6 +724,7 @@
         "tommy byerle": "tom byerle"
     },
     "Homewood-Flossmoor RTC": {
+        "daquan hubbard": null,
         "george airey": null
     },
     "Hononegah Wrestling Club": {
@@ -664,7 +733,8 @@
         "haze davis": null,
         "henrick anderson": "henrik anderson",
         "kambyra bergeron": "kambrya bergeron",
-        "otto champlin": null
+        "otto champlin": null,
+        "wyatt david": null
     },
     "Hoopeston Area Youth Wrestling": {
         "victoria mendoza": "vitoria mendoza"
@@ -711,6 +781,9 @@
     "Junior Kahoks-Tribe Fellowship": {
         "alta mcquary": "alta jane mcquary"
     },
+    "Junior Maroons WC": {
+        "addison poston": null
+    },
     "Junior Titans Wrestling": {
         "jake draths": "james draths",
         "jonathan gara": "jonathan garza",
@@ -726,7 +799,8 @@
     "Knights Wrestling Club": {
         "kc laczynski": "kc lacynski",
         "lili perez": "liliana perez",
-        "oscar minnick": null
+        "oscar minnick": null,
+        "zariyah vickers": null
     },
     "LaSalle Peru Crunching Cavs Youth WC": {
         "ella kasprak": null,
@@ -751,6 +825,7 @@
         "dom doljanin": "dominic doljanin",
         "eli czerwiec": "elijah czerwiec",
         "eva lilas": "evangeline lilas",
+        "jim doubek": null,
         "jimmy doubek": "james doubek",
         "jimmy ksiazek": "james ksiazek",
         "jimmy sullivan": "james sullivan",
@@ -777,6 +852,7 @@
         "dominic hawks": null,
         "donald murphy": "donald murphy jr",
         "nick miller": "nicholas miller",
+        "santino gualandi": null,
         "xzander daniel garcia": "daniel garcia",
         "xzander garcia": "daniel garcia"
     },
@@ -792,7 +868,9 @@
         "luciana olszta": "lucy olszta",
         "luke ryan": "luke ryan ludtke",
         "mason gerristen": "mason gerritsen",
+        "max berner": null,
         "parker mariano": "parker marino",
+        "ricky olszta": null,
         "robert rj mckimson": "robert mckimson",
         "sammy infantino": "samuel infantino",
         "will kochel": "william kochel"
@@ -814,12 +892,14 @@
     "Litchfield Wrestling Club": {
         "brooklyn pryor": null,
         "easton pezold": null,
-        "jonathon carter": null
+        "jonathon carter": null,
+        "revie schlitz voss": null
     },
     "Little Giants WC": {
         "taya nanny": "taya nanney"
     },
     "Lockport Junior Porters WC": {
+        "jake botica": null,
         "scotty hubbart": "scott hubbart",
         "weston wiliming": "weston willming",
         "weston wilming": "weston willming"
@@ -833,10 +913,13 @@
         "georia jenisch": "georgia jenisch"
     },
     "Maine Eagles WC": {
+        "aiden holden": null,
         "alexander kovachev": "alexandar kovachev",
         "christian veselinovic": "cristian veselinovic",
+        "emmett osbourne": null,
         "leo testa": "leonardo testa",
-        "sam anichini": "samuel anichini"
+        "sam anichini": "samuel anichini",
+        "thomas garcea": null
     },
     "Marengo Youth Wrestling Club": {
         "angel lopez": "angel iii lopez",
@@ -881,10 +964,12 @@
         "casey cupples": null
     },
     "Midway WC": {
+        "ben forbes": null,
         "benny lopez": "benicio lopez",
         "brooke kaspar": "brooklyn kaspar",
         "dan keenan": "daniel keenan",
         "ed bailey": "edward baley",
+        "eddie bailey": null,
         "edward bailey": "edward baley",
         "jaxson christian": "jaxon christian",
         "john burke": "john burke iii",
@@ -933,7 +1018,8 @@
     "Mustang Wrestling Club": {
         "erik j bautista": "erik bautista",
         "jack gonzalez": "Junior Bulldog Wrestling Club::jack gonzalez",
-        "robert buchner": "bobby buchner"
+        "robert buchner": "bobby buchner",
+        "tommy darwin": null
     },
     "N.Y.A Jr. Rebels Wrestling Club": {
         "julio ocampo": "julio cesar jr ocampo",
@@ -944,7 +1030,9 @@
     "Naperville Wrestling Club": {
         "christopher duke dublinski": "christopher dublinski",
         "duke dublinski": "christopher dublinski",
+        "israel rivera": null,
         "lily hartwig": "lillian hartwig",
+        "marco olvera": null,
         "marcus olvera": "marcos olvera",
         "michael drey dublinski": "michael dublinski",
         "muhammed akmyradov": "muhammedaly akmyradow",
@@ -956,6 +1044,7 @@
         "gianna cardio": "Beat the Streets Chicago-Avondale::gianna cardio",
         "lana cardio": "Beat the Streets Chicago-Avondale::lana cardio",
         "sammy cipolla": "samuel cipolla",
+        "thor rhode": null,
         "woody cipolla": "woodrow cipolla"
     },
     "O'Fallon Little Panthers WC": {
@@ -964,11 +1053,13 @@
     },
     "Oak Forest Park District Warriors Wrestling": {
         "abood mahmoud": "abdal mahmoud",
+        "aiden vernati": null,
         "alejandro gomez iii": "alejandro gomez",
         "brooklyn baskovitz walters": "brooklynn baskovitz walters",
         "clay drabik": "clayton drabik",
         "danni diaz": "daniella diaz",
         "eliana grace barrientos": "eliana barrientos",
+        "emmet harrison": null,
         "gabby diaz": "gabriella diaz",
         "gabriel despidea": "gabriel desipeda",
         "gianni del rio": "gianni delrio",
@@ -997,8 +1088,10 @@
         "joe guest": "joseph guest",
         "joe zotto": "joey zotto",
         "joey guest": "joseph guest",
+        "joey mcquaid": null,
         "lukarz krzeczkowski": "lukasz krzeczkowski",
         "mahoud hinnawi": "mahmoud hinnawi",
+        "martin mj groark": null,
         "max pullins": "maxwell pullins",
         "mike oconnor": "michael oconnor",
         "mike stefancic": "michael stefancic",
@@ -1017,7 +1110,8 @@
         "tom lally": "thomas lally",
         "vinny lapapa": "vincent lapapa",
         "will poore": "william poore",
-        "zach kalseth": "zachary kalseth"
+        "zach kalseth": "zachary kalseth",
+        "zach nofal": null
     },
     "Oswego Wrestling Club": {
         "david dj modaff": "david modaff",
@@ -1050,8 +1144,10 @@
         "frankie reardon": "francis reardon",
         "isaac santiago": "issac santiago",
         "jimmy brendich": "james brendich",
+        "joe cutrara": null,
         "joe duhig": "joseph duhig",
         "lucas lannigan": "lucas lanigan",
+        "mark mitsdarferr": null,
         "miguel rosas": "miguel rosas meza",
         "sam taheny": "samuel taheny",
         "scotty lannigan": "scott lanigan"
@@ -1066,6 +1162,7 @@
         "keatonkeaton lauer": "keaton lauer"
     },
     "Pontiac Wrestling Club": {
+        "avery mays": null,
         "kainaan henderson": "kianaan henderson",
         "kaliyah monreno": "kaliyah moreno"
     },
@@ -1138,6 +1235,7 @@
         "johnny rodriguez": "john rodriguez",
         "josh niehus": "joshua niehus",
         "mikey maher": "michael maher",
+        "sam schatz": null,
         "samual schatz": "samuel schatz",
         "timmy mckenzie": "timothy mckenzie",
         "tommy dulaney": "thomas dulaney",
@@ -1151,6 +1249,9 @@
         "mathew rivera": "matthew rivera",
         "mattthew rivera": "matthew rivera",
         "teddy bollweg": "theodore bollweg"
+    },
+    "Round Lake Jr. Panthers Wrestling Club": {
+        "coner ziegler": null
     },
     "Roxana Wrestling Club": {
         "knox herrin": "knox herron"
@@ -1194,10 +1295,13 @@
         "chad yeager jr": "chad jr yeager",
         "deklan stralow": null,
         "dougie brown": "douglas brown",
+        "elliot hemminger": null,
         "ken plote": "kenneth plote",
-        "mikey brown": "michael brown"
+        "mikey brown": "michael brown",
+        "natalie norburg": null
     },
     "Sharks Wrestling Club": {
+        "francisco passini de olivera": null,
         "robert adrahtas": "robert adrahtas jr"
     },
     "Southern Illinois Bulldogs WC": {
@@ -1229,6 +1333,7 @@
     },
     "St. Charles WC": {
         "bella gonzalez": "izabella gonzalez",
+        "dom gurtler": null,
         "drew phillips": "andrew phillips",
         "fancy anderson": "andie anderson",
         "gio theriot": "carlos theriot",
@@ -1265,8 +1370,12 @@
         "dominick melvin": "dominic melvin",
         "gio lopez": "giovanni lopez",
         "karson munk": "karson mauk",
+        "landon schaibley": null,
         "leo velazquez": "leonardo velazquez",
-        "lilly dorsam": "lillian dorsam"
+        "lilly dorsam": "lillian dorsam",
+        "luisrael moreno": null,
+        "maddex landsford": null,
+        "nora lynch": null
     },
     "Suplex Wrestling Club": {
         "alan titov": "allan titov",
@@ -1375,7 +1484,8 @@
     "Triad Knights Wrestling Club": {
         "aiston mollett": "Katana Wrestling::aiston mollett",
         "aistona mollett": "Katana Wrestling::aiston mollett",
-        "jackson tonn": null
+        "jackson tonn": null,
+        "jude seip": null
     },
     "Tribe Wrestling Club": {
         "geoffrey grant": "geoffrey grant jr"
@@ -1385,7 +1495,8 @@
     },
     "Unity Youth Wrestling Club": {
         "crimson robertson": "crimsyn robertson",
-        "jaxx pruitt": null
+        "jaxx pruitt": null,
+        "paycen johns": null
     },
     "Vandalia Jr Wrestling Club": {
         "braelyn beck": null,
@@ -1400,6 +1511,7 @@
     },
     "Villa Park Young Warriors Wrestling Club": {
         "carter stlouis": "carter st louis",
+        "george domingez": null,
         "isabella padilla": "isabel padilla",
         "lincon landberg": "lincoln landberg",
         "micheal may": "michael may",
@@ -1420,6 +1532,7 @@
         "james jj wolniakowski": "james wolniakowski",
         "jameson keough": "jameson keogh",
         "jimmy trolia": "james trolia",
+        "jj sikorski": null,
         "jj wolniakowski": "james wolniakowski",
         "joe simpson": "joseph simpson",
         "johnny carroll": "john carroll",
@@ -1431,8 +1544,11 @@
         "nick corbett": "nicholas corbett",
         "nicky zientek": "nicholas zientek",
         "oliver albrecht": "ollie albrecht",
+        "shane gahagan": null,
         "tom zwierzynski": "thomas zwierzynski",
         "tommy popp": "thomas popp",
+        "tommy walsh": null,
+        "tommy zwierzynsi": null,
         "tommy zwierzynski": "thomas zwierzynski",
         "will perek": "william perek",
         "william dunn iv": "william dunn",
@@ -1546,6 +1662,7 @@
         "bella hamaker": "isabella hamaker"
     },
     "nWo Wrestling Club": {
-        "lenny robertson": "lennox robertson"
+        "lenny robertson": "lennox robertson",
+        "max pearch": null
     }
 }
