@@ -124,17 +124,17 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: | 2026-02-01 | Cole Whitford Girls & Beginners Tournament                          | USA Bracketing |
 | :white_check_mark: | 2026-02-01 | IKWF Dual Meet State Championships                                  | USA Bracketing |
 | :white_check_mark: | 2026-02-01 | Metamora Kids Wrestling Tournament                                  | USA Bracketing |
-|                    | 2026-02-07 | Streator Bulldog Open                                               | TrackWrestling |
-|                    | 2026-02-08 | 2026 Derrick Munos Invitational                                     | TrackWrestling |
-|                    | 2026-02-08 | 2026 Red Rush Rumble                                                | TrackWrestling |
-|                    | 2026-02-08 | 2026 shamrock slam                                                  | TrackWrestling |
-|                    | 2026-02-08 | 2026 Ted Harvey Memorial                                            | TrackWrestling |
-|                    | 2026-02-08 | 2026 Triad Kids Open                                                | TrackWrestling |
-|                    | 2026-02-08 | AJ Jr Wildcats On the Prowl                                         | TrackWrestling |
-|                    | 2026-02-08 | Hononegah`s Tomahawk Classic                                        | TrackWrestling |
-|                    | 2026-02-08 | Warrensburg-Latham Cardinal Cradle Class                            | TrackWrestling |
-|                    | 2026-02-08 | Winter Fiesta @ Harper College                                      | TrackWrestling |
-|                    | 2026-02-08 | Meet in the MIddle                                                  | USA Bracketing |
+| :white_check_mark: | 2026-02-07 | Streator Bulldog Open                                               | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | 2026 Derrick Munos Invitational                                     | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | 2026 Red Rush Rumble                                                | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | 2026 shamrock slam                                                  | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | 2026 Ted Harvey Memorial                                            | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | 2026 Triad Kids Open                                                | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | AJ Jr Wildcats On the Prowl                                         | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | Hononegah`s Tomahawk Classic                                        | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | Warrensburg-Latham Cardinal Cradle Class                            | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | Winter Fiesta @ Harper College                                      | TrackWrestling |
+| :white_check_mark: | 2026-02-08 | Meet in the MIddle                                                  | USA Bracketing |
 |                    | 2026-02-14 | O'Fallon Panther Pummel and Ali Gutierrez Memorial Girls Tournament |                |
 |                    | 2026-02-15 | Bronco Invite                                                       |                |
 |                    | 2026-02-15 | Junior Thunderbolt                                                  |                |

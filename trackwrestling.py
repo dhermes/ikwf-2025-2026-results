@@ -140,16 +140,16 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-02-01", "QUINCY LITTLE RAIDER SLAM 2026"),
     ("2026-02-01", "Toultown Throwdown"),
     ("2026-02-01", "Yorkville Fighting Foxes Invitational"),
-    # ("2026-02-07", "Streator Bulldog Open"),
-    # ("2026-02-08", "2026 Derrick Munos Invitational"),
-    # ("2026-02-08", "2026 Red Rush Rumble"),
-    # ("2026-02-08", "2026 shamrock slam"),
-    # ("2026-02-08", "2026 Ted Harvey Memorial"),
-    # ("2026-02-08", "2026 Triad Kids Open"),
-    # ("2026-02-08", "AJ Jr Wildcats On the Prowl"),
-    # ("2026-02-08", "Hononegah`s Tomahawk Classic"),
-    # ("2026-02-08", "Warrensburg-Latham Cardinal Cradle Class"),
-    # ("2026-02-08", "Winter Fiesta @ Harper College"),
+    ("2026-02-07", "Streator Bulldog Open"),
+    ("2026-02-08", "2026 Derrick Munos Invitational"),
+    ("2026-02-08", "2026 Red Rush Rumble"),
+    ("2026-02-08", "2026 shamrock slam"),
+    ("2026-02-08", "2026 Ted Harvey Memorial"),
+    ("2026-02-08", "2026 Triad Kids Open"),
+    ("2026-02-08", "AJ Jr Wildcats On the Prowl"),
+    ("2026-02-08", "Hononegah`s Tomahawk Classic"),
+    ("2026-02-08", "Warrensburg-Latham Cardinal Cradle Class"),
+    ("2026-02-08", "Winter Fiesta @ Harper College"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-14", "2025 Hub City Hammer Duals"),
@@ -550,6 +550,7 @@ def _weights_click_next_page(driver: webdriver.Chrome, page_number: int) -> bool
     if next_page_exists:
         next_link = next_links[0]
         next_link.click()
+        time.sleep(0.5)
         predicate = _make_weights_next_page_ready(range_start)
         WebDriverWait(driver, _WAIT_TIME).until(predicate)
         time.sleep(0.1)
