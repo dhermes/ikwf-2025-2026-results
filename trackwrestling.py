@@ -150,6 +150,16 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-02-08", "Hononegah`s Tomahawk Classic"),
     ("2026-02-08", "Warrensburg-Latham Cardinal Cradle Class"),
     ("2026-02-08", "Winter Fiesta @ Harper College"),
+    ("2026-02-14", "2026 O`Fallon Panther Pummel w/Girls"),
+    ("2026-02-15", "2026 BRONCO INVITE"),
+    ("2026-02-15", "2026 Junior Thunderbolt-CLOSED"),
+    ("2026-02-15", "Cumberland Kids Heartbreak Havoc"),
+    ("2026-02-15", "Daisy Fresh Wrestling Open"),
+    ("2026-02-15", "Olympia Spartan Showdown"),
+    ("2026-02-15", "ROUGHNECKS WRESTLING THROWDOWN"),
+    ("2026-02-15", "Tiger Town Tanglers Wrestling Tournament"),
+    ("2026-02-15", "Tri-County Polar Vortex"),
+    ("2026-02-15", "Wolves Wrestling St. Valentine`s Day Massacre"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-14", "2025 Hub City Hammer Duals"),
