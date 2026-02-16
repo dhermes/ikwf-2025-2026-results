@@ -126,19 +126,12 @@ def _lookup_athlete(
 
     by_team = custom_athlete_name_map.get(team_normalized, {})
     if name_normalized not in by_team:
-        import json
-        custom_athlete_name_map.setdefault(team_normalized, {})
-        custom_athlete_name_map[team_normalized][name_normalized] = None
-        with open('/Users/dhermes/workspace/dhermes/ikwf-2025-2026-results/_parsed-data/custom-normalized-athlete-names.json', 'w') as fh:
-            json.dump(custom_athlete_name_map, fh, indent=4, sort_keys=True)
-            fh.write('\n')
-        # raise ValueError(
-        #     "All unmatched athletes should be present in custom athlete name map",
-        #     name,
-        #     name_normalized,
-        #     team_normalized,
-        # )
-        return team_normalized, None
+        raise ValueError(
+            "All unmatched athletes should be present in custom athlete name map",
+            name,
+            name_normalized,
+            team_normalized,
+        )
 
     new_name_normalized = by_team[name_normalized]
     if new_name_normalized is None:

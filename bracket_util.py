@@ -530,3 +530,37 @@ def weights_for_division(division: Division) -> tuple[int, ...]:
         )
 
     raise RuntimeError("Unknown division", division)
+
+
+def division_value(division: Division) -> int:
+    if division == "tot":
+        return 0
+
+    if division == "bantam":
+        return 1
+
+    if division == "intermediate":
+        return 2
+
+    if division == "novice":
+        return 3
+
+    if division == "senior":
+        return 4
+
+    if division == "girls_tot":
+        return 5
+
+    if division == "girls_bantam":
+        return 6
+
+    if division == "girls_intermediate":
+        return 7
+
+    if division == "girls_novice":
+        return 8
+
+    if division == "girls_senior":
+        return 9
+
+    raise NotImplementedError(division)
