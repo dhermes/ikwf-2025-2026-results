@@ -230,3 +230,37 @@ def display_division(division: bracket_util.Division) -> str:
         return "Girls Senior"
 
     raise RuntimeError("Unsupported division", division)
+
+
+def reverse_display_division(division_str: str) -> bracket_util.Division:
+    if division_str == "Bantam":
+        return "bantam"
+
+    if division_str == "Intermediate":
+        return "intermediate"
+
+    if division_str == "Novice":
+        return "novice"
+
+    if division_str == "Senior":
+        return "senior"
+
+    if division_str == "Girls Bantam":
+        return "girls_bantam"
+
+    if division_str == "Girls Intermediate":
+        return "girls_intermediate"
+
+    if division_str == "Girls Novice":
+        return "girls_novice"
+
+    if division_str == "Girls Senior":
+        return "girls_senior"
+
+    raise RuntimeError("Unsupported division", division_str)
+
+
+def display_weight_class(key: tuple[bracket_util.Division, int]) -> str:
+    division, weight = key
+    division_str = display_division(division)
+    return f"{division_str} {weight}"

@@ -16,7 +16,7 @@ _Entry = tuple[str, str, int, str, bracket_util.Division | None, int | None]
 def _entry_sort_key(entry: _Entry) -> tuple[int, int, str, str, str]:
     team, name, _, usaw_number, division, weight = entry
     weight_int = 999 if weight is None else weight
-    division_int = 999 if division is None else bracket_util.division_value(division)
+    division_int = 999 if division is None else bracket_util.sortable_division(division)
 
     return division_int, weight_int, name, team, usaw_number
 

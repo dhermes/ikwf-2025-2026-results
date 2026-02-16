@@ -532,7 +532,7 @@ def weights_for_division(division: Division) -> tuple[int, ...]:
     raise RuntimeError("Unknown division", division)
 
 
-def division_value(division: Division) -> int:
+def sortable_division(division: Division) -> int:
     if division == "tot":
         return 0
 
