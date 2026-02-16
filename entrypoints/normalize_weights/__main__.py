@@ -242,6 +242,7 @@ def _normalize_name(name: str) -> str:
     without_punctuation = without_punctuation.replace("ryland/paul", "paul")
     without_punctuation = without_punctuation.replace("[kar dee a]", "")
     without_punctuation = without_punctuation.replace("richard/ benny", "richard")
+    without_punctuation = without_punctuation.replace("benny/rich", "rich")
     without_punctuation = without_punctuation.replace("ta?leigha", "taleigha")
     without_punctuation = without_punctuation.replace("o?connor", "oconnor")
     without_punctuation = without_punctuation.replace("tre?lyn", "trelyn")

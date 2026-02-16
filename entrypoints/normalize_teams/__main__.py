@@ -39,6 +39,7 @@ _EXPLICIT_MAPPING: dict[str, dict[str, str]] = {
     "2026 O`Fallon Panther Pummel w/Girls": {
         "Fox WC": "Out of State - Missouri",
         "Camdenton WC": "Out of State - Missouri",
+        "St. Charles WC": "Out of State - Missouri",
     },
     "2026 BRONCO INVITE": {
         "Spartans": "Spartan Wrestling Club",

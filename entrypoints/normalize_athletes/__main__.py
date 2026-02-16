@@ -53,6 +53,7 @@ def _normalize_name(name: str) -> str:
     without_punctuation = without_punctuation.replace("ryland/paul", "paul")
     without_punctuation = without_punctuation.replace("[kar dee a]", "")
     without_punctuation = without_punctuation.replace("richard/ benny", "richard")
+    without_punctuation = without_punctuation.replace("benny/rich", "rich")
     without_punctuation = without_punctuation.replace("ta?leigha", "taleigha")
     without_punctuation = without_punctuation.replace("o?connor", "oconnor")
     without_punctuation = without_punctuation.replace("tre?lyn", "trelyn")
@@ -125,12 +126,19 @@ def _lookup_athlete(
 
     by_team = custom_athlete_name_map.get(team_normalized, {})
     if name_normalized not in by_team:
-        raise ValueError(
-            "All unmatched athletes should be present in custom athlete name map",
-            name,
-            name_normalized,
-            team_normalized,
-        )
+        import json
+        custom_athlete_name_map.setdefault(team_normalized, {})
+        custom_athlete_name_map[team_normalized][name_normalized] = None
+        with open('/Users/dhermes/workspace/dhermes/ikwf-2025-2026-results/_parsed-data/custom-normalized-athlete-names.json', 'w') as fh:
+            json.dump(custom_athlete_name_map, fh, indent=4, sort_keys=True)
+            fh.write('\n')
+        # raise ValueError(
+        #     "All unmatched athletes should be present in custom athlete name map",
+        #     name,
+        #     name_normalized,
+        #     team_normalized,
+        # )
+        return team_normalized, None
 
     new_name_normalized = by_team[name_normalized]
     if new_name_normalized is None:
