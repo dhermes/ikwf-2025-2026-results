@@ -135,16 +135,16 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: | 2026-02-08 | Warrensburg-Latham Cardinal Cradle Class      | TrackWrestling |
 | :white_check_mark: | 2026-02-08 | Winter Fiesta @ Harper College                | TrackWrestling |
 | :white_check_mark: | 2026-02-08 | Meet in the MIddle                            | USA Bracketing |
-|                    | 2026-02-14 | 2026 O`Fallon Panther Pummel w/Girls          | TrackWrestling |
-|                    | 2026-02-15 | 2026 BRONCO INVITE                            | TrackWrestling |
-|                    | 2026-02-15 | 2026 Junior Thunderbolt-CLOSED                | TrackWrestling |
-|                    | 2026-02-15 | Cumberland Kids Heartbreak Havoc              | TrackWrestling |
-|                    | 2026-02-15 | Daisy Fresh Wrestling Open                    | TrackWrestling |
-|                    | 2026-02-15 | Olympia Spartan Showdown                      | TrackWrestling |
+| :white_check_mark: | 2026-02-14 | 2026 O`Fallon Panther Pummel w/Girls          | TrackWrestling |
+| :white_check_mark: | 2026-02-15 | 2026 BRONCO INVITE                            | TrackWrestling |
+| :white_check_mark: | 2026-02-15 | 2026 Junior Thunderbolt                       | TrackWrestling |
+| :white_check_mark: | 2026-02-15 | Cumberland Kids Heartbreak Havoc              | TrackWrestling |
+| :white_check_mark: | 2026-02-15 | Daisy Fresh Wrestling Open                    | TrackWrestling |
+| :white_check_mark: | 2026-02-15 | Olympia Spartan Showdown                      | TrackWrestling |
 |                    | 2026-02-15 | ROUGHNECKS WRESTLING THROWDOWN                | TrackWrestling |
-|                    | 2026-02-15 | Tiger Town Tanglers Wrestling Tournament      | TrackWrestling |
-|                    | 2026-02-15 | Tri-County Polar Vortex                       | TrackWrestling |
-|                    | 2026-02-15 | Wolves Wrestling St. Valentine`s Day Massacre | TrackWrestling |
+| :white_check_mark: | 2026-02-15 | Tiger Town Tanglers Wrestling Tournament      | TrackWrestling |
+| :white_check_mark: | 2026-02-15 | Tri-County Polar Vortex                       | TrackWrestling |
+| :white_check_mark: | 2026-02-15 | Wolves Wrestling St. Valentine`s Day Massacre | TrackWrestling |
 |                    | 2026-02-15 | Jr. Cougar Classic                            | USA Bracketing |
 |                    | 2026-02-22 | Jersey Panther Pummel                         |                |
 |                    | 2026-02-22 | Peoria Heights Youth Wrestling Tournament     |                |
