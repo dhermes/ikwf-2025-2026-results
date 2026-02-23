@@ -684,63 +684,66 @@ def _determine_division(division_text: str) -> bracket_util.Division | None:
     if normalized_text == "girls":
         return None
 
-    if normalized_text == "girls - tot":
-        return "girls_tot"
-    if normalized_text == "g-tots":
+    if normalized_text in ("girls - tot", "girls tots", "g-tots"):
         return "girls_tot"
 
-    if normalized_text == "girls - bantam":
-        return "girls_bantam"
-    if normalized_text == "g-bantam":
+    if normalized_text in (
+        "girls - bantam",
+        "girls bantam",
+        "g-bantam",
+        "bantam girls",
+        "girls 9u",
+    ):
         return "girls_bantam"
     if normalized_text.startswith("girls bantam "):
         return "girls_bantam"
-    if normalized_text == "bantam girls":
-        return "girls_bantam"
-    if normalized_text == "girls 9u":
-        return "girls_bantam"
 
-    if normalized_text == "girls - intermediate":
-        return "girls_intermediate"
-    if normalized_text == "g-intermediate":
-        return "girls_intermediate"
-    if normalized_text == "intermediate girls":
+    if normalized_text in (
+        "girls - intermediate",
+        "girls intermediate",
+        "g-intermediate",
+        "intermediate girls",
+    ):
         return "girls_intermediate"
     if normalized_text.startswith("girls intermediate "):
         return "girls_intermediate"
 
-    if normalized_text == "girls - novice":
-        return "girls_novice"
-    if normalized_text == "girls novice":
-        return "girls_novice"
-    if normalized_text == "g-novice":
-        return "girls_novice"
-    if normalized_text == "novice girls":
+    if normalized_text in (
+        "girls - novice",
+        "girls novice",
+        "g-novice",
+        "novice girls",
+    ):
         return "girls_novice"
     if normalized_text.startswith("girls novice "):
         return "girls_novice"
 
-    if normalized_text == "girls - senior":
-        return "girls_senior"
-    if normalized_text == "girls senior":
-        return "girls_senior"
-    if normalized_text == "g-senior":
+    if normalized_text in (
+        "girls - senior",
+        "girls senior",
+        "g-senior",
+        "senior girls",
+    ):
         return "girls_senior"
     if normalized_text.startswith("girls senior "):
-        return "girls_senior"
-    if normalized_text == "senior girls":
         return "girls_senior"
     if normalized_text.startswith("senior girls "):
         return "girls_senior"
 
     ############################################################################
 
-    if normalized_text in ("tot", "tots", "boys - tot", "tots 6 & under"):
+    if normalized_text in ("tot", "tots", "boys - tot", "boys tots", "tots 6 & under"):
         return "tot"
     if normalized_text.startswith("tot "):
         return "tot"
 
-    if normalized_text in ("bantam", "boys - bantam", "bantam 6, 7 & 8", "open-bantam"):
+    if normalized_text in (
+        "bantam",
+        "boys - bantam",
+        "boys bantam",
+        "bantam 6, 7 & 8",
+        "open-bantam",
+    ):
         return "bantam"
     if normalized_text.startswith("boys bantam "):
         return "bantam"
@@ -748,6 +751,7 @@ def _determine_division(division_text: str) -> bracket_util.Division | None:
     if normalized_text in (
         "intermediate",
         "boys - intermediate",
+        "boys intermediate",
         "intermediate 8, 9 & 10",
         "open-intermediate",
         "elite-intermediate",
@@ -762,6 +766,7 @@ def _determine_division(division_text: str) -> bracket_util.Division | None:
         "novice boys 10, 11 & 12",
         "open-novice",
         "elite-novice",
+        "boys novice",
     ):
         return "novice"
     if normalized_text.startswith("boys novice "):
@@ -773,6 +778,7 @@ def _determine_division(division_text: str) -> bracket_util.Division | None:
         "senior boys 12, 13 & 14",
         "open-senior",
         "elite-senior",
+        "boys senior",
     ):
         return "senior"
     if normalized_text.startswith("boys senior "):
