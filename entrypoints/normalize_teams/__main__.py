@@ -53,6 +53,18 @@ _EXPLICIT_MAPPING: dict[str, dict[str, str]] = {
     "Olympia Spartan Showdown": {
         "Backyard Brawlers": "Backyard Brawlers Midwest WC",
     },
+    "CLIPPER CLASH 2026": {
+        "Battle Hens": "Out of State - Iowa",
+        "Tigers wrestling club": "Out of State - Iowa",
+        "Lewis County Youth Wrestling": "Out of State - Missouri",
+    },
+    "Heart of a Lion 2026": {
+        "Hawkeye WC": "Out of State - Iowa",
+    },
+    "Champaign Grappler III": {
+        "CWC": "Champaign Wrestling Club",
+        "Contenders": "Out of State - Indiana",
+    },
 }
 
 # NOTE: `_OVERRIDE_TEAM_MAPPING` provides tournament specific overrides for a
