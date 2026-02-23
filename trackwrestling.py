@@ -160,6 +160,11 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-02-15", "Tiger Town Tanglers Wrestling Tournament"),
     ("2026-02-15", "Tri-County Polar Vortex"),
     ("2026-02-15", "Wolves Wrestling St. Valentine`s Day Massacre"),
+    ("2026-02-22", "CLIPPER CLASH 2026"),
+    ("2026-02-22", "Heart of a Lion 2026"),
+    ("2026-02-22", "Jersey Panther Pummel"),
+    ("2026-02-22", "Peoria Heights Minutemen Kids Tournament"),
+    ("2026-02-22", "Trico Pioneer Rumble"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2025-12-14", "2025 Hub City Hammer Duals"),

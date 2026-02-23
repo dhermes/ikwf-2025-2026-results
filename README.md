@@ -145,15 +145,12 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: | 2026-02-15 | Tiger Town Tanglers Wrestling Tournament      | TrackWrestling |
 | :white_check_mark: | 2026-02-15 | Tri-County Polar Vortex                       | TrackWrestling |
 | :white_check_mark: | 2026-02-15 | Wolves Wrestling St. Valentine`s Day Massacre | TrackWrestling |
-|                    | 2026-02-15 | Jr. Cougar Classic                            | USA Bracketing |
-|                    | 2026-02-22 | Jersey Panther Pummel                         |                |
-|                    | 2026-02-22 | Peoria Heights Youth Wrestling Tournament     |                |
-|                    | 2026-02-22 | Champaign Grappler III                        |                |
-|                    | 2026-02-22 | Heart of a Lion                               |                |
-|                    | 2026-02-22 | Pioneer Rumble                                |                |
-|                    | 2026-02-22 | Alton Little Redbirds Open                    |                |
-|                    | 2026-02-22 | Clipper Clash                                 |                |
-|                    | 2026-03-01 | Clash of The Tots                             |                |
+| :white_check_mark: | 2026-02-22 | CLIPPER CLASH 2026                            | TrackWrestling |
+| :white_check_mark: | 2026-02-22 | Heart of a Lion 2026                          | TrackWrestling |
+| :white_check_mark: | 2026-02-22 | Jersey Panther Pummel                         | TrackWrestling |
+| :white_check_mark: | 2026-02-22 | Peoria Heights Minutemen Kids Tournament      | TrackWrestling |
+| :white_check_mark: | 2026-02-22 | Trico Pioneer Rumble                          | TrackWrestling |
+| :white_check_mark: | 2026-02-22 | Champaign Grappler III                        | USA Bracketing |
 
 ## Data pipeline
 

@@ -119,7 +119,7 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-02-01", "Cole Whitford Girls & Beginners Tournament"),
     ("2026-02-01", "Metamora Kids Wrestling Tournament"),
     ("2026-02-08", "Meet in the MIddle"),
-    # ("2026-02-15", "Jr. Cougar Classic"),
+    ("2026-02-22", "Champaign Grappler III"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-01-04", "IKWF Southern Dual Meet Divisional"),
