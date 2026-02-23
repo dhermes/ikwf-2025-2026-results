@@ -9,7 +9,8 @@
         "christian dover": null,
         "dusdy williamson": "dusdyn williamson",
         "owen lambin": "owen lambdin",
-        "payslee anderson": null,
+        "payslee anderson": "payzlee anderson",
+        "payzlee anderson": "payzlee anderson",
         "van williamson": "vandyn williamson"
     },
     "Aces Wrestling Club": {
@@ -32,7 +33,8 @@
         "brandon michelotti": null,
         "dominic michelotti": null,
         "elijah a p moreland": "elijah anthony patrick moreland",
-        "elijah moreland": "elijah anthony patrick moreland"
+        "elijah moreland": "elijah anthony patrick moreland",
+        "john cena": null
     },
     "Antioch Predators Wrestling Club": {
         "alex anderson": "alexander anderson",
@@ -53,6 +55,7 @@
         "david boll": "david boll jr",
         "declan jaszcolt": "declan jaszczolt",
         "elis oser": "ellis oser",
+        "frankie herling": "francesca herling",
         "gabe sponsel": "gabriel sponsel",
         "greyson sramek": "grayson sramek",
         "hayes kustiok": "hayes kustok",
@@ -72,7 +75,8 @@
         "majd jafer": "majd jafar"
     },
     "Backyard Brawlers Midwest WC": {
-        "corbyn tipsord": "coltyn tipsord"
+        "corbyn tipsord": "coltyn tipsord",
+        "zackary vest": "Olympia Wrestling Club::zackary vest"
     },
     "Badger Wrestling Club": {
         "ayvah rose black": "ayvah black",
@@ -181,6 +185,7 @@
         "zeke tangye": "ezekiel tangye"
     },
     "Big Chief Wrestling Club": {
+        "dixie spencer": null,
         "sam lichtenberger": "samuel lichtenberger"
     },
     "Bismarck-Henning Youth Wrestling Club": {
@@ -199,6 +204,7 @@
         "jaydon lecompete": "jaydon lecompte",
         "jonathon rincon": "jonathan rincon",
         "jose ramirez": "jose ramirez jr",
+        "kevin leyva gallegos": "kevin leyva gonzalez",
         "maiya rocha": "maiya rocha velez",
         "max amaya": "maximillian amaya",
         "maxillian amaya": "maximillian amaya",
@@ -264,7 +270,8 @@
         "hilal nafisa saleem": "hilal saleem"
     },
     "Carbondale Wrestling Club": {
-        "michael zollner": "michael zollner iii"
+        "michael zollner": "michael zollner iii",
+        "milo britton": null
     },
     "Cardinals Wrestling Club": {
         "drew gross": "Arlington Cardinals Wrestling Club::drew gross",
@@ -338,6 +345,7 @@
     },
     "Chatham Wrestling Club": {
         "charles kapp jr": "charles cj kapp jr",
+        "juan petey resendez": "juan resendez iii",
         "juan petey resendez iii": "juan resendez iii"
     },
     "Clinton Wrestling Club": {
@@ -381,12 +389,16 @@
         "mikey avila": "michael avila",
         "rex mashall": "rex marshall"
     },
+    "Crawford County Wrestling Club": {
+        "annis galey": "annie galey"
+    },
     "Crosstown Spartan Elite Wrestling Club": {
         "akeem gayton": null,
         "jamari mcdonald": "jamari mcdonald jr"
     },
     "Crystal Lake Wizards Wrestling Club": {
         "axle flores": "axel flores",
+        "christian nitilea": "christian nitelea",
         "elizabeth schroeder": "ellie schroeder",
         "joseph purpura": "joey purpura",
         "josh scott": "joshua scott",
@@ -494,16 +506,24 @@
         "brayln babler": "Dakota Wrestling Club::brayln babler"
     },
     "Dundee Highlanders WC": {
+        "abigial alvarado": "abigail alvarado",
+        "alex geiger": "alexander geiger",
         "aubree gentemann": "aubree genteman",
         "brooklyn denton": "brooklynn denton",
         "carter hopkns": "carter hopkins",
         "jack anfedlt": "jack anfeldt",
+        "jack obrien": "jackson obrien",
         "johnathan perez jr": "jonathan perez jr",
+        "jonatha perez jr": "jonathan perez jr",
+        "leo hamzic": "leonardo hamzic",
+        "leo wozniak": "leonardo wozniak",
         "lily quatroke": "liliana quatroke",
         "lincoln whiteman": "lincoln mae whiteman",
         "llilana quatroke": "liliana quatroke",
         "malcom hernandez": "malcolm hernandez",
-        "mike wetzel": "mikey wetzel"
+        "mike wetzel": "mikey wetzel",
+        "robert springhorn": "robert springhorn iii",
+        "zac morgan": "zachary morgan"
     },
     "Dungeon Wrestling Club": {
         "joseph kermend": "joseph kermend jr",
@@ -788,7 +808,9 @@
     "Iguana Athletics Wrestling Club": {
         "abayomi alase jr": "abayomi alase",
         "bobo bishop": "bo bishop",
+        "casey koerner": null,
         "max deacon": "maxwell deacon",
+        "tiberius plue": null,
         "will dunlop": "william dunlop"
     },
     "Illinois Valley Wrestling Club": {
@@ -821,6 +843,9 @@
         "alex fijal": "alexander fijal",
         "ben lopez": "benjamin lopez",
         "francisco velasquez": "francisco velasquez jr"
+    },
+    "Jersey Junior Panthers Wrestling": {
+        "brooklyn cathcart": null
     },
     "Junior Bulldog Wrestling Club": {
         "chris chris carr straney": "chris carr straney",
@@ -861,6 +886,7 @@
         "cj abrantes": "charlton abrantes",
         "joel delatorre": "joel de la torre",
         "nathanial oxborrow": "nathaniel oxborrow",
+        "nicholas zielinski": "nickolas zielinski",
         "nora hay": "eleanora hay",
         "tierney potempa": "tiernan potempa",
         "wyatt klienhenz": "wyatt kleinhenz"
@@ -1021,6 +1047,7 @@
     },
     "Midway WC": {
         "ben forbes": "benjamin forbes",
+        "benico lopez": "benicio lopez",
         "benny lopez": "benicio lopez",
         "brooke kaspar": "brooklyn kaspar",
         "dan keenan": "daniel keenan",
@@ -1033,6 +1060,7 @@
         "liam babinsky": "william babinsky",
         "lou corey": "louie corey",
         "mike donahue": "michael donnahue",
+        "mikey donahue": "michael donnahue",
         "mikey donnahue": "michael donnahue",
         "savanah babinsky": "savannah babinsky"
     },
@@ -1353,7 +1381,8 @@
         "michael bensko iii": "michael bensko",
         "pasquale franco greco": "pasquale greco",
         "pryce hendrikson": "pryce hendriksen",
-        "pryce henrikson": "pryce hendriksen"
+        "pryce henrikson": "pryce hendriksen",
+        "sal sheridian": "salvatore sheridan"
     },
     "SJO Spartan YWC": {
         "drew steele": "andrew steele",

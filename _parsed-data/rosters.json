@@ -25057,6 +25057,11 @@
     "sectional": "North",
     "athletes": [
       {
+        "usaw_number": "2505384101",
+        "name": "Robert Springhorn III",
+        "ikwf_age": 10
+      },
+      {
         "usaw_number": "2518029601",
         "name": "Abigail Alvarado",
         "ikwf_age": 13
@@ -46352,6 +46357,11 @@
     "club_name": "AJ Jr. Wildcats Wrestling Club",
     "sectional": "South",
     "athletes": [
+      {
+        "usaw_number": "2610935101",
+        "name": "Payzlee Anderson",
+        "ikwf_age": 10
+      },
       {
         "usaw_number": "2605455101",
         "name": "McKinlee Anderson",
