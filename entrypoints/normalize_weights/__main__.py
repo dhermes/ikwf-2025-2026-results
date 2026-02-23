@@ -38,6 +38,17 @@ _IGNORED_KEYS: tuple[tuple[str, str, str, str], ...] = (
     # NOTE: `Gavin Allen` also showed up in `INT - 55.7-62` with a
     #       different weight `56.0`
     ("Wilbur Borrero Classic", "Gavin Allen", "TOT - 51-56", "Woodstock Cyclones"),
+    # NOTE: `Gunnersyn Schulz` also showed up in `B - INT - 80-86` with a
+    #       different higher weight `80.0`
+    (
+        "Champaign Grappler III",
+        "Gunnersyn Schulz",
+        "B - INT - 74-81.9",
+        "El Paso Gridley Youth Wrestling Club",
+    ),
+    # NOTE: `Monteen Gray` also showed up in `B - INT - 80-86` with a
+    #       different higher weight `80.0`
+    ("Champaign Grappler III", "Monteen Gray", "B - INT - 77.9-82.5", "CWC"),
 )
 # NOTE: Some athletes are double bracketed or have a weigh in that does not
 #       make sense, so we ignore some on a per-tournament basis.
@@ -273,6 +284,8 @@ def _lookup_athlete(
     team: str,
     mapped_athletes: _MappedAthletes,
 ) -> float | None:
+    # Boys Intermediate 74-81.9
+    # El Paso Gridley Youth Wrestling Club
     if name == "" and team == "":
         return None
 
@@ -293,7 +306,8 @@ def _lookup_athlete(
         matches.append(key)
 
     if len(matches) > 1:
-        # NOTE: Some kids are cross-bracketed
+        # NOTE: Some kids are cross-bracketed but have the same weight in all
+        #       brackets
         all_weights = set(mapped_athletes[key].weight for key in matches)
         if len(all_weights) == 1:
             return list(all_weights)[0]
@@ -311,6 +325,7 @@ def _lookup_athlete(
         )
 
     if len(matches) == 0:
+        breakpoint()
         raise RuntimeError("Could not match athlete", name, bracket, team)
 
     key = matches[0]
