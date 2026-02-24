@@ -1572,6 +1572,16 @@
         "ikwf_age": 10
       },
       {
+        "usaw_number": "2508979601",
+        "name": "Drake Davis",
+        "ikwf_age": 13
+      },
+      {
+        "usaw_number": "2305657501",
+        "name": "Tripp Davis",
+        "ikwf_age": 10
+      },
+      {
         "usaw_number": "2518944401",
         "name": "Mason Dennis",
         "ikwf_age": 12
@@ -3188,6 +3198,11 @@
         "ikwf_age": 6
       },
       {
+        "usaw_number": "2305150501",
+        "name": "Dylan Rae Perkins",
+        "ikwf_age": 9
+      },
+      {
         "usaw_number": "2305150601",
         "name": "Jayden Perkins",
         "ikwf_age": 11
@@ -3753,11 +3768,6 @@
         "usaw_number": "2602527401",
         "name": "Greyson York",
         "ikwf_age": 5
-      },
-      {
-        "usaw_number": "2204587101",
-        "name": "Maddox York",
-        "ikwf_age": 12
       }
     ]
   },
@@ -5243,6 +5253,11 @@
         "usaw_number": "2604825401",
         "name": "Levi Pimentel",
         "ikwf_age": 5
+      },
+      {
+        "usaw_number": "2501302401",
+        "name": "Reina Pimentel",
+        "ikwf_age": 11
       },
       {
         "usaw_number": "2609077401",
@@ -7728,6 +7743,11 @@
         "usaw_number": "2504774901",
         "name": "Ledger Birch",
         "ikwf_age": 5
+      },
+      {
+        "usaw_number": "2502691301",
+        "name": "Julian Blair",
+        "ikwf_age": 6
       },
       {
         "usaw_number": "2608725901",
@@ -10845,6 +10865,11 @@
         "usaw_number": "1905070101",
         "name": "Leo Voigts",
         "ikwf_age": 12
+      },
+      {
+        "usaw_number": "2404933601",
+        "name": "Kaden Whitton",
+        "ikwf_age": 10
       },
       {
         "usaw_number": "2507062701",
@@ -25057,11 +25082,6 @@
     "sectional": "North",
     "athletes": [
       {
-        "usaw_number": "2505384101",
-        "name": "Robert Springhorn III",
-        "ikwf_age": 10
-      },
-      {
         "usaw_number": "2518029601",
         "name": "Abigail Alvarado",
         "ikwf_age": 13
@@ -25690,6 +25710,11 @@
         "usaw_number": "2302703101",
         "name": "Ryan Smith",
         "ikwf_age": 14
+      },
+      {
+        "usaw_number": "2505384101",
+        "name": "Robert Springhorn III",
+        "ikwf_age": 10
       },
       {
         "usaw_number": "2609951501",
@@ -26759,6 +26784,11 @@
       {
         "usaw_number": "2407998801",
         "name": "Bentley Bull",
+        "ikwf_age": 11
+      },
+      {
+        "usaw_number": "2201396101",
+        "name": "Caysen Cicchetti",
         "ikwf_age": 11
       },
       {
@@ -28993,6 +29023,11 @@
     "sectional": "North",
     "athletes": [
       {
+        "usaw_number": "2606756301",
+        "name": "Clark Bush",
+        "ikwf_age": 11
+      },
+      {
         "usaw_number": "2610191401",
         "name": "Dixen Butler",
         "ikwf_age": 9
@@ -29582,11 +29617,6 @@
         "usaw_number": "2207551401",
         "name": "Nolan Smith",
         "ikwf_age": 13
-      },
-      {
-        "usaw_number": "2505384101",
-        "name": "Robert Springhorn III",
-        "ikwf_age": 10
       },
       {
         "usaw_number": "2603426101",
@@ -32938,6 +32968,11 @@
         "usaw_number": "2602968801",
         "name": "Will Macklin",
         "ikwf_age": 7
+      },
+      {
+        "usaw_number": "2413981601",
+        "name": "Parker McGlinn",
+        "ikwf_age": 14
       },
       {
         "usaw_number": "2501399801",
@@ -38141,6 +38176,11 @@
         "usaw_number": "2502044701",
         "name": "Adem Markov",
         "ikwf_age": 12
+      },
+      {
+        "usaw_number": "2615617101",
+        "name": "Sanjar Myrzaev",
+        "ikwf_age": 13
       },
       {
         "usaw_number": "2505880501",
@@ -43648,6 +43688,11 @@
         "ikwf_age": 13
       },
       {
+        "usaw_number": "2614526001",
+        "name": "Aksel George",
+        "ikwf_age": 11
+      },
+      {
         "usaw_number": "2508778001",
         "name": "Latimus Gomez",
         "ikwf_age": 13
@@ -44874,6 +44919,11 @@
         "usaw_number": "2605184201",
         "name": "James Keller",
         "ikwf_age": 11
+      },
+      {
+        "usaw_number": "2615567201",
+        "name": "Nolan Kelly",
+        "ikwf_age": 13
       },
       {
         "usaw_number": "2305516101",
@@ -46358,14 +46408,14 @@
     "sectional": "South",
     "athletes": [
       {
-        "usaw_number": "2610935101",
-        "name": "Payzlee Anderson",
-        "ikwf_age": 10
-      },
-      {
         "usaw_number": "2605455101",
         "name": "McKinlee Anderson",
         "ikwf_age": 7
+      },
+      {
+        "usaw_number": "2610935101",
+        "name": "Payzlee Anderson",
+        "ikwf_age": 10
       },
       {
         "usaw_number": "2403408801",
@@ -63300,6 +63350,11 @@
         "ikwf_age": 12
       },
       {
+        "usaw_number": "2213071601",
+        "name": "Coldyn Holba",
+        "ikwf_age": 14
+      },
+      {
         "usaw_number": "2213072601",
         "name": "Trecyn Holba",
         "ikwf_age": 9
@@ -66790,6 +66845,11 @@
         "usaw_number": "2605059401",
         "name": "Luke Nagel",
         "ikwf_age": 5
+      },
+      {
+        "usaw_number": "2615075201",
+        "name": "Oliver Nimmer",
+        "ikwf_age": 12
       },
       {
         "usaw_number": "2603796801",
@@ -70422,6 +70482,16 @@
         "ikwf_age": 10
       },
       {
+        "usaw_number": "1903628101",
+        "name": "Jase Lohmeyer",
+        "ikwf_age": 12
+      },
+      {
+        "usaw_number": "1903628001",
+        "name": "Jaxon Lohmeyer",
+        "ikwf_age": 12
+      },
+      {
         "usaw_number": "2504820201",
         "name": "Braxton Long",
         "ikwf_age": 8
@@ -70495,6 +70565,11 @@
         "usaw_number": "2004768501",
         "name": "Abram Schrand",
         "ikwf_age": 10
+      },
+      {
+        "usaw_number": "2503327001",
+        "name": "Beau Semenick",
+        "ikwf_age": 12
       },
       {
         "usaw_number": "2402889701",
@@ -72988,6 +73063,11 @@
         "ikwf_age": 9
       },
       {
+        "usaw_number": "2409716501",
+        "name": "Irving Hughes",
+        "ikwf_age": 14
+      },
+      {
         "usaw_number": "2406633401",
         "name": "Philip Ihnken",
         "ikwf_age": 7
@@ -73187,6 +73267,11 @@
         "usaw_number": "2105081401",
         "name": "Nox Steen",
         "ikwf_age": 8
+      },
+      {
+        "usaw_number": "2506272301",
+        "name": "Charlotte Strait",
+        "ikwf_age": 7
       },
       {
         "usaw_number": "2207545301",
@@ -73433,6 +73518,16 @@
         "usaw_number": "2405866801",
         "name": "Taylor Roose",
         "ikwf_age": 10
+      },
+      {
+        "usaw_number": "2615637501",
+        "name": "Oliver Ruhland",
+        "ikwf_age": 11
+      },
+      {
+        "usaw_number": "2615637401",
+        "name": "Violet Ruhland",
+        "ikwf_age": 7
       },
       {
         "usaw_number": "2205384801",
@@ -79638,6 +79733,11 @@
         "ikwf_age": 10
       },
       {
+        "usaw_number": "2502976301",
+        "name": "Olivia Ioerger",
+        "ikwf_age": 14
+      },
+      {
         "usaw_number": "2600700101",
         "name": "Jace Jones",
         "ikwf_age": 8
@@ -82946,6 +83046,11 @@
         "ikwf_age": 8
       },
       {
+        "usaw_number": "114612701",
+        "name": "Danny Huerta",
+        "ikwf_age": 15
+      },
+      {
         "usaw_number": "2313382001",
         "name": "Benjamin Illingworth",
         "ikwf_age": 13
@@ -83215,6 +83320,11 @@
         "usaw_number": "116424401",
         "name": "William Barry",
         "ikwf_age": 13
+      },
+      {
+        "usaw_number": "2207409001",
+        "name": "Cruz Bastic",
+        "ikwf_age": 10
       },
       {
         "usaw_number": "2414309201",
@@ -83860,6 +83970,11 @@
         "usaw_number": "2608019701",
         "name": "Emery Tiede",
         "ikwf_age": 12
+      },
+      {
+        "usaw_number": "2000246001",
+        "name": "Wyatt Tompkins",
+        "ikwf_age": 14
       },
       {
         "usaw_number": "2605365801",
@@ -85191,6 +85306,11 @@
         "ikwf_age": 14
       },
       {
+        "usaw_number": "2308141801",
+        "name": "Sebastian Nevarez",
+        "ikwf_age": 14
+      },
+      {
         "usaw_number": "2603449301",
         "name": "Lola Nichols",
         "ikwf_age": 6
@@ -86132,6 +86252,11 @@
       {
         "usaw_number": "2610699701",
         "name": "Enrique Deangulo-Hoover",
+        "ikwf_age": 11
+      },
+      {
+        "usaw_number": "2204726701",
+        "name": "Anthony Del Percio",
         "ikwf_age": 11
       },
       {
@@ -88203,6 +88328,11 @@
         "usaw_number": "2204005101",
         "name": "James DeWitte",
         "ikwf_age": 13
+      },
+      {
+        "usaw_number": "1905734201",
+        "name": "Devin DiSilvestro",
+        "ikwf_age": 14
       },
       {
         "usaw_number": "1904505601",
