@@ -325,7 +325,6 @@ def _lookup_athlete(
         )
 
     if len(matches) == 0:
-        breakpoint()
         raise RuntimeError("Could not match athlete", name, bracket, team)
 
     key = matches[0]

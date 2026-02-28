@@ -151,6 +151,25 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: | 2026-02-22 | Peoria Heights Minutemen Kids Tournament      | TrackWrestling |
 | :white_check_mark: | 2026-02-22 | Trico Pioneer Rumble                          | TrackWrestling |
 | :white_check_mark: | 2026-02-22 | Champaign Grappler III                        | USA Bracketing |
+|                    | 2026-02-28 | IKWF Central Chicago Regional-Chicago         | USA Bracketing |
+|                    | 2026-02-28 | IKWF Central Chicago Regional-Oak Lawn        | USA Bracketing |
+|                    | 2026-02-28 | IKWF North Chicago Regional-Chicago           | USA Bracketing |
+|                    | 2026-02-28 | IKWF South Chicago Regional-Joliet            | USA Bracketing |
+|                    | 2026-02-28 | IKWF South Chicago Regional-Wilmington        | USA Bracketing |
+|                    | 2026-02-28 | IKWF South Regional-Bethalto                  | USA Bracketing |
+|                    | 2026-02-28 | IKWF South Regional-Edwardsville              | USA Bracketing |
+|                    | 2026-02-28 | IKWF South Regional-Mt. Vernon                | USA Bracketing |
+|                    | 2026-03-01 | IKWF Central Regional-Mattoon                 | USA Bracketing |
+|                    | 2026-03-01 | IKWF Central Regional-Monticello              | USA Bracketing |
+|                    | 2026-03-01 | IKWF North Chicago Regional-Antioch           | USA Bracketing |
+|                    | 2026-03-01 | IKWF North Chicago Regional-Des Plaines       | USA Bracketing |
+|                    | 2026-03-01 | IKWF North Regional-Algonquin                 | USA Bracketing |
+|                    | 2026-03-01 | IKWF North Regional-Byron                     | USA Bracketing |
+|                    | 2026-03-01 | IKWF West Chicago Regional-Villa Park         | USA Bracketing |
+|                    | 2026-03-01 | IKWF West Chicago Regional-Wheaton            | USA Bracketing |
+|                    | 2026-03-01 | IKWF West Regional-LaSalle                    | USA Bracketing |
+|                    | 2026-03-01 | IKWF West Regional-Macomb                     | USA Bracketing |
+|                    | 2026-03-01 | IKWF West Regional-Morton                     | USA Bracketing |
 
 ## Data pipeline
 
