@@ -192,6 +192,8 @@ uv run python -m entrypoints.regional_weights    # Produces `_parsed-data/region
 uv run python -m entrypoints.regional_seeding \  # Produces per-regional sorted + head-to-heads
   --entries-filename ./weighed-in-entries.csv \
   --seeding-filename ./weight-classes.xlsx
+
+uv run python -m entrypoints.state_preview_json  # Produces `_parsed-data/2026-state-preview.json`
 ```
 
 [1]: https://www.ikwf.org/
