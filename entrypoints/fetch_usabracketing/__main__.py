@@ -10,11 +10,14 @@ _ROOT = _HERE.parent.parent
 def _fetch_event_rounds(
     path: pathlib.Path, event: bracket_util.Event, login_info: usabracketing.LoginInfo
 ) -> bracket_util.FetchedEvent:
+    fetched_event: bracket_util.FetchedEvent | None = None
     if path.exists():
         with open(path, "rb") as file_obj:
             as_json = file_obj.read()
 
-        return bracket_util.FetchedEvent.model_validate_json(as_json)
+        fetched_event = bracket_util.FetchedEvent.model_validate_json(as_json)
+        if fetched_event.match_html:
+            return fetched_event
 
     print(f"Fetching rounds for: {event.name} ...")
     rounds_html = usabracketing.fetch_tournament_rounds(event, login_info)
@@ -22,14 +25,17 @@ def _fetch_event_rounds(
     if not rounds_html:
         raise RuntimeError("Tournament has no rounds", event.name)
 
-    fetched_event = bracket_util.FetchedEvent(
-        name=event.name,
-        source="usabracketing",
-        start_date=event.start_date,
-        end_date=event.end_date,
-        match_html=rounds_html,
-        weights_html={},
-    )
+    if fetched_event is None:
+        fetched_event = bracket_util.FetchedEvent(
+            name=event.name,
+            source="usabracketing",
+            start_date=event.start_date,
+            end_date=event.end_date,
+            match_html={},
+            weights_html={},
+        )
+
+    fetched_event.match_html = rounds_html
     return fetched_event
 
 
