@@ -151,14 +151,14 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: | 2026-02-22 | Peoria Heights Minutemen Kids Tournament      | TrackWrestling |
 | :white_check_mark: | 2026-02-22 | Trico Pioneer Rumble                          | TrackWrestling |
 | :white_check_mark: | 2026-02-22 | Champaign Grappler III                        | USA Bracketing |
-|                    | 2026-02-28 | IKWF Central Chicago Regional-Chicago         | USA Bracketing |
-|                    | 2026-02-28 | IKWF Central Chicago Regional-Oak Lawn        | USA Bracketing |
-|                    | 2026-02-28 | IKWF North Chicago Regional-Chicago           | USA Bracketing |
-|                    | 2026-02-28 | IKWF South Chicago Regional-Joliet            | USA Bracketing |
-|                    | 2026-02-28 | IKWF South Chicago Regional-Wilmington        | USA Bracketing |
-|                    | 2026-02-28 | IKWF South Regional-Bethalto                  | USA Bracketing |
-|                    | 2026-02-28 | IKWF South Regional-Edwardsville              | USA Bracketing |
-|                    | 2026-02-28 | IKWF South Regional-Mt. Vernon                | USA Bracketing |
+| :white_check_mark: | 2026-02-28 | IKWF Central Chicago Regional-Chicago         | USA Bracketing |
+| :white_check_mark: | 2026-02-28 | IKWF Central Chicago Regional-Oak Lawn        | USA Bracketing |
+| :white_check_mark: | 2026-02-28 | IKWF North Chicago Regional-Chicago           | USA Bracketing |
+| :white_check_mark: | 2026-02-28 | IKWF South Chicago Regional-Joliet            | USA Bracketing |
+| :white_check_mark: | 2026-02-28 | IKWF South Chicago Regional-Wilmington        | USA Bracketing |
+| :white_check_mark: | 2026-02-28 | IKWF South Regional-Bethalto                  | USA Bracketing |
+| :white_check_mark: | 2026-02-28 | IKWF South Regional-Edwardsville              | USA Bracketing |
+| :white_check_mark: | 2026-02-28 | IKWF South Regional-Mt. Vernon                | USA Bracketing |
 |                    | 2026-03-01 | IKWF Central Regional-Mattoon                 | USA Bracketing |
 |                    | 2026-03-01 | IKWF Central Regional-Monticello              | USA Bracketing |
 |                    | 2026-03-01 | IKWF North Chicago Regional-Antioch           | USA Bracketing |
