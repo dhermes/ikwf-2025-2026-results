@@ -284,8 +284,6 @@ def _lookup_athlete(
     team: str,
     mapped_athletes: _MappedAthletes,
 ) -> float | None:
-    # Boys Intermediate 74-81.9
-    # El Paso Gridley Youth Wrestling Club
     if name == "" and team == "":
         return None
 

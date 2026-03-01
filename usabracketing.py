@@ -27,6 +27,7 @@ _IGNORE_SEARCH_RESULT = "2026 USA Wrestling Kids Folkstyle National Championship
 _TITLE_MARGIN_LEFT = "margin-left:0px"
 _WRESTLER_MARGIN_LEFT = "margin-left:20px"
 _MATCH_MARGIN_LEFT = "margin-left:40px"
+_ALLOWED_TEAM_COMMA = ("Impact Wrestling Academy, LLC",)
 _ALLOWED_TEAM_EXTRA = (
     "IA",
     "IL - Male",
@@ -1282,6 +1283,9 @@ def _parse_weight_value(weight_str: str) -> float | None:
 
 
 def _parse_team_full(team_full: str) -> str:
+    if team_full in _ALLOWED_TEAM_COMMA:
+        return team_full
+
     parts = team_full.rsplit(", ", 1)
     if len(parts) == 1:
         return team_full
