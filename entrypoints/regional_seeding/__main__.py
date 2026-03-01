@@ -222,7 +222,10 @@ def _make_csv(weight_class: _WeightClass) -> str:
     )
     athletes = _sort_by_record(weight_class.athletes)
     for athlete in athletes:
-        winning_percentage = athlete.wins / (athlete.wins + athlete.losses)
+        if athlete.wins + athlete.losses == 0:
+            winning_percentage = 0.0
+        else:
+            winning_percentage = athlete.wins / (athlete.wins + athlete.losses)
 
         row = [
             athlete.name,
