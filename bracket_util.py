@@ -471,7 +471,7 @@ class AthleteWeight(_ForbidExtra):
 
 def weights_for_division(division: Division) -> tuple[int, ...]:
     if division == "bantam":
-        return (3, 46, 49, 52, 55, 58, 62, 66, 70, 76, 84, 95, 120)
+        return (43, 46, 49, 52, 55, 58, 62, 66, 70, 76, 84, 95, 120)
 
     if division == "intermediate":
         return (55, 59, 64, 69, 74, 79, 84, 90, 98, 108, 122, 148, 177)
