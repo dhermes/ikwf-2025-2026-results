@@ -1,4 +1,216 @@
 Division,Weight,Name,Club,USAW Number
+girls_bantam,45,Genesis Quintana,Gomez Wrestling RTC,2502501901
+girls_bantam,45,Marah Mayfield,Toss Em Up Wrestling Academy,2506416801
+girls_bantam,45,Harper Stephens,Cutlass Wrestling Club,2507456201
+girls_bantam,50,Elianna Drabek,Fox Lake Wrestling Club,2511996201
+girls_bantam,55,Quinn Ridley,Antioch Predators Wrestling Club,2504956501
+girls_bantam,55,Olivia Anderson,Antioch Predators Wrestling Club,2407718701
+girls_bantam,55,Raegan Lessner,Fox Lake Wrestling Club,2404627201
+girls_bantam,55,Lucia Sherko,Fox Lake Wrestling Club,2503900701
+girls_bantam,61,Daisy Giannini,Lake Zurich Cubs Wrestling Club,2613745801
+girls_bantam,61,Alexxia Gomez,Round Lake Jr. Panthers Wrestling Club,2404815601
+girls_bantam,61,Nami Rodriguez,Bulldog Elite Wrestling Club,2613437301
+girls_bantam,74,Lady Harris,Toss Em Up Wrestling Academy,2506904701
+girls_bantam,74,Evalina Dax,Grayslake Youth Wrestling Club,2402501901
+girls_bantam,85,Mariella Howard,Toss Em Up Wrestling Academy,2613149101
+girls_bantam,85,Keaghan Delaney,Cutlass Wrestling Club,2400357401
+girls_bantam,85,Tiernan Potempa,Lake Zurich Cubs Wrestling Club,2406057501
+girls_bantam,95,Riley Duran,Fox Lake Wrestling Club,2605703901
+bantam,43,Alexander Anderson,Antioch Predators Wrestling Club,2407315301
+bantam,43,Eli Ray,Wauconda Wrestling Club,2505017001
+bantam,43,Phinneas Kloepfer,Round Lake Jr. Panthers Wrestling Club,2508763301
+bantam,46,Thomas Frick,Lake Zurich Cubs Wrestling Club,2402130701
+bantam,46,Leyton Wicinski,Fox Lake Wrestling Club,2401565501
+bantam,46,Ashton Hirsch,Lake Zurich Cubs Wrestling Club,2500726901
+bantam,46,Finn Clarke,Antioch Predators Wrestling Club,2419287601
+bantam,49,Levi Lynch,Antioch Predators Wrestling Club,2404790501
+bantam,49,Xander Aufmann,Lake Zurich Cubs Wrestling Club,2403739401
+bantam,49,Tommy Hohenadel,Lake Zurich Cubs Wrestling Club,2404232101
+bantam,49,Dylan Thomas,Built By Brunson Wrestling,2302034201
+bantam,52,Connor Check,Lake Zurich Cubs Wrestling Club,2500469701
+bantam,52,David Kalmanovsky,Built By Brunson Wrestling,2407483201
+bantam,52,Jionni Hernandez,Bulldog Elite Wrestling Club,2601036101
+bantam,52,Alessio Palandri,Built By Brunson Wrestling,2601288901
+bantam,55,Logan Lynch,Antioch Predators Wrestling Club,2504194401
+bantam,55,Nickolas Zielinski,Lake Zurich Cubs Wrestling Club,2609619701
+bantam,55,Cooper Cybul,Antioch Predators Wrestling Club,2202472801
+bantam,55,Axel Ortiz,Bulldog Elite Wrestling Club,2307486201
+bantam,58,Jack McDonough,Lake Zurich Cubs Wrestling Club,2302725801
+bantam,58,Jack Nelson,Lake Zurich Cubs Wrestling Club,2201811001
+bantam,58,Harrison Lund,Lake Zurich Cubs Wrestling Club,2500523401
+bantam,58,Parker Brzezinski,Grayslake Youth Wrestling Club,2503296601
+bantam,62,Cody Bergquist,Built By Brunson Wrestling,2315039201
+bantam,62,Archer Pawielski,Lake Zurich Cubs Wrestling Club,2303112001
+bantam,62,Connor Arden,Antioch Predators Wrestling Club,2607432401
+bantam,62,John Simon,Lake Zurich Cubs Wrestling Club,2608858501
+bantam,66,Corbin Spiniolas,Fox Lake Wrestling Club,2205380501
+bantam,66,Alexander Vingras,Gomez Wrestling RTC,2408004001
+bantam,66,Graham Jacobs,Lake Zurich Cubs Wrestling Club,2402878501
+bantam,66,Jack Corley,Gomez Wrestling RTC,2409270101
+bantam,70,Tiziano Palandri,Built By Brunson Wrestling,2311491801
+bantam,70,Parker Estrada,Antioch Predators Wrestling Club,2302033501
+bantam,70,Jaxson Christian-Dirks,Antioch Predators Wrestling Club,2605799601
+bantam,70,Colton Campese,Antioch Predators Wrestling Club,2402208701
+bantam,76,Abram Glauser,Fox Lake Wrestling Club,2203838101
+bantam,76,Elijah James,Fox Lake Wrestling Club,2405682901
+bantam,76,Syncere Spivy,Toss Em Up Wrestling Academy,2415065001
+bantam,76,Conor Ziegler,Round Lake Jr. Panthers Wrestling Club,2519856101
+bantam,84,Owen Nicoline,Fox Lake Wrestling Club,2404426801
+bantam,84,Jaxon Hernandez,Cutlass Wrestling Club,2507456501
+bantam,95,Maxwell Gray,Lake Zurich Cubs Wrestling Club,2408033801
+bantam,95,Adolfo Paniagua,Round Lake Jr. Panthers Wrestling Club,2505537701
+bantam,95,Jackson Dulceak,Gomez Wrestling RTC,2406339801
+bantam,120,Abraham Green,Grayslake Youth Wrestling Club,2306009801
+girls_intermediate,62,Lucy Carson,Antioch Predators Wrestling Club,2002564101
+girls_intermediate,62,Taylor Wicinski,Fox Lake Wrestling Club,2511021401
+girls_intermediate,67,Emma Fish,Grayslake Youth Wrestling Club,2205134201
+girls_intermediate,67,Kehlani Sese,Gomez Wrestling RTC,2408605901
+girls_intermediate,67,Ava Neitzke,Bloomingdale Bears Wrestling Club,2613899001
+girls_intermediate,67,Juliana Orozco,Stateline Stingers Wrestling Club,2502345101
+girls_intermediate,72,Anastasia Morales,Antioch Predators Wrestling Club,2605358801
+girls_intermediate,72,Aleeyah Drabek,Fox Lake Wrestling Club,2606939401
+girls_intermediate,72,Alese Navarrete,Round Lake Jr. Panthers Wrestling Club,2300657001
+girls_intermediate,72,Everly Malevany,Antioch Predators Wrestling Club,2605049301
+girls_intermediate,77,Savannah Paynes,Built By Brunson Wrestling,2305023901
+girls_intermediate,77,Taylyn Caces,Antioch Predators Wrestling Club,2300656601
+girls_intermediate,77,Mia Bovill,Fox Lake Wrestling Club,2609837401
+girls_intermediate,77,Azalea De La Torre,Fox Lake Wrestling Club,2505829101
+girls_intermediate,82,TrinityGrace Larsen,Fox Lake Wrestling Club,2404331501
+girls_intermediate,88,Kassidy Sese,Gomez Wrestling RTC,2408581801
+girls_intermediate,88,Jocelyn Zicatl,Bulldog Elite Wrestling Club,2305022601
+girls_intermediate,95,Charlize Cartwright,Built By Brunson Wrestling,2305395601
+girls_intermediate,95,Aubrey Nicoline,Fox Lake Wrestling Club,2609979101
+girls_intermediate,135,Eva Malevany,Antioch Predators Wrestling Club,2605049401
+girls_intermediate,135,Adele Vazquez,Toss Em Up Wrestling Academy,2314629501
+intermediate,55,Adam Long,Wauconda Wrestling Club,2203603201
+intermediate,59,Nolan Rodriguez,Gomez Wrestling RTC,2207546501
+intermediate,59,Esteban Romani,Built By Brunson Wrestling,2305120101
+intermediate,59,Billy Hohenadel,Lake Zurich Cubs Wrestling Club,2404231801
+intermediate,59,Noah Dillen,Antioch Predators Wrestling Club,2200533501
+intermediate,64,Brody Czarnecki,Lake Zurich Cubs Wrestling Club,2200788101
+intermediate,64,Samuel Myatt,Fox Lake Wrestling Club,2100465701
+intermediate,64,Anthony DeMarco,Built By Brunson Wrestling,2205134001
+intermediate,64,Porter Kleinhenz,Lake Zurich Cubs Wrestling Club,2103717701
+intermediate,69,Justin-Carter Jones,Toss Em Up Wrestling Academy,2000215401
+intermediate,69,Antonio Franco,Gomez Wrestling RTC,2208556801
+intermediate,69,Alexander Zielinski,Lake Zurich Cubs Wrestling Club,2408138001
+intermediate,69,Ryan Bell,Gomez Wrestling RTC,2505841301
+intermediate,74,Milo Davis,Gomez Wrestling RTC,2208479501
+intermediate,74,Raiden Robertson,Toss Em Up Wrestling Academy,2001520301
+intermediate,74,Camden Neill,Lake Zurich Cubs Wrestling Club,2302945301
+intermediate,74,Gabriel Pozniak,Built By Brunson Wrestling,2509262101
+intermediate,79,Hrystoffer Radev,Built By Brunson Wrestling,2412241801
+intermediate,79,Isaac Haddad,Lake Zurich Cubs Wrestling Club,2201025901
+intermediate,79,Nolan Camarena,Wauconda Wrestling Club,2405295901
+intermediate,79,Sullivan Stangel,Grayslake Youth Wrestling Club,2504803401
+intermediate,84,David Harris,Toss Em Up Wrestling Academy,2401427701
+intermediate,84,Declan Potempa,Lake Zurich Cubs Wrestling Club,2005628701
+intermediate,84,Mason Potts,Fox Lake Wrestling Club,2301613401
+intermediate,84,Chase Perry,Fox Lake Wrestling Club,2301673101
+intermediate,90,Alexander Cid,Toss Em Up Wrestling Academy,2200212901
+intermediate,90,Matthew Robbins,Built By Brunson Wrestling,2307571701
+intermediate,98,Jake Jerik,Antioch Predators Wrestling Club,2404033601
+intermediate,98,Brennan Koehl,Grayslake Youth Wrestling Club,2205134901
+intermediate,108,Jackson Mateo,Toss Em Up Wrestling Academy,2302228601
+intermediate,108,Ricky DiCristina III,Fox Lake Wrestling Club,2608484401
+intermediate,122,Logan Hruska,Antioch Predators Wrestling Club,2002564501
+intermediate,122,Caden Lesniak,Fox Lake Wrestling Club,2006687401
+intermediate,122,Logan Russell,Fox Lake Wrestling Club,2607455201
+intermediate,122,Christian Cotton,Antioch Predators Wrestling Club,2603071101
+intermediate,148,Axel Ramos,Toss Em Up Wrestling Academy,2000639601
+intermediate,148,Iremide Omotowon,Antioch Predators Wrestling Club,2600962801
+intermediate,148,Nick Turacek,Bloomingdale Bears Wrestling Club,2613794701
+intermediate,148,Omar Bullard,Toss Em Up Wrestling Academy,2606821901
+intermediate,177,Hudson Silvetti,Grayslake Youth Wrestling Club,2407893701
+intermediate,177,Juan Jose Rodriguez,Bulldog Elite Wrestling Club,2613437101
+girls_novice,74,Carrie Larsen,Fox Lake Wrestling Club,2405522401
+girls_novice,74,Olivia Clarke,Antioch Predators Wrestling Club,2603388901
+girls_novice,85,Lila Carson,Antioch Predators Wrestling Club,1804657001
+girls_novice,85,Raegan Sherko,Fox Lake Wrestling Club,2503900301
+girls_novice,90,Ariel Hinojosa,Antioch Predators Wrestling Club,2005063401
+girls_novice,96,Vada Jo Riley,Antioch Predators Wrestling Club,2404033801
+girls_novice,96,Merida Paddock,Antioch Predators Wrestling Club,2317177801
+girls_novice,96,Delaney Cox,Grayslake Youth Wrestling Club,2611234001
+girls_novice,96,Jayne Malevany,Antioch Predators Wrestling Club,2605049501
+girls_novice,102,Eleanora Hay,Lake Zurich Cubs Wrestling Club,2608606801
+girls_novice,108,Olivia Hruska,Antioch Predators Wrestling Club,2002564601
+girls_novice,115,Audrina Gomez,Round Lake Jr. Panthers Wrestling Club,2304087301
+girls_novice,125,Annebelle Duller,Stateline Stingers Wrestling Club,1903137201
+girls_novice,140,Elly Kloepfer,Round Lake Jr. Panthers Wrestling Club,2408930501
+novice,69,Eliott Ouimette,Toss Em Up Wrestling Academy,2305861101
+novice,69,Liam Figueroa,Round Lake Jr. Panthers Wrestling Club,2406729401
+novice,74,Emiliano Cid,Toss Em Up Wrestling Academy,1911523301
+novice,74,Amador Estrada Jr,Fox Lake Wrestling Club,2302850801
+novice,80,Jameson Sullivan,Built By Brunson Wrestling,1903138801
+novice,80,Azayah Garcia,Antioch Predators Wrestling Club,2504070101
+novice,80,Ezekiel Martinez,Toss Em Up Wrestling Academy,2305063201
+novice,80,Lucas Velasquez,Built By Brunson Wrestling,2507367801
+novice,86,Iaromir Zhukovskii,Built By Brunson Wrestling,2300447401
+novice,86,Malik Mayfield,Toss Em Up Wrestling Academy,2205135201
+novice,86,Baiel Suiunbekov,Built By Brunson Wrestling,2314908801
+novice,86,Giovanni Rocco,Gomez Wrestling RTC,2005595301
+novice,93,Vladimir Dvoryannikov,Toss Em Up Wrestling Academy,2213431201
+novice,100,Eddie O'Hagan,Round Lake Jr. Panthers Wrestling Club,2304100101
+novice,100,Matthew McDonough,Lake Zurich Cubs Wrestling Club,2302726001
+novice,108,Arian Glauser,Fox Lake Wrestling Club,1904903101
+novice,108,Kristopher Mallinder,Bloomingdale Bears Wrestling Club,2003492001
+novice,108,Jaxon Breslaw,Lake Zurich Cubs Wrestling Club,2200820001
+novice,108,Franciszek Strozak,Lake Zurich Cubs Wrestling Club,2604802901
+novice,116,Salim Fakhoury,Built By Brunson Wrestling,2408815001
+novice,116,Bryce Hoffman,Built By Brunson Wrestling,2004663701
+novice,116,Terrel Hinton,Toss Em Up Wrestling Academy,2204170601
+novice,116,Daemyn Kennedy,Fox Lake Wrestling Club,2002185801
+novice,125,Liam Potempa,Lake Zurich Cubs Wrestling Club,2005628801
+novice,125,Desmond Villa,Round Lake Jr. Panthers Wrestling Club,2304084601
+novice,125,Abraham Figueroa,Round Lake Jr. Panthers Wrestling Club,2406729101
+novice,134,Liam Soutar,Wauconda Wrestling Club,1904547601
+novice,134,Rennan David,Grayslake Youth Wrestling Club,2608373401
+novice,154,Thomas Gerstner,Fox Lake Wrestling Club,2611476001
+novice,154,Avery De La Torre,Fox Lake Wrestling Club,2003342101
+girls_senior,80,Gianna DeMarco,Built By Brunson Wrestling,2003341901
+girls_senior,90,Bryn Ouimette,Toss Em Up Wrestling Academy,2315329601
+girls_senior,95,Molly Glowacki,Antioch Predators Wrestling Club,2302033701
+girls_senior,95,Allison Cazares,Toss Em Up Wrestling Academy,2412939001
+girls_senior,100,Amelia Navarrete,Round Lake Jr. Panthers Wrestling Club,2507702001
+girls_senior,105,Dariana Zicatl,Bulldog Elite Wrestling Club,2406672701
+girls_senior,110,Reese Bilbrey,Fox Lake Wrestling Club,2404224101
+girls_senior,110,Alina McLain,Antioch Predators Wrestling Club,2610203701
+girls_senior,120,Abby Glowacki,Antioch Predators Wrestling Club,1903137601
+girls_senior,120,Marciella Hernandez,Toss Em Up Wrestling Academy,115747901
+girls_senior,130,Sofia Hinojosa,Antioch Predators Wrestling Club,1801185401
+girls_senior,135,Fiona Hay,Lake Zurich Cubs Wrestling Club,2404842201
+girls_senior,135,Brynn Noeller,Fox Lake Wrestling Club,2606802501
+girls_senior,145,Zoe Malamis,Gomez Wrestling RTC,2404889801
+girls_senior,185,Aliana Bonilla,Gomez Wrestling RTC,2417403601
+girls_senior,185,Cadence Loria,Bulldog Elite Wrestling Club,2614874401
+senior,74,Carter Halloran,Grayslake Youth Wrestling Club,2004194901
+senior,74,darnell Johnson jr,Gomez Wrestling RTC,2608472501
+senior,84,Eli Schuck,Wauconda Wrestling Club,2004202801
+senior,90,Grady Glowacki,Antioch Predators Wrestling Club,1804657401
+senior,96,Lucas Dillen,Antioch Predators Wrestling Club,1912391901
+senior,103,Jonathan Gomez,Gomez Wrestling RTC,2608337701
+senior,103,Brentley Larsen,Fox Lake Wrestling Club,1902769601
+senior,103,Ulysses Prevoznak,Grayslake Youth Wrestling Club,2602810701
+senior,110,Gaelle Cid,Toss Em Up Wrestling Academy,1911523201
+senior,110,William Fielder,Fox Lake Wrestling Club,2003277101
+senior,126,Graeme Neill,Lake Zurich Cubs Wrestling Club,2302943501
+senior,126,Thomas Robbins,Built By Brunson Wrestling,2306508701
+senior,135,Aaden Glauser,Fox Lake Wrestling Club,116012001
+senior,135,Cage Rexford,Fox Lake Wrestling Club,2005984701
+senior,135,Noah Neals,Toss Em Up Wrestling Academy,2609360301
+senior,135,Thomas Fish,Grayslake Youth Wrestling Club,2205134301
+senior,144,Frank Olsen,Built By Brunson Wrestling,2005618001
+senior,144,Nurel Suiunbekov,Built By Brunson Wrestling,2314908601
+senior,144,Donovan Kirk,Grayslake Youth Wrestling Club,2607640501
+senior,154,Owen Catalano,Fox Lake Wrestling Club,111958301
+senior,154,Elmyrza Sambarbekov,Built By Brunson Wrestling,2511627001
+senior,164,Brody Skwerski,Antioch Predators Wrestling Club,2504192801
+senior,164,Caiden Williams,Toss Em Up Wrestling Academy,2201294401
+senior,164,Arthur Silva,Wauconda Wrestling Club,2500649101
+senior,176,Jeremiah Neals,Toss Em Up Wrestling Academy,2519138301
+senior,176,Oscar Bullard,Toss Em Up Wrestling Academy,2606816301
+senior,215,Travis Hinton Jr,Toss Em Up Wrestling Academy,2204169901
+senior,215,Robert Zink,Grayslake Youth Wrestling Club,2606528401
 girls_bantam,45,Natalie Moore,Benton Wrestling Club,2612643901
 girls_bantam,50,Ayah Garrett,Gladiator Elite Wrestling Club,2406796301
 girls_bantam,50,Paisleigh Smith,Sparta Junior Bulldogs Wrestling Club,2502716501
@@ -251,6 +463,1456 @@ senior,215,Bryer Zellars,Olney Cubs Wrestling Club,2205872601
 senior,275,Owen Wille,Olney Cubs Wrestling Club,2407495901
 senior,275,Kaleb Zapor,Junior Maroons WC,2609681101
 senior,275,Braxton Shuler,Centralia Wrestling Club,2603591001
+girls_bantam,45,Journee Bybee,DC Wrestling Club,2403827901
+girls_bantam,45,Payton Willis,TJ Trained Wrestling,2500591801
+girls_bantam,45,Harper Blayney,DC Wrestling Club,2501861101
+girls_bantam,45,Aileen Benedict,DC Wrestling Club,2505055401
+girls_bantam,50,Georgia Blayney,DC Wrestling Club,2306368001
+girls_bantam,50,Ashtynn Gumm,East Peoria River Bandits Wrestling,2502475501
+girls_bantam,55,Zoey Willis,TJ Trained Wrestling,2403922801
+girls_bantam,55,Raylynn Bloomgren,DC Wrestling Club,2204285601
+girls_bantam,55,Willow Durst,Metamora Kids Wrestling Club,2305331801
+girls_bantam,55,Jane Kerian,DC Wrestling Club,2604857301
+girls_bantam,61,Timberlyn Voss,DC Wrestling Club,2309626001
+girls_bantam,67,Nevaeh Voss,DC Wrestling Club,2309625101
+girls_bantam,67,Kennedy Meier,Streator Wrestling Club,2308622201
+girls_bantam,115,Pyper Antolik,Streator Wrestling Club,2304798101
+bantam,43,Scotlynn Hartmann,Tiger Town Tanglers Wrestling Club,2403665401
+bantam,43,Castyn Hill,East Peoria River Bandits Wrestling,2403763301
+bantam,46,Zeppelin Pfanz,TJ Trained Wrestling,2504663201
+bantam,46,Luca Barker,Peoria Razorbacks Wrestling Club,2608201901
+bantam,46,Kainen Baker,East Peoria River Bandits Wrestling,2601861601
+bantam,49,Jace Jones,TJ Trained Wrestling,2600700101
+bantam,49,Brodie Vanderheydt,309 Wrestling,2502125401
+bantam,49,Levi Schultz,Pekin Boys & Girls Club WC,2502012101
+bantam,49,Noah Brewer,Peoria Razorbacks Wrestling Club,2600371501
+bantam,52,Ellis Heath,DC Wrestling Club,2503853801
+bantam,52,Owen Sinks,TJ Trained Wrestling,2403201901
+bantam,52,Gabriel Morthland,Morton Youth Wrestling Club,2405978001
+bantam,52,Carson Brown,Peoria Razorbacks Wrestling Club,2406959701
+bantam,55,Henry Dippold,Irish Wrestling Club,2507050101
+bantam,55,Brixton Cade,TJ Trained Wrestling,2508467901
+bantam,55,Kellen Dill,DC Wrestling Club,2402333201
+bantam,55,Jackson Shadday,Timber Wolves Wrestling Club,2504186901
+bantam,58,Leo Brolley,TJ Trained Wrestling,2405741501
+bantam,58,Ethan Massa,Eureka Wrestling Club,2506272701
+bantam,58,Kasyn Duncan,309 Wrestling,2405529801
+bantam,62,Atticus Whittington,TJ Trained Wrestling,2403201601
+bantam,62,McGuire Zobrist,Morton Youth Wrestling Club,2605656701
+bantam,62,Kylan Royer,Eureka Wrestling Club,2604185901
+bantam,62,Gable Ladd,East Peoria River Bandits Wrestling,2406899801
+bantam,66,Castiel Trumpy,TJ Trained Wrestling,2304797901
+bantam,66,Julian Mahrt,Peoria Razorbacks Wrestling Club,2406633501
+bantam,66,Ezra Greene,TJ Trained Wrestling,2507825901
+bantam,66,Bo Burk,Irish Wrestling Club,2510783801
+bantam,70,Lucas Cole,Irish Wrestling Club,2407716701
+bantam,70,Nolan Payleitner,Irish Wrestling Club,2409716601
+bantam,70,Titan McCoy,DC Wrestling Club,2605868401
+bantam,70,Archie Schepler,Morton Youth Wrestling Club,2302858401
+bantam,76,Colton Bruess,TJ Trained Wrestling,2406312801
+bantam,76,Cael Anfinson,TJ Trained Wrestling,2308084001
+bantam,76,Weston Mathesius,Tiger Town Tanglers Wrestling Club,2408696201
+bantam,76,Zander Weber,Irish Wrestling Club,2205388101
+bantam,84,Leo Brewer,Peoria Razorbacks Wrestling Club,2406633001
+bantam,84,Jakees Creasy,TJ Trained Wrestling,2307854901
+bantam,84,Ezra Raymer,TJ Trained Wrestling,2604226801
+bantam,84,Nolan Miller,East Peoria River Bandits Wrestling,2507401101
+bantam,95,Alijah Brooks,Peoria Razorbacks Wrestling Club,2307854701
+bantam,95,Zach Craig Jr.,Peoria Razorbacks Wrestling Club,2608202301
+bantam,120,Quinnton Williams,TJ Trained Wrestling,2306566601
+bantam,120,Kaspius Wilson,Timber Wolves Wrestling Club,2506853001
+girls_intermediate,53,Adlee Frietsch,Limestone Wrestling Club,2406955901
+girls_intermediate,62,Grace Sinks,TJ Trained Wrestling,2307880901
+girls_intermediate,62,Jessie Skelton,Eureka Wrestling Club,2403413401
+girls_intermediate,62,Lilly-Jean Huff,Metamora Kids Wrestling Club,2405976501
+girls_intermediate,72,Avery Wallis,East Peoria River Bandits Wrestling,2604099401
+girls_intermediate,72,Bristol Aeschliman,Metamora Kids Wrestling Club,2305330601
+girls_intermediate,72,Anna Randall,Irish Wrestling Club,2606647301
+girls_intermediate,77,Josephine Gashaw,Morton Youth Wrestling Club,2504081801
+girls_intermediate,82,Roxanna Listwan,DC Wrestling Club,2303401001
+girls_intermediate,82,Ripley Cardin,Metamora Kids Wrestling Club,2305331301
+girls_intermediate,88,Marley Gray,Peoria Razorbacks Wrestling Club,2506169501
+girls_intermediate,88,Lillian Dorsam,Streator Wrestling Club,2506703701
+girls_intermediate,95,Kristen Howard,Streator Wrestling Club,2606900001
+girls_intermediate,95,Hazele Legg,East Peoria River Bandits Wrestling,2504291401
+girls_intermediate,115,Jazlyn Manning,Irish Wrestling Club,2205387401
+girls_intermediate,115,Brielle Gumm,East Peoria River Bandits Wrestling,2404911001
+girls_intermediate,115,Layla Rucinski,Tiger Town Tanglers Wrestling Club,2303315401
+girls_intermediate,115,Lilah Springer,Pekin Boys & Girls Club WC,2502733801
+intermediate,55,Sawyer Duncan,309 Wrestling,2405530001
+intermediate,55,Titan Moore,Pekin Boys & Girls Club WC,2204186901
+intermediate,59,Matheson Corbitt,TJ Trained Wrestling,2402581801
+intermediate,59,Ezra Brown,Morton Youth Wrestling Club,2305157601
+intermediate,59,Rhett Carroll,TJ Trained Wrestling,2406280701
+intermediate,59,Carsen Schlosser,Timber Wolves Wrestling Club,2506852601
+intermediate,64,Tagg Hefner,TJ Trained Wrestling,2205011201
+intermediate,64,Jeremy Creasy,TJ Trained Wrestling,2305158101
+intermediate,64,Zayden Zolicoffer,Peoria Razorbacks Wrestling Club,2608171801
+intermediate,64,Nikola Everly,Pekin Boys & Girls Club WC,2204186701
+intermediate,69,Isaiah Carroll,TJ Trained Wrestling,2404698501
+intermediate,69,Weston Blayney,DC Wrestling Club,2202615801
+intermediate,69,Lennox Durst,Metamora Kids Wrestling Club,2204729601
+intermediate,69,Blaze Eakins,Timber Wolves Wrestling Club,2005637001
+intermediate,74,Reid Dall,Tiger Town Tanglers Wrestling Club,2204185701
+intermediate,74,Harrison Crawford,TJ Trained Wrestling,2305331401
+intermediate,74,Colton Bessler,Limestone Wrestling Club,2507464501
+intermediate,74,Quintin Lange,Metamora Kids Wrestling Club,2204730301
+intermediate,79,Traxton Renfroe,East Peoria River Bandits Wrestling,2207920101
+intermediate,79,Walker Almasy,TJ Trained Wrestling,2309433701
+intermediate,79,Ezra Wettstein,TJ Trained Wrestling,2304472801
+intermediate,79,Blaize Missel,Streator Wrestling Club,2306157101
+intermediate,84,Easton Olson,Tiger Town Tanglers Wrestling Club,2201353501
+intermediate,84,Cameron Tutko,Streator Wrestling Club,2307295601
+intermediate,84,Axel Standley,Big Chief Wrestling Club,2307291601
+intermediate,84,Emmett Berlin,Tiger Town Tanglers Wrestling Club,2205146301
+intermediate,90,Peyton Ladd,East Peoria River Bandits Wrestling,2207136301
+intermediate,90,Rowen Trier,DC Wrestling Club,2605800801
+intermediate,90,Carlton Vaughn,East Peoria River Bandits Wrestling,2407084901
+intermediate,90,Kaleb Meier,Streator Wrestling Club,2305741101
+intermediate,98,Edward Schlueter,East Peoria River Bandits Wrestling,2602624601
+intermediate,98,Tyler Goble,East Peoria River Bandits Wrestling,2305758801
+intermediate,98,Eris Bybee,DC Wrestling Club,2303051101
+intermediate,98,Lucas Matlock,DC Wrestling Club,2501877001
+intermediate,108,Koen Allen,DC Wrestling Club,2304133101
+intermediate,108,Tillman mccoy,DC Wrestling Club,2605868101
+intermediate,122,Hunter Voss,DC Wrestling Club,2200935901
+intermediate,122,Tucker Zick,Timber Wolves Wrestling Club,2407633001
+intermediate,122,Duke Burk,Irish Wrestling Club,2607317401
+intermediate,122,Jaxon Weiler-Ziegler,DC Wrestling Club,2505825801
+intermediate,148,Colton Boland,Limestone Wrestling Club,2205386301
+intermediate,148,Donovan Barker,Peoria Razorbacks Wrestling Club,2608201801
+intermediate,148,Micah Feldhaus,East Peoria River Bandits Wrestling,2503530001
+intermediate,148,Shane Black,Limestone Wrestling Club,2205386201
+intermediate,177,Landon Schneider,Eureka Wrestling Club,2304472701
+girls_novice,68,Rayelynn Hartmann,Tiger Town Tanglers Wrestling Club,2403665301
+girls_novice,74,Josie skelton,Eureka Wrestling Club,2416301501
+girls_novice,74,Kyra Gibson,Tiger Town Tanglers Wrestling Club,2306157301
+girls_novice,80,Aubrey Will,Morton Youth Wrestling Club,2503058101
+girls_novice,90,Hadley Aeschliman,Metamora Kids Wrestling Club,2305330701
+girls_novice,96,Natalia Rivera,Irish Wrestling Club,2608015101
+girls_novice,96,Ashlyn Taylor,Irish Wrestling Club,2509027301
+girls_novice,96,Emma Churchill,309 Wrestling,2206454001
+girls_novice,125,Blakleigh Foust,Peoria Razorbacks Wrestling Club,2406960101
+girls_novice,125,Adalynn Clarke,East Peoria River Bandits Wrestling,2502463901
+girls_novice,125,Anastasia Rucinski,Tiger Town Tanglers Wrestling Club,2102782301
+girls_novice,125,Aubrey Bair,Peoria Wizards Wrestling Club,2208491901
+girls_novice,140,Aurora Cherveny,Timber Wolves Wrestling Club,2606815401
+girls_novice,185,Alivia Sutton,Morton Youth Wrestling Club,2605705101
+girls_novice,185,Emilie McMurtry,Morton Youth Wrestling Club,2605705401
+novice,60,Kai Chambers,TJ Trained Wrestling,2407637201
+novice,64,Hudsyn Pfanz,TJ Trained Wrestling,2002033301
+novice,64,Emmett White,Metamora Kids Wrestling Club,2002034001
+novice,69,Ryder Carroll,TJ Trained Wrestling,2406280101
+novice,69,Tanner Gill,309 Wrestling,2604215301
+novice,69,Leonardo Velazquez,Streator Wrestling Club,2606908101
+novice,80,Ryder Wiegand,TJ Trained Wrestling,2304160601
+novice,80,Ezekiel Everly,Pekin Boys & Girls Club WC,2204186601
+novice,80,Noah Carter,DC Wrestling Club,2404119601
+novice,80,Turner Meyer,Morton Youth Wrestling Club,2403200401
+novice,86,Nicholas Bennett,Timber Wolves Wrestling Club,2302181901
+novice,86,Wyatt Waller,DC Wrestling Club,2203486901
+novice,86,Braedyn White,Metamora Kids Wrestling Club,1903129801
+novice,86,Elijah Smick,Morton Youth Wrestling Club,2006877601
+novice,93,Jaxton Trumpy,TJ Trained Wrestling,1905712601
+novice,93,Ryker Mayer,Pekin Boys & Girls Club WC,1904492601
+novice,93,Jude Ward,Metamora Kids Wrestling Club,2204731701
+novice,93,Truth Cox,Peoria Razorbacks Wrestling Club,2305760601
+novice,100,Hank Pennington,Pekin Boys & Girls Club WC,1903805701
+novice,100,hunter eakins,Timber Wolves Wrestling Club,2005637101
+novice,100,Louie Cordani,Morton Youth Wrestling Club,2609753101
+novice,100,Andrew Laurent,Metamora Kids Wrestling Club,2204730401
+novice,108,Emmett Webb,Peoria Razorbacks Wrestling Club,2005241901
+novice,108,Bentley Webster,Morton Youth Wrestling Club,2403201501
+novice,116,Kaiden Miller,309 Wrestling,2205160001
+novice,116,Griffin Heuck,DC Wrestling Club,2005637401
+novice,116,Rook Williams,Pekin Boys & Girls Club WC,2305760001
+novice,116,Luis Moreno,Streator Wrestling Club,2306157201
+novice,125,Henry Griffith,Metamora Kids Wrestling Club,1803220701
+novice,125,Gabriel Razo,DC Wrestling Club,1901667601
+novice,125,Remington Ferguson,Streator Wrestling Club,2406344901
+novice,134,Karter Moffitt,Limestone Wrestling Club,2305884301
+novice,134,Khalil Ford,Peoria Razorbacks Wrestling Club,2406960001
+novice,154,Koda Zick,Timber Wolves Wrestling Club,2407632501
+novice,178,Allen Antolik,Streator Wrestling Club,2304798001
+novice,178,Owen Taylor,Morton Youth Wrestling Club,114224201
+novice,178,Lennon Toliver,DC Wrestling Club,2007759901
+novice,178,Griffin Anderson,Morton Youth Wrestling Club,2004161701
+novice,215,Ethan Haberland,Morton Youth Wrestling Club,2302857901
+girls_senior,110,Gabriella Hollars,Tiger Town Tanglers Wrestling Club,2002570601
+girls_senior,115,Laken Wears,DC Wrestling Club,2005640301
+girls_senior,120,Lillie Marrs,Irish Wrestling Club,2508267601
+girls_senior,120,Kaya Olson,Tiger Town Tanglers Wrestling Club,2612312201
+girls_senior,125,Cecilia Van Oppen,East Peoria River Bandits Wrestling,2303487701
+girls_senior,125,Liberty Williams,Pekin Boys & Girls Club WC,2406632801
+girls_senior,125,Isabella Carlson,Morton Youth Wrestling Club,2614873101
+girls_senior,130,Hailey Deffenbaugh,Timber Wolves Wrestling Club,2604650501
+girls_senior,130,Haley Garrett,East Peoria River Bandits Wrestling,2205386701
+girls_senior,130,Aubreigh Davis,East Peoria River Bandits Wrestling,2602272201
+girls_senior,135,Aubrey Webb,Peoria Razorbacks Wrestling Club,2307636001
+girls_senior,135,Reagan Knobloch,Eureka Wrestling Club,2304159901
+girls_senior,145,Johanna Buehler,Eureka Wrestling Club,2607861201
+girls_senior,185,Khailee Hunter,Peoria Razorbacks Wrestling Club,2608171001
+girls_senior,240,Anastasia Crum,East Peoria River Bandits Wrestling,2406633101
+girls_senior,240,Lilith Markley,309 Wrestling,2604987201
+senior,79,Judah Springer,Pekin Boys & Girls Club WC,1904492901
+senior,90,Gunner Watts,Metamora Kids Wrestling Club,1902111201
+senior,90,Tanner Loveless,Metamora Kids Wrestling Club,1908532801
+senior,96,Colton Kidd,TJ Trained Wrestling,1905709801
+senior,96,Joshua Rockey,Morton Youth Wrestling Club,2610036901
+senior,103,Noah Bush,TJ Trained Wrestling,2005636301
+senior,103,Hunter McKinney,Timber Wolves Wrestling Club,2601663201
+senior,103,Archer Schertz,Metamora Kids Wrestling Club,2207311301
+senior,110,Ashton McKinney,Timber Wolves Wrestling Club,2503256301
+senior,110,Braysen Schlosser,Timber Wolves Wrestling Club,2603178901
+senior,118,Bo Ellis,TJ Trained Wrestling,1901040201
+senior,118,Kingston Hawkins,Pekin Boys & Girls Club WC,1804683001
+senior,118,Landon Durst,Metamora Kids Wrestling Club,106022201
+senior,118,Jonathan Soto,Peoria Razorbacks Wrestling Club,2608171601
+senior,126,Ramsey Listwan,DC Wrestling Club,2303400101
+senior,126,Ryder Duncan,309 Wrestling,2405529901
+senior,126,Michael Clark,Pekin Boys & Girls Club WC,2305758501
+senior,135,Jacob Mushinsky,TJ Trained Wrestling,2005639301
+senior,135,Liam Hodgson,Pekin Boys & Girls Club WC,2605642601
+senior,144,Dominic Trumpy,TJ Trained Wrestling,1804683901
+senior,154,Jack Dykes,TJ Trained Wrestling,1906533201
+senior,164,Harrison Barnewolt,TJ Trained Wrestling,2005162001
+senior,164,John Zimmer,Tiger Town Tanglers Wrestling Club,2403666801
+senior,164,Gabe Bowers,Pekin Boys & Girls Club WC,2606051801
+senior,176,Levi Armstrong,Peoria Razorbacks Wrestling Club,1803783301
+senior,176,Lucius Lilley,TJ Trained Wrestling,2305761101
+senior,176,Hunter Groff,Peoria Wizards Wrestling Club,2406633301
+senior,188,Ashton Hardin,DC Wrestling Club,2404231101
+girls_bantam,50,Kinsley Riley,Yorkville Wrestling Club,2502182201
+girls_bantam,50,Phinley Evans,Morris Wrestling Club,2400326601
+girls_bantam,55,Gwendolyn Celestino,Sauk Valley Wrestling Club,2406342701
+girls_bantam,55,Kinsley DeBolt,Sandwich Wrestling Club,2502427601
+girls_bantam,55,Reagan Sexton,Lil Reaper Wrestling Club,2501986001
+girls_bantam,55,Evelyn Kampf,Yorkville Wrestling Club,2603411201
+girls_bantam,61,Emery Fahlmark,Yorkville Wrestling Club,2504970001
+girls_bantam,61,Brylee Retterer,Yorkville Wrestling Club,2404804801
+girls_bantam,61,Melina Ortega,Yorkville Wrestling Club,2406154901
+girls_bantam,61,Olivia Lopez,Clipper Wrestling Club,2305508801
+girls_bantam,67,Emma Ridge,Clipper Wrestling Club,2605519901
+girls_bantam,67,Ruby Allen,Starved Rock Scrappers WC,2610038301
+girls_bantam,67,Olivia Corsiglia,Yorkville Wrestling Club,2602758001
+girls_bantam,67,Claire Lewis,Clipper Wrestling Club,2601695801
+girls_bantam,74,Genevieve Del Muro,nWo Wrestling Club,2403849201
+girls_bantam,74,Tinleigh Stransky,Yorkville Wrestling Club,2404805901
+girls_bantam,74,Alena O'Donnell,Morris Wrestling Club,2400358901
+girls_bantam,85,Zuri Smith,Yorkville Wrestling Club,2201369101
+girls_bantam,85,Adeline LeCuyer,Sandwich Wrestling Club,2408085201
+girls_bantam,95,Naomi Bishop,Illinois Valley Wrestling Club,2603787801
+girls_bantam,95,Meredith Ridge,Clipper Wrestling Club,2605518701
+bantam,43,Jenson Briscoe,Morris Wrestling Club,2300176901
+bantam,43,Evan Degner,Ottawa Wolfpack Wrestling Club,2602582101
+bantam,43,Maddux Koszela,nWo Wrestling Club,2604969601
+bantam,43,Reese Jakobs,Sauk Valley Wrestling Club,2502206201
+bantam,46,Jaxon Schimandle,nWo Wrestling Club,2404805401
+bantam,46,Huxlee Pogliano,nWo Wrestling Club,2400994701
+bantam,46,Roman Underwood,Sandwich Wrestling Club,2506211301
+bantam,46,Bentley Hey,Dixon Wrestling Club,2403571101
+bantam,49,Chase Ebert,Morris Wrestling Club,2300813801
+bantam,49,Jaxson Green,Sandwich Wrestling Club,2301592601
+bantam,49,Grayson Buckley,Ottawa Wolfpack Wrestling Club,2504860201
+bantam,49,Koltyn Sarver,LaSalle Peru Crunching Cavs Youth WC,2503667001
+bantam,52,Logan Soloff,Lil Reaper Wrestling Club,2203400801
+bantam,52,Easton Ball,nWo Wrestling Club,2504855201
+bantam,52,Clayton Rickmon,Morris Wrestling Club,2502580401
+bantam,52,Roman Modesitt,Ottawa Wolfpack Wrestling Club,2400497001
+bantam,55,Brett Tirevold,Sandwich Wrestling Club,2201188401
+bantam,55,Kade Sundberg,nWo Wrestling Club,2403530501
+bantam,55,Ethan Heckler,Morris Wrestling Club,2301042001
+bantam,55,Benjamin King,Sandwich Wrestling Club,2502438901
+bantam,58,Seth Stralow,Sauk Valley Wrestling Club,2520444701
+bantam,58,Kevin Terry,LaSalle Peru Crunching Cavs Youth WC,2410051401
+bantam,58,Jase Hernandez,Sandwich Wrestling Club,2301206401
+bantam,58,James Hey,Dixon Wrestling Club,2403571201
+bantam,62,Connor Morrison,Sandwich Wrestling Club,2404798301
+bantam,62,Leo Sorenson,Dixon Wrestling Club,2403572501
+bantam,62,Ryker Bochniak,Ottawa Wolfpack Wrestling Club,2502432601
+bantam,62,William Lewis,Lil Reaper Wrestling Club,2606081401
+bantam,66,Bodhi Volpi,Yorkville Wrestling Club,2404806301
+bantam,66,Huck DeBernardi,Ottawa Wolfpack Wrestling Club,2400335301
+bantam,66,Daxton Richmond,Sauk Valley Wrestling Club,2205399301
+bantam,66,Ryker Bishop,Dixon Wrestling Club,2304786401
+bantam,70,Kye Dauber,nWo Wrestling Club,2201345501
+bantam,70,Dustin Skowron,nWo Wrestling Club,2508826501
+bantam,70,Christian Baltierrez,nWo Wrestling Club,2404599301
+bantam,70,Maxten James,Sandwich Wrestling Club,2404797301
+bantam,76,Zachary Martin,LaSalle Peru Crunching Cavs Youth WC,2407517501
+bantam,76,Abriel Schaefer,Ottawa Wolfpack Wrestling Club,2302745201
+bantam,76,Dylan Schobert,Yorkville Wrestling Club,2404805601
+bantam,76,Crue Davis,1006 Legacy Elite WC,2409417801
+bantam,84,Jameson North,Ottawa Wolfpack Wrestling Club,2505372701
+bantam,84,Lucas Garcia,Lil Reaper Wrestling Club,2304420701
+bantam,84,Jaxen Freschi,LaSalle Peru Crunching Cavs Youth WC,2502299701
+bantam,95,Atreyu Koulis,Sandwich Wrestling Club,2404797501
+bantam,95,Barry Larsen,LaSalle Peru Crunching Cavs Youth WC,2407517201
+bantam,95,Caleb Jeffrey,LaSalle Peru Crunching Cavs Youth WC,2407517001
+bantam,95,Caleb Sahlin,Yorkville Wrestling Club,2302866701
+bantam,120,Bryce Rozborski,nWo Wrestling Club,2502355801
+bantam,120,Wyatt Sutton,Dixon Wrestling Club,2403572701
+bantam,120,Landon Seeley,Sauk Valley Wrestling Club,2306515401
+bantam,120,Greyson Smith,Illinois Valley Wrestling Club,2603449901
+girls_intermediate,53,Rosalinn Turner,Yorkville Wrestling Club,2404806001
+girls_intermediate,57,Khloe McCaslin,Sandwich Wrestling Club,2204482501
+girls_intermediate,57,Noviana Celestino,Sauk Valley Wrestling Club,2306749801
+girls_intermediate,62,Sawyer Magne,Dixon Wrestling Club,2510974801
+girls_intermediate,62,Kinzley Hunt,Mendota YMCA Mat Masters WC,2511098801
+girls_intermediate,72,Elise LeCuyer,Sandwich Wrestling Club,2302060001
+girls_intermediate,72,Sarah Kurtz,Illinois Valley Wrestling Club,2201292701
+girls_intermediate,82,Kenzie Kibble,Dixon Wrestling Club,2503239801
+girls_intermediate,82,Audrey Cryder,Morris Wrestling Club,2611896101
+girls_intermediate,88,Micaela Lopez,Clipper Wrestling Club,2410407301
+girls_intermediate,88,Vail Sandeno,Illinois Valley Wrestling Club,2613048801
+girls_intermediate,95,Ava Lyons,Sandwich Wrestling Club,2502433201
+girls_intermediate,115,Kinzleigh Kopka,Ottawa Wrestling Club,2406620801
+girls_intermediate,115,Taylor Roose,LaSalle Peru Crunching Cavs Youth WC,2405866801
+girls_intermediate,115,Kaitlyn Lewis,nWo Wrestling Club,2302865501
+girls_intermediate,115,Henleigh Leal,Illinois Valley Wrestling Club,2603737201
+intermediate,55,Cooper Forsyth,Yorkville Wrestling Club,2301268801
+intermediate,55,Bryant Sodaro,Sauk Valley Wrestling Club,2307621401
+intermediate,55,Cole Downie,Sauk Valley Wrestling Club,2205008201
+intermediate,55,Patrick Daley,Ottawa Wolfpack Wrestling Club,2505338901
+intermediate,59,Camdyn Stage,Sauk Valley Wrestling Club,2205010301
+intermediate,59,Jace Young,Sandwich Wrestling Club,2203717201
+intermediate,59,Lincoln Caruso,Ottawa Wolfpack Wrestling Club,2404624801
+intermediate,59,Wayne Astacio,Ottawa Wolfpack Wrestling Club,2505050501
+intermediate,64,Krew Raines,Sandwich Wrestling Club,2301699101
+intermediate,64,Rowan Harsted,Ottawa Wolfpack Wrestling Club,2302985001
+intermediate,64,Beckham Lopez,Yorkville Wrestling Club,2200597601
+intermediate,64,Elliott Corsiglia,Yorkville Wrestling Club,2404800701
+intermediate,69,Brooks Noonan,Ottawa Wolfpack Wrestling Club,2203060001
+intermediate,69,Porfivio Celestino,Sauk Valley Wrestling Club,2205144701
+intermediate,69,Azerial Ramirez,Sauk Valley Wrestling Club,2306750601
+intermediate,69,Ethan Opsal,LaSalle Peru Crunching Cavs Youth WC,2305326901
+intermediate,74,Quinton O'Donnell,Morris Wrestling Club,2201961201
+intermediate,74,Easton Benyo,Sauk Valley Wrestling Club,2008607201
+intermediate,74,Owen Degner,Ottawa Wolfpack Wrestling Club,2505268601
+intermediate,74,Silas Seybold,Yorkville Wrestling Club,2406157601
+intermediate,79,Grayson Goudzwaard,Yorkville Wrestling Club,2203399701
+intermediate,79,Rocco Hall,Yorkville Wrestling Club,2302864601
+intermediate,79,Jax Alsvig,Ottawa Wolfpack Wrestling Club,2400367001
+intermediate,79,Easton Pyszka,LaSalle Peru Crunching Cavs Youth WC,2407518001
+intermediate,84,Casey Wise,Dixon Wrestling Club,2203056501
+intermediate,84,Caleb Thomas,Dixon Wrestling Club,2203056001
+intermediate,84,Tanner Reger,Yorkville Wrestling Club,2307263201
+intermediate,84,Rafael Ortega,Yorkville Wrestling Club,2406155101
+intermediate,90,Donnie Nowakowski,1006 Legacy Elite WC,2304494101
+intermediate,90,Jaxon Bender,Yorkville Wrestling Club,2404795701
+intermediate,90,Patrick Shaw,Dixon Wrestling Club,2005608001
+intermediate,90,Jamieson Johnson,LaSalle Peru Crunching Cavs Youth WC,2609319201
+intermediate,98,Connor Walls,Morris Wrestling Club,2301785701
+intermediate,98,John Siebert,Dixon Wrestling Club,2304788701
+intermediate,98,Joseph Oliver,Sandwich Wrestling Club,2303314101
+intermediate,98,Tyler Martin,LaSalle Peru Crunching Cavs Youth WC,2407517401
+intermediate,108,William Blomberg,Yorkville Wrestling Club,2004162701
+intermediate,108,Michael Longbein,LaSalle Peru Crunching Cavs Youth WC,2205384001
+intermediate,108,Axel Tessler,Morris Wrestling Club,2506541401
+intermediate,108,Easton Hambly,Clipper Wrestling Club,2503918801
+intermediate,122,Macsen Reaver,Dixon Wrestling Club,2203055401
+intermediate,122,Kobe Kuhrt,Lil Reaper Wrestling Club,2606080701
+intermediate,122,Frank Wiza,Illinois Valley Wrestling Club,2602638501
+intermediate,122,Wesley Boelman,Illinois Valley Wrestling Club,2602666901
+intermediate,148,Nicholas Henning,Yorkville Wrestling Club,2302864801
+intermediate,148,Donnell Winfert,Starved Rock Scrappers WC,2605425301
+intermediate,177,Hunter Walls,Morris Wrestling Club,2301785001
+girls_novice,74,Ivy Sullivan,Dixon Wrestling Club,2005080001
+girls_novice,80,Elizabeth Agajanian,Sandwich Wrestling Club,2300866801
+girls_novice,90,Emelia Cecchetti,Dixon Wrestling Club,2005077901
+girls_novice,90,Charlotte Baker,Dixon Wrestling Club,2304786101
+girls_novice,96,Naya Ortega,Yorkville Wrestling Club,2406155001
+girls_novice,96,Madelynn Wiebenga,Sauk Valley Wrestling Club,2312400201
+girls_novice,102,Layla Giertych,nWo Wrestling Club,1903830601
+girls_novice,102,HenLeigh Munz,Sauk Valley Wrestling Club,1904532201
+girls_novice,102,Myah Fazio,Yorkville Wrestling Club,2404801701
+girls_novice,108,Sofia Luna,Dixon Wrestling Club,2403571501
+girls_novice,115,Avery Robertson,nWo Wrestling Club,2609124501
+girls_novice,115,Kylie Kasprak,LaSalle Peru Crunching Cavs Youth WC,2007543001
+girls_novice,115,Madison Cunningham,Yorkville Wrestling Club,2206373501
+girls_novice,140,Natalie Norberg,Sauk Valley Wrestling Club,2406343501
+girls_novice,140,Avery Salmieri,Sandwich Wrestling Club,2502430501
+novice,60,Blakley Richards,1006 Legacy Elite WC,2004208201
+novice,64,Grayson Sondelski,Yorkville Wrestling Club,2302866901
+novice,64,Ethan Carey,Illinois Valley Wrestling Club,2603677301
+novice,69,Parker Riley,Yorkville Wrestling Club,2302866501
+novice,74,Nolan Wiebenga,Sauk Valley Wrestling Club,2006890001
+novice,74,Easton Poss,Yorkville Wrestling Club,2203400401
+novice,74,Maddox Noonan,Ottawa Wolfpack Wrestling Club,2000513101
+novice,74,Jack DeGroot,Sauk Valley Wrestling Club,2004173101
+novice,80,Silas Eberle,nWo Wrestling Club,2301722201
+novice,80,Cutler Grauer,Yorkville Wrestling Club,2404802301
+novice,80,Evan Brown,1006 Legacy Elite WC,2301192001
+novice,80,Hunter Valentine,nWo Wrestling Club,2403971101
+novice,86,Mitchell Schobert,Yorkville Wrestling Club,2203400701
+novice,86,Brady Janosek,Yorkville Wrestling Club,1902115101
+novice,86,Roman Spinelli,nWo Wrestling Club,1903797301
+novice,86,Ayden Diaz,nWo Wrestling Club,2302687501
+novice,93,Coltyn Montgomery,Yorkville Wrestling Club,1904967201
+novice,93,Austin Villarreal,nWo Wrestling Club,1803242901
+novice,93,Maxwell Robertson,nWo Wrestling Club,1901766201
+novice,93,Ryker Senodenos,1006 Legacy Elite WC,1903170001
+novice,100,Aiden Hernandez,nWo Wrestling Club,1902122801
+novice,100,Tillman Stransky,Yorkville Wrestling Club,1902115501
+novice,100,Emitt Hernandez,1006 Legacy Elite WC,2409717701
+novice,100,Brody Plass,nWo Wrestling Club,1902123201
+novice,108,Cash Lucas,Ottawa Wolfpack Wrestling Club,1903817601
+novice,108,Liam Sondelski,Yorkville Wrestling Club,2004163501
+novice,108,Wyitt Hernandez,1006 Legacy Elite WC,2409717901
+novice,108,Nicolas Pitstick,Ottawa Wrestling Club,2005630301
+novice,116,Noah Lopez,Clipper Wrestling Club,1907123401
+novice,116,Elliott Hemminger,Sauk Valley Wrestling Club,2603379001
+novice,116,Kainan Considine,nWo Wrestling Club,1907123101
+novice,116,Logan Braga,Yorkville Wrestling Club,1903799301
+novice,125,Marcelo Villarreal,1006 Legacy Elite WC,1803243001
+novice,125,Quinn North,Ottawa Wolfpack Wrestling Club,2208636201
+novice,125,Leroy Price,Ottawa Wolfpack Wrestling Club,2405083001
+novice,125,Gionni Tanas,Yorkville Wrestling Club,2601176701
+novice,134,Cooper Davis,1006 Legacy Elite WC,1900442101
+novice,134,David Hernandez,Yorkville Wrestling Club,2300099501
+novice,154,Aydan Del Muro,nWo Wrestling Club,1902122501
+novice,154,Sean Cervantes,LaSalle Peru Crunching Cavs Youth WC,2607462301
+novice,154,Emerson Kent,Mendota YMCA Mat Masters WC,2508942901
+novice,178,Zaelen Wilson,Clipper Wrestling Club,1903797401
+novice,215,Yair Hernandez,Ottawa Wolfpack Wrestling Club,2604169301
+novice,215,Kaden Cossyleon,Yorkville Wrestling Club,2604536301
+girls_senior,85,Karsie Iwanski,Lil Reaper Wrestling Club,2410138201
+girls_senior,90,Baylee Nehring,Sauk Valley Wrestling Club,2205399801
+girls_senior,95,Mia Corwin,LaSalle Peru Crunching Cavs Youth WC,2613504801
+girls_senior,100,Micayla Iwanski,Lil Reaper Wrestling Club,2410138001
+girls_senior,105,Kenzie Soloff,Lil Reaper Wrestling Club,2304494601
+girls_senior,105,Caiddie Phelps,Clipper Wrestling Club,2207407801
+girls_senior,110,Stephanie Hawkins,LaSalle Peru Crunching Cavs Youth WC,2005630001
+girls_senior,115,Randelle McKay,Sauk Valley Wrestling Club,2203054801
+girls_senior,115,BreyLynn Munz,Sauk Valley Wrestling Club,1904532101
+girls_senior,145,Kensington Tosh,Sauk Valley Wrestling Club,2310575501
+girls_senior,185,Ariel Hill,LaSalle Peru Crunching Cavs Youth WC,2309195101
+girls_senior,240,Nikita Yeager,Sauk Valley Wrestling Club,2406801301
+senior,84,Beau Maggi,Starved Rock Scrappers WC,2609984601
+senior,90,Braxten Spencer,Sauk Valley Wrestling Club,2502204501
+senior,90,Nathaniel Heidenreich,Sauk Valley Wrestling Club,2005625801
+senior,96,Brady Robertson,Yorkville Wrestling Club,1803785601
+senior,96,Jake Kasprak,LaSalle Peru Crunching Cavs Youth WC,2005059101
+senior,96,Jaxon Brown,Yorkville Wrestling Club,2604656001
+senior,103,Cale Dauber,nWo Wrestling Club,106261901
+senior,103,Wyatt Gillen,Sauk Valley Wrestling Club,2006270901
+senior,110,Heston Crouch,nWo Wrestling Club,2203768201
+senior,110,Maverick Del Angel,nWo Wrestling Club,2001490001
+senior,110,Caden Wiebenga,Sauk Valley Wrestling Club,1904547001
+senior,110,Riley Henry,Sauk Valley Wrestling Club,1907534901
+senior,118,Gavin Steder,Sauk Valley Wrestling Club,2004173701
+senior,118,Mason Heath,Clipper Wrestling Club,115271501
+senior,118,Jarred Clifton,LaSalle Peru Crunching Cavs Youth WC,2407516701
+senior,118,Haidyn Bones,Sauk Valley Wrestling Club,2605534101
+senior,126,Zane Sundberg,nWo Wrestling Club,2207408101
+senior,126,Cylas Spain,Sauk Valley Wrestling Club,114212401
+senior,135,Liam Leydig,LaSalle Peru Crunching Cavs Youth WC,1903782501
+senior,135,Thomas Hughes,LaSalle Peru Crunching Cavs Youth WC,2205383701
+senior,144,Maximus Pearch,nWo Wrestling Club,1804801901
+senior,144,Rogelio Del Muro,nWo Wrestling Club,1902122601
+senior,144,Aiden Urbanc,LaSalle Peru Crunching Cavs Youth WC,2005043701
+senior,144,Nicholas Rebholz,LaSalle Peru Crunching Cavs Youth WC,2207984101
+senior,154,Cullen DeMink,Ottawa Wolfpack Wrestling Club,2209196201
+senior,154,James Ripper,nWo Wrestling Club,2203768601
+senior,164,Russell Basye,LaSalle Peru Crunching Cavs Youth WC,2606092701
+senior,164,Benjamin Moe,1006 Legacy Elite WC,2600816701
+senior,176,Dean Norberg,Sauk Valley Wrestling Club,2406343401
+senior,188,Johnathan Pitts,Ottawa Wolfpack Wrestling Club,2505835601
+senior,188,Robert Bayless,Yorkville Wrestling Club,2502701201
+senior,215,Cortez White,Ottawa Wolfpack Wrestling Club,2505492601
+senior,215,Julio Cervantes,LaSalle Peru Crunching Cavs Youth WC,2607460601
+senior,275,Odin Stouffer,Sauk Valley Wrestling Club,1903838701
+girls_bantam,61,Elizabeth Kustok,Arlington Cardinals Wrestling Club,2305621301
+girls_bantam,61,Natalie Wagner,Barrington Broncos Wrestling Club,2605539401
+girls_bantam,67,Aleah-Paige Hoopii,Rolling Meadows Park District Mustangs Wrestling,2608199801
+girls_bantam,67,Louisa Kustok,Arlington Cardinals Wrestling Club,2403846201
+girls_bantam,67,Selena Gutierrez,Wheeling Wildcat WC,2607545101
+girls_bantam,67,Aviana Elkhaldy,Sharks Wrestling Club,2515472701
+bantam,43,Shane Herling,Arlington Cardinals Wrestling Club,2602238501
+bantam,46,Umar Gandaloev,Fit & Fight Gym WC,2405196301
+bantam,46,Judah Recinos,Arlington Cardinals Wrestling Club,2402881801
+bantam,46,Rocco Fiore,Evanston School of Wrestling,2403845801
+bantam,46,Santiago Gurrola,Sharks Wrestling Club,2414011601
+bantam,49,Luke Golda,Barrington Broncos Wrestling Club,2502984101
+bantam,49,Peter Dale,Wheeling Wildcat WC,2602305501
+bantam,49,Kyle Ziemlo,Barrington Broncos Wrestling Club,2502982901
+bantam,49,Francisco Passini De Oliveira,Sharks Wrestling Club,2608604001
+bantam,52,Mateo Gutierrez,Wheeling Wildcat WC,2607472001
+bantam,52,Logan Xavier,Junior Patriots Wrestling Club,2506753201
+bantam,52,Nathan Painter,Arlington Cardinals Wrestling Club,2508271501
+bantam,55,Ismail Kulchaev,Suplex Wrestling Club,2404824301
+bantam,55,Remy Rivera,Arlington Cardinals Wrestling Club,2407092601
+bantam,55,Connor Doherty,Barrington Broncos Wrestling Club,2404192101
+bantam,55,Davis Cooper,Barrington Broncos Wrestling Club,2502984301
+bantam,58,Xavier Gomez,Wheeling Wildcat WC,2404785501
+bantam,58,Gabriel Sponsel,Arlington Cardinals Wrestling Club,2305319801
+bantam,58,Amir Abdujabarov,Fit & Fight Gym WC,2518250201
+bantam,58,Charlie Cantal,Arlington Cardinals Wrestling Club,2402727701
+bantam,62,Barskhan Kadykeev,Fit & Fight Gym WC,2603776101
+bantam,62,Daniel Alcocer,Izzy Style Wrestling,2213350101
+bantam,62,Larson Murchie,Maine Eagles WC,2402386501
+bantam,62,Jake Russ,Maine Eagles WC,2301402001
+bantam,66,Emmett Gellings,Barrington Broncos Wrestling Club,2204357001
+bantam,66,Antonio Paredes,Barrington Broncos Wrestling Club,2404193701
+bantam,66,Bryce Muniz,Barrington Broncos Wrestling Club,2303151301
+bantam,66,Roman Spaulding,Izzy Style Wrestling,2213319301
+bantam,70,Brody Krause,Barrington Broncos Wrestling Club,2404193001
+bantam,70,Aidan O'Keefe,Arlington Cardinals Wrestling Club,2403031601
+bantam,70,Musa Khan,Evanston School of Wrestling,2407071301
+bantam,70,Weston Cruz,Maine Eagles WC,2500662101
+bantam,76,Harrison Thaler,Barrington Broncos Wrestling Club,2303475201
+bantam,76,Francisco Velasquez JR,Izzy Style Wrestling,2401993901
+bantam,76,Michael Ignoffo,Wheeling Wildcat WC,2208636301
+bantam,84,Suleiman Boziev,Suplex Wrestling Club,2308805601
+bantam,84,Odysseus Wagner,Barrington Broncos Wrestling Club,2204177001
+bantam,95,Robert Adrahtas Jr.,Sharks Wrestling Club,2502783001
+girls_intermediate,57,Eleanor Idzik,Arlington Cardinals Wrestling Club,2500260901
+girls_intermediate,62,Anya Rossi,Arlington Cardinals Wrestling Club,2202738801
+girls_intermediate,67,Francesca Herling,Arlington Cardinals Wrestling Club,2611161601
+girls_intermediate,67,Aisha Khan,Evanston School of Wrestling,2407071201
+girls_intermediate,72,Abigail Beltran,Arlington Cardinals Wrestling Club,2411723701
+girls_intermediate,88,Esmeralda Gaytan,Evanston School of Wrestling,2306008001
+girls_intermediate,88,Hiro Martinez,Evanston School of Wrestling,2308274301
+intermediate,55,Bradley Harman,Maine Eagles WC,2105246501
+intermediate,55,Leonardo Testa,Maine Eagles WC,2008607001
+intermediate,55,Angelo Testa,Maine Eagles WC,2008606801
+intermediate,59,Tyler Winterhalter,Arlington Cardinals Wrestling Club,2006253901
+intermediate,59,Sonny Coloia,Maine Eagles WC,2105246301
+intermediate,59,Austin Hutchison,Barrington Broncos Wrestling Club,2303111201
+intermediate,59,Simon Sheaffer,Maine Eagles WC,2204389201
+intermediate,64,Khakim Kusaev,Fit & Fight Gym WC,2310576201
+intermediate,64,Conrad Carruthers,Junior Titans Wrestling,2407513301
+intermediate,64,Akhmat Diakonov,Fit & Fight Gym WC,2404780901
+intermediate,64,Carlos Jr Lopez,Barrington Broncos Wrestling Club,2303110501
+intermediate,69,Dominic Adamo,Arlington Cardinals Wrestling Club,2308355201
+intermediate,69,Makar Pavlus,Suplex Wrestling Club,2315004401
+intermediate,69,David Bugrimov,Suplex Wrestling Club,2300213901
+intermediate,69,Mason Dimond,Junior Titans Wrestling,2306559101
+intermediate,74,Antonio Medina,Arlington Cardinals Wrestling Club,2001902201
+intermediate,74,Julian Gomez,Arlington Cardinals Wrestling Club,2317124201
+intermediate,74,Alexander Stanisz,Barrington Broncos Wrestling Club,2404194301
+intermediate,74,Thomas Alper,Wolverine Wrestling Club,2307296201
+intermediate,79,Ibrahim Magomedov,Fit & Fight Gym WC,2310529001
+intermediate,79,Charlie Russ,Maine Eagles WC,2204636401
+intermediate,79,Jordan Caudill,Izzy Style Wrestling,2006253201
+intermediate,79,Emmett Osborne,Maine Eagles WC,2202186601
+intermediate,84,Aiden Edwards,Evanston School of Wrestling,2305620901
+intermediate,84,Jayden Valle,Arlington Cardinals Wrestling Club,2302185301
+intermediate,84,Benjamin Klopack,Arlington Cardinals Wrestling Club,2309219901
+intermediate,84,Theodore Bollweg,Rolling Meadows Park District Mustangs Wrestling,2608589901
+intermediate,90,Francesco Faso,Barrington Broncos Wrestling Club,2303110301
+intermediate,90,Declan Jones,Arlington Cardinals Wrestling Club,2007551101
+intermediate,90,Noah Spaulding,Izzy Style Wrestling,2006273401
+intermediate,90,Everett Denizman,Maine Eagles WC,2405766201
+intermediate,98,Wells Kustok,Arlington Cardinals Wrestling Club,2203771101
+intermediate,98,Anthony Schaffer,Izzy Style Wrestling,2303571001
+intermediate,98,Nikolaki Floros,Arlington Cardinals Wrestling Club,2204604201
+intermediate,98,Caseon Cruz,Maine Eagles WC,2001500001
+intermediate,108,Steven Gaytan,Arlington Cardinals Wrestling Club,2602358501
+intermediate,108,James Shibata,Barrington Broncos Wrestling Club,2303110801
+intermediate,108,Michael Reynolds,Wolverine Wrestling Club,2609906201
+intermediate,108,Joseph Lacoppola,Sharks Wrestling Club,2610142901
+intermediate,122,Conor Mathesius,Arlington Cardinals Wrestling Club,2503425401
+intermediate,122,Anthony Poro,Arlington Cardinals Wrestling Club,2106156801
+intermediate,122,Joseph Brennan,Wheeling Wildcat WC,2502480901
+intermediate,122,Mateo Muniz,Arlington Cardinals Wrestling Club,2504982501
+intermediate,148,Liam Doherty,Barrington Broncos Wrestling Club,2404192001
+intermediate,148,Logan Alvarez,Sharks Wrestling Club,2406629301
+intermediate,148,Noah Gilbert,Sharks Wrestling Club,2406629601
+girls_novice,80,Sophia Olandese,Izzy Style Wrestling,2408903301
+girls_novice,125,Carolyn Hughes,Barrington Broncos Wrestling Club,2502983801
+girls_novice,185,Mikaela Sukalski,Wolverine Wrestling Club,2605184301
+novice,60,Mukhammad Gandaloev,Fit & Fight Gym WC,2405194401
+novice,64,Ibrakhim Gandaloev,Fit & Fight Gym WC,2405195501
+novice,69,Anders Murchie,Maine Eagles WC,2007544501
+novice,74,Peter Willis,Arlington Cardinals Wrestling Club,1902644301
+novice,74,Daniel Bodeanu,Suplex Wrestling Club,2408832301
+novice,74,Leo Fonsino,Rolling Meadows Park District Mustangs Wrestling,2512550601
+novice,80,Llewyn Opels,Arlington Cardinals Wrestling Club,2305319401
+novice,80,Ellis Oser,Arlington Cardinals Wrestling Club,2512202201
+novice,80,Kaden Musinski,Arlington Cardinals Wrestling Club,2506109001
+novice,80,Bekkhan Kadykeev,Fit & Fight Gym WC,2502830301
+novice,86,Vincent Poro,Arlington Cardinals Wrestling Club,1902644201
+novice,86,Mukhammad Babajanov,Suplex Wrestling Club,2300841401
+novice,86,Temirlan Kuatbayev,Suplex Wrestling Club,2401617101
+novice,86,James Steinfels,Maine Eagles WC,2201977401
+novice,93,Luke Sponsel,Arlington Cardinals Wrestling Club,1906071001
+novice,93,Hayes Kustok,Arlington Cardinals Wrestling Club,2203771001
+novice,93,Alikhan Erkinbekov,Fit & Fight Gym WC,2513083001
+novice,93,Collin O'Keefe,Arlington Cardinals Wrestling Club,2307810401
+novice,100,Eli Trayvas,Suplex Wrestling Club,2518025801
+novice,100,Konrad Smee,Maine Eagles WC,2201473801
+novice,100,Timur Suyunov,Suplex Wrestling Club,2300229101
+novice,100,Justin Johnson,Rolling Meadows Park District Mustangs Wrestling,2510175701
+novice,108,Adem Markov,Fit & Fight Gym WC,2502044701
+novice,108,Gideon Ayers,Arlington Cardinals Wrestling Club,2203771901
+novice,108,Arslan Toktoshev,Fit & Fight Gym WC,2405286801
+novice,108,Nurdan Erkinbekov,Fit & Fight Gym WC,2605572601
+novice,116,Connor Kern,Izzy Style Wrestling,2418951301
+novice,116,Nikolas Panayi,Arlington Cardinals Wrestling Club,1805955101
+novice,116,Alexander Bartoszuk,Maine Eagles WC,2005612001
+novice,116,Benjamin Lopez,Izzy Style Wrestling,2405223301
+novice,125,Michelangelo Greco,Sharks Wrestling Club,2302043601
+novice,125,Oliver Schaps,Junior Titans Wrestling,2205264701
+novice,125,Finn Jones,Arlington Cardinals Wrestling Club,2005617001
+novice,125,Dominic Ribeiro,Evanston School of Wrestling,2310234601
+novice,134,Michael Ruud,Izzy Style Wrestling,2507165101
+novice,134,Benjamin De La Cruz,Rolling Meadows Park District Mustangs Wrestling,2610877801
+novice,134,Micah Villagomez,Junior Cougar Wrestling Club,2407649501
+novice,134,Harvey Strand,Sharks Wrestling Club,2606072201
+novice,154,Max Villacis,Sharks Wrestling Club,2410697901
+novice,178,James Clark,Junior Patriots Wrestling Club,2006278701
+novice,178,Santino Mejia,Wolverine Wrestling Club,2613800701
+novice,215,BRAYAN LAGUNA,Wheeling Wildcat WC,2612284201
+girls_senior,90,Harper McGrath,Arlington Cardinals Wrestling Club,1903170701
+girls_senior,95,Isabella Salefski,Wheeling Wildcat WC,2601052801
+girls_senior,105,Adeline Martinez,Evanston School of Wrestling,2307044201
+girls_senior,105,Lucie Oates,Wolverine Wrestling Club,2609205401
+girls_senior,120,Ashlie Penovich,Arlington Cardinals Wrestling Club,104189201
+girls_senior,120,Boland Gregory,Arlington Cardinals Wrestling Club,2609348901
+girls_senior,125,Erkhsaran Tsogtbaatar,Suplex Wrestling Club,2518247701
+girls_senior,130,Lucia Cruz,Evanston School of Wrestling,2308274001
+girls_senior,185,Giannah Paredes,Barrington Broncos Wrestling Club,2608546201
+senior,74,Cooper Ewert,Barrington Broncos Wrestling Club,2004153001
+senior,79,Limanbek Mamazhanov,Fit & Fight Gym WC,2505946601
+senior,79,Liam Ross,Maine Eagles WC,1903787601
+senior,84,Tommy Leonard,Maine Eagles WC,2501514401
+senior,90,Jason Caudill,Izzy Style Wrestling,1903786101
+senior,90,Liam Waldeck,Junior Titans Wrestling,2407516501
+senior,90,Marcus Oh,Evanston School of Wrestling,2203771301
+senior,96,Thomas Blanke,Barrington Broncos Wrestling Club,118717801
+senior,96,James Remke,Barrington Broncos Wrestling Club,1901649201
+senior,96,Shamil Tagirov,Fit & Fight Gym WC,2314853001
+senior,96,John Snow,Arlington Cardinals Wrestling Club,2415061501
+senior,103,Alinur Omurbekov,Fit & Fight Gym WC,2406322201
+senior,110,Shea Colleran,Izzy Style Wrestling,115740201
+senior,110,Jake Knapp,Izzy Style Wrestling,2200970901
+senior,110,Emir Nuriddinov,Fit & Fight Gym WC,2519171801
+senior,110,Erali Toktoshev,Fit & Fight Gym WC,2405285901
+senior,118,Grady Hoerr,Maine Eagles WC,104857901
+senior,118,Benjamin Idzik,Arlington Cardinals Wrestling Club,2005122001
+senior,118,Zhantemir Kenzhematov,Fit & Fight Gym WC,2518266601
+senior,118,Pasquale Calcagno,Izzy Style Wrestling,115004901
+senior,126,Logan Gonzalez,Izzy Style Wrestling,2305325501
+senior,126,Kane Gonzalez,Izzy Style Wrestling,2415788101
+senior,126,Andrew Krushkov,Junior Titans Wrestling,2205264001
+senior,126,Lincoln Gersch,Rolling Meadows Park District Mustangs Wrestling,1904469101
+senior,135,Iaromir Bitarov,Suplex Wrestling Club,2506188101
+senior,135,Azamat Sultanbaev,Fit & Fight Gym WC,2502687001
+senior,135,Aiur Chagdurov,Fit & Fight Gym WC,2406402601
+senior,135,Dominic Lepek,Izzy Style Wrestling,2305325701
+senior,144,Trevor Pepe,Arlington Cardinals Wrestling Club,116419901
+senior,144,Joshua McPherson,Evanston School of Wrestling,2407511901
+senior,154,Sebastian Sikora,Junior Cougar Wrestling Club,2206062701
+senior,154,Aleksandar Brankov,Evanston School of Wrestling,2502758501
+senior,154,Alexander Lopez,Maine Eagles WC,114650401
+senior,164,Mikhail Bubeev,Fit & Fight Gym WC,2509668901
+senior,176,Marcel Karpinski,Izzy Style Wrestling,2314480601
+senior,188,Matthew Dziura,Izzy Style Wrestling,2205379201
+senior,188,Aiden Holden,Maine Eagles WC,2614608301
+girls_bantam,45,Caroline Long,Mattoon Youth Wrestling Club,2503461501
+girls_bantam,45,Stella Gabbard,Unity Youth Wrestling Club,2504723501
+girls_bantam,45,Kynlee Chapman,Mattoon Youth Wrestling Club,2604743501
+girls_bantam,50,Luciana Rangel,Storm Youth Wrestling Club,2602886001
+girls_bantam,50,Koral Abel,Fisher Wrestling Club,2607906401
+girls_bantam,50,Mavis Nation,Taylorville Wrestling Club,2405300301
+girls_bantam,50,Jillian Chapman,RWC,2601245801
+girls_bantam,50,Tareyn Dallas,Clinton Wrestling Club,2502365301
+girls_bantam,50,Emery Hight,Meridian Hawks Youth Wrestling Club,2604089701
+girls_bantam,55,Reese Alger,Taylorville Wrestling Club,2504622201
+girls_bantam,55,Lyra Staley,Junior Cyclones Wrestling Club,2404039401
+girls_bantam,55,Elizabeth Wiseman,Meridian Hawks Youth Wrestling Club,2510072201
+girls_bantam,55,Emma Molitoris,Clinton Wrestling Club,2602479301
+girls_bantam,55,Ainsley Archer,Marshall Red Rush Wrestling,2606143201
+girls_bantam,55,Lucilla Bock,Petersburg Wrestling Club,2606422901
+girls_bantam,61,Sidney VanEtten,Petersburg Wrestling Club,2606772101
+girls_bantam,61,Brinley Long,Mattoon Youth Wrestling Club,2503461601
+girls_bantam,61,Harper Roberts,Oakwood Youth Wrestling Club,2506339601
+girls_bantam,61,Avery Duckett,Shelbyville Jr. Wrestling Rams,2407524601
+girls_bantam,61,Annabel Piper,Junior Cyclones Wrestling Club,2608501901
+girls_bantam,61,Zayanna Tirpak,Taylorville Wrestling Club,2612030001
+girls_bantam,67,Dalilah Fair,Mt. Zion Kids Wrestling Club,2305335301
+girls_bantam,67,Cambri Winslow,Oakwood Youth Wrestling Club,2409319701
+girls_bantam,67,Bonnie Marcotte,Oakwood Youth Wrestling Club,2604918901
+girls_bantam,67,Ava Butler,Champaign Wrestling Club,2504385701
+girls_bantam,67,Kaylynn Sherfey,Fisher Wrestling Club,2603406101
+girls_bantam,67,Maisyn Zucco,Meridian Hawks Youth Wrestling Club,2501575501
+girls_bantam,74,Anniston Robertson,Unity Youth Wrestling Club,2610397201
+girls_bantam,74,Ava Cotter,Fisher Wrestling Club,2606828901
+girls_bantam,74,Amelia Wright,Chatham Wrestling Club,2613711701
+girls_bantam,74,Ruby Glause,Decatur Lakers Wrestling Club,2406641901
+girls_bantam,85,Taylor Call,Warrensburg-Latham Jr. Cardinals Wrestling Club,2501142001
+girls_bantam,115,Charlotte Mathias,Warrensburg-Latham Jr. Cardinals Wrestling Club,2316930101
+girls_bantam,115,London Ruepke,Decatur Lakers Wrestling Club,2605595801
+bantam,43,Brandon Kelly,Westville Youth Wrestling,2607112901
+bantam,43,Callahan Coy,Fisher Wrestling Club,2602615201
+bantam,46,Brody Jones,Mt. Zion Kids Wrestling Club,2305335901
+bantam,46,Carter Mattison,RWC,2405168101
+bantam,46,Linkoln Rauch,Cumberland Youth Wrestling Club,2407068001
+bantam,46,Oliver Miller,Shelbyville Jr. Wrestling Rams,2407526501
+bantam,46,Colesten Hoene,Cumberland Youth Wrestling Club,2507343801
+bantam,49,Daniel Block,Mattoon Youth Wrestling Club,2404572201
+bantam,49,Knox Read,Mt. Zion Kids Wrestling Club,2502296201
+bantam,49,Kaden Flood,Cumberland Youth Wrestling Club,2406617701
+bantam,49,Colden Becker,Storm Youth Wrestling Club,2402871701
+bantam,49,Oakley Vice,Westville Youth Wrestling,2507948301
+bantam,49,Leo Ramos,Decatur Lakers Wrestling Club,2509995901
+bantam,52,Tate Black,TJ Trained WC-Clinton,2305506401
+bantam,52,Pedro Jesus Rangel,Storm Youth Wrestling Club,2502464601
+bantam,52,Gavin Sinclair,Petersburg Wrestling Club,2506157901
+bantam,52,Joel Danneberger,Shelbyville Jr. Wrestling Rams,2407524001
+bantam,52,Taysin Lipscomb,Storm Youth Wrestling Club,2401378301
+bantam,52,Ryker Rodebaugh,Cumberland Youth Wrestling Club,2507343701
+bantam,55,Ashton Chatman,Champaign Wrestling Club,2400534101
+bantam,55,Everett Sledge,Mattoon Youth Wrestling Club,2402858201
+bantam,55,Nolan Varga,Williamsville Wrestling Club,2303472701
+bantam,55,Hudson Hobbs,Mt. Zion Kids Wrestling Club,2305335701
+bantam,55,Easton Miller,Marshall Red Rush Wrestling,2606348801
+bantam,55,Quentin Hill,Fisher Wrestling Club,2406150801
+bantam,58,Ronnie Furman,Petersburg Wrestling Club,2305522101
+bantam,58,Ryker Dees,Storm Youth Wrestling Club,2209625001
+bantam,58,Rhett Beiler,Mt. Zion Kids Wrestling Club,2407077101
+bantam,58,Westin Flood,Cumberland Youth Wrestling Club,2304157601
+bantam,58,Maxton Blankenship,Rantoul Youth Wrestling,2405165901
+bantam,58,Elijah Caldwell,Cumberland Youth Wrestling Club,2407067701
+bantam,62,Valen Anello,Mattoon Youth Wrestling Club,2303310601
+bantam,62,Ryder Baker,Clinton Wrestling Club,2403569001
+bantam,62,Alfred Koren,Clinton Wrestling Club,2503453601
+bantam,62,Drew Colbrook,Meridian Hawks Youth Wrestling Club,2501573501
+bantam,62,Troy Goforth,Mt. Zion Kids Wrestling Club,2305335401
+bantam,62,Marcus Wartenbe Jr.,Mattoon Youth Wrestling Club,2604287701
+bantam,66,Waylon Blade,Cumberland Youth Wrestling Club,2507316701
+bantam,66,Noah Mattison,RWC,2304335801
+bantam,66,Harrison Pittenger,Mt. Zion Kids Wrestling Club,2305336701
+bantam,66,Raylin Duncan,Fisher Wrestling Club,2303468801
+bantam,66,Jaxson Shafer,Westville Youth Wrestling,2606890901
+bantam,66,Ellis Evans,Clinton Wrestling Club,2504310501
+bantam,70,Bennett Mattox,Williamsville Wrestling Club,2305766201
+bantam,70,Jackson Guinn,Mt. Zion Kids Wrestling Club,2407078701
+bantam,70,Iverson Pitts,Chatham Wrestling Club,2516030001
+bantam,70,Tucker Kirts,Oakwood Youth Wrestling Club,2407687701
+bantam,70,Blake Whitener,RWC,2409719401
+bantam,70,Leo Christhilf,Champaign Wrestling Club,2502751501
+bantam,76,Braxtyn Figgins,Cumberland Youth Wrestling Club,2304157501
+bantam,76,Boyd Littrell,Warrensburg-Latham Jr. Cardinals Wrestling Club,2601731101
+bantam,76,Bowen Barber,Petersburg Wrestling Club,2507361801
+bantam,76,Decklan Weddle,Westville Youth Wrestling,2507381301
+bantam,76,Knowledge Johnson,Rantoul Youth Wrestling,2607992501
+bantam,76,Lincoln Alwardt,Mattoon Youth Wrestling Club,2402857201
+bantam,84,Noah Stefaniak,Westville Youth Wrestling,2507831101
+bantam,84,Becker Fallin,Taylorville Wrestling Club,2405299301
+bantam,84,Asher Moritz,Mattoon Youth Wrestling Club,2402857701
+bantam,84,Ridge Redfern,Cumberland Youth Wrestling Club,2406618801
+bantam,84,Diondre Jackson,Chatham Wrestling Club,2405167801
+bantam,95,Bentley Bell,Hoopeston Area Youth Wrestling,2404572101
+bantam,95,Kamdyn Kunkel,Storm Youth Wrestling Club,2606211901
+bantam,95,Odin Burns,Hoopeston Area Youth Wrestling,2204359001
+bantam,95,Jax Smyser,Charleston Wrestling Club,2504908001
+bantam,120,Zakkery Kochell,Warrensburg-Latham Jr. Cardinals Wrestling Club,2402210901
+bantam,120,Dominic Hoyt,Rantoul Youth Wrestling,2503804401
+bantam,120,Westly Ziegler,Hoopeston Area Youth Wrestling,2603786301
+girls_intermediate,53,Athena Riley,Fisher Wrestling Club,2605806101
+girls_intermediate,53,Kailani Kelly,Westville Youth Wrestling,2607113301
+girls_intermediate,57,Mila Griffith,Storm Youth Wrestling Club,2502476801
+girls_intermediate,62,Emberlynn Mendenhall,Mt. Zion Kids Wrestling Club,2503336501
+girls_intermediate,62,Alanah Furman,Petersburg Wrestling Club,2503125901
+girls_intermediate,62,Piper Koning,Chatham Wrestling Club,2302565301
+girls_intermediate,62,Laya Nation,Taylorville Wrestling Club,2418622301
+girls_intermediate,67,Nova Enghausen,Fisher Wrestling Club,2002044001
+girls_intermediate,67,Kendall Abel,Fisher Wrestling Club,2607905701
+girls_intermediate,67,Sydney McClellan,Meridian Hawks Youth Wrestling Club,2604089401
+girls_intermediate,72,Cale Duckett,Shelbyville Jr. Wrestling Rams,2206065901
+girls_intermediate,72,Ava Sledge,Mattoon Youth Wrestling Club,2503461801
+girls_intermediate,72,Scarlette Hill,Fisher Wrestling Club,2603410601
+girls_intermediate,72,Remi Holt,Shelbyville Jr. Wrestling Rams,2407525901
+girls_intermediate,72,Katherine Kirkbride,Shelbyville Jr. Wrestling Rams,2206066901
+girls_intermediate,72,Jessa Danneberger,Shelbyville Jr. Wrestling Rams,2407523901
+girls_intermediate,77,Tinliee Sullivan,Westville Youth Wrestling,2403668001
+girls_intermediate,77,Kylynn Becker,Storm Youth Wrestling Club,2505631201
+girls_intermediate,77,Naleigha Mitchell,Oakwood Youth Wrestling Club,2200905401
+girls_intermediate,77,Rylan Medrano,Junior Cyclones Wrestling Club,2606690301
+girls_intermediate,77,Lillian Tamosaitis,RWC,2601795501
+girls_intermediate,77,Cambrie Hesse,Mattoon Youth Wrestling Club,2601811801
+girls_intermediate,82,Alaina Linton,Oakwood Youth Wrestling Club,2409318601
+girls_intermediate,82,Maci Leischner,Warrensburg-Latham Jr. Cardinals Wrestling Club,2501142201
+girls_intermediate,82,Quinlee Cook,Westville Youth Wrestling,2507945901
+girls_intermediate,82,Graysen Choate,Fisher Wrestling Club,2406146901
+girls_intermediate,82,Havanah Jones,Charleston Wrestling Club,2610566901
+girls_intermediate,88,Natalya Moberg,Chatham Wrestling Club,2203401801
+girls_intermediate,88,Colette Gaitros,Mt. Zion Kids Wrestling Club,2204009101
+girls_intermediate,88,Amelia Brading,Cumberland Youth Wrestling Club,2507333201
+girls_intermediate,88,Gracelynn Stitt,Oakwood Youth Wrestling Club,2409319301
+girls_intermediate,88,Callie Cox,Argenta-Oreana Kids Wrestling Club,2501967801
+girls_intermediate,88,Audree Oldridge,Cardinals Wrestling Club,2403340501
+girls_intermediate,95,Aryana Resendez,Chatham Wrestling Club,2304336201
+girls_intermediate,95,Clara Lauer,Petersburg Wrestling Club,2306896901
+girls_intermediate,95,Charlie Tamosaitis,RWC,2602944201
+girls_intermediate,95,Remington Grant,Cardinals Wrestling Club,2503984101
+girls_intermediate,95,Erin Wells,Taylorville Wrestling Club,2305524301
+girls_intermediate,95,Raegen Carl,Hoopeston Area Youth Wrestling,2503682101
+girls_intermediate,115,Pieper Boston,Li'L Trojan Wrestling Club,2406339001
+girls_intermediate,115,Annalynn Johnson,Westville Youth Wrestling,2100861301
+girls_intermediate,115,Emily Key,Shelbyville Jr. Wrestling Rams,2504243501
+girls_intermediate,115,Isabella Shreves,Rantoul Youth Wrestling,2504912201
+girls_intermediate,135,Brooklyn Ruepke,Decatur Lakers Wrestling Club,2605595501
+girls_intermediate,135,Hazel Whitlatch,Mattoon Youth Wrestling Club,2503461901
+girls_intermediate,135,Izzabella Mager,Rantoul Youth Wrestling,2204739401
+intermediate,55,Kyrin Alkire,Hoopeston Area Youth Wrestling,2405765301
+intermediate,55,Kayden Chapman,Mattoon Youth Wrestling Club,2303311001
+intermediate,55,Ethan Nicholas,Cumberland Youth Wrestling Club,2507345301
+intermediate,55,Lucas Cornwell,Marshall Red Rush Wrestling,2511037401
+intermediate,59,Lane Kesler,Fisher Wrestling Club,2203606001
+intermediate,59,Kendrek Smith,Williamsville Wrestling Club,2202666101
+intermediate,59,Lou Donnel,Shelbyville Jr. Wrestling Rams,2305625101
+intermediate,59,Daniel Price,Chatham Wrestling Club,2305622801
+intermediate,59,Grant goodman,Petersburg Wrestling Club,2610141601
+intermediate,64,Pedro Legend Rangel,Storm Youth Wrestling Club,2002047201
+intermediate,64,Levi Chapman,RWC,2405167001
+intermediate,64,Beau Edrington,Storm Youth Wrestling Club,2201923601
+intermediate,64,Samuel Reif,Meridian Hawks Youth Wrestling Club,2404576901
+intermediate,64,Huckslee Byers,Storm Youth Wrestling Club,2303013701
+intermediate,64,Jaxson McClimans,Westville Youth Wrestling,2507945201
+intermediate,69,Beau Beiler,Mt. Zion Kids Wrestling Club,2305521101
+intermediate,69,Garrett Graham,TJ Trained WC-Clinton,2306886901
+intermediate,69,Leo Hooker,Mattoon Youth Wrestling Club,2204895901
+intermediate,69,Keaton Claussen,Petersburg Wrestling Club,2405165201
+intermediate,69,Levi Escobar,RWC,2304335001
+intermediate,69,Kash Heinbaugh,Cumberland Youth Wrestling Club,2304158001
+intermediate,74,Timothy Block,Mattoon Youth Wrestling Club,2404572401
+intermediate,74,Bryce Bruce,Mt. Zion Kids Wrestling Club,2407077601
+intermediate,74,Drake Scattergood,Clinton Wrestling Club,2404320801
+intermediate,74,Tucker Sherrick,Marshall Red Rush Wrestling,2204592801
+intermediate,74,Abel Allison,Hoopeston Area Youth Wrestling,2404571701
+intermediate,74,Mason Cumpston,Clinton Wrestling Club,2202952101
+intermediate,79,Cooper Alger-Scott,Taylorville Wrestling Club,2305522801
+intermediate,79,Freddy Blade,Cumberland Youth Wrestling Club,2603842201
+intermediate,79,J.D. Kent,Williamsville Wrestling Club,2502953701
+intermediate,79,Timothy Kang,Champaign Wrestling Club,2203337401
+intermediate,79,Monteen Gray,Champaign Wrestling Club,2406048701
+intermediate,79,Rhett Culbertson,Champaign Wrestling Club,2400738501
+intermediate,84,Dawson Dyer,Mattoon Youth Wrestling Club,2005603901
+intermediate,84,Tanner Lewis,Warrensburg-Latham Jr. Cardinals Wrestling Club,2209055701
+intermediate,84,Gunnar Kirkpatrick,Westville Youth Wrestling,2406803401
+intermediate,84,Preston Ryan,Argenta-Oreana Kids Wrestling Club,2204181801
+intermediate,84,Hank Walker,Storm Youth Wrestling Club,2304493101
+intermediate,84,Nolan Krigbaum,Argenta-Oreana Kids Wrestling Club,2206723701
+intermediate,90,Kingston Hamilton,Wildcats Wrestling Academy,2206591701
+intermediate,90,Miles Schmid,TJ Trained WC-Clinton,1904475601
+intermediate,90,Kyle Bogan,Mattoon Youth Wrestling Club,2303310701
+intermediate,90,Nolan Metzelaars,Cumberland Youth Wrestling Club,2203129601
+intermediate,90,Aeden Mcconkey,Hoopeston Area Youth Wrestling,2603785001
+intermediate,90,Patton Redfern,Cumberland Youth Wrestling Club,2406618701
+intermediate,98,Vedder Anello,Mattoon Youth Wrestling Club,2306151801
+intermediate,98,Aric Wittmer,Warrensburg-Latham Jr. Cardinals Wrestling Club,2206853501
+intermediate,98,Wyatt Mathias,Warrensburg-Latham Jr. Cardinals Wrestling Club,2207926101
+intermediate,98,Robert Castro,Warrensburg-Latham Jr. Cardinals Wrestling Club,2609118601
+intermediate,98,Tyler Field,Hoopeston Area Youth Wrestling,2503680601
+intermediate,108,Hudson Gibbs,Chatham Wrestling Club,2506431201
+intermediate,108,Dawson Boyett,Unity Youth Wrestling Club,2305530401
+intermediate,108,Kaidem Pitts,Chatham Wrestling Club,2516030101
+intermediate,108,Jayden Patterson,Mt. Zion Kids Wrestling Club,2204181701
+intermediate,108,Abel Saupe,Unity Youth Wrestling Club,2601403901
+intermediate,108,Cobain Goff,Wildcats Wrestling Academy,2202665701
+intermediate,122,Frederick DeLoriea,Champaign Wrestling Club,2501203201
+intermediate,122,Robert Gann-Neeley,Warrensburg-Latham Jr. Cardinals Wrestling Club,2509771901
+intermediate,122,Wyatt Oyler,Argenta-Oreana Kids Wrestling Club,2303963301
+intermediate,122,Rowan Strohl,Cumberland Youth Wrestling Club,2507346701
+intermediate,122,Leighton Darr,Oakwood Youth Wrestling Club,2000736901
+intermediate,148,Emmett Bruner,Chatham Wrestling Club,2308279101
+intermediate,148,Colton Howland,Meridian Hawks Youth Wrestling Club,2404575001
+intermediate,148,Stetson Strohl,Cumberland Youth Wrestling Club,2603740301
+intermediate,148,Tyler Raines,Clinton Wrestling Club,2305507201
+intermediate,148,Dean David,Warrensburg-Latham Jr. Cardinals Wrestling Club,2402211101
+intermediate,148,adden Johnson,Storm Youth Wrestling Club,2202096501
+intermediate,177,Anderson Curry,Unity Youth Wrestling Club,2305530701
+girls_novice,63,Madison Gordon,Clinton Wrestling Club,2504310201
+girls_novice,74,Saige Danneberger,Shelbyville Jr. Wrestling Rams,2407524101
+girls_novice,80,Salem Harris,Champaign Wrestling Club,2200436901
+girls_novice,80,Zoey McClimans,Westville Youth Wrestling,2507945401
+girls_novice,85,Grace Stoller,Clinton Wrestling Club,2403570201
+girls_novice,85,Johanna Daugherty,Taylorville Wrestling Club,2105186501
+girls_novice,90,Stella Roof,Clinton Wrestling Club,2403570001
+girls_novice,90,Pyper Oldridge,Cardinals Wrestling Club,2503469701
+girls_novice,96,Cheyenne Richardson,Oakwood Youth Wrestling Club,2605722801
+girls_novice,96,Jacayla Thomas,Champaign Wrestling Club,2503233501
+girls_novice,96,Grey Crowder,Taylorville Wrestling Club,2509259501
+girls_novice,96,Kylie Paine,Taylorville Wrestling Club,2305523801
+girls_novice,102,Kymberlee Reynolds,Li'L Trojan Wrestling Club,2302856701
+girls_novice,102,Chevi Sanchez,Unity Youth Wrestling Club,1804636001
+girls_novice,102,Mylee Swaim,Oakwood Youth Wrestling Club,2407688101
+girls_novice,102,Emma Dick,Cumberland Youth Wrestling Club,2008971501
+girls_novice,102,Hunter Reardon,Unity Youth Wrestling Club,2610397401
+girls_novice,108,Kamrynn Brown,Mattoon Youth Wrestling Club,2510241801
+girls_novice,108,Brooklyn Herigodt,Chatham Wrestling Club,1902667401
+girls_novice,108,Mia Dennison,Williamsville Wrestling Club,2304334901
+girls_novice,115,Ella Anderson,RWC,1801998701
+girls_novice,115,Maycelynn Holmes,Shelbyville Jr. Wrestling Rams,2407525801
+girls_novice,115,Taylinn Young,Rantoul Youth Wrestling,2304488901
+girls_novice,115,Kynzlee Carlisle,Mt. Zion Kids Wrestling Club,2603331201
+girls_novice,125,Katy Nichols,Cumberland Youth Wrestling Club,2204592101
+girls_novice,125,Ella Dick,Cumberland Youth Wrestling Club,2008971301
+girls_novice,185,Sasha Fairchild,Fisher Wrestling Club,2604985901
+novice,64,Kane Harris,Champaign Wrestling Club,2200436701
+novice,69,Baron Furman,Petersburg Wrestling Club,2206728801
+novice,69,Eddie Palermo,Champaign Wrestling Club,2200517101
+novice,69,Steven Griffith Jr.,Storm Youth Wrestling Club,2304496001
+novice,69,Brennan Mendenhall,Mt. Zion Kids Wrestling Club,2602169901
+novice,74,Brantlee Sinclair,Petersburg Wrestling Club,2506156601
+novice,74,Mason Dennis,Chatham Wrestling Club,2518944401
+novice,74,Antoni Mendoza,Hoopeston Area Youth Wrestling,2603785101
+novice,74,Knox Ghazi-Moradi,Champaign Wrestling Club,2400551301
+novice,74,Brooks Overton,Mattoon Youth Wrestling Club,2204896301
+novice,80,Case Hoene,Cumberland Youth Wrestling Club,2304158101
+novice,80,Keaton Lauer,Petersburg Wrestling Club,2006897301
+novice,80,Jon Willoughby,Mattoon Youth Wrestling Club,2404324401
+novice,80,Maximus Walker,Marshall Red Rush Wrestling,2606726901
+novice,80,Anthony Dubson,Mattoon Youth Wrestling Club,2303745701
+novice,80,Marcus Sappenfield,Cumberland Youth Wrestling Club,2004214501
+novice,86,Pedro David Rangel,Storm Youth Wrestling Club,1806623001
+novice,86,Tate Danneberger,Shelbyville Jr. Wrestling Rams,2407524201
+novice,86,Luke Chapman,RWC,2502086801
+novice,86,Brecken Aaron,Cumberland Youth Wrestling Club,1804671701
+novice,86,Grayson Goodrum,Hoopeston Area Youth Wrestling,2204359601
+novice,86,Landon Selinger,Petersburg Wrestling Club,2206730001
+novice,93,Paxton Taylor,Storm Youth Wrestling Club,2208895801
+novice,93,Carter Hager,Shelbyville Jr. Wrestling Rams,2004156901
+novice,93,Garrick Boyd,Cumberland Youth Wrestling Club,2507334301
+novice,93,Landyn Bradshaw,Warrensburg-Latham Jr. Cardinals Wrestling Club,2506557601
+novice,93,Archie Bundy,Argenta-Oreana Kids Wrestling Club,2303963201
+novice,93,Austin Miller,Storm Youth Wrestling Club,2502706001
+novice,100,Knox Patient,Champaign Wrestling Club,1903791701
+novice,100,Brockton Phillips,Marshall Red Rush Wrestling,1902852001
+novice,100,Grant Goforth,Mt. Zion Kids Wrestling Club,2004167801
+novice,100,Carson Edwards,Cumberland Youth Wrestling Club,2507326701
+novice,100,Gage Strink,Fisher Wrestling Club,2303469001
+novice,100,Miles Kappler,Decatur Lakers Wrestling Club,2406642301
+novice,108,Jyzaiah Perez,Oakwood Youth Wrestling Club,1804668001
+novice,108,Payt Titus,Mattoon Youth Wrestling Club,1904478701
+novice,108,Leonidas Calhoun,Petersburg Wrestling Club,2006896701
+novice,108,Emmett Pitts,Chatham Wrestling Club,2502050901
+novice,108,Jaxon Scattergood,Clinton Wrestling Club,2404320901
+novice,108,Jaylen Davis,Junior Cyclones Wrestling Club,2516676601
+novice,116,Ramel Jones,Hoopeston Area Youth Wrestling,2003334401
+novice,116,Adam Glause,Decatur Lakers Wrestling Club,2310574901
+novice,116,Rhett Murray,Fisher Wrestling Club,2203606101
+novice,116,Greyson Hughes,Storm Youth Wrestling Club,2002047001
+novice,116,Jacob Holland,Fisher Wrestling Club,2002044201
+novice,116,Nash Spitz,Charleston Wrestling Club,2610721501
+novice,125,Xavier Briggs,Storm Youth Wrestling Club,1803239701
+novice,125,Carter Outlaw,Rantoul Youth Wrestling,2505025001
+novice,125,Carson Guidish,Argenta-Oreana Kids Wrestling Club,1905043801
+novice,125,Cooper Shepard,Cumberland Youth Wrestling Club,1804673601
+novice,125,Kristopher Smith,Wildcats Wrestling Academy,2306016701
+novice,125,Cameron Blanden,Champaign Wrestling Club,2301157601
+novice,134,Justin Park,Hoopeston Area Youth Wrestling,2204360101
+novice,134,Julius Hyder,Decatur Lakers Wrestling Club,2311169401
+novice,134,Brody Morrissey,Taylorville Wrestling Club,2305889001
+novice,134,Liam Birley,Rantoul Youth Wrestling,2304488101
+novice,134,Thomas McGee,Chatham Wrestling Club,2308807301
+novice,154,Markel Davey,Champaign Wrestling Club,2200647801
+novice,154,X'xavier Lipscomb,Storm Youth Wrestling Club,2201824101
+novice,154,Jax Woodard,Westville Youth Wrestling,2406803801
+novice,154,Knox Lane,Hoopeston Area Youth Wrestling,2204359801
+novice,154,Jackson Weddle,Westville Youth Wrestling,1802625701
+novice,154,Jakoby Michener,Argenta-Oreana Kids Wrestling Club,2604722901
+novice,178,Samuel Morgan,Marshall Red Rush Wrestling,2611235701
+novice,178,TyShawn Cunningham,Hoopeston Area Youth Wrestling,2206592101
+novice,178,Wesley Mager,Rantoul Youth Wrestling,2004189301
+novice,178,Raylan Lefever,Rantoul Youth Wrestling,2606494201
+novice,215,Thurlow Grimm,Oakwood Youth Wrestling Club,2005067901
+novice,215,Bryson Comstock,Marshall Red Rush Wrestling,2609591601
+novice,215,Ian Bons,Warrensburg-Latham Jr. Cardinals Wrestling Club,2603878901
+novice,215,Easton Noland,Meridian Hawks Youth Wrestling Club,2404576301
+novice,215,Kal-El Barbee,Junior Cyclones Wrestling Club,2409510601
+girls_senior,95,Emma Gordon,Clinton Wrestling Club,2502367001
+girls_senior,100,Petra Hart,Li'L Trojan Wrestling Club,2201500301
+girls_senior,100,Elizabeth Woods,Mattoon Youth Wrestling Club,2604793501
+girls_senior,110,Lila Calhoun,Petersburg Wrestling Club,1805967201
+girls_senior,115,Daisy Stierwalt,Unity Youth Wrestling Club,2505050401
+girls_senior,115,Elle Espinoza,Hoopeston Area Youth Wrestling,2406955101
+girls_senior,120,Delilah Branner,Li'L Trojan Wrestling Club,2005624401
+girls_senior,120,Kaitlyn Swaim,Oakwood Youth Wrestling Club,2504594901
+girls_senior,125,Janessa Norton,Petersburg Wrestling Club,2206729701
+girls_senior,125,Rogan Parker,Li'L Trojan Wrestling Club,2613725001
+girls_senior,130,Harlow Flannigan,Mt. Zion Kids Wrestling Club,2607740601
+girls_senior,130,Ivey Day,Oakwood Youth Wrestling Club,2411522001
+girls_senior,135,Mya Owens,Storm Youth Wrestling Club,2201961601
+girls_senior,135,Megan Grant,Cardinals Wrestling Club,2503983801
+girls_senior,145,Molly Hill,Petersburg Wrestling Club,2206729201
+girls_senior,185,Brielle Molina,Unity Youth Wrestling Club,2207311801
+girls_senior,240,Olivia Justice,Cumberland Youth Wrestling Club,2507323201
+senior,74,Drake Edrington,Storm Youth Wrestling Club,1803239901
+senior,84,Paul Ryan,Argenta-Oreana Kids Wrestling Club,1902110301
+senior,84,Kalab Staley,Junior Cyclones Wrestling Club,2305525301
+senior,90,Avery Goodrum,Hoopeston Area Youth Wrestling,2204359501
+senior,90,Cashtyn Sutherland,Unity Youth Wrestling Club,2607395201
+senior,96,Braden Baker,Champaign Wrestling Club,1801545701
+senior,96,Beckem Daniels,Mattoon Youth Wrestling Club,1906940901
+senior,96,Ichiro Gayler,Storm Youth Wrestling Club,2300697601
+senior,96,Anthony Richard Jr.,Champaign Wrestling Club,2601091701
+senior,96,Kallum Spears,Warrensburg-Latham Jr. Cardinals Wrestling Club,2003323701
+senior,103,Zachary Buraglio,Champaign Wrestling Club,2405297801
+senior,103,Emersen Laster,Mattoon Youth Wrestling Club,2008234201
+senior,103,Kale Whorrall,Westville Youth Wrestling,2304493401
+senior,110,Mario Richard,Decatur Lakers Wrestling Club,2601184501
+senior,110,Greyson Figgins,Cumberland Youth Wrestling Club,1804672201
+senior,110,Loki Patrick,Decatur Lakers Wrestling Club,2311169201
+senior,118,Titus Harkleroad,Storm Youth Wrestling Club,2001710301
+senior,118,Ramier Jones,Hoopeston Area Youth Wrestling,2003334501
+senior,118,Karsen Jorgensen,Argenta-Oreana Kids Wrestling Club,1905043901
+senior,118,Abraham Song,Champaign Wrestling Club,2401070401
+senior,126,Luke Rincker,Williamsville Wrestling Club,1805954501
+senior,135,Drake Tucker,Meridian Hawks Youth Wrestling Club,2404578001
+senior,135,Sayer Hinchman,Oakwood Youth Wrestling Club,1802625401
+senior,135,Benjamin May,Argenta-Oreana Kids Wrestling Club,2504757401
+senior,135,Tucker Lane,Hoopeston Area Youth Wrestling,2303745301
+senior,144,Nasouh Masri,Champaign Wrestling Club,2408396401
+senior,144,Dinozzo Boyer,Hoopeston Area Youth Wrestling,2004171201
+senior,144,Jaxon Keenan,Champaign Wrestling Club,2002039401
+senior,144,Alejandro Cardoza,Oakwood Youth Wrestling Club,2409317801
+senior,144,Addrick Williams,Marshall Red Rush Wrestling,2607115701
+senior,154,Joshua Richards,Storm Youth Wrestling Club,2204487001
+senior,154,Cooper Dahnke,Marshall Red Rush Wrestling,2509631601
+senior,154,Xander Linder,Hoopeston Area Youth Wrestling,2002571901
+senior,154,Tavion Gena,Champaign Wrestling Club,2500832501
+senior,164,Braeden Kunkel,Storm Youth Wrestling Club,2606212101
+senior,164,Roxson Nebergall,Marshall Red Rush Wrestling,2509631801
+senior,164,Hunter Hubbard,Oakwood Youth Wrestling Club,1904934901
+senior,164,Ezra Mclain,Champaign Wrestling Club,2605533901
+senior,164,Reeve Pilotte,Hoopeston Area Youth Wrestling,2404576501
+senior,188,Wyatt Craft,Meridian Hawks Youth Wrestling Club,2404573401
+senior,188,Aiden Amenda,Meridian Hawks Youth Wrestling Club,2404571901
+senior,188,Aden jarrett,Chatham Wrestling Club,2410726201
+senior,188,Allen Gann-Neeley,Warrensburg-Latham Jr. Cardinals Wrestling Club,2601729701
+senior,188,Trenton Olson,Champaign Wrestling Club,2304325201
+senior,215,Brock Baughman,Chatham Wrestling Club,2514928801
+senior,215,Jason Calandrilla,Charleston Wrestling Club,2506400701
+senior,275,Maddox Keim,Marshall Red Rush Wrestling,2606798701
+senior,275,Aiden Mcclimon,Argenta-Oreana Kids Wrestling Club,2603331801
+girls_bantam,45,Charlotte Thatcher,St. Charles WC,2503457201
+girls_bantam,50,Quinn Fahey,Wheaton Wrestling Club,2408530701
+girls_bantam,55,Zariyah Abitua,St. Charles WC,2406619701
+girls_bantam,55,Madelyn Llanos,Aurora Wrestling Club,2611020501
+girls_bantam,67,Charlotte Kohley,St. Charles WC,2305938201
+girls_bantam,85,Reagan Wolf,St. Charles WC,2309631901
+bantam,43,Blake Henrich,SCN Youth Wrestling Club,2403285801
+bantam,43,Levi Sosa,St. Charles WC,2603885201
+bantam,46,Luca Divietro,SCN Youth Wrestling Club,2503438601
+bantam,46,Landon Porciuncula,Wheaton Wrestling Club,2600892501
+bantam,49,Hudson Perry,SCN Youth Wrestling Club,2401648201
+bantam,49,Preston Weer,SCN Youth Wrestling Club,2502532101
+bantam,49,Kaycen LeDeaux,SCN Youth Wrestling Club,2500479401
+bantam,49,McDermott Tagliareni,Wheaton Wrestling Club,2405113601
+bantam,49,Decker Waugh,St. Charles WC,2403475401
+bantam,49,Case Airey,Geneva Junior Vikings WC,2505558801
+bantam,52,Jace Werhun,Top Dog Wrestling Club,2511289901
+bantam,52,Brody Norman,SCN Youth Wrestling Club,2402108401
+bantam,52,Gus Thorson,Geneva Junior Vikings WC,2605883501
+bantam,52,Austin Hucek,St. Charles WC,2605737401
+bantam,52,Stefano Mastrolia,SCN Youth Wrestling Club,2502279501
+bantam,52,Evan Engel,Martinez Fox Valley Elite Wrestling Club,2600022601
+bantam,55,Aiden Murphy,Martinez Fox Valley Elite Wrestling Club,2406340201
+bantam,55,Zachary Hovey,Martinez Fox Valley Elite Wrestling Club,2301434101
+bantam,55,August Pentzien,Wheaton Wrestling Club,2504205401
+bantam,55,Cameron Gurtler,St. Charles WC,2602026001
+bantam,58,Benjamin Johnston,SCN Youth Wrestling Club,2310389701
+bantam,58,Rafael Escobedo,Martinez Fox Valley Elite Wrestling Club,2604893201
+bantam,58,James McMahon,Wheaton Wrestling Club,2509193901
+bantam,58,Maxwell Jarzembowski,St. Charles WC,2400366001
+bantam,58,Desmond Novinger,Wheaton Wrestling Club,2406640601
+bantam,58,Francisco Guerrero,Wheaton Wrestling Club,2503784201
+bantam,62,Anthony Macchione,SCN Youth Wrestling Club,2301926601
+bantam,62,Adriel Albor,Martinez Fox Valley Elite Wrestling Club,2400224201
+bantam,62,Gustavo Alvarado,Martinez Fox Valley Elite Wrestling Club,2305782701
+bantam,62,Arthur Kavanagh,Wheaton Wrestling Club,2404368701
+bantam,62,Keating Tagliareni,Wheaton Wrestling Club,2308096101
+bantam,62,Declan Braheny,Top Dog Wrestling Club,2605369201
+bantam,66,Michael Tamillow,St. Charles WC,2203226801
+bantam,66,Harvey Powell,St. Charles WC,2604375701
+bantam,66,Darren Washington Jr.,Blackhawk Wrestling Club,2400885901
+bantam,66,Ezra Svoboda,Martinez Fox Valley Elite Wrestling Club,2505857701
+bantam,66,Lucas Deichmiller,Wheaton Wrestling Club,2606132101
+bantam,70,Tyler Norman,SCN Youth Wrestling Club,2203205801
+bantam,70,Bowen Pynenberg,Oswego Wrestling Club,2501396301
+bantam,70,Vincenzo Waller,SCN Youth Wrestling Club,2317216401
+bantam,70,Ashton Pittz,St. Charles WC,2600666901
+bantam,70,Lorenzo Zavala,St. Charles WC,2400129901
+bantam,76,Renzo Cobian,SCN Youth Wrestling Club,2603814001
+bantam,84,Aiden Hoseman,Martinez Fox Valley Elite Wrestling Club,2302227501
+bantam,84,Lucas Favela,Wheaton Wrestling Club,2306012801
+bantam,84,Ruger Harman,St. Charles WC,2401359801
+bantam,84,Dominic Gurtler,St. Charles WC,2602025601
+bantam,84,Grayson Lindeman,Oswego Wrestling Club,2606026301
+bantam,84,Dax Jankiewicz,St. Charles WC,2402677801
+bantam,95,Hawkins Edgcomb,SCN Youth Wrestling Club,2200948301
+bantam,95,Thomas Nee Jr,St. Charles WC,2501442701
+bantam,95,Finnegan Walker,St. Charles WC,2303786201
+bantam,120,Drake Jankiewicz,St. Charles WC,2402677501
+bantam,120,Anthony DiStazio,Wheaton Wrestling Club,2406639301
+bantam,120,Michael Almaguer,St. Charles WC,2509342901
+bantam,120,Manuel Calderon,Martinez Fox Valley Elite Wrestling Club,2407813201
+bantam,120,Ryder Dearing,St. Charles WC,2401320901
+girls_intermediate,62,Evelyn Llanos,Aurora Wrestling Club,2611020401
+girls_intermediate,67,Liliana Muscia,Top Dog Wrestling Club,2504946501
+girls_intermediate,88,Nola Svoboda,Martinez Fox Valley Elite Wrestling Club,2510102801
+girls_intermediate,88,Mia Tavares,Blackhawk Wrestling Club,2607184901
+girls_intermediate,88,Evalyn Wasack,Oswego Wrestling Club,2612631501
+girls_intermediate,115,Vivian Garnero,St. Charles WC,2302373401
+girls_intermediate,135,Evelyn Likar,St. Charles WC,2602599601
+intermediate,55,Jackson Wood,Wheaton Wrestling Club,2409856901
+intermediate,59,Edson Ballines,Martinez Fox Valley Elite Wrestling Club,2301306501
+intermediate,59,Spiro Mastrolia,SCN Youth Wrestling Club,2300312801
+intermediate,59,Darian Martinez-Williams,St. Charles WC,2105550601
+intermediate,59,Evan Schwartz,St. Charles WC,2403379301
+intermediate,59,Lucas Hensley,SCN Youth Wrestling Club,2314631901
+intermediate,64,Hiram Bulava,SCN Youth Wrestling Club,2000911601
+intermediate,64,Owen Orcutt,Martinez Fox Valley Elite Wrestling Club,2306245101
+intermediate,64,Oliver Garcia,Martinez Fox Valley Elite Wrestling Club,2304757701
+intermediate,64,Wolfie Pentzien,Wheaton Wrestling Club,2606260001
+intermediate,64,James Henrich,SCN Youth Wrestling Club,2500909701
+intermediate,64,Reid Schmeling,Wheaton Wrestling Club,2406640801
+intermediate,69,Deegan Hefner,St. Charles WC,2406498201
+intermediate,69,Kayden Holman,Martinez Fox Valley Elite Wrestling Club,2409311101
+intermediate,69,Pryce Hendriksen,SCN Youth Wrestling Club,2205574301
+intermediate,69,Lucas Kavanagh,Wheaton Wrestling Club,2203274201
+intermediate,69,Abel Lamas,Top Dog Wrestling Club,2410970601
+intermediate,69,Francesco Raimondi,SCN Youth Wrestling Club,2301343801
+intermediate,74,Arlo Lake,SCN Youth Wrestling Club,2304331401
+intermediate,74,Ares Robelo,Martinez Fox Valley Elite Wrestling Club,2304337501
+intermediate,74,Knoxx Larkin,St. Charles WC,2200822201
+intermediate,74,Nicholas Smelko,Oswego Wrestling Club,2104944201
+intermediate,74,Temuujin Tamillow,St. Charles WC,2003601001
+intermediate,74,Thomas Frye,Geneva Junior Vikings WC,2207687301
+intermediate,79,Sriyan Bapatla,Top Dog Wrestling Club,2411139701
+intermediate,79,Cooper Fahey,Wheaton Wrestling Club,2306340701
+intermediate,79,Zion Abitua,St. Charles WC,2206959901
+intermediate,79,Pascal Waller,SCN Youth Wrestling Club,2300818401
+intermediate,79,Cohen Pezzute,SCN Youth Wrestling Club,2205638301
+intermediate,79,Carson Toma,SCN Youth Wrestling Club,2201709501
+intermediate,84,Thomas Mesch,SCN Youth Wrestling Club,2003412201
+intermediate,84,Kellan Smadi,SCN Youth Wrestling Club,2100698101
+intermediate,84,Beckett Sacher,Top Dog Wrestling Club,2504858801
+intermediate,84,Donny Grieco,SCN Youth Wrestling Club,2200829101
+intermediate,84,Caden Popovic,Wheaton Wrestling Club,2608516601
+intermediate,84,David Moats,Oswego Wrestling Club,2505431001
+intermediate,90,Asher Anderson,St. Charles WC,2301747001
+intermediate,90,Benjamin Townsend,Wheaton Wrestling Club,2304895101
+intermediate,90,Finnegan Paddock,Wheaton Wrestling Club,2505971701
+intermediate,90,Benjamin Brown,Geneva Junior Vikings WC,2506526901
+intermediate,90,Bjorn Romesburg,Geneva Junior Vikings WC,2507006301
+intermediate,98,Reid Wikierak,SCN Youth Wrestling Club,2003021701
+intermediate,98,Rys Tijerina,St. Charles WC,2400886201
+intermediate,98,Nicholas Therault,St. Charles WC,2300089501
+intermediate,98,Joaquin Soto,Top Dog Wrestling Club,2506927301
+intermediate,98,Jay White,Martinez Fox Valley Elite Wrestling Club,2402247801
+intermediate,108,Vincent Englese,St. Charles WC,2004154601
+intermediate,108,Levi Jeffrey,Wheaton Wrestling Club,2206555801
+intermediate,108,Joseph Parisi,St. Charles WC,2214005601
+intermediate,108,Vili Thompson,Oswego Wrestling Club,2604542401
+intermediate,122,Joseph Englese,St. Charles WC,2004154501
+intermediate,122,Hudson Kohley,St. Charles WC,2214765001
+intermediate,122,Christopher Rauch,St. Charles WC,2303816801
+intermediate,122,Geoffrey Grant Jr.,Tribe Wrestling Club,2612471501
+intermediate,148,Niall Reilly,Oswego Wrestling Club,2503300501
+intermediate,177,Deangelo Ward,Blackhawk Wrestling Club,2403261901
+intermediate,177,Will Atkins,St. Charles WC,2300947501
+girls_novice,80,Koralee Larkin,St. Charles WC,2210787801
+girls_novice,85,Kimberly Sarabia,Top Dog Wrestling Club,2411353501
+girls_novice,85,Alison Dominguez,Blackhawk Wrestling Club,2611834901
+girls_novice,85,Mia Hobson,Blackhawk Wrestling Club,2610959201
+girls_novice,90,Sophia Hlava,Martinez Fox Valley Elite Wrestling Club,2504750901
+girls_novice,96,Lariel mosley,Blackhawk Wrestling Club,2611048601
+girls_novice,96,Ellie Padilla,Blackhawk Wrestling Club,2611199501
+girls_novice,108,Andie Anderson,St. Charles WC,2304556201
+girls_novice,108,Aubrey Wasack,Oswego Wrestling Club,2608002001
+girls_novice,108,Merry Kim,Wheaton Wrestling Club,2611301101
+girls_novice,125,Sarah Kenney,Blackhawk Wrestling Club,2611358401
+girls_novice,125,Felicity Hernandez,Blackhawk Wrestling Club,2508229101
+novice,64,Colton Copstead,St. Charles WC,2006201101
+novice,69,Derek Hayes,SCN Youth Wrestling Club,2001086701
+novice,69,Daniel Ballines Jr.,Martinez Fox Valley Elite Wrestling Club,2301306401
+novice,69,John Gray,Wheaton Wrestling Club,2610724101
+novice,69,Liam Rocks,Geneva Junior Vikings WC,2609764201
+novice,74,William Plumb,SCN Youth Wrestling Club,1801859201
+novice,74,Jackson Payleitner,St. Charles WC,1801056501
+novice,74,Caden Hensley,SCN Youth Wrestling Club,2302388601
+novice,80,Hudson Ludwig,SCN Youth Wrestling Club,1902899901
+novice,80,Braxton Baum,SCN Youth Wrestling Club,2201141701
+novice,80,Jack Mueller,St. Charles WC,1902493401
+novice,80,Jackson Toma,SCN Youth Wrestling Club,2301151201
+novice,80,Bobby Alfaro,Martinez Fox Valley Elite Wrestling Club,1902129501
+novice,80,Tate Adamson,SCN Youth Wrestling Club,2002789901
+novice,86,Oliver Hardy,Martinez Fox Valley Elite Wrestling Club,2407560801
+novice,86,Wesley Norman,SCN Youth Wrestling Club,2203205601
+novice,86,Raylan LeSage,SCN Youth Wrestling Club,1901665301
+novice,86,Pasquale Greco,SCN Youth Wrestling Club,1900764401
+novice,86,James Haavig,Wheaton Wrestling Club,2607184301
+novice,86,Mason Hovey,Martinez Fox Valley Elite Wrestling Club,2201527801
+novice,93,Bryson Wilkinson,SCN Youth Wrestling Club,1812067301
+novice,93,Damon Llanuza,St. Charles WC,2200583301
+novice,93,Will Lepsi,Wheaton Wrestling Club,2103891801
+novice,93,Benjamin Clementz,Blackhawk Wrestling Club,2308504901
+novice,93,Demetius Young-Huerta,Wheaton Wrestling Club,2611456901
+novice,93,Graysen Peahl,Geneva Junior Vikings WC,2611147201
+novice,100,Avery Robelo,Martinez Fox Valley Elite Wrestling Club,2304337601
+novice,100,cash Martin,SCN Youth Wrestling Club,2003312701
+novice,100,Preston Lee,St. Charles WC,2000854601
+novice,100,Smith Karalis,SCN Youth Wrestling Club,2201261701
+novice,100,Alexander Teafoe,SCN Youth Wrestling Club,2201276801
+novice,100,Joseph Smelko,Oswego Wrestling Club,2104943901
+novice,108,Cameron Gillie,SCN Youth Wrestling Club,1804695201
+novice,108,Logan Weiss,Geneva Junior Vikings WC,2409868601
+novice,108,Carter Airey,Geneva Junior Vikings WC,2508559201
+novice,108,Willaim LaFemina,Wheaton Wrestling Club,2306514901
+novice,108,Christopher Mesch,SCN Youth Wrestling Club,2003411901
+novice,108,Joey Gutierrez,St. Charles WC,2105290101
+novice,116,Wyatt Muetze,St. Charles WC,2203117801
+novice,116,Rocco Edgcomb,SCN Youth Wrestling Club,2200948201
+novice,116,Leonel Hernandez,Martinez Fox Valley Elite Wrestling Club,2606182201
+novice,116,Christian Lopez,Blackhawk Wrestling Club,2608620601
+novice,116,Cullen Morton,SCN Youth Wrestling Club,2214068801
+novice,116,Robert Pluth,Top Dog Wrestling Club,2606954301
+novice,125,Gavin Olenek,SCN Youth Wrestling Club,1901754501
+novice,125,Kevin Leyva-Gonzalez,Blackhawk Wrestling Club,2510362601
+novice,125,Joseph McKay,SCN Youth Wrestling Club,2502527501
+novice,125,Santiago Alejo,Martinez Fox Valley Elite Wrestling Club,2005440201
+novice,125,Jack Egan,St. Charles WC,2500259201
+novice,125,Maximillian Amaya,Blackhawk Wrestling Club,2404217501
+novice,134,Greyson Glowienke,Wheaton Wrestling Club,2005038801
+novice,134,Jose Zepeda,Aurora Wrestling Club,1803987401
+novice,134,Connor Tapp,St. Charles WC,2600044701
+novice,134,Jacob Wyllys,Wheaton Wrestling Club,2611457001
+novice,134,Robert Cernenichi,Top Dog Wrestling Club,2105057901
+novice,134,Leslie James Armstrong,Oswego Wrestling Club,2611211301
+novice,154,Dominic Englese,St. Charles WC,1804747201
+novice,154,Cooper Wilson,St. Charles WC,1801986501
+novice,154,Lucas Nicoski,Martinez Fox Valley Elite Wrestling Club,2005166601
+novice,154,Chase Spradau,Oswego Wrestling Club,2404805801
+novice,178,Andrew Phillips,St. Charles WC,2206727801
+novice,178,Eli Hill,SCN Youth Wrestling Club,1802049201
+novice,178,Brady Deichmiller,Wheaton Wrestling Club,2512456901
+novice,178,Brendan Lazare,SCN Youth Wrestling Club,2602741301
+novice,178,Viktor Ahlberg,Geneva Junior Vikings WC,2206404701
+girls_senior,90,Kelianna Larkin,St. Charles WC,2210787701
+girls_senior,90,Ngoc Khanh Van Giang,Geneva Junior Vikings WC,2609997801
+girls_senior,100,Izabella Gonzalez,St. Charles WC,2403873001
+girls_senior,100,Julia Wyller,American Gladiators Wrestling,2004911101
+girls_senior,100,Lilli Lejsner,St. Charles WC,2400347501
+girls_senior,105,Mia Corrales,Blackhawk Wrestling Club,2509261601
+girls_senior,105,Madeline Hlava,Martinez Fox Valley Elite Wrestling Club,2504751101
+girls_senior,110,Olivia Patt,Blackhawk Wrestling Club,2308553001
+girls_senior,110,Poppy Romano,Geneva Junior Vikings WC,2611656001
+girls_senior,115,Malaya Herrera,Blackhawk Wrestling Club,2610578301
+girls_senior,125,Olivia Ferari,Wheaton Wrestling Club,2213983801
+girls_senior,125,Kaira Giang,Geneva Junior Vikings WC,2610013601
+girls_senior,125,Iliana Munoz,Blackhawk Wrestling Club,2611658301
+girls_senior,130,Alyssa Evans,Oswego Wrestling Club,2510226301
+girls_senior,130,Mary Jo Works,Geneva Junior Vikings WC,2611047601
+girls_senior,185,Lynnee Gardner,Blackhawk Wrestling Club,2510071401
+girls_senior,185,Charley Fiedler,Oswego Wrestling Club,2203381001
+girls_senior,185,Aaliyah Ramirez,Blackhawk Wrestling Club,2613860501
+senior,74,Jason Beyer,Blackhawk Wrestling Club,1903301801
+senior,74,Liam Morris,St. Charles WC,2513600301
+senior,74,Ethan Alejos,Wheaton Wrestling Club,2511739901
+senior,79,Matthew Pate,SCN Youth Wrestling Club,2206991101
+senior,79,Tyler Barajas,Blackhawk Wrestling Club,2207884301
+senior,84,Gavin Neri,Wheaton Wrestling Club,2508157401
+senior,90,Brenner Dolvig,St. Charles WC,1904505601
+senior,90,Robert Francisco,Wheaton Wrestling Club,2606485601
+senior,90,Charlie Masters,Blackhawk Wrestling Club,2611068701
+senior,90,Francesco Conigliaro,Oswego Wrestling Club,2415726201
+senior,90,Cole Fahey,Wheaton Wrestling Club,2306340801
+senior,96,Kaden Joustra,St. Charles WC,2200570101
+senior,96,Alex Lapitan,St. Charles WC,2003408701
+senior,96,Salvatore Sheridan,SCN Youth Wrestling Club,2100765501
+senior,96,Donovan Valvano,St. Charles WC,2203183001
+senior,96,Rhayden Brown,Blackhawk Wrestling Club,2203071601
+senior,96,Hunter Pool,Blackhawk Wrestling Club,2503148801
+senior,103,Calvin Babcock,St. Charles WC,1804861601
+senior,103,Leandro Rojas,SCN Youth Wrestling Club,2201153301
+senior,103,Ezekiel Rosas,Martinez Fox Valley Elite Wrestling Club,112236301
+senior,103,Dominic Panzarino,SCN Youth Wrestling Club,2001898801
+senior,103,Michael Blasek,St. Charles WC,2304950401
+senior,103,Michele Mastrolonardo,SCN Youth Wrestling Club,1902552501
+senior,110,Logan Signorella,SCN Youth Wrestling Club,114633201
+senior,110,Adrian Colon,St. Charles WC,112649901
+senior,110,Isaac Willigman,Geneva Junior Vikings WC,2510092001
+senior,110,Donovan Powell,St. Charles WC,2604375301
+senior,110,Benjamin Fontana,SCN Youth Wrestling Club,1904504701
+senior,110,Logan Alvarado,Martinez Fox Valley Elite Wrestling Club,2301435101
+senior,118,Justin Kozak,SCN Youth Wrestling Club,115882301
+senior,118,Isaac Sarabia,Top Dog Wrestling Club,2411353101
+senior,118,Cameron Morton,SCN Youth Wrestling Club,2214068701
+senior,118,Graham Showalter,SCN Youth Wrestling Club,2003403501
+senior,118,Aaron Likar,St. Charles WC,2509574401
+senior,118,Peyton Weiss,Geneva Junior Vikings WC,2405259101
+senior,126,Brayden Johnson,SCN Youth Wrestling Club,103462301
+senior,126,Rocco DiCanio,Oswego Wrestling Club,1904520101
+senior,126,Jesus Rodriguez,Blackhawk Wrestling Club,2510306001
+senior,126,David Modaff,Oswego Wrestling Club,1904520901
+senior,126,Ethan Guzman,Blackhawk Wrestling Club,2207138301
+senior,126,David Cruz,Oswego Wrestling Club,1804709401
+senior,135,Anthony Theodor,Oswego Wrestling Club,2002273001
+senior,135,Grayson Graff,St. Charles WC,1802549601
+senior,135,Louie LaFemina,Wheaton Wrestling Club,2406640301
+senior,135,Benjamin Gordillo,Oswego Wrestling Club,2611008501
+senior,135,Dylan Wituk,Geneva Junior Vikings WC,2508873301
+senior,135,Devin Williams,Oswego Wrestling Club,2603334601
+senior,144,Deegan Lopez,St. Charles WC,2305886501
+senior,144,Aidan Fernandez,Martinez Fox Valley Elite Wrestling Club,1902129701
+senior,144,Gabriel McGinnis,Blackhawk Wrestling Club,2302722901
+senior,144,Rocco Crissey,Oswego Wrestling Club,2409017201
+senior,144,Ritter Sell,Blackhawk Wrestling Club,2002671501
+senior,144,Angel Mata,Aurora Wrestling Club,2610085701
+senior,154,Kyle Dortch,Wheaton Wrestling Club,2614687701
+senior,154,Henry Bishop,St. Charles WC,1802781201
+senior,164,Ashton Ruiz,Oswego Wrestling Club,2610257801
+senior,176,Elias Reta,Blackhawk Wrestling Club,1903299301
+senior,176,Xavier Martinez,Oswego Wrestling Club,2409101301
+senior,176,Braxton Cortino,Oswego Wrestling Club,2302864001
+senior,176,Branden Zamarripa,Oswego Wrestling Club,2508991601
+senior,176,Brayden Cucci,Top Dog Wrestling Club,2002302401
+senior,188,Gabriel Diego-Gomez,Blackhawk Wrestling Club,2510133001
+senior,188,Justin Shead,SCN Youth Wrestling Club,2003647301
+senior,188,Nurillo Dzhurabaev,Tribe Wrestling Club,2613539101
+senior,188,Giovanni Cruz,Blackhawk Wrestling Club,2409929401
+senior,215,Isaiah Velasquez,Blackhawk Wrestling Club,2400885501
+senior,215,Ethan Altamirano,Blackhawk Wrestling Club,2509445901
+senior,215,William Brown,Wheaton Wrestling Club,2614461501
+senior,215,RJ Lemons,Oswego Wrestling Club,2611388201
+senior,215,John Francis,Top Dog Wrestling Club,2509942801
+bantam,49,Liam Ross,Alber Athletics Wrestling Club,2301788301
+bantam,49,Axel Smith,Hononegah Wrestling Club,2404728601
+bantam,49,Lucas Auer,Dakota Wrestling Club,2509544101
+bantam,49,Ty Johnson,Rochelle Wrestling Club,2407522801
+bantam,49,Isaiah Harper,Rochelle Wrestling Club,2503205801
+bantam,49,Colt Schlichting,Harlem Huskies WC,2404973001
+bantam,52,Sam Smith,Stockton Renegades Wrestling Club,2305162601
+bantam,52,Kellan Wenger,Dakota Wrestling Club,2403660301
+bantam,52,Landon Sanders,TCS Wrestling Club,2503399901
+bantam,52,Sawyer Waughen,The Law Wrestling Club,2503232201
+bantam,52,Steven Hardt Jr.,TCS Wrestling Club,2502092501
+bantam,52,Briggs Frederick,Belvidere Bandits Wrestling Club,2302172001
+bantam,55,Grady Kohlhorst,Dakota Wrestling Club,2304327101
+bantam,55,Lionel Perez,Stillman Valley Wrestling Club,2501975201
+bantam,55,Tennyson Anderson,TCS Wrestling Club,2401454701
+bantam,55,Reed Willstead,Stillman Valley Wrestling Club,2605101301
+bantam,55,Sebastian Garcia,Harvard Wrestling Club,2406583101
+bantam,55,Jace Ferguson,West Carroll Lightning WC,2603707101
+bantam,58,Chandler Gilbertson,Stockton Renegades Wrestling Club,2403847101
+bantam,58,Willis Dodd,Du-Pec Wrestling Club,2507152901
+bantam,58,Braxton Wilmuth,Dakota Wrestling Club,2503879301
+bantam,58,Wyatt Heggen,Stillman Valley Wrestling Club,2402560401
+bantam,58,Carson McGivney,Stockton Renegades Wrestling Club,2305162201
+bantam,58,Oliver Stolte,Rochelle Wrestling Club,2406636601
+bantam,62,Mattix Leombruni,Dakota Wrestling Club,2403018401
+bantam,62,Wyatt Hulsebus,Hononegah Wrestling Club,2301400101
+bantam,62,Kellen Krahl,Hononegah Wrestling Club,2605670101
+bantam,62,Rolan Talaga,Rochelle Wrestling Club,2606789001
+bantam,62,Darius Stifter,Du-Pec Wrestling Club,2609619801
+bantam,62,Ashwin Bishop,Stillman Valley Wrestling Club,2301876701
+bantam,66,Elias Andronic,Rochelle Wrestling Club,2203685801
+bantam,66,Abraham Bonvillain,Stockton Renegades Wrestling Club,2404326901
+bantam,66,Aksel Edler,Dakota Wrestling Club,2304326701
+bantam,66,Talan Keltner,The Law Wrestling Club,2303966301
+bantam,66,Henrik ANDERSON,Hononegah Wrestling Club,2510297201
+bantam,66,Brayden Wrage,Stillman Valley Wrestling Club,2401476901
+bantam,70,Carter Auer,Dakota Wrestling Club,2304326601
+bantam,70,Elias Cox,Du-Pec Wrestling Club,2405149401
+bantam,70,Madox Houser,Alber Athletics Wrestling Club,2202961801
+bantam,70,Cohen Smith,Hawk Wrestling Club,2309433201
+bantam,70,Cullen McDevitt,Harvard Wrestling Club,2303147501
+bantam,70,Kory Myerson,Harvard Wrestling Club,2505343001
+bantam,76,Samuel Palmer,Du-Pec Wrestling Club,2507406801
+bantam,76,Ty Shelby,Stillman Valley Wrestling Club,2401479401
+bantam,76,Callan Wyatt,Stillman Valley Wrestling Club,2501883101
+bantam,76,Marcus O'Keefe,Hononegah Wrestling Club,2507945101
+bantam,76,Wyatt Griffin,Dakota Wrestling Club,2304327001
+bantam,76,Bo Downey,Stockton Renegades Wrestling Club,2404327101
+bantam,120,Alexander Weaver,Hononegah Wrestling Club,2403669601
+bantam,120,Mateo Cruz,Harvard Wrestling Club,2404791401
+bantam,120,Ayden Mallett,Rockford Wrestling Club,2607064001
+bantam,120,Karson Penner,Dakota Wrestling Club,2604505901
+intermediate,55,Wyatt Kohlhorst,Dakota Wrestling Club,2203402701
+intermediate,55,Jaxtyn LeConte,Alber Athletics Wrestling Club,2203300801
+intermediate,55,Cohen Frederick,Alber Athletics Wrestling Club,2204354001
+intermediate,55,Greyland Johnston,Dakota Wrestling Club,2604701001
+intermediate,55,Kaiden Lerch,Hononegah Wrestling Club,2604335601
+intermediate,64,Brycen Legue,Stillman Valley Wrestling Club,2301683801
+intermediate,64,Hiro Hongmoungkhoune,Alber Athletics Wrestling Club,2305966301
+intermediate,64,Kenton Raab,Stockton Renegades Wrestling Club,2203608501
+intermediate,64,Gabriel Alber,Dakota Wrestling Club,2203401901
+intermediate,64,Logan Bieniek,Harvard Wrestling Club,2404791301
+intermediate,64,Braxton Yelland,Hononegah Wrestling Club,2504378701
+intermediate,69,Nicholas Jones,Alber Athletics Wrestling Club,2304159301
+intermediate,69,Wells Millard,Rochelle Wrestling Club,2205599401
+intermediate,69,London Lewis,Hawk Wrestling Club,2507079801
+intermediate,69,Jesse Fanara,Belvidere Bandits Wrestling Club,2304155201
+intermediate,69,Parker Swanson,Stillman Valley Wrestling Club,2301983801
+intermediate,69,Merrick Milks,Dakota Wrestling Club,2203403201
+intermediate,74,Brek Alexander,Alber Athletics Wrestling Club,2203402001
+intermediate,74,Benson Grugel,Stillman Valley Wrestling Club,2201304901
+intermediate,74,Colin Schmerse,Dakota Wrestling Club,2208171701
+intermediate,74,Treyvon Walker,Alber Athletics Wrestling Club,2314725101
+intermediate,74,Huxlee Kudlacik,Hononegah Wrestling Club,2202961901
+intermediate,74,Ethan Rogers,Hawk Wrestling Club,2205757401
+intermediate,79,Hunter Shomaker,Alber Athletics Wrestling Club,2203055701
+intermediate,79,John Pieper,Dakota Wrestling Club,2203403501
+intermediate,79,Camdyn Hataway,Alber Athletics Wrestling Club,2105016001
+intermediate,79,Silas Luke,Stockton Renegades Wrestling Club,2203607701
+intermediate,79,Charlie Dockins,Xtreme Wrestling Club,2007758501
+intermediate,79,Owen Beach,Hononegah Wrestling Club,2207310501
+intermediate,84,Jackson Moreno,Alber Athletics Wrestling Club,2304155901
+intermediate,84,Nehemiah Andronic,Rochelle Wrestling Club,1905705701
+intermediate,84,Emmett Riportella,Hononegah Wrestling Club,2202962701
+intermediate,84,Owen Collins,Stillman Valley Wrestling Club,2201298301
+intermediate,84,Titan Stahl,Dakota Wrestling Club,2203403801
+intermediate,84,Lane Groenhagen,Hawk Wrestling Club,2405971501
+intermediate,90,Zander Graika,Dakota Wrestling Club,2403659401
+intermediate,90,Brody Miller,Dakota Wrestling Club,2203403301
+intermediate,90,Caladin Drake,The Law Wrestling Club,2204411001
+intermediate,90,Larry Anderson,Hononegah Wrestling Club,2505641701
+intermediate,90,Rylan VanAcker,Belvidere Bandits Wrestling Club,2406159801
+intermediate,90,Nash Jenniges,Xtreme Wrestling Club,2404070201
+intermediate,98,Isaiah Popoola,Hononegah Wrestling Club,2605704301
+intermediate,98,Dexton Pontnack,Dakota Wrestling Club,2203403701
+intermediate,98,Paisden Miller,Dakota Wrestling Club,2409509801
+intermediate,98,Gavin Provancher,Stillman Valley Wrestling Club,2201306301
+intermediate,98,Gunnar Hall,Stillman Valley Wrestling Club,2007545701
+intermediate,98,Landon Martinez,The Law Wrestling Club,2603346101
+novice,74,Graham Gabler,Alber Athletics Wrestling Club,2205145001
+novice,74,Noah Thompson,Alber Athletics Wrestling Club,2204584101
+novice,74,Maximus Edler,Dakota Wrestling Club,1903807301
+novice,74,Jameson Serrano,Hononegah Wrestling Club,2302691201
+novice,74,Brad Denny,TCS Wrestling Club,2603051601
+novice,80,Lane Graybill,Alber Athletics Wrestling Club,1908088501
+novice,80,Izak Jacobs,Dakota Wrestling Club,2002574901
+novice,80,Gabriel Bartell,Stockton Renegades Wrestling Club,2203606901
+novice,80,Karson Shafer,Hawk Wrestling Club,2008772001
+novice,80,Emmett Bawden,The Law Wrestling Club,2005114201
+novice,80,Leo Dempewolf,Hawk Wrestling Club,2306745801
+novice,93,William Connors,Alber Athletics Wrestling Club,2005078101
+novice,93,Dominic Warner,Alber Athletics Wrestling Club,1903128201
+novice,93,Kiptyn Milks,Dakota Wrestling Club,1905063601
+novice,93,Jase Fanara,Belvidere Bandits Wrestling Club,2304155101
+novice,93,Elijah Linnemann,The Law Wrestling Club,2405307101
+novice,93,Major Martinez,Hononegah Wrestling Club,1801000701
+senior,74,Jack Papiernik,Hononegah Wrestling Club,2002578801
+senior,74,Trenton Hulsebus,Hononegah Wrestling Club,2005121201
+senior,74,Landon Kohlhorst,Dakota Wrestling Club,1905063401
+senior,84,Archer Smith,Hononegah Wrestling Club,1905067701
+senior,84,Owen Lovejoy,Hononegah Wrestling Club,2002578601
+senior,84,Quinn Peight,Dakota Wrestling Club,1802004201
+senior,90,Timothy Stahl,Dakota Wrestling Club,2002575701
+senior,90,D'iyano Rangel,Rochelle Wrestling Club,2614367201
+senior,90,Benjamin Parker,Harvard Wrestling Club,2004210401
+senior,126,Tavarius Briar,Alber Athletics Wrestling Club,105481101
+senior,126,TJ Engebretson,Dakota Wrestling Club,1902125001
+senior,126,Brycen Berkowski,Harlem Huskies WC,2304473701
+senior,126,Ashton Messenger,Hawk Wrestling Club,2304331001
+senior,126,Carver Musser,Hononegah Wrestling Club,2503867301
+senior,154,Parker Minkie,Dakota Wrestling Club,2500046801
+senior,154,Dylan Schrader,Hononegah Wrestling Club,2005121601
 girls_bantam,50,Erin Brophy,Lions Wrestling Club,2406624701
 girls_bantam,50,Julia Hajewski,Astro Wrestling Club,2401891601
 girls_bantam,55,Freya Pennix,Harvey Twisters WC,2402544101
@@ -560,6 +2222,212 @@ senior,176,Ian Feliz,Vittum Cats Wrestling Club,2202469601
 senior,188,Gianni Carrillo,Badger Wrestling Club,2203598801
 senior,215,Glenn Harston III,Harvey Twisters WC,1808134701
 senior,215,Ray Piwnicki,Vittum Cats Wrestling Club,2608275201
+girls_bantam,45,Charley Noland,Little Giants WC,2604819601
+girls_bantam,45,Violet Fulton,Little Giants WC,2604773701
+girls_bantam,45,Isabelle Landis,Camp Point Youth Wrestling,2510320901
+girls_bantam,50,Rowan Leingang,Sherrard Jr. Tigers Wrestling Club,2509906201
+girls_bantam,55,Huntleigh Myers,Macomb Little Bombers Wrestling,2510783501
+girls_bantam,55,Ali Himegarner,Illini Bluffs Kids Wrestling Club,2504526101
+girls_bantam,55,Savannah Howlett,Sherrard Jr. Tigers Wrestling Club,2614739901
+girls_bantam,55,Lyvia Schurr,Sherrard Jr. Tigers Wrestling Club,2610250101
+girls_bantam,61,Parker Sigrist,Little Giants WC,2500979901
+girls_bantam,61,Gianah Joseph,Riverdale Wrestling Club,2405686301
+girls_bantam,61,Miley Smith,Little Giants WC,2501129801
+girls_bantam,61,Addilyn Stoneking,Macomb Little Bombers Wrestling,2409830301
+girls_bantam,67,Addilyn Terrell,Midwest Central Youth WC,2504565001
+girls_bantam,67,Rylee Pilkington,Carthage Wrestling Club,2205694701
+girls_bantam,67,Valerie Jones,Macomb Little Bombers Wrestling,2510580501
+girls_bantam,74,Nova Link,Macomb Little Bombers Wrestling,2512424601
+girls_bantam,85,Brynn Hills,Champions Wrestling Club,2302026001
+girls_bantam,95,Yulianna Rodriguez,Rock Island Wrestling Club,2410013401
+girls_bantam,115,Scarlett Bailey,Fighting Farmers Wrestling Club,2406623001
+bantam,43,Luke Newman,Midwest Central Youth WC,2603078801
+bantam,43,Memphis Stivers,Macomb Little Bombers Wrestling,2611486901
+bantam,46,William Colley,Macomb Little Bombers Wrestling,2510579601
+bantam,46,Hawk Gustafson,Sherrard Jr. Tigers Wrestling Club,2614238901
+bantam,49,Walker Wright,Rocket Fuel Wrestling Club,2612420401
+bantam,49,Kaidan Overton,Rocket Fuel Wrestling Club,2614081501
+bantam,49,Kendrick McGough,Sherrard Jr. Tigers Wrestling Club,2611590601
+bantam,49,parker nelson,UT Wrestling Club,2506318501
+bantam,52,Gabriel Davis,Champions Wrestling Club,2403110801
+bantam,52,Truston Nimmers,Rock Island Wrestling Club,2312257201
+bantam,52,Parker McNeill,Fighting Farmers Wrestling Club,2607058801
+bantam,52,Parker Irving,Illini Bluffs Kids Wrestling Club,2406956001
+bantam,55,Boone Grabeel,Rocket Fuel Wrestling Club,2512231701
+bantam,55,Lemmy Noland,Little Giants WC,2604820001
+bantam,55,Rhett Harbourn,Midwest Central Youth WC,2308638601
+bantam,55,Killian Spoonmore,Champions Wrestling Club,2302025501
+bantam,58,Kole Carlson,Young Guns Wrestling Club,2602913301
+bantam,58,Karsten Sanquist,Sherrard Jr. Tigers Wrestling Club,2408540201
+bantam,58,Dash Peters,Champions Wrestling Club,2503816601
+bantam,58,Emrik Kalhor,Rock Island Wrestling Club,2612568801
+bantam,62,Brecken Sullivan,River Bend Wrestling Club,2508772401
+bantam,62,Dawson Requet,Rocket Fuel Wrestling Club,2507391601
+bantam,62,Atticus Jones,Rocket Fuel Wrestling Club,2512984601
+bantam,62,David Averbeck Snidow,Macomb Little Bombers Wrestling,2510585401
+bantam,66,Rhett Grabeel,Rocket Fuel Wrestling Club,2512231101
+bantam,66,Gavin Walsh,Midwest Central Youth WC,2403003301
+bantam,66,Kylynn Snow,Champions Wrestling Club,2307625901
+bantam,66,Rhett Lox,Illini Bluffs Kids Wrestling Club,2305154401
+bantam,70,Owen Weese,Camp Point Youth Wrestling,2308972801
+bantam,70,Beau Logan,Camp Point Youth Wrestling,2508033801
+bantam,70,Jameson Hale,Midwest Central Youth WC,2304098001
+bantam,70,Tucker Holmes,Illini Bluffs Kids Wrestling Club,2505163101
+bantam,76,Christian Dixon,Camp Point Youth Wrestling,2309175701
+bantam,76,Gabriel Curry,Champions Wrestling Club,2503081501
+bantam,76,Topher Pollard,Blue Line Training Academy WC,2305705501
+bantam,76,Hank Swanson,Illini Bluffs Kids Wrestling Club,2608128301
+bantam,84,Andersen Thorman,Macomb Little Bombers Wrestling,2409830601
+bantam,84,Jaxson Hester,Riverdale Wrestling Club,2403793201
+bantam,84,Levi Nyquist,Riverdale Wrestling Club,2302516101
+bantam,84,LJ Stevens,Moline Wrestling Club,2505209001
+bantam,95,Thayden Roberts,Carthage Wrestling Club,2503849001
+bantam,95,Soren Hoover,Junior Pioneer Wrestling Club,2407299301
+bantam,95,Lincoln Wynn,Rocket Fuel Wrestling Club,2613917301
+bantam,95,Phin Ahrens,UT Wrestling Club,2607175301
+bantam,120,Landry Franks,Rocket Fuel Wrestling Club,2511304101
+bantam,120,Bentley Kidd,Little Giants WC,2503333701
+girls_intermediate,53,Gracelyn Wright,Little Giants WC,2401334801
+girls_intermediate,62,Adalynn Taylor,Rocket Fuel Wrestling Club,2310623401
+girls_intermediate,62,Aleerah Snow,Champions Wrestling Club,2306511801
+girls_intermediate,67,Adalynn Kumer,Little Giants WC,2600135101
+girls_intermediate,67,Claire Schwager,Blue Line Training Academy WC,2308683001
+girls_intermediate,72,Lailey Herrera,Rock Island Wrestling Club,2412286001
+girls_intermediate,72,Autumn Dixon,Camp Point Youth Wrestling,2412269401
+girls_intermediate,72,Serenity Nation,Champions Wrestling Club,2503320801
+girls_intermediate,72,Kaia Richards,River Bend Wrestling Club,2606947901
+girls_intermediate,77,Kaylee Carney,Macomb Little Bombers Wrestling,2409829601
+girls_intermediate,77,Georgia Harbourn,Midwest Central Youth WC,2403005101
+girls_intermediate,77,Lakynn Bohm,Midwest Central Youth WC,2604250301
+girls_intermediate,82,Quinn Hale,Midwest Central Youth WC,2403004401
+girls_intermediate,82,Gracie Killinger,Riverdale Wrestling Club,2202965201
+girls_intermediate,82,Julieanna Cleaveland,Sherrard Jr. Tigers Wrestling Club,2612720701
+girls_intermediate,82,Chaisley Breder,Champions Wrestling Club,2604670601
+girls_intermediate,88,Jordyn Orr,Champions Wrestling Club,2503799801
+girls_intermediate,95,Jolene Willis,Quincy Little Raiders Wrestling Club,2604294701
+girls_intermediate,95,Carolynn Sturhahn,Quincy Little Raiders Wrestling Club,2512046501
+girls_intermediate,115,Isolde Bailey,Fighting Farmers Wrestling Club,2406622901
+girls_intermediate,115,Treasure Nimmers,Rock Island Wrestling Club,2312257701
+girls_intermediate,115,Josephine Hood,Macomb Little Bombers Wrestling,2512170701
+intermediate,55,Graham Terry,River Bend Wrestling Club,2208630401
+intermediate,55,Kane Clarkson,River Bend Wrestling Club,2407559801
+intermediate,55,Bennett Henrichs,Riverdale Wrestling Club,2202669301
+intermediate,59,Abrahm Leingang,Sherrard Jr. Tigers Wrestling Club,2310369601
+intermediate,59,Owen Patting,Rocket Fuel Wrestling Club,2311375901
+intermediate,59,Brady Worthington,Macomb Little Bombers Wrestling,2409830901
+intermediate,59,Kasin Mensen,Rock Island Wrestling Club,2307879801
+intermediate,64,Sawyer Root,Carthage Wrestling Club,2513141501
+intermediate,64,Lincoln Hinzman,Rocket Fuel Wrestling Club,2408540001
+intermediate,64,Rhett Sloan,Riverdale Wrestling Club,2202198401
+intermediate,64,Conor Ward,Little Giants WC,2506088801
+intermediate,69,Quincy Noland,Little Giants WC,2306403801
+intermediate,69,Isaac Burns,Junior Pioneer Wrestling Club,2208037601
+intermediate,69,Emmett Whitehair,Rocket Fuel Wrestling Club,2506321201
+intermediate,69,Levi Holmes,Illini Bluffs Kids Wrestling Club,2505163901
+intermediate,74,Jaydon Schlapkohl,Rocket Fuel Wrestling Club,2613534701
+intermediate,74,Mason Griffin,Camp Point Youth Wrestling,2208758301
+intermediate,74,Abel Bochmann,Assumption Elite WC,2301785401
+intermediate,74,Cameron Thorman,Macomb Little Bombers Wrestling,2308720501
+intermediate,79,Rhett Zimmerman,Sherrard Jr. Tigers Wrestling Club,2310369901
+intermediate,79,Tru Jones,Champions Wrestling Club,2302040101
+intermediate,79,Isaac Curry,Champions Wrestling Club,2503080001
+intermediate,79,Everett Krow,Macomb Little Bombers Wrestling,2410314001
+intermediate,84,Zane Hoyt,Macomb Little Bombers Wrestling,2409829801
+intermediate,84,Jackson Hall,Carthage Wrestling Club,2006258701
+intermediate,84,Finley Lohmeyer,Champions Wrestling Club,2100927101
+intermediate,84,Maverick Tasker,Fighting Farmers Wrestling Club,2302194801
+intermediate,90,Joey Boggs,Little Giants WC,2505930101
+intermediate,90,Karver Monroe,Camp Point Youth Wrestling,2208765501
+intermediate,90,Philip Brooks,Macomb Little Bombers Wrestling,2510933601
+intermediate,90,Jacob Woeckener,Rocket Fuel Wrestling Club,2402332001
+intermediate,98,Bennett Campos,Blue Line Training Academy WC,2206258901
+intermediate,98,Benson Housman,Macomb Little Bombers Wrestling,2309195401
+intermediate,98,Amir Kalhor,Rock Island Wrestling Club,2511339101
+intermediate,98,Lynx Robinson,Riverdale Wrestling Club,2406275701
+intermediate,108,Brent Hills II,Champions Wrestling Club,2202455201
+intermediate,108,Dominic Lyles,Macomb Little Bombers Wrestling,2207830801
+intermediate,108,Bennett Moody,Riverdale Wrestling Club,2202249201
+intermediate,108,Henry Barfield,Camp Point Youth Wrestling,2308765701
+intermediate,122,Abel Orr,Champions Wrestling Club,2403006401
+intermediate,122,Jeremiah Watson,Midwest Central Youth WC,2304126001
+intermediate,122,Michael Miller,Blue Line Training Academy WC,2306385601
+intermediate,122,Kason Parry,Carthage Wrestling Club,2507823601
+intermediate,148,Corbin Boyd,Rock Island Wrestling Club,2610973501
+girls_novice,63,Haven Howlett,Sherrard Jr. Tigers Wrestling Club,2612721501
+girls_novice,68,Mackenzie Burrier,Moline Wrestling Club,2103127701
+girls_novice,80,Ellyana Piper,Little Giants WC,2406082701
+girls_novice,85,Bailey Deushane,Little Giants WC,2503048901
+girls_novice,90,Izabella Gustafson,Sherrard Jr. Tigers Wrestling Club,2311065501
+girls_novice,102,Raya Reading,Little Giants WC,2405622501
+girls_novice,102,Sophia whitehall,Dragons Lair Wrestling Club,2507509501
+girls_novice,108,Desalyn Durbin,Fighting Farmers Wrestling Club,2503163401
+girls_novice,108,Lilliannna Lovedy,Rock Island Wrestling Club,2511687301
+girls_novice,115,Irene Buzick,Midwest Central Youth WC,2403008101
+girls_novice,115,Patience Young,Rock Island Wrestling Club,2513092301
+girls_novice,125,Zoey Huggins,Rock Island Wrestling Club,2614630801
+girls_novice,125,Paw Moo,Rock Island Wrestling Club,2614364701
+girls_novice,140,Cataleya Castillo-Cisneros,Rock Island Wrestling Club,2513145801
+girls_novice,140,Nora O'Melia,Rock Island Wrestling Club,2614558601
+girls_novice,140,Maeleena Guthrie,Fighting Farmers Wrestling Club,2602912001
+novice,69,Maddux Jamieson,Young Guns Wrestling Club,1904457601
+novice,69,Kale Trueblood,Quincy Little Raiders Wrestling Club,2209336101
+novice,69,Michael Sampson,Midwest Central Youth WC,2604248701
+novice,74,Keenan Newberry,Dragons Lair Wrestling Club,2614771601
+novice,74,Bain Schwager,Blue Line Training Academy WC,2303837501
+novice,74,Joshua Gandy jr,Carthage Wrestling Club,2603679701
+novice,80,Jase Purcell,Payson Wrestling Club,2202504301
+novice,80,Skyler Abbott,Rock Island Wrestling Club,2613299601
+novice,80,Dylan Sampson,Midwest Central Youth WC,2604248501
+novice,80,Easton Ussery,Camp Point Youth Wrestling,2309247301
+novice,86,Wyatt Smith,Payson Wrestling Club,2402894201
+novice,86,Leonidas Eagan,Carthage Wrestling Club,2504485801
+novice,93,Asa Schnowske,Blue Line Training Academy WC,2203893601
+novice,93,Paul Zanger,Quincy Little Raiders Wrestling Club,2309299801
+novice,93,Connor Failor,Champions Wrestling Club,2503322301
+novice,93,Tommy Anderson,Blue Line Training Academy WC,2307307501
+novice,100,Alek Coronado,Quincy Little Raiders Wrestling Club,2306355201
+novice,100,Carter Fleisher,Little Giants WC,2404903301
+novice,100,Axel Bochmann,Assumption Elite WC,2301784901
+novice,100,Zander MeGee,Quincy Little Raiders Wrestling Club,2307295101
+novice,108,Brady Gamage,Macomb Little Bombers Wrestling,2007756901
+novice,108,Oliver Derhake,Quincy Little Raiders Wrestling Club,2505765601
+novice,108,Paxton Tasker,Fighting Farmers Wrestling Club,2302194501
+novice,116,Odysseus Hale,Midwest Central Youth WC,2004608201
+novice,125,Riddick Messman,Fighting Farmers Wrestling Club,2604841101
+novice,134,Caine Rogers,Fighting Farmers Wrestling Club,1903153801
+novice,134,Liam Munson,Little Giants WC,2302069001
+novice,134,William Sego,Little Giants WC,2303525701
+novice,154,Joseph Doellman,Quincy Little Raiders Wrestling Club,2306155001
+novice,154,Brighton Workman,Little Giants WC,2402889801
+novice,154,Cael Thompson,Moline Wrestling Club,1904458301
+novice,178,Weston Guerra,Little Giants WC,2406437701
+girls_senior,120,Skylar Weisenburger,Carthage Wrestling Club,2205695301
+girls_senior,120,Victoria Woods,Rock Island Wrestling Club,2614480201
+girls_senior,125,Layla St. Clair,Rock Island Wrestling Club,2614109001
+girls_senior,125,Audrey Foster,Sherrard Jr. Tigers Wrestling Club,2613963201
+girls_senior,130,Alaina Lowery,Sherrard Jr. Tigers Wrestling Club,2612726501
+girls_senior,130,Amiyah Logsdon,Blue Line Training Academy WC,2502101301
+girls_senior,145,Kamora Terrell,Rock Island Wrestling Club,2614832901
+girls_senior,185,Ariana Velasquez,Champions Wrestling Club,2614295301
+girls_senior,185,Libby Cortez,Rock Island Wrestling Club,2614364801
+girls_senior,185,Leila Davis,Rock Island Wrestling Club,2614364601
+girls_senior,240,Eliza Gustafson,Sherrard Jr. Tigers Wrestling Club,2311971401
+girls_senior,240,Jordyn Belk,Rock Island Wrestling Club,2614364901
+senior,96,Teo Mamdani,Quincy Little Raiders Wrestling Club,2405858201
+senior,96,Jensen Palmer,Carthage Wrestling Club,2602747401
+senior,103,Connor Coile,Midwest Central Youth WC,1904614301
+senior,103,Rylan Kumer,Little Giants WC,2402559201
+senior,110,Garrett Fierge,Quincy Little Raiders Wrestling Club,2208726501
+senior,118,Ryder Crowder,Champions Wrestling Club,2001514201
+senior,118,Kayleb McCoy,Champions Wrestling Club,2518035201
+senior,126,Gabe Anderson,Champions Wrestling Club,2614273801
+senior,135,Colton Hill,Midwest Central Youth WC,1801995201
+senior,135,Fox Peters,Champions Wrestling Club,2510546701
+senior,135,Kolton Boernson,Champions Wrestling Club,2614304601
+senior,144,Liam Campos,Blue Line Training Academy WC,2201316301
+senior,154,Griffin Tudela,Midwest Central Youth WC,1804946301
+senior,176,Jaxson Ufkes,Carthage Wrestling Club,2205695001
+senior,215,Colin Feeney,Quincy Little Raiders Wrestling Club,2606244301
 girls_bantam,50,Itzel Fortiz,Beat the Streets Chicago-Midway,2500058801
 girls_bantam,50,Makenzie Granat,Oak Forest Park District Warriors Wrestling,2606966601
 girls_bantam,50,Yamalia Escalona,Tinley Park Bulldogs Wrestling Club,2501835001
@@ -843,6 +2711,310 @@ senior,215,JIONNI Moran,Tinley Park Bulldogs Wrestling Club,1902593901
 senior,215,Rohan Niazi,Oak Forest Park District Warriors Wrestling,2606967801
 senior,215,Jarion Henderson,Englewood Live Wire Wrestling Club,2612171701
 senior,215,Elliott Sanchez,Junior Bulldog Wrestling Club,2509169601
+girls_bantam,55,Penelope Flores,Cory Clark Wrestling,2406218901
+girls_bantam,55,Laila Vance,Glenbard East Jr Rams Wrestling Club,2404971201
+girls_bantam,55,Avery Pena,West Suburban Girls Wrestling Club,2417866401
+girls_bantam,55,Olivia Jones,Batavia Wrestling Club,2504751401
+girls_bantam,61,Mackenzie Scott,West Suburban Girls Wrestling Club,2605536601
+girls_bantam,61,Cora Pool,Glenbard East Jr Rams Wrestling Club,2404970801
+girls_bantam,74,Emma Garcia,West Suburban Girls Wrestling Club,2607533901
+bantam,46,Tommy Virgilio,Cory Clark Wrestling,2406337401
+bantam,46,Reid Randall,Batavia Wrestling Club,2605683901
+bantam,46,Lucas Davis,Fox Valley Wrestling Club,2403496301
+bantam,46,Andres Morales,Cory Clark Wrestling,2406637801
+bantam,49,Julian Ramos,Cory Clark Wrestling,2302228301
+bantam,49,Carmine Robles,Villa Park Young Warriors Wrestling Club,2405943401
+bantam,49,Luke Jacob,Fox Valley Wrestling Club,2404430301
+bantam,49,Miles DePasquale,Dungeon Wrestling Club,2604253901
+bantam,49,Adrian Laba,Downers Grove Wrestling Club,2504284401
+bantam,49,Gio Sprovieri,Dungeon Wrestling Club,2505781301
+bantam,52,Robert Horton,Cory Clark Wrestling,2303631501
+bantam,52,Greyson Velarde,Cory Clark Wrestling,2504695201
+bantam,52,Channing Meehleib,Cory Clark Wrestling,2505695801
+bantam,52,Jack Hebenstreit,Fox Valley Wrestling Club,2302835301
+bantam,52,Luke Tondre,Fox Valley Wrestling Club,2602042601
+bantam,52,Joseph Imbrogno,Batavia Wrestling Club,2403896601
+bantam,55,Dikota Lacy,Cory Clark Wrestling,2303078501
+bantam,55,Parker Holmes,Cory Clark Wrestling,2504854801
+bantam,55,Henry Foleno,Fox Valley Wrestling Club,2403265401
+bantam,55,Zaiden Aldridge,Fox Valley Wrestling Club,2603153001
+bantam,55,Dylan Hartwig,Naperville Wrestling Club,2501064501
+bantam,55,Aiden Axley-Jackson,Dungeon Wrestling Club,2604367601
+bantam,58,Constantine Cortese,Cory Clark Wrestling,2104029001
+bantam,58,Ian Anderson,Fox Valley Wrestling Club,2403214801
+bantam,58,Urijah Swider,FCA Force Wrestling Club,2306241901
+bantam,58,Nathan Giroux,Villa Park Young Warriors Wrestling Club,2505331401
+bantam,58,Dawson Schultz,Naperville Wrestling Club,2402589701
+bantam,58,Murphy Pool,Glenbard East Jr Rams Wrestling Club,2406337701
+bantam,62,Max Hermes,Fox Valley Wrestling Club,2500037601
+bantam,62,Jasper Graham,Dungeon Wrestling Club,2504421901
+bantam,66,Skilur Arkaev,Cory Clark Wrestling,2404770001
+bantam,66,Jeremy Smith Jr.,Downers Grove Wrestling Club,2503188501
+bantam,66,Carter Brown,Fox Valley Wrestling Club,2302759001
+bantam,66,Andrew Hobus,Downers Grove Wrestling Club,2408929001
+bantam,66,Graham Nabholz,Villa Park Young Warriors Wrestling Club,2302729601
+bantam,66,Michael Avila,Cory Clark Wrestling,2307877101
+bantam,70,Dominic Gryzlak,Downers Grove Wrestling Club,2506802501
+bantam,70,Dylan Lanagan,Fox Valley Wrestling Club,2302790801
+bantam,70,Carter Schwarting,Fox Valley Wrestling Club,2607638801
+bantam,76,John Valente,Cory Clark Wrestling,2404971101
+bantam,76,Idris Shahen,Hinsdale Red Devil WC,2402716701
+bantam,76,Michael Heilmann,Batavia Wrestling Club,2303815201
+bantam,76,Mikey Borgstrom,Batavia Wrestling Club,2504750001
+bantam,76,Ethan Dumovich,Glenbard East Jr Rams Wrestling Club,2405298801
+bantam,76,Coen corbell,Fox Valley Wrestling Club,2403921401
+bantam,84,Isaac Shahen,Hinsdale Red Devil WC,2402716901
+bantam,84,Yule Chung,Fox Valley Wrestling Club,2602546501
+bantam,84,Luca Wenholz,Villa Park Young Warriors Wrestling Club,2304133501
+bantam,84,Leonidas Orfanos,Greg Gomez Trained Wrestling,2610138001
+bantam,84,Remy Moore,Batavia Wrestling Club,2404676301
+bantam,84,Luke Pennisi,Glenbard East Jr Rams Wrestling Club,2404970701
+bantam,95,Damian Ramos,Fox Valley Wrestling Club,2403749701
+bantam,95,Mecka Eldabli,Fox Valley Wrestling Club,2604992301
+bantam,95,Tucker Crowe,Greg Gomez Trained Wrestling,2502823001
+bantam,95,Brooks Bazan,Hinsdale Red Devil WC,2408594201
+bantam,95,Bodhi Lavin,Glenbard East Jr Rams Wrestling Club,2504844101
+bantam,95,Maddox Spooner,Downers Grove Wrestling Club,2506652701
+bantam,120,Logan Macko,Fox Valley Wrestling Club,2302874201
+bantam,120,Bryson Berry,Downers Grove Wrestling Club,2502413201
+bantam,120,Heyden Kohler,Dungeon Wrestling Club,2508840501
+bantam,120,Logan Connolly,Dungeon Wrestling Club,2609368301
+bantam,120,Musa Azimov,Fox Valley Wrestling Club,2604381201
+girls_intermediate,62,Mia Lopez,West Suburban Girls Wrestling Club,2403917801
+girls_intermediate,62,Jane Strand,Batavia Wrestling Club,2504752301
+girls_intermediate,72,Brooklyn Schultz,Naperville Wrestling Club,2406489301
+girls_intermediate,72,Olivia Garcia,West Suburban Girls Wrestling Club,2607533801
+girls_intermediate,72,Lily Kuehl,Glenbard East Jr Rams Wrestling Club,2307293501
+girls_intermediate,72,Eliana Gomez,Batavia Wrestling Club,2605999301
+girls_intermediate,77,Piper Heisler,West Suburban Girls Wrestling Club,2306562101
+girls_intermediate,95,Londyn Bellamy,Fox Valley Wrestling Club,2106031101
+girls_intermediate,95,Charlotte Serafin,Downers Grove Wrestling Club,2607993801
+girls_intermediate,135,Aria Torres,West Suburban Girls Wrestling Club,2403498001
+intermediate,59,Leonidas Cortese,Cory Clark Wrestling,2103858701
+intermediate,59,Dallas Morales,Cory Clark Wrestling,2204187901
+intermediate,59,Webb Martini,Cory Clark Wrestling,2313717801
+intermediate,59,"Justin Swider, Jr",FCA Force Wrestling Club,2209017401
+intermediate,59,Everett Saks,Fox Valley Wrestling Club,2214724401
+intermediate,59,Oliver Conley,Hinsdale Red Devil WC,2401655701
+intermediate,69,Noah Johnson,Fox Valley Wrestling Club,2101318701
+intermediate,69,Hunter Horne,Fox Valley Wrestling Club,2302796601
+intermediate,69,Nathan Kop,Naperville Wrestling Club,2402589401
+intermediate,69,Quinn Burfield,Naperville Wrestling Club,2505654401
+intermediate,69,Jaxson Cajigas,Cory Clark Wrestling,2213502401
+intermediate,69,Nicholas Geyer,Downers Grove Wrestling Club,2309194701
+intermediate,74,Maddox Fialka,Cory Clark Wrestling,2302066401
+intermediate,74,Jackson Schaefer,Cory Clark Wrestling,2203407201
+intermediate,74,Liam Santiago,Fox Valley Wrestling Club,2103705701
+intermediate,74,David Kazniyenko,Naperville Wrestling Club,2401846901
+intermediate,74,Grant Kehoe,Naperville Wrestling Club,2309867801
+intermediate,74,Franco Fabiano,Elmhurst Titans Wrestling Academy,2303144601
+intermediate,79,Zachary Haas,Naperville Wrestling Club,2207405401
+intermediate,79,Jaxon Holtzman,Downers Grove Wrestling Club,2202454201
+intermediate,79,Jacob Johnson,Fox Valley Wrestling Club,2004185401
+intermediate,79,Hunter Graham,Dungeon Wrestling Club,2504421801
+intermediate,79,Henry Kreml,Fox Valley Wrestling Club,2403302601
+intermediate,79,Mason Sieber,Dungeon Wrestling Club,2609426001
+intermediate,84,Dion Wilson,Downers Grove Wrestling Club,2207414501
+intermediate,84,Axl Williams,Cory Clark Wrestling,2204007501
+intermediate,84,Jt Alba,Batavia Wrestling Club,2303813701
+intermediate,84,Logan Burkhead,Fox Valley Wrestling Club,2403260101
+intermediate,84,Dominic Caifano,Villa Park Young Warriors Wrestling Club,2201779001
+intermediate,84,Henry Tondre,Fox Valley Wrestling Club,2602042401
+intermediate,90,Jack Hermes,Fox Valley Wrestling Club,2303399401
+intermediate,90,Beau Lawler,Batavia Wrestling Club,2303815701
+intermediate,90,Jeremy Moulton,Fox Valley Wrestling Club,2504178401
+intermediate,90,Sam Vechiola,Glenbard East Jr Rams Wrestling Club,2404971301
+intermediate,90,Eddy Datz,Batavia Wrestling Club,2203118501
+intermediate,90,Aedan Perez,Glenbard East Jr Rams Wrestling Club,2103891901
+intermediate,98,James Fredrich,Downers Grove Wrestling Club,2307438001
+intermediate,98,Max Corbell,Fox Valley Wrestling Club,2202317601
+intermediate,98,Ryan Magee,Glenbard East Jr Rams Wrestling Club,2607111601
+intermediate,98,Amar Sereenen,Fox Valley Wrestling Club,2607172501
+intermediate,98,Mason Trujillo,Dungeon Wrestling Club,2508558701
+intermediate,98,Jacob Crowe,Greg Gomez Trained Wrestling,2502822901
+intermediate,108,Carson Kukulski,Batavia Wrestling Club,2303815501
+intermediate,108,Thomas Shoulders,Naperville Wrestling Club,2404357901
+intermediate,108,Max Zmijewski,Fox Valley Wrestling Club,2501139501
+intermediate,108,Max Carter,Batavia Wrestling Club,2403616301
+intermediate,108,Remington Crawford,Batavia Wrestling Club,2504750201
+intermediate,108,Jack Grochowski,Villa Park Young Warriors Wrestling Club,2504504301
+intermediate,122,Cam Carter,Cory Clark Wrestling,2202596801
+intermediate,122,Israel Rivera Jr.,Naperville Wrestling Club,2500921301
+intermediate,122,Julian Alvarado,Batavia Wrestling Club,2404069001
+intermediate,122,William Ortiz,Fox Valley Wrestling Club,2406860801
+intermediate,122,Erik Jameson,Fox Valley Wrestling Club,2604692501
+intermediate,122,Connor Pedersen,Batavia Wrestling Club,2403730401
+intermediate,148,Declan Guleserian,Fox Valley Wrestling Club,2404426301
+intermediate,148,Leonidas Brown,Fox Valley Wrestling Club,2504765401
+intermediate,148,Elijah Richardson,Fox Valley Wrestling Club,2604555501
+intermediate,177,Anthony Coix,Batavia Wrestling Club,2403614101
+intermediate,177,Francesco Biundo,Batavia Wrestling Club,2605997901
+intermediate,177,Liam Kang,Fox Valley Wrestling Club,2403726901
+intermediate,177,Paxton Walker,Fox Valley Wrestling Club,2405798201
+girls_novice,90,Julianna Oceguera,Downers Grove Wrestling Club,2407313601
+girls_novice,90,Eva Duarte,Cory Clark Wrestling,2406313401
+girls_novice,90,Camila Rodriguez,Batavia Wrestling Club,2400883701
+girls_novice,90,Claire Novakowski,West Suburban Girls Wrestling Club,2306013301
+girls_novice,96,Florence Hildreth,Villa Park Young Warriors Wrestling Club,2610583401
+girls_novice,96,Makayla Rosado-Velazquez,West Suburban Girls Wrestling Club,2610636701
+girls_novice,102,Maya Moore,Batavia Wrestling Club,2303809301
+girls_novice,102,Audrey Rivers,West Suburban Girls Wrestling Club,2610931901
+girls_novice,125,Helen Hansen,Downers Grove Wrestling Club,2201583101
+girls_novice,125,Avery Frankovic,West Suburban Girls Wrestling Club,2505378801
+girls_novice,140,Simone Schafer,Batavia Wrestling Club,2606262401
+girls_novice,140,Veronica Shastri,West Suburban Girls Wrestling Club,2502091601
+novice,64,Darek Diaz,Cory Clark Wrestling,2005064601
+novice,64,Maxwell Fauth,Cory Clark Wrestling,1905068801
+novice,64,River Couture,Cory Clark Wrestling,2206306801
+novice,64,Maximo Galeana,Villa Park Young Warriors Wrestling Club,2612622601
+novice,64,Hunter Krzmarzick,Fox Valley Wrestling Club,2504102701
+novice,69,Timur Dorzhiev,Cory Clark Wrestling,2314859101
+novice,69,Chase Pool,Glenbard East Jr Rams Wrestling Club,2004177201
+novice,69,Brandon Murphy,Downers Grove Wrestling Club,1905714401
+novice,69,Julian Garcia,Villa Park Young Warriors Wrestling Club,2603005901
+novice,69,Declan Trudeau,Batavia Wrestling Club,2610962101
+novice,69,Vance Pung,Fox Valley Wrestling Club,2601479001
+novice,74,Kamden Cullen,Cory Clark Wrestling,2205619601
+novice,74,Weston Brom,Fox Valley Wrestling Club,2001883901
+novice,74,Mario Aliano,Villa Park Young Warriors Wrestling Club,2204397701
+novice,74,Joaquin Hoban,Hinsdale Red Devil WC,2610633201
+novice,80,Pablo Gallego-Sugar,Naperville Wrestling Club,2406400401
+novice,80,Nathan Kowalski,Villa Park Young Warriors Wrestling Club,1906540301
+novice,80,Jaylen Wheeler,Villa Park Young Warriors Wrestling Club,1906540601
+novice,80,Parker Colby,Batavia Wrestling Club,2003408301
+novice,80,Lucas Cortez,Elmhurst Titans Wrestling Academy,2207544501
+novice,80,Jase Imlah,Glenbard East Jr Rams Wrestling Club,2004176801
+novice,86,Achilles Cortese,Cory Clark Wrestling,2002920101
+novice,86,David Leon,Cory Clark Wrestling,2001153301
+novice,86,Logan Intoccia,Naperville Wrestling Club,2000108001
+novice,86,Keidan Marshall,Cory Clark Wrestling,2405180901
+novice,86,Elliott Bain,Downers Grove Wrestling Club,2207408901
+novice,86,Charlie Eifrid,Batavia Wrestling Club,2303341901
+novice,93,Wyatt Walker,Batavia Wrestling Club,2203119301
+novice,93,Oz Bellamy,Fox Valley Wrestling Club,2001952001
+novice,93,Jerry Fialka,Cory Clark Wrestling,2302066301
+novice,93,Elijah Narayanan,Batavia Wrestling Club,1902461301
+novice,93,Harrison Duraski,Batavia Wrestling Club,2205018701
+novice,93,Cruz Bergbauer,Fox Valley Wrestling Club,2403398101
+novice,100,Ashton Murphy,Fox Valley Wrestling Club,2200982101
+novice,100,Jake Kichka,Cory Clark Wrestling,1904987501
+novice,100,Wesley Baker,Glenbard East Jr Rams Wrestling Club,2404970301
+novice,100,Silas Frechmann,Batavia Wrestling Club,2203118601
+novice,100,Alex Corso,Batavia Wrestling Club,2205018601
+novice,100,Muhammedaly Akmyradow,Naperville Wrestling Club,2614034301
+novice,108,Richard Molina,Elmhurst Titans Wrestling Academy,2005606601
+novice,108,Clyde Mills,Villa Park Young Warriors Wrestling Club,2303884401
+novice,108,Eric Glazier,Fox Valley Wrestling Club,2607073101
+novice,108,Blake Westberg,Hinsdale Red Devil WC,2503209001
+novice,108,Parker Nabholz,Villa Park Young Warriors Wrestling Club,2302729401
+novice,108,Angel Coix,Batavia Wrestling Club,2403614001
+novice,116,Tyler Berdis,Fox Valley Wrestling Club,1903508701
+novice,116,Augustus Davis,Batavia Wrestling Club,2303814501
+novice,116,Charlie Smrz,Villa Park Young Warriors Wrestling Club,2612579901
+novice,116,Zane Darwish,Hinsdale Red Devil WC,2610718401
+novice,116,Tristan Cortez,Batavia Wrestling Club,2303818901
+novice,116,Alec Sheridan,Downers Grove Wrestling Club,2306744301
+novice,125,Max Marshall,Cory Clark Wrestling,2000657401
+novice,125,Caleb Lovitsch,Downers Grove Wrestling Club,2407313001
+novice,125,Owen Pickert,Fox Valley Wrestling Club,2504091901
+novice,125,Leo Padilla,Villa Park Young Warriors Wrestling Club,2604566001
+novice,125,Frankie delaCruz,Cory Clark Wrestling,2001854701
+novice,134,Asher Ericson,Villa Park Young Warriors Wrestling Club,2003472101
+novice,134,Wesley Carlin,Naperville Wrestling Club,2602906301
+novice,134,Ervin Xu,Fox Valley Wrestling Club,2611572101
+novice,134,Carlyle Miller,Naperville Wrestling Club,2613177001
+novice,134,Xander Spooner,Downers Grove Wrestling Club,2506652501
+novice,134,Jax Walsh,Fox Valley Wrestling Club,2503600801
+novice,154,Donato Saaby,Cory Clark Wrestling,1902652501
+novice,154,Nathaniel Amparan,Villa Park Young Warriors Wrestling Club,2605483601
+novice,154,Hayden Brignac,Naperville Wrestling Club,2505849701
+novice,154,Antonio Gallegos III,Glenbard East Jr Rams Wrestling Club,2606547701
+novice,154,William Shemberger,Fox Valley Wrestling Club,2504096801
+novice,154,Zeppelin Gutierrez,Elmhurst Titans Wrestling Academy,2204366901
+novice,178,Niko Tatic,Elmhurst Titans Wrestling Academy,2005165901
+novice,178,Maddox Eldabli,Fox Valley Wrestling Club,2604991801
+girls_senior,100,Lilly Kopcio,Batavia Wrestling Club,2403616101
+girls_senior,100,Zara Klichurova,Cory Clark Wrestling,2412202701
+girls_senior,100,Sophia Garcia,West Suburban Girls Wrestling Club,2606588701
+girls_senior,105,Kaelyn Hernandez,West Suburban Girls Wrestling Club,2504034301
+girls_senior,115,Grace Finefield,Batavia Wrestling Club,2504750601
+girls_senior,115,Adelaide Waltmire,West Suburban Girls Wrestling Club,2510343301
+girls_senior,120,Akshara Karthikeyan,West Suburban Girls Wrestling Club,2505810701
+girls_senior,185,Ruby Holden,West Suburban Girls Wrestling Club,2505502401
+senior,74,Greyson Goodwin,Cory Clark Wrestling,1800280001
+senior,74,David Dorzhiev,Cory Clark Wrestling,2314853701
+senior,74,Mason Arndt,Fox Valley Wrestling Club,1903815701
+senior,74,Bowen Nelson,FCA Force Wrestling Club,2508615601
+senior,74,Hunter Benson,Fox Valley Wrestling Club,2611107901
+senior,74,Aidin Stoddard,Fox Valley Wrestling Club,2608539401
+senior,79,Vincent Cumbo,Cory Clark Wrestling,112915201
+senior,79,Carter St Louis,Villa Park Young Warriors Wrestling Club,2301549301
+senior,79,Madden Samples,Fox Valley Wrestling Club,2003245801
+senior,84,Benjamin Sukolowsky,Batavia Wrestling Club,2510654801
+senior,84,Conrad Walsh,Cory Clark Wrestling,1904508301
+senior,84,Landen Robertson,Fox Valley Wrestling Club,1905042901
+senior,84,Isaac Munoz,Fox Valley Wrestling Club,2508220101
+senior,84,Grant Fortin,Fox Valley Wrestling Club,2104918501
+senior,90,Elijah Perez,Greg Gomez Trained Wrestling,113691801
+senior,90,Bentley Johnson,Batavia Wrestling Club,2504751201
+senior,90,Salahuddin Mian,Fox Valley Wrestling Club,2200027301
+senior,96,Charlie Datz,Batavia Wrestling Club,2203118301
+senior,96,Harrison Kelton,Elmhurst Titans Wrestling Academy,2303145601
+senior,96,Joseph Gutowski,Elmhurst Titans Wrestling Academy,2406335401
+senior,96,Ryan Muisenga,Elmhurst Titans Wrestling Academy,2605655701
+senior,96,Colin Budrow,Fox Valley Wrestling Club,2302950901
+senior,103,Halas Hildreth,Elmhurst Titans Wrestling Academy,1903808001
+senior,103,Zachary Jackson,Batavia Wrestling Club,2003410901
+senior,103,David Song,Fox Valley Wrestling Club,2604353901
+senior,103,Declan O'Leary,Glenbard East Jr Rams Wrestling Club,2606606101
+senior,110,Gage Enos,Batavia Wrestling Club,113286901
+senior,110,Jonathan Alcala,Fox Valley Wrestling Club,2402518401
+senior,110,Jacob Chaussey,Fox Valley Wrestling Club,2509830501
+senior,110,Ryan Kichka,Cory Clark Wrestling,1806901001
+senior,110,Adrian Alvarado,Batavia Wrestling Club,1802192901
+senior,110,Brady Freeman,Elmhurst Titans Wrestling Academy,2307618501
+senior,118,Aidan Welch,Fox Valley Wrestling Club,2409183901
+senior,118,Eddie Perez,Elmhurst Titans Wrestling Academy,2406336501
+senior,118,Isaac Allende,Batavia Wrestling Club,2403615601
+senior,118,Patton Freeman,Elmhurst Titans Wrestling Academy,2307618601
+senior,118,Jacob Serafin,Downers Grove Wrestling Club,2409717101
+senior,118,Major Griffin,Villa Park Young Warriors Wrestling Club,100130601
+senior,126,Dexter Morris,Fox Valley Wrestling Club,2504222301
+senior,126,Adyn Ali,Fox Valley Wrestling Club,2513035101
+senior,126,Cameron Minarik,Fox Valley Wrestling Club,2409587601
+senior,126,Kellan Goodwin,Hinsdale Red Devil WC,2201523601
+senior,126,Kaine Ortega,Hinsdale Red Devil WC,2207310101
+senior,135,Alex Leon,Cory Clark Wrestling,1804269701
+senior,135,Johnvic Dimalanta,Cory Clark Wrestling,2406147901
+senior,135,Logan Heidenreich,Naperville Wrestling Club,2611527501
+senior,135,Vaughn Kelam,Fox Valley Wrestling Club,2605547601
+senior,135,Julian Torres,Fox Valley Wrestling Club,2403497101
+senior,135,Eric Villasenor,Naperville Wrestling Club,2510004101
+senior,144,Blake Wozny,Cory Clark Wrestling,2005122201
+senior,144,Yahor Krek,Fox Valley Wrestling Club,2516302701
+senior,144,Tamyrion Baker,Glenbard East Jr Rams Wrestling Club,2404970201
+senior,144,Oliver Haines,Naperville Wrestling Club,2611151001
+senior,144,Joe Warren,Cory Clark Wrestling,2205004701
+senior,144,Haztyn Nieves,Villa Park Young Warriors Wrestling Club,2417317501
+senior,154,Colton Brom,Fox Valley Wrestling Club,1800242201
+senior,154,Blake Blitek,Naperville Wrestling Club,2304546801
+senior,154,Arbaaz Khan,Fox Valley Wrestling Club,2505604501
+senior,154,Charlie Lynch,Hinsdale Red Devil WC,1905058001
+senior,154,Matthew Iacovella,Naperville Wrestling Club,2510409701
+senior,154,AJ Nemeth,Fox Valley Wrestling Club,2603587601
+senior,164,Barrett Andler,Naperville Wrestling Club,2004409301
+senior,164,Aiden McChesney,Cory Clark Wrestling,2506509401
+senior,164,Mason Moore,Fox Valley Wrestling Club,2309362801
+senior,164,Wayne Milczarek III,Fox Valley Wrestling Club,1803227201
+senior,164,Francesco Lamphere,Villa Park Young Warriors Wrestling Club,2201824601
+senior,164,Joshua Ma,Hinsdale Red Devil WC,2607970301
+senior,176,John Lindstrom,Batavia Wrestling Club,1802193301
+senior,176,Benjamin Martin,Fox Valley Wrestling Club,2604586001
+senior,188,Drin Berisha,Fox Valley Wrestling Club,2510026801
+senior,188,Jacob Stevenson,Batavia Wrestling Club,2611860501
+senior,215,Damien Garcia,Fox Valley Wrestling Club,2506811801
+senior,215,Ayaann Kalra,Fox Valley Wrestling Club,2408353501
+senior,215,Jayden Coix,Batavia Wrestling Club,2403615701
 girls_bantam,45,Hadley Franco,Bolingbrook Junior Raiders Wrestling Club,2404824101
 girls_bantam,50,Ashland Mckillip,Lincoln-Way Wrestling Club,2500775201
 girls_bantam,50,Ashtyn Fahey,Lincoln-Way Wrestling Club,2304716501
@@ -1126,6 +3298,289 @@ senior,215,Cannon Kinsella,Callan Wrestling Academy,1904246601
 senior,215,Nicholas Hertzog,Orland Park Pioneers Wrestling Club,2204006301
 senior,275,Cash Wetenkamp,Lincoln-Way Wrestling Club,114652501
 senior,275,Charles Sleight,Lincoln-Way Wrestling Club,2003708501
+girls_bantam,45,Madelyn Dunlop,Iguana Athletics Wrestling Club,2410067301
+girls_bantam,50,Em'mari Wright,Lionheart Intense Wrestling,2406932501
+girls_bantam,50,lydia tipsord,Panther Paw Wrestling Club,2503938101
+girls_bantam,55,LaiLani Cruz,Lionheart Intense Wrestling,2407582701
+girls_bantam,55,Sophie Anderson,Falcon Youth Wrestling,2501956201
+girls_bantam,61,Winnie Shelato,Bismarck-Henning Youth Wrestling Club,2506943101
+girls_bantam,61,Brecken McFeeters,Iguana Athletics Wrestling Club,2600307201
+girls_bantam,61,Savannah-Grace Harding-Perkins,Doom Wrestling,2403412201
+girls_bantam,67,Eva Welch,Lincoln Youth Wrestling Club,2406957701
+girls_bantam,67,Jackie Glenzinski,Doom Wrestling,2304789401
+girls_bantam,67,Gemma DeRubeis,El Paso Gridley Youth Wrestling Club,2610826501
+girls_bantam,74,Jaquera Noyes,Lionheart Intense Wrestling,2405630001
+girls_bantam,74,Vivian Mattox,SJO Spartan YWC,2503401701
+girls_bantam,74,Brynlee Seyfert,Bismarck-Henning Youth Wrestling Club,2607118701
+girls_bantam,74,Amelia Buckley,SJO Spartan YWC,2202206201
+girls_bantam,74,Mare Peters,Decatur Dawgs Wrestling Club,2402981401
+girls_bantam,74,Luella Leevey,Lincoln Youth Wrestling Club,2504580801
+girls_bantam,85,Mckena Poll-Hutchison,Saber Wrestling Club,2304991301
+girls_bantam,85,Kennedie Vaughn,Doom Wrestling,2404790901
+girls_bantam,85,Corrin Force,Decatur Dawgs Wrestling Club,2208377401
+girls_bantam,85,Lucy Krone,El Paso Gridley Youth Wrestling Club,2502836101
+girls_bantam,85,Sophie Buchenau,Dwight Wrestling Club,2404196001
+girls_bantam,85,Remington Hobson,Panther Paw Wrestling Club,2605376601
+bantam,43,Lincoln Saldaris,Monticello Youth Wrestling Club,2407076901
+bantam,46,Briggs Gorman,SJO Spartan YWC,2401820901
+bantam,46,Kyler Little,SJO Spartan YWC,2302452001
+bantam,46,Douglas Biddle,Iguana Athletics Wrestling Club,2405521701
+bantam,46,Noah Ash,Iguana Athletics Wrestling Club,2406793801
+bantam,46,George Harroun,Iguana Athletics Wrestling Club,2501364201
+bantam,46,Ephraim McWilliams,Dwight Wrestling Club,2605960301
+bantam,49,Mikah Anglin,SJO Spartan YWC,2404758401
+bantam,49,Kolton Orrick,Iguana Athletics Wrestling Club,2402119701
+bantam,49,Maverick Jones,Bismarck-Henning Youth Wrestling Club,2304308201
+bantam,49,Knox Willis,Pontiac Wrestling Club,2602813501
+bantam,49,Finley Biggs,Monticello Youth Wrestling Club,2405164001
+bantam,49,Kash Casner,Pontiac Wrestling Club,2410787201
+bantam,52,Mason Brucker,Falcon Youth Wrestling,2201496501
+bantam,52,Maddox Sjoken,SJO Spartan YWC,2301855501
+bantam,52,Scott Adams,Lionheart Intense Wrestling,2503276101
+bantam,52,Eli Krisman,SJO Spartan YWC,2401821201
+bantam,52,Zander Hannibal,Dwight Wrestling Club,2404015501
+bantam,52,Cole Lindsey,SJO Spartan YWC,2501114301
+bantam,55,Cole Wachstetter,Falcon Youth Wrestling,2201497901
+bantam,55,Nolan Richardson,Pontiac Wrestling Club,2503413501
+bantam,55,Ayden Kingery,Panther Paw Wrestling Club,2604871001
+bantam,55,Tate Patton,Bismarck-Henning Youth Wrestling Club,2405743301
+bantam,55,Bexton Bloomberg,El Paso Gridley Youth Wrestling Club,2503283601
+bantam,55,Ryker Sancken,Dwight Wrestling Club,2404077501
+bantam,58,Hudson Purcell,Iguana Athletics Wrestling Club,2306144501
+bantam,58,Eli Ross,Monticello Youth Wrestling Club,2305157001
+bantam,58,Calvin Grant,Twin City Tigers WC,2302346301
+bantam,58,Kooper Petta,El Paso Gridley Youth Wrestling Club,2502693001
+bantam,58,Dakoda Summers,Lionheart Intense Wrestling,2306465001
+bantam,58,Malachi Constant,Lincoln Youth Wrestling Club,2406956901
+bantam,62,Luca Salmieri,Decatur Dawgs Wrestling Club,2402981501
+bantam,62,Azell Rodgers,Saber Wrestling Club,2406804401
+bantam,62,Bo Bishop,Iguana Athletics Wrestling Club,2303469301
+bantam,62,Xavier Inman,Bismarck-Henning Youth Wrestling Club,2301776301
+bantam,62,Tripp Stoller,Prairie Central Youth Wrestling,2603566501
+bantam,62,Wyatt Montgomery,Bismarck-Henning Youth Wrestling Club,2506939301
+bantam,66,Hudson Kemp,Iguana Athletics Wrestling Club,2405868101
+bantam,66,Parker Clarenson,Iguana Athletics Wrestling Club,2304476301
+bantam,66,Casen Bebout,MS Youth Wrestling Club,2302325601
+bantam,66,John Krabel,Monticello Youth Wrestling Club,2305156601
+bantam,66,Benjamin Wade,Iguana Athletics Wrestling Club,2502351801
+bantam,66,Mason Krisman,SJO Spartan YWC,2201581001
+bantam,70,Eli Voyles,Monticello Youth Wrestling Club,2204596201
+bantam,70,Tyrese Tinsley,Gators Elite WC,2505218001
+bantam,70,Theodore Barnhart,SJO Spartan YWC,2301854601
+bantam,70,Bryant Collins,Pontiac Wrestling Club,2503412501
+bantam,70,Brantley Iverson,SOT-C WC,2417744901
+bantam,70,Oliver Dalton,SJO Spartan YWC,2501301201
+bantam,76,Deklan Bamert,MS Youth Wrestling Club,2303964501
+bantam,76,Wes Sieraski,Iguana Athletics Wrestling Club,2405757901
+bantam,76,Kai'mier Beard,Gators Elite WC,2306120601
+bantam,76,Talon Johnson,Lincoln Youth Wrestling Club,2306149201
+bantam,76,Kasch Guerrero,Bismarck-Henning Youth Wrestling Club,2506938001
+bantam,76,Jameson Hogan,Decatur Dawgs Wrestling Club,2504000801
+bantam,84,Easton Inman,Bismarck-Henning Youth Wrestling Club,2204578701
+bantam,84,Preston Richardson,Pontiac Wrestling Club,2404326701
+bantam,84,Rogan Bramley,Iguana Athletics Wrestling Club,2303469401
+bantam,84,Keegan Lane,SJO Spartan YWC,2201354101
+bantam,84,Brekyn Rademacher,SJO Spartan YWC,2503467801
+bantam,84,Keegan House,Lionheart Intense Wrestling,2504809401
+bantam,95,Bowyn Schulz,El Paso Gridley Youth Wrestling Club,2204587601
+bantam,95,Owen Wibben,Olympia Wrestling Club,2405528901
+bantam,95,Kahner Hill,SJO Spartan YWC,2402581601
+bantam,95,Abdriel Santiago,Pontiac Wrestling Club,2503402901
+bantam,95,Carter Lumzy,Iguana Athletics Wrestling Club,2502719501
+bantam,120,Dominic Aguilar,Iguana Athletics Wrestling Club,2404416001
+bantam,120,Jonzy Biskie,Pontiac Wrestling Club,2602814801
+girls_intermediate,57,Rhay Ash,Iguana Athletics Wrestling Club,2502603101
+girls_intermediate,57,Kayelyn Lee,SJO Spartan YWC,2207311601
+girls_intermediate,57,Elizabeth Dunlop,Iguana Athletics Wrestling Club,2411899201
+girls_intermediate,62,Emmerson Lange,Falcon Youth Wrestling,2001419201
+girls_intermediate,62,Lena Barber,SJO Spartan YWC,2606772001
+girls_intermediate,67,Emilia Higgins,SJO Spartan YWC,2501780901
+girls_intermediate,67,Karna Hubner,Panther Paw Wrestling Club,2505712501
+girls_intermediate,67,Kaylynn Goetz,Decatur Dawgs Wrestling Club,2407078401
+girls_intermediate,72,Josephine Kreke,Decatur Dawgs Wrestling Club,2501966601
+girls_intermediate,72,Tayleigh Whisker,El Paso Gridley Youth Wrestling Club,2600487401
+girls_intermediate,77,Piper Angel,SOT-C WC,2003330001
+girls_intermediate,77,Millie Fields,Falcon Youth Wrestling,2403660401
+girls_intermediate,77,Lainey Sweet,MS Youth Wrestling Club,2403663701
+girls_intermediate,77,Isabella Villigan,Doom Wrestling,2603807801
+girls_intermediate,77,Kenzie Reynolds,Panther Paw Wrestling Club,2505796901
+girls_intermediate,82,Kaydence Lane,SJO Spartan YWC,2603624801
+girls_intermediate,82,Aria Armstrong,Falcon Youth Wrestling,2303468201
+girls_intermediate,88,AMari Harper,Lionheart Intense Wrestling,2604743401
+girls_intermediate,88,Skylar Biskie,Pontiac Wrestling Club,2602814301
+girls_intermediate,95,Caroline Lindsey,SJO Spartan YWC,2505731501
+girls_intermediate,115,Nicole Faulds,Dwight Wrestling Club,2503035501
+girls_intermediate,115,Kinley Hendricks,El Paso Gridley Youth Wrestling Club,2308353801
+girls_intermediate,115,Lettie Taylor,El Paso Gridley Youth Wrestling Club,2600784301
+intermediate,55,Axel Graves,SJO Spartan YWC,2202960101
+intermediate,55,Cooper Quinn,Olympia Wrestling Club,2504105101
+intermediate,59,Carson Gallo,SJO Spartan YWC,2102744501
+intermediate,59,Asher Thompson,SJO Spartan YWC,2201581401
+intermediate,59,Deakin Heath,MS Youth Wrestling Club,2201350701
+intermediate,59,Kolten Fiedler,SJO Spartan YWC,2301854801
+intermediate,59,Maxwell Deacon,Iguana Athletics Wrestling Club,2305527201
+intermediate,59,Jaymison Forde,Panther Paw Wrestling Club,2604934201
+intermediate,64,Aaron Munks,SOT-C WC,2205874401
+intermediate,64,Jagger Burrell,Olympia Wrestling Club,2104707401
+intermediate,64,Zackary Vest,Olympia Wrestling Club,2104708301
+intermediate,64,Caysen Beard,Gators Elite WC,2306124301
+intermediate,64,Ryan Essex,Panther Paw Wrestling Club,2506860401
+intermediate,64,Parker Casner,Pontiac Wrestling Club,2409118301
+intermediate,69,Harte Burrell,Olympia Wrestling Club,2104707301
+intermediate,69,George Steele,SJO Spartan YWC,2202206701
+intermediate,69,Nico Poeta,SJO Spartan YWC,2202617701
+intermediate,69,Asher Foster,Bismarck-Henning Youth Wrestling Club,2304310201
+intermediate,69,J'Cieon Gouard,Gators Elite WC,2404750201
+intermediate,69,Hudson Greskoviak,El Paso Gridley Youth Wrestling Club,2305754201
+intermediate,74,Boston Armetta,MS Youth Wrestling Club,2302325401
+intermediate,74,Kamdyn Smith,Twin City Tigers WC,2506083401
+intermediate,74,Henry Thompson,Iguana Athletics Wrestling Club,2601571901
+intermediate,74,Sawyer Breen,Doom Wrestling,2605794601
+intermediate,74,Will Pompey,Saber Wrestling Club,2410220501
+intermediate,74,Noah Voyles,Monticello Youth Wrestling Club,2204596301
+intermediate,79,Jack Gorman,SJO Spartan YWC,2102744701
+intermediate,79,Oakley Davis,Iguana Athletics Wrestling Club,2203615901
+intermediate,79,Gunnersyn Schulz,El Paso Gridley Youth Wrestling Club,2204587701
+intermediate,79,Jackson Kreke,Decatur Dawgs Wrestling Club,2402981301
+intermediate,79,Ashton Dickey,Twin City Tigers WC,2303724501
+intermediate,79,Luke Didier,Panther Paw Wrestling Club,2404793301
+intermediate,84,Tyler Marx,Iguana Athletics Wrestling Club,2203616001
+intermediate,84,Cooper Deem,SJO Spartan YWC,2201580901
+intermediate,84,Hudson Blackburn,Monticello Youth Wrestling Club,2204595201
+intermediate,84,Wayne Strong,Iguana Athletics Wrestling Club,2202114101
+intermediate,84,Kaven White,Twin City Tigers WC,2004189501
+intermediate,84,Tyriq Mccoy,Lionheart Intense Wrestling,2306466601
+intermediate,90,Emmett Richardson,Pontiac Wrestling Club,2404326601
+intermediate,90,Alekai Perez,Lionheart Intense Wrestling,2007980901
+intermediate,90,Braiden Crabtree,Prairie Central Youth Wrestling,2404509201
+intermediate,90,Aiden Thomas,Doom Wrestling,2305150901
+intermediate,90,Griffin Lamb,Monticello Youth Wrestling Club,2406630801
+intermediate,90,Weston Sanders,SJO Spartan YWC,2302963401
+intermediate,98,Tyreese Griffin,Twin City Tigers WC,2505255301
+intermediate,98,Camden Hamilton,Bismarck-Henning Youth Wrestling Club,2304308701
+intermediate,98,Samuel Pollack,SOT-C WC,2000990301
+intermediate,98,Lennon Janssen,Lincoln Youth Wrestling Club,2406957101
+intermediate,98,Landon McGann,Dwight Wrestling Club,2205189101
+intermediate,108,Hunter Archer,Doom Wrestling,2204183301
+intermediate,108,Mackson Bruning,Iguana Athletics Wrestling Club,2203046401
+intermediate,108,Karter Smith,SJO Spartan YWC,2001332401
+intermediate,108,Matthias Walker,Twin City Tigers WC,2512001501
+intermediate,108,Christian Potts,Doom Wrestling,2206044801
+intermediate,108,Kaden Whitton,SOT-C WC,2404933601
+intermediate,122,Charley Crouch,Iguana Athletics Wrestling Club,2208095901
+intermediate,122,Dylan Rae Perkins,Doom Wrestling,2305150501
+intermediate,122,Macallan McElroy,Monticello Youth Wrestling Club,2509624601
+intermediate,122,Joseph Vargas,Iguana Athletics Wrestling Club,2304478301
+intermediate,122,Corey Bouse,Panther Paw Wrestling Club,2605362601
+intermediate,122,Waylon Jesse,Falcon Youth Wrestling,2201497101
+intermediate,148,Dawson Hicks,Monticello Youth Wrestling Club,2204595601
+intermediate,148,Evan Scrimager,Iguana Athletics Wrestling Club,2505413101
+intermediate,148,Tanner Buchenau,Dwight Wrestling Club,2404195601
+intermediate,148,Jocelyn Dix,MS Youth Wrestling Club,2501695501
+intermediate,148,Daniel Runge,Olympia Wrestling Club,2405528101
+intermediate,148,Buddy Linares,Panther Paw Wrestling Club,2506620001
+intermediate,177,Tony Hess,Decatur Dawgs Wrestling Club,2310493101
+intermediate,177,Hunter Lindsey,Dwight Wrestling Club,2303416801
+girls_novice,68,Hazel Jones,Doom Wrestling,2612401601
+girls_novice,74,Isabella Hudison,Bismarck-Henning Youth Wrestling Club,2304307001
+girls_novice,80,Stella Eimer,Olympia Wrestling Club,2005608201
+girls_novice,80,Piper Mashburn,SOT-C WC,2203693001
+girls_novice,85,Brynlee Jones,Falcon Youth Wrestling,2201497201
+girls_novice,90,Jocelyn Shelato,Bismarck-Henning Youth Wrestling Club,2607117101
+girls_novice,90,Lydia Schoon,Doom Wrestling,2305150701
+girls_novice,90,Brittany Milligan,Falcon Youth Wrestling,2403660501
+girls_novice,90,Harper Neisler,SOT-C WC,2610161401
+girls_novice,96,Charlotte Purcell,Iguana Athletics Wrestling Club,2603075301
+girls_novice,102,Chloe Brookwalter,Doom Wrestling,2504358001
+girls_novice,108,Teagan Phillips,Olympia Wrestling Club,2303746701
+girls_novice,108,Mia Hoffner,Dwight Wrestling Club,2205103201
+girls_novice,125,Leyiah Jones,Lionheart Intense Wrestling,2507751801
+girls_novice,125,Mikaylee Reiniche,Doom Wrestling,2603807901
+girls_novice,125,Kourtney Childers,Panther Paw Wrestling Club,2604934601
+girls_novice,140,Summer Biskie,Pontiac Wrestling Club,2602814001
+girls_novice,140,Pemberley Blackburn,Monticello Youth Wrestling Club,2613494001
+girls_novice,185,Rosie Inman,Bismarck-Henning Youth Wrestling Club,2004425101
+girls_novice,185,Emory Walker,Twin City Tigers WC,2608746501
+novice,64,Liam Butts,SJO Spartan YWC,2005077101
+novice,69,Calvin Brucker,Falcon Youth Wrestling,1901658901
+novice,69,Logan Lapash,Dwight Wrestling Club,2501843901
+novice,74,Will Gallo,SJO Spartan YWC,2003332901
+novice,74,Nicholas Peters,Olympia Wrestling Club,2405527701
+novice,74,Bronson Fink,Monticello Youth Wrestling Club,2003336601
+novice,74,Aiden Ramey,Iguana Athletics Wrestling Club,2204892201
+novice,80,Beau Fields,Falcon Youth Wrestling,1902116101
+novice,80,Tyson Jones,SJO Spartan YWC,2005077301
+novice,80,Radley Bowman,Panther Paw Wrestling Club,2404793101
+novice,80,Braxton Humphrey,Iguana Athletics Wrestling Club,2203048001
+novice,80,Spencer Krisman,SJO Spartan YWC,2201581101
+novice,80,Maddox York,El Paso Gridley Youth Wrestling Club,2204587101
+novice,86,Caden Ramp,Backyard Brawlers Midwest WC,2003175801
+novice,86,Jeffrey Medema III,Dwight Wrestling Club,2202141601
+novice,86,Spencer Mool,El Paso Gridley Youth Wrestling Club,2204587201
+novice,86,Myles Salinas,Falcon Youth Wrestling,1901660301
+novice,86,Patrick Feeney,Monticello Youth Wrestling Club,2406630601
+novice,86,Scott Harper,Monticello Youth Wrestling Club,2405164401
+novice,93,Case Force,Decatur Dawgs Wrestling Club,1905043601
+novice,93,Jayce Richards,Iguana Athletics Wrestling Club,2202113901
+novice,93,Mason Poll,Saber Wrestling Club,1903830001
+novice,93,Trent'n Jones,Lionheart Intense Wrestling,2404953101
+novice,93,Rowen Mischke,Panther Paw Wrestling Club,2404931901
+novice,93,Turner Dunlop,Iguana Athletics Wrestling Club,2202952301
+novice,100,Chase Gorman,SJO Spartan YWC,2003333001
+novice,100,Richard Mikel,Bismarck-Henning Youth Wrestling Club,2203989001
+novice,100,Jack O'Herron,SJO Spartan YWC,2003333201
+novice,100,Evan Garrett,Iguana Athletics Wrestling Club,2602100001
+novice,108,Aceton Clark,Twin City Tigers WC,2305238901
+novice,108,Antwon Knight,Lionheart Intense Wrestling,2306466901
+novice,108,Ezaden Johnson,Pontiac Wrestling Club,2602819001
+novice,108,Landon Reynolds,Panther Paw Wrestling Club,2002044401
+novice,108,Cain Thomas,Backyard Brawlers Midwest WC,2504224301
+novice,116,Liam Powell,SJO Spartan YWC,2005077501
+novice,116,Jase Spain,SJO Spartan YWC,1803234201
+novice,116,Camden Talley,SOT-C WC,2203601401
+novice,116,Jayden White,Twin City Tigers WC,1904527701
+novice,116,Bentley Hendricks,El Paso Gridley Youth Wrestling Club,2204587001
+novice,116,Zavin Hasselbring,Iguana Athletics Wrestling Club,2002035101
+novice,125,Cash Brown,Bismarck-Henning Youth Wrestling Club,1903485101
+novice,125,Rhett Bramley,Iguana Athletics Wrestling Club,2203046201
+novice,125,Wyatt Tomblin,SJO Spartan YWC,2302963501
+novice,125,Evan Hancock,Iguana Athletics Wrestling Club,2002035001
+novice,125,Eli Gentes,El Paso Gridley Youth Wrestling Club,2604388701
+novice,134,Luke Wagner,SJO Spartan YWC,2301855601
+novice,134,Hayden Hicks,Monticello Youth Wrestling Club,1903822401
+novice,134,Andrew Steele,SJO Spartan YWC,2202206601
+novice,134,Gage Netterville,Decatur Dawgs Wrestling Club,2411758601
+novice,154,Wyatt Miller,Monticello Youth Wrestling Club,2407076801
+novice,154,Hudson Moreno,Decatur Dawgs Wrestling Club,2501965701
+novice,154,Abraham Heimberger,Doom Wrestling,2505632401
+novice,154,Alex Allen,Decatur Dawgs Wrestling Club,2204007701
+novice,154,Karsyn Hibbard,Decatur Dawgs Wrestling Club,2206369701
+novice,178,Tyronne Wiley Jr.,Lionheart Intense Wrestling,2410945001
+girls_senior,90,Abriella Saldaris,Monticello Youth Wrestling Club,2406631201
+girls_senior,100,Khloe chasten,SOT-C WC,2503371801
+girls_senior,105,Tristyn Mool,El Paso Gridley Youth Wrestling Club,2404322801
+girls_senior,105,Syndeah Spandet,SOT-C WC,2612032701
+girls_senior,120,Haylee O'Neal,Pontiac Wrestling Club,2503412801
+girls_senior,125,Zelda Papineau,Doom Wrestling,2311757901
+senior,84,Bentley Morse,SJO Spartan YWC,1802625501
+senior,84,Kru McDonald,SJO Spartan YWC,2302452101
+senior,90,Cameron Ramp,Backyard Brawlers Midwest WC,1904553101
+senior,90,Jacob Eyres,Iguana Athletics Wrestling Club,2304476901
+senior,96,Coltyn Tipsord,Backyard Brawlers Midwest WC,2004169901
+senior,103,Carmine Bebout,Panther Paw Wrestling Club,2202113101
+senior,110,Waylon Vaughn,SJO Spartan YWC,1803237301
+senior,126,Parker Cook,Doom Wrestling,1807072401
+senior,126,Getorix Wright,Bismarck-Henning Youth Wrestling Club,1804245301
+senior,135,Cooper Miller,Decatur Dawgs Wrestling Club,2207831701
+senior,135,Hunter Roseman,SJO Spartan YWC,1801592401
+senior,135,VIncent Gagich,SJO Spartan YWC,115319001
+senior,144,Nathan Simons,Saber Wrestling Club,2001254001
+senior,154,Hudson Clay,SOT-C WC,1805423801
+senior,154,Tristan Strubberg,Bismarck-Henning Youth Wrestling Club,2204360501
+senior,154,Ayden Rayburn,Lionheart Intense Wrestling,2507582801
+senior,215,Jonathon Walker,Decatur Dawgs Wrestling Club,2603197101
+senior,275,Kimari Nelson-Smith,Dwight Wrestling Club,2201647501
+senior,275,Tracen Burke,Prairie Central Youth Wrestling,2614380301
 girls_bantam,45,Elizabeth Godard,Edwardsville Wrestling Club,2404035801
 girls_bantam,45,Layla Short,Litchfield Wrestling Club,2501062401
 girls_bantam,50,Kacie Kiel,Edwardsville Wrestling Club,2304328601
@@ -1390,6 +3845,368 @@ senior,215,Brody Gray,Hillsboro Jr Toppers Wrestling Club,2609141501
 senior,215,Jamison Staten,Litchfield Wrestling Club,2509673301
 senior,275,Deezle Hansel,Edwardsville Wrestling Club,2609626001
 senior,275,Austin Allaria,Edwardsville Wrestling Club,2602245501
+girls_bantam,45,Lainey Fiordirosa,Crystal Lake Wizards Wrestling Club,2402139701
+girls_bantam,45,Brooklynn Denton,Dundee Highlanders WC,2517318701
+girls_bantam,50,Savannah Fox,Dundee Highlanders WC,2402765601
+girls_bantam,50,Mia Topolewski,DeKalb Wrestling Club,2406622401
+girls_bantam,50,Willow Saxton,Red Raiders Wrestling Team,2505633901
+girls_bantam,50,Averie Alvarado,Dundee Highlanders WC,2509785901
+girls_bantam,50,IOANNA KOKKINOS,Rockets Wrestling Club,2602221101
+girls_bantam,50,Zuzu Schmalz,Wolves Wrestling Club,2612438601
+girls_bantam,55,Piper Hetzel,Marengo Youth Wrestling Club,2506765401
+girls_bantam,61,Evelyn Schmidt,Marengo Youth Wrestling Club,2505581001
+girls_bantam,61,Alycia Perez,Dundee Highlanders WC,2402805101
+girls_bantam,61,Scarlett Watie,Sycamore Wrestling Club,2510073701
+girls_bantam,67,Tess Willock,Rockets Wrestling Club,2409319801
+girls_bantam,67,Mia Salgado,Dundee Highlanders WC,2517961501
+girls_bantam,67,Hannah Bonilla,Dundee Highlanders WC,2506500601
+girls_bantam,67,Kya Cirks,Crystal Lake Wizards Wrestling Club,2500618501
+girls_bantam,67,Gianna Castro,Cogs Wrestling Club,2607252501
+girls_bantam,74,Maggie Larson,DeKalb Wrestling Club,2307623501
+girls_bantam,85,Kenzie Bovinet,Marengo Youth Wrestling Club,2405162201
+girls_bantam,85,Delia Zamot,Marengo Youth Wrestling Club,2505576001
+bantam,43,Angelo Best,Rockets Wrestling Club,2302961801
+bantam,43,Quentin Bergstrom,McHenry Wrestling Club,2408398101
+bantam,43,Kaden Anderson,Dundee Highlanders WC,2401894301
+bantam,43,Riott Hetzel,Marengo Youth Wrestling Club,2505582001
+bantam,46,Luca Fiordirosa,Crystal Lake Wizards Wrestling Club,2301484401
+bantam,46,Hudson Serna,McHenry Wrestling Club,2606125701
+bantam,46,Logan Clark,Spartan Wrestling Club,2503064301
+bantam,46,Mario Giardino,Rockets Wrestling Club,2402404601
+bantam,46,Brayden Bakke,Sycamore Wrestling Club,2605485301
+bantam,49,Christian Sanders,Crystal Lake Wizards Wrestling Club,2403993201
+bantam,49,Owen Peterson,Dundee Highlanders WC,2414992501
+bantam,49,Levi Flores,Crystal Lake Wizards Wrestling Club,2400027501
+bantam,49,Silas Bock,Sycamore Wrestling Club,2505051901
+bantam,49,Bo Mikulec,Crystal Lake Wizards Wrestling Club,2504761001
+bantam,49,Holden Hastings,Crystal Lake Wizards Wrestling Club,2406702501
+bantam,52,Giovanni Palermo,Red Raiders Wrestling Team,2508506501
+bantam,52,Otto Heading,Golden Eagles Wrestling Club,2505947701
+bantam,52,Parker Deering,Rockets Wrestling Club,2302962101
+bantam,52,Elijah Schmitt,Woodstock Cyclones WC,2406095101
+bantam,52,Jeremiah Mercado,Spartan Wrestling Club,2304508201
+bantam,52,Logan Vasilikos,Dundee Highlanders WC,2502158201
+bantam,55,Timothy Vasquez,Dundee Highlanders WC,2306465901
+bantam,55,Andy Castillo,Spartan Wrestling Club,2402456501
+bantam,55,Wyatt Hughes,Sycamore Wrestling Club,2404488901
+bantam,55,Zachariah Gregory,Red Raiders Wrestling Team,2405162901
+bantam,55,Weston Padolina,Red Raiders Wrestling Team,2501775401
+bantam,55,Easton Doyle,Wolves Wrestling Club,2503676201
+bantam,58,Grayson Denton,Dundee Highlanders WC,2304412401
+bantam,58,Wyatt Navarro,Riot Room Wrestling,2309229101
+bantam,58,Elliot Walker,Knights Wrestling Club,2304332201
+bantam,58,Blake Olsen,Wolves Wrestling Club,2200118901
+bantam,58,Andrew Schweikhofer,Crystal Lake Wizards Wrestling Club,2301961801
+bantam,58,Titus Varda,Dundee Highlanders WC,2411703001
+bantam,62,Claudian Gregory,Red Raiders Wrestling Team,2405162801
+bantam,62,Cooper Dettlo,Golden Eagles Wrestling Club,2303744301
+bantam,62,Sutherland Robken,Rockets Wrestling Club,2301740401
+bantam,62,Atahan Baidyla,Golden Eagles Wrestling Club,2305151201
+bantam,62,John Herzog,Marengo Youth Wrestling Club,2405163101
+bantam,62,David Bohlen,Crystal Lake Wizards Wrestling Club,2400506101
+bantam,66,Jonathan Perez Jr.,Dundee Highlanders WC,2301210401
+bantam,66,James Forsberg,Wolves Wrestling Club,2303375601
+bantam,66,Luke Suffern,Dundee Highlanders WC,2404592701
+bantam,66,Everett Milazzo,Marengo Youth Wrestling Club,2505573901
+bantam,66,Archer Saxton,Red Raiders Wrestling Team,2503751601
+bantam,66,Callan James,Wolves Wrestling Club,2404192501
+bantam,70,Camden Behm,Wolves Wrestling Club,2202175401
+bantam,70,Jackson O'Brien,Dundee Highlanders WC,2505879101
+bantam,70,Beckham Schnowske,Crystal Lake Wizards Wrestling Club,2200903901
+bantam,70,Anthony Quintana,Spartan Wrestling Club,2605139901
+bantam,70,Leonardo Wozniak,Dundee Highlanders WC,2301360701
+bantam,70,Finn Montanye,Woodstock Cyclones WC,2404904301
+bantam,76,Kelley Cirks,Crystal Lake Wizards Wrestling Club,2200393901
+bantam,76,Santiago hernandez,Dundee Highlanders WC,2204847201
+bantam,76,Zachary Loebbaka,Vortex Wrestling Club,2302108601
+bantam,76,Jeremy Bradley,Spartan Wrestling Club,2200229301
+bantam,76,Jackson Erickson,DeKalb Wrestling Club,2606743401
+bantam,76,Nicholas Erb,Golden Eagles Wrestling Club,2404122701
+bantam,84,Braxton Osar,Riot Room Wrestling,2404766301
+bantam,84,Sebastian Arroyo,Knights Wrestling Club,2505337901
+bantam,84,Brady Jensen,Riot Room Wrestling,2506877001
+bantam,84,Nico Ortiz,Golden Eagles Wrestling Club,2609088401
+bantam,84,Evan Jessogne,Dundee Highlanders WC,2600696901
+bantam,84,Pierson Ramsey,Crystal Lake Wizards Wrestling Club,2302930601
+bantam,95,Declan Druger,Dundee Highlanders WC,2304820701
+bantam,95,Robert Kretchmer,McHenry Wrestling Club,2304968301
+bantam,95,Jeremy Shedrick,Spartan Wrestling Club,2304875801
+bantam,95,Mark Herzog,Marengo Youth Wrestling Club,2405163201
+bantam,120,William Dorwaldt,Riot Room Wrestling,2602296401
+girls_intermediate,57,Nicolette Giardino,Rockets Wrestling Club,2402404701
+girls_intermediate,62,Ella Terhaar,Wolves Wrestling Club,2204615801
+girls_intermediate,62,Khloe Dominguez,DeKalb Wrestling Club,2406620101
+girls_intermediate,62,Liliana Quatroke,Dundee Highlanders WC,2501854701
+girls_intermediate,62,Ruby Sacomano,Rockets Wrestling Club,2504193101
+girls_intermediate,67,Kinzie Miller,Wolves Wrestling Club,2603525601
+girls_intermediate,67,Mary Jane Watie,Sycamore Wrestling Club,2510073901
+girls_intermediate,67,McKenna Culp,McHenry Wrestling Club,2305517401
+girls_intermediate,67,Vivian Martin,Rockets Wrestling Club,2501447801
+girls_intermediate,67,Annie Jalowiecki,Rockets Wrestling Club,2501793501
+girls_intermediate,67,Whitney Lucas,Dundee Highlanders WC,2607229601
+girls_intermediate,72,Hannah Lingle,Sycamore Wrestling Club,2503842601
+girls_intermediate,72,Amelia Alvarado,Dundee Highlanders WC,2509785701
+girls_intermediate,72,Elliott Koleno,Spartan Wrestling Club,2405287201
+girls_intermediate,72,Zadie Koehler,Sycamore Wrestling Club,2203621601
+girls_intermediate,77,Angelina Perez,Dundee Highlanders WC,2402804401
+girls_intermediate,77,Brilee Bowden,Wolves Wrestling Club,2608544101
+girls_intermediate,77,Charlee Gautcher,Sycamore Wrestling Club,2205540601
+girls_intermediate,82,Palmer Miller,Wolves Wrestling Club,2507486201
+girls_intermediate,88,Bria Davis,DeKalb Wrestling Club,2604370501
+girls_intermediate,88,Meeka Bock,Sycamore Wrestling Club,2600902901
+girls_intermediate,88,Alice Loebbaka,Vortex Wrestling Club,2607150701
+girls_intermediate,95,Mckinley Allen,Riot Room Wrestling,2403119401
+girls_intermediate,95,Mikayla Bogle,Riot Room Wrestling,2604469001
+girls_intermediate,95,Madeline Thomas,Red Raiders Wrestling Team,2602506201
+girls_intermediate,115,Kennedy Erickson,DeKalb Wrestling Club,2204994501
+girls_intermediate,115,Madison Gregoria,Woodstock Cyclones WC,2404876801
+girls_intermediate,115,ANDREA VENCES,Rockets Wrestling Club,2602773701
+intermediate,55,Blake Davis,Spartan Wrestling Club,2202366601
+intermediate,55,Darian Keller,Crystal Lake Wizards Wrestling Club,2201443601
+intermediate,55,Kaiden Fox,Dundee Highlanders WC,2303031301
+intermediate,55,Owen Pilipuf,Crystal Lake Wizards Wrestling Club,2200798501
+intermediate,55,Walter Perkins,McHenry Wrestling Club,2317220901
+intermediate,55,Archer Jorgensen,Knights Wrestling Club,2506665401
+intermediate,59,Tre'Lyn Morrow,Crystal Lake Wizards Wrestling Club,2104716501
+intermediate,59,Kelso Schwan,Spartan Wrestling Club,2301717401
+intermediate,59,Gavin Allen,Woodstock Cyclones WC,2502737801
+intermediate,59,Kaizer Figueroa,Knights Wrestling Club,2305509901
+intermediate,59,Crue Sheedy,Sycamore Wrestling Club,2205232101
+intermediate,59,Uriah Delgado,Riot Room Wrestling,2513728901
+intermediate,64,Brody Connolly,Crystal Lake Wizards Wrestling Club,2302131901
+intermediate,64,Joshua Scott,Crystal Lake Wizards Wrestling Club,2200318301
+intermediate,64,Jaxson Ecker,Dundee Highlanders WC,2200996901
+intermediate,64,Ronny Mastandrea,Red Raiders Wrestling Team,2408820101
+intermediate,64,Luke Wyatt,Wolves Wrestling Club,2301838501
+intermediate,64,Seinn Schwan,Spartan Wrestling Club,2301717201
+intermediate,69,Brody Flores,Crystal Lake Wizards Wrestling Club,2202602201
+intermediate,69,Beau Miller,McHenry Wrestling Club,2407076601
+intermediate,69,Brayden Swierk,Crystal Lake Wizards Wrestling Club,2001791001
+intermediate,69,Jaxen Whetstone,DeKalb Wrestling Club,2305324401
+intermediate,69,Cade Iossi,Dundee Highlanders WC,2004145301
+intermediate,69,Connor Mulhearn,Riot Room Wrestling,2203374601
+intermediate,74,Cameron Willock,Rockets Wrestling Club,2203772801
+intermediate,74,Marshall Forsberg,Wolves Wrestling Club,2202183501
+intermediate,74,Vincent Jimenez,Crystal Lake Wizards Wrestling Club,2213118801
+intermediate,74,Anthony Palermo,Red Raiders Wrestling Team,2508506901
+intermediate,74,Kaden Keller,Crystal Lake Wizards Wrestling Club,2300038501
+intermediate,74,Lincoln Ryan,Wolves Wrestling Club,2200335901
+intermediate,79,Keegan Mullen,McHenry Wrestling Club,2004217301
+intermediate,79,Jonathan Hjorth,Spartan Wrestling Club,2103761601
+intermediate,79,Zach Caputo,DeKalb Wrestling Club,2005051301
+intermediate,79,Damin Nagel,Wolves Wrestling Club,2405413701
+intermediate,79,Declan Holm,Dundee Highlanders WC,2202025501
+intermediate,79,Jackson Deering,Rockets Wrestling Club,2302962001
+intermediate,84,Casey Sylvanus,Spartan Wrestling Club,2201105101
+intermediate,84,Jacob Booth,Spartan Wrestling Club,2301331601
+intermediate,84,Killien Schwarz,Riot Room Wrestling,2001046001
+intermediate,84,Tristan Perez,Crystal Lake Wizards Wrestling Club,2602218201
+intermediate,84,Daniel Swensen IV,Spartan Wrestling Club,2304342201
+intermediate,84,Jaxon Williams,Cogs Wrestling Club,2507542901
+intermediate,90,Gannon Root,Red Raiders Wrestling Team,2204870001
+intermediate,90,Jonah Varda,Dundee Highlanders WC,2411910701
+intermediate,90,Jackson McLean,Crystal Lake Wizards Wrestling Club,2408399201
+intermediate,90,Cayden Druger,Dundee Highlanders WC,2304820301
+intermediate,90,Payson Hines,Knights Wrestling Club,2204994801
+intermediate,90,Daniel Higgins,McHenry Wrestling Club,2605516801
+intermediate,98,Alexander Martinez,Red Raiders Wrestling Team,2201238201
+intermediate,98,Lane Young,Knights Wrestling Club,2505338201
+intermediate,98,Ryker Klein,McHenry Wrestling Club,2407076401
+intermediate,98,Jan Niezgoda,Marengo Youth Wrestling Club,2607142901
+intermediate,98,Wesson Huggins,Knights Wrestling Club,2610580201
+intermediate,98,William Fuller,Marengo Youth Wrestling Club,2304479401
+intermediate,108,Elliott Collins,DeKalb Wrestling Club,2305322301
+intermediate,108,Declan Wargo,Crystal Lake Wizards Wrestling Club,2200153701
+intermediate,108,Dante Liang,Dundee Highlanders WC,2502285001
+intermediate,108,Ryker Saldana,Golden Eagles Wrestling Club,2201103901
+intermediate,108,Bennett Druml,McHenry Wrestling Club,2605717901
+intermediate,108,Jad Halasah,Golden Eagles Wrestling Club,2510609101
+intermediate,122,Zander Hyde,Crystal Lake Wizards Wrestling Club,2202317801
+intermediate,122,Louis Perez,Crystal Lake Wizards Wrestling Club,2301266801
+intermediate,122,Brody Ramberg,Spartan Wrestling Club,2304550401
+intermediate,122,Declan Lange,Marengo Youth Wrestling Club,2204362701
+intermediate,122,Arthur Lawrence,Marengo Youth Wrestling Club,2304479701
+intermediate,122,Miles Miculinich,Spartan Wrestling Club,2201254301
+intermediate,148,Anoosh Varda,Dundee Highlanders WC,2411702901
+intermediate,148,Lucas Lee,Rockets Wrestling Club,2302964001
+intermediate,148,J'Breon Stewart,DeKalb Wrestling Club,2406622301
+intermediate,148,Marc Mota Jr.,Cogs Wrestling Club,2502248101
+intermediate,148,Joel Acevedo,Marengo Youth Wrestling Club,2505590301
+intermediate,148,Eden Davila,Marengo Youth Wrestling Club,2505588301
+intermediate,177,Isaiah Goodman,Spartan Wrestling Club,2605780401
+girls_novice,68,Ava Willock,Rockets Wrestling Club,2402406301
+girls_novice,68,Camryn Ciepley,Dundee Highlanders WC,2503926301
+girls_novice,80,Kaitlyn Geiger,Dundee Highlanders WC,2504105601
+girls_novice,80,Samantha Ribar,Marengo Youth Wrestling Club,2605054301
+girls_novice,85,Cecilia Nieves,McHenry Wrestling Club,2510124801
+girls_novice,85,Gwenyth Richter,McHenry Wrestling Club,2612632701
+girls_novice,85,Olivia Fuller,Marengo Youth Wrestling Club,2406149101
+girls_novice,85,Ava Vito,Wolves Wrestling Club,2608328201
+girls_novice,90,Fiona O'Connor,Rockets Wrestling Club,2302962801
+girls_novice,90,Mia Cervone,Red Raiders Wrestling Team,2402386401
+girls_novice,90,Autumn Harris,McHenry Wrestling Club,2605722101
+girls_novice,96,Pamella Salazar,McHenry Wrestling Club,2314347801
+girls_novice,96,Gemma Luebke,Wolves Wrestling Club,2410846901
+girls_novice,96,Mia Alvarez,Dundee Highlanders WC,2403763001
+girls_novice,96,CAITLYNN KOFFENBERGER,Rockets Wrestling Club,2602221001
+girls_novice,102,Alma Gomez,McHenry Wrestling Club,2606850401
+girls_novice,102,Olivia Guerra,Wolves Wrestling Club,2207786601
+girls_novice,102,Hadley Young,Knights Wrestling Club,2505338301
+girls_novice,102,Charley Stombaugh,DeKalb Wrestling Club,2612010701
+girls_novice,108,Carsen Unruh,Wolves Wrestling Club,2507094301
+girls_novice,115,Harper Norris,McHenry Wrestling Club,2304968601
+girls_novice,115,Elaina Snow,Crystal Lake Wizards Wrestling Club,1906681301
+girls_novice,125,Madison DeRusha,McHenry Wrestling Club,2408695301
+girls_novice,125,Peyton Forestor,Dundee Highlanders WC,2519722301
+girls_novice,125,Aubree Genteman,Dundee Highlanders WC,2607701601
+girls_novice,140,Francesca Yurs,Riot Room Wrestling,2204702001
+girls_novice,140,Audriana Herzog,Marengo Youth Wrestling Club,2304479601
+girls_novice,140,Mariam Smith,DeKalb Wrestling Club,2610710101
+novice,60,Jaxson Menchaca,Golden Eagles Wrestling Club,2302568101
+novice,60,Luciano Giardino,Rockets Wrestling Club,2402404501
+novice,64,Trevor Price,Marengo Youth Wrestling Club,2405163601
+novice,64,Hudson Pesek,Crystal Lake Wizards Wrestling Club,2603528401
+novice,69,Kaeden Martinez,Red Raiders Wrestling Team,1901303901
+novice,69,Lincoln Padolina,Red Raiders Wrestling Team,2303160101
+novice,69,Geovanni Giardino,Rockets Wrestling Club,2402404401
+novice,69,Mason Cook,Riot Room Wrestling,2609249401
+novice,74,Charlie Mathews,Knights Wrestling Club,2304331501
+novice,74,Raiden Nihei,Dundee Highlanders WC,2418664401
+novice,74,Owen Martin,Rockets Wrestling Club,2302962501
+novice,74,Philip Martin,Rockets Wrestling Club,2302962901
+novice,80,Kellan McCarthy,Riot Room Wrestling,2306448201
+novice,80,Derek Keller,Crystal Lake Wizards Wrestling Club,2201443401
+novice,80,Jeffrey Forsberg,Wolves Wrestling Club,2202182601
+novice,80,Beckham Smith,Crystal Lake Wizards Wrestling Club,1902572801
+novice,80,Landon Finn,Cogs Wrestling Club,2506646201
+novice,80,Sutton Giuliano,Vortex Wrestling Club,2405986801
+novice,86,Mikey Wetzel,Dundee Highlanders WC,2201295901
+novice,86,Brice Sears,Crystal Lake Wizards Wrestling Club,2300514301
+novice,86,Cody Nott,Sycamore Wrestling Club,1902649101
+novice,86,Evan Ecker,Dundee Highlanders WC,2200996801
+novice,86,Brooks Giuliano,Vortex Wrestling Club,2405986701
+novice,86,John Wilson,Cogs Wrestling Club,2607326801
+novice,93,Joseph Zuehlke,Crystal Lake Wizards Wrestling Club,2001117401
+novice,93,Dalton Watie Jr.,Sycamore Wrestling Club,2208899701
+novice,93,Reed Peterson,Knights Wrestling Club,2005062401
+novice,93,Jax Lovett,DeKalb Wrestling Club,1904464501
+novice,93,Marshall Bovinet,Marengo Youth Wrestling Club,2304478801
+novice,93,Nevin Velazquez,Crystal Lake Wizards Wrestling Club,2601354801
+novice,100,Maxwell Backus,Crystal Lake Wizards Wrestling Club,2208196201
+novice,100,Gavin Eich,Dundee Highlanders WC,2304645101
+novice,100,Alban Becker,Cogs Wrestling Club,1904464201
+novice,100,Leonardo Perez Pena,Riot Room Wrestling,2604455601
+novice,100,Michael Fricano,Riot Room Wrestling,2302623801
+novice,100,Ryan Lind,Sycamore Wrestling Club,2303826101
+novice,108,Izael Vences,Rockets Wrestling Club,2517484001
+novice,108,Brody Julian,Dundee Highlanders WC,2203772301
+novice,108,Carter Robinson,DeKalb Wrestling Club,1903133501
+novice,108,Collin Brown,Sycamore Wrestling Club,2303435101
+novice,108,Walter Kenny,Dundee Highlanders WC,2003720301
+novice,108,Braden Peterson,Riot Room Wrestling,2403108801
+novice,116,Rory Latham,Dundee Highlanders WC,2000479601
+novice,116,Weston Atkinson,Crystal Lake Wizards Wrestling Club,2005050701
+novice,116,Liam McRickard,Sycamore Wrestling Club,2613342701
+novice,116,Jayden Svoboda,Golden Eagles Wrestling Club,2606540701
+novice,116,Austin Lancer,Crystal Lake Wizards Wrestling Club,2400781301
+novice,116,Thomas Dulaney,Rockets Wrestling Club,2402404201
+novice,125,Matvey Matviychuk,Wolves Wrestling Club,2506117201
+novice,125,Charlie Kniesel,Golden Eagles Wrestling Club,2302567901
+novice,125,Maddox Kim,Sycamore Wrestling Club,2005617401
+novice,125,Paul Kenny,Dundee Highlanders WC,2003720001
+novice,125,William Hoy II,Crystal Lake Wizards Wrestling Club,2005157101
+novice,125,Darius Dodd,Sycamore Wrestling Club,2603365901
+novice,134,Andrew Caputo,DeKalb Wrestling Club,2005051101
+novice,134,Matthew Kozlowski,Crystal Lake Wizards Wrestling Club,1902209501
+novice,134,Mario Pulido,Dundee Highlanders WC,2503682201
+novice,134,Everett Lehr,Wolves Wrestling Club,1805768701
+novice,134,Alexander Daoud,Rockets Wrestling Club,2501396501
+novice,154,Derek Flores,Crystal Lake Wizards Wrestling Club,2207097901
+novice,154,Cooper Lind,Rockets Wrestling Club,1901665401
+novice,154,"Nicholas Anfeldt, Jr",Wolves Wrestling Club,1812177601
+novice,154,Jeremiah Brantley,Sycamore Wrestling Club,2405370901
+novice,154,Jordan Strohmaier,Dundee Highlanders WC,2609951501
+novice,154,Johnathon Dienst,Knights Wrestling Club,2614635001
+novice,178,John Gehrig,Sycamore Wrestling Club,2005617301
+novice,178,Otto Lewis,McHenry Wrestling Club,2206727301
+novice,178,Jaxon Ruffner,Marengo Youth Wrestling Club,2605553201
+novice,215,Grayson Johnson,Red Raiders Wrestling Team,2602688101
+girls_senior,80,Lux Masella,Woodstock Cyclones WC,2502037701
+girls_senior,85,Abigail Alvarado,Dundee Highlanders WC,2518029601
+girls_senior,90,Kirsten McPheron,McHenry Wrestling Club,2504797701
+girls_senior,95,Morgan Hansen,McHenry Wrestling Club,2613444801
+girls_senior,100,Aubrey Thornton,McHenry Wrestling Club,1806903301
+girls_senior,100,Aurora Natalino,Knights Wrestling Club,2613776001
+girls_senior,105,Blake Schuldt,McHenry Wrestling Club,2206728001
+girls_senior,105,Sophia Herzog,Marengo Youth Wrestling Club,2304480301
+girls_senior,105,Callie Fillinger,Crystal Lake Wizards Wrestling Club,2600012701
+girls_senior,110,Madison McAuliffe,Red Raiders Wrestling Team,1904462301
+girls_senior,110,Rosalba Lopez,McHenry Wrestling Club,2507007601
+girls_senior,110,Annabelle Chapman,Crystal Lake Wizards Wrestling Club,2512969801
+girls_senior,120,Isabella Kjell,DeKalb Wrestling Club,2405476901
+girls_senior,120,Autumn Natalino,Knights Wrestling Club,2606094901
+girls_senior,120,Mattea Sauer,Riot Room Wrestling,2315152401
+girls_senior,120,Gianna Pariso,McHenry Wrestling Club,2614239101
+girls_senior,125,Rori Vazquez,Knights Wrestling Club,2405766001
+girls_senior,130,Sadie Kenny,Dundee Highlanders WC,2303337201
+girls_senior,135,Kendall Young,Knights Wrestling Club,2509490401
+girls_senior,135,Sophia Lewis,McHenry Wrestling Club,2405163901
+girls_senior,135,Alexis Furlan,McHenry Wrestling Club,2605639101
+girls_senior,135,Ashlyn Drews,Crystal Lake Wizards Wrestling Club,2313752701
+girls_senior,145,Samantha Bovinet,Marengo Youth Wrestling Club,2304478901
+girls_senior,145,Layla Caraballo,Crystal Lake Wizards Wrestling Club,2604287801
+girls_senior,145,Finley McDonnell,McHenry Wrestling Club,2504799901
+girls_senior,185,liliana Perez,Knights Wrestling Club,2205141501
+girls_senior,185,KC Lacynski,Knights Wrestling Club,2606762601
+senior,84,Mason Beattie,Spartan Wrestling Club,112773801
+senior,84,Chayson Weirich,Marengo Youth Wrestling Club,2204363601
+senior,90,Ryan Lyp,Red Raiders Wrestling Team,2416872801
+senior,96,Anthony Zalud,Crystal Lake Wizards Wrestling Club,2105801201
+senior,96,Nathan Swierk,Crystal Lake Wizards Wrestling Club,1902011101
+senior,96,Ian Wheadon,Wolves Wrestling Club,1803256501
+senior,96,Mason Miedwig,Marengo Youth Wrestling Club,2605054001
+senior,103,Gianluca Juarez,Dundee Highlanders WC,1901741001
+senior,103,Tyler Peak,Dundee Highlanders WC,2503778301
+senior,103,Brandon Eugenio,Crystal Lake Wizards Wrestling Club,2400525401
+senior,103,Carter Zabler,Sycamore Wrestling Club,2608379201
+senior,103,Jacob Syanov,Wolves Wrestling Club,2504689301
+senior,110,Elijah Villa,McHenry Wrestling Club,2607010201
+senior,110,Wyatt Wolpaw,McHenry Wrestling Club,2408399601
+senior,118,Carter Giuliano,Vortex Wrestling Club,2405986501
+senior,118,Brady O'Connor,Richmond Wrestling Club,1804717101
+senior,126,Daniel Swick,Riot Room Wrestling,2503549901
+senior,126,Zayden Ebuna,Red Raiders Wrestling Team,1902140101
+senior,126,Cooper Delp,Dundee Highlanders WC,2502216101
+senior,126,Cavan Lukes,Dundee Highlanders WC,1803887801
+senior,135,Cristiano Martinez,Riot Room Wrestling,1900376601
+senior,135,Jackson Gray,Crystal Lake Wizards Wrestling Club,2001723301
+senior,135,Xavien Maldonado,Sycamore Wrestling Club,2609926101
+senior,135,Nolan Smith,Red Raiders Wrestling Team,2207551401
+senior,135,Aidan Meyers,Rockets Wrestling Club,2302962601
+senior,135,Finn Aguirre,Marengo Youth Wrestling Club,2608357601
+senior,144,Jayden Mesmer,Riot Room Wrestling,1803245901
+senior,144,Xavier Hernandez,Riot Room Wrestling,2403649401
+senior,144,JOSHUA NIEHUS,Rockets Wrestling Club,2602222101
+senior,154,Lucas Gillette,Dundee Highlanders WC,1902544901
+senior,154,Richard Kniesel,Golden Eagles Wrestling Club,2406831301
+senior,154,Kareem Almusfi,Sycamore Wrestling Club,2508943801
+senior,164,Ivan Villagomez,Sycamore Wrestling Club,2602043901
+senior,164,Devin Vega,Red Raiders Wrestling Team,2100374201
+senior,164,Aaron Garcia,Crystal Lake Wizards Wrestling Club,1800820901
+senior,176,Nickolai Wieser,Red Raiders Wrestling Team,1803246801
+senior,176,Silas Hernandez,Dundee Highlanders WC,2312540201
+senior,176,Joseph Brannigan,Red Raiders Wrestling Team,115307501
+senior,176,Ryan Abrams,Crystal Lake Wizards Wrestling Club,115310601
+senior,188,Kristoff Bogle,Riot Room Wrestling,2505071701
+senior,188,George Mooney Jr.,Red Raiders Wrestling Team,2305099701
+senior,188,Connor Allen,Riot Room Wrestling,2201404701
+senior,188,Brady Marski,Spartan Wrestling Club,2512953001
+senior,215,Liam Hernandez,Dundee Highlanders WC,2516532001
+senior,215,Nathan Walsh,Crystal Lake Wizards Wrestling Club,1912477201
+senior,215,Rowan Lauher,Sycamore Wrestling Club,2614701101
+senior,215,Sam Oleferchik,Red Raiders Wrestling Team,2304798201
+senior,275,Mekhi Ruiz,Dundee Highlanders WC,2404097701
+senior,275,Tyler Covarrubias,Dundee Highlanders WC,2002143401
 girls_bantam,45,McKenna Weckmann,Collinsville Wrestling Club,2405157001
 girls_bantam,45,Ayarra Schaefer,Collinsville Wrestling Club,2405156301
 girls_bantam,45,Charleigh Womack,Vandalia Jr Wrestling Club,2507725501

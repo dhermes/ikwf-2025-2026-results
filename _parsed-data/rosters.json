@@ -3505,6 +3505,11 @@
     "sectional": "Central",
     "athletes": [
       {
+        "usaw_number": "2204587101",
+        "name": "Maddox York",
+        "ikwf_age": 12
+      },
+      {
         "usaw_number": "2305753601",
         "name": "Aidyn Agamy",
         "ikwf_age": 10
@@ -76266,11 +76271,6 @@
         "ikwf_age": 8
       },
       {
-        "usaw_number": "2005630301",
-        "name": "Nicolas Pitstick",
-        "ikwf_age": 11
-      },
-      {
         "usaw_number": "2505835601",
         "name": "Johnathan Pitts",
         "ikwf_age": 14
@@ -76376,6 +76376,11 @@
     "club_name": "Ottawa Wrestling Club",
     "sectional": "West",
     "athletes": [
+      {
+        "usaw_number": "2005630301",
+        "name": "Nicolas Pitstick",
+        "ikwf_age": 11
+      },
       {
         "usaw_number": "2610420701",
         "name": "Miles Dekreon",

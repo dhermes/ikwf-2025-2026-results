@@ -149,6 +149,10 @@ class _PreviewsRoot(pydantic.RootModel[_Previews]):
     pass
 
 
+def _head_to_head_sort_func(match_: _PreviewHeadToHead) -> tuple[int, str, str]:
+    return -match_.event_date.toordinal(), match_.winner, match_.loser
+
+
 def _make_weight_preview(
     weight_class: _WeightClass, team_to_sectional: dict[str, _PreviewSectional]
 ) -> _Preview:
@@ -183,6 +187,7 @@ def _make_weight_preview(
             )
         )
 
+    preview_head_to_heads.sort(key=_head_to_head_sort_func)
     return _Preview(athletes=preview_athletes, head_to_heads=preview_head_to_heads)
 
 
