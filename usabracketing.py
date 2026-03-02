@@ -881,6 +881,10 @@ def _parse_match_line(
     if "Charles (CJ) " in match_text:
         has_cj = True
         match_text = match_text.replace("Charles (CJ) ", "Charles ")
+    has_jasiu = False
+    if "John (Jasiu) " in match_text:
+        has_jasiu = True
+        match_text = match_text.replace("John (Jasiu) ", "John ")
     winner_full, remaining = match_text.split(") ")
 
     if remaining.startswith("Ult. Tie Br. "):
@@ -900,6 +904,8 @@ def _parse_match_line(
     loser, loser_team = loser_full.split(" (", 1)
     if has_cj:
         loser = loser.replace("Charles ", "Charles (CJ) ")
+    if has_jasiu:
+        loser = loser.replace("John ", "John (Jasiu) ")
 
     result_type = _determine_result_type(result)
     if result_type is None:
