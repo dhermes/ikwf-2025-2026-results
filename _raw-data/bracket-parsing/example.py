@@ -23,6 +23,12 @@ def main() -> None:
         html = file_obj.read()
 
     soup = bs4.BeautifulSoup(html, features="html.parser")
+    (bracket_span,) = soup.find_all(
+        "span", class_="font-gotham antialiased text-xl text-usa-red font-extrabold"
+    )
+    bracket_name = bracket_span.text
+    print(bracket_name)
+
     (bracket_pages,) = soup.find_all("div", id="bracketPages")
     (inner,) = bracket_pages.find_all("div", recursive=False)
     (bracket_table,) = inner.find_all("table", recursive=False)

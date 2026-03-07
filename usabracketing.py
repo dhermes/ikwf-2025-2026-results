@@ -23,7 +23,10 @@ _P_STYLE_ROUND_OR_BRACKET = "margin-top: 5px; font-weight: bold;"
 _PLACEHOLDER_TEXT = "[first_name] [last_name]"
 # NOTE: USA Bracketing puts USAW national championship events in search results
 #       even if they don't match the search criteria.
-_IGNORE_SEARCH_RESULT = "2026 USA Wrestling Kids Folkstyle National Championship"
+_IGNORE_SEARCH_RESULTS = (
+    "2026 USA Wrestling Kids Folkstyle National Championship",
+    "2026 U17 Pan-Am Team Trials",
+)
 _TITLE_MARGIN_LEFT = "margin-left:0px"
 _WRESTLER_MARGIN_LEFT = "margin-left:20px"
 _MATCH_MARGIN_LEFT = "margin-left:40px"
@@ -295,8 +298,9 @@ def _search_results_click_first(driver: webdriver.Chrome, name: str) -> str:
         tr = all_trs[0]
     elif len(all_trs) == 2:
         first_html = all_trs[0].get_attribute("outerHTML")
-        if _IGNORE_SEARCH_RESULT in first_html:
-            tr = all_trs[1]
+        for ignore_search_result in _IGNORE_SEARCH_RESULTS:
+            if ignore_search_result in first_html:
+                tr = all_trs[1]
 
     if tr is None:
         raise ValueError(f"Expected exactly 1 <tr>, found {len(all_trs)}", name)
