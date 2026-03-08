@@ -143,6 +143,14 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-03-01", "IKWF West Regional-LaSalle"),
     ("2026-03-01", "IKWF West Regional-Macomb"),
     ("2026-03-01", "IKWF West Regional-Morton"),
+    ("2026-03-07", "IKWF Central Chicago Sectional"),
+    ("2026-03-07", "IKWF Central Sectional"),
+    ("2026-03-07", "IKWF North Chicago Sectional"),
+    ("2026-03-07", "IKWF North Sectional"),
+    ("2026-03-07", "IKWF South Chicago Sectional"),
+    ("2026-03-07", "IKWF South Sectional"),
+    ("2026-03-07", "IKWF West Chicago Sectional"),
+    ("2026-03-07", "IKWF West Sectional"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-01-04", "IKWF Southern Dual Meet Divisional"),

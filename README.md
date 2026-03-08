@@ -159,17 +159,25 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: | 2026-02-28 | IKWF South Regional-Bethalto                  | USA Bracketing |
 | :white_check_mark: | 2026-02-28 | IKWF South Regional-Edwardsville              | USA Bracketing |
 | :white_check_mark: | 2026-02-28 | IKWF South Regional-Mt. Vernon                | USA Bracketing |
-|                    | 2026-03-01 | IKWF Central Regional-Mattoon                 | USA Bracketing |
-|                    | 2026-03-01 | IKWF Central Regional-Monticello              | USA Bracketing |
-|                    | 2026-03-01 | IKWF North Chicago Regional-Antioch           | USA Bracketing |
-|                    | 2026-03-01 | IKWF North Chicago Regional-Des Plaines       | USA Bracketing |
-|                    | 2026-03-01 | IKWF North Regional-Algonquin                 | USA Bracketing |
-|                    | 2026-03-01 | IKWF North Regional-Byron                     | USA Bracketing |
-|                    | 2026-03-01 | IKWF West Chicago Regional-Villa Park         | USA Bracketing |
-|                    | 2026-03-01 | IKWF West Chicago Regional-Wheaton            | USA Bracketing |
-|                    | 2026-03-01 | IKWF West Regional-LaSalle                    | USA Bracketing |
-|                    | 2026-03-01 | IKWF West Regional-Macomb                     | USA Bracketing |
-|                    | 2026-03-01 | IKWF West Regional-Morton                     | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF Central Regional-Mattoon                 | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF Central Regional-Monticello              | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF North Chicago Regional-Antioch           | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF North Chicago Regional-Des Plaines       | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF North Regional-Algonquin                 | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF North Regional-Byron                     | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF West Chicago Regional-Villa Park         | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF West Chicago Regional-Wheaton            | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF West Regional-LaSalle                    | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF West Regional-Macomb                     | USA Bracketing |
+| :white_check_mark: | 2026-03-01 | IKWF West Regional-Morton                     | USA Bracketing |
+|                    | 2026-03-07 | IKWF Central Chicago Sectional                | USA Bracketing |
+|                    | 2026-03-07 | IKWF Central Sectional                        | USA Bracketing |
+|                    | 2026-03-07 | IKWF North Chicago Sectional                  | USA Bracketing |
+|                    | 2026-03-07 | IKWF North Sectional                          | USA Bracketing |
+|                    | 2026-03-07 | IKWF South Chicago Sectional                  | USA Bracketing |
+|                    | 2026-03-07 | IKWF South Sectional                          | USA Bracketing |
+|                    | 2026-03-07 | IKWF West Chicago Sectional                   | USA Bracketing |
+|                    | 2026-03-07 | IKWF West Sectional                           | USA Bracketing |
 
 ## Data pipeline
 
