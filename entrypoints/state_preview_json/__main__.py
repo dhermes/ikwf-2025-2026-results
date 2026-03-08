@@ -196,7 +196,7 @@ def _weight_class_sort_func(key: tuple[bracket_util.Division, int]) -> tuple[int
     return bracket_util.sortable_division(division), weight
 
 
-class _SectionalQualifier(_ForbidExtra):
+class _StateQualifier(_ForbidExtra):
     division: bracket_util.Division = pydantic.Field(alias="Division")
     weight: int = pydantic.Field(alias="Weight")
     name: str = pydantic.Field(alias="Name")
@@ -204,12 +204,12 @@ class _SectionalQualifier(_ForbidExtra):
     usaw_number: str | None = pydantic.Field(alias="USAW Number")
 
 
-class _SectionalQualifiers(pydantic.RootModel[list[_SectionalQualifier]]):
+class _StateQualifiers(pydantic.RootModel[list[_StateQualifier]]):
     pass
 
 
-def _load_sectional_qualifiers() -> list[_SectionalQualifier]:
-    input_file = _ROOT / "_parsed-data" / "sectional-qualifiers.csv"
+def _load_state_qualifiers() -> list[_StateQualifier]:
+    input_file = _ROOT / "_parsed-data" / "state-qualifiers.csv"
     with open(input_file) as file_obj:
         rows = list(csv.DictReader(file_obj))
 
@@ -217,7 +217,7 @@ def _load_sectional_qualifiers() -> list[_SectionalQualifier]:
         if row["USAW Number"] == "":
             row["USAW Number"] = None
 
-    qualifiers_root = _SectionalQualifiers.model_validate(rows)
+    qualifiers_root = _StateQualifiers.model_validate(rows)
     return qualifiers_root.root
 
 
@@ -241,7 +241,7 @@ def _make_athlete_matcher(rosters: list[club_util.ClubInfo]) -> _AthleteMatcher:
 
 
 def _get_athlete(
-    qualifier: _SectionalQualifier, athlete_matcher: _AthleteMatcher
+    qualifier: _StateQualifier, athlete_matcher: _AthleteMatcher
 ) -> club_util.Athlete:
     team_matcher = athlete_matcher.get(qualifier.club)
     if team_matcher is None:
@@ -265,11 +265,11 @@ def _get_athlete(
 
 
 def _resolve_all_usaw(
-    sectional_qualifiers: list[_SectionalQualifier], athlete_matcher: _AthleteMatcher
-) -> dict[str, tuple[_SectionalQualifier, club_util.Athlete]]:
-    by_usaw_number: dict[str, tuple[_SectionalQualifier, club_util.Athlete]] = {}
+    state_qualifiers: list[_StateQualifier], athlete_matcher: _AthleteMatcher
+) -> dict[str, tuple[_StateQualifier, club_util.Athlete]]:
+    by_usaw_number: dict[str, tuple[_StateQualifier, club_util.Athlete]] = {}
 
-    for qualifier in sectional_qualifiers:
+    for qualifier in state_qualifiers:
         athlete = _get_athlete(qualifier, athlete_matcher)
         usaw_number = athlete.usaw_number
         if usaw_number in by_usaw_number:
@@ -283,8 +283,8 @@ def _resolve_all_usaw(
 def _generate_json_file(
     matches_v4: list[bracket_util.MatchV4],
     athlete_matcher: _AthleteMatcher,
-    sectional_qualifiers: dict[str, tuple[_SectionalQualifier, club_util.Athlete]],
-    state_qualifiers: dict[str, dict[str, club_util.StateQualifier]],
+    state_qualifiers: dict[str, tuple[_StateQualifier, club_util.Athlete]],
+    previous_state_qualifiers: dict[str, dict[str, club_util.StateQualifier]],
     team_to_sectional: dict[str, _PreviewSectional],
 ) -> None:
     team_names = set(athlete_matcher.keys())
@@ -302,7 +302,7 @@ def _generate_json_file(
     weight_classes: dict[tuple[bracket_util.Division, int], _WeightClass] = {}
     for team, by_usaw in team_mapped.items():
         for usaw_number, matches in by_usaw.items():
-            known = sectional_qualifiers.get(usaw_number)
+            known = state_qualifiers.get(usaw_number)
             if known is None:
                 continue
 
@@ -310,7 +310,7 @@ def _generate_json_file(
             key = qualifier.division, qualifier.weight
 
             state_2025_note = ""
-            state_qualifier = state_qualifiers.get(team, {}).get(athlete.name)
+            state_qualifier = previous_state_qualifiers.get(team, {}).get(athlete.name)
             if state_qualifier is not None:
                 state_2025_note = state_qualifier.result
 
@@ -401,16 +401,16 @@ def main() -> None:
     matches_v4 = projection.load_matches_v4()
     rosters = club_util.load_rosters()
     athlete_matcher = _make_athlete_matcher(rosters)
-    state_qualifiers = club_util.load_state_qualifiers()
-    sectional_qualifiers_list = _load_sectional_qualifiers()
-    sectional_qualifiers = _resolve_all_usaw(sectional_qualifiers_list, athlete_matcher)
+    previous_state_qualifiers = club_util.load_state_qualifiers()
+    state_qualifiers_list = _load_state_qualifiers()
+    state_qualifiers = _resolve_all_usaw(state_qualifiers_list, athlete_matcher)
     team_to_sectional = _get_team_to_sectional(rosters)
 
     _generate_json_file(
         matches_v4,
         athlete_matcher,
-        sectional_qualifiers,
         state_qualifiers,
+        previous_state_qualifiers,
         team_to_sectional,
     )
 
