@@ -75886,6 +75886,11 @@
     "sectional": "West",
     "athletes": [
       {
+        "usaw_number": "2005630301",
+        "name": "Nicolas Pitstick",
+        "ikwf_age": 11
+      },
+      {
         "usaw_number": "2603746901",
         "name": "Eli Alderman",
         "ikwf_age": 5
@@ -76376,11 +76381,6 @@
     "club_name": "Ottawa Wrestling Club",
     "sectional": "West",
     "athletes": [
-      {
-        "usaw_number": "2005630301",
-        "name": "Nicolas Pitstick",
-        "ikwf_age": 11
-      },
       {
         "usaw_number": "2610420701",
         "name": "Miles Dekreon",

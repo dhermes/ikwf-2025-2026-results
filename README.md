@@ -170,14 +170,14 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: | 2026-03-01 | IKWF West Regional-LaSalle                    | USA Bracketing |
 | :white_check_mark: | 2026-03-01 | IKWF West Regional-Macomb                     | USA Bracketing |
 | :white_check_mark: | 2026-03-01 | IKWF West Regional-Morton                     | USA Bracketing |
-|                    | 2026-03-07 | IKWF Central Chicago Sectional                | USA Bracketing |
-|                    | 2026-03-07 | IKWF Central Sectional                        | USA Bracketing |
-|                    | 2026-03-07 | IKWF North Chicago Sectional                  | USA Bracketing |
-|                    | 2026-03-07 | IKWF North Sectional                          | USA Bracketing |
-|                    | 2026-03-07 | IKWF South Chicago Sectional                  | USA Bracketing |
-|                    | 2026-03-07 | IKWF South Sectional                          | USA Bracketing |
-|                    | 2026-03-07 | IKWF West Chicago Sectional                   | USA Bracketing |
-|                    | 2026-03-07 | IKWF West Sectional                           | USA Bracketing |
+| :white_check_mark: | 2026-03-07 | IKWF Central Chicago Sectional                | USA Bracketing |
+| :white_check_mark: | 2026-03-07 | IKWF Central Sectional                        | USA Bracketing |
+| :white_check_mark: | 2026-03-07 | IKWF North Chicago Sectional                  | USA Bracketing |
+| :white_check_mark: | 2026-03-07 | IKWF North Sectional                          | USA Bracketing |
+| :white_check_mark: | 2026-03-07 | IKWF South Chicago Sectional                  | USA Bracketing |
+| :white_check_mark: | 2026-03-07 | IKWF South Sectional                          | USA Bracketing |
+| :white_check_mark: | 2026-03-07 | IKWF West Chicago Sectional                   | USA Bracketing |
+| :white_check_mark: | 2026-03-07 | IKWF West Sectional                           | USA Bracketing |
 
 ## Data pipeline
 
@@ -202,6 +202,7 @@ uv run python -m entrypoints.regional_seeding \  # Produces per-regional sorted 
   --seeding-filename ./weight-classes.xlsx
 
 uv run python -m entrypoints.sectional_qualifiers  # Produces `_parsed-data/sectional-qualifiers.csv` (before wildcards)
+uv run python -m entrypoints.state_qualifiers      # Produces `_parsed-data/state-qualifiers.csv` (before wildcards)
 uv run python -m entrypoints.state_preview_json    # Produces `_parsed-data/2026-state-preview.json`
 ```
 
