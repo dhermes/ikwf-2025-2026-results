@@ -84,13 +84,16 @@ def _parse_wrestler_div(
     div: bs4.Tag,
     division_weight: tuple[bracket_util.Division, int],
     roster_map: dict[str, dict[str, club_util.Athlete]],
-) -> _StateQualifier:
+) -> _StateQualifier | None:
     division, weight = division_weight
 
     place_athlete_team = div.text.strip()
     place, athlete_team = place_athlete_team.split(" - ", 1)
     if place not in _EXPECTED_PLACES:
         raise ValueError("Unexpected place", place_athlete_team)
+
+    if place == "4th":
+        return None
 
     name, team = athlete_team.rsplit(" (", 1)
     if not team.endswith(")"):
@@ -144,7 +147,9 @@ def _add_qualifiers(
             if division_weight is None:
                 raise ValueError("Expected a division weight already", div)
 
-            qualifiers.append(_parse_wrestler_div(div, division_weight, roster_map))
+            qualifier = _parse_wrestler_div(div, division_weight, roster_map)
+            if qualifier is not None:
+                qualifiers.append(qualifier)
             continue
 
         raise RuntimeError("Unexpected margin", div)
