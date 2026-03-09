@@ -1,3 +1,4 @@
+import csv
 import datetime
 import pathlib
 from typing import Literal
@@ -213,6 +214,7 @@ class _PreviewAthlete(_ForbidExtra):
     name: str
     club: str
     sectional: _PreviewSectional
+    sectional_placement: str | None
     wins: int
     losses: int
     ikwf_age: int
@@ -335,17 +337,20 @@ def _make_weight_preview(
     weight_class: _WeightClass,
     team_to_sectional: dict[str, _PreviewSectional],
     state_entry_weight: _ScrapedWeightClass,
+    placement_by_usaw: dict[str, str],
 ) -> _Preview:
     preview_athletes: list[_PreviewAthlete] = []
     preview_head_to_heads: list[_PreviewHeadToHead] = []
 
     athletes = _sort_by_record(weight_class.athletes)
     for athlete in athletes:
+        placement = placement_by_usaw.get(athlete.usaw_number)
         preview_athletes.append(
             _PreviewAthlete(
                 name=athlete.name,
                 club=athlete.team,
                 sectional=team_to_sectional[athlete.team],
+                sectional_placement=placement,
                 wins=athlete.wins,
                 losses=athlete.losses,
                 ikwf_age=athlete.ikwf_age,
@@ -549,6 +554,7 @@ def _generate_json_file(
     previous_state_qualifiers: dict[str, dict[str, club_util.StateQualifier]],
     team_to_sectional: dict[str, _PreviewSectional],
     state_entry_weights: list[_ScrapedWeightClass],
+    placement_by_usaw: dict[str, str],
 ) -> None:
     team_names = set(athlete_matcher.keys())
 
@@ -606,7 +612,7 @@ def _generate_json_file(
             if candidate.weight == weight and candidate.division == division
         ]
         previews[division_key][weight] = _make_weight_preview(
-            weight_class, team_to_sectional, state_entry_weight
+            weight_class, team_to_sectional, state_entry_weight, placement_by_usaw
         )
 
     previews_root = _PreviewsRoot(root=previews)
@@ -672,6 +678,28 @@ def _get_team_to_sectional(
     return team_to_sectional
 
 
+class _CSVStateQualifier(_ForbidExtra):
+    division: bracket_util.Division = pydantic.Field(alias="Division")
+    weight: int = pydantic.Field(alias="Weight")
+    name: str = pydantic.Field(alias="Name")
+    club: str = pydantic.Field(alias="Club")
+    placement: str = pydantic.Field(alias="Placement")
+    usaw_number: str = pydantic.Field(alias="USAW Number")
+
+
+class _CSVStateQualifiers(pydantic.RootModel[list[_CSVStateQualifier]]):
+    pass
+
+
+def _load_csv_state_qualifiers() -> list[_CSVStateQualifier]:
+    input_file = _ROOT / "_parsed-data" / "state-qualifiers.csv"
+    with open(input_file) as file_obj:
+        rows = list(csv.DictReader(file_obj))
+
+    qualifiers_root = _CSVStateQualifiers.model_validate(rows)
+    return qualifiers_root.root
+
+
 def main() -> None:
     matches_v4 = projection.load_matches_v4()
     rosters = club_util.load_rosters()
@@ -681,6 +709,14 @@ def main() -> None:
     state_qualifiers = _resolve_all_usaw(state_entry_weights, athlete_matcher)
     team_to_sectional = _get_team_to_sectional(rosters)
 
+    csv_state_qualifiers = _load_csv_state_qualifiers()
+    placement_by_usaw: dict[str, str] = {}
+    for csv_state_qualifier in csv_state_qualifiers:
+        usaw_number = csv_state_qualifier.usaw_number
+        if usaw_number in placement_by_usaw:
+            raise ValueError("Duplicate USAW placement", usaw_number)
+        placement_by_usaw[usaw_number] = csv_state_qualifier.placement
+
     _generate_json_file(
         matches_v4,
         athlete_matcher,
@@ -688,6 +724,7 @@ def main() -> None:
         previous_state_qualifiers,
         team_to_sectional,
         state_entry_weights,
+        placement_by_usaw,
     )
 
 

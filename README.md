@@ -202,6 +202,7 @@ uv run python -m entrypoints.regional_seeding \  # Produces per-regional sorted 
   --seeding-filename ./weight-classes.xlsx
 
 uv run python -m entrypoints.sectional_qualifiers   # Produces `_parsed-data/sectional-qualifiers.csv` (before wildcards)
+uv run python -m entrypoints.state_qualifiers       # Produces `_parsed-data/state-qualifiers.csv` (just for placements)
 uv run python -m entrypoints.state_bracket_parsing  # Produces `_raw-data/bracket-parsing/*.json`
 uv run python -m entrypoints.state_preview_json     # Produces `_parsed-data/2026-state-preview.json`
 ```
