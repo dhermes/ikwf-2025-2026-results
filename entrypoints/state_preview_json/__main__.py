@@ -1,4 +1,3 @@
-import csv
 import datetime
 import pathlib
 from typing import Literal
@@ -11,6 +10,100 @@ import projection
 
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
+_TEAM_LAST_RESORT: dict[tuple[str, str], str] = {
+    ("Beat the Streets Chi", "Alex Champ"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Alexa Nunn"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Allison Quiroz"): "Beat the Streets Chicago-Midway",
+    (
+        "Beat the Streets Chi",
+        "Andrew Ayala-Mendoz",
+    ): "Beat the Streets Chicago-Tri Taylor",
+    ("Beat the Streets Chi", "Bobby Corey"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Brazil Moore"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Camila S Rodriguez"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Carlos Azevedo"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Carola Garduno-Diaz"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Carter Winston"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Ce'Ana Lee"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Ce'Nia Lee"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Corey Stuckey-Blan"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Damien Givhan"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Daniela Venegas"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Diarmaid McGuire"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Diego Navarro"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Eli Ivory"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Eliana Ortega"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Elias Vizcarra"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Elijah Carter"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Emyr Kelly"): "Beat the Streets Chicago-Roseland",
+    (
+        "Beat the Streets Chi",
+        "Esteban Castellanos",
+    ): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Ethan Gholston"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Gabby guaman"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Gemma Hernandez"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Giuseppe Perez"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Isaac Aronson"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Isaiah Morquecho"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Itzel Fortiz"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Jack Wahtola"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Jacqueli Recendez"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Jade Lee"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Jade Zambrano"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Jaden Washington"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "January Powell"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Jelena Cisneros - D"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Jeremiya Winn"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Jezrah Lopez Hernan"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Jordan Qualkinbush"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Journee Gholston"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Joy Lee"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Keithen Rice"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Kenzee Wildt"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Kori Smith"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Libby Gagen"): "Beat the Streets Chicago-Tri Taylor",
+    ("Beat the Streets Chi", "Louisa Dies"): "Beat the Streets Chicago-Tri Taylor",
+    ("Beat the Streets Chi", "Luca Paolella"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Mason Glanville"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Matteo Russo"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Mincere White"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Molly Gagen"): "Beat the Streets Chicago-Tri Taylor",
+    ("Beat the Streets Chi", "Natalia Ferguson"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Noah Reyes"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Olive Gagen"): "Beat the Streets Chicago-Tri Taylor",
+    ("Beat the Streets Chi", "Oliver Smart"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Scarlett Reyes"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Sebastia Cubillos"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Sincere Staples"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Sloane Araujo"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Victor Vargas"): "Beat the Streets Chicago-Oak Park",
+    ("Beat the Streets Chi", "Vivienne Nichols"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Xavier Yankellow"): "Beat the Streets Chicago-Avondale",
+    ("Beat the Streets Chi", "Yaili Fortiz"): "Beat the Streets Chicago-Midway",
+    ("Beat the Streets Chi", "Zairah West"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Zephania Powell"): "Beat the Streets Chicago-Roseland",
+    ("Beat the Streets Chi", "Zoey Rousseau"): "Beat the Streets Chicago-Midway",
+}
+_NAME_FIX: dict[str, dict[str, str]] = {
+    "Astro Wrestling Club": {"Dai Zari Christopher": "Dai Zaria Christopher"},
+    "Badger Wrestling Club": {"Luz Guerra Gonza": "Luz Guerra Gonzalez"},
+    "Beat the Streets Chicago-Midway": {
+        "Jelena Cisneros - D": "Jelena Cisneros - Diaz",
+        "Jezrah Lopez Hernan": "Jezrah Lopez Hernandez",
+    },
+    "Doom Wrestling": {"Dylan Ra Perkins": "Dylan Rae Perkins"},
+    "Eureka Wrestling Club": {"Josie Skelton": "Josie skelton"},
+    "Harlem Huskies WC": {"Shawn Ma Omeara": "Shawn Marie Omeara"},
+    "Junior Kahoks-Tribe Fellowship": {"Alta Jan McQuary": "Alta Jane McQuary"},
+    "Lockport Junior Porters WC": {"Elise Voight": "elise voight"},
+    "Rockets Wrestling Club": {"Andrea Vences": "ANDREA VENCES"},
+    "Storm Youth Wrestling Club": {
+        "Pedro Da Rangel": "Pedro David Rangel",
+        "Pedro Le Rangel": "Pedro Legend Rangel",
+    },
+    "Sycamore Wrestling Club": {"Mary Jan Watie": "Mary Jane Watie"},
+}
 
 
 class _ForbidExtra(pydantic.BaseModel):
@@ -197,28 +290,34 @@ def _weight_class_sort_func(key: tuple[bracket_util.Division, int]) -> tuple[int
 
 
 class _StateQualifier(_ForbidExtra):
-    division: bracket_util.Division = pydantic.Field(alias="Division")
-    weight: int = pydantic.Field(alias="Weight")
-    name: str = pydantic.Field(alias="Name")
-    club: str = pydantic.Field(alias="Club")
-    usaw_number: str | None = pydantic.Field(alias="USAW Number")
+    division: bracket_util.Division
+    weight: int
+    name: str
+    club: str
 
 
-class _StateQualifiers(pydantic.RootModel[list[_StateQualifier]]):
+class _Entry(_ForbidExtra):
+    name: str
+    team: str
+
+
+class _ScrapedWeightClass(_ForbidExtra):
+    division: bracket_util.Division
+    weight: int
+    entries: list[_Entry | None]
+
+
+class _ScrapedWeightClasses(pydantic.RootModel[list[_ScrapedWeightClass]]):
     pass
 
 
-def _load_state_qualifiers() -> list[_StateQualifier]:
-    input_file = _ROOT / "_parsed-data" / "state-qualifiers.csv"
-    with open(input_file) as file_obj:
-        rows = list(csv.DictReader(file_obj))
+def _load_state_entries() -> list[_ScrapedWeightClass]:
+    input_file = _ROOT / "_raw-data" / "bracket-parsing" / "state-entries.json"
+    with open(input_file, "rb") as file_obj:
+        content = file_obj.read()
 
-    for row in rows:
-        if row["USAW Number"] == "":
-            row["USAW Number"] = None
-
-    qualifiers_root = _StateQualifiers.model_validate(rows)
-    return qualifiers_root.root
+    weight_classes = _ScrapedWeightClasses.model_validate_json(content)
+    return weight_classes.root
 
 
 _AthleteMatcher = dict[str, dict[str, club_util.Athlete]]
@@ -247,16 +346,6 @@ def _get_athlete(
     if team_matcher is None:
         raise ValueError("Missing team match", qualifier)
 
-    if qualifier.usaw_number is not None:
-        matches = [
-            athlete
-            for athlete in team_matcher.values()
-            if athlete.usaw_number == qualifier.usaw_number
-        ]
-        if len(matches) != 1:
-            raise ValueError("Missing athlete match", len(matches), qualifier)
-        return matches[0]
-
     athlete = team_matcher.get(qualifier.name)
     if athlete is None:
         raise ValueError("Missing athlete match", qualifier)
@@ -264,18 +353,93 @@ def _get_athlete(
     return athlete
 
 
+def _resolve_team(team: str, name: str, athlete_matcher: _AthleteMatcher) -> str:
+    if team in athlete_matcher:
+        return team
+
+    matches = [key for key in athlete_matcher if key.startswith(team)]
+    if len(matches) == 1:
+        return matches[0]
+
+    team_edited = team
+    if team.endswith(" WC"):
+        team_edited = team[:-2] + "Wrestling Club"
+
+    if team_edited in athlete_matcher:
+        return team_edited
+
+    key = (team, name)
+    if key in _TEAM_LAST_RESORT:
+        return _TEAM_LAST_RESORT[key]
+
+    raise ValueError("Could not resolve team", team, name)
+
+
+def _to_shorter_names(team_athletes: dict[str, club_util.Athlete]) -> dict[str, str]:
+    shorter_names: dict[str, str] = {}
+    for name in team_athletes:
+        first_name, remaining = name.split(" ", 1)
+        # NOTE: The presentation cuts off first names at 8 characters
+        first_name = first_name[:8]
+        if " " not in remaining:
+            # NOTE: The presentation cuts off last names at 12 characters
+            remaining = remaining[:12]
+
+        shortened = f"{first_name} {remaining}"
+        shortened = shortened.lower()
+        if shortened in shorter_names:
+            raise ValueError("Duplicate short name", shortened)
+        shorter_names[shortened] = name
+
+    return shorter_names
+
+
+def _resolve_name(
+    team: str, name: str, team_athletes: dict[str, club_util.Athlete]
+) -> str:
+    if name in team_athletes:
+        return name
+
+    fixes = _NAME_FIX.get(team, {})
+    if name in fixes:
+        return fixes[name]
+
+    shorter_names = _to_shorter_names(team_athletes)
+    if name.lower() in shorter_names:
+        return shorter_names[name.lower()]
+
+    raise ValueError("Could not resolve name", team, name)
+
+
+def _resolve_to_roster(
+    weight_class: _WeightClass, entry: _Entry, athlete_matcher: _AthleteMatcher
+) -> _StateQualifier:
+    team = _resolve_team(entry.team, entry.name, athlete_matcher)
+    team_athletes = athlete_matcher[team]
+    name = _resolve_name(team, entry.name, team_athletes)
+
+    return _StateQualifier(
+        division=weight_class.division, weight=weight_class.weight, name=name, club=team
+    )
+
+
 def _resolve_all_usaw(
-    state_qualifiers: list[_StateQualifier], athlete_matcher: _AthleteMatcher
+    state_entry_weights: list[_ScrapedWeightClass], athlete_matcher: _AthleteMatcher
 ) -> dict[str, tuple[_StateQualifier, club_util.Athlete]]:
     by_usaw_number: dict[str, tuple[_StateQualifier, club_util.Athlete]] = {}
 
-    for qualifier in state_qualifiers:
-        athlete = _get_athlete(qualifier, athlete_matcher)
-        usaw_number = athlete.usaw_number
-        if usaw_number in by_usaw_number:
-            raise KeyError("Duplicate athlete", qualifier, usaw_number)
+    for weight_class in state_entry_weights:
+        for entry in weight_class.entries:
+            if entry is None:
+                continue
 
-        by_usaw_number[usaw_number] = qualifier, athlete
+            qualifier = _resolve_to_roster(weight_class, entry, athlete_matcher)
+            athlete = _get_athlete(qualifier, athlete_matcher)
+            usaw_number = athlete.usaw_number
+            if usaw_number in by_usaw_number:
+                raise KeyError("Duplicate athlete", qualifier, usaw_number)
+
+            by_usaw_number[usaw_number] = qualifier, athlete
 
     return by_usaw_number
 
@@ -298,6 +462,13 @@ def _generate_json_file(
         )
     ]
     team_mapped = projection.map_by_team(relevant_matches, team_names)
+
+    # NOTE: Ensure all wrestlers are present, even those without matches
+    for usaw_number, (qualifier, _) in state_qualifiers.items():
+        if usaw_number in team_mapped[qualifier.club]:
+            continue
+
+        team_mapped[qualifier.club][usaw_number] = []
 
     weight_classes: dict[tuple[bracket_util.Division, int], _WeightClass] = {}
     for team, by_usaw in team_mapped.items():
@@ -402,8 +573,8 @@ def main() -> None:
     rosters = club_util.load_rosters()
     athlete_matcher = _make_athlete_matcher(rosters)
     previous_state_qualifiers = club_util.load_state_qualifiers()
-    state_qualifiers_list = _load_state_qualifiers()
-    state_qualifiers = _resolve_all_usaw(state_qualifiers_list, athlete_matcher)
+    state_entry_weights = _load_state_entries()
+    state_qualifiers = _resolve_all_usaw(state_entry_weights, athlete_matcher)
     team_to_sectional = _get_team_to_sectional(rosters)
 
     _generate_json_file(
