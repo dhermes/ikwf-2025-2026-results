@@ -205,7 +205,7 @@ uv run python -m entrypoints.sectional_qualifiers  # Produces `_parsed-data/sect
 uv run python -m entrypoints.state_qualifiers      # Produces `_parsed-data/state-qualifiers.csv` (before wildcards)
 uv run python -m entrypoints.state_preview_json    # Produces `_parsed-data/2026-state-preview.json`
 
-state_bracket_parsing
+uv run python -m entrypoints.state_bracket_parsing  # Produces `_raw-data/bracket-parsing/*.json`
 ```
 
 [1]: https://www.ikwf.org/

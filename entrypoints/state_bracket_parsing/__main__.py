@@ -43,7 +43,26 @@ _ENTRY_INDICES = (
 )
 
 
+class _ForbidExtra(pydantic.BaseModel):
+    model_config = pydantic.ConfigDict(extra="forbid", populate_by_name=True)
+
+
 class _CapturedBrackets(pydantic.RootModel[dict[str, str]]):
+    pass
+
+
+class _Entry(_ForbidExtra):
+    name: str
+    team: str
+
+
+class _WeightClass(_ForbidExtra):
+    division: bracket_util.Division
+    weight: int
+    entries: list[_Entry | None]
+
+
+class _WeightClasses(pydantic.RootModel[list[_WeightClass]]):
     pass
 
 
@@ -169,7 +188,7 @@ def _extract_athlete(td: bs4.Tag) -> tuple[str, str] | None:
     return name.strip(), team
 
 
-def _extract_bracket(key: str, html: str) -> None:
+def _extract_bracket(key: str, html: str) -> _WeightClass:
     soup = bs4.BeautifulSoup(html, features="html.parser")
     bracket_spans = soup.find_all(
         "span", class_="font-gotham antialiased text-xl text-usa-red font-extrabold"
@@ -198,6 +217,7 @@ def _extract_bracket(key: str, html: str) -> None:
     if len(table_rows) != _EXPECTED_LENGTH:
         raise ValueError("Unexpected rows", len(table_rows))
 
+    entries: list[_Entry | None] = []
     for index in _ENTRY_INDICES:
         tr = table_rows[index]
         all_td = tr.find_all("td", recursive=False)
@@ -207,15 +227,30 @@ def _extract_bracket(key: str, html: str) -> None:
         extracted = _extract_athlete(athlete_td)
         if extracted is not None:
             name, team = extracted
-            print((division, weight, name, team))
+            entries.append(_Entry(name=name, team=team))
         else:
-            print((division, weight, None, None))
+            entries.append(None)
+
+    if len(entries) != 24:
+        raise RuntimeError("Unexpected number of entries")
+
+    weight_class = _WeightClass(division=division, weight=weight, entries=entries)
+    return weight_class
 
 
 def main() -> None:
     captured = _capture_html()
+    weight_classes: list[_WeightClass] = []
     for key, html in captured.items():
-        _extract_bracket(key, html)
+        weight_class = _extract_bracket(key, html)
+        weight_classes.append(weight_class)
+
+    weight_classes_root = _WeightClasses(root=weight_classes)
+    weight_classes_json = weight_classes_root.model_dump_json(indent=2)
+
+    filename = _ROOT / "_raw-data" / "bracket-parsing" / "state-entries.json"
+    with open(filename, "w") as file_obj:
+        file_obj.write(weight_classes_json)
 
 
 if __name__ == "__main__":
