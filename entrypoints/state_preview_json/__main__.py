@@ -230,9 +230,15 @@ class _PreviewHeadToHead(_ForbidExtra):
     event_date: datetime.date
 
 
+class _SimpleAthlete(_ForbidExtra):
+    name: str
+    club: str
+
+
 class _Preview(_ForbidExtra):
     athletes: list[_PreviewAthlete]
     head_to_heads: list[_PreviewHeadToHead]
+    bracket_slots: list[_SimpleAthlete | None]
 
 
 _Previews = dict[_PreviewDivision, dict[int, _Preview]]
@@ -246,8 +252,89 @@ def _head_to_head_sort_func(match_: _PreviewHeadToHead) -> tuple[int, str, str]:
     return -match_.event_date.toordinal(), match_.winner, match_.loser
 
 
+def _resolve_simple_athlete_club(
+    club: str, name: str, by_club: dict[str, list[str]]
+) -> str:
+    if club in by_club:
+        return club
+
+    matches = [key for key in by_club if key.startswith(club)]
+    if len(matches) == 1:
+        return matches[0]
+
+    club_edited = club
+    if club.endswith(" WC"):
+        club_edited = club[:-2] + "Wrestling Club"
+
+    if club_edited in by_club:
+        return club_edited
+
+    key = (club, name)
+    if key in _TEAM_LAST_RESORT:
+        return _TEAM_LAST_RESORT[key]
+
+    raise ValueError("Could not resolve club", club, name)
+
+
+def _to_shorter_names_simple(club_athletes: list[str]) -> dict[str, str]:
+    shorter_names: dict[str, str] = {}
+    for name in club_athletes:
+        first_name, remaining = name.split(" ", 1)
+        # NOTE: The presentation cuts off first names at 8 characters
+        first_name = first_name[:8]
+        if " " not in remaining:
+            # NOTE: The presentation cuts off last names at 12 characters
+            remaining = remaining[:12]
+
+        shortened = f"{first_name} {remaining}"
+        shortened = shortened.lower()
+        if shortened in shorter_names:
+            raise ValueError("Duplicate short name", shortened)
+        shorter_names[shortened] = name
+
+    return shorter_names
+
+
+def _resolve_simple_athlete_name(club: str, name: str, club_athletes: list[str]) -> str:
+    if name in club_athletes:
+        return name
+
+    fixes = _NAME_FIX.get(club, {})
+    if name in fixes:
+        return fixes[name]
+
+    shorter_names = _to_shorter_names_simple(club_athletes)
+    if name.lower() in shorter_names:
+        return shorter_names[name.lower()]
+
+    raise ValueError("Could not resolve name", club, name)
+
+
+def _to_simple_athlete(
+    entry: _Entry | None, preview_athletes: list[_PreviewAthlete]
+) -> _SimpleAthlete | None:
+    if entry is None:
+        return None
+
+    by_club: dict[str, list[str]] = {}
+    for preview_athlete in preview_athletes:
+        club = preview_athlete.club
+        by_club.setdefault(club, [])
+        by_club[club].append(preview_athlete.name)
+
+    # NOTE: This is suboptimal, but this is throwaway code only needed for a
+    #       few days during state week.
+    club = _resolve_simple_athlete_club(entry.team, entry.name, by_club)
+    club_athletes = by_club[club]
+    name = _resolve_simple_athlete_name(club, entry.name, club_athletes)
+
+    return _SimpleAthlete(name=name, club=club)
+
+
 def _make_weight_preview(
-    weight_class: _WeightClass, team_to_sectional: dict[str, _PreviewSectional]
+    weight_class: _WeightClass,
+    team_to_sectional: dict[str, _PreviewSectional],
+    state_entry_weight: _ScrapedWeightClass,
 ) -> _Preview:
     preview_athletes: list[_PreviewAthlete] = []
     preview_head_to_heads: list[_PreviewHeadToHead] = []
@@ -281,7 +368,18 @@ def _make_weight_preview(
         )
 
     preview_head_to_heads.sort(key=_head_to_head_sort_func)
-    return _Preview(athletes=preview_athletes, head_to_heads=preview_head_to_heads)
+    if len(state_entry_weight.entries) != 24:
+        raise RuntimeError("Unexpected bracket", state_entry_weight)
+    bracket_slots: list[_SimpleAthlete | None] = [
+        _to_simple_athlete(entry, preview_athletes)
+        for entry in state_entry_weight.entries
+    ]
+
+    return _Preview(
+        athletes=preview_athletes,
+        head_to_heads=preview_head_to_heads,
+        bracket_slots=bracket_slots,
+    )
 
 
 def _weight_class_sort_func(key: tuple[bracket_util.Division, int]) -> tuple[int, int]:
@@ -450,6 +548,7 @@ def _generate_json_file(
     state_qualifiers: dict[str, tuple[_StateQualifier, club_util.Athlete]],
     previous_state_qualifiers: dict[str, dict[str, club_util.StateQualifier]],
     team_to_sectional: dict[str, _PreviewSectional],
+    state_entry_weights: list[_ScrapedWeightClass],
 ) -> None:
     team_names = set(athlete_matcher.keys())
 
@@ -501,8 +600,13 @@ def _generate_json_file(
         division, weight = key
         division_key = _translate_division(division)
         previews.setdefault(division_key, {})
+        (state_entry_weight,) = [
+            candidate
+            for candidate in state_entry_weights
+            if candidate.weight == weight and candidate.division == division
+        ]
         previews[division_key][weight] = _make_weight_preview(
-            weight_class, team_to_sectional
+            weight_class, team_to_sectional, state_entry_weight
         )
 
     previews_root = _PreviewsRoot(root=previews)
@@ -583,6 +687,7 @@ def main() -> None:
         state_qualifiers,
         previous_state_qualifiers,
         team_to_sectional,
+        state_entry_weights,
     )
 
 
