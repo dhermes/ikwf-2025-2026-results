@@ -204,6 +204,8 @@ uv run python -m entrypoints.regional_seeding \  # Produces per-regional sorted 
 uv run python -m entrypoints.sectional_qualifiers  # Produces `_parsed-data/sectional-qualifiers.csv` (before wildcards)
 uv run python -m entrypoints.state_qualifiers      # Produces `_parsed-data/state-qualifiers.csv` (before wildcards)
 uv run python -m entrypoints.state_preview_json    # Produces `_parsed-data/2026-state-preview.json`
+
+state_bracket_parsing
 ```
 
 [1]: https://www.ikwf.org/

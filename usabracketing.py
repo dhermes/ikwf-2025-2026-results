@@ -26,6 +26,8 @@ _PLACEHOLDER_TEXT = "[first_name] [last_name]"
 _IGNORE_SEARCH_RESULTS = (
     "2026 USA Wrestling Kids Folkstyle National Championship",
     "2026 U17 Pan-Am Team Trials",
+    "2026 USA Wrestling 16U & Junior Folkstyle National Championship",
+    "2026 U17 Pan-Am Team Trials",
 )
 _TITLE_MARGIN_LEFT = "margin-left:0px"
 _WRESTLER_MARGIN_LEFT = "margin-left:20px"
@@ -302,13 +304,21 @@ def _search_results_click_first(driver: webdriver.Chrome, name: str) -> str:
     all_trs = table_body.find_elements(By.TAG_NAME, "tr")
 
     tr = None
+    if len(all_trs) != 1:
+        kept_trs = []
+        for tr in all_trs:
+            html = tr.get_attribute("outerHTML")
+            ignored = any(
+                ignore_search_result in html
+                for ignore_search_result in _IGNORE_SEARCH_RESULTS
+            )
+            if not ignored:
+                kept_trs.append(tr)
+
+        all_trs = kept_trs
+
     if len(all_trs) == 1:
         tr = all_trs[0]
-    elif len(all_trs) == 2:
-        first_html = all_trs[0].get_attribute("outerHTML")
-        for ignore_search_result in _IGNORE_SEARCH_RESULTS:
-            if ignore_search_result in first_html:
-                tr = all_trs[1]
 
     if tr is None:
         raise ValueError(f"Expected exactly 1 <tr>, found {len(all_trs)}", name)

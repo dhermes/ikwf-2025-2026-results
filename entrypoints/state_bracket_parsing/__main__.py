@@ -58,7 +58,9 @@ def main() -> None:
     login_info = usabracketing.get_login_info()
 
     event = bracket_util.Event(
-        name="IKWF West Chicago Sectional", start_date=None, end_date="2026-03-07"
+        name="IKWF State Championships",
+        start_date="2026-03-13",
+        end_date="2026-03-14",
     )
     driver = usabracketing._open_event(event, login_info)
     _click_brackets(driver)
@@ -73,7 +75,7 @@ def main() -> None:
 
     driver.quit()
 
-    filename = _ROOT / "_raw-data" / "bracket-parsing" / "examples.json"
+    filename = _ROOT / "_raw-data" / "bracket-parsing" / "state-brackets.json"
     with open(filename, "w") as file_obj:
         json.dump(captured, file_obj, indent=2, sort_keys=True)
         file_obj.write("\n")
