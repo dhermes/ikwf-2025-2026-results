@@ -332,7 +332,7 @@ def _search_results_click_first(driver: webdriver.Chrome, name: str) -> str:
     return event_name
 
 
-def _open_event(event: bracket_util.Event, login_info: LoginInfo) -> webdriver.Chrome:
+def open_event(event: bracket_util.Event, login_info: LoginInfo) -> webdriver.Chrome:
     driver = webdriver.Chrome()
     driver.get("https://www.usabracketing.com/login")
 
@@ -487,7 +487,7 @@ def _capture_round_html(
 def fetch_tournament_rounds(
     event: bracket_util.Event, login_info: LoginInfo
 ) -> dict[str, str]:
-    driver = _open_event(event, login_info)
+    driver = open_event(event, login_info)
     _click_results(driver)
     _choose_ap_bouts(driver)
     _allow_all(driver)
@@ -585,7 +585,7 @@ def _weights_click_next_page(driver: webdriver.Chrome, page_number: int) -> bool
 def fetch_athlete_weights(
     event: bracket_util.Event, login_info: LoginInfo
 ) -> dict[str, str]:
-    driver = _open_event(event, login_info)
+    driver = open_event(event, login_info)
     _navigate_to_wrestlers(driver)
     _show_100_per_page(driver)
 
@@ -696,7 +696,7 @@ def _capture_weight_html(
 def fetch_dual_weights(
     event: bracket_util.Event, login_info: LoginInfo
 ) -> dict[str, str]:
-    driver = _open_event(event, login_info)
+    driver = open_event(event, login_info)
     _click_results(driver)
     _choose_weight_result_bouts(driver)
     _allow_all(driver)
