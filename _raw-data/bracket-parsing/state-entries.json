@@ -48,8 +48,8 @@
         "team": "Team Mascoutah WC"
       },
       {
-        "name": "Axl Williams",
-        "team": "Cory Clark Wrestling"
+        "name": "Kellan Smadi",
+        "team": "SCN Youth WC"
       },
       {
         "name": "Chase Stroot",
@@ -714,8 +714,8 @@
         "team": "Harvey Twisters WC"
       },
       {
-        "name": "Oz Bellamy",
-        "team": "Fox Valley WC"
+        "name": "Damon Llanuza",
+        "team": "St. Charles WC"
       },
       {
         "name": "Timothy Wagner",
@@ -734,8 +734,8 @@
         "team": "Arlington Cardinals"
       },
       {
-        "name": "Wyatt Walker",
-        "team": "Batavia WC"
+        "name": "Oz Bellamy",
+        "team": "Fox Valley WC"
       },
       {
         "name": "Kiptyn Milks",
@@ -951,8 +951,8 @@
         "team": "Fox Valley WC"
       },
       {
-        "name": "Bennett Mattox",
-        "team": "Williamsville WC"
+        "name": "Bryant Collins",
+        "team": "Pontiac WC"
       },
       {
         "name": "Carter Auer",
@@ -2472,8 +2472,8 @@
         "team": "TJ Trained Wrestling"
       },
       {
-        "name": "Harper Stephens",
-        "team": "Cutlass WC"
+        "name": "Aileen Benedict",
+        "team": "DC WC"
       },
       {
         "name": "Journee Bybee",
@@ -2538,8 +2538,8 @@
         "team": "Panther WC"
       },
       {
-        "name": "Jake Jerik",
-        "team": "Antioch Predators WC"
+        "name": "Makai Dike",
+        "team": "Beat the Streets Chi"
       },
       {
         "name": "Bennett Campos",
@@ -2558,8 +2558,8 @@
         "team": "Mattoon Youth WC"
       },
       {
-        "name": "Anthony Schaffer",
-        "team": "Izzy Style Wrestling"
+        "name": "Jake Jerik",
+        "team": "Antioch Predators WC"
       },
       {
         "name": "Dexton Pontnack",
@@ -3893,17 +3893,14 @@
         "name": "January Powell",
         "team": "Beat the Streets Chi"
       },
+      null,
       {
-        "name": "Samantha Ribar",
-        "team": "Marengo Youth WC"
+        "name": "Koralee Larkin",
+        "team": "St. Charles WC"
       },
       {
-        "name": "Ally Atzman",
-        "team": "Orland Park Pioneers"
-      },
-      {
-        "name": "Kate Escamilla",
-        "team": "Cory Clark Wrestling"
+        "name": "Piper Mashburn",
+        "team": "SOT-C WC"
       },
       {
         "name": "Elizabet Agajanian",
@@ -3914,8 +3911,29 @@
         "team": "Izzy Style Wrestling"
       },
       {
-        "name": "Lily Beach",
-        "team": "Hononegah WC"
+        "name": "Aubrey Will",
+        "team": "Morton Youth WC"
+      },
+      null,
+      {
+        "name": "Kaitlyn Geiger",
+        "team": "Dundee Highlanders W"
+      },
+      {
+        "name": "Olivia Lenahan",
+        "team": "Frankfort Gladiator"
+      },
+      {
+        "name": "Salem Harris",
+        "team": "Champaign WC"
+      },
+      {
+        "name": "Ally Atzman",
+        "team": "Orland Park Pioneers"
+      },
+      {
+        "name": "Kate Escamilla",
+        "team": "Cory Clark Wrestling"
       },
       null,
       {
@@ -3923,50 +3941,32 @@
         "team": "Olympia WC"
       },
       {
-        "name": "Aubrey Will",
-        "team": "Morton Youth WC"
-      },
-      null,
-      {
-        "name": "Ellyana Piper",
-        "team": "Little Giants WC"
-      },
-      {
-        "name": "Piper Mashburn",
-        "team": "SOT-C WC"
-      },
-      null,
-      {
-        "name": "Koralee Larkin",
-        "team": "St. Charles WC"
-      },
-      {
-        "name": "Olivia Lenahan",
-        "team": "Frankfort Gladiator"
+        "name": "Lily Beach",
+        "team": "Hononegah WC"
       },
       {
         "name": "Gabriell Garza",
         "team": "Carbondale WC"
       },
       {
-        "name": "Kaitlyn Geiger",
-        "team": "Dundee Highlanders W"
+        "name": "Ellyana Piper",
+        "team": "Little Giants WC"
       },
       {
-        "name": "Elliemae Nail",
-        "team": "West Frankfort Jr. R"
+        "name": "Zoey McClimans",
+        "team": "Westville Youth Wres"
       },
       {
-        "name": "Salem Harris",
-        "team": "Champaign WC"
+        "name": "Samantha Ribar",
+        "team": "Marengo Youth WC"
       },
       {
         "name": "Eliana Ortega",
         "team": "Beat the Streets Chi"
       },
       {
-        "name": "Zoey McClimans",
-        "team": "Westville Youth Wres"
+        "name": "Elliemae Nail",
+        "team": "West Frankfort Jr. R"
       },
       null
     ]
@@ -6021,8 +6021,8 @@
         "team": "nWo WC"
       },
       {
-        "name": "William Dorwaldt",
-        "team": "Riot Room Wrestling"
+        "name": "Mateo Cruz",
+        "team": "Harvard WC"
       },
       {
         "name": "Giuseppe Perez",
@@ -6041,8 +6041,8 @@
         "team": "Lincoln-Way WC"
       },
       {
-        "name": "Ayden Mallett",
-        "team": "Rockford WC"
+        "name": "William Dorwaldt",
+        "team": "Riot Room Wrestling"
       },
       {
         "name": "Beau Blair",
@@ -6661,8 +6661,8 @@
         "team": "Badger WC"
       },
       {
-        "name": "Keaghan Delaney",
-        "team": "Cutlass WC"
+        "name": "Mariella Howard",
+        "team": "Toss Em Up Wrestling"
       },
       {
         "name": "Delia Zamot",
@@ -6677,8 +6677,8 @@
         "team": "Saber WC"
       },
       {
-        "name": "Mariella Howard",
-        "team": "Toss Em Up Wrestling"
+        "name": "Tiernan Potempa",
+        "team": "Lake Zurich Cubs WC"
       },
       {
         "name": "Isabel Padilla",
@@ -6705,8 +6705,8 @@
         "team": "Elk Grove Junior Gre"
       },
       {
-        "name": "Tiernan Potempa",
-        "team": "Lake Zurich Cubs WC"
+        "name": "Corrin Force",
+        "team": "Decatur Dawgs WC"
       },
       {
         "name": "Mackenzi Probst",
@@ -7253,10 +7253,7 @@
         "name": "Sydney Shrewsberry",
         "team": "Edwardsville WC"
       },
-      {
-        "name": "Johanna Buehler",
-        "team": "Eureka WC"
-      },
+      null,
       {
         "name": "Nora Perdue",
         "team": "Batavia WC"
@@ -7270,8 +7267,8 @@
         "team": "Triad Knights WC"
       },
       {
-        "name": "Aubriann Holman",
-        "team": "Will County Warriors"
+        "name": "Johanna Buehler",
+        "team": "Eureka WC"
       },
       {
         "name": "Kensingt Tosh",
@@ -7461,8 +7458,8 @@
         "team": "Elk Grove Junior Gre"
       },
       {
-        "name": "Lauren Littlejohn",
-        "team": "Astro WC"
+        "name": "Alexis Furlan",
+        "team": "McHenry WC"
       },
       {
         "name": "Penelope Anderson",
@@ -7472,10 +7469,7 @@
         "name": "Brialeig Vancamp",
         "team": "Belleville Little De"
       },
-      {
-        "name": "Alexis Furlan",
-        "team": "McHenry WC"
-      },
+      null,
       {
         "name": "Ivy Grant",
         "team": "Twin City Tigers WC"
@@ -7694,8 +7688,8 @@
         "team": "Toss Em Up Wrestling"
       },
       {
-        "name": "Lillian Capriola",
-        "team": "TCS WC"
+        "name": "Ava Cotter",
+        "team": "Fisher WC"
       },
       {
         "name": "Skylar Ford",
@@ -7714,8 +7708,8 @@
         "team": "Decatur Lakers WC"
       },
       {
-        "name": "Aria Lynch",
-        "team": "Astro WC"
+        "name": "Lillian Capriola",
+        "team": "TCS WC"
       },
       {
         "name": "Anniston Robertson",

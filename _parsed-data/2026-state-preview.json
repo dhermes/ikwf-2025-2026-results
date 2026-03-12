@@ -7445,16 +7445,6 @@
           "state_result_2025": "Bantam 62 8th"
         },
         {
-          "name": "Bennett Mattox",
-          "club": "Williamsville Wrestling Club",
-          "sectional": "central",
-          "sectional_placement": "3rd",
-          "wins": 26,
-          "losses": 3,
-          "ikwf_age": 8,
-          "state_result_2025": null
-        },
-        {
           "name": "Nicholas Bailey",
           "club": "Lemont Bears WC",
           "sectional": "central_chicago",
@@ -7635,6 +7625,16 @@
           "state_result_2025": null
         },
         {
+          "name": "Bryant Collins",
+          "club": "Pontiac Wrestling Club",
+          "sectional": "central",
+          "sectional_placement": "4th",
+          "wins": 21,
+          "losses": 15,
+          "ikwf_age": 8,
+          "state_result_2025": null
+        },
+        {
           "name": "Dylan Lanagan",
           "club": "Fox Valley Wrestling Club",
           "sectional": "west_chicago",
@@ -7760,10 +7760,10 @@
           "winner": "Theodore Barnhart",
           "winner_club": "SJO Spartan YWC",
           "winner_sectional": "central",
-          "loser": "Bennett Mattox",
-          "loser_club": "Williamsville Wrestling Club",
+          "loser": "Bryant Collins",
+          "loser_club": "Pontiac Wrestling Club",
           "loser_sectional": "central",
-          "result": "T.F. 17-0 (2:48)",
+          "result": "F. 0:13",
           "event_date": "2026-03-07"
         },
         {
@@ -7810,10 +7810,30 @@
           "winner": "Eli Voyles",
           "winner_club": "Monticello Youth Wrestling Club",
           "winner_sectional": "central",
+          "loser": "Bryant Collins",
+          "loser_club": "Pontiac Wrestling Club",
+          "loser_sectional": "central",
+          "result": "F. 0:13",
+          "event_date": "2026-03-01"
+        },
+        {
+          "winner": "Eli Voyles",
+          "winner_club": "Monticello Youth Wrestling Club",
+          "winner_sectional": "central",
           "loser": "Theodore Barnhart",
           "loser_club": "SJO Spartan YWC",
           "loser_sectional": "central",
           "result": "Dec. 11-5",
+          "event_date": "2026-03-01"
+        },
+        {
+          "winner": "Theodore Barnhart",
+          "winner_club": "SJO Spartan YWC",
+          "winner_sectional": "central",
+          "loser": "Bryant Collins",
+          "loser_club": "Pontiac Wrestling Club",
+          "loser_sectional": "central",
+          "result": "F. 1:52",
           "event_date": "2026-03-01"
         },
         {
@@ -7927,6 +7947,16 @@
           "event_date": "2026-02-08"
         },
         {
+          "winner": "Carter Auer",
+          "winner_club": "Dakota Wrestling Club",
+          "winner_sectional": "north",
+          "loser": "Bryant Collins",
+          "loser_club": "Pontiac Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Fall 0:37",
+          "event_date": "2026-02-01"
+        },
+        {
           "winner": "Connor Finan",
           "winner_club": "Demolition Wrestling Club",
           "winner_sectional": "south_chicago",
@@ -7984,6 +8014,16 @@
           "loser_club": "Dakota Wrestling Club",
           "loser_sectional": "north",
           "result": "Maj 10-0",
+          "event_date": "2026-02-01"
+        },
+        {
+          "winner": "Levi Kamp",
+          "winner_club": "Bulls Wrestling Club",
+          "winner_sectional": "south",
+          "loser": "Bryant Collins",
+          "loser_club": "Pontiac Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Fall 1:38",
           "event_date": "2026-02-01"
         },
         {
@@ -8107,6 +8147,16 @@
           "event_date": "2026-01-25"
         },
         {
+          "winner": "Theodore Barnhart",
+          "winner_club": "SJO Spartan YWC",
+          "winner_sectional": "central",
+          "loser": "Bryant Collins",
+          "loser_club": "Pontiac Wrestling Club",
+          "loser_sectional": "central",
+          "result": "T.F. 19-3 (1:45)",
+          "event_date": "2026-01-25"
+        },
+        {
           "winner": "Tyler Norman",
           "winner_club": "SCN Youth Wrestling Club",
           "winner_sectional": "west_chicago",
@@ -8127,16 +8177,6 @@
           "event_date": "2026-01-11"
         },
         {
-          "winner": "Owen Weese",
-          "winner_club": "Camp Point Youth Wrestling",
-          "winner_sectional": "west",
-          "loser": "Bennett Mattox",
-          "loser_club": "Williamsville Wrestling Club",
-          "loser_sectional": "central",
-          "result": "Fall 2:47",
-          "event_date": "2026-01-11"
-        },
-        {
           "winner": "Brody Krause",
           "winner_club": "Barrington Broncos Wrestling Club",
           "winner_sectional": "north_chicago",
@@ -8147,13 +8187,13 @@
           "event_date": "2026-01-04"
         },
         {
-          "winner": "Theodore Barnhart",
-          "winner_club": "SJO Spartan YWC",
-          "winner_sectional": "central",
-          "loser": "Bennett Mattox",
-          "loser_club": "Williamsville Wrestling Club",
+          "winner": "Jairo Casillas",
+          "winner_club": "Will County Warriors Wrestling Club",
+          "winner_sectional": "south_chicago",
+          "loser": "Bryant Collins",
+          "loser_club": "Pontiac Wrestling Club",
           "loser_sectional": "central",
-          "result": "Dec 6-3",
+          "result": "TF 16-1",
           "event_date": "2026-01-04"
         },
         {
@@ -8465,8 +8505,8 @@
           "club": "Fox Valley Wrestling Club"
         },
         {
-          "name": "Bennett Mattox",
-          "club": "Williamsville Wrestling Club"
+          "name": "Bryant Collins",
+          "club": "Pontiac Wrestling Club"
         },
         {
           "name": "Carter Auer",
@@ -11591,16 +11631,6 @@
           "state_result_2025": "Bantam 95 SQ"
         },
         {
-          "name": "Ayden Mallett",
-          "club": "Rockford Wrestling Club",
-          "sectional": "north",
-          "sectional_placement": "2nd",
-          "wins": 5,
-          "losses": 5,
-          "ikwf_age": 8,
-          "state_result_2025": null
-        },
-        {
           "name": "Luke Fitzpatrick",
           "club": "Vittum Cats Wrestling Club",
           "sectional": "central_chicago",
@@ -11619,6 +11649,16 @@
           "losses": 10,
           "ikwf_age": 8,
           "state_result_2025": null
+        },
+        {
+          "name": "Mateo Cruz",
+          "club": "Harvard Wrestling Club",
+          "sectional": "north",
+          "sectional_placement": "4th",
+          "wins": 4,
+          "losses": 11,
+          "ikwf_age": 6,
+          "state_result_2025": null
         }
       ],
       "head_to_heads": [
@@ -11630,26 +11670,6 @@
           "loser_club": "Lawrence County Knights WC",
           "loser_sectional": "south",
           "result": "Dec. 3-1",
-          "event_date": "2026-03-07"
-        },
-        {
-          "winner": "Alexander Weaver",
-          "winner_club": "Hononegah Wrestling Club",
-          "winner_sectional": "north",
-          "loser": "Ayden Mallett",
-          "loser_club": "Rockford Wrestling Club",
-          "loser_sectional": "north",
-          "result": "F. 2:32",
-          "event_date": "2026-03-07"
-        },
-        {
-          "winner": "Ayden Mallett",
-          "winner_club": "Rockford Wrestling Club",
-          "winner_sectional": "north",
-          "loser": "William Dorwaldt",
-          "loser_club": "Riot Room Wrestling",
-          "loser_sectional": "north",
-          "result": "Maj. 10-1",
           "event_date": "2026-03-07"
         },
         {
@@ -11773,6 +11793,16 @@
           "event_date": "2026-03-07"
         },
         {
+          "winner": "William Dorwaldt",
+          "winner_club": "Riot Room Wrestling",
+          "winner_sectional": "north",
+          "loser": "Mateo Cruz",
+          "loser_club": "Harvard Wrestling Club",
+          "loser_sectional": "north",
+          "result": "SV 5-4",
+          "event_date": "2026-03-07"
+        },
+        {
           "winner": "Zakkery Kochell",
           "winner_club": "Warrensburg-Latham Jr. Cardinals Wrestling Club",
           "winner_sectional": "central",
@@ -11786,10 +11816,10 @@
           "winner": "Alexander Weaver",
           "winner_club": "Hononegah Wrestling Club",
           "winner_sectional": "north",
-          "loser": "Ayden Mallett",
-          "loser_club": "Rockford Wrestling Club",
+          "loser": "Mateo Cruz",
+          "loser_club": "Harvard Wrestling Club",
           "loser_sectional": "north",
-          "result": "F. 0:42",
+          "result": "F. 0:14",
           "event_date": "2026-03-01"
         },
         {
@@ -12191,8 +12221,8 @@
           "club": "nWo Wrestling Club"
         },
         {
-          "name": "William Dorwaldt",
-          "club": "Riot Room Wrestling"
+          "name": "Mateo Cruz",
+          "club": "Harvard Wrestling Club"
         },
         {
           "name": "Giuseppe Perez",
@@ -12211,8 +12241,8 @@
           "club": "Lincoln-Way Wrestling Club"
         },
         {
-          "name": "Ayden Mallett",
-          "club": "Rockford Wrestling Club"
+          "name": "William Dorwaldt",
+          "club": "Riot Room Wrestling"
         },
         {
           "name": "Beau Blair",
@@ -18301,16 +18331,6 @@
           "state_result_2025": null
         },
         {
-          "name": "Axl Williams",
-          "club": "Cory Clark Wrestling",
-          "sectional": "west_chicago",
-          "sectional_placement": "3rd",
-          "wins": 31,
-          "losses": 15,
-          "ikwf_age": 9,
-          "state_result_2025": "Bantam 70 SQ"
-        },
-        {
           "name": "Connor Rech",
           "club": "Dinamo Wrestling",
           "sectional": "central_chicago",
@@ -18319,6 +18339,16 @@
           "losses": 9,
           "ikwf_age": 9,
           "state_result_2025": "Bantam 76 4th"
+        },
+        {
+          "name": "Kellan Smadi",
+          "club": "SCN Youth Wrestling Club",
+          "sectional": "west_chicago",
+          "sectional_placement": "4th",
+          "wins": 23,
+          "losses": 13,
+          "ikwf_age": 10,
+          "state_result_2025": null
         },
         {
           "name": "Aiden Edwards",
@@ -18406,6 +18436,16 @@
           "winner": "Dion Wilson",
           "winner_club": "Downers Grove Wrestling Club",
           "winner_sectional": "west_chicago",
+          "loser": "Kellan Smadi",
+          "loser_club": "SCN Youth Wrestling Club",
+          "loser_sectional": "west_chicago",
+          "result": "T.F. 18-1 (2:17)",
+          "event_date": "2026-03-07"
+        },
+        {
+          "winner": "Dion Wilson",
+          "winner_club": "Downers Grove Wrestling Club",
+          "winner_sectional": "west_chicago",
           "loser": "Thomas Mesch",
           "loser_club": "SCN Youth Wrestling Club",
           "loser_sectional": "west_chicago",
@@ -18450,16 +18490,6 @@
           "loser_club": "Celtic Wrestling Academy",
           "loser_sectional": "south_chicago",
           "result": "Dec. 1-0",
-          "event_date": "2026-03-07"
-        },
-        {
-          "winner": "Thomas Mesch",
-          "winner_club": "SCN Youth Wrestling Club",
-          "winner_sectional": "west_chicago",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Dec. 6-4",
           "event_date": "2026-03-07"
         },
         {
@@ -18533,6 +18563,16 @@
           "event_date": "2026-03-01"
         },
         {
+          "winner": "Thomas Mesch",
+          "winner_club": "SCN Youth Wrestling Club",
+          "winner_sectional": "west_chicago",
+          "loser": "Kellan Smadi",
+          "loser_club": "SCN Youth Wrestling Club",
+          "loser_sectional": "west_chicago",
+          "result": "Dec. 3-0",
+          "event_date": "2026-03-01"
+        },
+        {
           "winner": "Chase Stroot",
           "winner_club": "Southern Illinois Bulldogs WC",
           "winner_sectional": "south",
@@ -18570,16 +18610,6 @@
           "loser_club": "SCN Youth Wrestling Club",
           "loser_sectional": "west_chicago",
           "result": "Maj 8-0",
-          "event_date": "2026-02-22"
-        },
-        {
-          "winner": "Emmett Riportella",
-          "winner_club": "Hononegah Wrestling Club",
-          "winner_sectional": "north",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Dec 4-3",
           "event_date": "2026-02-22"
         },
         {
@@ -18643,16 +18673,6 @@
           "event_date": "2026-02-08"
         },
         {
-          "winner": "Dion Wilson",
-          "winner_club": "Downers Grove Wrestling Club",
-          "winner_sectional": "west_chicago",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Fall 1:17",
-          "event_date": "2026-02-08"
-        },
-        {
           "winner": "Immanuel Hampton",
           "winner_club": "Team Mascoutah Wrestling Club",
           "winner_sectional": "south",
@@ -18693,16 +18713,6 @@
           "event_date": "2026-02-01"
         },
         {
-          "winner": "Chase Stroot",
-          "winner_club": "Southern Illinois Bulldogs WC",
-          "winner_sectional": "south",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Fall 1:41",
-          "event_date": "2026-01-31"
-        },
-        {
           "winner": "Declan Potempa",
           "winner_club": "Lake Zurich Cubs Wrestling Club",
           "winner_sectional": "north_chicago",
@@ -18710,16 +18720,6 @@
           "loser_club": "SCN Youth Wrestling Club",
           "loser_sectional": "west_chicago",
           "result": "Maj 9-0",
-          "event_date": "2026-01-31"
-        },
-        {
-          "winner": "Padraig Brady",
-          "winner_club": "Demolition Wrestling Club",
-          "winner_sectional": "south_chicago",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Dec 11-4",
           "event_date": "2026-01-31"
         },
         {
@@ -18746,16 +18746,6 @@
           "winner": "Tyler Wirth",
           "winner_club": "Lemont Bears WC",
           "winner_sectional": "central_chicago",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "TF 17-1",
-          "event_date": "2026-01-31"
-        },
-        {
-          "winner": "Tyler Wirth",
-          "winner_club": "Lemont Bears WC",
-          "winner_sectional": "central_chicago",
           "loser": "Chase Stroot",
           "loser_club": "Southern Illinois Bulldogs WC",
           "loser_sectional": "south",
@@ -18770,16 +18760,6 @@
           "loser_club": "Evanston School of Wrestling",
           "loser_sectional": "north_chicago",
           "result": "Fall 0:48",
-          "event_date": "2026-01-25"
-        },
-        {
-          "winner": "Tyler Wirth",
-          "winner_club": "Lemont Bears WC",
-          "winner_sectional": "central_chicago",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Fall 1:28",
           "event_date": "2026-01-25"
         },
         {
@@ -18856,16 +18836,6 @@
           "winner": "Tyler Wirth",
           "winner_club": "Lemont Bears WC",
           "winner_sectional": "central_chicago",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Fall 0:13",
-          "event_date": "2026-01-10"
-        },
-        {
-          "winner": "Tyler Wirth",
-          "winner_club": "Lemont Bears WC",
-          "winner_sectional": "central_chicago",
           "loser": "Ayden McAuliffe",
           "loser_club": "Celtic Wrestling Academy",
           "loser_sectional": "south_chicago",
@@ -18896,16 +18866,6 @@
           "winner": "Chase Stroot",
           "winner_club": "Southern Illinois Bulldogs WC",
           "winner_sectional": "south",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Fall 2:51",
-          "event_date": "2026-01-03"
-        },
-        {
-          "winner": "Chase Stroot",
-          "winner_club": "Southern Illinois Bulldogs WC",
-          "winner_sectional": "south",
           "loser": "Ayden McAuliffe",
           "loser_club": "Celtic Wrestling Academy",
           "loser_sectional": "south_chicago",
@@ -18920,16 +18880,6 @@
           "loser_club": "Celtic Wrestling Academy",
           "loser_sectional": "south_chicago",
           "result": "Dec 5-4",
-          "event_date": "2026-01-03"
-        },
-        {
-          "winner": "Tyler Wirth",
-          "winner_club": "Lemont Bears WC",
-          "winner_sectional": "central_chicago",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Fall 1:38",
           "event_date": "2026-01-03"
         },
         {
@@ -18960,16 +18910,6 @@
           "loser_club": "Panther Wrestling Club",
           "loser_sectional": "central_chicago",
           "result": "TF 15-0",
-          "event_date": "2025-12-27"
-        },
-        {
-          "winner": "Tyler Wirth",
-          "winner_club": "Lemont Bears WC",
-          "winner_sectional": "central_chicago",
-          "loser": "Axl Williams",
-          "loser_club": "Cory Clark Wrestling",
-          "loser_sectional": "west_chicago",
-          "result": "Fall 1:31",
           "event_date": "2025-12-27"
         },
         {
@@ -19020,6 +18960,16 @@
           "loser_club": "Dinamo Wrestling",
           "loser_sectional": "central_chicago",
           "result": "Dec 8-3",
+          "event_date": "2025-12-14"
+        },
+        {
+          "winner": "Kellan Smadi",
+          "winner_club": "SCN Youth Wrestling Club",
+          "winner_sectional": "west_chicago",
+          "loser": "Emmett Riportella",
+          "loser_club": "Hononegah Wrestling Club",
+          "loser_sectional": "north",
+          "result": "Dec 8-1",
           "event_date": "2025-12-14"
         },
         {
@@ -19109,8 +19059,8 @@
           "club": "Team Mascoutah Wrestling Club"
         },
         {
-          "name": "Axl Williams",
-          "club": "Cory Clark Wrestling"
+          "name": "Kellan Smadi",
+          "club": "SCN Youth Wrestling Club"
         },
         {
           "name": "Chase Stroot",
@@ -20379,16 +20329,6 @@
           "state_result_2025": null
         },
         {
-          "name": "Anthony Schaffer",
-          "club": "Izzy Style Wrestling",
-          "sectional": "north_chicago",
-          "sectional_placement": "2nd",
-          "wins": 26,
-          "losses": 8,
-          "ikwf_age": 10,
-          "state_result_2025": null
-        },
-        {
           "name": "Connor Walls",
           "club": "Morris Wrestling Club",
           "sectional": "west",
@@ -20509,6 +20449,16 @@
           "state_result_2025": null
         },
         {
+          "name": "Makai Dike",
+          "club": "Beat the Streets Chicago-Avondale",
+          "sectional": "north_chicago",
+          "sectional_placement": "4th",
+          "wins": 9,
+          "losses": 7,
+          "ikwf_age": 9,
+          "state_result_2025": null
+        },
+        {
           "name": "Samuel Pollack",
           "club": "SOT-C WC",
           "sectional": "central",
@@ -20538,16 +20488,6 @@
           "loser_club": "Hononegah Wrestling Club",
           "loser_sectional": "north",
           "result": "F. 2:51",
-          "event_date": "2026-03-07"
-        },
-        {
-          "winner": "Anthony Schaffer",
-          "winner_club": "Izzy Style Wrestling",
-          "winner_sectional": "north_chicago",
-          "loser": "Jake Jerik",
-          "loser_club": "Antioch Predators Wrestling Club",
-          "loser_sectional": "north_chicago",
-          "result": "Maj. 14-0",
           "event_date": "2026-03-07"
         },
         {
@@ -20598,6 +20538,26 @@
           "loser_club": "Panther Wrestling Club",
           "loser_sectional": "central_chicago",
           "result": "F. 0:27",
+          "event_date": "2026-03-07"
+        },
+        {
+          "winner": "Jake Jerik",
+          "winner_club": "Antioch Predators Wrestling Club",
+          "winner_sectional": "north_chicago",
+          "loser": "Makai Dike",
+          "loser_club": "Beat the Streets Chicago-Avondale",
+          "loser_sectional": "north_chicago",
+          "result": "F. 0:47",
+          "event_date": "2026-03-07"
+        },
+        {
+          "winner": "Jake Jerik",
+          "winner_club": "Antioch Predators Wrestling Club",
+          "winner_sectional": "north_chicago",
+          "loser": "Makai Dike",
+          "loser_club": "Beat the Streets Chicago-Avondale",
+          "loser_sectional": "north_chicago",
+          "result": "Dec. 1-0",
           "event_date": "2026-03-07"
         },
         {
@@ -20661,16 +20621,6 @@
           "event_date": "2026-03-07"
         },
         {
-          "winner": "Wells Kustok",
-          "winner_club": "Arlington Cardinals Wrestling Club",
-          "winner_sectional": "north_chicago",
-          "loser": "Anthony Schaffer",
-          "loser_club": "Izzy Style Wrestling",
-          "loser_sectional": "north_chicago",
-          "result": "Dec. 10-3",
-          "event_date": "2026-03-07"
-        },
-        {
           "winner": "Bennett Campos",
           "winner_club": "Blue Line Training Academy WC",
           "winner_sectional": "west",
@@ -20718,16 +20668,6 @@
           "loser_club": "Warrensburg-Latham Jr. Cardinals Wrestling Club",
           "loser_sectional": "central",
           "result": "T.F. 15-0 (1:57)",
-          "event_date": "2026-03-01"
-        },
-        {
-          "winner": "Wells Kustok",
-          "winner_club": "Arlington Cardinals Wrestling Club",
-          "winner_sectional": "north_chicago",
-          "loser": "Anthony Schaffer",
-          "loser_club": "Izzy Style Wrestling",
-          "loser_sectional": "north_chicago",
-          "result": "F. 2:44",
           "event_date": "2026-03-01"
         },
         {
@@ -20794,31 +20734,11 @@
           "winner": "Alexander Martinez",
           "winner_club": "Red Raiders Wrestling Team",
           "winner_sectional": "north",
-          "loser": "Anthony Schaffer",
-          "loser_club": "Izzy Style Wrestling",
-          "loser_sectional": "north_chicago",
-          "result": "Fall 2:52",
-          "event_date": "2026-02-15"
-        },
-        {
-          "winner": "Alexander Martinez",
-          "winner_club": "Red Raiders Wrestling Team",
-          "winner_sectional": "north",
           "loser": "Nicholas Therault",
           "loser_club": "St. Charles WC",
           "loser_sectional": "west_chicago",
           "result": "Fall 0:27",
           "event_date": "2026-02-15"
-        },
-        {
-          "winner": "Alexander Martinez",
-          "winner_club": "Red Raiders Wrestling Team",
-          "winner_sectional": "north",
-          "loser": "Anthony Schaffer",
-          "loser_club": "Izzy Style Wrestling",
-          "loser_sectional": "north_chicago",
-          "result": "Maj 14-0",
-          "event_date": "2026-02-08"
         },
         {
           "winner": "Alexander Martinez",
@@ -20951,26 +20871,6 @@
           "event_date": "2026-01-18"
         },
         {
-          "winner": "Anthony Schaffer",
-          "winner_club": "Izzy Style Wrestling",
-          "winner_sectional": "north_chicago",
-          "loser": "Reid Wikierak",
-          "loser_club": "SCN Youth Wrestling Club",
-          "loser_sectional": "west_chicago",
-          "result": "Maj 8-0",
-          "event_date": "2026-01-11"
-        },
-        {
-          "winner": "Anthony Schaffer",
-          "winner_club": "Izzy Style Wrestling",
-          "winner_sectional": "north_chicago",
-          "loser": "Rys Tijerina",
-          "loser_club": "St. Charles WC",
-          "loser_sectional": "west_chicago",
-          "result": "Dec 6-0",
-          "event_date": "2026-01-11"
-        },
-        {
           "winner": "Quinn Shelby",
           "winner_club": "Celtic Wrestling Academy",
           "winner_sectional": "south_chicago",
@@ -21009,26 +20909,6 @@
           "loser_sectional": "south_chicago",
           "result": "Fall 1:37",
           "event_date": "2026-01-10"
-        },
-        {
-          "winner": "Anthony Schaffer",
-          "winner_club": "Izzy Style Wrestling",
-          "winner_sectional": "north_chicago",
-          "loser": "Mason Anagnostopoulos",
-          "loser_club": "Celtic Wrestling Academy",
-          "loser_sectional": "south_chicago",
-          "result": "Dec 7-1",
-          "event_date": "2026-01-04"
-        },
-        {
-          "winner": "Anthony Schaffer",
-          "winner_club": "Izzy Style Wrestling",
-          "winner_sectional": "north_chicago",
-          "loser": "Nicholas Therault",
-          "loser_club": "St. Charles WC",
-          "loser_sectional": "west_chicago",
-          "result": "Fall 2:29",
-          "event_date": "2026-01-04"
         },
         {
           "winner": "Vedder Anello",
@@ -21071,16 +20951,6 @@
           "event_date": "2025-12-28"
         },
         {
-          "winner": "Anthony Schaffer",
-          "winner_club": "Izzy Style Wrestling",
-          "winner_sectional": "north_chicago",
-          "loser": "Jake Jerik",
-          "loser_club": "Antioch Predators Wrestling Club",
-          "loser_sectional": "north_chicago",
-          "result": "Fall 0:57",
-          "event_date": "2025-12-27"
-        },
-        {
           "winner": "Alexander Martinez",
           "winner_club": "Red Raiders Wrestling Team",
           "winner_sectional": "north",
@@ -21121,26 +20991,6 @@
           "event_date": "2025-12-14"
         },
         {
-          "winner": "Anthony Schaffer",
-          "winner_club": "Izzy Style Wrestling",
-          "winner_sectional": "north_chicago",
-          "loser": "Mason Anagnostopoulos",
-          "loser_club": "Celtic Wrestling Academy",
-          "loser_sectional": "south_chicago",
-          "result": "Dec 6-2",
-          "event_date": "2025-12-07"
-        },
-        {
-          "winner": "Anthony Schaffer",
-          "winner_club": "Izzy Style Wrestling",
-          "winner_sectional": "north_chicago",
-          "loser": "Samuel Pollack",
-          "loser_club": "SOT-C WC",
-          "loser_sectional": "central",
-          "result": "Fall 1:55",
-          "event_date": "2025-12-07"
-        },
-        {
           "winner": "Evan Uhls",
           "winner_club": "Gladiator Elite Wrestling Club",
           "winner_sectional": "south",
@@ -21161,8 +21011,8 @@
           "club": "Panther Wrestling Club"
         },
         {
-          "name": "Jake Jerik",
-          "club": "Antioch Predators Wrestling Club"
+          "name": "Makai Dike",
+          "club": "Beat the Streets Chicago-Avondale"
         },
         {
           "name": "Bennett Campos",
@@ -21181,8 +21031,8 @@
           "club": "Mattoon Youth Wrestling Club"
         },
         {
-          "name": "Anthony Schaffer",
-          "club": "Izzy Style Wrestling"
+          "name": "Jake Jerik",
+          "club": "Antioch Predators Wrestling Club"
         },
         {
           "name": "Dexton Pontnack",
@@ -30380,14 +30230,14 @@
           "state_result_2025": "Novice 93 SQ"
         },
         {
-          "name": "Wyatt Walker",
-          "club": "Batavia Wrestling Club",
+          "name": "Damon Llanuza",
+          "club": "St. Charles WC",
           "sectional": "west_chicago",
-          "sectional_placement": "2nd",
-          "wins": 26,
-          "losses": 9,
+          "sectional_placement": "4th",
+          "wins": 28,
+          "losses": 10,
           "ikwf_age": 12,
-          "state_result_2025": "Novice 80 4th"
+          "state_result_2025": null
         },
         {
           "name": "Dominic Doljanin",
@@ -30522,16 +30372,6 @@
           "event_date": "2026-03-07"
         },
         {
-          "winner": "Bryson Wilkinson",
-          "winner_club": "SCN Youth Wrestling Club",
-          "winner_sectional": "west_chicago",
-          "loser": "Wyatt Walker",
-          "loser_club": "Batavia Wrestling Club",
-          "loser_sectional": "west_chicago",
-          "result": "Maj. 8-0",
-          "event_date": "2026-03-07"
-        },
-        {
           "winner": "Case Force",
           "winner_club": "Decatur Dawgs Wrestling Club",
           "winner_sectional": "central",
@@ -30612,6 +30452,16 @@
           "event_date": "2026-03-07"
         },
         {
+          "winner": "Oz Bellamy",
+          "winner_club": "Fox Valley Wrestling Club",
+          "winner_sectional": "west_chicago",
+          "loser": "Damon Llanuza",
+          "loser_club": "St. Charles WC",
+          "loser_sectional": "west_chicago",
+          "result": "Maj. 9-0",
+          "event_date": "2026-03-07"
+        },
+        {
           "winner": "Paxton Hoffman",
           "winner_club": "Southern Illinois Bulldogs WC",
           "winner_sectional": "south",
@@ -30650,6 +30500,16 @@
           "loser_sectional": "north",
           "result": "Maj. 16-2",
           "event_date": "2026-03-07"
+        },
+        {
+          "winner": "Bryson Wilkinson",
+          "winner_club": "SCN Youth Wrestling Club",
+          "winner_sectional": "west_chicago",
+          "loser": "Damon Llanuza",
+          "loser_club": "St. Charles WC",
+          "loser_sectional": "west_chicago",
+          "result": "F. 1:21",
+          "event_date": "2026-03-01"
         },
         {
           "winner": "Case Force",
@@ -30699,16 +30559,6 @@
           "loser_club": "Dakota Wrestling Club",
           "loser_sectional": "north",
           "result": "T.F. 16-0 (2:38)",
-          "event_date": "2026-03-01"
-        },
-        {
-          "winner": "Wyatt Walker",
-          "winner_club": "Batavia Wrestling Club",
-          "winner_sectional": "west_chicago",
-          "loser": "Oz Bellamy",
-          "loser_club": "Fox Valley Wrestling Club",
-          "loser_sectional": "west_chicago",
-          "result": "Dec. 2-0",
           "event_date": "2026-03-01"
         },
         {
@@ -30772,6 +30622,16 @@
           "event_date": "2026-02-08"
         },
         {
+          "winner": "Dominic Warner",
+          "winner_club": "Alber Athletics Wrestling Club",
+          "winner_sectional": "north",
+          "loser": "Damon Llanuza",
+          "loser_club": "St. Charles WC",
+          "loser_sectional": "west_chicago",
+          "result": "Maj 21-9",
+          "event_date": "2026-02-08"
+        },
+        {
           "winner": "William Connors",
           "winner_club": "Alber Athletics Wrestling Club",
           "winner_sectional": "north",
@@ -30789,16 +30649,6 @@
           "loser_club": "Dakota Wrestling Club",
           "loser_sectional": "north",
           "result": "Fall 1:00",
-          "event_date": "2026-02-01"
-        },
-        {
-          "winner": "Wyatt Walker",
-          "winner_club": "Batavia Wrestling Club",
-          "winner_sectional": "west_chicago",
-          "loser": "Case Force",
-          "loser_club": "Decatur Dawgs Wrestling Club",
-          "loser_sectional": "central",
-          "result": "Fall 1:23",
           "event_date": "2026-02-01"
         },
         {
@@ -30825,6 +30675,16 @@
           "winner": "Timothy Wagner",
           "winner_club": "Demolition Wrestling Club",
           "winner_sectional": "south_chicago",
+          "loser": "Damon Llanuza",
+          "loser_club": "St. Charles WC",
+          "loser_sectional": "west_chicago",
+          "result": "Fall 0:01",
+          "event_date": "2026-01-11"
+        },
+        {
+          "winner": "Timothy Wagner",
+          "winner_club": "Demolition Wrestling Club",
+          "winner_sectional": "south_chicago",
           "loser": "Dominic Warner",
           "loser_club": "Alber Athletics Wrestling Club",
           "loser_sectional": "north",
@@ -30840,6 +30700,16 @@
           "loser_sectional": "north",
           "result": "F. 2:29",
           "event_date": "2025-12-30"
+        },
+        {
+          "winner": "Cayson Rogers",
+          "winner_club": "Lincoln-Way Wrestling Club",
+          "winner_sectional": "south_chicago",
+          "loser": "Damon Llanuza",
+          "loser_club": "St. Charles WC",
+          "loser_sectional": "west_chicago",
+          "result": "TF 15-0",
+          "event_date": "2025-12-28"
         },
         {
           "winner": "Luke Sponsel",
@@ -30859,16 +30729,6 @@
           "loser_club": "Southern Illinois Bulldogs WC",
           "loser_sectional": "south",
           "result": "TF 16-1",
-          "event_date": "2025-12-21"
-        },
-        {
-          "winner": "Oz Bellamy",
-          "winner_club": "Fox Valley Wrestling Club",
-          "winner_sectional": "west_chicago",
-          "loser": "Wyatt Walker",
-          "loser_club": "Batavia Wrestling Club",
-          "loser_sectional": "west_chicago",
-          "result": "Dec 1-0",
           "event_date": "2025-12-21"
         },
         {
@@ -30924,8 +30784,8 @@
           "club": "Harvey Twisters WC"
         },
         {
-          "name": "Oz Bellamy",
-          "club": "Fox Valley Wrestling Club"
+          "name": "Damon Llanuza",
+          "club": "St. Charles WC"
         },
         {
           "name": "Timothy Wagner",
@@ -30944,8 +30804,8 @@
           "club": "Arlington Cardinals Wrestling Club"
         },
         {
-          "name": "Wyatt Walker",
-          "club": "Batavia Wrestling Club"
+          "name": "Oz Bellamy",
+          "club": "Fox Valley Wrestling Club"
         },
         {
           "name": "Kiptyn Milks",
@@ -54522,16 +54382,6 @@
           "state_result_2025": null
         },
         {
-          "name": "Harper Stephens",
-          "club": "Cutlass Wrestling Club",
-          "sectional": "north_chicago",
-          "sectional_placement": "3rd",
-          "wins": 0,
-          "losses": 2,
-          "ikwf_age": 7,
-          "state_result_2025": null
-        },
-        {
           "name": "Natalie Moore",
           "club": "Benton Wrestling Club",
           "sectional": "south",
@@ -54550,6 +54400,16 @@
           "losses": 12,
           "ikwf_age": 7,
           "state_result_2025": "Girls Bantam 45 SQ"
+        },
+        {
+          "name": "Aileen Benedict",
+          "club": "DC Wrestling Club",
+          "sectional": "west",
+          "sectional_placement": null,
+          "wins": 2,
+          "losses": 13,
+          "ikwf_age": 6,
+          "state_result_2025": null
         },
         {
           "name": "Charley Noland",
@@ -54684,6 +54544,16 @@
           "event_date": "2026-03-07"
         },
         {
+          "winner": "Isabelle Landis",
+          "winner_club": "Camp Point Youth Wrestling",
+          "winner_sectional": "west",
+          "loser": "Aileen Benedict",
+          "loser_club": "DC Wrestling Club",
+          "loser_sectional": "west",
+          "result": "Maj. 9-1",
+          "event_date": "2026-03-07"
+        },
+        {
           "winner": "Journee Bybee",
           "winner_club": "DC Wrestling Club",
           "winner_sectional": "west",
@@ -54721,16 +54591,6 @@
           "loser_club": "Iguana Athletics Wrestling Club",
           "loser_sectional": "central",
           "result": "F. 2:48",
-          "event_date": "2026-03-07"
-        },
-        {
-          "winner": "Marah Mayfield",
-          "winner_club": "Toss Em Up Wrestling Academy",
-          "winner_sectional": "north_chicago",
-          "loser": "Harper Stephens",
-          "loser_club": "Cutlass Wrestling Club",
-          "loser_sectional": "north_chicago",
-          "result": "Dec. 18-12",
           "event_date": "2026-03-07"
         },
         {
@@ -54781,6 +54641,16 @@
           "loser_club": "Iguana Athletics Wrestling Club",
           "loser_sectional": "central",
           "result": "F. 1:44",
+          "event_date": "2026-03-07"
+        },
+        {
+          "winner": "Violet Fulton",
+          "winner_club": "Little Giants WC",
+          "winner_sectional": "west",
+          "loser": "Aileen Benedict",
+          "loser_club": "DC Wrestling Club",
+          "loser_sectional": "west",
+          "result": "Maj. 12-1",
           "event_date": "2026-03-07"
         },
         {
@@ -54844,6 +54714,26 @@
           "event_date": "2026-03-01"
         },
         {
+          "winner": "Harper Blayney",
+          "winner_club": "DC Wrestling Club",
+          "winner_sectional": "west",
+          "loser": "Aileen Benedict",
+          "loser_club": "DC Wrestling Club",
+          "loser_sectional": "west",
+          "result": "Maj. 15-7",
+          "event_date": "2026-03-01"
+        },
+        {
+          "winner": "Journee Bybee",
+          "winner_club": "DC Wrestling Club",
+          "winner_sectional": "west",
+          "loser": "Aileen Benedict",
+          "loser_club": "DC Wrestling Club",
+          "loser_sectional": "west",
+          "result": "T.F. 15-0 (1:45)",
+          "event_date": "2026-03-01"
+        },
+        {
           "winner": "Journee Bybee",
           "winner_club": "DC Wrestling Club",
           "winner_sectional": "west",
@@ -54851,16 +54741,6 @@
           "loser_club": "TJ Trained Wrestling",
           "loser_sectional": "west",
           "result": "F. 0:31",
-          "event_date": "2026-03-01"
-        },
-        {
-          "winner": "Marah Mayfield",
-          "winner_club": "Toss Em Up Wrestling Academy",
-          "winner_sectional": "north_chicago",
-          "loser": "Harper Stephens",
-          "loser_club": "Cutlass Wrestling Club",
-          "loser_sectional": "north_chicago",
-          "result": "Maj. 20-7",
           "event_date": "2026-03-01"
         },
         {
@@ -55094,6 +54974,16 @@
           "event_date": "2025-12-27"
         },
         {
+          "winner": "Harper Blayney",
+          "winner_club": "DC Wrestling Club",
+          "winner_sectional": "west",
+          "loser": "Aileen Benedict",
+          "loser_club": "DC Wrestling Club",
+          "loser_sectional": "west",
+          "result": "TF 18-2",
+          "event_date": "2025-12-27"
+        },
+        {
           "winner": "Payton Willis",
           "winner_club": "TJ Trained Wrestling",
           "winner_sectional": "west",
@@ -55114,6 +55004,16 @@
           "event_date": "2025-12-27"
         },
         {
+          "winner": "Madelyn Dunlop",
+          "winner_club": "Iguana Athletics Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Aileen Benedict",
+          "loser_club": "DC Wrestling Club",
+          "loser_sectional": "west",
+          "result": "Dec 12-11",
+          "event_date": "2025-12-21"
+        },
+        {
           "winner": "Payton Willis",
           "winner_club": "TJ Trained Wrestling",
           "winner_sectional": "west",
@@ -55121,6 +55021,16 @@
           "loser_club": "Little Giants WC",
           "loser_sectional": "west",
           "result": "Fall 0:45",
+          "event_date": "2025-12-21"
+        },
+        {
+          "winner": "Violet Fulton",
+          "winner_club": "Little Giants WC",
+          "winner_sectional": "west",
+          "loser": "Aileen Benedict",
+          "loser_club": "DC Wrestling Club",
+          "loser_sectional": "west",
+          "result": "Maj 12-4",
           "event_date": "2025-12-21"
         },
         {
@@ -55210,8 +55120,8 @@
           "club": "TJ Trained Wrestling"
         },
         {
-          "name": "Harper Stephens",
-          "club": "Cutlass Wrestling Club"
+          "name": "Aileen Benedict",
+          "club": "DC Wrestling Club"
         },
         {
           "name": "Journee Bybee",
@@ -59002,6 +58912,16 @@
           "state_result_2025": null
         },
         {
+          "name": "Ava Cotter",
+          "club": "Fisher Wrestling Club",
+          "sectional": "central",
+          "sectional_placement": null,
+          "wins": 5,
+          "losses": 11,
+          "ikwf_age": 8,
+          "state_result_2025": null
+        },
+        {
           "name": "Emma Garcia",
           "club": "West Suburban Girls Wrestling Club",
           "sectional": "west_chicago",
@@ -59029,16 +58949,6 @@
           "wins": 1,
           "losses": 10,
           "ikwf_age": 8,
-          "state_result_2025": null
-        },
-        {
-          "name": "Aria Lynch",
-          "club": "Astro Wrestling Club",
-          "sectional": "central_chicago",
-          "sectional_placement": "1st",
-          "wins": 2,
-          "losses": 14,
-          "ikwf_age": 7,
           "state_result_2025": null
         },
         {
@@ -59214,6 +59124,16 @@
           "event_date": "2026-03-07"
         },
         {
+          "winner": "Mare Peters",
+          "winner_club": "Decatur Dawgs Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Ava Cotter",
+          "loser_club": "Fisher Wrestling Club",
+          "loser_sectional": "central",
+          "result": "T.F. 15-0 (1:16)",
+          "event_date": "2026-03-07"
+        },
+        {
           "winner": "Paisley Casey",
           "winner_club": "AJ Jr. Wildcats Wrestling Club",
           "winner_sectional": "south",
@@ -59262,6 +59182,26 @@
           "loser_sectional": "central",
           "result": "F. 0:21",
           "event_date": "2026-03-07"
+        },
+        {
+          "winner": "Anniston Robertson",
+          "winner_club": "Unity Youth Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Ava Cotter",
+          "loser_club": "Fisher Wrestling Club",
+          "loser_sectional": "central",
+          "result": "T.F. 17-0 (1:12)",
+          "event_date": "2026-03-01"
+        },
+        {
+          "winner": "Ava Cotter",
+          "winner_club": "Fisher Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Ruby Glause",
+          "loser_club": "Decatur Lakers Wrestling Club",
+          "loser_sectional": "central",
+          "result": "F. 1:20",
+          "event_date": "2026-03-01"
         },
         {
           "winner": "Genevieve Del Muro",
@@ -59414,16 +59354,6 @@
           "event_date": "2026-02-15"
         },
         {
-          "winner": "Mila Kochanny",
-          "winner_club": "Reed-Custer Wrestling Club",
-          "winner_sectional": "south_chicago",
-          "loser": "Aria Lynch",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "Fall 2:33",
-          "event_date": "2026-02-15"
-        },
-        {
           "winner": "Anniston Robertson",
           "winner_club": "Unity Youth Wrestling Club",
           "winner_sectional": "central",
@@ -59544,16 +59474,6 @@
           "event_date": "2026-01-18"
         },
         {
-          "winner": "Dahlia Betancourt",
-          "winner_club": "Crosstown Spartan Elite Wrestling Club",
-          "winner_sectional": "south_chicago",
-          "loser": "Aria Lynch",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "Fall 1:43",
-          "event_date": "2026-01-11"
-        },
-        {
           "winner": "Mare Peters",
           "winner_club": "Decatur Dawgs Wrestling Club",
           "winner_sectional": "central",
@@ -59562,6 +59482,16 @@
           "loser_sectional": "central",
           "result": "Fall 0:37",
           "event_date": "2026-01-11"
+        },
+        {
+          "winner": "Anniston Robertson",
+          "winner_club": "Unity Youth Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Ava Cotter",
+          "loser_club": "Fisher Wrestling Club",
+          "loser_sectional": "central",
+          "result": "TF 19-1",
+          "event_date": "2026-01-04"
         },
         {
           "winner": "Mare Peters",
@@ -59584,16 +59514,6 @@
           "event_date": "2026-01-04"
         },
         {
-          "winner": "Dahlia Betancourt",
-          "winner_club": "Crosstown Spartan Elite Wrestling Club",
-          "winner_sectional": "south_chicago",
-          "loser": "Aria Lynch",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "Fall 0:50",
-          "event_date": "2025-12-28"
-        },
-        {
           "winner": "Genevieve Del Muro",
           "winner_club": "nWo Wrestling Club",
           "winner_sectional": "west",
@@ -59614,16 +59534,6 @@
           "event_date": "2025-12-21"
         },
         {
-          "winner": "Dahlia Betancourt",
-          "winner_club": "Crosstown Spartan Elite Wrestling Club",
-          "winner_sectional": "south_chicago",
-          "loser": "Aria Lynch",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "Fall 0:27",
-          "event_date": "2025-12-14"
-        },
-        {
           "winner": "Lady Harris",
           "winner_club": "Toss Em Up Wrestling Academy",
           "winner_sectional": "north_chicago",
@@ -59641,16 +59551,6 @@
           "loser_club": "Yorkville Wrestling Club",
           "loser_sectional": "west",
           "result": "Fall 0:29",
-          "event_date": "2025-12-07"
-        },
-        {
-          "winner": "Mila Kochanny",
-          "winner_club": "Reed-Custer Wrestling Club",
-          "winner_sectional": "south_chicago",
-          "loser": "Aria Lynch",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "TF 20-3",
           "event_date": "2025-12-07"
         },
         {
@@ -59730,8 +59630,8 @@
           "club": "Toss Em Up Wrestling Academy"
         },
         {
-          "name": "Lillian Capriola",
-          "club": "TCS Wrestling Club"
+          "name": "Ava Cotter",
+          "club": "Fisher Wrestling Club"
         },
         {
           "name": "Skylar Ford",
@@ -59750,8 +59650,8 @@
           "club": "Decatur Lakers Wrestling Club"
         },
         {
-          "name": "Aria Lynch",
-          "club": "Astro Wrestling Club"
+          "name": "Lillian Capriola",
+          "club": "TCS Wrestling Club"
         },
         {
           "name": "Anniston Robertson",
@@ -59816,16 +59716,6 @@
           "state_result_2025": "Girls Bantam 74 SQ"
         },
         {
-          "name": "Keaghan Delaney",
-          "club": "Cutlass Wrestling Club",
-          "sectional": "north_chicago",
-          "sectional_placement": "1st",
-          "wins": 5,
-          "losses": 1,
-          "ikwf_age": 8,
-          "state_result_2025": null
-        },
-        {
           "name": "Mckena Poll-Hutchison",
           "club": "Saber Wrestling Club",
           "sectional": "central",
@@ -59863,6 +59753,16 @@
           "wins": 12,
           "losses": 7,
           "ikwf_age": 7,
+          "state_result_2025": null
+        },
+        {
+          "name": "Corrin Force",
+          "club": "Decatur Dawgs Wrestling Club",
+          "sectional": "central",
+          "sectional_placement": "4th",
+          "wins": 18,
+          "losses": 12,
+          "ikwf_age": 8,
           "state_result_2025": null
         },
         {
@@ -60078,23 +59978,13 @@
           "event_date": "2026-03-07"
         },
         {
-          "winner": "Keaghan Delaney",
-          "winner_club": "Cutlass Wrestling Club",
-          "winner_sectional": "north_chicago",
-          "loser": "Mariella Howard",
-          "loser_club": "Toss Em Up Wrestling Academy",
-          "loser_sectional": "north_chicago",
-          "result": "Maj. 12-2",
-          "event_date": "2026-03-07"
-        },
-        {
-          "winner": "Keaghan Delaney",
-          "winner_club": "Cutlass Wrestling Club",
-          "winner_sectional": "north_chicago",
-          "loser": "Tiernan Potempa",
-          "loser_club": "Lake Zurich Cubs Wrestling Club",
-          "loser_sectional": "north_chicago",
-          "result": "F. 0:28",
+          "winner": "Kennedie Vaughn",
+          "winner_club": "Doom Wrestling",
+          "winner_sectional": "central",
+          "loser": "Corrin Force",
+          "loser_club": "Decatur Dawgs Wrestling Club",
+          "loser_sectional": "central",
+          "result": "F. 2:39",
           "event_date": "2026-03-07"
         },
         {
@@ -60125,6 +60015,16 @@
           "loser_club": "Elk Grove Junior Grens Wrestling Club",
           "loser_sectional": "north_chicago",
           "result": "F. 0:14",
+          "event_date": "2026-03-07"
+        },
+        {
+          "winner": "Mckena Poll-Hutchison",
+          "winner_club": "Saber Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Corrin Force",
+          "loser_club": "Decatur Dawgs Wrestling Club",
+          "loser_sectional": "central",
+          "result": "F. 0:33",
           "event_date": "2026-03-07"
         },
         {
@@ -60241,20 +60141,20 @@
           "winner": "Mariella Howard",
           "winner_club": "Toss Em Up Wrestling Academy",
           "winner_sectional": "north_chicago",
-          "loser": "Keaghan Delaney",
-          "loser_club": "Cutlass Wrestling Club",
-          "loser_sectional": "north_chicago",
-          "result": "Dec. 15-10",
-          "event_date": "2026-03-01"
-        },
-        {
-          "winner": "Mariella Howard",
-          "winner_club": "Toss Em Up Wrestling Academy",
-          "winner_sectional": "north_chicago",
           "loser": "Tiernan Potempa",
           "loser_club": "Lake Zurich Cubs Wrestling Club",
           "loser_sectional": "north_chicago",
           "result": "F. 0:17",
+          "event_date": "2026-03-01"
+        },
+        {
+          "winner": "Mckena Poll-Hutchison",
+          "winner_club": "Saber Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Corrin Force",
+          "loser_club": "Decatur Dawgs Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Maj. 8-0",
           "event_date": "2026-03-01"
         },
         {
@@ -60305,6 +60205,26 @@
           "loser_club": "Lake Zurich Cubs Wrestling Club",
           "loser_sectional": "north_chicago",
           "result": "TF 17-0",
+          "event_date": "2026-02-22"
+        },
+        {
+          "winner": "Corrin Force",
+          "winner_club": "Decatur Dawgs Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Taylor Call",
+          "loser_club": "Warrensburg-Latham Jr. Cardinals Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Dec. 6-5",
+          "event_date": "2026-02-22"
+        },
+        {
+          "winner": "Kennedie Vaughn",
+          "winner_club": "Doom Wrestling",
+          "winner_sectional": "central",
+          "loser": "Corrin Force",
+          "loser_club": "Decatur Dawgs Wrestling Club",
+          "loser_sectional": "central",
+          "result": "F. 1:57",
           "event_date": "2026-02-22"
         },
         {
@@ -60408,6 +60328,16 @@
           "event_date": "2026-02-08"
         },
         {
+          "winner": "Corrin Force",
+          "winner_club": "Decatur Dawgs Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Taylor Call",
+          "loser_club": "Warrensburg-Latham Jr. Cardinals Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Maj 9-1",
+          "event_date": "2026-02-08"
+        },
+        {
           "winner": "Isabel Padilla",
           "winner_club": "Villa Park Young Warriors Wrestling Club",
           "winner_sectional": "west_chicago",
@@ -60458,13 +60388,13 @@
           "event_date": "2026-02-01"
         },
         {
-          "winner": "Keaghan Delaney",
-          "winner_club": "Cutlass Wrestling Club",
-          "winner_sectional": "north_chicago",
-          "loser": "Makenna Bean",
-          "loser_club": "Elk Grove Junior Grens Wrestling Club",
-          "loser_sectional": "north_chicago",
-          "result": "Fall 0:54",
+          "winner": "Corrin Force",
+          "winner_club": "Decatur Dawgs Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Amelia Mendez",
+          "loser_club": "Harlem Huskies WC",
+          "loser_sectional": "north",
+          "result": "Dec 10-6",
           "event_date": "2026-02-01"
         },
         {
@@ -60475,6 +60405,16 @@
           "loser_club": "Harlem Huskies WC",
           "loser_sectional": "north",
           "result": "Fall 2:55",
+          "event_date": "2026-02-01"
+        },
+        {
+          "winner": "Kennedie Vaughn",
+          "winner_club": "Doom Wrestling",
+          "winner_sectional": "central",
+          "loser": "Corrin Force",
+          "loser_club": "Decatur Dawgs Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Fall 2:54",
           "event_date": "2026-02-01"
         },
         {
@@ -60628,6 +60568,16 @@
           "event_date": "2026-01-11"
         },
         {
+          "winner": "Corrin Force",
+          "winner_club": "Decatur Dawgs Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Taylor Call",
+          "loser_club": "Warrensburg-Latham Jr. Cardinals Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Fall 1:51",
+          "event_date": "2026-01-11"
+        },
+        {
           "winner": "Mackenzie Probst",
           "winner_club": "Dinamo Wrestling",
           "winner_sectional": "central_chicago",
@@ -60635,6 +60585,16 @@
           "loser_club": "Marengo Youth Wrestling Club",
           "loser_sectional": "north",
           "result": "Dec 10-4",
+          "event_date": "2026-01-11"
+        },
+        {
+          "winner": "Mckena Poll-Hutchison",
+          "winner_club": "Saber Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Corrin Force",
+          "loser_club": "Decatur Dawgs Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Fall 0:50",
           "event_date": "2026-01-11"
         },
         {
@@ -60646,6 +60606,26 @@
           "loser_sectional": "central",
           "result": "Dec 8-4",
           "event_date": "2026-01-11"
+        },
+        {
+          "winner": "Corrin Force",
+          "winner_club": "Decatur Dawgs Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Taylor Call",
+          "loser_club": "Warrensburg-Latham Jr. Cardinals Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Fall 2:22",
+          "event_date": "2026-01-04"
+        },
+        {
+          "winner": "Kennedie Vaughn",
+          "winner_club": "Doom Wrestling",
+          "winner_sectional": "central",
+          "loser": "Corrin Force",
+          "loser_club": "Decatur Dawgs Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Maj 10-0",
+          "event_date": "2026-01-04"
         },
         {
           "winner": "Kennedie Vaughn",
@@ -60706,6 +60686,16 @@
           "loser_sectional": "west",
           "result": "Fall 0:20",
           "event_date": "2025-12-14"
+        },
+        {
+          "winner": "Corrin Force",
+          "winner_club": "Decatur Dawgs Wrestling Club",
+          "winner_sectional": "central",
+          "loser": "Taylor Call",
+          "loser_club": "Warrensburg-Latham Jr. Cardinals Wrestling Club",
+          "loser_sectional": "central",
+          "result": "Fall 2:36",
+          "event_date": "2025-12-07"
         }
       ],
       "bracket_slots": [
@@ -60746,8 +60736,8 @@
           "club": "Badger Wrestling Club"
         },
         {
-          "name": "Keaghan Delaney",
-          "club": "Cutlass Wrestling Club"
+          "name": "Mariella Howard",
+          "club": "Toss Em Up Wrestling Academy"
         },
         {
           "name": "Delia Zamot",
@@ -60762,8 +60752,8 @@
           "club": "Saber Wrestling Club"
         },
         {
-          "name": "Mariella Howard",
-          "club": "Toss Em Up Wrestling Academy"
+          "name": "Tiernan Potempa",
+          "club": "Lake Zurich Cubs Wrestling Club"
         },
         {
           "name": "Isabel Padilla",
@@ -60790,8 +60780,8 @@
           "club": "Elk Grove Junior Grens Wrestling Club"
         },
         {
-          "name": "Tiernan Potempa",
-          "club": "Lake Zurich Cubs Wrestling Club"
+          "name": "Corrin Force",
+          "club": "Decatur Dawgs Wrestling Club"
         },
         {
           "name": "Mackenzie Probst",
@@ -73038,17 +73028,14 @@
           "name": "January Powell",
           "club": "Beat the Streets Chicago-Roseland"
         },
+        null,
         {
-          "name": "Samantha Ribar",
-          "club": "Marengo Youth Wrestling Club"
+          "name": "Koralee Larkin",
+          "club": "St. Charles WC"
         },
         {
-          "name": "Ally Atzman",
-          "club": "Orland Park Pioneers Wrestling Club"
-        },
-        {
-          "name": "Kate Escamilla",
-          "club": "Cory Clark Wrestling"
+          "name": "Piper Mashburn",
+          "club": "SOT-C WC"
         },
         {
           "name": "Elizabeth Agajanian",
@@ -73059,8 +73046,29 @@
           "club": "Izzy Style Wrestling"
         },
         {
-          "name": "Lily Beach",
-          "club": "Hononegah Wrestling Club"
+          "name": "Aubrey Will",
+          "club": "Morton Youth Wrestling Club"
+        },
+        null,
+        {
+          "name": "Kaitlyn Geiger",
+          "club": "Dundee Highlanders WC"
+        },
+        {
+          "name": "Olivia Lenahan",
+          "club": "Frankfort Gladiator Wrestling"
+        },
+        {
+          "name": "Salem Harris",
+          "club": "Champaign Wrestling Club"
+        },
+        {
+          "name": "Ally Atzman",
+          "club": "Orland Park Pioneers Wrestling Club"
+        },
+        {
+          "name": "Kate Escamilla",
+          "club": "Cory Clark Wrestling"
         },
         null,
         {
@@ -73068,50 +73076,32 @@
           "club": "Olympia Wrestling Club"
         },
         {
-          "name": "Aubrey Will",
-          "club": "Morton Youth Wrestling Club"
-        },
-        null,
-        {
-          "name": "Ellyana Piper",
-          "club": "Little Giants WC"
-        },
-        {
-          "name": "Piper Mashburn",
-          "club": "SOT-C WC"
-        },
-        null,
-        {
-          "name": "Koralee Larkin",
-          "club": "St. Charles WC"
-        },
-        {
-          "name": "Olivia Lenahan",
-          "club": "Frankfort Gladiator Wrestling"
+          "name": "Lily Beach",
+          "club": "Hononegah Wrestling Club"
         },
         {
           "name": "Gabriella Garza",
           "club": "Carbondale Wrestling Club"
         },
         {
-          "name": "Kaitlyn Geiger",
-          "club": "Dundee Highlanders WC"
+          "name": "Ellyana Piper",
+          "club": "Little Giants WC"
         },
         {
-          "name": "Elliemae Nail",
-          "club": "West Frankfort Jr. Redbirds WC"
+          "name": "Zoey McClimans",
+          "club": "Westville Youth Wrestling"
         },
         {
-          "name": "Salem Harris",
-          "club": "Champaign Wrestling Club"
+          "name": "Samantha Ribar",
+          "club": "Marengo Youth Wrestling Club"
         },
         {
           "name": "Eliana Ortega",
           "club": "Beat the Streets Chicago-Midway"
         },
         {
-          "name": "Zoey McClimans",
-          "club": "Westville Youth Wrestling"
+          "name": "Elliemae Nail",
+          "club": "West Frankfort Jr. Redbirds WC"
         },
         null
       ]
@@ -88764,16 +88754,6 @@
           "losses": 11,
           "ikwf_age": 13,
           "state_result_2025": null
-        },
-        {
-          "name": "Lauren Littlejohn",
-          "club": "Astro Wrestling Club",
-          "sectional": "central_chicago",
-          "sectional_placement": "3rd",
-          "wins": 3,
-          "losses": 20,
-          "ikwf_age": 13,
-          "state_result_2025": null
         }
       ],
       "head_to_heads": [
@@ -88948,16 +88928,6 @@
           "event_date": "2026-03-07"
         },
         {
-          "winner": "Serena Ruggio",
-          "winner_club": "Badger Wrestling Club",
-          "winner_sectional": "central_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "T.F. 16-0 (3:15)",
-          "event_date": "2026-03-07"
-        },
-        {
           "winner": "Shawn Marie Omeara",
           "winner_club": "Harlem Huskies WC",
           "winner_sectional": "north",
@@ -89118,16 +89088,6 @@
           "event_date": "2026-02-28"
         },
         {
-          "winner": "Serena Ruggio",
-          "winner_club": "Badger Wrestling Club",
-          "winner_sectional": "central_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "F. 0:59",
-          "event_date": "2026-02-28"
-        },
-        {
           "winner": "Aliyah Guerra",
           "winner_club": "Mat Rat Wrestling Club",
           "winner_sectional": "north_chicago",
@@ -89208,16 +89168,6 @@
           "event_date": "2026-02-15"
         },
         {
-          "winner": "Riley Coffey",
-          "winner_club": "Badger Wrestling Club",
-          "winner_sectional": "central_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "Fall 0:26",
-          "event_date": "2026-02-15"
-        },
-        {
           "winner": "Brialeigh Vancamp",
           "winner_club": "Belleville Little Devils Wrestling Club",
           "winner_sectional": "south",
@@ -89246,16 +89196,6 @@
           "loser_sectional": "south",
           "result": "Fall 2:37",
           "event_date": "2026-02-08"
-        },
-        {
-          "winner": "Aliyah Guerra",
-          "winner_club": "Mat Rat Wrestling Club",
-          "winner_sectional": "north_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "Fall 1:40",
-          "event_date": "2026-02-01"
         },
         {
           "winner": "Ellie Frank",
@@ -89318,16 +89258,6 @@
           "event_date": "2026-02-01"
         },
         {
-          "winner": "Riley Coffey",
-          "winner_club": "Badger Wrestling Club",
-          "winner_sectional": "central_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "TF 17-2",
-          "event_date": "2026-02-01"
-        },
-        {
           "winner": "Ivy Grant",
           "winner_club": "Twin City Tigers WC",
           "winner_sectional": "central",
@@ -89348,16 +89278,6 @@
           "event_date": "2026-01-25"
         },
         {
-          "winner": "Riley Coffey",
-          "winner_club": "Badger Wrestling Club",
-          "winner_sectional": "central_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "T.F. 19-2 (2:19)",
-          "event_date": "2026-01-25"
-        },
-        {
           "winner": "Aubrey Webb",
           "winner_club": "Peoria Razorbacks Wrestling Club",
           "winner_sectional": "west",
@@ -89375,16 +89295,6 @@
           "loser_club": "TCS Wrestling Club",
           "loser_sectional": "north",
           "result": "Fall 0:40",
-          "event_date": "2026-01-24"
-        },
-        {
-          "winner": "Penelope Anderson",
-          "winner_club": "TCS Wrestling Club",
-          "winner_sectional": "north",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "Fall 1:43",
           "event_date": "2026-01-24"
         },
         {
@@ -89428,16 +89338,6 @@
           "event_date": "2026-01-18"
         },
         {
-          "winner": "Aliyah Guerra",
-          "winner_club": "Mat Rat Wrestling Club",
-          "winner_sectional": "north_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "Fall 1:48",
-          "event_date": "2026-01-04"
-        },
-        {
           "winner": "Penelope Anderson",
           "winner_club": "TCS Wrestling Club",
           "winner_sectional": "north",
@@ -89461,30 +89361,10 @@
           "winner": "Riley Coffey",
           "winner_club": "Badger Wrestling Club",
           "winner_sectional": "central_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "F. 0:42",
-          "event_date": "2025-12-21"
-        },
-        {
-          "winner": "Riley Coffey",
-          "winner_club": "Badger Wrestling Club",
-          "winner_sectional": "central_chicago",
           "loser": "Serena Ruggio",
           "loser_club": "Badger Wrestling Club",
           "loser_sectional": "central_chicago",
           "result": "F. 0:56",
-          "event_date": "2025-12-21"
-        },
-        {
-          "winner": "Serena Ruggio",
-          "winner_club": "Badger Wrestling Club",
-          "winner_sectional": "central_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "F. 1:54",
           "event_date": "2025-12-21"
         },
         {
@@ -89538,16 +89418,6 @@
           "event_date": "2025-12-07"
         },
         {
-          "winner": "Riley Coffey",
-          "winner_club": "Badger Wrestling Club",
-          "winner_sectional": "central_chicago",
-          "loser": "Lauren Littlejohn",
-          "loser_club": "Astro Wrestling Club",
-          "loser_sectional": "central_chicago",
-          "result": "Fall 0:56",
-          "event_date": "2025-12-07"
-        },
-        {
           "winner": "Sophia Lewis",
           "winner_club": "McHenry Wrestling Club",
           "winner_sectional": "north",
@@ -89592,8 +89462,8 @@
           "club": "Elk Grove Junior Grens Wrestling Club"
         },
         {
-          "name": "Lauren Littlejohn",
-          "club": "Astro Wrestling Club"
+          "name": "Alexis Furlan",
+          "club": "McHenry Wrestling Club"
         },
         {
           "name": "Penelope Anderson",
@@ -89603,10 +89473,7 @@
           "name": "Brialeigh Vancamp",
           "club": "Belleville Little Devils Wrestling Club"
         },
-        {
-          "name": "Alexis Furlan",
-          "club": "McHenry Wrestling Club"
-        },
+        null,
         {
           "name": "Ivy Grant",
           "club": "Twin City Tigers WC"
@@ -89665,16 +89532,6 @@
           "losses": 0,
           "ikwf_age": 14,
           "state_result_2025": "Girls Senior 145 2nd"
-        },
-        {
-          "name": "Aubrianna Holman",
-          "club": "Will County Warriors Wrestling Club",
-          "sectional": "south_chicago",
-          "sectional_placement": "1st",
-          "wins": 13,
-          "losses": 4,
-          "ikwf_age": 13,
-          "state_result_2025": "Girls Novice 140 2nd"
         },
         {
           "name": "Quyn Glodo",
@@ -89866,26 +89723,6 @@
           "loser_club": "Triad Knights Wrestling Club",
           "loser_sectional": "south",
           "result": "F. 0:52",
-          "event_date": "2026-03-07"
-        },
-        {
-          "winner": "Aubrianna Holman",
-          "winner_club": "Will County Warriors Wrestling Club",
-          "winner_sectional": "south_chicago",
-          "loser": "Ava Cleghorn",
-          "loser_club": "Brawlers Wrestling Club",
-          "loser_sectional": "south_chicago",
-          "result": "F. 1:24",
-          "event_date": "2026-03-07"
-        },
-        {
-          "winner": "Aubrianna Holman",
-          "winner_club": "Will County Warriors Wrestling Club",
-          "winner_sectional": "south_chicago",
-          "loser": "Margarita Scripnic",
-          "loser_club": "Frankfort Gladiator Wrestling",
-          "loser_sectional": "south_chicago",
-          "result": "Dec. 7-5",
           "event_date": "2026-03-07"
         },
         {
@@ -90219,16 +90056,6 @@
           "event_date": "2026-01-11"
         },
         {
-          "winner": "Aubrianna Holman",
-          "winner_club": "Will County Warriors Wrestling Club",
-          "winner_sectional": "south_chicago",
-          "loser": "Ava Cleghorn",
-          "loser_club": "Brawlers Wrestling Club",
-          "loser_sectional": "south_chicago",
-          "result": "Fall 1:44",
-          "event_date": "2026-01-04"
-        },
-        {
           "winner": "Samantha Bovinet",
           "winner_club": "Marengo Youth Wrestling Club",
           "winner_sectional": "north",
@@ -90297,10 +90124,7 @@
           "name": "Sydney Shrewsberry",
           "club": "Edwardsville Wrestling Club"
         },
-        {
-          "name": "Johanna Buehler",
-          "club": "Eureka Wrestling Club"
-        },
+        null,
         {
           "name": "Nora Perdue",
           "club": "Batavia Wrestling Club"
@@ -90314,8 +90138,8 @@
           "club": "Triad Knights Wrestling Club"
         },
         {
-          "name": "Aubrianna Holman",
-          "club": "Will County Warriors Wrestling Club"
+          "name": "Johanna Buehler",
+          "club": "Eureka Wrestling Club"
         },
         {
           "name": "Kensington Tosh",

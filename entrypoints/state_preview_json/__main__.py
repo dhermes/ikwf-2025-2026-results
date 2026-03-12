@@ -12,6 +12,7 @@ import projection
 _HERE = pathlib.Path(__file__).resolve().parent
 _ROOT = _HERE.parent.parent
 _TEAM_LAST_RESORT: dict[tuple[str, str], str] = {
+    ("Beat the Streets Chi", "Makai Dike"): "Beat the Streets Chicago-Avondale",
     ("Beat the Streets Chi", "Alex Champ"): "Beat the Streets Chicago-Avondale",
     ("Beat the Streets Chi", "Alexa Nunn"): "Beat the Streets Chicago-Oak Park",
     ("Beat the Streets Chi", "Allison Quiroz"): "Beat the Streets Chicago-Midway",

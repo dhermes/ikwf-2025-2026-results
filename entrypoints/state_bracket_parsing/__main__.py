@@ -179,10 +179,14 @@ def _extract_athlete(td: bs4.Tag) -> tuple[str, str] | None:
     if parts == ["Bye"]:
         return None
 
-    if len(parts) != 3:
-        raise ValueError("Unexpected athleted <td>", len(parts), parts, td)
+    if len(parts) == 4:
+        first_name, last_name, team, bout_number = parts
+        int(bout_number)  # Assert it is an integer
+    elif len(parts) == 3:
+        first_name, last_name, team = parts
+    else:
+        raise ValueError("Unexpected athlete <td>", len(parts), parts, td)
 
-    first_name, last_name, team = parts
     name = f"{first_name} {last_name}"
     team = team.strip().lstrip("(").rstrip(")").strip()
     return name.strip(), team
