@@ -126,6 +126,7 @@ class _WeightAthlete(_ForbidExtra):
 class _WeightClass(_ForbidExtra):
     athletes: list[_WeightAthlete]
     head_to_heads: list[bracket_util.MatchV4]
+    against_other_qualifiers: list[bracket_util.MatchV4]
 
 
 def _add_wrestler(
@@ -135,9 +136,14 @@ def _add_wrestler(
     athlete: club_util.Athlete,
     matches: list[bracket_util.MatchV4],
     state_2025_note: str,
+    entire_field: dict[str, tuple[bracket_util.Division, int]],
 ) -> None:
     if key not in weight_classes:
-        weight_classes[key] = _WeightClass(athletes=[], head_to_heads=[])
+        weight_classes[key] = _WeightClass(
+            athletes=[],
+            head_to_heads=[],
+            against_other_qualifiers=[],
+        )
 
     weight_class = weight_classes[key]
     existing_usaw = set(
@@ -152,10 +158,14 @@ def _add_wrestler(
             wins += 1
             if match_.loser_usaw_number in existing_usaw:
                 weight_class.head_to_heads.append(match_)
+            elif match_.loser_usaw_number in entire_field:
+                weight_class.against_other_qualifiers.append(match_)
         elif match_.loser_usaw_number == usaw_number:
             losses += 1
             if match_.winner_usaw_number in existing_usaw:
                 weight_class.head_to_heads.append(match_)
+            elif match_.winner_usaw_number in entire_field:
+                weight_class.against_other_qualifiers.append(match_)
         else:
             raise RuntimeError("Unexpected match", match_, usaw_number)
 
@@ -233,6 +243,11 @@ class _PreviewHeadToHead(_ForbidExtra):
     event_date: datetime.date
 
 
+class _PreviewHeadToHeadExtra(_PreviewHeadToHead):
+    other_division: _PreviewDivision
+    other_weight: int
+
+
 class _SimpleAthlete(_ForbidExtra):
     name: str
     club: str
@@ -242,6 +257,7 @@ class _Preview(_ForbidExtra):
     athletes: list[_PreviewAthlete]
     head_to_heads: list[_PreviewHeadToHead]
     bracket_slots: list[_SimpleAthlete | None]
+    against_other_qualifiers: list[_PreviewHeadToHeadExtra]
 
 
 _Previews = dict[_PreviewDivision, dict[int, _Preview]]
@@ -339,12 +355,16 @@ def _make_weight_preview(
     team_to_sectional: dict[str, _PreviewSectional],
     state_entry_weight: _ScrapedWeightClass,
     placement_by_usaw: dict[str, str],
+    entire_field: dict[str, tuple[bracket_util.Division, int]],
 ) -> _Preview:
     preview_athletes: list[_PreviewAthlete] = []
     preview_head_to_heads: list[_PreviewHeadToHead] = []
 
+    usaw_in_weight: set[str] = set()
+
     athletes = _sort_by_record(weight_class.athletes)
     for athlete in athletes:
+        usaw_in_weight.add(athlete.usaw_number)
         placement = placement_by_usaw.get(athlete.usaw_number)
         preview_athletes.append(
             _PreviewAthlete(
@@ -381,10 +401,42 @@ def _make_weight_preview(
         for entry in state_entry_weight.entries
     ]
 
+    preview_against_other: list[_PreviewHeadToHead] = []
+    for match_ in weight_class.against_other_qualifiers:
+        if match_.winner_usaw_number in usaw_in_weight:
+            other = entire_field.get(match_.loser_usaw_number)
+            if other is None:
+                raise ValueError("Missing other wrestling", match_)
+            other_division, other_weight = other
+        elif match_.loser_usaw_number in usaw_in_weight:
+            other = entire_field.get(match_.winner_usaw_number)
+            if other is None:
+                raise ValueError("Missing other wrestling", match_)
+            other_division, other_weight = other
+        else:
+            raise ValueError("Match should not be in against other", match_)
+
+        preview_against_other.append(
+            _PreviewHeadToHeadExtra(
+                winner=match_.winner_normalized,
+                winner_club=match_.winner_team_normalized,
+                winner_sectional=team_to_sectional[match_.winner_team_normalized],
+                loser=match_.loser_normalized,
+                loser_club=match_.loser_team_normalized,
+                loser_sectional=team_to_sectional[match_.loser_team_normalized],
+                result=match_.result,
+                event_date=match_.event_date,
+                other_division=_translate_division(other_division),
+                other_weight=other_weight,
+            )
+        )
+    preview_against_other.sort(key=_head_to_head_sort_func)
+
     return _Preview(
         athletes=preview_athletes,
         head_to_heads=preview_head_to_heads,
         bracket_slots=bracket_slots,
+        against_other_qualifiers=preview_against_other,
     )
 
 
@@ -569,8 +621,11 @@ def _generate_json_file(
     ]
     team_mapped = projection.map_by_team(relevant_matches, team_names)
 
-    # NOTE: Ensure all wrestlers are present, even those without matches
+    entire_field: dict[str, tuple[bracket_util.Division, int]] = {}
     for usaw_number, (qualifier, _) in state_qualifiers.items():
+        entire_field[usaw_number] = qualifier.division, qualifier.weight
+
+        # NOTE: Ensure all wrestlers are present, even those without matches
         if usaw_number in team_mapped[qualifier.club]:
             continue
 
@@ -598,6 +653,7 @@ def _generate_json_file(
                 athlete,
                 matches,
                 state_2025_note,
+                entire_field,
             )
 
     keys = sorted(weight_classes.keys(), key=_weight_class_sort_func)
@@ -613,7 +669,11 @@ def _generate_json_file(
             if candidate.weight == weight and candidate.division == division
         ]
         previews[division_key][weight] = _make_weight_preview(
-            weight_class, team_to_sectional, state_entry_weight, placement_by_usaw
+            weight_class,
+            team_to_sectional,
+            state_entry_weight,
+            placement_by_usaw,
+            entire_field,
         )
 
     previews_root = _PreviewsRoot(root=previews)
