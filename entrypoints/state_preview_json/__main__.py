@@ -158,13 +158,13 @@ def _add_wrestler(
             wins += 1
             if match_.loser_usaw_number in existing_usaw:
                 weight_class.head_to_heads.append(match_)
-            elif match_.loser_usaw_number in entire_field:
+            elif entire_field.get(match_.loser_usaw_number, key) != key:
                 weight_class.against_other_qualifiers.append(match_)
         elif match_.loser_usaw_number == usaw_number:
             losses += 1
             if match_.winner_usaw_number in existing_usaw:
                 weight_class.head_to_heads.append(match_)
-            elif match_.winner_usaw_number in entire_field:
+            elif entire_field.get(match_.winner_usaw_number, key) != key:
                 weight_class.against_other_qualifiers.append(match_)
         else:
             raise RuntimeError("Unexpected match", match_, usaw_number)
