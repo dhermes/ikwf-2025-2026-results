@@ -153,6 +153,7 @@ TOURNAMENT_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-03-07", "IKWF South Sectional"),
     ("2026-03-07", "IKWF West Chicago Sectional"),
     ("2026-03-07", "IKWF West Sectional"),
+    ("2026-03-14", "IKWF State Championships"),
 )
 DUAL_EVENTS: tuple[tuple[str, str], ...] = (
     ("2026-01-04", "IKWF Southern Dual Meet Divisional"),
@@ -592,6 +593,7 @@ def fetch_athlete_weights(
     captured_html: dict[str, str] = {}
 
     next_page_exists = True
+    previous_html: str | None = None
     # NOTE: This is a bounded `for` loop instead of a `while` loop.
     for i in range(10000):
         if not next_page_exists:
@@ -599,10 +601,23 @@ def fetch_athlete_weights(
 
         time.sleep(5.0)
         html = _capture_wrestlers_table(driver)
+        loop_count = 4
+        for _ in range(loop_count):
+            if html != previous_html:
+                break
+
+            time.sleep(5.0)
+            html = _capture_wrestlers_table(driver)
+
+        if html == previous_html:
+            raise ValueError("HTML did not change after sleeping", loop_count)
+
         key = f"page-{i}"
         captured_html[key] = html
 
+        # Prepare for next iteration of loop
         next_page_exists = _weights_click_next_page(driver, i)
+        previous_html = html
 
     if next_page_exists:
         raise RuntimeError("Exited loop without terminating")

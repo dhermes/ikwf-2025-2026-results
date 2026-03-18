@@ -178,6 +178,7 @@ showcase all the parsed and normalized matches.
 | :white_check_mark: | 2026-03-07 | IKWF South Sectional                          | USA Bracketing |
 | :white_check_mark: | 2026-03-07 | IKWF West Chicago Sectional                   | USA Bracketing |
 | :white_check_mark: | 2026-03-07 | IKWF West Sectional                           | USA Bracketing |
+| :white_check_mark: | 2026-03-14 | IKWF State Championships                      | USA Bracketing |
 
 ## Data pipeline
 
@@ -205,6 +206,8 @@ uv run python -m entrypoints.sectional_qualifiers   # Produces `_parsed-data/sec
 uv run python -m entrypoints.state_qualifiers       # Produces `_parsed-data/state-qualifiers.csv` (just for placements)
 uv run python -m entrypoints.state_bracket_parsing  # Produces `_raw-data/bracket-parsing/*.json`
 uv run python -m entrypoints.state_preview_json     # Produces `_parsed-data/2026-state-preview.json`
+
+uv run python -m entrypoints.finalize_season        # Produces `_parsed-data/2026-finalized.json`
 ```
 
 [1]: https://www.ikwf.org/
