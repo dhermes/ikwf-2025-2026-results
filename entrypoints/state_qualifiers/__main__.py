@@ -1,5 +1,6 @@
 import csv
 import pathlib
+from typing import Literal
 
 import bs4
 import pydantic
@@ -13,11 +14,31 @@ _WEIGHT_MARGIN_LEFT = "margin-left:0px"
 _WRESTLER_MARGIN_LEFT = "margin-left:20px"
 _EXPECTED_PLACES = ("1st", "2nd", "3rd", "4th")
 _TEAM_REPLACE: dict[str, str] = {}
-_CSV_COLUMNS = ("Division", "Weight", "Name", "Club", "Placement", "USAW Number")
+_CSV_COLUMNS = (
+    "Division",
+    "Weight",
+    "Name",
+    "Club",
+    "Sectional",
+    "Placement",
+    "USAW Number",
+)
 
 
 class _ForbidExtra(pydantic.BaseModel):
     model_config = pydantic.ConfigDict(extra="forbid", populate_by_name=True)
+
+
+_Sectional = Literal[
+    "central",
+    "central_chicago",
+    "north",
+    "north_chicago",
+    "south",
+    "south_chicago",
+    "west",
+    "west_chicago",
+]
 
 
 class _StateQualifier(_ForbidExtra):
@@ -26,6 +47,7 @@ class _StateQualifier(_ForbidExtra):
     name: str = pydantic.Field(alias="Name")
     club: str = pydantic.Field(alias="Club")
     placement: str = pydantic.Field(alias="Placement")
+    sectional: _Sectional = pydantic.Field(alias="Sectional")
     usaw_number: str = pydantic.Field(alias="USAW Number")
 
 
@@ -83,6 +105,7 @@ def _normalize_team(team: str) -> str:
 
 def _parse_wrestler_div(
     div: bs4.Tag,
+    sectional: _Sectional,
     division_weight: tuple[bracket_util.Division, int],
     roster_map: dict[str, dict[str, club_util.Athlete]],
 ) -> _StateQualifier:
@@ -119,8 +142,32 @@ def _parse_wrestler_div(
         name=athlete.name,
         club=team_normalized,
         placement=place,
+        sectional=sectional,
         usaw_number=athlete.usaw_number,
     )
+
+
+def _determine_sectional(path: pathlib.Path) -> _Sectional:
+    name = path.name
+
+    if name == "c.html":
+        return "central"
+    if name == "cc.html":
+        return "central_chicago"
+    if name == "n.html":
+        return "north"
+    if name == "nc.html":
+        return "north_chicago"
+    if name == "s.html":
+        return "south"
+    if name == "sc.html":
+        return "south_chicago"
+    if name == "w.html":
+        return "west"
+    if name == "wc.html":
+        return "west_chicago"
+
+    raise NotImplementedError(name)
 
 
 def _add_qualifiers(
@@ -128,6 +175,8 @@ def _add_qualifiers(
     qualifiers: list[_StateQualifier],
     roster_map: dict[str, dict[str, club_util.Athlete]],
 ) -> None:
+    sectional = _determine_sectional(path)
+
     with open(path) as file_obj:
         html = file_obj.read()
 
@@ -146,7 +195,7 @@ def _add_qualifiers(
             if division_weight is None:
                 raise ValueError("Expected a division weight already", div)
 
-            qualifier = _parse_wrestler_div(div, division_weight, roster_map)
+            qualifier = _parse_wrestler_div(div, sectional, division_weight, roster_map)
             if qualifier is not None:
                 qualifiers.append(qualifier)
             continue

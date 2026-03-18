@@ -1,5 +1,6 @@
 import csv
 import pathlib
+from typing import Literal
 
 import bs4
 import pydantic
@@ -18,12 +19,25 @@ class _ForbidExtra(pydantic.BaseModel):
     model_config = pydantic.ConfigDict(extra="forbid", populate_by_name=True)
 
 
+_Sectional = Literal[
+    "central",
+    "central_chicago",
+    "north",
+    "north_chicago",
+    "south",
+    "south_chicago",
+    "west",
+    "west_chicago",
+]
+
+
 class _CSVStateQualifier(_ForbidExtra):
     division: bracket_util.Division = pydantic.Field(alias="Division")
     weight: int = pydantic.Field(alias="Weight")
     name: str = pydantic.Field(alias="Name")
     club: str = pydantic.Field(alias="Club")
     placement_sectional: str = pydantic.Field(alias="Placement")
+    sectional: _Sectional = pydantic.Field(alias="Sectional")
     usaw_number: str = pydantic.Field(alias="USAW Number")
 
 

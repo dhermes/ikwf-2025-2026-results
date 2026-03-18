@@ -745,6 +745,7 @@ class _CSVStateQualifier(_ForbidExtra):
     name: str = pydantic.Field(alias="Name")
     club: str = pydantic.Field(alias="Club")
     placement: str = pydantic.Field(alias="Placement")
+    sectional: _PreviewSectional = pydantic.Field(alias="Sectional")
     usaw_number: str = pydantic.Field(alias="USAW Number")
 
 
