@@ -208,6 +208,8 @@ uv run python -m entrypoints.state_bracket_parsing  # Produces `_raw-data/bracke
 uv run python -m entrypoints.state_preview_json     # Produces `_parsed-data/2026-state-preview.json`
 
 uv run python -m entrypoints.finalize_season        # Produces `_parsed-data/2026-finalized.json`
+
+uv run python -m entrypoints.tournament_rankings    # Produces `_parsed-data/ranked-tournaments.json`
 ```
 
 [1]: https://www.ikwf.org/
