@@ -42,11 +42,14 @@ _IGNORED_EVENTS = (
     ############################################################################
     "IKWF State Championships",
     ############################################################################
+    "2025 Hub City Hammer Duals",
     "2026 Girls Rule Rumble",
     "2026 IL Kids Future Finalist",
     "IKWF Dual Meet State Championships",
+    "IKWF Southern Dual Meet Divisional",
     "Joe Tholl Sr. ELITE/OPEN 2025",
     "Jon Davis Kids Open",
+    "The Didi Duals 2026",
     "THE Midwest Classic 2026",
 )
 
@@ -155,6 +158,7 @@ def _bucket_matches(
 
 class _TournamentCredentials(_ForbidExtra):
     event_name: str
+    athlete_count: int
     total_wins: int
     total_losses: int
     champs: int
@@ -168,20 +172,22 @@ class _TournamentCredentials(_ForbidExtra):
 
     def event_score(self) -> float:
         total_matches = self.total_wins + self.total_losses
-        win_pct = self.total_wins / total_matches if total_matches else 0
+        win_fraction = self.total_wins / total_matches
 
-        win_score = win_pct * 100
+        win_score = win_fraction * 100
 
         elite_score = (
-            self.champs * 10
-            + self.finalists * 6
-            + self.placers * 3
-            + self.qualifiers * 1
+            self.champs * 12 + self.finalists * 7 + self.placers * 3 + self.qualifiers
         )
+        elite_density = elite_score / self.athlete_count
 
         depth_score = self.grade2_record * 2 + self.grade1_record
+        depth_density = depth_score / self.athlete_count
 
-        return win_score + elite_score + depth_score
+        raw_score = win_score * 0.4 + elite_density * 50 + depth_density * 25
+        size_factor = min(1.0, self.athlete_count / 40)
+
+        return raw_score * size_factor
 
 
 def _score_tournament(
@@ -231,6 +237,7 @@ def _score_tournament(
 
     credentials = _TournamentCredentials(
         event_name=event_name,
+        athlete_count=len(usaw_numbers),
         total_wins=total_wins,
         total_losses=total_losses,
         champs=champs,

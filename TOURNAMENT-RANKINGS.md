@@ -1,236 +1,233 @@
 ## Events by score
 
-- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 4230.17
-- 2: 2026 Bob Jahn Memorial: 3175.57
-- 3: 2026 BRONCO INVITE: 3081.34
-- 4: Batavia Classic Wrestling Tournament: 2582.78
-- 5: 2026 Lemont Bears Bash: 2535.32
-- 6: 2026 Ted Harvey Memorial: 2238.71
-- 7: 2026 Junior Thunderbolt: 1980.59
-- 8: 2026 Derrick Munos Invitational: 1946.35
-- 9: 2025 Force Challenge 19: 1856.50
-- 10: 2025 Mick Ruettiger Invitational: 1848.94
-- 11: 2025 Betty Martinez Memorial: 1815.37
-- 12: Winter Fiesta @ Harper College: 1807.89
-- 13: DEMOLITION BATTLE OF RAGNAROK: 1758.80
-- 14: Heart of a Lion 2026: 1674.21
-- 15: Champaign Grappler III: 1642.84
-- 16: 2025 Yeti Bash/Morris Kids WC: 1636.29
-- 17: 2025 Oak Forest Green and White Tournament: 1558.39
-- 18: Wilbur Borrero Classic: 1492.31
-- 19: 2026 Boneyard Bash ELITE & ROOKIE: 1445.35
-- 20: Countdown to Christmas DGWC: 1440.82
-- 21: Devils Gauntlet Battle for the Belts: 1423.18
-- 22: 2026 Ezra Hill Jr Memorial Tournament: 1378.65
-- 23: 2026 O`Fallon Panther Pummel w/Girls: 1373.38
-- 24: 2025 Mat Rat Invitational: 1349.92
-- 25: 42nd Annual Bulls Wrestling Tournament: 1343.91
-- 26: 2026 Coach Jim Craig Memorial-CLOSED: 1338.39
-- 27: 2025 Naperville Reindeer Rumble: 1336.47
-- 28: Mattoon YWC - Bonic Battle for the Belt: 1309.68
-- 29: Granite City Kids Holiday Classic: 1309.16
-- 30: Meet in the MIddle: 1267.48
-- 31: 2025 Edwardsville Open: 1265.53
-- 32: 2025 Xtreme Challenge: 1222.73
-- 33: Rockford Bad Boys & Girls Open: 1211.16
-- 34: 2026 Susan Collins Memorial Tournament: 1202.60
-- 35: Crushing Christmas Classic-Coal City: 1140.63
-- 36: December 2025 Lil Reapers Wrestling Classic: 1137.24
-- 37: Rumble on the Red: 1109.91
-- 38: 2025 Orland Park Pioneer KickOff Classic: 1075.66
-- 39: Bulldog Brawl: 1056.23
-- 40: The Didi Duals 2026: 1050.09
-- 41: Spartan Rumble: 1047.34
-- 42: Geist Grappling Classic: 984.18
-- 43: John Nagy Throwdown 2025: 961.69
-- 44: 2025 Beat the Streets Youth Brawl: 959.05
-- 45: Mt Zion kids club open: 955.56
-- 46: Daisy Fresh Wrestling Open: 954.83
-- 47: Chauncey Carrick Good Guys Tournament: 906.51
-- 48: Jr. Porter Invite: 876.39
-- 49: Wolves Wrestling St. Valentine`s Day Massacre: 856.04
-- 50: Junior Midlands @ Northwestern University: 841.34
-- 51: 2025 Dave Mattio Classic: 805.80
-- 52: 2025 Sandwich WinterWonderSLAM: 750.29
-- 53: Hawk Wrestling Club Invitational: 750.19
-- 54: Celtic Open 2026: 732.26
-- 55: Stillman Valley Holiday Tournament: 730.33
-- 56: Hononegah`s Tomahawk Classic: 727.98
-- 57: Tiger Town Tanglers Wrestling Tournament: 725.53
-- 58: Big Cat Wrestling Tournament: 718.81
-- 59: 2025 Rocket Blast: 715.38
-- 60: Lil` Coalers Clash: 703.30
-- 61: Streator Bulldog Open: 646.75
-- 62: Capture the Eagle: 642.85
-- 63: O-Town Throwdown 2026: 642.42
-- 64: Toultown Throwdown: 638.75
-- 65: Yorkville Fighting Foxes Invitational: 633.92
-- 66: 2025 Hub City Hammer Duals: 628.64
-- 67: Lincoln Railer Rumble 2025: 624.20
-- 68: CLIPPER CLASH 2026: 618.59
-- 69: Olympia Spartan Showdown: 606.51
-- 70: Cabin Fever 2026: 602.56
-- 71: CICC Classic: 595.53
-- 72: Cadet Classic: 594.70
-- 73: D/C Bolt New Years Bash: 592.62
-- 74: Notre Dame Invitational: 558.42
-- 75: Litchfield `Rumble In the Jungle` 2026: 553.17
-- 76: Lawrence County Knights Terry Hoke Open: 520.43
-- 77: 2026 Triad Kids Open: 515.56
-- 78: 309 Winter Classic: 515.46
-- 79: Monticello Youth Open 2026: 505.46
-- 80: Clinton Challenge: 499.19
-- 81: 2025 EWC Beginners and Girls Tournament: 490.53
-- 82: Crawford County Open: 483.30
-- 83: Geneva Vikings Youth Tournament: 480.99
-- 84: Trico Pioneer Rumble: 468.69
-- 85: Roxana Rumble: 468.68
-- 86: Pontiac Kids Open 2026: 468.68
-- 87: Morton Youth Wrestling 2026: 462.77
-- 88: Spartan 300: 446.87
-- 89: Metamora Kids Wrestling Tournament: 439.28
-- 90: Darby Pool Wrestling Tournament: 436.60
-- 91: 2025 O`Fallon Beginners/Girls Open: 425.40
-- 92: Jersey Panther Pummel: 412.51
-- 93: 2026 Hillsboro Jr. Topper Tournament: 409.78
-- 94: JAWS Battle in the Bowl: 401.75
-- 95: 2026 Red Rush Rumble: 395.11
-- 96: The Little Giant Holiday Hammer: 388.60
-- 97: IKWF Southern Dual Meet Divisional: 382.87
-- 98: 2026CarbondaleDogFight&AlliRaganGirlsOpn: 379.10
-- 99: Warrensburg-Latham Cardinal Cradle Class: 367.73
-- 100: Double D Demolition (SVWC Tournament): 349.59
-- 101: Belvidere Bandit Brawl: 330.49
-- 102: Cumberland Kids Heartbreak Havoc: 330.45
-- 103: LP Crunching Cavs Classic: 322.60
-- 104: Elias George Memorial 2025: 311.91
-- 105: ACES Rumble: 307.94
-- 106: Highland Howl Jarron Haberer memorial: 301.62
-- 107: Cumberland Kids Open 2025: 289.62
-- 108: Cole Whitford Girls & Beginners Tournament: 263.38
-- 109: Mattoon Beginners Tournament: 257.81
-- 110: AJ Jr Wildcats On the Prowl: 218.65
-- 111: Spartan Beginner Tournament: 216.23
-- 112: Fox Lake Beginners Tournament: 207.78
-- 113: Tri-County Polar Vortex: 193.22
-- 114: Tiger Takedown: 189.07
-- 115: Stillman Valley Beginners Tournament: 175.28
-- 116: QUINCY LITTLE RAIDER SLAM 2026: 167.55
-- 117: Oak Lawn Acorn Rookie Rumble: 156.97
-- 118: Harper Rookie Rumble: 148.20
-- 119: Tots Bash: 107.92
+- 1: Cadet Classic: 137.38
+- 2: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 130.21
+- 3: 2026 Boneyard Bash ELITE & ROOKIE: 128.26
+- 4: Rockford Bad Boys & Girls Open: 122.64
+- 5: 2025 Force Challenge 19: 118.60
+- 6: 2025 Betty Martinez Memorial: 118.02
+- 7: Junior Midlands @ Northwestern University: 117.54
+- 8: Bulldog Brawl: 116.97
+- 9: 2025 Dave Mattio Classic: 113.26
+- 10: 2026 O`Fallon Panther Pummel w/Girls: 109.11
+- 11: 2026 BRONCO INVITE: 108.60
+- 12: Batavia Classic Wrestling Tournament: 108.35
+- 13: Granite City Kids Holiday Classic: 107.21
+- 14: 2025 Oak Forest Green and White Tournament: 106.12
+- 15: DEMOLITION BATTLE OF RAGNAROK: 105.64
+- 16: Devils Gauntlet Battle for the Belts: 102.60
+- 17: 2026 Ted Harvey Memorial: 101.03
+- 18: 2026 Bob Jahn Memorial: 100.47
+- 19: 42nd Annual Bulls Wrestling Tournament: 99.40
+- 20: Daisy Fresh Wrestling Open: 98.36
+- 21: Wilbur Borrero Classic: 97.91
+- 22: Rumble on the Red: 96.88
+- 23: 2026 Derrick Munos Invitational: 96.44
+- 24: Spartan Rumble: 95.64
+- 25: Champaign Grappler III: 94.93
+- 26: 2025 Beat the Streets Youth Brawl: 94.36
+- 27: John Nagy Throwdown 2025: 93.73
+- 28: 2026 Ezra Hill Jr Memorial Tournament: 93.50
+- 29: December 2025 Lil Reapers Wrestling Classic: 91.06
+- 30: Heart of a Lion 2026: 90.60
+- 31: 2026 Coach Jim Craig Memorial-CLOSED: 89.14
+- 32: Hawk Wrestling Club Invitational: 89.09
+- 33: 2026 Junior Thunderbolt: 88.61
+- 34: Winter Fiesta @ Harper College: 88.47
+- 35: 2025 Yeti Bash/Morris Kids WC: 88.06
+- 36: 2025 Xtreme Challenge: 87.85
+- 37: 2025 Mick Ruettiger Invitational: 87.00
+- 38: 2025 Edwardsville Open: 86.15
+- 39: 2025 EWC Beginners and Girls Tournament: 85.19
+- 40: Streator Bulldog Open: 84.46
+- 41: Geneva Vikings Youth Tournament: 84.34
+- 42: Meet in the MIddle: 83.32
+- 43: 2026 Lemont Bears Bash: 82.80
+- 44: Mt Zion kids club open: 82.58
+- 45: Jr. Porter Invite: 82.35
+- 46: Crushing Christmas Classic-Coal City: 82.08
+- 47: 2025 Orland Park Pioneer KickOff Classic: 80.55
+- 48: Crawford County Open: 80.07
+- 49: Lawrence County Knights Terry Hoke Open: 80.02
+- 50: 2025 Rocket Blast: 79.74
+- 51: Countdown to Christmas DGWC: 79.19
+- 52: Chauncey Carrick Good Guys Tournament: 77.70
+- 53: 2026 Susan Collins Memorial Tournament: 77.62
+- 54: CLIPPER CLASH 2026: 77.40
+- 55: O-Town Throwdown 2026: 77.08
+- 56: CICC Classic: 75.75
+- 57: Stillman Valley Holiday Tournament: 75.62
+- 58: D/C Bolt New Years Bash: 75.17
+- 59: 2025 Mat Rat Invitational: 74.94
+- 60: Celtic Open 2026: 74.71
+- 61: 2025 Sandwich WinterWonderSLAM: 74.53
+- 62: Mattoon YWC - Bonic Battle for the Belt: 74.43
+- 63: 2025 Naperville Reindeer Rumble: 73.73
+- 64: Geist Grappling Classic: 73.39
+- 65: 2025 O`Fallon Beginners/Girls Open: 73.10
+- 66: Tiger Town Tanglers Wrestling Tournament: 72.55
+- 67: Hononegah`s Tomahawk Classic: 71.96
+- 68: Wolves Wrestling St. Valentine`s Day Massacre: 70.06
+- 69: Cumberland Kids Heartbreak Havoc: 70.02
+- 70: Roxana Rumble: 69.52
+- 71: Toultown Throwdown: 69.25
+- 72: Trico Pioneer Rumble: 67.96
+- 73: Olympia Spartan Showdown: 67.77
+- 74: Lil` Coalers Clash: 67.24
+- 75: Lincoln Railer Rumble 2025: 67.00
+- 76: Big Cat Wrestling Tournament: 66.92
+- 77: Clinton Challenge: 65.98
+- 78: 309 Winter Classic: 64.49
+- 79: Capture the Eagle: 64.21
+- 80: 2026 Red Rush Rumble: 64.16
+- 81: Yorkville Fighting Foxes Invitational: 63.37
+- 82: Cabin Fever 2026: 63.34
+- 83: Pontiac Kids Open 2026: 62.66
+- 84: 2026 Hillsboro Jr. Topper Tournament: 62.24
+- 85: Morton Youth Wrestling 2026: 61.98
+- 86: ACES Rumble: 61.88
+- 87: Jersey Panther Pummel: 61.70
+- 88: Double D Demolition (SVWC Tournament): 61.62
+- 89: Notre Dame Invitational: 61.47
+- 90: 2026 Triad Kids Open: 61.42
+- 91: Spartan 300: 59.49
+- 92: Warrensburg-Latham Cardinal Cradle Class: 58.57
+- 93: Elias George Memorial 2025: 58.54
+- 94: LP Crunching Cavs Classic: 57.89
+- 95: Metamora Kids Wrestling Tournament: 57.79
+- 96: Highland Howl Jarron Haberer memorial: 57.75
+- 97: Monticello Youth Open 2026: 57.23
+- 98: Darby Pool Wrestling Tournament: 56.94
+- 99: The Little Giant Holiday Hammer: 56.87
+- 100: Litchfield `Rumble In the Jungle` 2026: 56.73
+- 101: 2026CarbondaleDogFight&AlliRaganGirlsOpn: 55.93
+- 102: Belvidere Bandit Brawl: 54.80
+- 103: Tots Bash: 54.75
+- 104: Cole Whitford Girls & Beginners Tournament: 54.26
+- 105: Cumberland Kids Open 2025: 53.44
+- 106: Tri-County Polar Vortex: 51.65
+- 107: AJ Jr Wildcats On the Prowl: 50.08
+- 108: JAWS Battle in the Bowl: 49.95
+- 109: QUINCY LITTLE RAIDER SLAM 2026: 47.22
+- 110: Tiger Takedown: 46.25
+- 111: Mattoon Beginners Tournament: 41.89
+- 112: Oak Lawn Acorn Rookie Rumble: 35.69
+- 113: Spartan Beginner Tournament: 33.22
+- 114: Stillman Valley Beginners Tournament: 32.47
+- 115: Fox Lake Beginners Tournament: 31.43
+- 116: Harper Rookie Rumble: 28.03
 
 ## Events with most champs
 
-- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 42 (1, 4230.17)
-- 2: 2026 BRONCO INVITE: 31 (3, 3081.34)
-- 3: 2026 Bob Jahn Memorial: 26 (2, 3175.57)
-- 4: Batavia Classic Wrestling Tournament: 22 (4, 2582.78)
-- 5: 2026 Ted Harvey Memorial: 19 (6, 2238.71)
-- 6: 2026 Lemont Bears Bash: 16 (5, 2535.32)
-- 7: 2025 Force Challenge 19: 15 (9, 1856.50)
-- 8: 2026 Boneyard Bash ELITE & ROOKIE: 15 (19, 1445.35)
-- 9: 2025 Betty Martinez Memorial: 14 (11, 1815.37)
-- 10: DEMOLITION BATTLE OF RAGNAROK: 14 (13, 1758.80)
-- 11: Winter Fiesta @ Harper College: 14 (12, 1807.89)
-- 12: 2025 Beat the Streets Youth Brawl: 13 (44, 959.05)
-- 13: 2025 Mick Ruettiger Invitational: 13 (10, 1848.94)
-- 14: 2025 Oak Forest Green and White Tournament: 13 (17, 1558.39)
-- 15: 2026 Derrick Munos Invitational: 13 (8, 1946.35)
-- 16: Wilbur Borrero Classic: 13 (18, 1492.31)
-- 17: Countdown to Christmas DGWC: 12 (20, 1440.82)
-- 18: Rockford Bad Boys & Girls Open: 12 (33, 1211.16)
-- 19: 2025 Xtreme Challenge: 11 (32, 1222.73)
-- 20: 2026 O`Fallon Panther Pummel w/Girls: 11 (23, 1373.38)
+- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 42 (2, 130.21)
+- 2: 2026 BRONCO INVITE: 31 (11, 108.60)
+- 3: 2026 Bob Jahn Memorial: 26 (18, 100.47)
+- 4: Batavia Classic Wrestling Tournament: 22 (12, 108.35)
+- 5: 2026 Ted Harvey Memorial: 19 (17, 101.03)
+- 6: 2026 Lemont Bears Bash: 16 (43, 82.80)
+- 7: 2025 Force Challenge 19: 15 (5, 118.60)
+- 8: 2026 Boneyard Bash ELITE & ROOKIE: 15 (3, 128.26)
+- 9: 2025 Betty Martinez Memorial: 14 (6, 118.02)
+- 10: DEMOLITION BATTLE OF RAGNAROK: 14 (15, 105.64)
+- 11: Winter Fiesta @ Harper College: 14 (34, 88.47)
+- 12: 2025 Beat the Streets Youth Brawl: 13 (26, 94.36)
+- 13: 2025 Mick Ruettiger Invitational: 13 (37, 87.00)
+- 14: 2025 Oak Forest Green and White Tournament: 13 (14, 106.12)
+- 15: 2026 Derrick Munos Invitational: 13 (23, 96.44)
+- 16: Wilbur Borrero Classic: 13 (21, 97.91)
+- 17: Countdown to Christmas DGWC: 12 (51, 79.19)
+- 18: Rockford Bad Boys & Girls Open: 12 (4, 122.64)
+- 19: 2025 Xtreme Challenge: 11 (36, 87.85)
+- 20: 2026 O`Fallon Panther Pummel w/Girls: 11 (10, 109.11)
 
 ## Events with most finalists
 
-- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 80 (1, 4230.17)
-- 2: 2026 BRONCO INVITE: 65 (3, 3081.34)
-- 3: 2026 Bob Jahn Memorial: 52 (2, 3175.57)
-- 4: Batavia Classic Wrestling Tournament: 48 (4, 2582.78)
-- 5: 2026 Ted Harvey Memorial: 42 (6, 2238.71)
-- 6: 2025 Force Challenge 19: 36 (9, 1856.50)
-- 7: DEMOLITION BATTLE OF RAGNAROK: 33 (13, 1758.80)
-- 8: 2025 Oak Forest Green and White Tournament: 32 (17, 1558.39)
-- 9: 2026 Lemont Bears Bash: 30 (5, 2535.32)
-- 10: Wilbur Borrero Classic: 29 (18, 1492.31)
-- 11: Winter Fiesta @ Harper College: 29 (12, 1807.89)
-- 12: 2025 Betty Martinez Memorial: 28 (11, 1815.37)
-- 13: 2026 Boneyard Bash ELITE & ROOKIE: 28 (19, 1445.35)
-- 14: 2026 Derrick Munos Invitational: 25 (8, 1946.35)
-- 15: 2026 Junior Thunderbolt: 25 (7, 1980.59)
-- 16: 2025 Yeti Bash/Morris Kids WC: 24 (16, 1636.29)
-- 17: 2025 Mick Ruettiger Invitational: 23 (10, 1848.94)
-- 18: 2025 Beat the Streets Youth Brawl: 21 (44, 959.05)
-- 19: Heart of a Lion 2026: 21 (14, 1674.21)
-- 20: 2026 Coach Jim Craig Memorial-CLOSED: 20 (26, 1338.39)
+- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 80 (2, 130.21)
+- 2: 2026 BRONCO INVITE: 65 (11, 108.60)
+- 3: 2026 Bob Jahn Memorial: 52 (18, 100.47)
+- 4: Batavia Classic Wrestling Tournament: 48 (12, 108.35)
+- 5: 2026 Ted Harvey Memorial: 42 (17, 101.03)
+- 6: 2025 Force Challenge 19: 36 (5, 118.60)
+- 7: DEMOLITION BATTLE OF RAGNAROK: 33 (15, 105.64)
+- 8: 2025 Oak Forest Green and White Tournament: 32 (14, 106.12)
+- 9: 2026 Lemont Bears Bash: 30 (43, 82.80)
+- 10: Wilbur Borrero Classic: 29 (21, 97.91)
+- 11: Winter Fiesta @ Harper College: 29 (34, 88.47)
+- 12: 2025 Betty Martinez Memorial: 28 (6, 118.02)
+- 13: 2026 Boneyard Bash ELITE & ROOKIE: 28 (3, 128.26)
+- 14: 2026 Derrick Munos Invitational: 25 (23, 96.44)
+- 15: 2026 Junior Thunderbolt: 25 (33, 88.61)
+- 16: 2025 Yeti Bash/Morris Kids WC: 24 (35, 88.06)
+- 17: 2025 Mick Ruettiger Invitational: 23 (37, 87.00)
+- 18: 2025 Beat the Streets Youth Brawl: 21 (26, 94.36)
+- 19: Heart of a Lion 2026: 21 (30, 90.60)
+- 20: 2026 Coach Jim Craig Memorial-CLOSED: 20 (31, 89.14)
 
 ## Events with most placers
 
-- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 266 (1, 4230.17)
-- 2: 2026 Bob Jahn Memorial: 181 (2, 3175.57)
-- 3: 2026 BRONCO INVITE: 168 (3, 3081.34)
-- 4: Batavia Classic Wrestling Tournament: 154 (4, 2582.78)
-- 5: 2026 Lemont Bears Bash: 146 (5, 2535.32)
-- 6: 2026 Ted Harvey Memorial: 135 (6, 2238.71)
-- 7: 2026 Junior Thunderbolt: 121 (7, 1980.59)
-- 8: 2025 Betty Martinez Memorial: 115 (11, 1815.37)
-- 9: 2026 Derrick Munos Invitational: 115 (8, 1946.35)
-- 10: 2025 Force Challenge 19: 114 (9, 1856.50)
-- 11: 2025 Mick Ruettiger Invitational: 102 (10, 1848.94)
-- 12: DEMOLITION BATTLE OF RAGNAROK: 102 (13, 1758.80)
-- 13: 2025 Oak Forest Green and White Tournament: 98 (17, 1558.39)
-- 14: 2025 Yeti Bash/Morris Kids WC: 96 (16, 1636.29)
-- 15: 2026 Boneyard Bash ELITE & ROOKIE: 93 (19, 1445.35)
-- 16: Heart of a Lion 2026: 93 (14, 1674.21)
-- 17: Winter Fiesta @ Harper College: 90 (12, 1807.89)
-- 18: 2026 Ezra Hill Jr Memorial Tournament: 86 (22, 1378.65)
-- 19: Wilbur Borrero Classic: 82 (18, 1492.31)
-- 20: Champaign Grappler III: 81 (15, 1642.84)
+- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 266 (2, 130.21)
+- 2: 2026 Bob Jahn Memorial: 181 (18, 100.47)
+- 3: 2026 BRONCO INVITE: 168 (11, 108.60)
+- 4: Batavia Classic Wrestling Tournament: 154 (12, 108.35)
+- 5: 2026 Lemont Bears Bash: 146 (43, 82.80)
+- 6: 2026 Ted Harvey Memorial: 135 (17, 101.03)
+- 7: 2026 Junior Thunderbolt: 121 (33, 88.61)
+- 8: 2025 Betty Martinez Memorial: 115 (6, 118.02)
+- 9: 2026 Derrick Munos Invitational: 115 (23, 96.44)
+- 10: 2025 Force Challenge 19: 114 (5, 118.60)
+- 11: 2025 Mick Ruettiger Invitational: 102 (37, 87.00)
+- 12: DEMOLITION BATTLE OF RAGNAROK: 102 (15, 105.64)
+- 13: 2025 Oak Forest Green and White Tournament: 98 (14, 106.12)
+- 14: 2025 Yeti Bash/Morris Kids WC: 96 (35, 88.06)
+- 15: 2026 Boneyard Bash ELITE & ROOKIE: 93 (3, 128.26)
+- 16: Heart of a Lion 2026: 93 (30, 90.60)
+- 17: Winter Fiesta @ Harper College: 90 (34, 88.47)
+- 18: 2026 Ezra Hill Jr Memorial Tournament: 86 (28, 93.50)
+- 19: Wilbur Borrero Classic: 82 (21, 97.91)
+- 20: Champaign Grappler III: 81 (25, 94.93)
 
 ## Events with most qualifiers
 
-- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 638 (1, 4230.17)
-- 2: 2026 Bob Jahn Memorial: 504 (2, 3175.57)
-- 3: 2026 BRONCO INVITE: 479 (3, 3081.34)
-- 4: 2026 Lemont Bears Bash: 452 (5, 2535.32)
-- 5: Batavia Classic Wrestling Tournament: 429 (4, 2582.78)
-- 6: 2026 Junior Thunderbolt: 372 (7, 1980.59)
-- 7: 2026 Derrick Munos Invitational: 354 (8, 1946.35)
-- 8: 2026 Ted Harvey Memorial: 342 (6, 2238.71)
-- 9: 2025 Mick Ruettiger Invitational: 333 (10, 1848.94)
-- 10: 2025 Force Challenge 19: 290 (9, 1856.50)
-- 11: Winter Fiesta @ Harper College: 289 (12, 1807.89)
-- 12: 2025 Betty Martinez Memorial: 288 (11, 1815.37)
-- 13: Heart of a Lion 2026: 286 (14, 1674.21)
-- 14: Champaign Grappler III: 279 (15, 1642.84)
-- 15: DEMOLITION BATTLE OF RAGNAROK: 274 (13, 1758.80)
-- 16: 2025 Yeti Bash/Morris Kids WC: 256 (16, 1636.29)
-- 17: 2025 Naperville Reindeer Rumble: 254 (27, 1336.47)
-- 18: Countdown to Christmas DGWC: 248 (20, 1440.82)
-- 19: 2025 Oak Forest Green and White Tournament: 245 (17, 1558.39)
-- 20: 2026 Ezra Hill Jr Memorial Tournament: 239 (22, 1378.65)
+- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 638 (2, 130.21)
+- 2: 2026 Bob Jahn Memorial: 504 (18, 100.47)
+- 3: 2026 BRONCO INVITE: 479 (11, 108.60)
+- 4: 2026 Lemont Bears Bash: 452 (43, 82.80)
+- 5: Batavia Classic Wrestling Tournament: 429 (12, 108.35)
+- 6: 2026 Junior Thunderbolt: 372 (33, 88.61)
+- 7: 2026 Derrick Munos Invitational: 354 (23, 96.44)
+- 8: 2026 Ted Harvey Memorial: 342 (17, 101.03)
+- 9: 2025 Mick Ruettiger Invitational: 333 (37, 87.00)
+- 10: 2025 Force Challenge 19: 290 (5, 118.60)
+- 11: Winter Fiesta @ Harper College: 289 (34, 88.47)
+- 12: 2025 Betty Martinez Memorial: 288 (6, 118.02)
+- 13: Heart of a Lion 2026: 286 (30, 90.60)
+- 14: Champaign Grappler III: 279 (25, 94.93)
+- 15: DEMOLITION BATTLE OF RAGNAROK: 274 (15, 105.64)
+- 16: 2025 Yeti Bash/Morris Kids WC: 256 (35, 88.06)
+- 17: 2025 Naperville Reindeer Rumble: 254 (63, 73.73)
+- 18: Countdown to Christmas DGWC: 248 (51, 79.19)
+- 19: 2025 Oak Forest Green and White Tournament: 245 (14, 106.12)
+- 20: 2026 Ezra Hill Jr Memorial Tournament: 239 (28, 93.50)
 
 ## Events with most wins
 
-- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 23920 (1, 4230.17)
-- 2: 2026 Bob Jahn Memorial: 20270 (2, 3175.57)
-- 3: 2026 BRONCO INVITE: 18763 (3, 3081.34)
-- 4: 2026 Lemont Bears Bash: 17241 (5, 2535.32)
-- 5: Batavia Classic Wrestling Tournament: 15668 (4, 2582.78)
-- 6: 2026 Ted Harvey Memorial: 13835 (6, 2238.71)
-- 7: 2026 Junior Thunderbolt: 13062 (7, 1980.59)
-- 8: Heart of a Lion 2026: 13025 (14, 1674.21)
-- 9: 2026 Derrick Munos Invitational: 12661 (8, 1946.35)
-- 10: 2025 Mick Ruettiger Invitational: 12432 (10, 1848.94)
-- 11: Winter Fiesta @ Harper College: 12302 (12, 1807.89)
-- 12: 2025 Betty Martinez Memorial: 11755 (11, 1815.37)
-- 13: Champaign Grappler III: 11501 (15, 1642.84)
-- 14: 2025 Force Challenge 19: 10967 (9, 1856.50)
-- 15: 2025 Yeti Bash/Morris Kids WC: 10848 (16, 1636.29)
-- 16: DEMOLITION BATTLE OF RAGNAROK: 10728 (13, 1758.80)
-- 17: 2025 Naperville Reindeer Rumble: 10588 (27, 1336.47)
-- 18: 2025 Mat Rat Invitational: 10066 (24, 1349.92)
-- 19: Mattoon YWC - Bonic Battle for the Belt: 9762 (28, 1309.68)
-- 20: Countdown to Christmas DGWC: 9593 (20, 1440.82)
+- 1: 2026 ST. CHARLES BATTLE FOR THE SHIELD: 23920 (2, 130.21)
+- 2: 2026 Bob Jahn Memorial: 20270 (18, 100.47)
+- 3: 2026 BRONCO INVITE: 18763 (11, 108.60)
+- 4: 2026 Lemont Bears Bash: 17241 (43, 82.80)
+- 5: Batavia Classic Wrestling Tournament: 15668 (12, 108.35)
+- 6: 2026 Ted Harvey Memorial: 13835 (17, 101.03)
+- 7: 2026 Junior Thunderbolt: 13062 (33, 88.61)
+- 8: Heart of a Lion 2026: 13025 (30, 90.60)
+- 9: 2026 Derrick Munos Invitational: 12661 (23, 96.44)
+- 10: 2025 Mick Ruettiger Invitational: 12432 (37, 87.00)
+- 11: Winter Fiesta @ Harper College: 12302 (34, 88.47)
+- 12: 2025 Betty Martinez Memorial: 11755 (6, 118.02)
+- 13: Champaign Grappler III: 11501 (25, 94.93)
+- 14: 2025 Force Challenge 19: 10967 (5, 118.60)
+- 15: 2025 Yeti Bash/Morris Kids WC: 10848 (35, 88.06)
+- 16: DEMOLITION BATTLE OF RAGNAROK: 10728 (15, 105.64)
+- 17: 2025 Naperville Reindeer Rumble: 10588 (63, 73.73)
+- 18: 2025 Mat Rat Invitational: 10066 (59, 74.94)
+- 19: Mattoon YWC - Bonic Battle for the Belt: 9762 (62, 74.43)
+- 20: Countdown to Christmas DGWC: 9593 (51, 79.19)
