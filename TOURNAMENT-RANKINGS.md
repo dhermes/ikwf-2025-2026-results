@@ -20,6 +20,105 @@
 - 18: Wilbur Borrero Classic: 1492.31
 - 19: 2026 Boneyard Bash ELITE & ROOKIE: 1445.35
 - 20: Countdown to Christmas DGWC: 1440.82
+- 21: Devils Gauntlet Battle for the Belts: 1423.18
+- 22: 2026 Ezra Hill Jr Memorial Tournament: 1378.65
+- 23: 2026 O`Fallon Panther Pummel w/Girls: 1373.38
+- 24: 2025 Mat Rat Invitational: 1349.92
+- 25: 42nd Annual Bulls Wrestling Tournament: 1343.91
+- 26: 2026 Coach Jim Craig Memorial-CLOSED: 1338.39
+- 27: 2025 Naperville Reindeer Rumble: 1336.47
+- 28: Mattoon YWC - Bonic Battle for the Belt: 1309.68
+- 29: Granite City Kids Holiday Classic: 1309.16
+- 30: Meet in the MIddle: 1267.48
+- 31: 2025 Edwardsville Open: 1265.53
+- 32: 2025 Xtreme Challenge: 1222.73
+- 33: Rockford Bad Boys & Girls Open: 1211.16
+- 34: 2026 Susan Collins Memorial Tournament: 1202.60
+- 35: Crushing Christmas Classic-Coal City: 1140.63
+- 36: December 2025 Lil Reapers Wrestling Classic: 1137.24
+- 37: Rumble on the Red: 1109.91
+- 38: 2025 Orland Park Pioneer KickOff Classic: 1075.66
+- 39: Bulldog Brawl: 1056.23
+- 40: The Didi Duals 2026: 1050.09
+- 41: Spartan Rumble: 1047.34
+- 42: Geist Grappling Classic: 984.18
+- 43: John Nagy Throwdown 2025: 961.69
+- 44: 2025 Beat the Streets Youth Brawl: 959.05
+- 45: Mt Zion kids club open: 955.56
+- 46: Daisy Fresh Wrestling Open: 954.83
+- 47: Chauncey Carrick Good Guys Tournament: 906.51
+- 48: Jr. Porter Invite: 876.39
+- 49: Wolves Wrestling St. Valentine`s Day Massacre: 856.04
+- 50: Junior Midlands @ Northwestern University: 841.34
+- 51: 2025 Dave Mattio Classic: 805.80
+- 52: 2025 Sandwich WinterWonderSLAM: 750.29
+- 53: Hawk Wrestling Club Invitational: 750.19
+- 54: Celtic Open 2026: 732.26
+- 55: Stillman Valley Holiday Tournament: 730.33
+- 56: Hononegah`s Tomahawk Classic: 727.98
+- 57: Tiger Town Tanglers Wrestling Tournament: 725.53
+- 58: Big Cat Wrestling Tournament: 718.81
+- 59: 2025 Rocket Blast: 715.38
+- 60: Lil` Coalers Clash: 703.30
+- 61: Streator Bulldog Open: 646.75
+- 62: Capture the Eagle: 642.85
+- 63: O-Town Throwdown 2026: 642.42
+- 64: Toultown Throwdown: 638.75
+- 65: Yorkville Fighting Foxes Invitational: 633.92
+- 66: 2025 Hub City Hammer Duals: 628.64
+- 67: Lincoln Railer Rumble 2025: 624.20
+- 68: CLIPPER CLASH 2026: 618.59
+- 69: Olympia Spartan Showdown: 606.51
+- 70: Cabin Fever 2026: 602.56
+- 71: CICC Classic: 595.53
+- 72: Cadet Classic: 594.70
+- 73: D/C Bolt New Years Bash: 592.62
+- 74: Notre Dame Invitational: 558.42
+- 75: Litchfield `Rumble In the Jungle` 2026: 553.17
+- 76: Lawrence County Knights Terry Hoke Open: 520.43
+- 77: 2026 Triad Kids Open: 515.56
+- 78: 309 Winter Classic: 515.46
+- 79: Monticello Youth Open 2026: 505.46
+- 80: Clinton Challenge: 499.19
+- 81: 2025 EWC Beginners and Girls Tournament: 490.53
+- 82: Crawford County Open: 483.30
+- 83: Geneva Vikings Youth Tournament: 480.99
+- 84: Trico Pioneer Rumble: 468.69
+- 85: Roxana Rumble: 468.68
+- 86: Pontiac Kids Open 2026: 468.68
+- 87: Morton Youth Wrestling 2026: 462.77
+- 88: Spartan 300: 446.87
+- 89: Metamora Kids Wrestling Tournament: 439.28
+- 90: Darby Pool Wrestling Tournament: 436.60
+- 91: 2025 O`Fallon Beginners/Girls Open: 425.40
+- 92: Jersey Panther Pummel: 412.51
+- 93: 2026 Hillsboro Jr. Topper Tournament: 409.78
+- 94: JAWS Battle in the Bowl: 401.75
+- 95: 2026 Red Rush Rumble: 395.11
+- 96: The Little Giant Holiday Hammer: 388.60
+- 97: IKWF Southern Dual Meet Divisional: 382.87
+- 98: 2026CarbondaleDogFight&AlliRaganGirlsOpn: 379.10
+- 99: Warrensburg-Latham Cardinal Cradle Class: 367.73
+- 100: Double D Demolition (SVWC Tournament): 349.59
+- 101: Belvidere Bandit Brawl: 330.49
+- 102: Cumberland Kids Heartbreak Havoc: 330.45
+- 103: LP Crunching Cavs Classic: 322.60
+- 104: Elias George Memorial 2025: 311.91
+- 105: ACES Rumble: 307.94
+- 106: Highland Howl Jarron Haberer memorial: 301.62
+- 107: Cumberland Kids Open 2025: 289.62
+- 108: Cole Whitford Girls & Beginners Tournament: 263.38
+- 109: Mattoon Beginners Tournament: 257.81
+- 110: AJ Jr Wildcats On the Prowl: 218.65
+- 111: Spartan Beginner Tournament: 216.23
+- 112: Fox Lake Beginners Tournament: 207.78
+- 113: Tri-County Polar Vortex: 193.22
+- 114: Tiger Takedown: 189.07
+- 115: Stillman Valley Beginners Tournament: 175.28
+- 116: QUINCY LITTLE RAIDER SLAM 2026: 167.55
+- 117: Oak Lawn Acorn Rookie Rumble: 156.97
+- 118: Harper Rookie Rumble: 148.20
+- 119: Tots Bash: 107.92
 
 ## Events with most champs
 

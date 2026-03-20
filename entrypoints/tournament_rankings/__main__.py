@@ -298,7 +298,7 @@ def main() -> None:
 
     print("## Events by score")
     print("")
-    for i, credential in enumerate(credentials[:20]):
+    for i, credential in enumerate(credentials):
         print(f"- {i + 1}: {credential.event_name}: {credential.score:.2f}")
 
     print("")
