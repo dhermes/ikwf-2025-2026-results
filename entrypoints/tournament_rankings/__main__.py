@@ -165,6 +165,10 @@ class _TournamentCredentials(_ForbidExtra):
     finalists: int
     placers: int
     qualifiers: int
+    girls_champs: int
+    girls_finalists: int
+    girls_placers: int
+    girls_qualifiers: int
     grade1_record: int
     grade2_record: int
     score: float
@@ -181,10 +185,23 @@ class _TournamentCredentials(_ForbidExtra):
         )
         elite_density = elite_score / self.athlete_count
 
+        girls_elite_score = (
+            self.girls_champs * 12
+            + self.girls_finalists * 7
+            + self.girls_placers * 3
+            + self.girls_qualifiers
+        )
+        girls_elite_density = girls_elite_score / self.athlete_count
+
         depth_score = self.grade2_record * 2 + self.grade1_record
         depth_density = depth_score / self.athlete_count
 
-        raw_score = win_score * 0.4 + elite_density * 50 + depth_density * 25
+        raw_score = (
+            win_score * 0.4
+            + elite_density * 50
+            + girls_elite_density * 20
+            + depth_density * 25
+        )
         size_factor = min(1.0, self.athlete_count / 40)
 
         return raw_score * size_factor
@@ -202,6 +219,10 @@ def _score_tournament(
     finalists = 0
     placers = 0
     qualifiers = 0
+    girls_champs = 0
+    girls_finalists = 0
+    girls_placers = 0
+    girls_qualifiers = 0
     grade1_record = 0
     grade2_record = 0
 
@@ -220,7 +241,13 @@ def _score_tournament(
         if qualifier is None:
             continue
 
-        qualifiers += 1
+        is_girls = qualifier.division.startswith("girls_")
+        boys_delta = 0 if is_girls else 1
+        girls_delta = 1 if is_girls else 0
+
+        qualifiers += boys_delta
+        girls_qualifiers += girls_delta
+
         placement = qualifier.placement_state
         if placement == "":
             continue
@@ -228,12 +255,17 @@ def _score_tournament(
         if placement not in _EXPECTED_PLACES:
             raise ValueError("Unexpected placement", placement)
 
-        placers += 1
+        placers += boys_delta
+        girls_placers += girls_delta
+
         if placement == "1st":
-            champs += 1
-            finalists += 1
+            champs += boys_delta
+            girls_champs += girls_delta
+            finalists += boys_delta
+            girls_finalists += girls_delta
         elif placement == "2nd":
-            finalists += 1
+            finalists += boys_delta
+            girls_finalists += girls_delta
 
     credentials = _TournamentCredentials(
         event_name=event_name,
@@ -244,6 +276,10 @@ def _score_tournament(
         finalists=finalists,
         placers=placers,
         qualifiers=qualifiers,
+        girls_champs=girls_champs,
+        girls_finalists=girls_finalists,
+        girls_placers=girls_placers,
+        girls_qualifiers=girls_qualifiers,
         grade1_record=grade1_record,
         grade2_record=grade2_record,
         score=0.0,
