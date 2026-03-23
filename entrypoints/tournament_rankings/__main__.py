@@ -293,24 +293,30 @@ def _sort_score(credential: _TournamentCredentials) -> tuple[float, str]:
     return -credential.event_score(), credential.event_name
 
 
-def _sort_champs(credential: _TournamentCredentials) -> tuple[int, str]:
-    return -credential.champs, credential.event_name
+def _sort_champs_per_capita(credential: _TournamentCredentials) -> tuple[float, str]:
+    total_champs = credential.champs + credential.girls_champs
+    return -total_champs / credential.athlete_count, credential.event_name
 
 
-def _sort_finalists(credential: _TournamentCredentials) -> tuple[int, str]:
-    return -credential.finalists, credential.event_name
+def _sort_finalists_per_capita(credential: _TournamentCredentials) -> tuple[float, str]:
+    total_finalists = credential.finalists + credential.girls_finalists
+    return -total_finalists / credential.athlete_count, credential.event_name
 
 
-def _sort_placers(credential: _TournamentCredentials) -> tuple[int, str]:
-    return -credential.placers, credential.event_name
+def _sort_placers_per_capita(credential: _TournamentCredentials) -> tuple[float, str]:
+    total_placers = credential.placers + credential.girls_placers
+    return -total_placers / credential.athlete_count, credential.event_name
 
 
-def _sort_qualifiers(credential: _TournamentCredentials) -> tuple[int, str]:
-    return -credential.qualifiers, credential.event_name
+def _sort_qualifiers_per_capita(
+    credential: _TournamentCredentials,
+) -> tuple[float, str]:
+    total_qualifiers = credential.qualifiers + credential.girls_qualifiers
+    return -total_qualifiers / credential.athlete_count, credential.event_name
 
 
-def _sort_wins(credential: _TournamentCredentials) -> tuple[int, str]:
-    return -credential.total_wins, credential.event_name
+def _sort_wins_per_capita(credential: _TournamentCredentials) -> tuple[float, str]:
+    return -credential.total_wins / credential.athlete_count, credential.event_name
 
 
 def main() -> None:
@@ -345,52 +351,61 @@ def main() -> None:
         print(f"- {i + 1}: {credential.event_name}: {credential.score:.2f}")
 
     print("")
-    print("## Events with most champs")
+    print("## Events with most champs per 500 wrestlers")
     print("")
-    credentials.sort(key=_sort_champs)
+    credentials.sort(key=_sort_champs_per_capita)
     for i, credential in enumerate(credentials[:20]):
+        total_champs = credential.champs + credential.girls_champs
+        per_500 = 500 * total_champs / credential.athlete_count
         print(
-            f"- {i + 1}: {credential.event_name}: {credential.champs} "
+            f"- {i + 1}: {credential.event_name}: {per_500:.2f} "
             f"({credential.score_rank}, {credential.score:.2f})"
         )
 
     print("")
-    print("## Events with most finalists")
+    print("## Events with most finalists per 500 wrestlers")
     print("")
-    credentials.sort(key=_sort_finalists)
+    credentials.sort(key=_sort_finalists_per_capita)
     for i, credential in enumerate(credentials[:20]):
+        total_finalists = credential.finalists + credential.girls_finalists
+        per_500 = 500 * total_finalists / credential.athlete_count
         print(
-            f"- {i + 1}: {credential.event_name}: {credential.finalists} "
+            f"- {i + 1}: {credential.event_name}: {per_500:.2f} "
             f"({credential.score_rank}, {credential.score:.2f})"
         )
 
     print("")
-    print("## Events with most placers")
+    print("## Events with most placers per 500 wrestlers")
     print("")
-    credentials.sort(key=_sort_placers)
+    credentials.sort(key=_sort_placers_per_capita)
     for i, credential in enumerate(credentials[:20]):
+        total_placers = credential.placers + credential.girls_placers
+        per_500 = 500 * total_placers / credential.athlete_count
         print(
-            f"- {i + 1}: {credential.event_name}: {credential.placers} "
+            f"- {i + 1}: {credential.event_name}: {per_500:.2f} "
             f"({credential.score_rank}, {credential.score:.2f})"
         )
 
     print("")
-    print("## Events with most qualifiers")
+    print("## Events with most qualifiers per 500 wrestlers")
     print("")
-    credentials.sort(key=_sort_qualifiers)
+    credentials.sort(key=_sort_qualifiers_per_capita)
     for i, credential in enumerate(credentials[:20]):
+        total_qualifiers = credential.qualifiers + credential.girls_qualifiers
+        per_500 = 500 * total_qualifiers / credential.athlete_count
         print(
-            f"- {i + 1}: {credential.event_name}: {credential.qualifiers} "
+            f"- {i + 1}: {credential.event_name}: {per_500:.2f} "
             f"({credential.score_rank}, {credential.score:.2f})"
         )
 
     print("")
-    print("## Events with most wins")
+    print("## Events with most wins per 500 wrestlers")
     print("")
-    credentials.sort(key=_sort_wins)
+    credentials.sort(key=_sort_wins_per_capita)
     for i, credential in enumerate(credentials[:20]):
+        per_500 = 500 * credential.total_wins / credential.athlete_count
         print(
-            f"- {i + 1}: {credential.event_name}: {credential.total_wins} "
+            f"- {i + 1}: {credential.event_name}: {per_500:.2f} "
             f"({credential.score_rank}, {credential.score:.2f})"
         )
 
