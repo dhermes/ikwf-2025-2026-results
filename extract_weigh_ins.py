@@ -163,12 +163,14 @@ def _create_weight_classes(
     if not weights:
         raise NotImplementedError
 
-    w = np.array(sorted(weights))
+    w_full = np.array(sorted(weights))
 
     # Optionally drop extreme heavy outliers
     if drop_top_pct > 0:
-        cutoff_index = int(len(w) * (1 - drop_top_pct))
-        w = w[:cutoff_index]
+        cutoff_index = int(len(w_full) * (1 - drop_top_pct))
+        w = w_full[:cutoff_index]
+    else:
+        w = w_full
 
     # Compute quantile breakpoints
     quantiles = np.linspace(0, 1, num_classes + 1)
@@ -187,12 +189,38 @@ def _create_weight_classes(
         if i == 0:
             low = 0
 
-        count = int(((w > low) & (w <= high)).sum())
+        count = int(((w_full > low) & (w_full <= high)).sum())
 
         classes.append((high, count))
 
     highest = classes[-1][0]
-    excluded_count = int(((w > highest)).sum())
+    excluded_count = int(((w_full > highest)).sum())
+    if excluded_count > 0:
+        classes.append((999, excluded_count))
+
+    return classes
+
+
+def _explain_weight_classes(
+    weights: list[float],
+    actual_classes: tuple[int, ...],
+) -> list[tuple[int, int]]:
+    if not weights:
+        raise NotImplementedError
+
+    w_full = np.array(sorted(weights))
+
+    classes: list[tuple[int, int]] = []
+    low = 0
+    for high in actual_classes:
+        count = int(((w_full > low) & (w_full <= high)).sum())
+        classes.append((high, count))
+
+        # Prepare for next iteration
+        low = high
+
+    highest = classes[-1][0]
+    excluded_count = int(((w_full > highest)).sum())
     if excluded_count > 0:
         classes.append((999, excluded_count))
 
@@ -279,6 +307,21 @@ def main() -> None:
         weights = one_weight[division]
         desired_count = _DESIRED_COUNTS[division]
         weight_classes = _create_weight_classes(weights, desired_count)
+        print(f"{division}:")
+        for weight, athlete_count in weight_classes:
+            if weight == 999:
+                print(f"- {athlete_count} athletes too heavy")
+            else:
+                print(f"- {weight} lbs ({athlete_count} athletes)")
+        print("")
+
+    print("-" * 60)
+
+    for division in _SORTED_DIVISIONS:
+        weights = one_weight[division]
+        actual_classes = bracket_util.weights_for_division(division)
+        weight_classes = _explain_weight_classes(weights, actual_classes)
+
         print(f"{division}:")
         for weight, athlete_count in weight_classes:
             if weight == 999:
