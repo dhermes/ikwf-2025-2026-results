@@ -194,7 +194,7 @@ def _create_weight_classes(
         classes.append((high, count))
 
     highest = classes[-1][0]
-    excluded_count = int(((w_full > highest)).sum())
+    excluded_count = int((w_full > highest).sum())
     if excluded_count > 0:
         classes.append((999, excluded_count))
 
@@ -220,7 +220,7 @@ def _explain_weight_classes(
         low = high
 
     highest = classes[-1][0]
-    excluded_count = int(((w_full > highest)).sum())
+    excluded_count = int((w_full > highest).sum())
     if excluded_count > 0:
         classes.append((999, excluded_count))
 
@@ -298,37 +298,47 @@ def main() -> None:
             )
             writer.writerow(row)
 
-    # 21109 out of 74258 (28.4%) weigh ins still missing gender
+    lines = ["## Notes", ""]
     missing_percent = 100 * missing_count / total_count
-    print(f"Missing: {missing_count} / {total_count} ({missing_percent:.1f}%)")
+    lines.append(
+        f"Of the {total_count:,} weigh ins we have, {missing_count:,} of them "
+        f"({missing_percent:.1f}%) are not assignable to a gender. (These "
+        "are all likely to be boys though.)"
+    )
+    lines.extend(["", "## Computed weight classes", ""])
 
     one_weight = _median_from_aggregate(by_division)
     for division in _SORTED_DIVISIONS:
         weights = one_weight[division]
         desired_count = _DESIRED_COUNTS[division]
         weight_classes = _create_weight_classes(weights, desired_count)
-        print(f"{division}:")
+        division_str = projection.display_division(division)
+        lines.extend([f"### {division_str}:", "", "| Weight | Athletes |", "| - | - |"])
         for weight, athlete_count in weight_classes:
             if weight == 999:
-                print(f"- {athlete_count} athletes too heavy")
+                lines.append(f"| TOO HEAVY | {athlete_count} |")
             else:
-                print(f"- {weight} lbs ({athlete_count} athletes)")
-        print("")
+                lines.append(f"| {weight} | {athlete_count} |")
+        lines.append("")
 
-    print("-" * 60)
+    lines.extend(["## Actual weight classes", ""])
 
     for division in _SORTED_DIVISIONS:
         weights = one_weight[division]
         actual_classes = bracket_util.weights_for_division(division)
         weight_classes = _explain_weight_classes(weights, actual_classes)
 
-        print(f"{division}:")
+        division_str = projection.display_division(division)
+        lines.extend([f"### {division_str}:", "", "| Weight | Athletes |", "| - | - |"])
         for weight, athlete_count in weight_classes:
             if weight == 999:
-                print(f"- {athlete_count} athletes too heavy")
+                lines.append(f"| TOO HEAVY | {athlete_count} |")
             else:
-                print(f"- {weight} lbs ({athlete_count} athletes)")
-        print("")
+                lines.append(f"| {weight} | {athlete_count} |")
+        lines.append("")
+
+    with open(_HERE / "WEIGHT-CLASSES.md", "w") as file_obj:
+        file_obj.write("\n".join(lines))
 
 
 if __name__ == "__main__":

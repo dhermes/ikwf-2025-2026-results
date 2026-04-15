@@ -1,284 +1,316 @@
 ## Notes
 
-Of the 74,528 weigh ins we have, 21,109 of them (28.4%) are not assignable to a
+Of the 74,258 weigh ins we have, 21,109 of them (28.4%) are not assignable to a
 gender. (These are all likely to be boys though.)
 
 ## Computed weight classes
 
-### Bantam
+### Bantam:
 
-- 48 lbs (108 athletes)
-- 51 lbs (118 athletes)
-- 53 lbs (95 athletes)
-- 55 lbs (117 athletes)
-- 57 lbs (131 athletes)
-- 59 lbs (117 athletes)
-- 61 lbs (100 athletes)
-- 64 lbs (133 athletes)
-- 66 lbs (98 athletes)
-- 70 lbs (120 athletes)
-- 75 lbs (102 athletes)
-- 83 lbs (124 athletes)
-- 106 lbs (105 athletes)
-- 30 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 48        | 108      |
+| 51        | 118      |
+| 53        | 95       |
+| 55        | 117      |
+| 57        | 131      |
+| 59        | 117      |
+| 61        | 100      |
+| 64        | 133      |
+| 66        | 98       |
+| 70        | 120      |
+| 75        | 102      |
+| 83        | 124      |
+| 106       | 105      |
+| TOO HEAVY | 30       |
 
-### Intermediate
+### Intermediate:
 
-- 58 lbs (113 athletes)
-- 62 lbs (131 athletes)
-- 65 lbs (139 athletes)
-- 68 lbs (133 athletes)
-- 70 lbs (96 athletes)
-- 73 lbs (134 athletes)
-- 77 lbs (155 athletes)
-- 80 lbs (121 athletes)
-- 84 lbs (122 athletes)
-- 89 lbs (120 athletes)
-- 96 lbs (114 athletes)
-- 109 lbs (133 athletes)
-- 138 lbs (127 athletes)
-- 33 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 58        | 113      |
+| 62        | 131      |
+| 65        | 139      |
+| 68        | 133      |
+| 70        | 96       |
+| 73        | 134      |
+| 77        | 155      |
+| 80        | 121      |
+| 84        | 122      |
+| 89        | 120      |
+| 96        | 114      |
+| 109       | 133      |
+| 138       | 127      |
+| TOO HEAVY | 33       |
 
-### Novice
+### Novice:
 
-- 71 lbs (88 athletes)
-- 75 lbs (78 athletes)
-- 79 lbs (101 athletes)
-- 81 lbs (55 athletes)
-- 85 lbs (80 athletes)
-- 90 lbs (100 athletes)
-- 93 lbs (70 athletes)
-- 98 lbs (96 athletes)
-- 103 lbs (70 athletes)
-- 108 lbs (89 athletes)
-- 114 lbs (81 athletes)
-- 121 lbs (75 athletes)
-- 129 lbs (88 athletes)
-- 146 lbs (80 athletes)
-- 174 lbs (81 athletes)
-- 26 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 71        | 88       |
+| 75        | 78       |
+| 79        | 101      |
+| 81        | 55       |
+| 85        | 80       |
+| 90        | 100      |
+| 93        | 70       |
+| 98        | 96       |
+| 103       | 70       |
+| 108       | 89       |
+| 114       | 81       |
+| 121       | 75       |
+| 129       | 88       |
+| 146       | 80       |
+| 174       | 81       |
+| TOO HEAVY | 26       |
 
-### Senior
+### Senior:
 
-- 83 lbs (46 athletes)
-- 90 lbs (53 athletes)
-- 96 lbs (47 athletes)
-- 101 lbs (48 athletes)
-- 105 lbs (45 athletes)
-- 109 lbs (45 athletes)
-- 114 lbs (58 athletes)
-- 118 lbs (45 athletes)
-- 124 lbs (48 athletes)
-- 127 lbs (35 athletes)
-- 133 lbs (52 athletes)
-- 138 lbs (58 athletes)
-- 143 lbs (37 athletes)
-- 152 lbs (42 athletes)
-- 164 lbs (56 athletes)
-- 185 lbs (46 athletes)
-- 213 lbs (47 athletes)
-- 18 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 83        | 46       |
+| 90        | 53       |
+| 96        | 47       |
+| 101       | 48       |
+| 105       | 45       |
+| 109       | 45       |
+| 114       | 58       |
+| 118       | 45       |
+| 124       | 48       |
+| 127       | 35       |
+| 133       | 52       |
+| 138       | 58       |
+| 143       | 37       |
+| 152       | 42       |
+| 164       | 56       |
+| 185       | 46       |
+| 213       | 47       |
+| TOO HEAVY | 18       |
 
-### Girls Bantam
+### Girls Bantam:
 
-- 49 lbs (47 athletes)
-- 52 lbs (42 athletes)
-- 55 lbs (46 athletes)
-- 59 lbs (52 athletes)
-- 63 lbs (54 athletes)
-- 65 lbs (34 athletes)
-- 70 lbs (55 athletes)
-- 81 lbs (44 athletes)
-- 102 lbs (47 athletes)
-- 10 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 49        | 47       |
+| 52        | 42       |
+| 55        | 46       |
+| 59        | 52       |
+| 63        | 54       |
+| 65        | 34       |
+| 70        | 55       |
+| 81        | 44       |
+| 102       | 47       |
+| TOO HEAVY | 10       |
 
-### Girls Intermediate
+### Girls Intermediate:
 
-- 58 lbs (45 athletes)
-- 63 lbs (46 athletes)
-- 67 lbs (49 athletes)
-- 70 lbs (39 athletes)
-- 73 lbs (45 athletes)
-- 77 lbs (44 athletes)
-- 81 lbs (38 athletes)
-- 86 lbs (48 athletes)
-- 94 lbs (44 athletes)
-- 105 lbs (42 athletes)
-- 131 lbs (43 athletes)
-- 11 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 58        | 45       |
+| 63        | 46       |
+| 67        | 49       |
+| 70        | 39       |
+| 73        | 45       |
+| 77        | 44       |
+| 81        | 38       |
+| 86        | 48       |
+| 94        | 44       |
+| 105       | 42       |
+| 131       | 43       |
+| TOO HEAVY | 11       |
 
-### Girls Novice
+### Girls Novice:
 
-- 72 lbs (36 athletes)
-- 79 lbs (26 athletes)
-- 83 lbs (30 athletes)
-- 87 lbs (29 athletes)
-- 92 lbs (37 athletes)
-- 96 lbs (30 athletes)
-- 100 lbs (32 athletes)
-- 104 lbs (19 athletes)
-- 110 lbs (35 athletes)
-- 117 lbs (33 athletes)
-- 124 lbs (33 athletes)
-- 133 lbs (29 athletes)
-- 167 lbs (30 athletes)
-- 10 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 72        | 36       |
+| 79        | 26       |
+| 83        | 30       |
+| 87        | 29       |
+| 92        | 37       |
+| 96        | 30       |
+| 100       | 32       |
+| 104       | 19       |
+| 110       | 35       |
+| 117       | 33       |
+| 124       | 33       |
+| 133       | 29       |
+| 167       | 30       |
+| TOO HEAVY | 10       |
 
-### Girls Senior
+### Girls Senior:
 
-- 89 lbs (22 athletes)
-- 95 lbs (24 athletes)
-- 99 lbs (23 athletes)
-- 103 lbs (21 athletes)
-- 108 lbs (23 athletes)
-- 110 lbs (23 athletes)
-- 113 lbs (20 athletes)
-- 116 lbs (21 athletes)
-- 119 lbs (20 athletes)
-- 124 lbs (27 athletes)
-- 129 lbs (28 athletes)
-- 131 lbs (13 athletes)
-- 135 lbs (24 athletes)
-- 144 lbs (24 athletes)
-- 160 lbs (20 athletes)
-- 193 lbs (23 athletes)
-- 8 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 89        | 22       |
+| 95        | 24       |
+| 99        | 23       |
+| 103       | 21       |
+| 108       | 23       |
+| 110       | 23       |
+| 113       | 20       |
+| 116       | 21       |
+| 119       | 20       |
+| 124       | 27       |
+| 129       | 28       |
+| 131       | 13       |
+| 135       | 24       |
+| 144       | 24       |
+| 160       | 20       |
+| 193       | 23       |
+| TOO HEAVY | 8        |
 
 ## Actual weight classes
 
-### Bantam
+### Bantam:
 
-- 43 lbs (16 athletes)
-- 46 lbs (42 athletes)
-- 49 lbs (84 athletes)
-- 52 lbs (136 athletes)
-- 55 lbs (160 athletes)
-- 58 lbs (198 athletes)
-- 62 lbs (196 athletes)
-- 66 lbs (185 athletes)
-- 70 lbs (120 athletes)
-- 76 lbs (117 athletes)
-- 84 lbs (116 athletes)
-- 95 lbs (65 athletes)
-- 120 lbs (56 athletes)
-- 7 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 43        | 16       |
+| 46        | 42       |
+| 49        | 84       |
+| 52        | 136      |
+| 55        | 160      |
+| 58        | 198      |
+| 62        | 196      |
+| 66        | 185      |
+| 70        | 120      |
+| 76        | 117      |
+| 84        | 116      |
+| 95        | 65       |
+| 120       | 56       |
+| TOO HEAVY | 7        |
 
-### Intermediate
+### Intermediate:
 
-- 55 lbs (58 athletes)
-- 59 lbs (90 athletes)
-- 64 lbs (192 athletes)
-- 69 lbs (227 athletes)
-- 74 lbs (220 athletes)
-- 79 lbs (202 athletes)
-- 84 lbs (155 athletes)
-- 90 lbs (140 athletes)
-- 98 lbs (122 athletes)
-- 108 lbs (99 athletes)
-- 122 lbs (93 athletes)
-- 148 lbs (59 athletes)
-- 177 lbs (13 athletes)
-- 1 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 55        | 58       |
+| 59        | 90       |
+| 64        | 192      |
+| 69        | 227      |
+| 74        | 220      |
+| 79        | 202      |
+| 84        | 155      |
+| 90        | 140      |
+| 98        | 122      |
+| 108       | 99       |
+| 122       | 93       |
+| 148       | 59       |
+| 177       | 13       |
+| TOO HEAVY | 1        |
 
-### Novice
+### Novice:
 
-- 60 lbs (4 athletes)
-- 64 lbs (14 athletes)
-- 69 lbs (42 athletes)
-- 74 lbs (88 athletes)
-- 80 lbs (150 athletes)
-- 86 lbs (132 athletes)
-- 93 lbs (142 athletes)
-- 100 lbs (138 athletes)
-- 108 lbs (117 athletes)
-- 116 lbs (118 athletes)
-- 125 lbs (97 athletes)
-- 134 lbs (66 athletes)
-- 154 lbs (83 athletes)
-- 178 lbs (46 athletes)
-- 215 lbs (19 athletes)
-- 2 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 60        | 4        |
+| 64        | 14       |
+| 69        | 42       |
+| 74        | 88       |
+| 80        | 150      |
+| 86        | 132      |
+| 93        | 142      |
+| 100       | 138      |
+| 108       | 117      |
+| 116       | 118      |
+| 125       | 97       |
+| 134       | 66       |
+| 154       | 83       |
+| 178       | 46       |
+| 215       | 19       |
+| TOO HEAVY | 2        |
 
-### Senior
+### Senior:
 
-- 74 lbs (10 athletes)
-- 79 lbs (14 athletes)
-- 84 lbs (29 athletes)
-- 90 lbs (46 athletes)
-- 96 lbs (47 athletes)
-- 103 lbs (69 athletes)
-- 110 lbs (86 athletes)
-- 118 lbs (86 athletes)
-- 126 lbs (74 athletes)
-- 135 lbs (95 athletes)
-- 144 lbs (69 athletes)
-- 154 lbs (56 athletes)
-- 164 lbs (34 athletes)
-- 176 lbs (27 athletes)
-- 188 lbs (30 athletes)
-- 215 lbs (43 athletes)
-- 275 lbs (11 athletes)
+| Weight | Athletes |
+| ------ | -------- |
+| 74     | 10       |
+| 79     | 14       |
+| 84     | 29       |
+| 90     | 46       |
+| 96     | 47       |
+| 103    | 69       |
+| 110    | 86       |
+| 118    | 86       |
+| 126    | 74       |
+| 135    | 95       |
+| 144    | 69       |
+| 154    | 56       |
+| 164    | 34       |
+| 176    | 27       |
+| 188    | 30       |
+| 215    | 43       |
+| 275    | 11       |
 
-### Girls Bantam
+### Girls Bantam:
 
-- 45 lbs (12 athletes)
-- 50 lbs (52 athletes)
-- 55 lbs (71 athletes)
-- 61 lbs (84 athletes)
-- 67 lbs (87 athletes)
-- 74 lbs (48 athletes)
-- 85 lbs (39 athletes)
-- 95 lbs (20 athletes)
-- 115 lbs (17 athletes)
-- 1 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 45        | 12       |
+| 50        | 52       |
+| 55        | 71       |
+| 61        | 84       |
+| 67        | 87       |
+| 74        | 48       |
+| 85        | 39       |
+| 95        | 20       |
+| 115       | 17       |
+| TOO HEAVY | 1        |
 
-### Girls Intermediate
+### Girls Intermediate:
 
-- 53 lbs (18 athletes)
-- 57 lbs (19 athletes)
-- 62 lbs (43 athletes)
-- 67 lbs (60 athletes)
-- 72 lbs (76 athletes)
-- 77 lbs (52 athletes)
-- 82 lbs (47 athletes)
-- 88 lbs (52 athletes)
-- 95 lbs (38 athletes)
-- 115 lbs (62 athletes)
-- 135 lbs (21 athletes)
-- 6 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 53        | 18       |
+| 57        | 19       |
+| 62        | 43       |
+| 67        | 60       |
+| 72        | 76       |
+| 77        | 52       |
+| 82        | 47       |
+| 88        | 52       |
+| 95        | 38       |
+| 115       | 62       |
+| 135       | 21       |
+| TOO HEAVY | 6        |
 
-### Girls Novice
+### Girls Novice:
 
-- 63 lbs (5 athletes)
-- 68 lbs (12 athletes)
-- 74 lbs (26 athletes)
-- 80 lbs (23 athletes)
-- 85 lbs (41 athletes)
-- 90 lbs (35 athletes)
-- 96 lbs (46 athletes)
-- 102 lbs (44 athletes)
-- 108 lbs (31 athletes)
-- 115 lbs (37 athletes)
-- 125 lbs (47 athletes)
-- 140 lbs (33 athletes)
-- 185 lbs (24 athletes)
-- 5 athletes too heavy
+| Weight    | Athletes |
+| --------- | -------- |
+| 63        | 5        |
+| 68        | 12       |
+| 74        | 26       |
+| 80        | 23       |
+| 85        | 41       |
+| 90        | 35       |
+| 96        | 46       |
+| 102       | 44       |
+| 108       | 31       |
+| 115       | 37       |
+| 125       | 47       |
+| 140       | 33       |
+| 185       | 24       |
+| TOO HEAVY | 5        |
 
-### Girls Senior
+### Girls Senior:
 
-- 75 lbs (1 athletes)
-- 80 lbs (3 athletes)
-- 85 lbs (6 athletes)
-- 90 lbs (15 athletes)
-- 95 lbs (21 athletes)
-- 100 lbs (28 athletes)
-- 105 lbs (28 athletes)
-- 110 lbs (34 athletes)
-- 115 lbs (36 athletes)
-- 120 lbs (31 athletes)
-- 125 lbs (26 athletes)
-- 130 lbs (29 athletes)
-- 135 lbs (31 athletes)
-- 145 lbs (28 athletes)
-- 185 lbs (38 athletes)
-- 240 lbs (9 athletes)
+| Weight | Athletes |
+| ------ | -------- |
+| 75     | 1        |
+| 80     | 3        |
+| 85     | 6        |
+| 90     | 15       |
+| 95     | 21       |
+| 100    | 28       |
+| 105    | 28       |
+| 110    | 34       |
+| 115    | 36       |
+| 120    | 31       |
+| 125    | 26       |
+| 130    | 29       |
+| 135    | 31       |
+| 145    | 28       |
+| 185    | 38       |
+| 240    | 9        |
