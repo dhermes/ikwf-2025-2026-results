@@ -33,6 +33,7 @@ _SORTED_DIVISIONS = [
     "girls_novice",
     "girls_senior",
 ]
+_TOO_HEAVY = 999
 
 
 class _Mapped(pydantic.RootModel[dict[str, _Gender]]):
@@ -195,8 +196,7 @@ def _create_weight_classes(
 
     highest = classes[-1][0]
     excluded_count = int((w_full > highest).sum())
-    if excluded_count > 0:
-        classes.append((999, excluded_count))
+    classes.append((_TOO_HEAVY, excluded_count))
 
     return classes
 
@@ -221,8 +221,7 @@ def _explain_weight_classes(
 
     highest = classes[-1][0]
     excluded_count = int((w_full > highest).sum())
-    if excluded_count > 0:
-        classes.append((999, excluded_count))
+    classes.append((_TOO_HEAVY, excluded_count))
 
     return classes
 
@@ -311,30 +310,42 @@ def main() -> None:
     for division in _SORTED_DIVISIONS:
         weights = one_weight[division]
         desired_count = _DESIRED_COUNTS[division]
-        weight_classes = _create_weight_classes(weights, desired_count)
-        division_str = projection.display_division(division)
-        lines.extend([f"### {division_str}", "", "| Weight | Athletes |", "| - | - |"])
-        for weight, athlete_count in weight_classes:
-            if weight == 999:
-                lines.append(f"| TOO HEAVY | {athlete_count} |")
-            else:
-                lines.append(f"| {weight} | {athlete_count} |")
-        lines.append("")
+        proposed_weight_classes = _create_weight_classes(weights, desired_count)
 
-    lines.extend(["## Actual weight classes", ""])
-
-    for division in _SORTED_DIVISIONS:
-        weights = one_weight[division]
         actual_classes = bracket_util.weights_for_division(division)
-        weight_classes = _explain_weight_classes(weights, actual_classes)
+        actual_weight_classes = _explain_weight_classes(weights, actual_classes)
 
         division_str = projection.display_division(division)
-        lines.extend([f"### {division_str}", "", "| Weight | Athletes |", "| - | - |"])
-        for weight, athlete_count in weight_classes:
-            if weight == 999:
-                lines.append(f"| TOO HEAVY | {athlete_count} |")
+        lines.extend(
+            [
+                f"### {division_str}",
+                "",
+                "| Proposed weight | Athletes | Actual weight | Athletes",
+                "| - | - | - | - |",
+            ]
+        )
+
+        if len(proposed_weight_classes) != len(actual_weight_classes):
+            raise NotImplementedError
+
+        combined = zip(proposed_weight_classes, actual_weight_classes, strict=True)
+        for proposed, actual in combined:
+            proposed_weight, proposed_athlete_count = proposed
+            actual_weight, actual_athlete_count = actual
+            if proposed_weight == _TOO_HEAVY:
+                if actual_weight != _TOO_HEAVY:
+                    raise NotImplementedError
+                lines.append(
+                    f"| TOO HEAVY | {proposed_athlete_count} | "
+                    f"TOO HEAVY | {actual_athlete_count} |"
+                )
             else:
-                lines.append(f"| {weight} | {athlete_count} |")
+                if actual_weight == _TOO_HEAVY:
+                    raise NotImplementedError
+                lines.append(
+                    f"| {proposed_weight} | {proposed_athlete_count} | "
+                    f"{actual_weight} | {actual_athlete_count} |"
+                )
         lines.append("")
 
     with open(_HERE / "WEIGHT-CLASSES.md", "w") as file_obj:
