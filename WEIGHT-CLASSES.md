@@ -5,7 +5,7 @@ gender. (These are all likely to be boys though.)
 
 ## Computed weight classes
 
-### Bantam:
+### Bantam
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -24,7 +24,7 @@ gender. (These are all likely to be boys though.)
 | 106       | 105      |
 | TOO HEAVY | 30       |
 
-### Intermediate:
+### Intermediate
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -43,7 +43,7 @@ gender. (These are all likely to be boys though.)
 | 138       | 127      |
 | TOO HEAVY | 33       |
 
-### Novice:
+### Novice
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -64,7 +64,7 @@ gender. (These are all likely to be boys though.)
 | 174       | 81       |
 | TOO HEAVY | 26       |
 
-### Senior:
+### Senior
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -87,7 +87,7 @@ gender. (These are all likely to be boys though.)
 | 213       | 47       |
 | TOO HEAVY | 18       |
 
-### Girls Bantam:
+### Girls Bantam
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -102,7 +102,7 @@ gender. (These are all likely to be boys though.)
 | 102       | 47       |
 | TOO HEAVY | 10       |
 
-### Girls Intermediate:
+### Girls Intermediate
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -119,7 +119,7 @@ gender. (These are all likely to be boys though.)
 | 131       | 43       |
 | TOO HEAVY | 11       |
 
-### Girls Novice:
+### Girls Novice
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -138,7 +138,7 @@ gender. (These are all likely to be boys though.)
 | 167       | 30       |
 | TOO HEAVY | 10       |
 
-### Girls Senior:
+### Girls Senior
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -162,7 +162,7 @@ gender. (These are all likely to be boys though.)
 
 ## Actual weight classes
 
-### Bantam:
+### Bantam
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -181,7 +181,7 @@ gender. (These are all likely to be boys though.)
 | 120       | 56       |
 | TOO HEAVY | 7        |
 
-### Intermediate:
+### Intermediate
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -200,7 +200,7 @@ gender. (These are all likely to be boys though.)
 | 177       | 13       |
 | TOO HEAVY | 1        |
 
-### Novice:
+### Novice
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -221,7 +221,7 @@ gender. (These are all likely to be boys though.)
 | 215       | 19       |
 | TOO HEAVY | 2        |
 
-### Senior:
+### Senior
 
 | Weight | Athletes |
 | ------ | -------- |
@@ -243,7 +243,7 @@ gender. (These are all likely to be boys though.)
 | 215    | 43       |
 | 275    | 11       |
 
-### Girls Bantam:
+### Girls Bantam
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -258,7 +258,7 @@ gender. (These are all likely to be boys though.)
 | 115       | 17       |
 | TOO HEAVY | 1        |
 
-### Girls Intermediate:
+### Girls Intermediate
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -275,7 +275,7 @@ gender. (These are all likely to be boys though.)
 | 135       | 21       |
 | TOO HEAVY | 6        |
 
-### Girls Novice:
+### Girls Novice
 
 | Weight    | Athletes |
 | --------- | -------- |
@@ -294,7 +294,7 @@ gender. (These are all likely to be boys though.)
 | 185       | 24       |
 | TOO HEAVY | 5        |
 
-### Girls Senior:
+### Girls Senior
 
 | Weight | Athletes |
 | ------ | -------- |

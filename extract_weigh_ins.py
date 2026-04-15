@@ -313,7 +313,7 @@ def main() -> None:
         desired_count = _DESIRED_COUNTS[division]
         weight_classes = _create_weight_classes(weights, desired_count)
         division_str = projection.display_division(division)
-        lines.extend([f"### {division_str}:", "", "| Weight | Athletes |", "| - | - |"])
+        lines.extend([f"### {division_str}", "", "| Weight | Athletes |", "| - | - |"])
         for weight, athlete_count in weight_classes:
             if weight == 999:
                 lines.append(f"| TOO HEAVY | {athlete_count} |")
@@ -329,7 +329,7 @@ def main() -> None:
         weight_classes = _explain_weight_classes(weights, actual_classes)
 
         division_str = projection.display_division(division)
-        lines.extend([f"### {division_str}:", "", "| Weight | Athletes |", "| - | - |"])
+        lines.extend([f"### {division_str}", "", "| Weight | Athletes |", "| - | - |"])
         for weight, athlete_count in weight_classes:
             if weight == 999:
                 lines.append(f"| TOO HEAVY | {athlete_count} |")
