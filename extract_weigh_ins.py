@@ -1,6 +1,5 @@
 import csv
 import pathlib
-import statistics
 from typing import Literal
 
 import numpy as np
@@ -138,8 +137,38 @@ def _add_row_to_aggregate(
     by_division[division][usaw_number].append(weight)
 
 
+def _get_projected_weight(
+    weigh_ins: list[float], decay: float = 0.85, mad_k: float = 2.5
+) -> float | None:
+    weights = list(weigh_ins)
+    if not weights:
+        return None
+
+    # --- Robust outlier filtering (MAD: Median Absolute Deviation) ---
+    median = sorted(weights)[len(weights) // 2]
+    abs_devs = [abs(weight - median) for weight in weights]
+    mad = sorted(abs_devs)[len(abs_devs) // 2]
+
+    if mad > 0:
+        filtered = [weight for weight in weights if abs(weight - median) <= mad_k * mad]
+    else:
+        filtered = weights  # all same value
+
+    # --- Recency weighting ---
+    n = len(filtered)
+    recency_weights = [decay ** (n - i - 1) for i in range(n)]
+
+    weighted_sum = sum(
+        weight * recent
+        for weight, recent in zip(filtered, recency_weights, strict=True)
+    )
+    weight_total = sum(recency_weights)
+
+    return weighted_sum / weight_total
+
+
 def _athlete_weight_guesstimate(weigh_ins: list[float]) -> float:
-    return statistics.median(weigh_ins)
+    return _get_projected_weight(weigh_ins)
 
 
 def _median_from_aggregate(
