@@ -188,7 +188,7 @@ def _median_from_aggregate(
 def _create_weight_classes(
     weights: list[float],
     num_classes: int,
-    drop_top_pct: float = 0.02,  # drop top 2% as outliers
+    drop_top_pct: float = 0.01,  # drop top 1% as outliers
 ) -> list[tuple[int, int]]:
     if not weights:
         raise NotImplementedError
