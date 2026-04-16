@@ -188,40 +188,52 @@ def _median_from_aggregate(
 def _create_weight_classes(
     weights: list[float],
     num_classes: int,
-    drop_top_pct: float = 0.01,  # drop top 1% as outliers
+    drop_top_pct: float = 0.01,
 ) -> list[tuple[int, int]]:
     if not weights:
-        raise NotImplementedError
+        raise ValueError("No weights provided")
 
     w_full = np.array(sorted(weights))
 
-    # Optionally drop extreme heavy outliers
+    # Drop extreme heavy outliers
     if drop_top_pct > 0:
         cutoff_index = int(len(w_full) * (1 - drop_top_pct))
         w = w_full[:cutoff_index]
     else:
         w = w_full
 
-    # Compute quantile breakpoints
-    quantiles = np.linspace(0, 1, num_classes + 1)
-    edges = np.quantile(w, quantiles)
+    n = len(w)
+    if n == 0:
+        raise ValueError("No weights left after filtering")
 
-    # Build class ranges
     classes: list[tuple[int, int]] = []
+    start_idx = 0
+
     for i in range(num_classes):
-        low_exact = edges[i]
-        high_exact = edges[i + 1]
+        if i == num_classes - 1:
+            end_idx = n - 1
+        else:
+            # target split index
+            target = int(round((i + 1) * n / num_classes))
+            target = min(target, n - 1)
 
-        # Round for cleaner class boundaries (optional)
-        low = int(round(low_exact))
-        high = int(round(high_exact))
+            # move forward to avoid splitting identical weights
+            end_idx = target
+            while end_idx < n - 1 and w[end_idx] == w[end_idx + 1]:
+                end_idx += 1
 
-        if i == 0:
-            low = 0
+        high = int(w[end_idx])
 
+        low = 0 if i == 0 else int(w[start_idx - 1])
+
+        # count using full dataset
         count = int(((w_full > low) & (w_full <= high)).sum())
 
         classes.append((high, count))
+
+        start_idx = end_idx + 1
+        if start_idx >= n:
+            break
 
     highest = classes[-1][0]
     excluded_count = int((w_full > highest).sum())
