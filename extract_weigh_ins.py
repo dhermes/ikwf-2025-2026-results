@@ -107,7 +107,7 @@ def _determine_division(
 ) -> bracket_util.Division | None:
     if gender is None:
         return None
-    if ikwf_age in (4, 5, 6):
+    if ikwf_age in (3, 4, 5, 6, 15):
         return
 
     if ikwf_age in (7, 8):
@@ -270,7 +270,6 @@ def main() -> None:
             _merge_key(weigh_ins, key, value)
 
     total_count = 0
-    missing_count = 0
 
     by_division: dict[bracket_util.Division, dict[str, list[float]]] = {}
     with open(_HERE / "extracted-weigh-ins.csv", "w") as file_obj:
@@ -285,7 +284,7 @@ def main() -> None:
 
             total_count += 1
             if gender is None:
-                missing_count += 1
+                raise NotImplementedError
 
             row = (
                 event_name,
@@ -298,12 +297,7 @@ def main() -> None:
             writer.writerow(row)
 
     lines = ["## Notes", ""]
-    missing_percent = 100 * missing_count / total_count
-    lines.append(
-        f"Of the {total_count:,} weigh ins we have, {missing_count:,} of them "
-        f"({missing_percent:.1f}%) are not assignable to a gender. (These "
-        "are all likely to be boys though.)"
-    )
+    lines.append(f"We have {total_count:,} weigh ins.")
     lines.extend(["", "## Computed weight classes", ""])
 
     one_weight = _median_from_aggregate(by_division)
