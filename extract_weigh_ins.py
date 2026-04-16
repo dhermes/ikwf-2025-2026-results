@@ -12,6 +12,7 @@ _HERE = pathlib.Path(__file__).resolve().parent
 _Key = tuple[str, str, str, int]
 
 _Gender = Literal["M", "F"]
+_TOO_LIGHT_FRACTION = 0.15  # Can't be 15% below weight class
 _DESIRED_COUNTS = {
     "bantam": 13,
     "intermediate": 13,
@@ -32,6 +33,7 @@ _SORTED_DIVISIONS = [
     "girls_novice",
     "girls_senior",
 ]
+_TOO_LIGHT = 888
 _TOO_HEAVY = 999
 
 
@@ -239,6 +241,16 @@ def _create_weight_classes(
     excluded_count = int((w_full > highest).sum())
     classes.append((_TOO_HEAVY, excluded_count))
 
+    lowest_weight, lowest_count = classes[0]
+    too_low = lowest_weight * (1 - _TOO_LIGHT_FRACTION)
+    too_low_count = int((w_full < too_low).sum())
+    remaining_low = lowest_count - too_low_count
+    if remaining_low <= 0:
+        raise NotImplementedError
+
+    classes[0] = lowest_weight, remaining_low
+    classes = [(_TOO_LIGHT, too_low_count)] + classes
+
     return classes
 
 
@@ -263,6 +275,16 @@ def _explain_weight_classes(
     highest = classes[-1][0]
     excluded_count = int((w_full > highest).sum())
     classes.append((_TOO_HEAVY, excluded_count))
+
+    lowest_weight, lowest_count = classes[0]
+    too_low = lowest_weight * (1 - _TOO_LIGHT_FRACTION)
+    too_low_count = int((w_full < too_low).sum())
+    remaining_low = lowest_count - too_low_count
+    if remaining_low <= 0:
+        raise NotImplementedError
+
+    classes[0] = lowest_weight, remaining_low
+    classes = [(_TOO_LIGHT, too_low_count)] + classes
 
     return classes
 
@@ -338,7 +360,12 @@ def main() -> None:
             writer.writerow(row)
 
     lines = ["## Notes", ""]
-    lines.append(f"We have {total_count:,} weigh ins.")
+    lines.append(f"- We have {total_count:,} weigh ins")
+    too_light_percent = _TOO_LIGHT_FRACTION * 100
+    lines.append(
+        "- An athlete is considered too light if "
+        f"{too_light_percent:.1f}% below the lowest weight"
+    )
     lines.extend(["", "## Computed weight classes", ""])
 
     one_weight = _median_from_aggregate(by_division)
@@ -367,7 +394,19 @@ def main() -> None:
         for proposed, actual in combined:
             proposed_weight, proposed_athlete_count = proposed
             actual_weight, actual_athlete_count = actual
-            if proposed_weight == _TOO_HEAVY:
+            if proposed_weight == _TOO_LIGHT:
+                if actual_weight != _TOO_LIGHT:
+                    raise NotImplementedError
+
+                proposed_lowest, _ = proposed_weight_classes[1]
+                actual_lowest, _ = actual_weight_classes[1]
+                proposed_bar = proposed_lowest * (1 - _TOO_LIGHT_FRACTION)
+                actual_bar = actual_lowest * (1 - _TOO_LIGHT_FRACTION)
+                lines.append(
+                    f"| TOO LIGHT ({proposed_bar:.1f}) | {proposed_athlete_count} | "
+                    f"TOO LIGHT ({actual_bar:.1f}) | {actual_athlete_count} |"
+                )
+            elif proposed_weight == _TOO_HEAVY:
                 if actual_weight != _TOO_HEAVY:
                     raise NotImplementedError
                 lines.append(
@@ -375,7 +414,7 @@ def main() -> None:
                     f"TOO HEAVY | {actual_athlete_count} |"
                 )
             else:
-                if actual_weight == _TOO_HEAVY:
+                if actual_weight in (_TOO_LIGHT, _TOO_HEAVY):
                     raise NotImplementedError
                 lines.append(
                     f"| {proposed_weight} | {proposed_athlete_count} | "
