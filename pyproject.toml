@@ -5,11 +5,13 @@ requires-python = "==3.14.2"
 dependencies = [
     "beautifulsoup4",
     "ipython",
+    "matplotlib",
     "numpy",
     "openpyxl",
     "pydantic",
     "requests",
     "ruff",
+    "seaborn",
     "selenium",
 ]
 

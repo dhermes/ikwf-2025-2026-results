@@ -25,6 +25,8 @@
 | 115              | 235      | 120              | 112      |
 | TOO HEAVY        | 30       | TOO HEAVY        | 19       |
 
+![Bantam weights histogram](_images/weights_histogram_bantam.png)
+
 ### Intermediate
 
 | Proposed weight  | Athletes | Actual weight    | Athletes |
@@ -44,6 +46,8 @@
 | 113              | 219      | 148              | 115      |
 | 149              | 214      | 177              | 28       |
 | TOO HEAVY        | 31       | TOO HEAVY        | 4        |
+
+![Intermediate weights histogram](_images/weights_histogram_intermediate.png)
 
 ### Novice
 
@@ -66,6 +70,8 @@
 | 151              | 160      | 178              | 92       |
 | 200              | 146      | 215              | 47       |
 | TOO HEAVY        | 24       | TOO HEAVY        | 8        |
+
+![Novice weights histogram](_images/weights_histogram_novice.png)
 
 ### Senior
 
@@ -91,6 +97,8 @@
 | 251              | 97       | 275              | 32       |
 | TOO HEAVY        | 18       | TOO HEAVY        | 3        |
 
+![Senior weights histogram](_images/weights_histogram_senior.png)
+
 ### Girls Bantam
 
 | Proposed weight  | Athletes | Actual weight    | Athletes |
@@ -106,6 +114,8 @@
 | 82               | 51       | 95               | 25       |
 | 110              | 60       | 115              | 19       |
 | TOO HEAVY        | 6        | TOO HEAVY        | 3        |
+
+![Girls Bantam weights histogram](_images/weights_histogram_girls_bantam.png)
 
 ### Girls Intermediate
 
@@ -124,6 +134,8 @@
 | 107              | 57       | 115              | 70       |
 | 140              | 53       | 135              | 27       |
 | TOO HEAVY        | 7        | TOO HEAVY        | 11       |
+
+![Girls Intermediate weights histogram](_images/weights_histogram_girls_intermediate.png)
 
 ### Girls Novice
 
@@ -144,6 +156,8 @@
 | 137              | 35       | 140              | 36       |
 | 189              | 37       | 185              | 28       |
 | TOO HEAVY        | 6        | TOO HEAVY        | 7        |
+
+![Girls Novice weights histogram](_images/weights_histogram_girls_novice.png)
 
 ### Girls Senior
 
@@ -167,3 +181,5 @@
 | 163              | 23       | 185              | 44       |
 | 221              | 24       | 240              | 9        |
 | TOO HEAVY        | 5        | TOO HEAVY        | 1        |
+
+![Girls Senior weights histogram](_images/weights_histogram_girls_senior.png)

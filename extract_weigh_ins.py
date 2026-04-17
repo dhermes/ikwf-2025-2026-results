@@ -1,9 +1,12 @@
 import csv
+import math
 import pathlib
 from typing import Literal
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pydantic
+import seaborn as sns
 
 import bracket_util
 import projection
@@ -289,7 +292,39 @@ def _explain_weight_classes(
     return classes
 
 
+def _plot_histogram(
+    filename: pathlib.Path, division_display: str, weigh_ins: list[float]
+) -> None:
+    if not weigh_ins:
+        raise NotImplementedError
+
+    # Determine bin range
+    min_val = math.floor(min(weigh_ins))
+    max_val = math.ceil(max(weigh_ins))
+
+    plt.figure()
+    sns.histplot(weigh_ins, binwidth=1, binrange=(min_val, max_val))
+
+    plt.xlabel("Weight")
+    plt.ylabel("Count")
+    plt.title(division_display)
+
+    plt.tight_layout()
+    plt.savefig(filename, dpi=150, bbox_inches="tight")
+    plt.close()
+
+
 def main() -> None:
+    sns.set_theme(style="whitegrid")
+    plt.rcParams.update(
+        {
+            "font.family": "sans-serif",
+            "font.sans-serif": ["DejaVu Sans", "Arial", "Helvetica"],
+            "axes.titlesize": 14,
+            "axes.labelsize": 12,
+        }
+    )
+
     usaw_mapped = _load_usaw_mapped()
 
     matches_v4 = projection.load_matches_v4()
@@ -420,10 +455,20 @@ def main() -> None:
                     f"| {proposed_weight} | {proposed_athlete_count} | "
                     f"{actual_weight} | {actual_athlete_count} |"
                 )
-        lines.append("")
+
+        histogram_image = (
+            f"![{division_str} weights histogram]("
+            f"_images/weights_histogram_{division}.png)"
+        )
+        lines.extend(["", histogram_image, ""])
 
     with open(_HERE / "WEIGHT-CLASSES.md", "w") as file_obj:
         file_obj.write("\n".join(lines))
+
+    for division, weigh_ins in one_weight.items():
+        division_str = projection.display_division(division)
+        filename = _HERE / "_images" / f"weights_histogram_{division}.png"
+        _plot_histogram(filename, division_str, weigh_ins)
 
 
 if __name__ == "__main__":
