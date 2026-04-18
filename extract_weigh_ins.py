@@ -1,4 +1,5 @@
 import csv
+import itertools
 import math
 import pathlib
 from typing import Literal
@@ -292,24 +293,34 @@ def _explain_weight_classes(
     return classes
 
 
-def _plot_histogram(
-    filename: pathlib.Path, division_display: str, weigh_ins: list[float]
+def _plot_histograms(
+    filename: pathlib.Path,
+    division_display: str,
+    athlete_weights: list[float],
+    weigh_ins: list[float],
 ) -> None:
-    if not weigh_ins:
+    if not athlete_weights or not weigh_ins:
         raise NotImplementedError
 
     # Determine bin range
-    min_val = math.floor(min(weigh_ins))
-    max_val = math.ceil(max(weigh_ins))
+    min_val = math.floor(min(athlete_weights + weigh_ins))
+    max_val = math.ceil(max(athlete_weights + weigh_ins))
+    bins = list(range(min_val, max_val + 1))
 
-    plt.figure()
-    sns.histplot(weigh_ins, binwidth=1, binrange=(min_val, max_val))
+    fig, axes = plt.subplots(2, 1, sharex=True)
 
-    plt.xlabel("Weight")
-    plt.ylabel("Count")
-    plt.title(division_display)
+    sns.histplot(athlete_weights, bins=bins, ax=axes[0])
+    axes[0].set_title("Athletes")
+    sns.histplot(weigh_ins, bins=bins, ax=axes[1])
+    axes[1].set_title("Weigh ins")
 
-    plt.tight_layout()
+    axes[1].set_xlabel("Weight")
+    axes[0].set_ylabel("Count")
+    axes[1].set_ylabel("Count")
+
+    fig.suptitle(division_display, fontsize=16, y=0.95)
+    plt.tight_layout(rect=[0, 0, 1, 0.96])
+
     plt.savefig(filename, dpi=150, bbox_inches="tight")
     plt.close()
 
@@ -318,10 +329,8 @@ def main() -> None:
     sns.set_theme(style="whitegrid")
     plt.rcParams.update(
         {
-            "font.family": "sans-serif",
-            "font.sans-serif": ["DejaVu Sans", "Arial", "Helvetica"],
-            "axes.titlesize": 14,
-            "axes.labelsize": 12,
+            "font.family": "monospace",
+            "font.monospace": ["DejaVu Sans Mono"],
         }
     )
 
@@ -401,6 +410,12 @@ def main() -> None:
         "- An athlete is considered too light if "
         f"{too_light_percent:.1f}% below the lowest weight"
     )
+    lines.append(
+        "- The plots contain both the distribution of **ATHLETES** by "
+        "weight and the distribution of **WEIGH INS**; i.e. one athlete "
+        "might have 12 weigh ins on the year because they competed at "
+        "12 events"
+    )
     lines.extend(["", "## Computed weight classes", ""])
 
     one_weight = _median_from_aggregate(by_division)
@@ -465,10 +480,13 @@ def main() -> None:
     with open(_HERE / "WEIGHT-CLASSES.md", "w") as file_obj:
         file_obj.write("\n".join(lines))
 
-    for division, weigh_ins in one_weight.items():
+    for division, athlete_weights in one_weight.items():
+        weigh_in_map = by_division[division]
+        division_weigh_ins = list(itertools.chain.from_iterable(weigh_in_map.values()))
+
         division_str = projection.display_division(division)
         filename = _HERE / "_images" / f"weights_histogram_{division}.png"
-        _plot_histogram(filename, division_str, weigh_ins)
+        _plot_histograms(filename, division_str, athlete_weights, division_weigh_ins)
 
 
 if __name__ == "__main__":

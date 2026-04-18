@@ -2,6 +2,9 @@
 
 - We have 74,258 weigh ins
 - An athlete is considered too light if 15.0% below the lowest weight
+- The plots contain both the distribution of **ATHLETES** by weight and the
+  distribution of **WEIGH INS**; i.e. one athlete might have 12 weigh ins on the
+  year because they competed at 12 events
 
 ## Computed weight classes
 
