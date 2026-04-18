@@ -298,8 +298,9 @@ def _plot_histograms(
     division_display: str,
     athlete_weights: list[float],
     weigh_ins: list[float],
+    weight_class_bins: list[int],
 ) -> None:
-    if not athlete_weights or not weigh_ins:
+    if not athlete_weights or not weigh_ins or not weight_class_bins:
         raise NotImplementedError
 
     # Determine bin range
@@ -307,16 +308,56 @@ def _plot_histograms(
     max_val = math.ceil(max(athlete_weights + weigh_ins))
     bins = list(range(min_val, max_val + 1))
 
-    fig, axes = plt.subplots(2, 1, sharex=True)
+    if weight_class_bins[-1] < max_val:
+        weight_class_bins.append(max_val)
+
+    lowest_weight = weight_class_bins[0]
+    too_low = lowest_weight * (1 - _TOO_LIGHT_FRACTION)
+    weight_class_bins = [min_val, too_low] + weight_class_bins
+
+    fig, axes = plt.subplots(3, 1, sharex=True)
 
     sns.histplot(athlete_weights, bins=bins, ax=axes[0])
     axes[0].set_title("Athletes")
     sns.histplot(weigh_ins, bins=bins, ax=axes[1])
     axes[1].set_title("Weigh ins")
 
-    axes[1].set_xlabel("Weight")
+    # proposal_centers: list[float] = [min_val + 1.5, min_val + 21.5]
+    # proposal_counts: list[int] = [100, 50]
+    # proposal_widths: list[int] = [3, 37]
+    proposal_centers: list[float] = []
+    proposal_widths: list[int] = []
+    proposal_counts: list[int] = []
+    for lower_bound, upper_bound in zip(
+        weight_class_bins[:-1], weight_class_bins[1:], strict=True
+    ):
+        proposal_centers.append((lower_bound + upper_bound) * 0.5)
+        proposal_widths.append(upper_bound - lower_bound)
+        if upper_bound == max_val:
+            upper_bound = upper_bound + 1
+        bin_count = sum(
+            1 for weight in athlete_weights if lower_bound <= weight < upper_bound
+        )
+        proposal_counts.append(bin_count)
+
+    proposal_colors = ["C0"] * len(proposal_counts)
+    proposal_colors[0] = "C1"
+    proposal_colors[-1] = "C1"
+
+    axes[2].bar(
+        proposal_centers,
+        proposal_counts,
+        width=proposal_widths,
+        color=proposal_colors,
+        align="center",
+        alpha=0.7,
+    )
+    axes[2].set_title("Proposed classes")
+
+    axes[2].set_xlabel("Weight")
     axes[0].set_ylabel("Count")
     axes[1].set_ylabel("Count")
+    axes[2].set_ylabel("Count")
 
     fig.suptitle(division_display, fontsize=16, y=0.95)
     plt.tight_layout(rect=[0, 0, 1, 0.96])
@@ -419,10 +460,12 @@ def main() -> None:
     lines.extend(["", "## Computed weight classes", ""])
 
     one_weight = _median_from_aggregate(by_division)
+    proposals: dict[bracket_util.Division, list[tuple[int, int]]] = {}
     for division in _SORTED_DIVISIONS:
         weights = one_weight[division]
         desired_count = _DESIRED_COUNTS[division]
         proposed_weight_classes = _create_weight_classes(weights, desired_count)
+        proposals[division] = proposed_weight_classes
 
         actual_classes = bracket_util.weights_for_division(division)
         actual_weight_classes = _explain_weight_classes(weights, actual_classes)
@@ -484,9 +527,23 @@ def main() -> None:
         weigh_in_map = by_division[division]
         division_weigh_ins = list(itertools.chain.from_iterable(weigh_in_map.values()))
 
+        proposed_weight_classes = proposals[division]
+        weight_class_bins: list[int] = []
+        for proposed_weight, _ in proposed_weight_classes:
+            if proposed_weight in (_TOO_LIGHT, _TOO_HEAVY):
+                continue
+
+            weight_class_bins.append(proposed_weight)
+
         division_str = projection.display_division(division)
         filename = _HERE / "_images" / f"weights_histogram_{division}.png"
-        _plot_histograms(filename, division_str, athlete_weights, division_weigh_ins)
+        _plot_histograms(
+            filename,
+            division_str,
+            athlete_weights,
+            division_weigh_ins,
+            weight_class_bins,
+        )
 
 
 if __name__ == "__main__":
